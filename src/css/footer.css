@@ -1,0 +1,25 @@
+/* .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1820px;
+    height: 76px;
+
+    border: 1px solid blue;
+    margin: 0 auto;
+    background-color: transparent;
+} */
+
+/* Затемнение для футера:*/
+/* .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(22, 18, 47, 0.8);
+    z-index: -1;
+} */
