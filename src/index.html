@@ -7,12 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonTV</title>
     <link rel="icon" type="image/svg+xml" href="./img/logo_moon_2.png">
-    <link rel="stylesheet" href="./js/bootstrap.min.js">
-    <link rel="stylesheet" href="./scss/index.scss">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+    <link rel="stylesheet" href="./css/normilize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script defer src="./js/bootstrap.min.js"></script>
+    <!-- <script defer src="./index.js"></script> -->
 </head>
 
 <body>
-    <header></header>
+    <header class="site-header">
+        <div class="search">
+            <input type="text" class="input-with-icon" placeholder="Поиск" aria-label="Search">
+            <a href="#notifications" class="notification-round-button">
+                <img src="./img/notifications_button.svg" class="button-icon" alt="Search" width="40px" height="40px">
+            </a>
+        </div>
+        <div class="logo-container">
+            <a href="#" class="logo-img">
+                <img src="./img/logo_moon_1_1-3.png" style="width: 120px; height: 40px;" alt="MoonTV" class="logo-icon">
+            </a>
+            <h1 class="logo-text">Moon.tv</h1>
+        </div>
+        <div class="container-menu">
+            <button class="menu-button">
+                <a href="">
+                    <img src="./img/music.svg" alt="login" width="30px" height="30px">
+                </a>
+            </button>
+            <button class="menu-button">
+                <a href="">
+                    <img src="./img/theme.svg" alt="login" width="30px" height="30px">
+                </a>
+            </button>
+            <button class="menu-button">
+                <a href="">
+                    <img src="./img/language.svg" alt="login" width="30px" height="30px">
+                </a>
+            </button>
+            <button class="menu-button">
+                <a href="">
+                    <img src="./img/signUp_signIn.svg" alt="login" width="30px" height="30px">
+                </a>
+            </button>
+            <div class="login">
+                <button class="login-button">
+                    <a href="">
+                        <img src="./img/ava.svg" style="width: 60px; height: 60px;" alt="personal account">
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="vertical-puzzle">
             <div class="vertical-menu"></div>
