@@ -115,36 +115,8 @@ main {
     background-color: rgba(192, 191, 196, 0.3);
 }
 
-.horizontal-puzzle {
-    display: flex;
-    flex-direction: column;
-}
 
-.b1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    flex-shrink: 0;
-    width: 1698px;
-    height: 958px;
-    border: 1px solid green;
-    background-color: #343148;
-}
-
-.horizontal-menu {
-    display: flex;
-    flex-shrink: 0;
-    width: 1698px;
-    height: 40px;
-    border: 1px solid pink;
-    margin-left: 30px;
-    margin-bottom: 60px;
-    background-color: #16122F;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
+/* banner: */
 
 .main-banner {
     display: flex;
@@ -556,3 +528,5 @@ iframe {
     border-radius: 5px;
     background-color: #292640;
 }
+
+/* end of the banner */
