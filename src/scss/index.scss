@@ -151,8 +151,20 @@ footer:after {
     flex-shrink: 0;
     width: 1138px;
     height: 574px;
+    margin-top: 0;
     margin-left: 36px;
-    background-color: #000000;
+    background-color: #16122F;
+    border-radius: 20px;
+    /* padding: 12px; */
+}
+
+iframe{
+    display: flex;
+    flex-shrink: 0;
+    width: 1138px;
+    height: 574px;
+    margin-top: 0;
+    background-color: #16122F;
     border-radius: 20px;
 }
 
@@ -425,11 +437,6 @@ footer:after {
 }
 
 
-
-
-
-
-
 /*-------------------------------------------------------------*/
 
 /* header */
@@ -494,6 +501,25 @@ header .container {
     height: 40px;
     height: auto;
     /* border: 1px solid green; */
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .input-with-icon {

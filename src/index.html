@@ -24,7 +24,8 @@
 <body>
     <header class="site-header">
         <div class="search">
-            <input type="text" class="input-with-icon" placeholder="Поиск" aria-label="Search">
+            <label for="site-search" class="visually-hidden">Поиск по сайту</label>
+            <input type="search" id="site-search" class="input-with-icon" placeholder="Поиск" aria-label="Search">
             <a href="#notifications" class="notification-round-button">
                 <img src="./img/notifications_button.svg" class="button-icon" alt="Search" width="40px" height="40px">
             </a>
@@ -36,28 +37,28 @@
             <h1 class="logo-text">Moon.tv</h1>
         </div>
         <div class="container-menu">
-            <button class="menu-button">
+            <button class="menu-button" type="button" aria-label="Включить звуки музыку">
                 <a href="">
                     <img src="./img/music.svg" alt="login" width="30px" height="30px">
                 </a>
             </button>
-            <button class="menu-button">
+            <button class="menu-button" type="button" aria-label="Переключить тему оформления">
                 <a href="">
                     <img src="./img/theme.svg" alt="login" width="30px" height="30px">
                 </a>
             </button>
-            <button class="menu-button">
+            <button class="menu-button" type="button" aria-label="Выбрать язык оформления">
                 <a href="">
                     <img src="./img/language.svg" alt="login" width="30px" height="30px">
                 </a>
             </button>
-            <button class="menu-button">
+            <button class="menu-button" type="button" aria-label="Войти в свой аккаунт">
                 <a href="">
                     <img src="./img/signUp_signIn.svg" alt="login" width="30px" height="30px">
                 </a>
             </button>
             <div class="login">
-                <button class="login-button">
+                <button class="login-button" type="button" aria-label="Войти в личный кабинет">
                     <a href="">
                         <img src="./img/ava.svg" style="width: 60px; height: 60px;" alt="personal account">
                     </a>
@@ -73,7 +74,13 @@
                     <div class="b1">
                         <div class="horizontal-menu"></div>
                         <div class="main-banner">
-                            <div class="screen"></div>
+                            <div class="screen">
+                                <iframe width="1138px" height="574px"
+                                    src="https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                             <div class="promo">
                                 <div class="promo1"></div>
                                 <div class="promo2"></div>
@@ -163,16 +170,13 @@
                             <div class="show-all-link"></div>
                         </div>
                         <div class="show-all-button-row">
-                            <button class="show-all-button">Посмотреть все категории</button>
+                            <button class="show-all-button" type="button"
+                                aria-label="Перейти в раздел всех категорий и жанров">Посмотреть все категории</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
         <div class="notification"></div>
     </main>
     <footer>
