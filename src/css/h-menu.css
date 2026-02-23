@@ -1,0 +1,460 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    flex-shrink: 0;
+    /* background-image: url("../img/auth_background_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+    max-height: 5400px;
+
+    /* Окончательный цвет:*/
+/* background-color: #343148; */
+/* Временно (для контраста): */
+/* background-color: #1C173C;
+    font-family: "Source Code Pro", monospace; */
+/* font-family: "Silkscreen", sans-serif;
+    /* font-family: "Press Start 2P", system-ui;
+    /* font-family: "IBM Plex Mono", monospace; */
+
+/* To hide horizontal scrolling for the entire page: */
+/* overflow-x: hidden; */
+/* }  */
+
+/*-------------------------------------------------------------*/
+
+/* header {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 122px;
+    /* border: 1px solid rgb(76, 255, 21); */
+/* background-color: #343148; */
+/* background-color: rgba(192, 191, 196, 0.3); */
+/*} */
+
+/*-------------------------------------------------------------*/
+/* Если без scss, то файл будет очень большим, без импортов стилей компонентов:*/
+/* header */
+/* header {
+    position: fixed;
+    z-index: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 122px;
+    border: 1px solid lime;
+    margin: 0 auto;
+
+    background-color: #343148;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1920px;
+    height: 122px;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+} */
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    /* Прижимает крайние блоки к краям */
+    align-items: center;
+    /* Выравнивает элементы по вертикали */
+
+    width: 100%;
+    max-width: 1920px;
+    height: 122px;
+    margin: 0 auto;
+    padding: 0 50px;
+    /* border: 1px solid red; */
+    background-color: #343148;
+}
+
+/*-------------------------------------------------------------*/
+/* search: */
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    max-width: 428px;
+    height: 40px;
+    height: auto;
+    /* border: 1px solid green; */
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.input-with-icon {
+    width: 368px;
+    height: 40px;
+    border: none;
+    outline: none;
+
+    margin-right: 20px;
+
+    background-image: url('../img/search-icon.svg');
+    background-repeat: no-repeat;
+    /* Позиция иконки: */
+    background-position: 10px center;
+    /* Размер иконки: */
+    background-size: 24px 24px;
+    /* Место для иконки, чтобы текст не накладывался:*/
+    padding-left: 40px;
+
+    border-radius: 40px;
+    background-color: #1C173C;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.input-with-icon::placeholder {
+    color: rgba(206, 206, 214, 100);
+}
+
+.input-with-icon:hover {
+    border: 1px solid orangered;
+    background-color: #484369;
+    color: white;
+}
+
+/* MY TODO: fix shifting the button when hovering over it when use tag button*/
+/* .notification-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid green;
+    padding: 0;
+    border-radius: 50%;
+}
+
+/* .notification-button:hover {
+    border: 3px solid #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}  */
+
+.notification-round-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50;
+    /* Делает кнопку круглой: */
+    border-radius: 50%;
+
+    text-decoration: none;
+    cursor: pointer;
+    /* Плавный переход для всех свойств: */
+    transition: all 0.3s ease;
+}
+
+.notification-round-button:hover {
+    transform: scale(1.1);
+}
+
+.button-icon {
+    width: 40px;
+    height: 40px;
+    /* Сохраняет пропорции изображения: */
+    object-fit: contain;
+}
+
+/*-------------------------------------------------------------*/
+/* logo: */
+/* MY TODO: center the logo in the center of the screen */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 16px; */
+    width: 100%;
+    max-width: 1040px;
+    height: 122px;
+
+    /* padding-left: 418px;
+    padding-right: 504px; */
+
+    /* border: 1px solid magenta; */
+    /* Центрирует строчные и inline‑block элементы: */
+    text-align: center;
+}
+
+.logo-img {
+    width: 120px;
+    height: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /* border: 1px solid yellow; */
+    /* Moon glow: */
+    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+    animation: glow 6s infinite ease-in-out;
+}
+
+/* 
+ .logo-img {
+  /* Сепия */
+/*filter: sepia(7);
+}   */
+
+/* .logo-img { 
+  /* Комбинированный эффект: сепия + затемнение */
+/* filter: sepia(0.8) brightness(0.9);
+} */
+
+/* @keyframes glow {
+    0% {
+        filter: drop-shadow(0px 0px 10px rgba(255, 254, 208, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.8));
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 10px rgba(255, 254, 208, 0.5));
+    }
+} */
+
+/* MY TODO: find rounded font for logo */
+.logo-text {
+    display: inline-block;
+    /* height: 24px;  */
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 42px;
+    /* border: 1px solid green; */
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    vertical-align: middle;
+    font-family: "Source Code Pro", monospace;
+    /* font-family: "Silkscreen", sans-serif;  */
+    /* font-family: "Press Start 2P", system-ui;   */
+    /* font-family: "IBM Plex Mono", monospace; */
+}
+
+/*---------------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 4898px;
+    /* border: 1px solid magenta; */
+    background-color: #343148;
+    /* background-color: rgba(192, 191, 196, 0.3); */
+}
+
+.vertical-puzzle {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-menu {
+    display: flex;
+    width: 222px;
+    height: 5278px;
+    background-color: #16122F;
+    border-top-right-radius: 20px;
+}
+
+.main-of-the-main {
+    display: flex;
+    width: 1698px;
+    height: 4898px;
+    /* background-color: #19f024; */
+    background-color: rgba(192, 191, 196, 0.3);
+}
+
+.horizontal-puzzle {
+    display: flex;
+    flex-direction: column;
+}
+
+.b1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-shrink: 0;
+    width: 1698px;
+    height: 958px;
+    /* border: 1px solid green; */
+    background-color: #343148;
+}
+
+/* horizontal menu: */
+.horizontal-menu {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    /* width: 100%; */
+    width: 1698px;
+    height: 40px;
+    /* border: 1px solid pink; */
+    margin-left: 30px;
+    margin-bottom: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.hMenu {
+    width: 1698px;
+    color: white;
+    display: inline-block;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /* border: 1px solid magenta; */
+}
+
+.hMenu ul {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    /* border: 1px solid rgb(194, 104, 31); */
+}
+
+.hMenu ul li {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 144px;
+    height: 40px;
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #16122F;
+    color: white;
+}
+
+.hMenu a {
+    color: white;
+}
+
+.h-menu-first-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 64px !important;
+    height: 40px !important;
+    background-color: #FF6F3A !important;
+}
+
+.h-menu-scroll {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* совпадает с высотой кнопки: */
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 5px;
+
+    background: #54506B;
+    color: #CECED6;
+    border: none;
+    text-align: center;
+
+    cursor: pointer;
+    z-index: 10;
+    /* поверх видео */
+    transition: background 0.3s ease;
+}
+
+/* MY TODO: align the arrow in the button: */
+.h-menu-scroll-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+    color: #CECED6;
+    vertical-align: middle;
+    text-align: center;
+    right: -15px;
+}
+
+/* Эффекты при наведении */
+.h-menu-scroll:hover {
+    background: rgba(17, 9, 80, 0.5);
+    transform: translateY(-50%) scale(1.1);
+    border: 2px solid #FF6F3A;
+}
+
+/* Скрываем кнопки на мобильных устройствах */
+@media (max-width: 768px) {
+    .h-menu-scroll {
+        display: none;
+    }
+}
+
+/* end of the horizontal menu */
