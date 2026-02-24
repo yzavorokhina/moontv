@@ -1,50 +1,4 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-    flex-shrink: 0;
-    /* background-image: url("../img/auth_background_2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-/* body {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
-    width: 100%;
-    max-height: 5400px;
-
-    /* Окончательный цвет:*/
-/* background-color: #343148; */
-/* Временно (для контраста): */
-/* background-color: #1C173C;
-    font-family: "Source Code Pro", monospace; */
-/* font-family: "Silkscreen", sans-serif;
-    /* font-family: "Press Start 2P", system-ui;
-    /* font-family: "IBM Plex Mono", monospace; */
-
-/* To hide horizontal scrolling for the entire page: */
-/* overflow-x: hidden; */
-/* }  */
-
-/*-------------------------------------------------------------*/
-
-/* header {
-    display: flex;
-    flex-shrink: 0;
-    width: 100%;
-    height: 122px;
-    /* border: 1px solid rgb(76, 255, 21); */
-/* background-color: #343148; */
-/* background-color: rgba(192, 191, 196, 0.3); */
-/*} */
-
-/*-------------------------------------------------------------*/
-/* Если без scss, то файл будет очень большим, без импортов стилей компонентов:*/
-/* header */
+/* header: */
 /* header {
     position: fixed;
     z-index: 6;
@@ -76,7 +30,6 @@ header .container {
     padding-right: 50px;
 } */
 
-
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -106,25 +59,6 @@ header .container {
     height: 40px;
     height: auto;
     /* border: 1px solid green; */
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-    -webkit-appearance: none;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
 }
 
 .input-with-icon {
@@ -234,7 +168,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 0;
     /* border: 1px solid yellow; */
     /* Moon glow: */
-    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9)); 
     animation: glow 6s infinite ease-in-out;
 }
 
@@ -284,177 +218,114 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /*---------------------------------------------------------------*/
-
-main {
-    display: flex;
-    flex-shrink: 0;
-    width: 100%;
-    height: 4898px;
-    /* border: 1px solid magenta; */
-    background-color: #343148;
-    /* background-color: rgba(192, 191, 196, 0.3); */
-}
-
-.vertical-puzzle {
+/* menu*/
+.container-menu {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+
+    height: 60px;
+    width: 348px;
+    /* padding-top: 13px;
+    padding-right: 34px; */
+    /* border: 1px solid yellow; */
 }
 
-.vertical-menu {
+.menu-button {
     display: flex;
-    width: 222px;
-    height: 5278px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border: 1px solid #16122F;
+    /* border: none; */
+
+    border-radius: 34px;
     background-color: #16122F;
-    border-top-right-radius: 20px;
-}
-
-.main-of-the-main {
-    display: flex;
-    width: 1698px;
-    height: 4898px;
-    /* background-color: #19f024; */
-    background-color: rgba(192, 191, 196, 0.3);
-}
-
-.horizontal-puzzle {
-    display: flex;
-    flex-direction: column;
-}
-
-.b1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    flex-shrink: 0;
-    width: 1698px;
-    height: 958px;
-    /* border: 1px solid green; */
-    background-color: #343148;
-}
-
-/* horizontal menu: */
-.horizontal-menu {
-    position: relative;
-    z-index: 5;
-    display: inline-flex;
-    flex-direction: row;
-    flex-shrink: 0;
-    /* width: 100%; */
-    width: 1698px;
-    height: 40px;
-    /* border: 1px solid pink; */
-    margin-left: 30px;
-    margin-bottom: 60px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-.hMenu {
-    width: 1698px;
-    color: white;
-    display: inline-block;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    /* border: 1px solid magenta; */
-}
-
-.hMenu ul {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    /* border: 1px solid rgb(194, 104, 31); */
-}
-
-.hMenu ul li {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 144px;
-    height: 40px;
-    border: none;
-
-    border-radius: 30px;
-
-    background-color: #16122F;
-    color: white;
-}
-
-.hMenu a {
-    color: white;
-}
-
-.h-menu-first-button {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 64px !important;
-    height: 40px !important;
-    background-color: #FF6F3A !important;
-}
-
-.h-menu-scroll {
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    /* совпадает с высотой кнопки: */
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    border-radius: 5px;
-
-    background: #54506B;
-    color: #CECED6;
-    border: none;
-    text-align: center;
-
+    color: #ffffff;
+    font-size: 1rem;
     cursor: pointer;
-    z-index: 10;
-    /* поверх видео */
-    transition: background 0.3s ease;
 }
 
-/* MY TODO: align the arrow in the button: */
-.h-menu-scroll-arrow {
+.menu-button:hover {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 34px;
+    height: 34px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border: none;
+
+    border-radius: 34px;
+    /* MY TODO: create hover colors for all buttons: */
+    background-color: #5e549e;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-button img {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    width: 16px;
-    height: 16px;
-    color: #CECED6;
-    vertical-align: middle;
-    text-align: center;
-    right: -15px;
+    width: 30px;
+    height: 30px;
 }
 
-/* Эффекты при наведении */
-.h-menu-scroll:hover {
-    background: rgba(17, 9, 80, 0.5);
-    transform: translateY(-50%) scale(1.1);
-    border: 2px solid #FF6F3A;
+.login {
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid blue; */
+    /* margin-right: 50px; */
 }
 
-/* Скрываем кнопки на мобильных устройствах */
-@media (max-width: 768px) {
-    .h-menu-scroll {
-        display: none;
-    }
+.login-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border: 1px solid #16122F;
+    /* border: none; */
+
+    border-radius: 60px;
+    background-color: #16122F;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-/* end of the horizontal menu */
+/* MY TODO: fix stroke offset when hovering */
+.login-button:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    border: 12px solid rgb(226, 85, 45);
+
+    border-radius: 60px;
+    box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
+    -webkit-box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
+    -moz-box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------*/

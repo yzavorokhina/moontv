@@ -284,118 +284,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /*---------------------------------------------------------------*/
-/* menu*/
-.container-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 36px;
-
-    height: 60px;
-    width: 348px;
-    /* padding-top: 13px;
-    padding-right: 34px; */
-    /* border: 1px solid yellow; */
-}
-
-.menu-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 34px;
-    height: 34px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    border: 1px solid #16122F;
-    /* border: none; */
-
-    border-radius: 34px;
-    background-color: #16122F;
-    color: #ffffff;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.menu-button:hover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
-    width: 34px;
-    height: 34px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    border: none;
-
-    border-radius: 34px;
-    /* MY TODO: create hover colors for all buttons: */
-    background-color: #5e549e;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.menu-button img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 30px;
-    height: 30px;
-}
-
-.login {
-    width: 60px;
-    height: 60px;
-    /* border: 1px solid blue; */
-    /* margin-right: 50px; */
-}
-
-.login-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 60px;
-    height: 60px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    border: 1px solid #16122F;
-    /* border: none; */
-
-    border-radius: 60px;
-    background-color: #16122F;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* MY TODO: fix stroke offset when hovering */
-.login-button:hover {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 60px;
-    height: 60px;
-    border: 12px solid rgb(226, 85, 45);
-
-    border-radius: 60px;
-    box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
-    -webkit-box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
-    -moz-box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
-    cursor: pointer;
-}
-
-/* end of header */
-/*---------------------------------------------------------------*/
 
 main {
     display: flex;
@@ -407,52 +295,11 @@ main {
     /* background-color: rgba(192, 191, 196, 0.3); */
 }
 
-/* MY TODO: reduce the footer height in sketches and layout */
-footer {
-    z-index: 2;
-    position: relative;
-    display: flex;
-    flex-shrink: 0;
-    width: 100%;
-    height: 380px;
-    /* border: 1px solid blue; */
-    background-color: #343148;
-    /* background-color: rgba(192, 191, 196, 0.3); */
-    /* background-image: url("../img/auth_background_2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-footer:after {
-    z-index: 3;
-    content: " ";
-    display: block;
-    opacity: 0.5;
-    background-color: #16122F;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.notification {
-    position: absolute;
-    z-index: 3;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #FF6F3A;
-    visibility: hidden;
-}
-
-.vertical-puzzle {
+.vertical-blocks {
     display: flex;
     flex-direction: row;
 }
 
-/* Vertical menu: */
 .vertical-menu {
     display: flex;
     width: 222px;
@@ -460,67 +307,6 @@ footer:after {
     background-color: #16122F;
     border-top-right-radius: 20px;
 }
-
-.vMenu {
-    width: 200px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 20px auto;
-
-    background-color: #16122F;
-    border-top-right-radius: 20px;
-}
-
-.vMenu li {
-    align-items: center;
-    background-color: #16122F;
-    color: white;
-    width: 200px;
-    height: 60px;
-    margin-top: 24.2px;
-    margin-bottom: -1px;
-    padding-left: 20px;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* border-top: 1px solid rgb(209, 209, 209); */
-    /* border-bottom: 1px solid rgb(209, 209, 209); */
-}
-
-.vMenu li:hover {
-    background-color: #322e4d;
-    color: rgb(226, 50, 168) !important;
-    font-size: 16px;
-}
-
-.vMenu a {
-    align-items: center;
-    color: white;
-    text-decoration: none;
-}
-
-.vMenu a:hover {
-    align-items: center;
-    color: white;
-    text-decoration: none;
-}
-
-.v-menu-title {
-    background-color: black !important;
-    border-top-right-radius: 20px;
-    margin-top: 0;
-    width: 216px !important;
-    height: 410px !;
-    padding-left: 20px;
-    padding-top: 16px;
-}
-
-/* end of the vertical menu */
 
 .main-of-the-main {
     display: flex;
@@ -530,7 +316,7 @@ footer:after {
     background-color: rgba(192, 191, 196, 0.3);
 }
 
-.horizontal-puzzle {
+.horizontal-blocks {
     display: flex;
     flex-direction: column;
 }

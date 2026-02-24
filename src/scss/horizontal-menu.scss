@@ -1,0 +1,124 @@
+/* horizontal menu: */
+.horizontal-menu {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    /* width: 100%; */
+    width: 1698px;
+    height: 40px;
+    /* border: 1px solid pink; */
+    margin-left: 30px;
+    margin-bottom: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.hMenu {
+    width: 1698px;
+    color: white;
+    display: inline-block;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /* border: 1px solid magenta; */
+}
+
+.hMenu ul {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    /* border: 1px solid rgb(194, 104, 31); */
+}
+
+.hMenu ul li {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 144px;
+    height: 40px;
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #16122F;
+    color: white;
+}
+
+.hMenu a {
+    color: white;
+}
+
+.h-menu-first-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 64px !important;
+    height: 40px !important;
+    background-color: #FF6F3A !important;
+}
+
+.h-menu-scroll {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* совпадает с высотой кнопки: */
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 5px;
+
+    background: #54506B;
+    color: #CECED6;
+    border: none;
+    text-align: center;
+
+    cursor: pointer;
+    z-index: 10;
+    /* поверх видео */
+    transition: background 0.3s ease;
+}
+
+/* MY TODO: align the arrow in the button: */
+.h-menu-scroll-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+    color: #CECED6;
+    vertical-align: middle;
+    text-align: center;
+    right: -15px;
+}
+
+/* Эффекты при наведении */
+.h-menu-scroll:hover {
+    background: rgba(17, 9, 80, 0.5);
+    transform: translateY(-50%) scale(1.1);
+    border: 2px solid #FF6F3A;
+}
+
+/* Скрываем кнопки на мобильных устройствах */
+@media (max-width: 768px) {
+    .h-menu-scroll {
+        display: none;
+    }
+}
+
+/* end of the horizontal menu */
