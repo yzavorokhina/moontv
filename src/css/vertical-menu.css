@@ -9,7 +9,7 @@ body {
     background-size: cover; */
 }
 
-body {
+/* body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -18,20 +18,32 @@ body {
     max-height: 5400px;
 
     /* Окончательный цвет:*/
-    /* background-color: #343148; */
-    /* Временно (для контраста): */
-    background-color: #1C173C;
-    font-family: "Source Code Pro", monospace;
-    /* font-family: "Silkscreen", sans-serif;
+/* background-color: #343148; */
+/* Временно (для контраста): */
+/* background-color: #1C173C;
+    font-family: "Source Code Pro", monospace; */
+/* font-family: "Silkscreen", sans-serif;
     /* font-family: "Press Start 2P", system-ui;
     /* font-family: "IBM Plex Mono", monospace; */
 
-    /* To hide horizontal scrolling for the entire page: */
-    overflow-x: hidden;
-}
+/* To hide horizontal scrolling for the entire page: */
+/* overflow-x: hidden; */
+/* }  */
 
 /*-------------------------------------------------------------*/
 
+/* header {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 122px;
+    /* border: 1px solid rgb(76, 255, 21); */
+/* background-color: #343148; */
+/* background-color: rgba(192, 191, 196, 0.3); */
+/*} */
+
+/*-------------------------------------------------------------*/
+/* Если без scss, то файл будет очень большим, без импортов стилей компонентов:*/
 /* header */
 /* header {
     position: fixed;
@@ -64,6 +76,7 @@ header .container {
     padding-right: 50px;
 } */
 
+
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -93,6 +106,25 @@ header .container {
     height: 40px;
     height: auto;
     /* border: 1px solid green; */
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .input-with-icon {
@@ -202,7 +234,7 @@ header .container {
     margin-bottom: 0;
     /* border: 1px solid yellow; */
     /* Moon glow: */
-    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9)); 
+    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
     animation: glow 6s infinite ease-in-out;
 }
 
@@ -362,4 +394,281 @@ header .container {
     cursor: pointer;
 }
 
+/* end of header */
 /*---------------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 4898px;
+    /* border: 1px solid magenta; */
+    background-color: #343148;
+    /* background-color: rgba(192, 191, 196, 0.3); */
+}
+
+/* MY TODO: reduce the footer height in sketches and layout */
+footer {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 380px;
+    /* border: 1px solid blue; */
+    background-color: #343148;
+    /* background-color: rgba(192, 191, 196, 0.3); */
+    /* background-image: url("../img/auth_background_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+footer:after {
+    z-index: 3;
+    content: " ";
+    display: block;
+    opacity: 0.5;
+    background-color: #16122F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.notification {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FF6F3A;
+    visibility: hidden;
+}
+
+.vertical-blocks  {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Vertical menu: */
+.vertical-menu {
+    display: flex;
+    width: 222px;
+    /* height: 5278px; */
+    background-color: #16122F;
+    border-top-right-radius: 20px;
+}
+
+.vMenu {
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px auto;
+
+    background-color: #16122F;
+    border-top-right-radius: 20px;
+}
+
+.vMenu li {
+    align-items: center;
+    background-color: #16122F;
+    color: white;
+    width: 200px;
+    height: 60px;
+    margin-top: 24.2px;
+    margin-bottom: -1px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-top: 1px solid rgb(209, 209, 209); */
+    /* border-bottom: 1px solid rgb(209, 209, 209); */
+}
+
+.vMenu li:hover {
+    background-color: #322e4d;
+    color: rgb(226, 50, 168) !important;
+    font-size: 16px;
+}
+
+.vMenu a {
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.vMenu a:hover {
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.v-menu-title {
+    background-color: black !important;
+    border-top-right-radius: 20px;
+    margin-top: 0;
+    width: 216px !important;
+    height: 410px !;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+
+/* end of the vertical menu */
+
+.main-of-the-main {
+    display: flex;
+    width: 1698px;
+    height: 4898px;
+    /* background-color: #19f024; */
+    background-color: rgba(192, 191, 196, 0.3);
+}
+
+.horizontal-blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+.b1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-shrink: 0;
+    width: 1698px;
+    height: 958px;
+    /* border: 1px solid green; */
+    background-color: #343148;
+}
+
+/* horizontal menu: */
+.horizontal-menu {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    /* width: 100%; */
+    width: 1698px;
+    height: 40px;
+    /* border: 1px solid pink; */
+    margin-left: 30px;
+    margin-bottom: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.hMenu {
+    width: 1698px;
+    color: white;
+    display: inline-block;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /* border: 1px solid magenta; */
+}
+
+.hMenu ul {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    /* border: 1px solid rgb(194, 104, 31); */
+}
+
+.hMenu ul li {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 144px;
+    height: 40px;
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #16122F;
+    color: white;
+}
+
+.hMenu a {
+    color: white;
+}
+
+.h-menu-first-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 64px !important;
+    height: 40px !important;
+    background-color: #FF6F3A !important;
+}
+
+.h-menu-scroll {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* совпадает с высотой кнопки: */
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 5px;
+
+    background: #54506B;
+    color: #CECED6;
+    border: none;
+    text-align: center;
+
+    cursor: pointer;
+    z-index: 10;
+    /* поверх видео */
+    transition: background 0.3s ease;
+}
+
+/* MY TODO: align the arrow in the button: */
+.h-menu-scroll-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+    color: #CECED6;
+    vertical-align: middle;
+    text-align: center;
+    right: -15px;
+}
+
+/* Эффекты при наведении */
+.h-menu-scroll:hover {
+    background: rgba(17, 9, 80, 0.5);
+    transform: translateY(-50%) scale(1.1);
+    border: 2px solid #FF6F3A;
+}
+
+/* Скрываем кнопки на мобильных устройствах */
+@media (max-width: 768px) {
+    .h-menu-scroll {
+        display: none;
+    }
+}
+
+/* end of the horizontal menu */
