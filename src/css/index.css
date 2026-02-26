@@ -555,7 +555,7 @@ footer:after {
     flex-direction: column;
 }
 
-.b1 {
+.main-screen-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1177,7 +1177,7 @@ iframe {
     border-radius: 5px;
 }
 
-.b2 {
+.scrollable-screens {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
