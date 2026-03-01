@@ -40,6 +40,7 @@
 }
 
 /* section row: */
+/* MY TODO: add more space between the favourite-category-containers */
 .favourite-category-container {
     display: flex;
     flex-direction: column;
@@ -51,7 +52,7 @@
     height: fit-content;
     margin-left: 16px;
     margin-right: 50px;
-    border: 1px solid rgb(63, 223, 48);
+    //border: 1px solid rgb(63, 223, 48);
     background-color: transparent;
 }
 
@@ -173,16 +174,17 @@
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: 9px;
+    // cursor: pointer;
 }
 
 .card-body {
     // закрепить кнопку с описанием внизу карточки:
-    position: sticky;
-    bottom: 2px;
-    left: 100%;
+    // position: sticky;
+    // bottom: 2px;
+    // left: 100%;
     // отрицательное значение перемещает элемент влево, положительное - вправо:
-    transform: translatex(2px);
-    cursor: pointer;
+    // transform: translatex(2px);
+    // cursor: pointer;
     padding: 0;
 }
 
@@ -225,7 +227,7 @@
     font-size: 14px;
     font-weight: lighter;
     color: var(--color-font-gray-light, #CECED6);
-    padding: 0;
+    padding-left: 2px;
     margin: 0 0 14px 0;
 }
 
@@ -234,18 +236,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap:8px;
+    gap: 8px;
 
     width: 100%;
     max-width: 310px;
     // height: 20px;
-
+    padding-left: 2px;
     margin-bottom: 2px;
     //border: 1px solid rgb(29, 10, 197);
 
 }
 
-.tags-row button{
+.tags-row button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -413,5 +415,39 @@
     // border: 1px solid blue;
     text-align: center;
 }
+
+/* стили ссылок-обёрток: */
+a {
+    text-decoration: none;
+    /* Убирает подчёркивание */
+    color: inherit;
+    /* Наследует цвет текста */
+    display: block;
+    /* Занимает всю ширину, как div */
+}
+
+.link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-wrapper:focus {
+    outline: 1px solid var(--color-font-white-light, #FFFFFF);
+    /* Кастомный фокус */
+    //outline: none;
+    outline-offset: 2px;
+    border-radius: 5px;
+}
+
+/* не понятно, не видно эффект: */
+// .link-wrapper:focus-visible {
+//   outline: 2px dashed orange;
+//   outline-offset: 3px;
+// }
 
 /* end of the stream-labels */

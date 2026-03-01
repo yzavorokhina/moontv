@@ -129,9 +129,12 @@ main {
     background-color: rgba(192, 191, 196, 0.3);
 }
 
+
+/* MY TODO: check width and height of main block on full-screen */
 .horizontal-blocks {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .main-screen-block {
@@ -160,7 +163,7 @@ main {
     height: 174px;
     margin-left: 16px;
     margin-right: 50px;
-    border: 1px solid rgb(133, 33, 33);
+    //border: 1px solid rgb(133, 33, 33);
     /* background-color: #865a60; */
     background-color: #343148;
 }
@@ -173,6 +176,7 @@ main {
     flex-shrink: 0; */
     width: 222px;
     height: 34px;
+    margin-top: 60px;
     margin-bottom: 80px;
     border: none;
     background-color: #FF6F3A;
