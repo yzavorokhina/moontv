@@ -103,20 +103,9 @@ main {
     /* background-color: rgba(192, 191, 196, 0.3); */
 }
 
-.notification {
-    position: absolute;
-    z-index: 3;
-    bottom: 0;
-    width: 100%;
-    // height: 60px;
-    background-color: #FF6F3A;
-    visibility: hidden;
-}
-
 .vertical-blocks {
     display: flex;
     flex-direction: row;
-    
 }
 
 .main-of-the-main {
@@ -185,3 +174,58 @@ main {
 }
 
 /*-------------------------------------------------------------*/
+
+/* Notification block: */
+
+.notification {
+    position: fixed;
+    /* чтобы блок был поверх других элементов: */
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+    height: 60px;
+    background-color: #FF6F3A;
+    //visibility: hidden;
+}
+
+.notification-moon-logo-1 {
+    width: 28px;
+    height: 28px;
+}
+
+.notification-moon-logo-2 {
+    width: 38px;
+    height: 38px;
+}
+
+.notification-moon-logo-3 {
+    width: 48px;
+    height: 48px;
+}
+
+.notification h4 {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    font-weight: 400;
+}
+
+.notification button {
+    width: 176px;
+    height: 34px;
+    border: none;
+    background-color: #FDFDFF;
+    color: #E2552D;
+    font-size: 14px;
+    letter-spacing: 0.5;
+    border-radius: 20px;
+    font-weight: 500;
+}
