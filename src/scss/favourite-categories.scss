@@ -52,7 +52,7 @@
     margin-left: 16px;
     margin-right: 50px;
     border: 1px solid rgb(133, 33, 33);
-    background-color: #363636;
+    background-color: transparent;
 }
 
 .titles-row {
@@ -137,12 +137,16 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 1612px;
+
+    width: 100%;
+    //max-width: 1612px;
+    max-width: 1630px;
     height: 300px;
-    margin-right: 10px;
+
+    /* в макете есть, но не помню зачем, на вид не нужный отступ:*/
+    // margin-right: 10px;
     padding: 0;
     //border: 1px solid rgb(255, 255, 255);
-    /* background-color: #865a60; */
     background-color: #241f1f;
 }
 
@@ -156,7 +160,7 @@
     max-width: 1636px;
     height: 62px;
     border: 1px solid rgb(184, 2, 2);
-    background-color: #472a3b;
+    background-color: transparent;
     color: var(--color-font-gray-light, #CECED6);
 }
 
@@ -202,35 +206,58 @@
 /* end of the section row: */
 
 
-
+/* one card: */
 .card {
-    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
     max-width: 310px;
-    //   max-height: 300px;
-    background-color: #343148;
-    max-height: 296px;
+    // background-color: transparent;
+    background-color: rgb(163, 136, 136);
+    // height: 300px;
 }
 
-img {
-    margin: 0;
-    //   padding-top: 40px;
+.card-img-top {
     max-width: 100%;
-    //   height: 300px;
+    height: 180px;
     // изображение отображено с сохранением пропорций:
     object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 9px;
 }
 
 .card-body {
     // закрепить кнопку с описанием внизу карточки:
     position: sticky;
-    bottom: 5px;
+    bottom: 2px;
     left: 100%;
     // отрицательное значение перемещает элемент влево, положительное - вправо:
-    transform: translatex(5px);
+    transform: translatex(2px);
     cursor: pointer;
+    padding: 0;
 }
 
-.card-body h5 {
+.stream-info-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    // width: 100%;
+    width: 310px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+.stream-info-row img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 2px;
+    padding: 0;
+}
+
+.stream-titles h5 {
     font-size: 14px;
     font-weight: bold;
     color: var(--color-font-gray-light, #CECED6);
@@ -238,12 +265,24 @@ img {
     margin: 0;
 }
 
-.card-body p {
+.stream-titles p {
     font-size: 14px;
     font-weight: lighter;
     color: var(--color-font-gray-light, #CECED6);
     padding: 0;
     margin: 0;
+}
+
+.category-name-info {
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--color-font-gray-light, #CECED6);
+    padding: 0;
+    margin: 0 0 14px 0;
+}
+
+.tags-row {
+    margin-bottom: 2px;
 }
 
 .btn-tag {
@@ -256,3 +295,13 @@ img {
     padding: 0;
     margin: 0;
 }
+
+/* end of the one card */
+
+/* cards row:*/
+
+
+
+
+
+/* end of the cards row:*/
