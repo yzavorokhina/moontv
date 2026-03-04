@@ -27,6 +27,9 @@
     // --color-font-gray-dark: rgba(170, 168, 181, 0.7);
     // --transition: all 0.2s linear;
 
+    //--color-hmenu-hover: rgba(17, 9, 80, 0.5);
+
+
 
     // --font-open-sans: #{$font-open-sans-sass};
     --font-source-code: #{$font-source-code-sass};
@@ -44,6 +47,8 @@
     --color-font-white-dark: #{$color-font-white-dark-sass};
     --color-font-gray-light: #{$color-font-gray-light-sass};
     --color-font-gray-dark: #{$color-font-gray-dark-sass};
+
+    --color-dark-buttons-hover: #{$color-dark-buttons-hover-sass};
 }
 
 html,
@@ -115,7 +120,7 @@ main {
 
     // height: 4898px;
     /* background-color: #19f024; */
-    background-color: rgba(192, 191, 196, 0.3);
+    // background-color: rgba(192, 191, 196, 0.3);
 }
 
 
@@ -176,7 +181,7 @@ main {
 /*-------------------------------------------------------------*/
 
 /* Notification block: */
-
+/* MY TODO: stylize close button: */
 .notification {
     position: fixed;
     /* чтобы блок был поверх других элементов: */
@@ -229,3 +234,29 @@ main {
     border-radius: 20px;
     font-weight: 500;
 }
+
+.notification .btn-close {
+    width: 28px;
+    height: 28px;
+    color: rgba(52, 49, 72, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 151, 211, 0.2);
+}
+
+.notification .btn-close:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 151, 211, 0.2);
+}
+
+/* Скрыть всплывающий блок уведомления на главной странице: */
+#myElement {
+  border: none;
+}
+// .hidden {
+//   display: none;
+// }
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+

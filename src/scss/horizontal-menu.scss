@@ -33,7 +33,7 @@
     /* border: 1px solid rgb(194, 104, 31); */
 }
 
-.hMenu ul li {
+.hMenu li {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -49,18 +49,58 @@
     color: white;
 }
 
-.hMenu a {
+.hMenu li:hover {
+    background: rgba(17, 9, 80, 0.5);
+    color: #CECED6;
+}
+
+.hMenu li:first-child {
+    border: none;
+    /* Жирный текст: */
+    // font-weight: bold;
+}
+
+.hMenu li:first-child a {
     color: white;
 }
+
+.hMenu li:first-child:hover {
+    /* Лёгкое увеличение: */
+    // transform: scale(1.05);
+    color: white;
+}
+
+.hMenu li:first-of-type {
+    color: white;
+}
+
+.hMenu a {
+    color: white;
+    /* Чтобы ссылка занимала всю площадь li: */
+    display: block;
+    /* Плавный переход цвета: */
+    transition: color 0.3s ease;
+}
+
+.hMenu li:hover a {
+    color: #CECED6;
+}
+
 
 .h-menu-first-button {
     display: inline-flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: baseline;
     width: 64px !important;
     height: 40px !important;
     background-color: #FF6F3A !important;
+}
+
+/* MY TODO: add styles to make white font-color on hover: */
+.h-menu-first-button:hover {
+    color: white !important;
+    background-color: #E2552D !important;
 }
 
 .h-menu-scroll {
@@ -82,7 +122,7 @@
     border-radius: 5px;
 
     background: #54506B;
-    color: #CECED6;
+    color: white;
     border: none;
     text-align: center;
 
@@ -101,7 +141,7 @@
 
     width: 16px;
     height: 16px;
-    color: #CECED6;
+    color: white;
     vertical-align: middle;
     text-align: center;
     right: -15px;
@@ -109,9 +149,8 @@
 
 /* Эффекты при наведении */
 .h-menu-scroll:hover {
-    background: rgba(17, 9, 80, 0.5);
-    transform: translateY(-50%) scale(1.1);
-    border: 2px solid #FF6F3A;
+    background: #16122F;
+    border: 1px solid rgba(170, 168, 181, 0.7);
 }
 
 /* Скрываем кнопки на мобильных устройствах */

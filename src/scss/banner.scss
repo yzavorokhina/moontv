@@ -184,7 +184,7 @@ iframe {
 .viewers-count {
     color: #CECED6;
     font-size: 20px;
-    border: 1px solid lime;
+    // border: 1px solid lime;
 }
 
 .age-rating-row {
@@ -242,7 +242,7 @@ iframe {
     width: 40px;
     height: 40px;
     padding: 0;
-    border: 2px solid #FF6F3A;
+    // border: 1px solid #16122F;
 
     background: rgba(22, 18, 47, 0.5);
     color: white;
@@ -258,9 +258,14 @@ iframe {
 .carousel-arrow {
     width: 24px;
     height: 24px;
-    color: #CECED6;
+    color: white;
     vertical-align: middle;
 }
+
+// .carousel-arrow:hover {
+//     color: rgba(170,168,181,0.7);
+//     vertical-align: middle;
+// }
 
 .prev-btn {
     left: -15px;
@@ -273,8 +278,8 @@ iframe {
 /* Эффекты при наведении */
 .carousel-btn:hover {
     background: rgba(17, 9, 80, 0.5);
-    transform: translateY(-50%) scale(1.1);
-    border: 2px solid #FF6F3A;
+    // transform: translateY(-50%) scale(1.1);
+    border: 1px solid rgba(170,168,181,0.7);
 }
 
 /* Скрываем кнопки на мобильных устройствах */

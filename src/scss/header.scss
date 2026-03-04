@@ -90,8 +90,7 @@ header .container {
 }
 
 .input-with-icon:hover {
-    border: 1px solid orangered;
-    background-color: #484369;
+    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
     color: white;
 }
 
@@ -129,9 +128,19 @@ header .container {
     transition: all 0.3s ease;
 }
 
+/* MY TODO: fix the button shifts when hovering over: */
 .notification-round-button:hover {
     transform: scale(1.1);
+    // border: 1px solid #CECED6;
+    // background-color: #E2552D;
 }
+
+// .search a:hover {
+//     border: 1px solid #CECED6;
+//     background-color: #E2552D;
+//     /* Чтобы ссылка занимала всю площадь li: */
+//     display: block;
+// }
 
 .button-icon {
     width: 40px;
@@ -168,7 +177,7 @@ header .container {
     margin-bottom: 0;
     /* border: 1px solid yellow; */
     /* Moon glow: */
-    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9)); 
+    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
     animation: glow 6s infinite ease-in-out;
 }
 
@@ -267,7 +276,7 @@ header .container {
 
     border-radius: 34px;
     /* MY TODO: create hover colors for all buttons: */
-    background-color: #5e549e;
+    background-color: rgba(17, 9, 80, 0.5);
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
@@ -279,8 +288,8 @@ header .container {
     align-items: center;
     justify-content: center;
 
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
 }
 
 .login {
