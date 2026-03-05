@@ -15,7 +15,6 @@
     // --font-silkscreen: "Silkscreen", sans-serif;
     // --font-press-start: "Press Start 2P", system-ui;
     // --font-ibm-plex: "IBM Plex Mono", monospace;
-
     // --color-background-light: #343148;
     // --color-background-dark: #16122F;
     // --color-background-accent: #000000;
@@ -26,9 +25,7 @@
     // --color-font-gray-light: #CECED6;
     // --color-font-gray-dark: rgba(170, 168, 181, 0.7);
     // --transition: all 0.2s linear;
-
     //--color-hmenu-hover: rgba(17, 9, 80, 0.5);
-
 
 
     // --font-open-sans: #{$font-open-sans-sass};
@@ -37,7 +34,6 @@
     // --font-press-start: #{$font-press-start-sass};
     // --font-ibm-plex: #{$font-ibm-plex-sass};
     --transition: #{$transition-sass};
-
     --color-background-light: #{$color-background-light-sass};
     --color-bbackground-dark: #{$color-background-dark-sass};
     --color-background-accent: #{$color-background-accent-sass};
@@ -47,88 +43,85 @@
     --color-font-white-dark: #{$color-font-white-dark-sass};
     --color-font-gray-light: #{$color-font-gray-light-sass};
     --color-font-gray-dark: #{$color-font-gray-dark-sass};
-
     --color-dark-buttons-hover: #{$color-dark-buttons-hover-sass};
 }
 
 html,
 body {
-    //  display: flex;
-    // align-items: flex-start;
-    // justify-content: center;
-    // width: 100%;
-
-    height: 100%;
-    //max-height: 5400px;
-    margin: 0;
-    flex-shrink: 0;
-    /* background-image: url("../img/auth_background_2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    // display: flex;
+    // flex-direction: column;
+    /* Минимальная высота — весь экран: */
+    min-height: 100vh;
     // font-family: var(--font-source-code);
     // font-family: $font-source-code;
     /* To hide horizontal scrolling for the entire page: */
-    // overflow-x: hidden;
+    overflow-x: hidden;
+    background-color: var(--color-background-light, #343148);
 }
 
-// h1,
-// h2,
-// h3,
-// h4 {
-//     font-family: var(--font-source-code);
-// }
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-open-sans);
+}
 
 a {
-    text-decoration: none;
     transition: var(--transition);
 }
 
-header {
+.page {
     display: flex;
+    flex-direction: column;
+    /* Минимальная высота — весь экран: */
+    min-height: 100vh;
+}
+
+header {
+    /* Запрещает сжиматься: */
     flex-shrink: 0;
-    width: 100%;
-    // height: 122px;
-    /* border: 1px solid rgb(76, 255, 21); */
-    // background-color: #343148;
-    background-color: var(--color-background-light, #343148);
-    /* background-color: rgba(192, 191, 196, 0.3); */
+    /* Фиксированная высота: */
+    height: 122px;
 }
 
 main {
-    display: flex;
     flex-shrink: 0;
+    flex-grow: 1;
     width: 100%;
-    max-width: 1920px;
-    // height: 4898px;
-    margin: 0 auto;
-    /* border: 1px solid magenta; */
-    // background-color: #343148;
-    background-color: var(--color-background-light, #343148);
-    /* background-color: rgba(192, 191, 196, 0.3); */
+    // max-width: 1920px;
+    /* Тест на выпячивание блоков: */
+    // overflow-y: auto; /* Вертикальный скролл только внутри main, если нужно */ 
+}
+
+footer {
+    /* Запрещает сжиматься: */
+    flex-shrink: 0;
+    /* Фиксированная высота: */
+    height: 222px;
 }
 
 .vertical-blocks {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .main-of-the-main {
     display: flex;
-    width: 100%;
-    max-width: 1698px;
-
+    /* MY TODO: узнать как точно указывать ширину, с высотами более-менее понятно: */
+    // width: 100%;
+    // max-width: 1698px;
+    width: calc(100vw - 222px);
     // height: 4898px;
     /* background-color: #19f024; */
     // background-color: rgba(192, 191, 196, 0.3);
 }
 
-
 /* MY TODO: check width and height of main block on full-screen */
 .horizontal-blocks {
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    // height: fit-content;
 }
 
 .main-screen-block {
@@ -136,49 +129,12 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 1698px;
+    width: calc(100vw - 222px);
+    // width: 100%;
+    // max-width: 1698px;
     // height: 958px;
     // border: 1px solid green;
-    background-color: #343148;
 }
-
-/* MY TODO: add more space around the show-all-button: */
-/*-------------------------------------------------------------*/
-.show-all-button-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 1632px;
-    height: 174px;
-    margin-left: 16px;
-    margin-right: 50px;
-    //border: 1px solid rgb(133, 33, 33);
-    /* background-color: #865a60; */
-    background-color: #343148;
-}
-
-.show-all-button {
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0; */
-    width: 222px;
-    height: 34px;
-    margin-top: 60px;
-    margin-bottom: 80px;
-    border: none;
-    background-color: #FF6F3A;
-    border-radius: 20px;
-    color: white;
-}
-
-/*-------------------------------------------------------------*/
 
 /* Notification block: */
 /* MY TODO: stylize close button: */
@@ -188,17 +144,15 @@ main {
     z-index: 1000;
     bottom: 0;
     left: 0;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
-
     width: 100%;
     height: 60px;
     background-color: #FF6F3A;
-    //visibility: hidden;
+    visibility: hidden;
 }
 
 .notification-moon-logo-1 {
@@ -249,14 +203,14 @@ main {
 
 /* Скрыть всплывающий блок уведомления на главной странице: */
 #myElement {
-  border: none;
+    border: none;
 }
+
 // .hidden {
 //   display: none;
 // }
 .fade-out {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s;
 }
-

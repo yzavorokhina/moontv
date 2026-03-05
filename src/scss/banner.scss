@@ -1,5 +1,4 @@
 /* banner: */
-
 .main-banner {
     display: flex;
     flex-direction: row;
@@ -10,7 +9,6 @@
     width: 1698px;
     height: 600px;
     // border: 1px solid lime;
-    /* background-color: #343148; */
 }
 
 .video-carousel {
@@ -43,24 +41,19 @@ iframe {
     bottom: 0;
     left: 0;
     right: 0;
-
     display: flex;
     flex-direction: row !important;
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-
     box-sizing: border-box;
     width: 1138px;
     height: 120px;
     margin-bottom: 0;
     padding: 18px 22px 22px 22px;
-
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
     /* background: rgba(52, 49, 72, 0.7); */
-
     background: rgba(52, 49, 72, 0.2);
     /* светлый полупрозрачный фон */
     backdrop-filter: blur(10px);
@@ -68,7 +61,6 @@ iframe {
     -webkit-backdrop-filter: blur(10px);
     /* поддержка Safari */
     border-top: 1px solid rgba(52, 49, 72, 0.3);
-
     color: white;
 }
 
@@ -121,7 +113,6 @@ iframe {
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-    /* padding: 22px; */
 }
 
 .banner-ava {
@@ -150,7 +141,6 @@ iframe {
     gap: 26px;
     width: auto;
     height: auto;
-    /* margin-right: 16px; */
     text-align: center;
     /* border: 1px solid yellow; */
 }
@@ -174,7 +164,6 @@ iframe {
     /* Выравнивание h5 внутри flex: */
     align-items: baseline;
     justify-content: baseline;
-
     /* border: 1px solid rgb(28, 198, 204); */
     color: #CECED6;
     font-size: 20px;
@@ -236,22 +225,19 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-
     /* совпадает с высотой кнопки: */
     line-height: 40px;
     width: 40px;
     height: 40px;
     padding: 0;
     // border: 1px solid #16122F;
-
     background: rgba(22, 18, 47, 0.5);
     color: white;
     text-align: center;
-
     border-radius: 50%;
     cursor: pointer;
+    /* поверх видео: */
     z-index: 10;
-    /* поверх видео */
     transition: background 0.3s ease;
 }
 
@@ -279,7 +265,7 @@ iframe {
 .carousel-btn:hover {
     background: rgba(17, 9, 80, 0.5);
     // transform: translateY(-50%) scale(1.1);
-    border: 1px solid rgba(170,168,181,0.7);
+    border: 1px solid rgba(170, 168, 181, 0.7);
 }
 
 /* Скрываем кнопки на мобильных устройствах */
@@ -298,8 +284,6 @@ iframe {
     max-width: 428px;
     height: 570px;
     margin-right: 50px;
-    background-color: #343148;
-    /* background-color: #3216e9; */
     border-radius: 5px;
 }
 
@@ -309,7 +293,6 @@ iframe {
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-
     color: #FBFBFB;
     font-size: 16px;
 }
@@ -337,13 +320,11 @@ iframe {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-
     width: 428px;
     height: 110px;
     padding-left: 21px;
     padding-top: 6px;
     padding-bottom: 6px;
-
     border-radius: 5px;
     background-color: #292640;
 }
@@ -354,13 +335,11 @@ iframe {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-
     width: 428px;
     height: 110px;
     padding-left: 21px;
     padding-top: 6px;
     padding-bottom: 6px;
-
     border-radius: 5px;
     background-color: #292640;
 }
@@ -371,13 +350,11 @@ iframe {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-
     width: 428px;
     height: 110px;
     padding-left: 21px;
     padding-top: 6px;
     padding-bottom: 6px;
-
     border-radius: 5px;
     background-color: #292640;
 }
@@ -388,13 +365,11 @@ iframe {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-
     width: 428px;
     height: 110px;
     padding-left: 21px;
     padding-top: 6px;
     padding-bottom: 6px;
-
     border-radius: 5px;
     background-color: #292640;
 }
@@ -405,13 +380,11 @@ iframe {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-
     width: 428px;
     height: 110px;
     padding-left: 21px;
     padding-top: 6px;
     padding-bottom: 6px;
-
     border-radius: 5px;
     background-color: #292640;
 }
