@@ -47,19 +47,19 @@
     padding-left: 40px;
 
     border-radius: 40px;
-    background-color: #1C173C;
-    color: #ffffff;
+    background-color: var(--color-background-input, #1C173C);
+    color: var(--color-font-white-light, #ffffff);
     font-size: 16px;
     line-height: 140%;
 }
 
 .input-with-icon::placeholder {
-    color: rgba(206, 206, 214, 100);
+    color: var(--color-font-gray-light, #CECED6);
 }
 
 .input-with-icon:hover {
     background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
-    color: white;
+    color: var(--color-font-white-light, #ffffff);
 }
 
 /* MY TODO: fix shifting the button when hovering over it when use tag button*/
@@ -86,7 +86,6 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #4CAF50;
     /* Делает кнопку круглой: */
     border-radius: 50%;
 
@@ -138,12 +137,24 @@
     text-align: center;
 }
 
+/* MY TODO: find something about variables in drop-shadow: */
 .logo-img {
     width: 120px;
     height: 40px;
     padding-bottom: 0;
     margin-bottom: 0;
     /* border: 1px solid yellow; */
+    /* Moon glow: */
+    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
+    animation: glow 6s infinite ease-in-out;
+}
+
+/* MY TODO: think about the logo hover for three days in a row */
+.logo-img:hover {
+    width: 120px;
+    height: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     /* Moon glow: */
     filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
     animation: glow 6s infinite ease-in-out;
@@ -182,7 +193,7 @@
     margin-top: 0;
     margin-bottom: 42px;
     /* border: 1px solid green; */
-    color: #ffffff;
+    color: var(--color-font-white-light, #ffffff);
     font-size: 32px;
     line-height: 32px;
     font-weight: 800;
@@ -220,12 +231,12 @@
     height: 34px;
     /* padding-left: 10px;
     padding-right: 10px; */
-    border: 1px solid #16122F;
+    border: 1px solid var(--color-background-dark, #16122F);
     /* border: none; */
 
     border-radius: 34px;
-    background-color: #16122F;
-    color: #ffffff;
+    background-color: var(--color-background-dark, #16122F);
+    color: var(--color-font-white-light, #ffffff);
     font-size: 1rem;
     cursor: pointer;
 }
@@ -244,8 +255,8 @@
 
     border-radius: 34px;
     /* MY TODO: create hover colors for all buttons: */
-    background-color: rgba(17, 9, 80, 0.5);
-    color: #ffffff;
+    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    color: var(--color-font-white-light, #ffffff);
     font-size: 16px;
     cursor: pointer;
 }
@@ -277,12 +288,12 @@
     height: 60px;
     /* padding-left: 10px;
     padding-right: 10px; */
-    border:1px solid #16122F;
+    border: 1px solid var(--color-background-dark, #16122F);
     /* border: none; */
 
     border-radius: 60px;
-    background-color: #16122F;
-    color: #ffffff;
+    background-color: var(--color-background-dark, #16122F);
+    color: var(--color-font-white-light, #ffffff);
     font-size: 16px;
     cursor: pointer;
 }
@@ -296,7 +307,6 @@
 
     width: 60px;
     height: 60px;
-    border: 12px solid rgb(226, 85, 45);
 
     border-radius: 60px;
     box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);

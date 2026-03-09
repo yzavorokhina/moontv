@@ -20,7 +20,7 @@
     height: 574px;
     margin-top: 0;
     margin-left: 36px;
-    background-color: #16122F;
+    background-color: var(--color-background-dark, #16122F);
     border-radius: 20px;
 }
 
@@ -31,7 +31,7 @@ iframe {
     width: 1138px;
     height: 574px;
     margin-top: 0;
-    background-color: #16122F;
+    background-color: var(--color-background-dark, #16122F);
     border-radius: 20px;
 }
 
@@ -54,14 +54,18 @@ iframe {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     /* background: rgba(52, 49, 72, 0.7); */
-    background: rgba(52, 49, 72, 0.2);
+    background: var(--color-dark-transparent-banner-button, rgba(52, 49, 72, 0.2));
     /* светлый полупрозрачный фон */
     backdrop-filter: blur(10px);
     /* размытие фона */
     -webkit-backdrop-filter: blur(10px);
     /* поддержка Safari */
-    border-top: 1px solid rgba(52, 49, 72, 0.3);
-    color: white;
+    border-top: 1px solid var(--color-dark-transparent-banner-button, rgba(52, 49, 72, 0.2));
+    // color: var(--color-font-white-light, #ffffff);
+}
+
+.banner-info:hover {
+    cursor: pointer;
 }
 
 /*------вариант адаптивный под разные устройства------*/
@@ -109,7 +113,7 @@ iframe {
 
 .banner-stream-info {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
@@ -120,16 +124,50 @@ iframe {
     margin-right: 24px;
 }
 
+.banner-ava:hover {
+    border-radius: 80px;
+    filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
+    animation: glow 6s infinite ease-in-out;
+}
+
 .stream-info a {
-    color: #CECED6;
+    color: var(--color-font-gray-light, #CECED6);
+    font-weight: 400;
+}
+
+.stream-info a:hover {
+    color: var(--color-font-gray-light, #CECED6);
 }
 
 .stream-info h4 {
-    color: #FBFBFB;
+    color: var(--color-font-white-dark, #FDFDFF);
+    font-weight: 400;
+}
+
+.stream-info h4:hover {
+    color: var(--color-font-white-light, #ffffff);
 }
 
 .stream-info h5 {
-    color: #FBFBFB;
+    color: var(--color-font-white-dark, #FDFDFF);
+    font-weight: 400;
+}
+
+.stream-info h5:hover {
+    color: var(--color-font-white-dark, #FDFDFF);
+}
+
+.stream-info h5:first-child {
+    border: none;
+    /* Жирный текст: */
+    font-weight: bold;
+    color: var(--color-font-white-dark, #FDFDFF);
+}
+
+.stream-info h5:first-child:hover {
+    color: var(--color-accent-light, #FF6F3A);
+    /* Жирный текст: */
+    font-weight: bold;
 }
 
 .stream-statistic {
@@ -154,7 +192,7 @@ iframe {
     max-width: 400px;
     height: 30px;
     /* border: 1px solid red; */
-    color: #CECED6;
+    color: var(--color-font-gray-light, #CECED6);
 }
 
 .live-watchers h5 {
@@ -165,13 +203,13 @@ iframe {
     align-items: baseline;
     justify-content: baseline;
     /* border: 1px solid rgb(28, 198, 204); */
-    color: #CECED6;
+    color: var(--color-font-gray-light, #CECED6);
     font-size: 20px;
     margin: auto;
 }
 
 .viewers-count {
-    color: #CECED6;
+    color: var(--color-font-gray-light, #CECED6);
     font-size: 20px;
     // border: 1px solid lime;
 }
@@ -192,7 +230,7 @@ iframe {
     z-index: 3;
     bottom: 0;
     right: 0;
-    color: rgba(206, 206, 214, 0.8);
+    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
     font-size: 20px;
 }
 
@@ -231,8 +269,8 @@ iframe {
     height: 40px;
     padding: 0;
     // border: 1px solid #16122F;
-    background: rgba(22, 18, 47, 0.5);
-    color: white;
+    background: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    color: var(--color-font-white-light, #ffffff);
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
@@ -244,7 +282,7 @@ iframe {
 .carousel-arrow {
     width: 24px;
     height: 24px;
-    color: white;
+    color: var(--color-font-white-light, #ffffff);
     vertical-align: middle;
 }
 
@@ -255,17 +293,19 @@ iframe {
 
 .prev-btn {
     left: -15px;
+    padding-top: 4px;
 }
 
 .next-btn {
     right: -15px;
+    padding-top: 4px;
 }
 
 /* Эффекты при наведении */
 .carousel-btn:hover {
-    background: rgba(17, 9, 80, 0.5);
+    background: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
     // transform: translateY(-50%) scale(1.1);
-    border: 1px solid rgba(170, 168, 181, 0.7);
+    border: 2px solid var(--color-font-gray-light, #CECED6);
 }
 
 /* Скрываем кнопки на мобильных устройствах */
@@ -287,13 +327,18 @@ iframe {
     border-radius: 5px;
 }
 
+.promo :hover {
+    background-color: var(--color-background-dark, #16122F);
+    cursor: pointer;
+}
+
 .promo-stream-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    color: #FBFBFB;
+    color: var(--color-font-white-dark, #FDFDFF);
     font-size: 16px;
 }
 
@@ -301,11 +346,20 @@ iframe {
     max-width: 242px;
     margin: 0;
     line-height: 20px;
+    color: var(--color-font-white-light, #ffffff);
+}
+
+.promo-stream-info h6:hover {
+    max-width: 242px;
+    margin: 0;
+    line-height: 20px;
+    color: var(--color-accent-light, #FF6F3A);
+    cursor: pointer;
 }
 
 .promo-stream-info a {
     padding-top: 20px;
-    color: #A4A4AB;
+    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
 }
 
 .promo img {
@@ -326,7 +380,7 @@ iframe {
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 5px;
-    background-color: #292640;
+    background-color: var(--color-background-promo, #292640);
 }
 
 .promo2 {
@@ -341,7 +395,7 @@ iframe {
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 5px;
-    background-color: #292640;
+    background-color: var(--color-background-promo, #292640);
 }
 
 .promo3 {
@@ -356,7 +410,7 @@ iframe {
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 5px;
-    background-color: #292640;
+    background-color: var(--color-background-promo, #292640);
 }
 
 .promo4 {
@@ -371,7 +425,7 @@ iframe {
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 5px;
-    background-color: #292640;
+    background-color: var(--color-background-promo, #292640);
 }
 
 .promo5 {
@@ -386,7 +440,7 @@ iframe {
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 5px;
-    background-color: #292640;
+    background-color: var(--color-background-promo, #292640);
 }
 
 /* end of the banner */

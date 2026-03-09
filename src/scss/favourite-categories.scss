@@ -34,6 +34,10 @@
     color: var(--color-accent-light, #FF6F3A);
 }
 
+.favourite-categories-title h2:hover {
+    color: var(--color-accent-dark, #E2552D);
+}
+
 /* section row: */
 /* MY TODO: add more space between the favourite-category-containers MAYBE*/
 .favourite-category-container {
@@ -78,6 +82,16 @@
     background-color: transparent;
 }
 
+.section-title svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.section-title svg:hover {
+    transform: scale(1.1);
+}
+
 .section-title h2 {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -86,6 +100,14 @@
     font-weight: bold;
     color: var(--color-font-gray-light, #CECED6);
     //border: 1px solid rgb(12, 231, 220);
+}
+
+.section-title h2:hover {
+    color: var(--color-font-white-light, #FFFFFF);
+}
+
+.section-title img:hover {
+    color: var(--color-font-white-light, #FFFFFF);
 }
 
 /* show-all-gray-link */
@@ -97,27 +119,29 @@
     flex-shrink: 0;
     max-width: fit-content;
     padding-top: 6px;
-    color: var(--color-font-gray-light, #CECED6);
+    // color: var(--color-font-gray-light, #CECED6);
     //border: 1px solid rgb(12, 231, 220);
 }
 
+
 .show-all-categories a {
-    color: var(--color-font-gray-light, #CECED6) !important;
+    color: var(--color-font-gray-light, #CECED6);
+}
+
+.show-all-categories a:hover {
+    color: var(--color-font-white-light, #FFFFFF);
+}
+
+.show-all-categories svg {
+    color: var(--color-font-gray-light, #CECED6);
 }
 
 .arrowed a svg {
-    transition: var(--transition);
     font-size: 14px;
     line-height: 140%;
     color: var(--color-font-gray-light, #CECED6);
 }
 
-.arrowed a:hover svg,
-.arrowed a:focus svg {
-    width: 51px;
-    height: 16px;
-    color: var(--color-font-gray-light, #CECED6);
-}
 
 .show-all-categories .show-all-arrow {
     width: 24px;
@@ -147,7 +171,7 @@
     /* в макете есть, но не помню зачем, на вид - не нужный отступ:*/
     // margin-right: 10px;
     padding: 0;
-    //border: 1px solid rgb(197, 10, 214);
+    // border: 1px solid rgb(197, 10, 214);
     background-color: transparent;
 }
 
@@ -178,7 +202,8 @@
 }
 
 .card-body {
-    // закрепить кнопку с описанием внизу карточки:
+    // закрепить кнопку с описанием внизу карточки
+    // (странно отображалось в Мозилле):
     // position: sticky;
     // bottom: 2px;
     // left: 100%;
@@ -193,8 +218,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    // width: 100%;
-    width: 310px;
+    width: 308px;
     height: 48px;
     padding: 0;
     margin: 0;
@@ -207,35 +231,61 @@
     padding: 0;
 }
 
-.stream-titles{
+// .channel-img:hover {
+//  border: 1px solid var(--color-font-white-light, #FFFFFF);
+//  border-radius: 40px;
+// }
+
+.stream-titles {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 4px;
+    /* фиксированная минимальная высота: */
+    // min-height: 60px;
+    // border: 1px solid rgb(59, 218, 130);
 }
 
 .stream-titles h5 {
     font-size: 14px;
     font-weight: bold;
     color: var(--color-font-gray-light, #CECED6);
-    padding: 0 0 4px 0;
+    padding: 0;
     margin: 0;
+    line-height: 120%;
+    letter-spacing: 0%;
+    font-size: 14px;
+    // border: 1px solid rgb(59, 218, 130);
+}
+
+.stream-titles h5:hover {
+    color: var(--color-font-white-light, #FFFFFF);
 }
 
 .stream-titles p {
     font-size: 14px;
     font-weight: lighter;
+    // color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
     color: var(--color-font-gray-light, #CECED6);
-    padding: 0;
+    // padding: 0;
     margin: 0;
+    // margin-bottom: 10px;
+    // border: 1px solid rgb(172, 230, 16);
 }
 
-/* MY TODO: make the channel-title fixed: */
-// .channel-title {
-
-//     color: #FF6F3A !important;
-
+// .stream-titles p:hover {
+//     color: var(--color-font-gray-light, #CECED6);
 // }
+
+/* MY TODO: make the channel-title fixed: */
+.channel-title {
+    margin: 0;
+    /* В теории прижимает к низу: */
+    margin-top: auto;
+    font-size: 14px;
+    // color: #FF6F3A !important;
+}
 
 .category-name-info {
     font-size: 14px;
@@ -243,8 +293,12 @@
     color: var(--color-accent-light, #FF6F3A);
     // color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
     padding-left: 2px;
-    margin: 10px 0 4px 0;
+    margin: 10px 0 6px 0;
     // border: 1px solid blue;
+}
+
+.category-name-info:hover {
+    color: var(--color-accent-dark, #E2552D);
 }
 
 .tags-row {
@@ -280,8 +334,12 @@
 }
 
 .button-tag {
-    background-color: #D9D9D9;
+    background-color: var(--color-font-gray-light, #CECED6);
     //border: 1px solid rgb(175, 36, 202);
+}
+
+.button-tag:hover {
+    background-color: var(--color-font-white-light, #FFFFFF);
 }
 
 /* end of the one channel-card */
@@ -334,12 +392,29 @@
     /* Отступы по бокам от кнопки: */
     margin: 0 15px;
     /* Отступы по бокам от кнопки */
-    padding: 10px 6px 10px 10px;
-    background: transparent;
+    // padding: 10px 6px 10px 10px;
     color: var(--color-font-gray-light, #CECED6);
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
+    width: fit-content;
+    height: 34px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 34px;
+    border: none;
+    background-color: transparent;
+}
+
+.divider-button a:hover {
+    color: var(--color-font-white-light, #FFFFFF);
+    cursor: pointer;
+}
+
+.divider-button:hover {
+    color: var(--color-font-white-light, #FFFFFF);
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #CECED6;
+    border-radius: 34px;
 }
 
 /* end of the section row: */
@@ -374,6 +449,10 @@
     background-color: #FF6F3A;
     border-radius: 34px;
     color: white;
+}
+
+.show-all-button:hover {
+    background-color: var(--color-accent-dark, #E2552D);
 }
 
 /*-------------------------------------------------------------*/
@@ -486,11 +565,5 @@ a {
     outline-offset: 1px;
     border-radius: 5px;
 }
-
-/* не понятно, не видно эффект: */
-// .link-wrapper:focus-visible {
-//   outline: 2px dashed orange;
-//   outline-offset: 3px;
-// }
 
 /* end of the stream-labels */
