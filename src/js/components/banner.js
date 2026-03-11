@@ -1,3 +1,11 @@
+import '../../scss/vendors/_bootstrap.scss';
+import '../../scss/vendors/_normalize.scss';
+import '../../scss/index.scss';
+import '../../scss/components/_banner.scss';
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Banner loaded with its styles');
+});
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   const prevBtn = document.querySelector('.prev-btn');
@@ -32,7 +40,6 @@
 //   // Загружаем первое видео при инициализации
 //   loadVideo(currentIndex);
 // });
-
 
 /* Автопрокрутка (может и не нужна, чтобы не мельтешила перед глазами главная трансляция века: если есть кнопки перелистывания тем более */
 // setInterval(() => {

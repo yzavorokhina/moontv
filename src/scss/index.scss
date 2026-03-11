@@ -1,14 +1,35 @@
+
+// Импорт сторонних библиотек:
+// @import 'vendors/bootstrap';
 @import "bootstrap";
-@import "./variables";
-/* Normalize file add after bootstrap: */
-@import "./normalize";
-@import "./header.scss";
-@import "./horizontal-menu.scss";
-@import "./banner.scss";
-@import "./vertical-menu.scss";
-@import "./favourite-channels.scss";
-@import "./favourite-categories.scss";
-@import "./footer.scss";
+// Normalize file add after bootstrap:
+@import "./vendors/normalize";
+
+// Импорт базовых стилей
+@import 'base/variables';
+// @import 'base/mixins';
+// @import 'base/reset';
+
+// Импорт компонентов
+// @import 'components/buttons';
+// @import 'components/forms';
+// @import 'components/header';
+@import 'components/horizontal-menu';
+@import 'components/vertical-menu';
+@import 'components/banner';
+@import 'components/favourite-channels';
+@import 'components/favourite-categories';
+
+// Импорт вёрстки
+@import 'layout/header';
+@import 'layout/footer';
+// @import 'layout/grid';
+
+// Импорт стилей страниц
+// @import 'pages/home';
+// @import 'pages/about';
+// @import 'pages/contact';
+
 
 :root {
     // --font-source-code: "Source Code Pro", monospace;
@@ -61,7 +82,6 @@
 
     --color-dark-buttons-hover: #{$color-dark-buttons-hover-sass};
     --color-dark-blocks-hover: #{$color-dark-blocks-hover-sass};
-
 }
 
 html,

@@ -10,22 +10,25 @@
   "author": "Yuliya Zavorokhina",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
     "build": "npx webpack build",
-    "dev": "npx webpack --watch"
+    "dev": "npx webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
     "jquery": "^3.7.1",
-    "lodash": "^4.17.21",
-    "deploy": "gh-pages -d dist"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^13.0.1",
+    "copy-webpack-plugin": "^14.0.0",
     "css-loader": "^7.1.2",
     "gh-pages": "^6.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.4",
     "mini-css-extract-plugin": "^2.9.4",
+    "rimraf": "^5.0.0",
     "sass": "^1.93.2",
     "sass-loader": "^16.0.6",
     "style-loader": "^4.0.0",
