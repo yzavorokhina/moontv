@@ -8,9 +8,11 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/js/index.js',
-    home: './src/js/pages/home.js',
-    auth: './src/js/pages/auth.js',
-    404: './src/js/pages/404.js',
+    home: './src/js/home.js',
+    auth: './src/js/auth.js',
+    404: './src/js/404.js',
+    channel: './src/js/channel.js',
+
   },
   output: {
     filename: 'js/[name].js',
@@ -77,15 +79,27 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Output Management',
-      template: path.resolve(__dirname, 'src/404.html'),
-      filename: '404.html',
-      chunks: ['404'] // подключает только 404.js
+      template: path.resolve(__dirname, 'src/home.html'),
+      filename: 'home.html',
+      chunks: ['home'] // подключает только home.js
     }),
     new HtmlWebpackPlugin({
       title: 'Output Management',
       template: path.resolve(__dirname, 'src/auth.html'),
       filename: 'auth.html',
       chunks: ['auth'] // подключает только auth.js
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+      template: path.resolve(__dirname, 'src/404.html'),
+      filename: '404.html',
+      chunks: ['404'] // подключает только 404.js
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+      template: path.resolve(__dirname, 'src/channel.html'),
+      filename: 'channel.html',
+      chunks: ['channel'] // подключает только channel.js
     }),
     new CopyWebpackPlugin({
       patterns: [
