@@ -16,12 +16,14 @@
 // @import 'components/header';
 // @import 'components/horizontal-menu';
 @import 'components/vertical-menu';
-@import 'components/banner';
+// @import 'components/banner';
+@import 'components/stream';
 @import 'components/favourite-channels';
 @import 'components/favourite-categories';
 
 // Импорт вёрстки
-@import 'layout/header';
+// @import 'layout/header';
+@import 'layout/header_channel';
 // @import 'layout/footer';
 // @import 'layout/grid';
 
