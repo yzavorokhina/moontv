@@ -1,4 +1,3 @@
-
 // Импорт сторонних библиотек:
 // @import 'vendors/bootstrap';
 @import "bootstrap";
@@ -18,8 +17,9 @@
 @import 'components/vertical-menu';
 // @import 'components/banner';
 @import 'components/stream';
-@import 'components/favourite-channels';
-@import 'components/favourite-categories';
+@import 'components/favourite_category_channel';
+@import 'components/favourite_clips_channel.scss';
+@import 'components/favourite_video_channel';
 
 // Импорт вёрстки
 // @import 'layout/header';
@@ -171,6 +171,135 @@ footer {
     // height: 958px;
     // border: 1px solid green;
 }
+
+
+.channel-discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-shrink: 0;
+    //  width: 100%;
+    width: calc(100vw - 222px);
+    height: 600px;
+    margin-top: 24px;
+    // border: 1px solid green;
+    // background-color: var(--color-background-dark, #16122F);
+
+    background: var(--color-dark-button-scroll-hover, #54506B);
+    background: rgba(84, 80, 107, 0.5);
+}
+
+
+/* channel-horizontal-menu: */
+.channel-horizontal-menu {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    /* width: 100%; */
+    width: calc(100vw - 252px);
+    height: 40px;
+    /* border: 1px solid pink; */
+    margin-top: 16px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.channel-menu {
+    max-width: 1698px;
+    color: var(--color-font-white-light, #ffffff);
+    display: inline-block;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /* border: 1px solid magenta; */
+}
+
+.channel-menu ul {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    /* border: 1px solid rgb(194, 104, 31); */
+}
+
+.channel-menu li {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-background-dark, #16122F);
+    color: var(--color-font-white-light, #ffffff);
+}
+
+.channel-menu li:hover {
+    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    color: var(--color-font-gray-light, #CECED6);
+}
+
+.channel-menu li:first-child {
+    border: none;
+    /* Жирный текст: */
+    // font-weight: bold;
+    background-color: var(--color-accent-light, #FF6F3A);
+}
+
+.channel-menu li:first-child:hover {
+    /* Лёгкое увеличение: */
+    // transform: scale(1.05);
+    background-color: var(--color-accent-dark, #E2552D);
+}
+
+.channel-menu a {
+    color: var(--color-font-white-light, #ffffff);
+    /* Чтобы ссылка занимала всю площадь li: */
+    display: block;
+    /* Плавный переход цвета: */
+    transition: color 0.3s ease;
+}
+
+.channel-menu li:hover a {
+    color: var(--color-font-gray-light, #CECED6);
+}
+
+.channel-menu-first-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: baseline;
+    width: 138px;
+    height: 40px;
+}
+
+/* end of the channel-horizontal-menu */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Notification block: */
 /* MY TODO: stylize close button: */
