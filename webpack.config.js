@@ -12,7 +12,8 @@ module.exports = {
     auth: './src/js/auth.js',
     404: './src/js/404.js',
     channel: './src/js/channel.js',
-
+    category: './src/js/category.js',
+    categories: './src/js/categories.js',
   },
   output: {
     filename: 'js/[name].js',
@@ -100,6 +101,18 @@ module.exports = {
       template: path.resolve(__dirname, 'src/channel.html'),
       filename: 'channel.html',
       chunks: ['channel'] // подключает только channel.js
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+      template: path.resolve(__dirname, 'src/categories.html'),
+      filename: 'categories.html',
+      chunks: ['categories'] // подключает только categories.js
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+      template: path.resolve(__dirname, 'src/category.html'),
+      filename: 'category.html',
+      chunks: ['category'] // подключает только category.js
     }),
     new CopyWebpackPlugin({
       patterns: [

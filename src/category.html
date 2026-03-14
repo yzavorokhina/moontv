@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonTV</title>
+    <link rel="icon" type="image/svg+xml" href="./img/logo_moon_2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <!-- <script defer src="./js/index.js"></script> -->
+</head>
+
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="search">
+                <label for="site-search" class="visually-hidden">Поиск по сайту</label>
+                <input type="search" id="site-search" class="input-with-icon" placeholder="Поиск" aria-label="Search">
+                <a href="#notifications" class="notification-round-button">
+                    <img src="./img/notifications_button.svg" class="button-icon" alt="Search" width="40px"
+                        height="40px">
+                </a>
+            </div>
+            <div class="logo-container">
+                <a href="#" class="logo-img">
+                    <img src="./img/logo_moon_1_1-3.png" style="width: 120px; height: 40px;" alt="MoonTV"
+                        class="logo-icon">
+                </a>
+                <h1 class="logo-text">Moon.tv</h1>
+            </div>
+            <div class="container-menu">
+                <button class="menu-button" type="button" aria-label="Включить звуки музыку">
+                    <a href="./404.html">
+                        <img src="./img/header_icon_music.svg" alt="login" width="26px" height="26px">
+                    </a>
+                </button>
+                <button id="themeToggle" class="menu-button" type="button" aria-label="Переключить тему оформления">
+                    <a href="./404.html">
+                        <img src="./img/header_icon_theme.svg" alt="login" width="26px" height="26px">
+                    </a>
+                </button>
+                <button class="menu-button" type="button" aria-label="Выбрать язык оформления">
+                    <a href="./404.html">
+                        <img src="./img/header_icon_globe.svg" alt="login" width="26px" height="26px">
+                    </a>
+                </button>
+                <button class="menu-button" type="button" aria-label="Войти в свой аккаунт">
+                    <a href="./auth.html">
+                        <img src="./img/header_icon_login.svg" alt="login" width="26px" height="26px">
+                    </a>
+                </button>
+                <div class="login">
+                    <button class="login-button" type="button" aria-label="Войти в личный кабинет">
+                        <a href="./auth.html">
+                            <img src="./img/avatar_disabled.svg" style="width: 60px; height: 60px;"
+                                alt="personal account">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="vertical-blocks">
+                <div class="vertical-menu-container">
+                    <nav class="vertical-menu">
+                        <button class="vertical-menu-title">
+                            <h6>Рекомендуем</h6>
+                        </button>
+                        <ul>
+                            <!-- <li><a href="#">orignMasteR</a></li> -->
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel1_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>orignMasteR</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel2_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>SkyAgent</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel3_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>Lava_effect</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel4_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>VioletStar</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel5_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>StarkySparky</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel6_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>CosmoVedro</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel7_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>SpiceXMan</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel8_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>LikeAPro</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel9_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>satriano</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel10_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>XWhiteStarX</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel11_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>Coding4Kids</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-of-the-main">
+                    <div class="horizontal-blocks">
+                        <div class="main-screen-block">
+                            <div class="horizontal-menu">
+                                <nav class="hMenu">
+                                    <ul>
+                                        <li class="h-menu-first-button"><a href="#">
+                                                <img src="./img/All_icon_for_categories.svg" alt="Иконка ссылки"
+                                                    width="11" height="10">
+                                                Все</a></li>
+                                        <li><a href="#">Обучение</a></li>
+                                        <li><a href="#">Музыка</a></li>
+                                        <li><a href="#">ТВ и Радио</a></li>
+                                        <li><a href="#">Разработка</a></li>
+                                        <li><a href="#">Спорт</a></li>
+                                        <li><a href="#">Чтение</a></li>
+                                        <li><a href="#">Общение</a></li>
+                                        <li><a href="#">Игры</a></li>
+                                        <li><a href="#">Хобби</a></li>
+                                        <li><a href="#">Другое</a></li>
+                                        <button class="h-menu-scroll"
+                                            aria-label="Следующая категория горизонтального меню">
+                                            <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
+                                            <svg class="carousel-arrow" width="30px" height="30px" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
+                                                    fill="#CECED6" />
+                                            </svg>
+                                        </button>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="category-description-container">
+                                <div class="category-description">
+                                    <div class="category-description-img-container">
+                                        <img class="category-description-img" src="./img/category_description_image.svg"
+                                            alt="category-image">
+                                    </div>
+                                    <div class="category-description-title">
+                                        <h2>Разработка игр и программного обеспечения</h2>
+                                        <p>
+                                            Разработка программного обеспечения -
+                                            инженерная дисциплина, процесс разработки,
+                                            посредством которого потребности пользователей
+                                            преобразуются в программный продукт
+                                            игрового или иного назначения.
+                                        </p>
+                                        <div class="statistics-row">
+                                            <button class="follow-button">Отслеживать</button>
+                                            <div class="category-viewers-row" aria-label="category-viewers">
+                                                <span>Зрителей:</span>
+                                                <span class="category-current-viewers">12 тыс.</span>
+                                            </div>
+                                            <div class="category-followers-row" aria-label="category-followers">
+                                                <span>Отслеживающих:</span>
+                                                <span class="category-current-followers">382 тыс.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sorting-buttons-1">
+                                    <button>Онлайн</button>
+                                    <button>Видео</button>
+                                    <button>Клипы</button>
+                                </div>
+                                <div class="sorting-buttons-2">
+                                    <div class="block-buttons-1">
+                                        <div class="category-search-by-language">
+                                            <label for="search-by-language" class="visually-hidden">Язык</label>
+                                            <input type="search" id="language-search" class="search-by-language"
+                                                placeholder="Язык" aria-label="Search">
+                                        </div>
+                                        <div class="category-search-by-tag">
+                                            <label for="search-by-tag" class="visually-hidden">Искать по тегам</label>
+                                            <input type="search" id="tag-search" class="search-by-tag"
+                                                placeholder="Искать по тегам" aria-label="Search">
+                                        </div>
+                                    </div>
+                                    <div class="block-buttons-2">
+                                        <span>Сортировка по:</span>
+                                        <button>
+                                            <!-- License: PD. Made by stephenhutchings: https://github.com/stephenhutchings/typicons.font -->
+                                            <svg fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 24 24"
+                                                version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.895 16.553l-4-8c-.339-.678-1.45-.678-1.789 0l-4 8c-.247.494-.047 1.095.447 1.342.495.248 1.095.046 1.342-.447l.723-1.448h4.764l.724 1.447c.175.351.528.553.895.553.15 0 .303-.034.446-.105.494-.248.695-.848.448-1.342zm-6.277-2.553l1.382-2.764 1.382 2.764h-2.764zM22 18h-6c-.379 0-.725-.214-.895-.553s-.132-.744.095-1.047l4.8-6.4h-4c-.552 0-1-.448-1-1s.448-1 1-1h6c.379 0 .725.214.895.553s.132.744-.095 1.047l-4.8 6.4h4c.552 0 1 .448 1 1s-.448 1-1 1zM14 14h-2c-.552 0-1-.448-1-1s.448-1 1-1h2c.552 0 1 .448 1 1s-.448 1-1 1z" />
+                                            </svg>
+                                            Названию</button>
+                                        <button>
+                                            <!-- License: MIT. Made by michaelampr: https://github.com/michaelampr/jam -->
+                                            <!-- <svg fill="#FFFFFF" width="18px" height="18px" viewBox="-2 -4 24 24"
+                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
+                                                class="jam jam-heart">
+                                                <path
+                                                    d='M3.636 7.208L10 13.572l6.364-6.364a3 3 0 1 0-4.243-4.243L10 5.086l-2.121-2.12a3 3 0 0 0-4.243 4.242zM9.293 1.55l.707.707.707-.707a5 5 0 1 1 7.071 7.071l-7.07 7.071a1 1 0 0 1-1.415 0l-7.071-7.07a5 5 0 1 1 7.07-7.071z' />
+                                            </svg> -->
+
+                                            <!-- License: MIT. Made by Microsoft: https://github.com/microsoft/fluentui-system-icons -->
+                                            <svg width="16px" height="16px" viewBox="0 0 28 28" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <!-- Uploaded to SVGRepo https://www.svgrepo.com -->
+                                                <title>ic_fluent_people_28_regular</title>
+                                                <desc>Created with Sketch.</desc>
+                                                <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd">
+                                                    <g id="ic_fluent_people_28_regular" fill="#FFFFFF"
+                                                        fill-rule="nonzero">
+                                                        <path
+                                                            d="M4,16 L15,16.001 C16.0538182,16.001 16.9181157,16.8164855 16.9945109,17.8516842 L17,18.001 L17,20.5 C16.999,24.7 12.713,26 9.5,26 C6.35126,26 2.1710504,24.75148 2.00510151,20.7485328 L2,20.5 L2,18 C2,16.9461818 2.81639669,16.0818843 3.85080841,16.0054891 L4,16 Z M24,16 L24.1491916,16.0054891 C25.1318827,16.0780645 25.9178153,16.8617218 25.9939518,17.8434235 L26,18 L26,20 C25.999,23.759 22.57,25 20,25 C18.942,25 17.741,24.785 16.691,24.275 C17.009,23.897 17.278,23.477 17.488,23.007 C18.4456,23.427 19.4789867,23.4924578 19.9157784,23.4993188 L20.2043433,23.4963225 C21.2400556,23.4606629 24.334766,23.1116572 24.4936471,20.2325914 L24.5,20 L24.5,18 C24.5,17.7546667 24.3222222,17.5504198 24.0895748,17.5080604 L24,17.5 L17.949,17.501 C17.865,16.999625 17.6554375,16.5434219 17.3544785,16.1605273 L17.22,16.001 L24,16 Z M4,17.5 L3.899344,17.51 C3.77496,17.53528 3.69,17.6028 3.646,17.646 C3.6028,17.69 3.53528,17.77432 3.51,17.89896 L3.5,18 L3.5,20.5 C3.5,21.839 4.087,22.829 5.295,23.525 C6.29135714,24.1007143 7.68434694,24.4479337 9.15851093,24.4945991 L9.5,24.5 L9.93487113,24.4897846 C11.4554554,24.4219073 15.3140372,23.9331951 15.4935181,20.7322803 L15.5,20.499 L15.5,18.001 C15.5,17.7565556 15.3222222,17.5516173 15.0895748,17.5090933 L15,17.501 L4,17.5 Z M9.5,3 C12.538,3 15,5.463 15,8.5 C15,11.537 12.538,14 9.5,14 C6.462,14 4,11.537 4,8.5 C4,5.463 6.462,3 9.5,3 Z M20.5,5 C22.985,5 25,7.015 25,9.5 C25,11.985 22.985,14 20.5,14 C18.015,14 16,11.985 16,9.5 C16,7.015 18.015,5 20.5,5 Z M9.5,4.5 C7.294,4.5 5.5,6.294 5.5,8.5 C5.5,10.706 7.294,12.5 9.5,12.5 C11.706,12.5 13.5,10.706 13.5,8.5 C13.5,6.294 11.706,4.5 9.5,4.5 Z M20.5,6.5 C18.846,6.5 17.5,7.846 17.5,9.5 C17.5,11.154 18.846,12.5 20.5,12.5 C22.154,12.5 23.5,11.154 23.5,9.5 C23.5,7.846 22.154,6.5 20.5,6.5 Z"
+                                                            id="🎨-Color"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            Кол-ву зрителей</button>
+                                        <button>
+                                            <!-- License: MIT. Made by Microsoft: https://github.com/microsoft/fluentui-system-icons -->
+                                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.99984 5.75C1.99984 5.33579 2.33562 5 2.74984 5H21.2498C21.664 5 21.9998 5.33579 21.9998 5.75C21.9998 6.16421 21.664 6.5 21.2498 6.5H2.74984C2.33562 6.5 1.99984 6.16421 1.99984 5.75ZM1.99984 12.25C1.99984 11.8358 2.33562 11.5 2.74984 11.5H21.2498C21.664 11.5 21.9998 11.8358 21.9998 12.25C21.9998 12.6642 21.664 13 21.2498 13H2.74984C2.33562 13 1.99984 12.6642 1.99984 12.25ZM18.9998 18.75C18.9998 18.3358 19.3356 18 19.7498 18H21.2498C21.664 18 21.9998 18.3358 21.9998 18.75C21.9998 19.1642 21.664 19.5 21.2498 19.5H19.7498C19.3356 19.5 18.9998 19.1642 18.9998 18.75Z"
+                                                    fill="#FFFFFF" />
+                                                <path
+                                                    d="M2.41586 18.7377C2.62651 18.5972 2.83038 18.4376 3.02319 18.2633V22.25C3.02319 22.6642 3.35898 23 3.77319 23C4.18741 23 4.52319 22.6642 4.52319 22.25V15.75C4.52319 15.356 4.21942 15.033 3.83332 15.0024C3.46457 14.9719 3.12113 15.2183 3.03989 15.5897C2.91329 16.1684 2.34817 16.98 1.58381 17.4896C1.23916 17.7194 1.14603 18.185 1.3758 18.5297C1.60556 18.8743 2.07121 18.9674 2.41586 18.7377Z"
+                                                    fill="#FFFFFF" />
+                                                <path
+                                                    d="M7.99976 17.5227C7.99976 16.995 8.44328 16.5 8.98552 16.5C9.39269 16.5 9.72045 16.6909 9.87891 16.9345C10.0148 17.1434 10.0963 17.4998 9.78534 18.0292C9.63583 18.2837 9.4098 18.5114 9.10378 18.7531C8.95132 18.8735 8.78821 18.9904 8.61083 19.1158L8.53705 19.1679C8.38482 19.2753 8.22186 19.3902 8.06445 19.5087C7.32083 20.0683 6.49976 20.8536 6.49976 22.25C6.49976 22.6642 6.83554 23 7.24976 23L7.25793 23L7.26611 23H10.7003C11.1145 23 11.4503 22.6642 11.4503 22.25C11.4503 21.8358 11.1145 21.5 10.7003 21.5H8.18741C8.34819 21.2182 8.61035 20.9752 8.96639 20.7072C9.10386 20.6038 9.24576 20.5036 9.39901 20.3955L9.47661 20.3407C9.6552 20.2145 9.84692 20.0775 10.0335 19.9302C10.4055 19.6364 10.7942 19.2731 11.0787 18.789C11.6356 17.8411 11.625 16.868 11.1363 16.1166C10.6701 15.4 9.84073 15 8.98552 15C7.50797 15 6.49976 16.2777 6.49976 17.5227C6.49976 17.9369 6.83554 18.2727 7.24976 18.2727C7.66397 18.2727 7.99976 17.9369 7.99976 17.5227Z"
+                                                    fill="#FFFFFF" />
+                                                <path
+                                                    d="M14.4709 17.1377C14.5029 17.0255 14.5792 16.8666 14.7218 16.7409C14.8502 16.6276 15.0773 16.5 15.4997 16.5C16.261 16.5 16.4997 17.0002 16.4997 17.2273C16.4997 17.4724 16.4474 17.7178 16.3099 17.8907C16.1986 18.0308 15.9313 18.25 15.208 18.25C14.7938 18.25 14.458 18.5858 14.458 19C14.458 19.4142 14.7938 19.75 15.208 19.75C15.4815 19.75 15.8594 19.7864 16.1424 19.9191C16.2743 19.9809 16.3569 20.0505 16.4069 20.1207C16.4517 20.1837 16.4997 20.287 16.4997 20.4773C16.4997 20.965 16.3475 21.1807 16.2191 21.2891C16.068 21.4167 15.8237 21.5 15.4997 21.5C15.1377 21.5 14.9328 21.4374 14.8072 21.3578C14.6958 21.2873 14.5675 21.1538 14.4621 20.8338C14.3327 20.4403 13.9087 20.2263 13.5153 20.3558C13.1218 20.4852 12.9078 20.9092 13.0373 21.3026C13.2236 21.8689 13.5328 22.3263 14.0048 22.6252C14.4624 22.9149 14.9867 23 15.4997 23C16.0507 23 16.6815 22.8618 17.1866 22.4353C17.7145 21.9898 17.9997 21.3191 17.9997 20.4773C17.9997 20.0027 17.8699 19.5891 17.6285 19.2504C17.5499 19.14 17.4628 19.0423 17.3706 18.9559C17.4102 18.9135 17.4481 18.8695 17.4842 18.8241C17.9221 18.2731 17.9997 17.6321 17.9997 17.2273C17.9997 16.1543 17.0718 15 15.4997 15C14.7343 15 14.1483 15.2466 13.7295 15.616C13.325 15.9728 13.1202 16.4048 13.0285 16.7259C12.9148 17.1242 13.1455 17.5393 13.5438 17.653C13.9421 17.7667 14.3572 17.536 14.4709 17.1377Z"
+                                                    fill="#FFFFFF" />
+                                            </svg>
+                                            Кол-ву просмотров</button>
+                                        <button>
+                                            <!-- License: PD. Made by Aleksey Popov: https://dribbble.com/AlekseyPopov -->
+                                            <svg fill="#FFFFFF" width="18px" height="18px" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M13,11 L17,11 L17,13 L11,13 L11,6 L13,6 L13,11 Z" />
+                                            </svg>
+                                            Времени </button>
+                                    </div>
+                                </div>
+                                <!-- <div class="current-language-and-tag">
+                                    <div class="category-languages-row" role="group" aria-label="category-tags-group">
+                                        <span>Язык каналов:</span> <span
+                                            class="category-current-language">English</span>
+                                    </div>
+                                    <div class="category-tags-row" role="group" aria-label="category-tags-group">
+                                        <span>Теги каналов:</span> <span class="category-current-tag">Programming</span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="favourite-categories">
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-category-container">
+                                <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="show-all-button-row">
+                                <button class="show-all-button" type="button"
+                                    aria-label="Перейти в раздел всех категорий и жанров">Назад на главную</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notification" id="myElement">
+                <img class="notification-moon-logo-1" src="./img/notification_moon_1.svg" alt="moon-logo">
+                <img class="notification-moon-logo-2" src="./img/notification_moon_2.svg" alt="moon-logo">
+                <img class="notification-moon-logo-3" src="./img/notification_moon_3.svg" alt="moon-logo">
+                <a href="/page" class="link-wrapper">
+                    <h4>Присоединяйтесь к сообществу межгалактических трансляций на Moon.tv!</h4>
+                </a>
+                <a href="/page" class="link-wrapper">
+                    <button type="button" class="button-notification">Войти / Регистрация</button>
+                </a>
+                <button id="closeButton" type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="buttonUp buttonUp_hide">
+                <button> </button>
+            </div>
+            <div class=footer-container>
+                <p>12+ ©2025 ООО "VK Planets". <br>
+                    Все права защищены. <br>
+                    Все товарные знаки являются <br>
+                    собственностью их владельцев.
+                </p>
+                <div class="footer-menu">
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Рекомендательные технологии</a>
+                    <a href="#">Информация о компании</a>
+                    <a href="#">Техническая поддержка </a>
+                </div>
+                <hr class="horizontal-separator">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
