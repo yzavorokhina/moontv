@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonTV</title>
+    <title>MoonTV_Categories</title>
     <link rel="icon" type="image/svg+xml" href="./img/logo_moon_2.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
                 </a>
             </div>
             <div class="logo-container">
-                <a href="#" class="logo-img">
+                <a href="/dist/index.html" class="logo-img">
                     <img src="./img/logo_moon_1_1-3.png" style="width: 120px; height: 40px;" alt="MoonTV"
                         class="logo-icon">
                 </a>
@@ -67,8 +67,8 @@
         </header>
         <main>
             <div class="vertical-blocks">
-                <div class="vertical-menu-container">
-                    <nav class="vertical-menu">
+                <div class="vertical-menu-container" >
+                    <nav class="vertical-menu" id="vertical-menu">
                         <button class="vertical-menu-title">
                             <h6>Рекомендуем</h6>
                         </button>
@@ -270,20 +270,20 @@
                             <div class="horizontal-menu">
                                 <nav class="hMenu">
                                     <ul>
-                                        <li class="h-menu-first-button"><a href="#">
+                                        <li class="h-menu-first-button"><a href="/dist/categories.html">
                                                 <img src="./img/All_icon_for_categories.svg" alt="Иконка ссылки"
                                                     width="11" height="10">
                                                 Все</a></li>
-                                        <li><a href="#">Обучение</a></li>
-                                        <li><a href="#">Музыка</a></li>
-                                        <li><a href="#">ТВ и Радио</a></li>
-                                        <li><a href="#">Разработка</a></li>
-                                        <li><a href="#">Спорт</a></li>
-                                        <li><a href="#">Чтение</a></li>
-                                        <li><a href="#">Общение</a></li>
-                                        <li><a href="#">Игры</a></li>
-                                        <li><a href="#">Хобби</a></li>
-                                        <li><a href="#">Другое</a></li>
+                                        <li><a href="/dist/category.html?id=1">Обучение</a></li>
+                                        <li><a href="/dist/category.html?id=2">Музыка</a></li>
+                                        <li><a href="/dist/category.html?id=11">ТВ и Радио</a></li>
+                                        <li><a href="/dist/category.html?id=1">Разработка</a></li>
+                                        <li><a href="/dist/category.html?id=5">Спорт</a></li>
+                                        <li><a href="/dist/category.html?id=6">Чтение</a></li>
+                                        <li><a href="/dist/category.html?id=11">Общение</a></li>
+                                        <li><a href="/dist/category.html?id=8">Игры</a></li>
+                                        <li><a href="/dist/category.html?id=7">Хобби</a></li>
+                                        <li><a href="/dist/category.html?id=4">Другое</a></li>
                                         <button class="h-menu-scroll"
                                             aria-label="Следующая категория горизонтального меню">
                                             <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
@@ -300,7 +300,7 @@
                         </div>
                         <div class="favourite-categories">
                             <div class="arrow-back">
-                                <a href="#" class="arrowed">
+                                <a href="/dist/index.html" class="arrowed">
                                     <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
                                     <svg class="carousel-arrow" width="20px" height="20px" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1732,6 +1732,7 @@
                             </div>
                             <div class="show-all-button-row">
                                 <button class="show-all-button" type="button"
+                                onclick="window.location.href='/dist/index.html'"
                                     aria-label="Перейти в раздел всех категорий и жанров">Назад на главную</button>
                             </div>
                         </div>
@@ -1753,7 +1754,7 @@
         </main>
         <footer class="site-footer">
             <div class="buttonUp buttonUp_hide">
-                <button> </button>
+                <button id="buttonUp"></button>
             </div>
             <div class=footer-container>
                 <p>12+ ©2025 ООО "VK Planets". <br>

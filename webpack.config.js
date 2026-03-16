@@ -65,6 +65,25 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader"
       },
+      {
+        test: /\.[mc]?[jt]sx?$/i,
+        exclude: /node_modules/,
+        use: [
+          { 
+            loader: 'babel-loader',
+            options: {
+                targets: "defaults",
+                plugins: [
+                  'babel-plugin-react-compiler',
+                ],
+                presets: [
+                  ["@babel/preset-env"],
+                  ["@babel/preset-react", { "runtime": "automatic" }]
+                ]
+            }
+          },
+        ]
+      }
     ]
   },
   plugins: [

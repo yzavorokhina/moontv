@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonTV</title>
+    <title>MoonTV_Channel</title>
     <link rel="icon" type="image/svg+xml" href="./img/logo_moon_2.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
                 </a>
             </div>
             <div class="logo-container">
-                <a href="#" class="logo-img">
+                <a href="/dist/index.html" class="logo-img">
                     <img src="./img/logo_moon_1_1-3.png" style="width: 120px; height: 40px;" alt="MoonTV"
                         class="logo-icon">
                 </a>
@@ -67,7 +67,7 @@
         <main>
             <div class="vertical-blocks">
                 <div class="vertical-menu-container">
-                    <nav class="vertical-menu">
+                    <nav class="vertical-menu" id="vertical-menu">
                         <button class="vertical-menu-title">
                             <h6>Рекомендуем</h6>
                         </button>
@@ -274,7 +274,7 @@
                                         <!-- <div class="video-container">
                                     <video class="current-video" controls>
                                         <source src="video1.mp4" type="video/mp4"> -->
-                                        <iframe width="1280px" height="720px"
+                                        <iframe id="streamTV" width="1280px" height="720px"
                                             src="https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd"
                                             title="YouTube video player" frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -294,14 +294,14 @@
                                         <div class="banner-stream-info">
                                             <div class="banner-ava">
                                                 <a href="">
-                                                    <img src="./img/banner_ava.svg" style="width: 60px; height: 60px;"
+                                                    <img id="channelIcon" src="./img/banner_ava.svg" style="width: 60px; height: 60px;"
                                                         alt="personal account">
                                                 </a>
                                             </div>
                                             <div class="stream-info">
-                                                <h5>Разрабатываю игру KUPOL. Выращивание фруктов под колпаком</h5>
-                                                <h5>День 4 / Основная концепция</h5>
-                                                <a href="#">neuro_activate</a>
+                                                <h5 id="streamTitle">Разрабатываю игру KUPOL. Выращивание фруктов под колпаком ???</h5>
+                                                <h5 id="streamDes">День 4 / Основная концепция</h5>
+                                                <a href="#" id="channelName">neuro_activate</a>
                                             </div>
                                         </div>
                                         <div class="stream-statistic">
@@ -315,7 +315,7 @@
                                             <div class="buttons-row">
                                                 <button class="follow-button">Отслеживать</button>
                                                 <button class="subscribe-button">Подписаться</button>
-                                                <span class="age-rating">12+</span>
+                                                <span id="ageRating" class="age-rating">12+</span>
                                             </div>
                                         </div>
                                     </div>

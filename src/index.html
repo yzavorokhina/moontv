@@ -13,7 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <!-- <script defer src="./js/index.js"></script> -->
 </head>
 
 <body>
@@ -28,31 +27,31 @@
                 </a>
             </div>
             <div class="logo-container">
-                <a href="#" class="logo-img">
+                <a href="/dist/index.html" class="logo-img">
                     <img src="./img/logo_moon_1_1-3.png" style="width: 120px; height: 40px;" alt="MoonTV"
                         class="logo-icon">
                 </a>
                 <h1 class="logo-text">Moon.tv</h1>
             </div>
             <div class="container-menu">
-                <button class="menu-button" type="button" aria-label="Включить звуки музыку">
+                <button class="menu-button" type="button" aria-label="Включить звук">
                     <a href="./404.html">
-                        <img src="./img/header_icon_music.svg" alt="login" width="26px" height="26px">
+                        <img src="./img/header_icon_music.svg" title="mute" width="26px" height="26px">
                     </a>
                 </button>
                 <button id="themeToggle" class="menu-button" type="button" aria-label="Переключить тему оформления">
                     <a href="./404.html">
-                        <img src="./img/header_icon_theme.svg" alt="login" width="26px" height="26px">
+                        <img src="./img/header_icon_theme.svg" title="theme" width="26px" height="26px">
                     </a>
                 </button>
                 <button class="menu-button" type="button" aria-label="Выбрать язык оформления">
                     <a href="./404.html">
-                        <img src="./img/header_icon_globe.svg" alt="login" width="26px" height="26px">
+                        <img src="./img/header_icon_globe.svg" title="language" width="26px" height="26px">
                     </a>
                 </button>
                 <button class="menu-button" type="button" aria-label="Войти в свой аккаунт">
                     <a href="./auth.html">
-                        <img src="./img/header_icon_login.svg" alt="login" width="26px" height="26px">
+                        <img src="./img/header_icon_login.svg" title="login" width="26px" height="26px">
                     </a>
                 </button>
                 <div class="login">
@@ -68,7 +67,7 @@
         <main>
             <div class="vertical-blocks">
                 <div class="vertical-menu-container">
-                    <nav class="vertical-menu">
+                    <nav class="vertical-menu" id="vertical-menu">
                         <button class="vertical-menu-title">
                             <h6>Рекомендуем</h6>
                         </button>
@@ -270,20 +269,20 @@
                             <div class="horizontal-menu">
                                 <nav class="hMenu">
                                     <ul>
-                                        <li class="h-menu-first-button"><a href="#">
+                                        <li class="h-menu-first-button"><a href="/dist/categories.html">
                                                 <img src="./img/All_icon_for_categories.svg" alt="Иконка ссылки"
                                                     width="11" height="10">
                                                 Все</a></li>
-                                        <li><a href="#">Обучение</a></li>
-                                        <li><a href="#">Музыка</a></li>
-                                        <li><a href="#">ТВ и Радио</a></li>
-                                        <li><a href="#">Разработка</a></li>
-                                        <li><a href="#">Спорт</a></li>
-                                        <li><a href="#">Чтение</a></li>
-                                        <li><a href="#">Общение</a></li>
-                                        <li><a href="#">Игры</a></li>
-                                        <li><a href="#">Хобби</a></li>
-                                        <li><a href="#">Другое</a></li>
+                                        <li><a href="/dist/category.html?id=1">Обучение</a></li>
+                                        <li><a href="/dist/category.html?id=2">Музыка</a></li>
+                                        <li><a href="/dist/category.html?id=11">ТВ и Радио</a></li>
+                                        <li><a href="/dist/category.html?id=1">Разработка</a></li>
+                                        <li><a href="/dist/category.html?id=5">Спорт</a></li>
+                                        <li><a href="/dist/category.html?id=6">Чтение</a></li>
+                                        <li><a href="/dist/category.html?id=11">Общение</a></li>
+                                        <li><a href="/dist/category.html?id=8">Игры</a></li>
+                                        <li><a href="/dist/category.html?id=7">Хобби</a></li>
+                                        <li><a href="/dist/category.html?id=4">Другое</a></li>
                                         <button class="h-menu-scroll"
                                             aria-label="Следующая категория горизонтального меню">
                                             <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
@@ -598,7 +597,7 @@
                                                 </div>
                                                 <div class="favorite-channel-info">
                                                     <h6 class="favorite-channel-title">LuckyKhajiit</h6>
-                                                    <a href="#" class="category-name">SkyRim Chatting</a>
+                                                    <a href="#" class="category-name">Skyrim Chatting</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -653,36 +652,12 @@
                                     <div class="section-title">
                                         <a href="/page" class="link-wrapper">
                                             <h2>
-                                                <!-- License: MIT. Made by Kenan Gundogan: https://github.com/kenangundogan/fontisto -->
                                                 <svg fill="#CECED6" width="16px" height="16px" viewBox="0 0 24 24"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="m19.555 23.411-6.664-3.285c-.163-.082-.355-.13-.559-.13-.235 0-.455.064-.643.175l.006-.003-6.416 3.75c-.086.05-.19.079-.3.079-.336 0-.609-.273-.609-.609 0-.033.003-.064.007-.096v.003l.994-7.542c.007-.049.011-.105.011-.162 0-.364-.155-.691-.403-.92l-.001-.001-4.571-4.247c-.248-.231-.402-.56-.402-.924 0-.625.454-1.144 1.05-1.246l.007-.001 5.987-1.108c.421-.078.765-.355.935-.727l.003-.008 2.491-5.663c.204-.444.646-.746 1.157-.746.48 0 .897.266 1.114.659l.003.007 2.881 5.471c.197.365.558.62.981.666h.006l6.045.681c.647.061 1.149.601 1.149 1.259 0 .332-.128.635-.338.86l.001-.001-4.27 4.562c-.211.224-.341.527-.341.86 0 .088.009.173.026.256l-.001-.008 1.52 7.453c.009.04.015.086.015.134 0 .337-.273.61-.61.61-.095 0-.185-.022-.265-.061l.004.002z" />
                                                 </svg>
-
-                                                <!-- License: MIT. Made by Jackhenry Design: https://github.com/Banno/jha-design -->
-                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#CECED6" width="20px"
-                                                    height="20px" viewBox="0 0 24 24">
-                                                    <path
-                                                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z" />
-                                                </svg> -->
-
-                                                <!-- License: PD. Made by premiumpixels: https://www.premiumpixels.com/freebies/80-mini-icons-psd-icon-font/ -->
-                                                <!-- <svg fill="#CECED6" width="20px" height="20px" viewBox="-64 0 512 512"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g id="_71_Pin" data-name="71 Pin" transform="translate(-64)">
-                                                        <g id="Group_186" data-name="Group 186">
-                                                            <g id="Group_185" data-name="Group 185">
-                                                                <path id="Path_95" data-name="Path 95"
-                                                                    d="M256,0C149.969,0,64,85.969,64,192S256,512,256,512,448,298.031,448,192,362.031,0,256,0Zm0,320A128,128,0,1,1,384,192,128.006,128.006,0,0,1,256,320Z"
-                                                                    fill-rule="evenodd" />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </svg> -->
-
-                                                <!-- <img src="./img/pin on main.svg" style="width: 24px; height: 24px;"
-                                                    alt="pin of the title"> -->
+                                        
                                                 Разработка игр и ПО
                                             </h2>
                                         </a>
@@ -703,7 +678,13 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+
+                                <!-- React software_development -->
+                                <div class="channels-row" id="favorite_software_development">
+                                </div>
+                                <!-- React software_development end -->
+
+                                <!-- <div class="channels-row">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video1_1.svg" alt="foto">
@@ -908,7 +889,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="show-all-link divider-container">
                                     <div class="divider-line"></div>
                                     <button class="divider-button">
@@ -964,7 +945,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+                                <div class="channels-row" id="favorite_music">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video2_1.svg" alt="foto">
@@ -1226,7 +1207,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+                                <div class="channels-row" id="favorite_english">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video3_1.svg" alt="foto">
@@ -1474,7 +1455,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+                                <div class="channels-row" id="favorite_djs">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video4_1.svg" alt="foto">
@@ -1728,7 +1709,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+                                <div class="channels-row" id="favorite_dance">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video5_1.svg" alt="foto">
@@ -1977,7 +1958,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+                                <div class="channels-row" id="favorite_reading">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video6_1.svg" alt="foto">
@@ -2029,7 +2010,7 @@
                                                 </a>
                                                 <div class="stream-titles">
                                                     <a href="/page" class="link-wrapper">
-                                                        <h5 class="stream-title">Un autre livre pour ceux qui ont «lu
+                                                        <h5 class="stream-title">Un autre livre pour ceux qui ont "lu
                                                             tous les livres"</h5>
                                                     </a>
                                                     <a href="/page" class="link-wrapper">
@@ -2230,7 +2211,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+                                <div class="channels-row" id="favorite_tdu2">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video7_1.svg" alt="foto">
@@ -2410,7 +2391,7 @@
                                             <div class="tags-row" role="group" aria-label="tags-group">
 
                                                 <a href="/page" class="link-wrapper">
-                                                    <button type="button" class="button-tag">English</button>
+                                                    <button type="button" class="button-tag">Русский</button>
                                                 </a>
                                             </div>
                                         </div>
@@ -2479,7 +2460,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="channels-row">
+                                <div class="channels-row" id="favorite_skyrim">
                                     <div class="channel-card mb-3">
                                         <a href="/page" class="link-wrapper">
                                             <img class="card-img-top" src="./img/Mask group_video8_1.svg" alt="foto">
@@ -2501,7 +2482,7 @@
                                                 </div>
                                             </div>
                                             <a href="/page" class="link-wrapper">
-                                                <p class="category-name-info">SkyRim</p>
+                                                <p class="category-name-info">Skyrim</p>
                                             </a>
                                             <div class="tags-row" role="group" aria-label="tags-group">
                                                 <a href="/page" class="link-wrapper">
@@ -2539,7 +2520,7 @@
                                                 </div>
                                             </div>
                                             <a href="/page" class="link-wrapper">
-                                                <p class="category-name-info">SkyRim</p>
+                                                <p class="category-name-info">Skyrim</p>
                                             </a>
                                             <div class="tags-row" role="group" aria-label="tags-group">
                                                 <a href="/page" class="link-wrapper">
@@ -2581,7 +2562,7 @@
                                                 </div>
                                             </div>
                                             <a href="/page" class="link-wrapper">
-                                                <p class="category-name-info">SkyRim</p>
+                                                <p class="category-name-info">Skyrim</p>
                                             </a>
                                             <div class="tags-row" role="group" aria-label="tags-group">
                                                 <a href="/page" class="link-wrapper">
@@ -2614,7 +2595,7 @@
                                                 </a>
                                                 <div class="stream-titles">
                                                     <a href="/page" class="link-wrapper">
-                                                        <h5 class="stream-title">This is my first time playing SkyRim
+                                                        <h5 class="stream-title">This is my first time playing Skyrim
                                                         </h5>
                                                     </a>
                                                     <a href="/page" class="link-wrapper">
@@ -2623,7 +2604,7 @@
                                                 </div>
                                             </div>
                                             <a href="/page" class="link-wrapper">
-                                                <p class="category-name-info">SkyRim</p>
+                                                <p class="category-name-info">Skyrim</p>
                                             </a>
                                             <div class="tags-row" role="group" aria-label="tags-group">
                                                 <a href="/page" class="link-wrapper">
@@ -2664,7 +2645,7 @@
                                                 </div>
                                             </div>
                                             <a href="/page" class="link-wrapper">
-                                                <p class="category-name-info">SkyRim</p>
+                                                <p class="category-name-info">Skyrim</p>
                                             </a>
                                             <div class="tags-row" role="group" aria-label="tags-group">
 
@@ -2710,6 +2691,7 @@
 
                             <div class="show-all-button-row">
                                 <button class="show-all-button" type="button"
+                                onclick="window.location.href='/dist/categories.html'"
                                     aria-label="Перейти в раздел всех категорий и жанров">Посмотреть все
                                     категории</button>
                             </div>
@@ -2732,7 +2714,7 @@
         </main>
         <footer class="site-footer">
             <div class="buttonUp buttonUp_hide">
-                <button> </button>
+                <button id="buttonUp"></button>
             </div>
             <div class=footer-container>
                 <p>12+ ©2025 ООО "VK Planets". <br>

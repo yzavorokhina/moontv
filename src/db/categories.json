@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Software and game development",
+        "description": "Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 12000,
+        "followers": 382
+    },
+    {
+        "id": 2,
+        "name": "Music",
+        "description": "Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 1238,
+        "followers": 2798
+    },
+    {
+        "id": 3,
+        "name": "English",
+        "description": "Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 12003,
+        "followers": 2323
+    },
+    {
+        "id": 4,
+        "name": "DJs",
+        "description": "Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 12020,
+        "followers": 3442
+    },
+    {
+        "id": 5,
+        "name": "Dance Central",
+        "description": "Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 12870,
+        "followers": 64554
+    },
+    {
+        "id": 6,
+        "name": "Writing and Reading",
+        "description": "Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 120,
+        "followers": 445
+    },
+    {
+        "id": 7,
+        "name": "TDU2",
+        "description": "Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 2000,
+        "followers": 544
+    },
+    {
+        "id": 8,
+        "name": "Skyrim",
+        "description": "The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 1000,
+        "followers": 221
+    },
+    {
+        "id": 9,
+        "name": "Mandala Dance",
+        "description": "Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 12750,
+        "followers": 12
+    },
+    {
+        "id": 10,
+        "name": "Tribal Dance",
+        "description": "Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 1230,
+        "followers": 34
+    },
+    {
+        "id": 11,
+        "name": "Chatting",
+        "description": "(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.",
+        "imageUrl": "./images/category_description_image.svg",
+        "audience": 330,
+        "followers": 38
+    }
+]
