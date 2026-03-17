@@ -2,20 +2,21 @@ html,
 body {
     height: 100%;
     margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
-    display: flex !important;
+    display: flex;
     align-items: center;
-    align-items: center !important;
+    align-items: center;
     justify-content: center;
-
     width: 100%;
-
+    height: 100vh;
     background-image: url("../img/404_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
     font-family: "Silkscreen", sans-serif;
     /* font-family: "Press Start 2P", system-ui;*/
     font-weight: 400;
@@ -25,23 +26,21 @@ body {
 
 .wrapper {
     display: flex;
-    flex-direction: column !important;
-    align-items: center !important;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     /* border: 1px solid lime; */
 }
 
 .container {
     display: flex;
-    flex-direction: column !important;
-    align-items: center !important;
-
+    flex-direction: column;
+    align-items: center;
     width: 1245px;
     height: 626px;
     margin: 0 auto;
     margin-bottom: 100px;
     /* border: 1px solid red; */
-
     background-color: transparent;
 }
 
@@ -53,43 +52,38 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-
     background-color: rgba(22, 18, 47, 0.8);
 }
 
-h1 {
+.error-message {
     display: flex;
-
     color: #E2552D;
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
-
-    /* font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal; */
+    font-size: 32px;
+    // /* font-family: "Press Start 2P", system-ui;
+    // font-weight: 400;
+    // font-style: normal;
 }
 
 .numbers {
     position: relative;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0px;
     flex-shrink: 0;
-
-    width: 1245px;
+    width: 100%;
     height: 626px;
-    /* border: 1px solid rgb(255, 0, 212); */
+    // border: 1px solid rgb(47, 202, 26);
 }
 
 .four {
     position: absolute;
     top: 0px;
     left: 0px;
-
     display: flex;
     width: 300px;
     height: 626px;
@@ -100,7 +94,6 @@ h1 {
     position: absolute;
     top: 0px;
     left: 472.5px;
-
     display: flex;
     width: 300px;
     height: 626px;
@@ -111,19 +104,16 @@ h1 {
     position: absolute;
     top: 0px;
     left: 945px;
-
     display: flex;
     width: 300px;
     height: 626px;
     /* border: 1px solid blue; */
-
 }
 
 #page1 {
     position: absolute;
     top: 40px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -133,7 +123,6 @@ h1 {
     position: absolute;
     top: 94px;
     left: 140px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -143,7 +132,6 @@ h1 {
     position: absolute;
     top: 185px;
     left: 50px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -153,7 +141,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 0px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -163,7 +150,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 120px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -173,7 +159,6 @@ h1 {
     position: absolute;
     top: 160px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -183,7 +168,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -193,7 +177,6 @@ h1 {
     position: absolute;
     top: 400px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -203,7 +186,6 @@ h1 {
     position: absolute;
     top: 520px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -213,7 +195,6 @@ h1 {
     position: absolute;
     top: 527px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -223,7 +204,6 @@ h1 {
     position: absolute;
     top: 40px;
     left: 0px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -233,7 +213,6 @@ h1 {
     position: absolute;
     top: 160px;
     left: 0px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -243,7 +222,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 0px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -253,7 +231,6 @@ h1 {
     position: absolute;
     top: 400px;
     left: 0px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -263,7 +240,6 @@ h1 {
     position: absolute;
     top: 520px;
     left: 0px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -273,7 +249,6 @@ h1 {
     position: absolute;
     top: 520px;
     left: 120px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -283,7 +258,6 @@ h1 {
     position: absolute;
     top: 520px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -293,7 +267,6 @@ h1 {
     position: absolute;
     top: 400px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -303,7 +276,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -313,7 +285,6 @@ h1 {
     position: absolute;
     top: 160px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -323,7 +294,6 @@ h1 {
     position: absolute;
     top: 40px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -333,19 +303,16 @@ h1 {
     position: absolute;
     top: 40px;
     left: 120px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
-
-    /* transform: rotate(45deg); */
+    transform: rotate(45deg); 
 }
 
 #four1 {
     position: absolute;
     top: 40px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -355,7 +322,6 @@ h1 {
     position: absolute;
     top: 94px;
     left: 140px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -365,7 +331,6 @@ h1 {
     position: absolute;
     top: 185px;
     left: 60px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -375,7 +340,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 0px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -385,7 +349,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 120px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -395,7 +358,6 @@ h1 {
     position: absolute;
     top: 160px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -405,7 +367,6 @@ h1 {
     position: absolute;
     top: 280px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
@@ -415,50 +376,54 @@ h1 {
     position: absolute;
     top: 400px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
 }
 
 #four9 {
-        position: absolute;
+    position: absolute;
     top: 520px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
 }
 
 #four10 {
-        position: absolute;
+    position: absolute;
     top: 527px;
     left: 240px;
-
     width: 60px;
     height: 60px;
     border: 4px solid #E2552D;
 }
 
-
-/* .error-text[_ngcontent-ng-c2416431125] {
-    margin-bottom: 24px;
-    white-space: pre-wrap;
-    color: #CECED6;
+.emoji {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 626px;
+    // border: 1px solid rgb(255, 0, 212);
+    visibility: hidden;
 }
 
-.gf-title-medium {
-    font: var(--sys-title-medium);
+.error-text {
+    margin-bottom: 24px;
+    white-space: pre-wrap;
+    color: var(--color-accent-light, #FF6F3A);
+    visibility: hidden;
 }
 
 html,
 body,
 div,
 span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
@@ -466,73 +431,7 @@ h4,
 h5,
 h6,
 p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+center {
     margin: 0;
     margin-bottom: 0px;
     padding: 0;
@@ -542,14 +441,32 @@ video {
     vertical-align: baseline;
 }
 
-[_nghost-ng-c2416431125] {
-    text-align: center;
-}
-
-.error-emoji[_ngcontent-ng-c2416431125] {
-    color: var(--sys-on-surface);
+.error-emoji {
     font-size: 200px;
     line-height: 1.25;
     margin-bottom: 24px;
-    color: #CECED6;
-} */
+    color: var(--color-accent-light, #FF6F3A);
+    vertical-align: baseline;
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+    opacity: 0;
+}
+
+@media screen and (max-width:1280px) {
+    .numbers {
+        display: none;
+    }
+    .error-emoji {
+        font-size: 100px;
+        visibility: visible;
+        opacity: 1;
+    }
+    .error-text {
+        visibility: visible;
+        opacity: 1;
+    }
+    .emoji {
+        visibility: visible;
+        opacity: 1;
+    }
+}

@@ -14,7 +14,7 @@ var buttonUp = document.getElementById("buttonUp");
 // Обработчик скролла: показываем/скрываем кнопку
 window.onscroll = function() {scrollFunction()};
 
-export function scrollFunction() {
+function scrollFunction() {
   // Показываем кнопку, если проскроллили больше 20 px
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     buttonUp.style.display = "block";

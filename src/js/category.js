@@ -3,11 +3,11 @@ import '../scss/vendors/_normalize.scss';
 // import '../scss/index.scss';
 import '../scss/category.scss';
 import { createRoot } from 'react-dom/client';
-import ChannelCard from './components/channelCard';
-import VerticalMenu from './components/VerticalMenu';
 import * as categories from '../db/categories.json';
 import * as streams from '../db/streams.json';
 import * as channels from '../db/channels.json';
+import ChannelCard from './components/channelCard';
+import VerticalMenu from './components/VerticalMenu';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,7 +37,7 @@ var buttonUp = document.getElementById("buttonUp");
 // Обработчик скролла: показываем/скрываем кнопку
 window.onscroll = function() {scrollFunction()};
 
-export function scrollFunction() {
+function scrollFunction() {
   // Показываем кнопку, если проскроллили больше 20 px
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     buttonUp.style.display = "block";

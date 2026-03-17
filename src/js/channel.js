@@ -4,9 +4,9 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/channel.scss';
 import './components/chat';
 import { createRoot } from 'react-dom/client';
-import VerticalMenu from './components/VerticalMenu';
 import * as streams from '../db/streams.json';
 import * as channels from '../db/channels.json';
+import VerticalMenu from './components/VerticalMenu';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Channel page loaded with its styles');
