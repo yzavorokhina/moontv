@@ -3,6 +3,7 @@ import '../scss/vendors/_normalize.scss';
 // import '../scss/index.scss';
 import '../scss/categories.scss';
 import { createRoot } from 'react-dom/client';
+import db from '../db/dbHelper';
 import VerticalMenu from './components/VerticalMenu';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Получаем кнопку по ID
 var buttonUp = document.getElementById("buttonUp");
 // Обработчик скролла: показываем/скрываем кнопку
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   // Показываем кнопку, если проскроллили больше 20 px
@@ -24,7 +25,7 @@ function scrollFunction() {
   }
 }
 
-buttonUp.onclick = function() {
+buttonUp.onclick = function () {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
@@ -34,4 +35,4 @@ buttonUp.onclick = function() {
 const verticalMenu = document.getElementById('vertical-menu');
 
 const rootVerticalMenu = createRoot(verticalMenu);
-rootVerticalMenu.render(<VerticalMenu showAll={false} />);
+rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);

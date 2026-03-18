@@ -1,364 +1,364 @@
-[
-    {
-        "id": 1,
-        "name": "neuro_activate",
-        "title" : "Разрабатываю игру KUPOL День 4 / Основная концепция",
-        "description": "Разрабатываю игры для внеземных сообществ",
-        "iconUrl": "./images/banner_ava.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 2,
-        "name": "LuckyKhajiit",
-        "title" : "Skyrim-прокачка до 17 уровня и обратно до 1-го...",
-        "description": "Профессиональный проходильщик территорий Skirim",
-        "iconUrl": "./images/banner_ava.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 3,
-        "name": "MultiPupsik",
-        "title" : "Смешарики 3 часа подряд - Часть 1-ая из 10-ти",
-        "description": "Мультики для самых смышленых",
-        "iconUrl": "./images/banner_ava.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 4,
-        "name": "KidsPlanet",
-        "title" : "Крутой замес. Делаем рыбок из марсианской глины",
-        "description": "Задача дня: добыть марсианскую глину",
-        "iconUrl": "./images/banner_ava.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 5,
-        "name": "ProBabushka",
-        "title" : "Вяжем носки и смотрим фильм # Легенда об Искателе",
-        "description": "Тренируем навыки многопоточности",
-        "iconUrl": "./images/banner_ava.svg",
-        "categories": [ 1 ]
-    },
-
-
-    {
-        "id": 6,
-        "name": "coffee_lover",
-        "title" : "Coffe Lover",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava1_1.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 7,
-        "name": "neoElectron",
-        "title" : "neoElectron",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava1_2.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 8,
-        "name": "JustCodingNotTalking",
-        "title" : "JustCodingNotTalking",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava1_3.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 9,
-        "name": "programmer_at_noon",
-        "title" : "programmer_at_noon",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava1_4.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 10,
-        "name": "neuro_activate",
-        "title" : "neuro_activate",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava1_5.svg",
-        "categories": [ 1 ]
-    },
-    {
-        "id": 11,
-        "name": "loffee_cats_lover",
-        "title" : "loffee_cats_lover",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava2_1.svg",
-        "categories": [ 2 ]
-    },
-    {
-        "id": 12,
-        "name": "neoLoffii",
-        "title" : "neoLoffii",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava2_2.svg",
-        "categories": [ 2 ]
-    },
-    {
-        "id": 13,
-        "name": "JustLoffiiNotCoffee",
-        "title" : "JustLoffiiNotCoffee",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava2_3.svg",
-        "categories": [ 2 ]
-    },
-    {
-        "id": 14,
-        "name": "Loffii_at_noon",
-        "title" : "Loffii_at_noon",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava2_4.svg",
-        "categories": [ 2 ]
-    },
-    {
-        "id": 15,
-        "name": "Loffii_activate",
-        "title" : "Loffii_activate",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava2_5.svg",
-        "categories": [ 2 ]
-    },
-    {
-        "id": 16,
-        "name": "english_lover",
-        "title" : "english_lover",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava3_1.svg",
-        "categories": [ 3 ]
-    },
-    {
-        "id": 17,
-        "name": "neoLing",
-        "title" : "neoLing",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava3_2.svg",
-        "categories": [ 3 ]
-    },
-    {
-        "id": 18,
-        "name": "JustEnglishNotTalking",
-        "title" : "JustEnglishNotTalking",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava3_3.svg",
-        "categories": [ 3 ]
-    },
-    {
-        "id": 19,
-        "name": "english_at_noon",
-        "title" : "english_at_noon",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava3_4.svg",
-        "categories": [ 3 ]
-    },
-    {
-        "id": 20,
-        "name": "eng_activate",
-        "title" : "eng_activate",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava3_5.svg",
-        "categories": [ 3 ]
-    },
-    {
-        "id": 21,
-        "name": "wanna_play",
-        "title" : "wanna_play",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava4_1.svg",
-        "categories": [ 4 ]
-    },
-    {
-        "id": 22,
-        "name": "bubblebuttons",
-        "title" : "bubblebuttons",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava4_2.svg",
-        "categories": [ 4 ]
-    },
-    {
-        "id": 23,
-        "name": "NotTalkingAndListen",
-        "title" : "NotTalkingAndListen",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava4_3.svg",
-        "categories": [ 4 ]
-    },
-    {
-        "id": 24,
-        "name": "apply-to-all",
-        "title" : "apply-to-all",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava4_4.svg",
-        "categories": [ 4 ]
-    },
-    {
-        "id": 25,
-        "name": "brain_activ",
-        "title" : "brain_activ",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava4_5.svg",
-        "categories": [ 4 ]
-    },
-    {
-        "id": 26,
-        "name": "dance_lover",
-        "title" : "dance_lover",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava5_1.svg",
-        "categories": [ 5 ]
-    },
-    {
-        "id": 27,
-        "name": "balanceEgo",
-        "title" : "balanceEgo",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava5_2.svg",
-        "categories": [ 5 ]
-    },
-    {
-        "id": 28,
-        "name": "JustDanceIt",
-        "title" : "JustDanceIt",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava5_3.svg",
-        "categories": [ 5 ]
-    },
-    {
-        "id": 29,
-        "name": "dance_on_moon",
-        "title" : "dance_on_moon",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava5_4.svg",
-        "categories": [ 5 ]
-    },
-    {
-        "id": 30,
-        "name": "dancing_queen",
-        "title" : "dancing_queen",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava5_5.svg",
-        "categories": [ 5 ]
-    },
-    {
-        "id": 31,
-        "name": "sweet_story_lover",
-        "title" : "sweet_story_lover",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava6_1.svg",
-        "categories": [ 6 ]
-    },
-    {
-        "id": 32,
-        "name": "annihilation_of_an_e_and_a_p",
-        "title" : "annihilation_of_an_e_and_a_p",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava6_2.svg",
-        "categories": [ 6 ]
-    },
-    {
-        "id": 33,
-        "name": "JustReadIt",
-        "title" : "JustReadIt",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava6_3.svg",
-        "categories": [ 6 ]
-    },
-    {
-        "id": 34,
-        "name": "Hello Letters",
-        "title" : "Hello Letters",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava6_4.svg",
-        "categories": [ 6 ]
-    },
-    {
-        "id": 35,
-        "name": "Angélique_activate",
-        "title" : "Angélique_activate",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava6_5.svg",
-        "categories": [6 ]
-    },
-    {
-        "id": 36,
-        "name": "tdu_lover",
-        "title" : "tdu_lover",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava7_1.svg",
-        "categories": [ 7 ]
-    },
-    {
-        "id": 37,
-        "name": "Stef",
-        "title" : "Stef",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava7_2.svg",
-        "categories": [ 7 ]
-    },
-    {
-        "id": 38,
-        "name": "cars_so_cool",
-        "title" : "cars_so_cool",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava7_3.svg",
-        "categories": [ 7 ]
-    },
-    {
-        "id": 39,
-        "name": "on_the_road_again",
-        "title" : "on_the_road_again",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava7_4.svg",
-        "categories": [ 7 ]
-    },
-    {
-        "id": 40,
-        "name": "motor_activate",
-        "title" : "motor_activate",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava7_5.svg",
-        "categories": [ 7 ]
-    },
-    {
-        "id": 41,
-        "name": "skyrim_lover",
-        "title" : "skyrim_lover",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava8_1.svg",
-        "categories": [ 8 ]
-    },
-    {
-        "id": 42,
-        "name": "Shrouded-Grove-Gourmet",
-        "title" : "Shrouded-Grove-Gourmet",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava8_2.svg",
-        "categories": [ 8 ]
-    },
-    {
-        "id": 43,
-        "name": "JustHaveALook",
-        "title" : "JustHaveALook",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava8_3.svg",
-        "categories": [ 8 ]
-    },
-    {
-        "id": 44,
-        "name": "levelUpMaster",
-        "title" : "levelUpMaster",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava8_4.svg",
-        "categories": [ 8 ]
-    },
-    {
-        "id": 45,
-        "name": "calm_activate",
-        "title" : "calm_activate",
-        "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
-        "iconUrl": "./images/Mask group_ava8_5.svg",
-        "categories": [ 8 ]
-    }
-]
+{ 
+    "channels": [
+        {
+            "id": 1,
+            "name": "neuro_activate",
+            "title" : "Разрабатываю игру KUPOL День 4 / Основная концепция",
+            "description": "Разрабатываю игры для внеземных сообществ",
+            "iconUrl": "./images/banner_ava.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 2,
+            "name": "LuckyKhajiit",
+            "title" : "Skyrim-прокачка до 17 уровня и обратно до 1-го...",
+            "description": "Профессиональный проходильщик территорий Skirim",
+            "iconUrl": "./images/banner_ava.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 3,
+            "name": "MultiPupsik",
+            "title" : "Смешарики 3 часа подряд - Часть 1-ая из 10-ти",
+            "description": "Мультики для самых смышленых",
+            "iconUrl": "./images/banner_ava.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 4,
+            "name": "KidsPlanet",
+            "title" : "Крутой замес. Делаем рыбок из марсианской глины",
+            "description": "Задача дня: добыть марсианскую глину",
+            "iconUrl": "./images/banner_ava.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 5,
+            "name": "ProBabushka",
+            "title" : "Вяжем носки и смотрим фильм # Легенда об Искателе",
+            "description": "Тренируем навыки многопоточности",
+            "iconUrl": "./images/banner_ava.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 6,
+            "name": "coffee_lover",
+            "title" : "Coffe Lover",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava1_1.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 7,
+            "name": "neoElectron",
+            "title" : "neoElectron",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava1_2.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 8,
+            "name": "JustCodingNotTalking",
+            "title" : "JustCodingNotTalking",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava1_3.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 9,
+            "name": "programmer_at_noon",
+            "title" : "programmer_at_noon",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava1_4.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 10,
+            "name": "neuro_activate",
+            "title" : "neuro_activate",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava1_5.svg",
+            "categories": [ 1 ]
+        },
+        {
+            "id": 11,
+            "name": "loffee_cats_lover",
+            "title" : "loffee_cats_lover",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava2_1.svg",
+            "categories": [ 2 ]
+        },
+        {
+            "id": 12,
+            "name": "neoLoffii",
+            "title" : "neoLoffii",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava2_2.svg",
+            "categories": [ 2 ]
+        },
+        {
+            "id": 13,
+            "name": "JustLoffiiNotCoffee",
+            "title" : "JustLoffiiNotCoffee",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava2_3.svg",
+            "categories": [ 2 ]
+        },
+        {
+            "id": 14,
+            "name": "Loffii_at_noon",
+            "title" : "Loffii_at_noon",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava2_4.svg",
+            "categories": [ 2 ]
+        },
+        {
+            "id": 15,
+            "name": "Loffii_activate",
+            "title" : "Loffii_activate",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava2_5.svg",
+            "categories": [ 2 ]
+        },
+        {
+            "id": 16,
+            "name": "english_lover",
+            "title" : "english_lover",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava3_1.svg",
+            "categories": [ 3 ]
+        },
+        {
+            "id": 17,
+            "name": "neoLing",
+            "title" : "neoLing",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava3_2.svg",
+            "categories": [ 3 ]
+        },
+        {
+            "id": 18,
+            "name": "JustEnglishNotTalking",
+            "title" : "JustEnglishNotTalking",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava3_3.svg",
+            "categories": [ 3 ]
+        },
+        {
+            "id": 19,
+            "name": "english_at_noon",
+            "title" : "english_at_noon",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava3_4.svg",
+            "categories": [ 3 ]
+        },
+        {
+            "id": 20,
+            "name": "eng_activate",
+            "title" : "eng_activate",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava3_5.svg",
+            "categories": [ 3 ]
+        },
+        {
+            "id": 21,
+            "name": "wanna_play",
+            "title" : "wanna_play",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava4_1.svg",
+            "categories": [ 4 ]
+        },
+        {
+            "id": 22,
+            "name": "bubblebuttons",
+            "title" : "bubblebuttons",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava4_2.svg",
+            "categories": [ 4 ]
+        },
+        {
+            "id": 23,
+            "name": "NotTalkingAndListen",
+            "title" : "NotTalkingAndListen",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava4_3.svg",
+            "categories": [ 4 ]
+        },
+        {
+            "id": 24,
+            "name": "apply-to-all",
+            "title" : "apply-to-all",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava4_4.svg",
+            "categories": [ 4 ]
+        },
+        {
+            "id": 25,
+            "name": "brain_activ",
+            "title" : "brain_activ",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava4_5.svg",
+            "categories": [ 4 ]
+        },
+        {
+            "id": 26,
+            "name": "dance_lover",
+            "title" : "dance_lover",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava5_1.svg",
+            "categories": [ 5 ]
+        },
+        {
+            "id": 27,
+            "name": "balanceEgo",
+            "title" : "balanceEgo",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava5_2.svg",
+            "categories": [ 5 ]
+        },
+        {
+            "id": 28,
+            "name": "JustDanceIt",
+            "title" : "JustDanceIt",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava5_3.svg",
+            "categories": [ 5 ]
+        },
+        {
+            "id": 29,
+            "name": "dance_on_moon",
+            "title" : "dance_on_moon",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava5_4.svg",
+            "categories": [ 5 ]
+        },
+        {
+            "id": 30,
+            "name": "dancing_queen",
+            "title" : "dancing_queen",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava5_5.svg",
+            "categories": [ 5 ]
+        },
+        {
+            "id": 31,
+            "name": "sweet_story_lover",
+            "title" : "sweet_story_lover",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava6_1.svg",
+            "categories": [ 6 ]
+        },
+        {
+            "id": 32,
+            "name": "annihilation_of_an_e_and_a_p",
+            "title" : "annihilation_of_an_e_and_a_p",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava6_2.svg",
+            "categories": [ 6 ]
+        },
+        {
+            "id": 33,
+            "name": "JustReadIt",
+            "title" : "JustReadIt",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava6_3.svg",
+            "categories": [ 6 ]
+        },
+        {
+            "id": 34,
+            "name": "Hello Letters",
+            "title" : "Hello Letters",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava6_4.svg",
+            "categories": [ 6 ]
+        },
+        {
+            "id": 35,
+            "name": "Angélique_activate",
+            "title" : "Angélique_activate",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava6_5.svg",
+            "categories": [6 ]
+        },
+        {
+            "id": 36,
+            "name": "tdu_lover",
+            "title" : "tdu_lover",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava7_1.svg",
+            "categories": [ 7 ]
+        },
+        {
+            "id": 37,
+            "name": "Stef",
+            "title" : "Stef",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava7_2.svg",
+            "categories": [ 7 ]
+        },
+        {
+            "id": 38,
+            "name": "cars_so_cool",
+            "title" : "cars_so_cool",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava7_3.svg",
+            "categories": [ 7 ]
+        },
+        {
+            "id": 39,
+            "name": "on_the_road_again",
+            "title" : "on_the_road_again",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava7_4.svg",
+            "categories": [ 7 ]
+        },
+        {
+            "id": 40,
+            "name": "motor_activate",
+            "title" : "motor_activate",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava7_5.svg",
+            "categories": [ 7 ]
+        },
+        {
+            "id": 41,
+            "name": "skyrim_lover",
+            "title" : "skyrim_lover",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava8_1.svg",
+            "categories": [ 8 ]
+        },
+        {
+            "id": 42,
+            "name": "Shrouded-Grove-Gourmet",
+            "title" : "Shrouded-Grove-Gourmet",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava8_2.svg",
+            "categories": [ 8 ]
+        },
+        {
+            "id": 43,
+            "name": "JustHaveALook",
+            "title" : "JustHaveALook",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava8_3.svg",
+            "categories": [ 8 ]
+        },
+        {
+            "id": 44,
+            "name": "levelUpMaster",
+            "title" : "levelUpMaster",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava8_4.svg",
+            "categories": [ 8 ]
+        },
+        {
+            "id": 45,
+            "name": "calm_activate",
+            "title" : "calm_activate",
+            "description": "Мы Гангстеры не можем быть милыми. Если гангстеры будут милыми, то люди перестанут нас бояться. № 6068942740",
+            "iconUrl": "./images/Mask_group_ava8_5.svg",
+            "categories": [ 8 ]
+        }
+    ]
+}

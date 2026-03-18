@@ -4,8 +4,7 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/channel.scss';
 import './components/chat';
 import { createRoot } from 'react-dom/client';
-import * as streams from '../db/streams.json';
-import * as channels from '../db/channels.json';
+import db from '../db/dbHelper';
 import VerticalMenu from './components/VerticalMenu';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,8 +31,8 @@ const params = getUrlParams();
 console.log(params.id); // '1'
 
 const streamId = +params.id || 1;
-const streamData = streams.find(stream => stream.id === streamId);
-const channelData = channels.find(channel => channel.id === streamData.channelId);
+const streamData = db.streamsModel.findOneById(streamId);
+const channelData = db.channelsModel.findOneById(streamData.channelId);
 
 console.log({ params, streamData, channelData });
 
@@ -47,10 +46,10 @@ const ageRating = document.getElementById("ageRating");
 const channelIcon = document.getElementById("channelIcon");
 
 const rootVerticalMenu = createRoot(verticalMenu);
-rootVerticalMenu.render(<VerticalMenu showAll={false} />);
+rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
 
 streamTV.src = streamData.videoUrl;
-streamTitle.textContent  = streamData.title;
+streamTitle.textContent = streamData.title;
 streamDes.textContent = streamData.description;
 channelName.textContent = channelData.name;
 currentViewers.textContent = streamData.audience;

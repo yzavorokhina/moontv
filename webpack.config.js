@@ -144,6 +144,14 @@ module.exports = {
           context: 'src'
         }
       ]
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/img'), // папка с .map-файлами (если есть)
+          to: path.resolve(__dirname, 'dist/images')
+        }
+      ]
     })
   ],
 };
