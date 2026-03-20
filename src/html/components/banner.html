@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonTV</title>
+    <link rel="icon" type="image/svg+xml" href="../../img/logo_moon_2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <!-- <script defer src="../../js/components/banner.js"></script>  -->
+</head>
+
+<body>
+    <!-- <header class="site-header">
+    </header> -->
+    <main>
+        <div class="vertical-blocks">
+            <div class="vertical-menu"></div>
+            <div class="main-of-the-main">
+                <div class="horizontal-blocks">
+                    <div class="b1">
+                        <div class="horizontal-menu"></div>
+                        <div class="main-banner">
+
+                            <!-- MY TODO: add slider for video content -->
+                            <div class="video-carousel">
+
+                                <button class="carousel-btn prev-btn" aria-label="Предыдущее видео">
+                                    <!-- MY TODO: align the arrow element inside the button: -->
+                                    <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
+                                    <svg class="carousel-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 9H5.414l3.293-3.293a.999.999 0 10-1.414-1.414l-5 5a.999.999 0 000 1.414l5 5a.997.997 0 001.414 0 .999.999 0 000-1.414L5.414 11H17a1 1 0 100-2z"
+                                            fill="#CECED6" />
+                                    </svg>
+                                </button>
+
+                                <!-- Область просмотра видео -->
+                                <!-- <div class="video-container">
+                                    <video class="current-video" controls>
+                                        <source src="video1.mp4" type="video/mp4"> -->
+
+                                <iframe width="1138px" height="574px"
+                                    src="https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <!-- </video>
+                            </div> -->
+
+                                <!-- MY TODO: add the dots/circles: -->
+                                <!-- <div class="indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div> -->
+
+                                <button class="carousel-btn next-btn" aria-label="Следующее видео">
+                                    <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
+                                    <svg class="carousel-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
+                                            fill="#CECED6" />
+                                    </svg>
+                                </button>
+
+                                <div class="banner-info">
+                                    <div class="banner-stream-info">
+                                        <div class="banner-ava">
+                                            <a href="">
+                                                <img src="./img/banner_ava.svg" style="width: 80px; height: 80px;"
+                                                    alt="personal account">
+                                            </a>
+                                        </div>
+                                        <div class="stream-info">
+                                            <h5>Разрабатываю игру KUPOL. Выращивание фруктов под колпаком</h5>
+                                            <h5>День 4 / Основная концепция</h5>
+                                            <a href="#">neuro_activate</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="stream-statistic">
+                                        <div class="live-watchers">
+                                            <h5>В эфире</h5>
+                                            <span style="color: #E2552D; font-size: 12px;">&#11044;</span>
+
+                                            <div class="viewer-count">
+                                                <span id="current-viewers">323</span>
+                                            </div>
+                                        </div>
+                                        <div class="age-rating-row">
+                                            <span class="age-rating">12+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <button>Смотреть сейчас</button> -->
+                            </div>
+                            <div class="promo">
+                                <div class="promo1">
+                                    <div class="promo-stream-cover">
+                                        <a href="">
+                                            <img src="./img/banner stream prewiev1.svg"
+                                                style="width: 98px; height: 98px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="promo-stream-info">
+                                        <h6>Разрабатываю игру KUPOL
+                                            День 4 / Основная концепция</h6>
+                                        <a href="#">neuro_activate</a>
+                                    </div>
+                                </div>
+                                <div class="promo2">
+                                    <div class="promo-stream-cover">
+                                        <a href="">
+                                            <img src="./img/banner stream prewiev2.svg"
+                                                style="width: 98px; height: 98px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="promo-stream-info">
+                                        <h6>Skyrim-прокачка до 17 уровня
+                                            и обратно до 1-го...</h6>
+                                        <a href="#">LuckyKhajiit</a>
+                                    </div>
+                                </div>
+                                <div class="promo3">
+                                    <div class="promo-stream-cover">
+                                        <a href="">
+                                            <img src="./img/banner stream prewiev3.svg"
+                                                style="width: 98px; height: 98px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="promo-stream-info">
+                                        <h6>Смешарики 3 часа подряд -
+                                            Часть 1-ая из 10-ти</h6>
+                                        <a href="#">MultiPupsik</a>
+                                    </div>
+                                </div>
+                                <div class="promo4">
+                                    <div class="promo-stream-cover">
+                                        <a href="">
+                                            <img src="./img/banner stream prewiev4.svg"
+                                                style="width: 98px; height: 98px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="promo-stream-info">
+                                        <h6>Крутой замес. Делаем рыбок
+                                            из марсианской глины</h6>
+                                        <a href="#">KidsPlanet</a>
+                                    </div>
+                                </div>
+                                <div class="promo5">
+                                    <div class="promo-stream-cover">
+                                        <a href="">
+                                            <img src="./img/banner stream prewiev5.svg"
+                                                style="width: 98px; height: 98px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="promo-stream-info">
+                                        <h6>Вяжем носки и смотрим фильм
+                                            # Легенда об Искателе</h6>
+                                        <a href="#">ProBabushka </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <!-- <footer>
+    </footer> -->
+</body>
+
+</html>

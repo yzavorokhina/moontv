@@ -1,0 +1,189 @@
+/* Vertical menu: */
+.vertical-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-shrink: 0;
+    width: 222px;
+    // height: 5278px;
+    /* позволяет расти при переполнении: */
+    height: auto;
+    background-color: var(--color-background-dark, #16122F);
+    border-top-right-radius: 20px;
+}
+
+.vertical-menu {
+    /* занимает всё доступное пространство: */
+    flex: 1;
+    width: 222px;
+    // border: 1px solid lime;
+    margin: 0;
+    background-color: var(--color-background-dark, #16122F);
+    border-top-right-radius: 20px;
+}
+
+.menu-stream-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.menu-stream-info h6 {
+    margin: 0;
+    color: var(--color-font-white-dark, #FDFDFF);
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.menu-stream-info a {
+    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    padding-left: 21px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.menu1 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.menu-stream-live-indicator {
+    position: absolute;
+    top: 0;
+    left: 64px;
+    margin-right: 12px;
+}
+
+.vertical-menu ul {
+    margin-top: 16px;
+}
+
+.vertical-menu li {
+    position: relative;
+    align-items: center;
+    width: 222px;
+    height: 60px;
+    margin-bottom: -1px;
+    // border: 1px solid yellow;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.vertical-menu li:hover {
+    //background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    /* Похожий цвет, но 100% непрозрачный: */
+    background-color: var(--color-dark-blocks-hover, #2e2b50);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.vertical-menu li:hover h6 {
+    color: var(--color-accent-light, #FF6F3A);
+    /* Плавный переход цвета: */
+    transition: color 0.1s ease;
+}
+
+.vertical-menu a {
+    align-items: center;
+    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    text-decoration: none;
+    /* Чтобы ссылка занимала всю площадь li: */
+    display: block;
+}
+
+.vertical-menu a:hover {
+    align-items: center;
+    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    text-decoration: none;
+}
+
+.vertical-menu h6:hover {
+    color: var(--color-accent-light, #FF6F3A);
+}
+
+.vertical-menu button {
+    width: 216px;
+    height: 41px;
+    margin: 3px 3px auto 3px;
+    border: none;
+}
+
+.vertical-menu-title {
+    margin-top: 0;
+    background-color: var(--color-background-accent, #000000);
+    border-top-right-radius: 20px;
+}
+
+.vertical-menu-title button {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-accent-light, #FF6F3A);
+}
+
+.vertical-menu-title h6 {
+    color: var(--color-font-white-light, #ffffff);
+}
+
+.vertical-menu-title h6:hover {
+    color: var(--color-accent-light, #FF6F3A);
+}
+
+/* end of the vertical menu */
+
+/* arrow up: */
+/* MY TODO: Decide what should happen to the "up" arrow when the notification block appears. Logically, the notification overlaps everything... */
+/* MY TODO: Add the button in one place: in vertical menu conteiner or in footer */
+.buttonUp button {
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 22px;
+    position: fixed;
+    z-index: 15;
+    left: 89px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.buttonUp:hover button {
+    background-color: transparent;
+    border-color: var(--color-font-white-light, #ffffff);
+}
+
+.buttonUp button::before {
+    content: "";
+    text-align: center;
+    position: absolute;
+    /*for arrow*/
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 17V4M3 10l7-7 7 7'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/*when the cursor is at the top of the page*/
+.buttonUp_hide {
+    // display: none;
+    width: 44px;
+    height: 44px;
+}
+
+/* end of the arrow up: */

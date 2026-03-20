@@ -1,0 +1,144 @@
+/* horizontal menu: */
+.horizontal-menu {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    /* width: 100%; */
+    width: calc(100vw - 252px);
+    height: 40px;
+    /* border: 1px solid pink; */
+    margin-left: 30px;
+    margin-bottom: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.hMenu {
+    max-width: 1698px;
+    color: var(--color-font-white-light, #ffffff);
+    display: inline-block;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /* border: 1px solid magenta; */
+}
+
+.hMenu ul {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    /* border: 1px solid rgb(194, 104, 31); */
+}
+
+.hMenu li {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-background-dark, #16122F);
+    color: var(--color-font-white-light, #ffffff);
+}
+
+.hMenu li:hover {
+    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    color: var(--color-font-gray-light, #CECED6);
+}
+
+.hMenu li:first-child {
+    border: none;
+    /* Жирный текст: */
+    // font-weight: bold;
+    background-color: var(--color-accent-light, #FF6F3A);
+}
+
+.hMenu li:first-child:hover {
+    /* Лёгкое увеличение: */
+    // transform: scale(1.05);
+    background-color: var(--color-accent-dark, #E2552D);
+}
+
+.hMenu a {
+    color: var(--color-font-white-light, #ffffff);
+    /* Чтобы ссылка занимала всю площадь li: */
+    display: block;
+    /* Плавный переход цвета: */
+    transition: color 0.3s ease;
+}
+
+.hMenu li:hover a {
+    color: var(--color-font-gray-light, #CECED6);
+}
+
+.h-menu-first-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: baseline;
+    width: 64px !important;
+    height: 40px !important;
+}
+
+.h-menu-scroll {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    left: 94%;
+    //transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // visibility: hidden;
+    /* совпадает с высотой кнопки: */
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 5px;
+    background: var(--color-dark-button-scroll, #54506B);
+    color: var(--color-font-white-light, #ffffff);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    /* поверх видео */
+    transition: background 0.3s ease;
+}
+
+/* MY TODO: align the arrow in the button: */
+.h-menu-scroll-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    color: var(--color-font-white-light, #ffffff);
+    vertical-align: middle;
+    text-align: center;
+    right: -15px;
+}
+
+/* Эффекты при наведении */
+.h-menu-scroll:hover {
+    background-color: var(--color-background-dark, #16122F);
+    border: 1px solid var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+}
+
+/* Скрываем кнопки на мобильных устройствах */
+@media (max-width: 768px) {
+    .h-menu-scroll {
+        display: none;
+    }
+}
+
+/* end of the horizontal menu */

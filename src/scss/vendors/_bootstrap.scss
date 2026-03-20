@@ -1,0 +1,19 @@
+// @import 'base/variables'; // ваши переменные
+
+// Полный импорт Bootstrap
+ @import '~bootstrap/scss/bootstrap';
+
+
+// Обязательные части
+// @import '~bootstrap/scss/functions';
+// @import '~bootstrap/scss/variables';
+// @import '~bootstrap/scss/mixins';
+
+// Опциональные компоненты (подключайте только нужные)
+// @import '~bootstrap/scss/reboot';
+// @import '~bootstrap/scss/type';
+// @import '~bootstrap/scss/images';
+// @import '~bootstrap/scss/grid';
+// @import '~bootstrap/scss/buttons';
+// @import '~bootstrap/scss/forms';
+// ... и т. д.
