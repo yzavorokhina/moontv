@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonTV_Auth</title>
+    <!-- <title>MoonTV_Авторизация / MoonTV_Auth</title> -->
+    <title>MoonTV_Авторизация</title>
     <link rel="icon" type="image/svg+xml" href="./img/logo_moon_2.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,51 +16,31 @@
 </head>
 
 <body>
-
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button> -->
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-
+    <div class="login-container">
         <div class="buttons">
-            <!-- <a href="javascript:history.back()" class="btn-secondary">
+            <a href="javascript:history.back()" class="btn-secondary">
                 <div class="arrow-1">
                     <div></div>
                 </div>
-            </a> -->
-
+            </a>
+            <!--The "Close" button is needed for pop-ups, not for pages: -->
             <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
 
         <div class="form">
 
-            <form action="#" id="registration_form">
-
-                <img src="./img/logo_moon_1.png" alt="bootstrap-logo" class="auth_logo mx-auto"
-                    style="width: 60px">
+            <form action="/login" id="registration_form" method="POST">
+                <a href="/dist/index.html" class="auth_logo mx-auto">
+                    <img src="./img/logo_moon_1.png" alt="bootstrap-logo" style="width: 60px">
+                </a>
                 <h1>Вход в VK Planets</h1>
 
                 <div class="form-floating">
-                    <input type="email" name="email" placeholder="Email или телефон" required />
+
+                    <input type="email" name="email" placeholder="Email или телефон" required
+                        pattern="^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$" />
+                    <!-- <span class = "error">Please provide a valid telephone or email</span> -->
+
                 </div>
 
                 <button type="submit" class="button-1">Продолжить</button>
@@ -77,14 +57,18 @@
                 </p>
                 <button type="submit" class="button-3">
                     <div style="display: flex; flex-direction: row; align-items: flex-start; justify-items:auto">
-                        <img src="./img/mini-icons-vk-square.svg" alt="social-button" class="vk-id-button"
-                            style="width: 30px">
+
+                        <a href="https://vk.com/username" target="_blank" rel="noopenerer noreferrer">
+                            <img src="./img/mini-icons-vk-square.svg" alt="social-button" class="vk-id-button"
+                                style="width: 30px">
+                        </a>
+
                     </div>
                     Войти через VK ID
                 </button>
 
                 <div class="links">
-                    <a href="#">
+                    <a href="https://github.com/username" target="_blank" rel="noopenerer noreferrer">
 
                         <!-- github icon-->
                         <!-- License: PD. Made by zurb: https://github.com/zurb/foundation-icon-fonts -->
@@ -118,11 +102,11 @@
                         </svg> -->
 
                         <!-- github icon-->
-                        <img src="./img/icons-github.svg" alt="social-button" class="social-button"
-                            style="width: 48px">
+                        <img src="./img/icons-github.svg" alt="social-button" class="social-button" style="width: 48px">
                     </a>
 
-                    <a href="#">
+                    <!--MY TODO: find another social media insted google+ (closed in 2019): -->
+                    <a href="https://photos.google.com/" target="_blank" rel="noopenerer noreferrer">
 
                         <!-- google-plus icon-->
                         <!-- License: PD. Made by stephenhutchings: https://github.com/stephenhutchings/typicons.font -->
@@ -136,7 +120,7 @@
                         <img src="./img/icons-google-plus.svg " alt="social-button" class="social-button"
                             style="width: 48px">
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopenerer noreferrer">
 
                         <!-- linkedin icon-->
                         <!-- License: MIT. Made by michaelampr: https://github.com/michaelampr/jam -->
@@ -153,7 +137,7 @@
                         <img src="./img/icons-linkedin.svg" alt="social-button" class="social-button"
                             style="width: 48px">
                     </a>
-                    <a href="#">
+                    <a href="https://www.youtube.com/@channel" target="_blank" rel="noopenerer noreferrer">
 
                         <!-- youtube icon-->
                         <!-- License: MIT. Made by michaelampr: https://github.com/michaelampr/jam -->
@@ -170,7 +154,7 @@
                         <img src="./img/icons-youtube.svg" alt="social-button" class="social-button"
                             style="width: 44px">
                     </a>
-                    <a href="#">
+                    <a href="https://t.me/username" target="_blank" rel="noopenerer noreferrer">
 
                         <!-- telegram icon-->
                         <!-- License: Apache. Made by Iconscout: https://github.com/Iconscout/unicons -->
@@ -198,6 +182,7 @@
                     </a>
                 </div>
             </form>
+            <div id="message"></div>
         </div>
     </div>
 </body>

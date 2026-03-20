@@ -470,3 +470,25 @@ center {
         opacity: 1;
     }
 }
+
+.goto-home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: fit-content;
+    height: 34px;
+    margin-top: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    background-color: #FF6F3A;
+    border-radius: 34px;
+    color: var(--color-background-dark,#16122F);
+    font-family: "Silkscreen", sans-serif !important;
+}
+
+.goto-home-page:hover {
+    background-color: var(--color-accent-dark, #E2552D);
+}
