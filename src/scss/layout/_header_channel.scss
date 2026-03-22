@@ -16,6 +16,19 @@
 
 /*-------------------------------------------------------------*/
 /* search: */
+#searchForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    max-width: 428px;
+    height: 40px;
+    height: auto;
+    // border: 1px solid green;
+}
+
 .search {
     display: flex;
     flex-direction: row;

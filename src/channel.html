@@ -19,13 +19,15 @@
 <body>
     <div class="page">
         <header class="site-header">
-            <div class="search">
-                <label for="site-search" class="visually-hidden">Поиск по сайту</label>
-                <input type="search" id="site-search" class="input-with-icon" placeholder="Поиск" aria-label="Search">
-                <a href="#notifications" class="notification-round-button">
-                    <img src="./img/notifications_button.svg" class="button-icon" alt="Search" width="40px"
-                        height="40px">
-                </a>
+            <div class="search" id="search-form-block">
+                <form action="/dist/search.html" id="searchForm" method="get">
+                    <label for="site-search" class="visually-hidden">Поиск по сайту</label>
+                    <input type="search" name="q" id="site-search" class="input-with-icon" placeholder="Поиск" aria-label="Search">
+                    <a href="#notifications" class="notification-round-button">
+                        <img src="./img/notifications_button.svg" class="button-icon" alt="Search" width="40px"
+                            height="40px">
+                    </a>
+                </form>
             </div>
             <div class="logo-container">
                 <a href="/dist/index.html" class="logo-img">

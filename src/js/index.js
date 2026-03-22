@@ -4,7 +4,10 @@ import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
 import ChannelCard from './components/channelCard';
 import VerticalMenu from './components/VerticalMenu';
+import SearchForm from './components/SearchForm';
 
+
+/* A pop-up orange-row notification: */
 /* вариант 3 (более плавное исчезновение блока): */
 document.getElementById('closeButton').addEventListener('click', function () {
   const element = document.getElementById('myElement');
@@ -37,6 +40,7 @@ buttonUp.onclick = function () {
   });
 };
 
+const searchFormBlock = document.getElementById('search-form-block');
 const verticalMenu = document.getElementById('vertical-menu');
 const favoriteSoftwareDev = document.getElementById('favorite_software_development');
 const favoriteMusic = document.getElementById('favorite_music');
@@ -46,6 +50,9 @@ const favoriteDance = document.getElementById('favorite_dance');
 const favoriteReading = document.getElementById('favorite_reading');
 const favoriteTDU2 = document.getElementById('favorite_tdu2');
 const favoriteSkyrim = document.getElementById('favorite_skyrim');
+
+const rootSearchFormBlock = createRoot(searchFormBlock);
+rootSearchFormBlock.render(<SearchForm />);
 
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);

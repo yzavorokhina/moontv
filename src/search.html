@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonTV</title>
+    <link rel="icon" type="image/svg+xml" href="./img/logo_moon_2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="search" id="search-form-block">
+                <form action="/dist/search.html" id="searchForm" method="get">
+                    <label for="site-search" class="visually-hidden">Поиск по сайту</label>
+                    <input type="search" name="q" id="site-search" class="input-with-icon" placeholder="Поиск" aria-label="Search">
+                    <a href="#notifications" class="notification-round-button">
+                        <img src="./img/notifications_button.svg" class="button-icon" alt="Search" width="40px"
+                            height="40px">
+                    </a>
+                </form>
+            </div>
+            <div class="logo-container">
+                <a href="/dist/index.html" class="logo-img">
+                    <img src="./img/logo_moon_1_1-3.png" style="width: 120px; height: 40px;" alt="MoonTV"
+                        class="logo-icon">
+                </a>
+                <h1 class="logo-text">Moon.tv</h1>
+            </div>
+            <div class="container-menu">
+                <button class="menu-button" type="button" aria-label="Включить звук">
+                    <a href="./404.html">
+                        <img src="./img/header_icon_music.svg" title="mute" width="26px" height="26px">
+                    </a>
+                </button>
+                <button id="themeToggle" class="menu-button" type="button" aria-label="Переключить тему оформления">
+                    <a href="./404.html">
+                        <img src="./img/header_icon_theme.svg" title="theme" width="26px" height="26px">
+                    </a>
+                </button>
+                <button class="menu-button" type="button" aria-label="Выбрать язык оформления">
+                    <a href="./404.html">
+                        <img src="./img/header_icon_globe.svg" title="language" width="26px" height="26px">
+                    </a>
+                </button>
+                <button class="menu-button" type="button" aria-label="Войти в свой аккаунт">
+                    <a href="./auth.html">
+                        <img src="./img/header_icon_login.svg" title="login" width="26px" height="26px">
+                    </a>
+                </button>
+                <div class="login">
+                    <button class="login-button" type="button" aria-label="Войти в личный кабинет">
+                        <a href="./auth.html">
+                            <img src="./img/avatar_disabled.svg" style="width: 60px; height: 60px;"
+                                alt="personal account">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="vertical-blocks">
+                <div class="vertical-menu-container">
+                    <nav class="vertical-menu" id="vertical-menu">
+                        <button class="vertical-menu-title">
+                            <h6>Рекомендуем</h6>
+                        </button>
+                        <ul>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel1_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>orignMasteR</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel2_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>SkyAgent</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel3_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>Lava_effect</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel4_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>VioletStar</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel5_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>StarkySparky</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel6_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>CosmoVedro</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel7_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>SpiceXMan</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel8_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>LikeAPro</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel9_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>satriano</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel10_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>XWhiteStarX</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu1">
+                                    <div class="menu-stream-cover">
+                                        <a href="">
+                                            <img src="./img/RecommendedChannel11_ava.svg"
+                                                style="width: 40px; height: 40px;" alt="personal account">
+                                        </a>
+                                    </div>
+                                    <div class="menu-stream-live-indicator">
+                                        <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    </div>
+                                    <div class="menu-stream-info">
+                                        <h6>Coding4Kids</h6>
+                                        <a href="#" class="category-name">Software and game ...</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-of-the-main">
+                    <div class="horizontal-blocks">
+                        <div class="main-screen-block">
+                            <div class="horizontal-menu">
+                                <nav class="hMenu">
+                                    <ul>
+                                        <li class="h-menu-first-button"><a href="/dist/categories.html">
+                                                <img src="./img/All_icon_for_categories.svg" alt="Иконка ссылки"
+                                                    width="11" height="10">
+                                                Все</a></li>
+                                        <li><a href="/dist/category.html?id=1">Обучение</a></li>
+                                        <li><a href="/dist/category.html?id=2">Музыка</a></li>
+                                        <li><a href="/dist/category.html?id=11">ТВ и Радио</a></li>
+                                        <li><a href="/dist/category.html?id=1">Разработка</a></li>
+                                        <li><a href="/dist/category.html?id=5">Спорт</a></li>
+                                        <li><a href="/dist/category.html?id=6">Чтение</a></li>
+                                        <li><a href="/dist/category.html?id=11">Общение</a></li>
+                                        <li><a href="/dist/category.html?id=8">Игры</a></li>
+                                        <li><a href="/dist/category.html?id=7">Хобби</a></li>
+                                        <li><a href="/dist/category.html?id=4">Другое</a></li>
+                                        <button class="h-menu-scroll"
+                                            aria-label="Следующая категория горизонтального меню">
+                                            <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
+                                            <svg class="carousel-arrow" width="30px" height="30px" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
+                                                    fill="#CECED6" />
+                                            </svg>
+                                        </button>
+                                    </ul>
+                                </nav>
+                            </div>
+                            
+                        </div>
+                        <div class="favourite-categories">
+                            <div class="favourite-categories-title">
+                                <h2>Результаты поиска:</h2>
+                            </div>
+                            <div class="favourite-category-container">
+                                <!-- <div class="titles-row">
+                                    <div class="section-title">
+                                        <a href="/page" class="link-wrapper">
+                                            <h2> -->
+                                                <!-- License: PD. Made by mapbox: https://github.com/mapbox/maki -->
+                                                <!-- <svg fill="#CECED6" width="16px" height="16px" viewBox="0 0 15 15"
+                                                    version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z" />
+                                                </svg>
+                                                Разработка игр и ПО
+                                            </h2>
+                                        </a>
+                                    </div>
+                                    <div class="show-all-categories">
+                                        <a href="#" class="arrowed">
+                                            Показать все -->
+                                            <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
+                                            <!-- <svg class="show-all-arrow" width="24px" height="24px" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
+                                                    fill="#CECED6" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>  -->
+
+                                <!-- React software_development -->
+                                <div class="channels-row" id="search_result">
+                                </div>
+                                <!-- React software_development end -->
+
+                                <!-- <div class="channels-row">
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask_group_video1_1.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask_group_ava1_1.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Second game. Gamedev_base</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">coffee_lover</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask_group_video1_2.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask_group_ava1_2.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Dev recoder soit même ou librairie</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neoElectron</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Français</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask_group_video1_3.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask_group_ava1_3.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Rivers of code</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">JustCodingNotTalking</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask_group_video1_4.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask_group_ava1_4.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">This is my first time making Tetris
+                                                        </h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">programmer_at_noon</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">No Talking</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="channel-card mb-3">
+                                        <a href="/page" class="link-wrapper">
+                                            <img class="card-img-top" src="./img/Mask_group_video1_5.svg" alt="foto">
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="stream-info-row">
+                                                <a href="/page" class="link-wrapper">
+                                                    <img class="channel-img" src="./img/Mask_group_ava1_5.svg"
+                                                        alt="foto">
+                                                </a>
+                                                <div class="stream-titles">
+                                                    <a href="/page" class="link-wrapper">
+                                                        <h5 class="stream-title">Спокойно вкатываюсь в разработку</h5>
+                                                    </a>
+                                                    <a href="/page" class="link-wrapper">
+                                                        <p class="channel-title">neuro_activate</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="/page" class="link-wrapper">
+                                                <p class="category-name-info">Software and game development</p>
+                                            </a>
+                                            <div class="tags-row" role="group" aria-label="tags-group">
+
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">English</button>
+                                                </a>
+                                                <a href="/page" class="link-wrapper">
+                                                    <button type="button" class="button-tag">Русский</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stream-labels">
+                                            <div class="stream-live">
+                                                <span>&#11044;</span>
+                                                <h6>В эфире</h6>
+                                            </div>
+                                            <div class="stream-age-rating">
+                                                <span class="label-age-rating">12+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="show-all-link divider-container">
+                                    <div class="divider-line"></div>
+                                    <button class="divider-button">
+                                        <a href='/dist/categories.html' class="arrowed">
+                                            Показать все
+                                            <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
+                                            <svg class="show-all-arrow" width="24px" height="24px" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
+                                                    fill="#CECED6" />
+                                            </svg>
+                                        </a>
+                                    </button>
+                                    <div class="divider-line"></div>
+                                </div>
+                            </div>
+                            <div class="show-all-button-row">
+                                <button class="show-all-button" type="button"
+                                    onclick="window.location.href='/dist/index.html'"
+                                    aria-label="Перейти в раздел всех категорий и жанров">Назад на главную</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notification" id="myElement">
+                <img class="notification-moon-logo-1" src="./img/notification_moon_1.svg" alt="moon-logo">
+                <img class="notification-moon-logo-2" src="./img/notification_moon_2.svg" alt="moon-logo">
+                <img class="notification-moon-logo-3" src="./img/notification_moon_3.svg" alt="moon-logo">
+                <a href="/page" class="link-wrapper">
+                    <h4>Присоединяйтесь к сообществу межгалактических трансляций на Moon.tv!</h4>
+                </a>
+                <a href="/page" class="link-wrapper">
+                    <button type="button" class="button-notification">Войти / Регистрация</button>
+                </a>
+                <button id="closeButton" type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="buttonUp buttonUp_hide">
+                <button id="buttonUp"></button>
+            </div>
+            <div class=footer-container>
+                <p>12+ ©2025 ООО "VK Planets". <br>
+                    Все права защищены. <br>
+                    Все товарные знаки являются <br>
+                    собственностью их владельцев.
+                </p>
+                <div class="footer-menu">
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Рекомендательные технологии</a>
+                    <a href="#">Информация о компании</a>
+                    <a href="#">Техническая поддержка </a>
+                </div>
+                <hr class="horizontal-separator">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

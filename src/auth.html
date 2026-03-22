@@ -18,6 +18,9 @@
 <body>
     <div class="login-container">
         <div class="buttons">
+            <!-- <button class="backBtn" type="button">
+                <span>Назад</span> 
+            </button> -->
             <a href="javascript:history.back()" class="btn-secondary">
                 <div class="arrow-1">
                     <div></div>
@@ -26,30 +29,26 @@
             <!--The "Close" button is needed for pop-ups, not for pages: -->
             <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
-
         <div class="form">
-
-            <form action="/login" id="registration_form" method="POST">
+            <form action="/login" id="loginForm" method="POST">
                 <a href="/dist/index.html" class="auth_logo mx-auto">
                     <img src="./img/logo_moon_1.png" alt="bootstrap-logo" style="width: 60px">
                 </a>
-                <h1>Вход в VK Planets</h1>
-
+                <!-- <h1>Вход на VK Planets (разные планеты-разные платформы по тематикам, описано в дизайн-концепции проекта)</h1> -->
+                <h1>Вход на Moon TV</h1>
                 <div class="form-floating">
-
-                    <input type="email" name="email" placeholder="Email или телефон" required
-                        pattern="^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$" />
-                    <!-- <span class = "error">Please provide a valid telephone or email</span> -->
-
+                    <input type="email" name="email" placeholder="Email" required maxlength="60"/>
+                    <!-- <span class = "error">Please provide a valid email</span> -->
                 </div>
-
-                <button type="submit" class="button-1">Продолжить</button>
-                <button type="submit" class="button-2">Создать аккаунт с VK ID</button>
-
+                <div class="form-floating">
+                    <input type="password" name="password" placeholder="Password" required maxlength="60"/>
+                    <!-- <span class = "error">Please provide a valid email</span> -->
+                </div>
+                <button type="submit" class="button-1">Войти</button>
+                <button type="submit" class="button-2">Создать аккаунт</button>
                 <div class="form-check">
                     <a href="#" class="forgot-password">Забыли пароль?</a>
                 </div>
-
                 <p class="copy">
                     &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
                     Войти через
@@ -57,128 +56,39 @@
                 </p>
                 <button type="submit" class="button-3">
                     <div style="display: flex; flex-direction: row; align-items: flex-start; justify-items:auto">
-
                         <a href="https://vk.com/username" target="_blank" rel="noopenerer noreferrer">
                             <img src="./img/mini-icons-vk-square.svg" alt="social-button" class="vk-id-button"
                                 style="width: 30px">
                         </a>
-
                     </div>
                     Войти через VK ID
                 </button>
-
+                <!-- links from other streaming platforms: -->
                 <div class="links">
-                    <a href="https://github.com/username" target="_blank" rel="noopenerer noreferrer">
-
-                        <!-- github icon-->
-                        <!-- License: PD. Made by zurb: https://github.com/zurb/foundation-icon-fonts -->
-                        <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 100 100"
-                            enable-background="new 0 0 100 100" xml:space="preserve">
-                            <g>
-                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#343148" d="M49.998,11.963C28.461,11.963,11,29.425,11,50.965
-                                c0,17.231,11.172,31.849,26.671,37.003c1.952,0.361,2.662-0.84,2.662-1.877c0-0.924-0.034-3.375-0.051-6.633
-                                c-10.849,2.359-13.138-5.229-13.138-5.229c-1.774-4.505-4.331-5.703-4.331-5.703c-3.541-2.418,0.269-2.371,0.269-2.371
-                                c3.914,0.277,5.974,4.018,5.974,4.018c3.478,5.96,9.129,4.235,11.35,3.243c0.353-2.525,1.363-4.24,2.476-5.217
-                                c-8.659-0.984-17.763-4.33-17.763-19.274c0-4.259,1.519-7.741,4.013-10.468c-0.399-0.982-1.74-4.947,0.383-10.319
-                                c0,0,3.274-1.048,10.726,4.001c3.109-0.869,6.446-1.303,9.763-1.316c3.312,0.014,6.65,0.447,9.763,1.316
-                                c7.447-5.049,10.716-4.001,10.716-4.001c2.128,5.372,0.788,9.337,0.388,10.319c2.5,2.727,4.008,6.209,4.008,10.468
-                                c0,14.979-9.117,18.279-17.805,19.241c1.398,1.205,2.646,3.59,2.646,7.229c0,5.211-0.047,9.416-0.047,10.695
-                                c0,1.045,0.701,2.26,2.681,1.873C77.836,82.798,89,68.191,89,50.965C89,29.425,71.539,11.963,49.998,11.963z" />
-                            </g>
-                        </svg>-->
-
-                        <!-- odnoklassniki icon-->
-                        <!-- License: MIT. Made by michaelampr: https://github.com/michaelampr/jam -->
-                        <!-- <svg fill="#343148" width="48px" height="48px" viewBox="-2 -2 24 24"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
-                            class="jam jam-odnoklassniki-circle">
-                            <path
-                                d='M9.53 11.996c-.77-.081-1.463-.272-2.057-.74-.074-.058-.15-.114-.217-.18-.26-.25-.287-.539-.08-.835.175-.254.47-.322.778-.177a1.2 1.2 0 0 1 .17.102c1.107.766 2.628.787 3.74.034.11-.085.227-.154.363-.19a.57.57 0 0 1 .655.264c.163.267.16.527-.04.734a3.018 3.018 0 0 1-1.087.708c-.388.152-.814.228-1.235.279.064.07.094.104.134.144.571.578 1.145 1.154 1.715 1.734.194.198.235.443.128.673-.117.25-.379.416-.635.398a.617.617 0 0 1-.402-.207c-.431-.437-.87-.866-1.293-1.311-.123-.13-.183-.105-.291.007-.434.45-.875.893-1.319 1.334-.199.197-.436.233-.667.12a.68.68 0 0 1-.39-.626c.009-.171.092-.303.21-.42l1.694-1.709c.037-.038.072-.078.126-.136z' />
-                            <path
-                                d='M9.988 10a2.503 2.503 0 0 1-2.481-2.506A2.506 2.506 0 0 1 10.018 5a2.503 2.503 0 0 1 2.489 2.532C12.5 8.898 11.37 10.005 9.988 10zm1.244-2.502a1.218 1.218 0 0 0-1.224-1.221 1.22 1.22 0 0 0-1.226 1.235 1.218 1.218 0 0 0 1.233 1.212 1.216 1.216 0 0 0 1.217-1.226z' />
-                            <path
-                                d='M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z' />
-                        </svg> -->
-
-                        <!-- github icon-->
-                        <img src="./img/icons-github.svg" alt="social-button" class="social-button" style="width: 48px">
+                    <a href="https://vkvideo.ru/@channel" target="_blank" rel="noopenerer noreferrer">
+                        <!--vkvideo icon-->
+                        <img src="./img/icon_vk_video.png" alt="social-button" class="social-button"
+                            style="width: 40px; height: 40px">
                     </a>
-
-                    <!--MY TODO: find another social media insted google+ (closed in 2019): -->
-                    <a href="https://photos.google.com/" target="_blank" rel="noopenerer noreferrer">
-
-                        <!-- google-plus icon-->
-                        <!-- License: PD. Made by stephenhutchings: https://github.com/stephenhutchings/typicons.font -->
-                        <!-- <svg fill="#343148" width="50px" height="50px" viewBox="0 0 24 24" version="1"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.8 13.1l-.4-.3c-.1-.1-.3-.2-.3-.5l.3-.6c.5-.4 1-.8 1-1.7s-.6-1.4-.8-1.6h.7l.7-.4h-2.4c-.6 0-1.4.1-2.1.6-.5.4-.8 1-.8 1.6 0 .9.7 1.9 2 1.9h.4c-.1.1-.1.2-.1.4 0 .4.2.6.4.8-.5 0-1.5.1-2.3.5-.7.4-.9 1-.9 1.4 0 .9.8 1.7 2.5 1.7 2 0 3.1-1.1 3.1-2.2 0-.7-.5-1.1-1-1.6zm-1.6-1.3c-1 0-1.5-1.3-1.5-2.1.1-.4.1-.7.3-.9s.5-.4.8-.4c1 0 1.5 1.3 1.5 2.2 0 .2 0 .6-.3.9-.1.1-.5.3-.8.3zm.1 4.7c-1.3 0-2.1-.6-2.1-1.4 0-.8.8-1.1 1-1.2.5-.2 1.1-.2 1.2-.2h.3c.9.6 1.3 1 1.3 1.6 0 .7-.6 1.2-1.7 1.2zM15 12h-1v-1h1v-1h1v1h1v1h-1v1h-1zM12 21c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z" />
-                        </svg> -->
-
-                        <!-- google-plus icon-->
-                        <img src="./img/icons-google-plus.svg " alt="social-button" class="social-button"
-                            style="width: 48px">
-                    </a>
-                    <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopenerer noreferrer">
-
-                        <!-- linkedin icon-->
-                        <!-- License: MIT. Made by michaelampr: https://github.com/michaelampr/jam -->
-                        <!-- <svg fill="#343148" width="48px" height="48px" viewBox="-2 -2 24 24"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
-                            class="jam jam-linkedin-circle">
-                            <path
-                                d='M15 11.13v3.697h-2.143v-3.45c0-.866-.31-1.457-1.086-1.457-.592 0-.945.398-1.1.784-.056.138-.071.33-.071.522v3.601H8.456s.029-5.842 0-6.447H10.6v.913l-.014.021h.014v-.02c.285-.44.793-1.066 1.932-1.066 1.41 0 2.468.922 2.468 2.902zM6.213 5.271C5.48 5.271 5 5.753 5 6.385c0 .62.466 1.115 1.185 1.115h.014c.748 0 1.213-.496 1.213-1.115-.014-.632-.465-1.114-1.199-1.114zm-1.086 9.556h2.144V8.38H5.127v6.447z' />
-                            <path
-                                d='M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z' />
-                        </svg> -->
-
-                        <!-- linkedin icon-->
-                        <img src="./img/icons-linkedin.svg" alt="social-button" class="social-button"
-                            style="width: 48px">
+                    <a href="https://www.rutube.ru/channel" target="_blank" class="rutube-button" rel="noopenerer noreferrer">
+                        <!--rutube icon-->
+                        <img src="./img/icons-rutube.png " alt="social-button" class="social-button"
+                            style="width: 40px; height: 40px">
                     </a>
                     <a href="https://www.youtube.com/@channel" target="_blank" rel="noopenerer noreferrer">
-
-                        <!-- youtube icon-->
-                        <!-- License: MIT. Made by michaelampr: https://github.com/michaelampr/jam -->
-                        <!-- <svg fill="#343148" width="48px" height="48px" viewBox="-2 -2 24 24"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
-                            class="jam jam-youtube-circle">
-                            <path
-                                d='M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z' />
-                            <path
-                                d='M12.923 6.526H7.077C5.93 6.526 5 7.446 5 8.58v2.89c0 1.135.93 2.054 2.077 2.054h5.846c1.147 0 2.077-.92 2.077-2.054V8.58c0-1.135-.93-2.054-2.077-2.054zm-1.404 3.64l-2.735 1.29a.11.11 0 0 1-.157-.099v-2.66a.11.11 0 0 1 .16-.097l2.734 1.37c.081.042.08.157-.002.196z' />
-                        </svg> -->
-
-                        <!-- youtube icon-->
-                        <img src="./img/icons-youtube.svg" alt="social-button" class="social-button"
-                            style="width: 44px">
+                        <!--youtube-live icon-->
+                        <img src="./img/icons_youtube_live.svg " alt="social-button" class="social-button"
+                            style="width: 40px; height: 40px">
                     </a>
-                    <a href="https://t.me/username" target="_blank" rel="noopenerer noreferrer">
-
-                        <!-- telegram icon-->
-                        <!-- License: Apache. Made by Iconscout: https://github.com/Iconscout/unicons -->
-                        <!-- <svg fill="#343148" width="48px" height="48px" viewBox="0 0 24 24" id="Layer_1"
-                            data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
-                            <title>Telegram Glyph</title>
-                            <path
-                                d="M11.99432,2a10,10,0,1,0,10,10A9.99917,9.99917,0,0,0,11.99432,2Zm3.17951,15.15247a.70547.70547,0,0,1-1.002.3515l-2.71467-2.10938L9.71484,17.002a.29969.29969,0,0,1-.285.03894l.334-2.98846.01069.00848.00683-.059s4.885-4.44751,5.084-4.637c.20147-.189.135-.23.135-.23.01147-.23053-.36152,0-.36152,0L8.16632,13.299l-2.69549-.918s-.414-.1485-.453-.475c-.041-.324.46649-.5.46649-.5l10.717-4.25751s.881-.39252.881.25751Z" />
-                        </svg> -->
-
-                        <!-- telegram icon-->
-                        <!-- License: MIT. Made by iconoir: https://iconoir.com/ -->
-                        <!-- <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 8L5 12.5L9.5 14M18 8L9.5 14M18 8L14 18.5L9.5 14" stroke="#343148"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                stroke="#343148" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg> -->
-
-                        <!-- telegram icon-->
-                        <img src="./img/icons-telegram.svg" alt="social-button" class="social-button"
-                            style="width: 48px">
+                    <a href="https://www.youtube.com/@channel" target="_blank" rel="noopenerer noreferrer">
+                        <!--youtube icon-->
+                        <img src="./img/icons-youtube.svg" alt="social-button" class="social-button"
+                            style="width: 40px; height: 40px">
+                    </a>
+                    <a href="https://vkplay.ru/live/" target="_blank" rel="noopenerer noreferrer">
+                        <!--vkplay icon-->
+                        <img src="./img/icon_vk_play2.png" alt="social-button" class="social-button"
+                            style="width: 40px; height: 40px">
                     </a>
                 </div>
             </form>

@@ -20,6 +20,17 @@ class DBHelper {
     findByName(name, value) {
         return this.data.filter(record => record[name] === value);
     }
+
+    findByNameRegex(name, searchTerm) {
+        return this.data.filter((record) => {
+            const regex = new RegExp(`${searchTerm}`, 'giu', 'u')
+            const result = record[name].match(regex);
+            if (result) {
+                console.log({ searchTerm, name, regex, result })
+            }
+            return result;
+        });
+    }
 }
 
 const streamsModel = new DBHelper(streams.streams);

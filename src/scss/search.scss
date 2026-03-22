@@ -1,4 +1,3 @@
-
 // Импорт сторонних библиотек:
 // @import 'vendors/bootstrap';
 @import "bootstrap";
@@ -170,6 +169,126 @@ footer {
     // border: 1px solid green;
 }
 
+/*-------------------------------------------------------------*/
+/* search: */
+
+#searchForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    max-width: 428px;
+    height: 40px;
+    height: auto;
+    // border: 1px solid green;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    max-width: 428px;
+    height: 40px;
+    height: auto;
+    // border: 1px solid rgb(23, 91, 170); 
+}
+
+.input-with-icon {
+    width: 368px;
+    height: 40px;
+    border: none;
+    outline: none;
+
+    margin-right: 20px;
+
+    background-image: url('../img/search-icon.svg');
+    background-repeat: no-repeat;
+    /* Позиция иконки: */
+    background-position: 10px center;
+    /* Размер иконки: */
+    background-size: 24px 24px;
+    /* Место для иконки, чтобы текст не накладывался:*/
+    padding-left: 40px;
+
+    border-radius: 40px;
+    background-color: var(--color-background-input, #1C173C);
+    color: var(--color-font-white-light, #ffffff);
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.input-with-icon::placeholder {
+    color: var(--color-font-gray-light, #CECED6);
+}
+
+.input-with-icon:hover {
+    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    color: var(--color-font-white-light, #ffffff);
+}
+
+/* MY TODO: fix shifting the button when hovering over it when use tag button*/
+/* .notification-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid green;
+    padding: 0;
+    border-radius: 50%;
+}
+
+/* .notification-button:hover {
+    border: 3px solid #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}  */
+
+.notification-round-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    /* Делает кнопку круглой: */
+    border-radius: 50%;
+
+    text-decoration: none;
+    cursor: pointer;
+    /* Плавный переход для всех свойств: */
+    transition: all 0.3s ease;
+}
+
+/* MY TODO: fix the button shifts when hovering over: */
+.notification-round-button:hover {
+    transform: scale(1.1);
+    // border: 1px solid #CECED6;
+    // background-color: #E2552D;
+}
+
+// .search a:hover {
+//     border: 1px solid #CECED6;
+//     background-color: #E2552D;
+//     /* Чтобы ссылка занимала всю площадь li: */
+//     display: block;
+// }
+
+.button-icon {
+    width: 40px;
+    height: 40px;
+    /* Сохраняет пропорции изображения: */
+    object-fit: contain;
+}
+
+/*-------------------------------------------------------------*/
+
+
+
 /* Notification block: */
 /* MY TODO: stylize close button: */
 .notification {
@@ -186,7 +305,7 @@ footer {
     width: 100%;
     height: 60px;
     background-color: var(--color-accent-light, #FF6F3A);
-    visibility: hidden;
+    // visibility: hidden;
 }
 
 .notification-moon-logo-1 {
