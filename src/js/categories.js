@@ -3,7 +3,9 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/categories.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
+import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
+import HorizontalMenu from './components/HorizontalMenu';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Categories page loaded with its styles');
@@ -31,7 +33,15 @@ buttonUp.onclick = function () {
   });
 };
 
+const searchFormBlock = document.getElementById('search-form-block');
 const verticalMenu = document.getElementById('vertical-menu');
+const horizontalMenu = document.getElementById('react-horizontal-menu');
+
+const rootSearchFormBlock = createRoot(searchFormBlock);
+rootSearchFormBlock.render(<SearchForm />);
 
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
+
+const rootHorizontalMenu = createRoot(horizontalMenu);
+rootHorizontalMenu.render(<HorizontalMenu />);

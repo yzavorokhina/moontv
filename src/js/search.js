@@ -6,6 +6,7 @@ import db from '../db/dbHelper';
 import SearchForm from './components/SearchForm';
 import SearchCards from './components/SearchCards';
 import VerticalMenu from './components/VerticalMenu';
+import HorizontalMenu from './components/HorizontalMenu';
 
 function getUrlParams() {
   const search = window.location.search;
@@ -57,3 +58,11 @@ const categoryCards = document.getElementById('search_result');
 const root = createRoot(categoryCards);
 
 root.render(<SearchCards db={db} search={search} showAll={true} />);
+
+const horizontalMenu = document.getElementById('react-horizontal-menu');
+const rootHorizontalMenu = createRoot(horizontalMenu);
+rootHorizontalMenu.render(<HorizontalMenu />);
+
+const verticalMenu = document.getElementById('vertical-menu');
+const rootVerticalMenu = createRoot(verticalMenu);
+rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);

@@ -2,9 +2,10 @@ import _ from 'lodash';
 import '../scss/home.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
-import ChannelCard from './components/channelCard';
-import VerticalMenu from './components/VerticalMenu';
 import SearchForm from './components/SearchForm';
+import VerticalMenu from './components/VerticalMenu';
+import HorizontalMenu from './components/HorizontalMenu';
+import ChannelCard from './components/channelCard';
 
 
 /* A pop-up orange-row notification: */
@@ -42,6 +43,7 @@ buttonUp.onclick = function () {
 
 const searchFormBlock = document.getElementById('search-form-block');
 const verticalMenu = document.getElementById('vertical-menu');
+const horizontalMenu = document.getElementById('react-horizontal-menu');
 const favoriteSoftwareDev = document.getElementById('favorite_software_development');
 const favoriteMusic = document.getElementById('favorite_music');
 const favoriteEnglish = document.getElementById('favorite_english');
@@ -56,6 +58,9 @@ rootSearchFormBlock.render(<SearchForm />);
 
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
+
+const rootHorizontalMenu = createRoot(horizontalMenu);
+rootHorizontalMenu.render(<HorizontalMenu />);
 
 let categoryId = 1;
 const rootSoftwareDev = createRoot(favoriteSoftwareDev);

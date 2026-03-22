@@ -3,8 +3,6 @@ export default function VerticalMenu({ db, showAll }) {
 
     const showItems = 11;
 
-
-
     const truncateByWords = (text, wordCount) => {
         const words = text.split(' ');
         if (words.length <= wordCount) {
