@@ -60,6 +60,154 @@ const db = {
 
 /***/ },
 
+/***/ "./src/js/components/SearchCards.js"
+/*!******************************************!*\
+  !*** ./src/js/components/SearchCards.js ***!
+  \******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SearchCards)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function SearchCards(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(6);
+  const {
+    db,
+    search,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] !== db || $[1] !== search || $[2] !== showAll) {
+    const renderCards = () => {
+      if (!search) {
+        return;
+      }
+      let streamsFiltered = db.streamsModel.findByNameRegex("title", search);
+      if (!showAll && streamsFiltered.length > 5) {
+        streamsFiltered = streamsFiltered.slice(0, 5);
+      }
+      return streamsFiltered.map(stream => {
+        const channel = db.channelsModel.findOneById(stream.channelId);
+        const category = db.categoriesModel.findOneById(stream.categoryId);
+        return {
+          stream,
+          channel,
+          category,
+          streamUrl: "/dist/channel.html?id=" + stream.id,
+          categoryUrl: "/dist/category.html?id=" + category.id
+        };
+      });
+    };
+    t1 = renderCards().map(_temp);
+    $[0] = db;
+    $[1] = search;
+    $[2] = showAll;
+    $[3] = t1;
+  } else {
+    t1 = $[3];
+  }
+  let t2;
+  if ($[4] !== t1) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: t1
+    });
+    $[4] = t1;
+    $[5] = t2;
+  } else {
+    t2 = $[5];
+  }
+  return t2;
+}
+function _temp(data) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "channel-card mb-3",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: data.streamUrl,
+      className: "link-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "card-img-top",
+        src: data.stream.previewUrl,
+        alt: "foto"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "card-body",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-info-row",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.streamUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            className: "channel-img",
+            src: data.channel.iconUrl,
+            alt: "foto"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "stream-titles",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.streamUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+              className: "stream-title",
+              children: data.stream.title
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.streamUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+              className: "channel-title",
+              children: data.channel.name
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: data.categoryUrl,
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "category-name-info",
+          children: data.category.name
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "tags-row",
+        role: "group",
+        "aria-label": "tags-group",
+        children: data.stream.languages.map((lang, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.streamUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            type: "button",
+            className: "button-tag",
+            children: lang
+          })
+        }, index))
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "stream-labels",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-live",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          children: "\u2B24"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "stream-age-rating",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          className: "label-age-rating",
+          children: "12+"
+        })
+      })]
+    })]
+  }, data.stream.id);
+}
+
+/***/ },
+
 /***/ "./src/js/components/SearchForm.js"
 /*!*****************************************!*\
   !*** ./src/js/components/SearchForm.js ***!
@@ -280,153 +428,6 @@ function _temp(text, wordCount) {
     return text;
   }
   return words.slice(0, wordCount).join(" ") + "...";
-}
-
-/***/ },
-
-/***/ "./src/js/components/channelCard.js"
-/*!******************************************!*\
-  !*** ./src/js/components/channelCard.js ***!
-  \******************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ChannelCard)
-/* harmony export */ });
-/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-function ChannelCard(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(8);
-  const {
-    db,
-    categoryId,
-    showAll
-  } = t0;
-  let t1;
-  if ($[0] !== categoryId || $[1] !== db.categoriesModel || $[2] !== db.channelsModel || $[3] !== db.streamsModel || $[4] !== showAll) {
-    const renderCards = () => {
-      let streamsFiltered = db.streamsModel.findByName("categoryId", categoryId);
-      if (!showAll && streamsFiltered.length > 5) {
-        streamsFiltered = streamsFiltered.slice(0, 5);
-      }
-      return streamsFiltered.map(stream => {
-        const channel = db.channelsModel.findOneById(stream.channelId);
-        const category = db.categoriesModel.findOneById(stream.categoryId);
-        return {
-          stream,
-          channel,
-          category,
-          streamUrl: "/dist/channel.html?id=" + stream.id,
-          categoryUrl: "/dist/category.html?id=" + category.id
-        };
-      });
-    };
-    t1 = renderCards().map(_temp);
-    $[0] = categoryId;
-    $[1] = db.categoriesModel;
-    $[2] = db.channelsModel;
-    $[3] = db.streamsModel;
-    $[4] = showAll;
-    $[5] = t1;
-  } else {
-    t1 = $[5];
-  }
-  let t2;
-  if ($[6] !== t1) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-      children: t1
-    });
-    $[6] = t1;
-    $[7] = t2;
-  } else {
-    t2 = $[7];
-  }
-  return t2;
-}
-function _temp(data) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: "channel-card mb-3",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-      href: data.streamUrl,
-      className: "link-wrapper",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-        className: "card-img-top",
-        src: data.stream.previewUrl,
-        alt: "foto"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "card-body",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "stream-info-row",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: data.streamUrl,
-          className: "link-wrapper",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-            className: "channel-img",
-            src: data.channel.iconUrl,
-            alt: "foto"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "stream-titles",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: data.streamUrl,
-            className: "link-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-              className: "stream-title",
-              children: data.stream.title
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: data.streamUrl,
-            className: "link-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-              className: "channel-title",
-              children: data.channel.name
-            })
-          })]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: data.categoryUrl,
-        className: "link-wrapper",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-          className: "category-name-info",
-          children: data.category.name
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "tags-row",
-        role: "group",
-        "aria-label": "tags-group",
-        children: data.stream.languages.map((lang, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: data.streamUrl,
-          className: "link-wrapper",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-            type: "button",
-            className: "button-tag",
-            children: lang
-          })
-        }, index))
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "stream-labels",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "stream-live",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-          children: "\u2B24"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
-          children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "stream-age-rating",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-          className: "label-age-rating",
-          children: "12+"
-        })
-      })]
-    })]
-  }, data.stream.id);
 }
 
 /***/ },
@@ -17687,6 +17688,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!*****************************!*\
   !*** ./src/scss/index.scss ***!
   \*****************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ },
+
+/***/ "./src/scss/search.scss"
+/*!******************************!*\
+  !*** ./src/scss/search.scss ***!
+  \******************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48619,19 +48633,20 @@ var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
 "use strict";
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
+/*!**************************!*\
+  !*** ./src/js/search.js ***!
+  \**************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/index.scss */ "./src/scss/index.scss");
-/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
-/* harmony import */ var _components_channelCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/channelCard */ "./src/js/components/channelCard.js");
-/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var _components_SearchForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/SearchForm */ "./src/js/components/SearchForm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _scss_search_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/search.scss */ "./src/scss/search.scss");
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
+/* harmony import */ var _components_SearchForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/SearchForm */ "./src/js/components/SearchForm.js");
+/* harmony import */ var _components_SearchCards__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/SearchCards */ "./src/js/components/SearchCards.js");
+/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -48640,17 +48655,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* A pop-up orange-row notification: */
-/* вариант 3 (более плавное исчезновение блока): */
 
-document.getElementById('closeButton').addEventListener('click', function () {
-  const element = document.getElementById('myElement');
-  element.classList.add('fade-out');
-  // Удаляем элемент из потока после завершения анимации
-  setTimeout(() => {
-    element.style.display = 'none';
-  }, 500);
-});
+function getUrlParams() {
+  const search = window.location.search;
+  if (!search) return {};
+  const params = new URLSearchParams(search);
+  const obj = {};
+  for (let [key, value] of params) {
+    obj[key] = value;
+  }
+  return obj;
+}
+
+// Использование
+const params = getUrlParams();
+console.log({
+  params
+}); // '1'
 
 // Получаем кнопку по ID
 var buttonUp = document.getElementById("buttonUp");
@@ -48673,83 +48694,19 @@ buttonUp.onclick = function () {
     behavior: "smooth"
   });
 };
+const search = params.q || "";
 const searchFormBlock = document.getElementById('search-form-block');
-const verticalMenu = document.getElementById('vertical-menu');
-const favoriteSoftwareDev = document.getElementById('favorite_software_development');
-const favoriteMusic = document.getElementById('favorite_music');
-const favoriteEnglish = document.getElementById('favorite_english');
-const favoriteDJs = document.getElementById('favorite_djs');
-const favoriteDance = document.getElementById('favorite_dance');
-const favoriteReading = document.getElementById('favorite_reading');
-const favoriteTDU2 = document.getElementById('favorite_tdu2');
-const favoriteSkyrim = document.getElementById('favorite_skyrim');
-const rootSearchFormBlock = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(searchFormBlock);
-rootSearchFormBlock.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_SearchForm__WEBPACK_IMPORTED_MODULE_6__["default"], {}));
-const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(verticalMenu);
-rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  showAll: false
+const rootSearchFormBlock = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(searchFormBlock);
+rootSearchFormBlock.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_SearchForm__WEBPACK_IMPORTED_MODULE_5__["default"], {}));
+const categoryCards = document.getElementById('search_result');
+const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(categoryCards);
+root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_SearchCards__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"],
+  search: search,
+  showAll: true
 }));
-let categoryId = 1;
-const rootSoftwareDev = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteSoftwareDev);
-rootSoftwareDev.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-categoryId = 2;
-const rootMusic = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteMusic);
-rootMusic.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-categoryId = 3;
-const rootEnglish = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteEnglish);
-rootEnglish.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-categoryId = 4;
-const rootDJs = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteDJs);
-rootDJs.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-categoryId = 5;
-const rootDance = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteDance);
-rootDance.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-categoryId = 6;
-const rootReading = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteReading);
-rootReading.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-categoryId = 7;
-const rootTDU2 = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteTDU2);
-rootTDU2.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-categoryId = 8;
-const rootSkyrim = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(favoriteSkyrim);
-rootSkyrim.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__["default"],
-  categoryId: categoryId
-}));
-
-// /* MY TODO: сделать переключение темы оформления: */
-// document.getElementById('themeToggle').addEventListener('click', function() {
-//   const currentTheme = document.getElementById('themeStyles').href;
-//   if (currentTheme.includes('light.css')) {
-//     document.getElementById('themeStyles').href = '../css/dark.css';
-//   } else {
-//     document.getElementById('themeStyles').href = '../css/light.css';
-//   }
-// });
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=search.js.map
