@@ -17683,10 +17683,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ },
 
-/***/ "./src/scss/index.scss"
-/*!*****************************!*\
-  !*** ./src/scss/index.scss ***!
-  \*****************************/
+/***/ "./src/scss/home.scss"
+/*!****************************!*\
+  !*** ./src/scss/home.scss ***!
+  \****************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48625,7 +48625,7 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/index.scss */ "./src/scss/index.scss");
+/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/home.scss */ "./src/scss/home.scss");
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
 /* harmony import */ var _components_channelCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/channelCard */ "./src/js/components/channelCard.js");
