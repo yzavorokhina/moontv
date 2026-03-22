@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import '../scss/index.scss';
+import '../scss/home.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
 import ChannelCard from './components/channelCard';

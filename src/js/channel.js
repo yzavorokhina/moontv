@@ -1,6 +1,5 @@
 import '../scss/vendors/_bootstrap.scss';
 import '../scss/vendors/_normalize.scss';
-// import '../scss/index.scss';
 import '../scss/channel.scss';
 import './components/chat';
 import { createRoot } from 'react-dom/client';
