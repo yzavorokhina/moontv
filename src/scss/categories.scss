@@ -338,7 +338,7 @@ footer {
     border-radius: 5px;
 }
 
-.card-img-top {
+.category-img-top {
     width: 174px;
     height: 174px;
     object-fit: contain;
@@ -346,7 +346,7 @@ footer {
     margin-bottom: 6px;
 }
 
-.card-img-top:hover {
+.category-img-top:hover {
     cursor: pointer;
 }
 
@@ -414,11 +414,11 @@ footer {
 }
 
 .button-tag {
-    background-color: var(--color-font-gray-light, #CECED6);
+    background-color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
 }
 
 .button-tag:hover {
-    background-color: var(--color-font-white-light, #FFFFFF);
+    background-color: var(--color-font-gray-light, #CECED6);
 }
 
 /* end of the one category-card */

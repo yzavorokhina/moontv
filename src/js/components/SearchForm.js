@@ -3,7 +3,7 @@ export default function SearchForm({}) {
 
     return (
         <>
-            <form action="/dist/search.html" id="searchForm" method="get">
+            <form action="./search.html" id="searchForm" method="get">
                 <label htmlFor="site-search" className="visually-hidden">Поиск по сайту</label>
                 <input type="search" name="q" id="site-search" className="input-with-icon" placeholder="Поиск" aria-label="Search" />
                 <a href="#notifications" className="notification-round-button">

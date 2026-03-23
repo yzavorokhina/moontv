@@ -19,8 +19,8 @@ export default function ChannelCard({ db, categoryId, showAll }) {
                 stream,
                 channel,
                 category,
-                streamUrl: "/dist/channel.html?id=" + stream.id,
-                categoryUrl: "/dist/category.html?id=" + category.id
+                streamUrl: "./channel.html?id=" + stream.id,
+                categoryUrl: "./category.html?id=" + category.id
             }
         });
     }

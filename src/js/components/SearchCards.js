@@ -23,8 +23,8 @@ export default function SearchCards({ db, search, showAll }) {
                 stream,
                 channel,
                 category,
-                streamUrl: "/dist/channel.html?id=" + stream.id,
-                categoryUrl: "/dist/category.html?id=" + category.id
+                streamUrl: "./channel.html?id=" + stream.id,
+                categoryUrl: "./category.html?id=" + category.id
             }
         });
     }
