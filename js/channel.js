@@ -60,6 +60,74 @@ const db = {
 
 /***/ },
 
+/***/ "./src/js/components/SearchForm.js"
+/*!*****************************************!*\
+  !*** ./src/js/components/SearchForm.js ***!
+  \*****************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SearchForm)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function SearchForm(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(3);
+  let t1;
+  let t2;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+      htmlFor: "site-search",
+      className: "visually-hidden",
+      children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443"
+    });
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+      type: "search",
+      name: "q",
+      id: "site-search",
+      className: "input-with-icon",
+      placeholder: "\u041F\u043E\u0438\u0441\u043A",
+      "aria-label": "Search"
+    });
+    $[0] = t1;
+    $[1] = t2;
+  } else {
+    t1 = $[0];
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
+        action: "/dist/search.html",
+        id: "searchForm",
+        method: "get",
+        children: [t1, t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#notifications",
+          className: "notification-round-button",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "./images/notifications_button.svg",
+            className: "button-icon",
+            alt: "Search",
+            width: "40px",
+            height: "40px"
+          })
+        })]
+      })
+    });
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  return t3;
+}
+
+/***/ },
+
 /***/ "./src/js/components/VerticalMenu.js"
 /*!*******************************************!*\
   !*** ./src/js/components/VerticalMenu.js ***!
@@ -31367,8 +31435,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_chat__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_chat__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
-/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_SearchForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/SearchForm */ "./src/js/components/SearchForm.js");
+/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -31403,6 +31473,7 @@ console.log({
   streamData,
   channelData
 });
+const searchFormBlock = document.getElementById('search-form-block');
 const verticalMenu = document.getElementById('vertical-menu');
 const streamTV = document.getElementById("streamTV");
 const streamTitle = document.getElementById("streamTitle");
@@ -31411,8 +31482,10 @@ const channelName = document.getElementById("channelName");
 const currentViewers = document.getElementById("current-viewers");
 const ageRating = document.getElementById("ageRating");
 const channelIcon = document.getElementById("channelIcon");
+const rootSearchFormBlock = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(searchFormBlock);
+rootSearchFormBlock.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_SearchForm__WEBPACK_IMPORTED_MODULE_6__["default"], {}));
 const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(verticalMenu);
-rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_6__["default"], {
+rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
   showAll: false
 }));

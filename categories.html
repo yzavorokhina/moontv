@@ -19,7 +19,7 @@
     <div class="page">
         <header class="site-header">
             <div class="search" id="search-form-block">
-                <form action="/dist/search.html" id="searchForm" method="get">
+                <form action="./search.html" id="searchForm" method="get">
                     <label for="site-search" class="visually-hidden">Поиск по сайту</label>
                     <input type="search" name="q" id="site-search" class="input-with-icon" placeholder="Поиск" aria-label="Search">
                     <a href="#notifications" class="notification-round-button">
@@ -29,7 +29,7 @@
                 </form>
             </div>
             <div class="logo-container">
-                <a href="/dist/index.html" class="logo-img">
+                <a href="./index.html" class="logo-img">
                     <img src="images/logo_moon_1_1-3.png" style="width: 120px; height: 40px;" alt="MoonTV"
                         class="logo-icon">
                 </a>
@@ -267,40 +267,16 @@
                 <div class="main-of-the-main">
                     <div class="horizontal-blocks">
                         <div class="main-screen-block">
-                            <div class="horizontal-menu">
-                                <nav class="hMenu">
-                                    <ul>
-                                        <li class="h-menu-first-button"><a href="/dist/categories.html">
-                                                <img src="images/All_icon_for_categories.svg" alt="Иконка ссылки"
-                                                    width="11" height="10">
-                                                Все</a></li>
-                                        <li><a href="/dist/category.html?id=1">Обучение</a></li>
-                                        <li><a href="/dist/category.html?id=2">Музыка</a></li>
-                                        <li><a href="/dist/category.html?id=11">ТВ и Радио</a></li>
-                                        <li><a href="/dist/category.html?id=1">Разработка</a></li>
-                                        <li><a href="/dist/category.html?id=5">Спорт</a></li>
-                                        <li><a href="/dist/category.html?id=6">Чтение</a></li>
-                                        <li><a href="/dist/category.html?id=11">Общение</a></li>
-                                        <li><a href="/dist/category.html?id=8">Игры</a></li>
-                                        <li><a href="/dist/category.html?id=7">Хобби</a></li>
-                                        <li><a href="/dist/category.html?id=4">Другое</a></li>
-                                        <button class="h-menu-scroll"
-                                            aria-label="Следующая категория горизонтального меню">
-                                            <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
-                                            <svg class="carousel-arrow" width="30px" height="30px" viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
-                                                    fill="#CECED6" />
-                                            </svg>
-                                        </button>
-                                    </ul>
-                                </nav>
+
+                            <!-- React software_development -->
+                            <div id="react-horizontal-menu" class="horizontal-menu">
                             </div>
+                            <!-- React software_development end -->
+
                         </div>
                         <div class="favourite-categories">
                             <div class="arrow-back">
-                                <a href="/dist/index.html" class="arrowed">
+                                <a href="./index.html" class="arrowed">
                                     <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris -->
                                     <svg class="carousel-arrow" width="20px" height="20px" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1762,7 +1738,7 @@
                             </div>
                             <div class="show-all-button-row">
                                 <button class="show-all-button" type="button"
-                                    onclick="window.location.href='/dist/index.html'"
+                                    onclick="window.location.href='./index.html'"
                                     aria-label="Перейти в раздел всех категорий и жанров">Назад на главную</button>
                             </div>
                         </div>

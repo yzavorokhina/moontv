@@ -60,6 +60,230 @@ const db = {
 
 /***/ },
 
+/***/ "./src/js/components/HorizontalMenu.js"
+/*!*********************************************!*\
+  !*** ./src/js/components/HorizontalMenu.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ HorizontalMenu)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function HorizontalMenu(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(12);
+  let t1;
+  let t10;
+  let t11;
+  let t2;
+  let t3;
+  let t4;
+  let t5;
+  let t6;
+  let t7;
+  let t8;
+  let t9;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      className: "h-menu-first-button",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+        href: "./categories.html",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/All_icon_for_categories.svg",
+          alt: "\u0418\u043A\u043E\u043D\u043A\u0430 \u0441\u0441\u044B\u043B\u043A\u0438",
+          width: "11px",
+          height: "10px"
+        }), "\u0412\u0441\u0435"]
+      })
+    });
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=1",
+        children: "\u041E\u0431\u0443\u0447\u0435\u043D\u0438\u0435"
+      })
+    });
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=2",
+        children: "\u041C\u0443\u0437\u044B\u043A\u0430"
+      })
+    });
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=11",
+        children: "\u0422\u0412 \u0438 \u0420\u0430\u0434\u0438\u043E"
+      })
+    });
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=1",
+        children: "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430"
+      })
+    });
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=5",
+        children: "\u0421\u043F\u043E\u0440\u0442"
+      })
+    });
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=6",
+        children: "\u0427\u0442\u0435\u043D\u0438\u0435"
+      })
+    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=11",
+        children: "\u041E\u0431\u0449\u0435\u043D\u0438\u0435"
+      })
+    });
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=8",
+        children: "\u0418\u0433\u0440\u044B"
+      })
+    });
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=7",
+        children: "\u0425\u043E\u0431\u0431\u0438"
+      })
+    });
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./category.html?id=4",
+        children: "\u0414\u0440\u0443\u0433\u043E\u0435"
+      })
+    });
+    $[0] = t1;
+    $[1] = t10;
+    $[2] = t11;
+    $[3] = t2;
+    $[4] = t3;
+    $[5] = t4;
+    $[6] = t5;
+    $[7] = t6;
+    $[8] = t7;
+    $[9] = t8;
+    $[10] = t9;
+  } else {
+    t1 = $[0];
+    t10 = $[1];
+    t11 = $[2];
+    t2 = $[3];
+    t3 = $[4];
+    t4 = $[5];
+    t5 = $[6];
+    t6 = $[7];
+    t7 = $[8];
+    t8 = $[9];
+    t9 = $[10];
+  }
+  let t12;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
+        className: "hMenu",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+          children: [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            className: "h-menu-scroll",
+            "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+              className: "carousel-arrow",
+              width: "30px",
+              height: "30px",
+              viewBox: "0 0 24 24",
+              xmlns: "http://www.w3.org/2000/svg",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+                d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+                fill: "#CECED6"
+              })
+            })
+          })]
+        })
+      })
+    });
+    $[11] = t12;
+  } else {
+    t12 = $[11];
+  }
+  return t12;
+}
+
+/***/ },
+
+/***/ "./src/js/components/SearchForm.js"
+/*!*****************************************!*\
+  !*** ./src/js/components/SearchForm.js ***!
+  \*****************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SearchForm)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function SearchForm(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(3);
+  let t1;
+  let t2;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+      htmlFor: "site-search",
+      className: "visually-hidden",
+      children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443"
+    });
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+      type: "search",
+      name: "q",
+      id: "site-search",
+      className: "input-with-icon",
+      placeholder: "\u041F\u043E\u0438\u0441\u043A",
+      "aria-label": "Search"
+    });
+    $[0] = t1;
+    $[1] = t2;
+  } else {
+    t1 = $[0];
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
+        action: "/dist/search.html",
+        id: "searchForm",
+        method: "get",
+        children: [t1, t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#notifications",
+          className: "notification-round-button",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            src: "./images/notifications_button.svg",
+            className: "button-icon",
+            alt: "Search",
+            width: "40px",
+            height: "40px"
+          })
+        })]
+      })
+    });
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  return t3;
+}
+
+/***/ },
+
 /***/ "./src/js/components/VerticalMenu.js"
 /*!*******************************************!*\
   !*** ./src/js/components/VerticalMenu.js ***!
@@ -31289,9 +31513,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_category_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/category.scss */ "./src/scss/category.scss");
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../db/dbHelper.js */ "./src/db/dbHelper.js");
-/* harmony import */ var _components_channelCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/channelCard */ "./src/js/components/channelCard.js");
+/* harmony import */ var _components_SearchForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/SearchForm */ "./src/js/components/SearchForm.js");
 /* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
+/* harmony import */ var _components_channelCard__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/channelCard */ "./src/js/components/channelCard.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -31345,7 +31573,7 @@ const streamData = _db_dbHelper_js__WEBPACK_IMPORTED_MODULE_4__["default"].strea
 const channelData = _db_dbHelper_js__WEBPACK_IMPORTED_MODULE_4__["default"].channelsModel.findOneById(streamData.channelId);
 const categoryCards = document.getElementById('category_cards');
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(categoryCards);
-root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
+root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_channelCard__WEBPACK_IMPORTED_MODULE_8__["default"], {
   db: _db_dbHelper_js__WEBPACK_IMPORTED_MODULE_4__["default"],
   categoryId: categoryId,
   showAll: true
@@ -31355,17 +31583,23 @@ console.log({
   streamData,
   channelData
 });
+const searchFormBlock = document.getElementById('search-form-block');
 const verticalMenu = document.getElementById('vertical-menu');
+const horizontalMenu = document.getElementById('react-horizontal-menu');
 const categoryTitle = document.getElementById("categoryTitle");
 const categoryDes = document.getElementById("categoryDes");
 const categoryImage = document.getElementById("categoryImage");
 const categoryAudience = document.getElementById("categoryAudience");
 const categoryFollowers = document.getElementById("categoryFollowers");
+const rootSearchFormBlock = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(searchFormBlock);
+rootSearchFormBlock.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_SearchForm__WEBPACK_IMPORTED_MODULE_5__["default"], {}));
 const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(verticalMenu);
-rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_6__["default"], {
+rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_6__["default"], {
   db: _db_dbHelper_js__WEBPACK_IMPORTED_MODULE_4__["default"],
   showAll: false
 }));
+const rootHorizontalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(horizontalMenu);
+rootHorizontalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {}));
 categoryTitle.textContent = categoryData.name;
 categoryDes.textContent = categoryData.description;
 categoryImage.src = categoryData.imageUrl;
