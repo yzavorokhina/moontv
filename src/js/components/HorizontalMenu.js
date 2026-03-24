@@ -9,15 +9,15 @@ export default function HorizontalMenu({ }) {
                         <img src="./images/All_icon_for_categories.svg" alt="Иконка ссылки"
                             width="11px" height="10px" />
                         Все</a></li>
-                    <li><a href="./category.html?id=1">Обучение</a></li>
+                    <li><a href="./category.html?id=15">Обучение</a></li>
                     <li><a href="./category.html?id=2">Музыка</a></li>
-                    <li><a href="./category.html?id=11">ТВ и Радио</a></li>
+                    <li><a href="./category.html?id=16">Радио</a></li>
                     <li><a href="./category.html?id=1">Разработка</a></li>
-                    <li><a href="./category.html?id=5">Спорт</a></li>
+                    <li><a href="./category.html?id=12">Спорт</a></li>
                     <li><a href="./category.html?id=6">Чтение</a></li>
                     <li><a href="./category.html?id=11">Общение</a></li>
-                    <li><a href="./category.html?id=8">Игры</a></li>
-                    <li><a href="./category.html?id=7">Хобби</a></li>
+                    <li><a href="./category.html?id=13">Игры</a></li>
+                    <li><a href="./category.html?id=14">Хобби</a></li>
                     <li><a href="./category.html?id=4">Другое</a></li>
                     <button className="h-menu-scroll"
                         aria-label="Следующая категория горизонтального меню">
