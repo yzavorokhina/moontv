@@ -102,7 +102,7 @@ function HorizontalMenu(t0) {
     });
     t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./category.html?id=1",
+        href: "./category.html?id=15",
         children: "\u041E\u0431\u0443\u0447\u0435\u043D\u0438\u0435"
       })
     });
@@ -114,8 +114,8 @@ function HorizontalMenu(t0) {
     });
     t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./category.html?id=11",
-        children: "\u0422\u0412 \u0438 \u0420\u0430\u0434\u0438\u043E"
+        href: "./category.html?id=16",
+        children: "\u0420\u0430\u0434\u0438\u043E"
       })
     });
     t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
@@ -126,7 +126,7 @@ function HorizontalMenu(t0) {
     });
     t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./category.html?id=5",
+        href: "./category.html?id=12",
         children: "\u0421\u043F\u043E\u0440\u0442"
       })
     });
@@ -144,13 +144,13 @@ function HorizontalMenu(t0) {
     });
     t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./category.html?id=8",
+        href: "./category.html?id=13",
         children: "\u0418\u0433\u0440\u044B"
       })
     });
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./category.html?id=7",
+        href: "./category.html?id=14",
         children: "\u0425\u043E\u0431\u0431\u0438"
       })
     });
@@ -31257,7 +31257,7 @@ if (false) // removed by dead control flow
   \********************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"name":"Software and game development","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","imageUrl":"./images/category_description_image.svg","audience":12000,"followers":382},{"id":2,"name":"Music","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","imageUrl":"./images/category_description_image.svg","audience":1238,"followers":2798},{"id":3,"name":"English","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","imageUrl":"./images/category_description_image.svg","audience":12003,"followers":2323},{"id":4,"name":"DJs","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","imageUrl":"./images/category_description_image.svg","audience":12020,"followers":3442},{"id":5,"name":"Dance","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","imageUrl":"./images/category_description_image.svg","audience":12870,"followers":64554},{"id":6,"name":"Writing and Reading","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","imageUrl":"./images/category_description_image.svg","audience":120,"followers":445},{"id":7,"name":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","imageUrl":"./images/category_description_image.svg","audience":2000,"followers":544},{"id":8,"name":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","imageUrl":"./images/category_description_image.svg","audience":1000,"followers":221},{"id":9,"name":"Mandala Dance","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","imageUrl":"./images/category_description_image.svg","audience":12750,"followers":12},{"id":10,"name":"Tribal Dance","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","imageUrl":"./images/category_description_image.svg","audience":1230,"followers":34},{"id":11,"name":"Chatting","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category_description_image.svg","audience":330,"followers":38}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"name":"Разработка игр и ПО","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","imageUrl":"./images/category_description_image_development.jpg","audience":12000,"followers":382},{"id":2,"name":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","imageUrl":"./images/category_description_image_music.jpg","audience":1238,"followers":2798},{"id":3,"name":"Английский язык","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","imageUrl":"./images/category_description_image_music.jpg","audience":12003,"followers":2323},{"id":4,"name":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","imageUrl":"./images/category_description_image.svg","audience":12020,"followers":3442},{"id":5,"name":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","imageUrl":"./images/category_description_image.svg","audience":12870,"followers":64554},{"id":6,"name":"Чтение и писательство","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","imageUrl":"./images/category_description_image_reading.jpg","audience":120,"followers":445},{"id":7,"name":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","imageUrl":"./images/category_description_image.svg","audience":2000,"followers":544},{"id":8,"name":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","imageUrl":"./images/category_description_image.svg","audience":1000,"followers":221},{"id":9,"name":"Mandala Dance","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","imageUrl":"./images/category_description_image.svg","audience":12750,"followers":12},{"id":10,"name":"Tribal Dance","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","imageUrl":"./images/category_description_image.svg","audience":1230,"followers":34},{"id":11,"name":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category_description_image_communication.jpg","audience":330,"followers":38},{"id":12,"name":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","imageUrl":"./images/category_description_image_sport.jpg","audience":1230,"followers":34},{"id":13,"name":"Игры","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category_description_image_games.jpg","audience":330,"followers":38},{"id":14,"name":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","imageUrl":"./images/category_img_top_hobby.jpg","audience":1230,"followers":34},{"id":15,"name":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","imageUrl":"./images/category_description_image_education.jpg","audience":1230,"followers":34},{"id":16,"name":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","imageUrl":"./images/category_description_image_radio.jpg","audience":1230,"followers":34}]}');
 
 /***/ },
 
