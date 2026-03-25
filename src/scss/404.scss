@@ -452,25 +452,6 @@ center {
     opacity: 0;
 }
 
-@media screen and (max-width:1280px) {
-    .numbers {
-        display: none;
-    }
-    .error-emoji {
-        font-size: 100px;
-        visibility: visible;
-        opacity: 1;
-    }
-    .error-text {
-        visibility: visible;
-        opacity: 1;
-    }
-    .emoji {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
 .goto-home-page {
     display: flex;
     flex-direction: column;
@@ -491,4 +472,23 @@ center {
 
 .goto-home-page:hover {
     background-color: var(--color-accent-dark, #E2552D);
+}
+
+@media screen and (max-width:1280px) {
+    .numbers {
+        display: none;
+    }
+    .error-emoji {
+        font-size: 100px;
+        visibility: visible;
+        opacity: 1;
+    }
+    .error-text {
+        visibility: visible;
+        opacity: 1;
+    }
+    .emoji {
+        visibility: visible;
+        opacity: 1;
+    }
 }

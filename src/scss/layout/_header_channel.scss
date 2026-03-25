@@ -1,9 +1,6 @@
-/* Класс в роли контейнера: */
 .site-header {
     display: flex;
-    /* Прижимает крайние блоки к краям: */
     justify-content: space-between;
-    /* Выравнивает элементы по вертикали: */
     align-items: center;
     width: 100%;
     max-width: 1920px;
@@ -21,7 +18,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     width: fit-content;
     max-width: 428px;
     height: 40px;
@@ -34,7 +30,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     width: fit-content;
     max-width: 428px;
     height: 40px;
@@ -47,18 +42,12 @@
     height: 40px;
     border: none;
     outline: none;
-
     margin-right: 20px;
-
     background-image: url('../img/search-icon.svg');
     background-repeat: no-repeat;
-    /* Позиция иконки: */
     background-position: 10px center;
-    /* Размер иконки: */
     background-size: 24px 24px;
-    /* Место для иконки, чтобы текст не накладывался:*/
     padding-left: 40px;
-
     border-radius: 40px;
     background-color: var(--color-background-input, #1C173C);
     color: var(--color-font-white-light, #ffffff);
@@ -99,12 +88,9 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    /* Делает кнопку круглой: */
     border-radius: 50%;
-
     text-decoration: none;
     cursor: pointer;
-    /* Плавный переход для всех свойств: */
     transition: all 0.3s ease;
     // filter: grayscale(10%) opacity(0.9) brightness(90%);
 }
@@ -126,13 +112,11 @@
 .button-icon {
     width: 40px;
     height: 40px;
-    /* Сохраняет пропорции изображения: */
     object-fit: contain;
 }
 
 /*-------------------------------------------------------------*/
 /* logo: */
-/* MY TODO: center the logo in the center of the screen */
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -142,12 +126,9 @@
     width: 100%;
     max-width: 1040px;
     height: 122px;
-
     /* padding-left: 418px;
     padding-right: 504px; */
-
     /* border: 1px solid magenta; */
-    /* Центрирует строчные и inline‑block элементы: */
     text-align: center;
 }
 
@@ -164,7 +145,6 @@
     filter: grayscale(50%) opacity(0.8) brightness(90%);
 }
 
-/* MY TODO: think about the logo hover for three days in a row */
 .logo-img:hover {
     width: 120px;
     height: 40px;
@@ -200,7 +180,6 @@
     }
 } */
 
-/* MY TODO: find rounded font for logo */
 .logo-text {
     display: inline-block;
     /* height: 24px;  */
@@ -229,7 +208,6 @@
     justify-content: center;
     align-items: center;
     gap: 36px;
-
     height: 60px;
     width: 348px;
     /* padding-top: 13px;
@@ -242,14 +220,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     width: 34px;
     height: 34px;
     /* padding-left: 10px;
     padding-right: 10px; */
     border: 1px solid var(--color-background-dark, #16122F);
     /* border: none; */
-
     border-radius: 34px;
     background-color: var(--color-background-dark, #16122F);
     color: var(--color-font-white-light, #ffffff);
@@ -262,13 +238,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
     width: 34px;
     height: 34px;
     /* padding-left: 10px;
     padding-right: 10px; */
     border: none;
-
     border-radius: 34px;
     /* MY TODO: create hover colors for all buttons: */
     background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
@@ -282,7 +256,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     width: 26px;
     height: 26px;
 }
@@ -299,14 +272,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     width: 60px;
     height: 60px;
     /* padding-left: 10px;
     padding-right: 10px; */
     border: 1px solid var(--color-background-dark, #16122F);
     /* border: none; */
-
     border-radius: 60px;
     background-color: var(--color-background-dark, #16122F);
     color: var(--color-font-white-light, #ffffff);
@@ -320,10 +291,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     width: 60px;
     height: 60px;
-
     border-radius: 60px;
     box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
     -webkit-box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);

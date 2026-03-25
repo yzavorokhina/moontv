@@ -95,7 +95,6 @@
     //border: 1px solid rgb(12, 231, 220);
 }
 
-
 .show-all-categories a {
     color: var(--color-font-gray-light, #CECED6);
 }
@@ -114,7 +113,6 @@
     color: var(--color-font-gray-light, #CECED6);
 }
 
-
 .show-all-categories .show-all-arrow {
     width: 24px;
     height: 24px;
@@ -125,7 +123,6 @@
 }
 
 /* end of the show-all-orange-link */
-
 
 /* channels-row:*/
 .channels-row {
@@ -139,8 +136,6 @@
     //max-width: 1612px;
     // max-width: 1630px;
     height: 300px;
-
-    /* в макете есть, но не помню зачем, на вид - не нужный отступ:*/
     // margin-right: 10px;
     padding: 0;
     // border: 1px solid rgb(197, 10, 214);
@@ -166,7 +161,6 @@
 .card-img-top {
     max-width: 100%;
     height: 180px;
-    // изображение отображено с сохранением пропорций:
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: 9px;
@@ -174,12 +168,11 @@
 }
 
 .card-body {
-    // закрепить кнопку с описанием внизу карточки
-    // (странно отображалось в Мозилле):
+    // add a button with a description at the bottom of the card
+    // (displayed strangely in Mozilla)
     // position: sticky;
     // bottom: 2px;
     // left: 100%;
-    // отрицательное значение перемещает элемент влево, положительное - вправо:
     // transform: translatex(2px);
     // cursor: pointer;
     padding: 0;
@@ -214,7 +207,6 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 4px;
-    /* фиксированная минимальная высота: */
     // min-height: 60px;
     // border: 1px solid rgb(59, 218, 130);
 }
@@ -250,10 +242,8 @@
 //     color: var(--color-font-gray-light, #CECED6);
 // }
 
-/* MY TODO: make the channel-title fixed: */
 .channel-title {
     margin: 0;
-    /* В теории прижимает к низу: */
     margin-top: auto;
     font-size: 14px;
     // color: #FF6F3A !important;
@@ -313,7 +303,6 @@
 .button-tag:hover {
     background-color: var(--color-font-white-light, #FFFFFF);
 }
-
 /* end of the one channel-card */
 
 
@@ -342,9 +331,7 @@
 
 .divider-container {
     display: flex;
-    /* Выравнивает по вертикали: */
     align-items: center;
-    /* Распределяет элементы с равными отступами: */
     justify-content: space-between;
     width: 100%;
     // border: 1px solid red;
@@ -352,18 +339,14 @@
 }
 
 .divider-line {
-    /* Занимает всё доступное пространство: */
     flex: 1;
-    /* Занимает всё доступное пространство */
     height: 1px;
     background: var(--color-font-gray-light, #CECED6);
     border-radius: 1px;
 }
 
 .divider-button {
-    /* Отступы по бокам от кнопки: */
     margin: 0 15px;
-    /* Отступы по бокам от кнопки */
     // padding: 10px 6px 10px 10px;
     color: var(--color-font-gray-light, #CECED6);
     cursor: pointer;
@@ -468,7 +451,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* Выравнивание h5 внутри flex: */
     align-items: baseline;
     justify-content: baseline;
     /* border: 1px solid rgb(28, 198, 204); */
@@ -509,14 +491,11 @@
     text-align: center;
 }
 
-/* стили ссылок-обёрток: */
+/* styles of wrapper links: */
 a {
     text-decoration: none;
-    /* Убирает подчёркивание */
     color: inherit;
-    /* Наследует цвет текста */
     display: block;
-    /* Занимает всю ширину, как div */
 }
 
 .link-wrapper {
@@ -531,7 +510,6 @@ a {
 
 .link-wrapper:focus {
     outline: 1px solid var(--color-font-white-light, #FFFFFF);
-    /* Кастомный фокус */
     //outline: none;
     outline-offset: 1px;
     border-radius: 5px;

@@ -53,22 +53,18 @@
 
 .hMenu li:first-child {
     border: none;
-    /* Жирный текст: */
     // font-weight: bold;
     background-color: var(--color-accent-light, #FF6F3A);
 }
 
 .hMenu li:first-child:hover {
-    /* Лёгкое увеличение: */
     // transform: scale(1.05);
     background-color: var(--color-accent-dark, #E2552D);
 }
 
 .hMenu a {
     color: var(--color-font-white-light, #ffffff);
-    /* Чтобы ссылка занимала всю площадь li: */
     display: block;
-    /* Плавный переход цвета: */
     transition: color 0.3s ease;
 }
 
@@ -98,8 +94,7 @@
     align-items: center;
     justify-content: center;
     // visibility: hidden;
-    /* совпадает с высотой кнопки: */
-    line-height: 40px;
+    line-height: 40px; // matches the height of the button
     width: 40px;
     height: 40px;
     padding: 0;
@@ -110,11 +105,9 @@
     text-align: center;
     cursor: pointer;
     z-index: 10;
-    /* поверх видео */
     transition: background 0.3s ease;
 }
 
-/* MY TODO: align the arrow in the button: */
 .h-menu-scroll-arrow {
     display: flex;
     flex-direction: column;
@@ -128,13 +121,11 @@
     right: -15px;
 }
 
-/* Эффекты при наведении */
 .h-menu-scroll:hover {
     background-color: var(--color-background-dark, #16122F);
     border: 1px solid var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
 }
 
-/* Скрываем кнопки на мобильных устройствах */
 @media (max-width: 768px) {
     .h-menu-scroll {
         display: none;

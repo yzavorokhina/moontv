@@ -247,8 +247,7 @@ h1 {
 
 .form input[type="email"]::placeholder {
     color: var(--color-font-gray-light, #CECED6);
-    /* Firefox reduces transparency by default: */
-    opacity: 1;
+    opacity: 1; // Firefox reduces transparency by default
 }
 
 .form input[type="password"] {
@@ -267,8 +266,7 @@ h1 {
 
 .form input[type="password"]::placeholder {
     color: var(--color-font-gray-light, #CECED6);
-    /* Firefox reduces transparency by default: */
-    opacity: 1;
+    opacity: 1; 
 }
 
 .form .button-1 {
@@ -378,10 +376,8 @@ h1 {
     filter: none;
 }
 
-/* MY_TODO: add color-hover on social buttons: */
 .links img:hover {
     cursor: pointer;
-    /* button scaling: */
     transform: scale(1.2);
 }
 
@@ -395,7 +391,6 @@ h1 {
 
 .links svg:hover {
     cursor: pointer;
-    /* button scaling: */
     transform: scale(1.2);
 }
 

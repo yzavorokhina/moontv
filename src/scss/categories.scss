@@ -1,87 +1,16 @@
-// Импорт сторонних библиотек:
-// @import 'vendors/bootstrap';
 @import "bootstrap";
-// Normalize file add after bootstrap:
 @import "./vendors/normalize";
 
-// Импорт базовых стилей
 @import 'base/variables';
-// @import 'base/mixins';
-// @import 'base/reset';
 
-// Импорт компонентов
-// @import 'components/buttons';
-// @import 'components/forms';
-// @import 'components/header';
 @import 'components/horizontal-menu';
 @import 'components/vertical-menu';
 @import 'components/banner';
 @import 'components/favourite-channels';
 @import 'components/favourite-categories';
 
-// Импорт вёрстки
 @import 'layout/header';
 @import 'layout/footer';
-// @import 'layout/grid';
-
-// Импорт стилей страниц
-// @import 'pages/home';
-// @import 'pages/about';
-// @import 'pages/contact';
-
-
-:root {
-    // --font-source-code: "Source Code Pro", monospace;
-    // --font-silkscreen: "Silkscreen", sans-serif;
-    // --font-press-start: "Press Start 2P", system-ui;
-    // --font-ibm-plex: "IBM Plex Mono", monospace;
-
-    // --color-background-light: #343148;
-    // --color-background-dark: #16122F;
-    // --color-background-accent: #000000;
-
-    // --color-background-input: #1C173C;
-    // --color-background-promo: #292640;
-
-    // --color-accent-light: #FF6F3A;
-    // --color-accent-dark: #E2552D; 
-    // --color-font-white-light: #FFFFFF;
-    // --color-font-white-dark: #FDFDFF;
-    // --color-font-gray-light: #CECED6;
-    // --color-font-gray-dark: rgba(170, 168, 181, 0.7);
-
-    // --color-dark-buttons-hover: rgba(17, 9, 80, 0.5);
-    // --color-dark-blocks-hover:  #2e2b50;
-
-    // --color-dark-button-scroll-hover: #54506B;
-    // --color-dark-transparent-banner-button: rgba(52, 49, 72, 0.2);
-
-    // --font-open-sans: #{$font-open-sans-sass};
-    --font-source-code: #{$font-source-code-sass};
-    // --font-silkscreen: #{$font-silkscreen-sass};
-    // --font-press-start: #{$font-press-start-sass};
-    // --font-ibm-plex: #{$font-ibm-plex-sass};
-
-    --color-background-light: #{$color-background-light-sass};
-    --color-bbackground-dark: #{$color-background-dark-sass};
-
-    --color-background-accent: #{$color-background-accent-sass};
-
-    --color-background-input: #{$color-background-input-sass};
-    --color-background-promo: #{$color-background-promo-sass};
-    --color-dark-transparent-banner-button: #{$color-dark-transparent-banner-button-sass};
-
-    --color-accent-light: #{$color-accent-light-sass};
-    --color-accent-dark: #{$color-accent-dark-sass};
-    --color-font-white-light: #{$color-font-white-light-sass};
-    --color-font-white-dark: #{$color-font-white-dark-sass};
-    --color-font-gray-light: #{$color-font-gray-light-sass};
-    --color-font-gray-dark: #{$color-font-gray-dark-sass};
-    --color-dark-button-scroll: #{$color-dark-button-scroll-sass};
-
-    --color-dark-buttons-hover: #{$color-dark-buttons-hover-sass};
-    --color-dark-blocks-hover: #{$color-dark-blocks-hover-sass};
-}
 
 html,
 body {

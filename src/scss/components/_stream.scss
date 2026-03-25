@@ -142,12 +142,9 @@ iframe {
 
 .banner-ava {
     border: none;
-    /* Цвет и толщина обводки: */
-    outline: 3px solid var(--color-accent-light, #FF6F3A);
-    /* Расстояние от картинки до обводки: */
-    outline-offset: 10px;
-    /* Опционально: отступ от других элементов: */
-    margin: 15px;
+    outline: 3px solid var(--color-accent-light, #FF6F3A); // Outline color and thickness
+    outline-offset: 10px; // The distance from the image to the outline
+    margin: 15px; // Optional: indentation from other elements
     border-radius: 60px;
 }
 
@@ -194,14 +191,12 @@ iframe {
 
 .stream-info h5:first-child {
     border: none;
-    /* Жирный текст: */
     font-weight: bold;
     color: var(--color-font-white-dark, #FDFDFF);
 }
 
 .stream-info h5:first-child:hover {
     color: var(--color-accent-light, #FF6F3A);
-    /* Жирный текст: */
     font-weight: bold;
 }
 
@@ -235,7 +230,6 @@ iframe {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* Выравнивание h5 внутри flex: */
     align-items: baseline;
     justify-content: baseline;
     /* border: 1px solid rgb(28, 198, 204); */
@@ -291,16 +285,11 @@ iframe {
     height: 40px;
     border: none;
     outline: none;
-
     background-image: url('../img/channel_heart_follow_button.svg');
     background-repeat: no-repeat;
-    /* Позиция иконки: */
-    background-position: 14px center;
-    /* Размер иконки: */
-    background-size: 20px 20px;
-    /* Место для иконки, чтобы текст не накладывался:*/
-    padding-left: 40px;
-
+    background-position: 14px center; // Icon position
+    background-size: 20px 20px; // Icon size
+    padding-left: 40px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--color-accent-light, #FF6F3A);
     color: var(--color-font-white-light, #ffffff);
@@ -328,16 +317,11 @@ iframe {
     height: 40px;
     border: none;
     outline: none;
-
     background-image: url('../img/channel_star_subscribe_button.svg');
     background-repeat: no-repeat;
-    /* Позиция иконки: */
-    background-position: 14px center;
-    /* Размер иконки: */
-    background-size: 20px 20px;
-    /* Место для иконки, чтобы текст не накладывался:*/
-    padding-left: 40px;
-
+    background-position: 14px center; // Icon position
+    background-size: 20px 20px; // Icon size
+    padding-left: 40px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--color-background-dark, #16122F);
     color: var(--color-font-white-light, #ffffff);
@@ -381,14 +365,11 @@ iframe {
     max-width: 346px;
     // height: 960px;
     min-height: calc(100vh - 100px);
-    /* чтобы адресная строка не перекрывала контент: */
     // min-height: calc(100dvh - 100px);
     margin-right: 24px;
     border-radius: 5px;
-
     // border: 1px solid red;
 }
-
 
 /* chat: */
 .chat-container {
@@ -398,7 +379,6 @@ iframe {
     max-width: 346px;
     // height: 960px;
     min-height: calc(100vh - 100px);
-    /* чтобы адресная строка не перекрывала контент: */
     // min-height: calc(100dvh - 100px);
     border-radius: 20px;
     // padding-top: 6px;
@@ -522,16 +502,14 @@ iframe {
 }
 
 .emoji-toggle:hover {
-    background-color: var(--color-dark-blocks-hover,  #2e2b50);
+    background-color: var(--color-dark-blocks-hover, #2e2b50);
     // border: 1px solid var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
 }
 
 .emoji-panel {
     display: none;
-    /* Изначально скрыта */
     position: absolute;
     bottom: 70px;
-    /* Располагаем над полем ввода */
     left: 15px;
     background: white;
     border-radius: 12px;
@@ -555,12 +533,11 @@ iframe {
     transform: scale(1.2);
 }
 
-/* Показываем панель при активном классе */
 .emoji-panel.active {
+    // Showing the panel when the class is active
     display: flex;
 }
 
-/* Корректировка для мобильных устройств */
 @media (max-width: 480px) {
     .chat-container {
         width: 100%;
@@ -641,10 +618,8 @@ iframe {
     flex-direction: row;
     justify-content: space-between;
     // gap:20px;
-
 }
 
-/* Стили для скроллбара */
 .chat-messages::-webkit-scrollbar {
     width: 6px;
 }

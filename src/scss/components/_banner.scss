@@ -161,14 +161,12 @@ iframe {
 
 .stream-info h5:first-child {
     border: none;
-    /* Жирный текст: */
     font-weight: bold;
     color: var(--color-font-white-dark, #FDFDFF);
 }
 
 .stream-info h5:first-child:hover {
     color: var(--color-accent-light, #FF6F3A);
-    /* Жирный текст: */
     font-weight: bold;
 }
 
@@ -201,7 +199,6 @@ iframe {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* Выравнивание h5 внутри flex: */
     align-items: baseline;
     justify-content: baseline;
     /* border: 1px solid rgb(28, 198, 204); */
@@ -265,8 +262,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* совпадает с высотой кнопки: */
-    line-height: 40px;
+    line-height: 40px; // matches the height of the button
     width: 40px;
     height: 40px;
     padding: 0;
@@ -276,7 +272,6 @@ iframe {
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
-    /* поверх видео: */
     z-index: 10;
     transition: background 0.3s ease;
 }
@@ -303,14 +298,12 @@ iframe {
     padding-top: 4px;
 }
 
-/* Эффекты при наведении */
 .carousel-btn:hover {
     background: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
     // transform: translateY(-50%) scale(1.1);
     border: 2px solid var(--color-font-gray-light, #CECED6);
 }
 
-/* Скрываем кнопки на мобильных устройствах */
 @media (max-width: 768px) {
     .carousel-btn {
         display: none;
@@ -334,7 +327,6 @@ iframe {
         display: none;
     }
 }
-
 
 .promo :hover {
     background-color: var(--color-background-dark, #16122F);

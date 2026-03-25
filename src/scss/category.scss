@@ -1,95 +1,23 @@
-// Импорт сторонних библиотек:
-// @import 'vendors/bootstrap';
 @import "bootstrap";
-// Normalize file add after bootstrap:
 @import "./vendors/normalize";
 
-// Импорт базовых стилей
 @import 'base/variables';
-// @import 'base/mixins';
-// @import 'base/reset';
 
-// Импорт компонентов
-// @import 'components/buttons';
-// @import 'components/forms';
-// @import 'components/header';
 @import 'components/horizontal-menu';
 @import 'components/vertical-menu';
 @import 'components/category_channels';
 
-// Импорт вёрстки
 @import 'layout/header';
 @import 'layout/footer';
-// @import 'layout/grid';
 
-// Импорт стилей страниц
-// @import 'pages/home';
-// @import 'pages/about';
-// @import 'pages/contact';
-
-
-:root {
-    // --font-source-code: "Source Code Pro", monospace;
-    // --font-silkscreen: "Silkscreen", sans-serif;
-    // --font-press-start: "Press Start 2P", system-ui;
-    // --font-ibm-plex: "IBM Plex Mono", monospace;
-
-    // --color-background-light: #343148;
-    // --color-background-dark: #16122F;
-    // --color-background-accent: #000000;
-
-    // --color-background-input: #1C173C;
-    // --color-background-promo: #292640;
-
-    // --color-accent-light: #FF6F3A;
-    // --color-accent-dark: #E2552D; 
-    // --color-font-white-light: #FFFFFF;
-    // --color-font-white-dark: #FDFDFF;
-    // --color-font-gray-light: #CECED6;
-    // --color-font-gray-dark: rgba(170, 168, 181, 0.7);
-
-    // --color-dark-buttons-hover: rgba(17, 9, 80, 0.5);
-    // --color-dark-blocks-hover:  #2e2b50;
-
-    // --color-dark-button-scroll-hover: #54506B;
-    // --color-dark-transparent-banner-button: rgba(52, 49, 72, 0.2);
-
-    // --font-open-sans: #{$font-open-sans-sass};
-    --font-source-code: #{$font-source-code-sass};
-    // --font-silkscreen: #{$font-silkscreen-sass};
-    // --font-press-start: #{$font-press-start-sass};
-    // --font-ibm-plex: #{$font-ibm-plex-sass};
-
-    --color-background-light: #{$color-background-light-sass};
-    --color-bbackground-dark: #{$color-background-dark-sass};
-
-    --color-background-accent: #{$color-background-accent-sass};
-
-    --color-background-input: #{$color-background-input-sass};
-    --color-background-promo: #{$color-background-promo-sass};
-    --color-dark-transparent-banner-button: #{$color-dark-transparent-banner-button-sass};
-
-    --color-accent-light: #{$color-accent-light-sass};
-    --color-accent-dark: #{$color-accent-dark-sass};
-    --color-font-white-light: #{$color-font-white-light-sass};
-    --color-font-white-dark: #{$color-font-white-dark-sass};
-    --color-font-gray-light: #{$color-font-gray-light-sass};
-    --color-font-gray-dark: #{$color-font-gray-dark-sass};
-    --color-dark-button-scroll: #{$color-dark-button-scroll-sass};
-
-    --color-dark-buttons-hover: #{$color-dark-buttons-hover-sass};
-    --color-dark-blocks-hover: #{$color-dark-blocks-hover-sass};
-}
 
 html,
 body {
     // display: flex;
     // flex-direction: column;
-    /* Минимальная высота — весь экран: */
     min-height: 100vh;
     // font-family: var(--font-source-code);
     // font-family: $font-source-code;
-    /* To hide horizontal scrolling for the entire page: */
     overflow-x: hidden;
     background-color: var(--color-background-light, #343148);
 }
@@ -104,14 +32,11 @@ h4 {
 .page {
     display: flex;
     flex-direction: column;
-    /* Минимальная высота — весь экран: */
     min-height: 100vh;
 }
 
 header {
-    /* Запрещает сжиматься: */
     flex-shrink: 0;
-    /* Фиксированная высота: */
     height: 122px;
 }
 
@@ -120,8 +45,7 @@ main {
     flex-grow: 1;
     width: 100%;
     // max-width: 1920px;
-    /* Тест на выпячивание блоков: */
-    // overflow-y: auto; /* Вертикальный скролл только внутри main, если нужно */ 
+    // overflow-y: auto;
 }
 
 .category-description-container {
@@ -144,7 +68,7 @@ main {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap:34px;
+    gap: 34px;
     color: #FF6F3A;
     // border: 1px solid lime;
 }
@@ -271,11 +195,9 @@ main {
 .category-description-img {
     max-width: 100%;
     height: 260px;
-    // изображение отображено с сохранением пропорций:
     object-fit: contain;
     border-radius: 5px;
 }
-
 
 /* one category-card: */
 // .category-card {
@@ -396,8 +318,6 @@ main {
 /* end of the one category-card */
 
 
-
-
 .category-description-title h2 {
     margin-bottom: 0;
     padding-bottom: 20px;
@@ -444,16 +364,11 @@ main {
     height: 40px;
     border: none;
     outline: none;
-
     background-image: url('../img/channel_heart_follow_button.svg');
     background-repeat: no-repeat;
-    /* Позиция иконки: */
-    background-position: 14px center;
-    /* Размер иконки: */
-    background-size: 20px 20px;
-    /* Место для иконки, чтобы текст не накладывался:*/
-    padding-left: 40px;
-
+    background-position: 14px center; // Icon position
+    background-size: 20px 20px; // Icon size
+    padding-left: 40px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--color-accent-light, #FF6F3A);
     color: var(--color-font-white-light, #ffffff);
@@ -483,16 +398,11 @@ main {
     border: none;
     outline: none;
     margin-right: 20px;
-
     background-image: url('../img/category_chevron_down.svg');
     background-repeat: no-repeat;
-    /* Позиция иконки: */
     background-position: 10px center;
-    /* Размер иконки: */
     background-size: 24px 24px;
-    /* Место для иконки, чтобы текст не накладывался:*/
     padding-left: 40px;
-
     border-radius: 40px;
     background-color: var(--color-background-input, #1C173C);
     color: var(--color-font-white-light, #ffffff);
@@ -515,16 +425,11 @@ main {
     border: none;
     outline: none;
     margin-right: 20px;
-
     background-image: url('../img/search-icon.svg');
     background-repeat: no-repeat;
-    /* Позиция иконки: */
     background-position: 10px center;
-    /* Размер иконки: */
     background-size: 24px 24px;
-    /* Место для иконки, чтобы текст не накладывался:*/
     padding-left: 40px;
-
     border-radius: 40px;
     background-color: var(--color-background-input, #1C173C);
     color: var(--color-font-white-light, #ffffff);
@@ -542,9 +447,7 @@ main {
 }
 
 footer {
-    /* Запрещает сжиматься: */
     flex-shrink: 0;
-    /* Фиксированная высота: */
     height: 222px;
 }
 
@@ -556,7 +459,6 @@ footer {
 
 .main-of-the-main {
     display: flex;
-    /* MY TODO: узнать как точно указывать ширину, с высотами более-менее понятно: */
     // width: 100%;
     // max-width: 1698px;
     width: calc(100vw - 222px);
@@ -565,7 +467,6 @@ footer {
     // background-color: rgba(192, 191, 196, 0.3);
 }
 
-/* MY TODO: check width and height of main block on full-screen */
 .horizontal-blocks {
     display: flex;
     flex-direction: column;
@@ -585,10 +486,8 @@ footer {
 }
 
 /* Notification block: */
-/* MY TODO: stylize close button: */
 .notification {
     position: fixed;
-    /* чтобы блок был поверх других элементов: */
     z-index: 1000;
     bottom: 0;
     left: 0;
@@ -637,7 +536,6 @@ footer {
     font-weight: 500;
 }
 
-/* MY TODO: find color for var in btn-close: */
 .notification .btn-close {
     width: 28px;
     height: 28px;
@@ -650,7 +548,6 @@ footer {
     box-shadow: 0 3px 5px rgba(0, 151, 211, 0.2);
 }
 
-/* Скрыть всплывающий блок уведомления на главной странице: */
 #myElement {
     border: none;
 }
@@ -658,6 +555,7 @@ footer {
 // .hidden {
 //   display: none;
 // }
+
 .fade-out {
     opacity: 0;
     visibility: hidden;

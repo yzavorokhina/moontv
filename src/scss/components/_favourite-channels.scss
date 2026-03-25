@@ -92,7 +92,6 @@
     height: 148px;
     border-radius: 5px;
     font-size: 22px;
-
     background-image: url("../img/Category1_edu.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,9 +114,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    /* занимает всё доступное пространство: */
     flex: 1;
-    /* скролл при переполнении: */
     // overflow-y: auto;
     width: 310px;
     height: 148px;
