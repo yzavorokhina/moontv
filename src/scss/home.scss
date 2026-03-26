@@ -1,27 +1,9 @@
-// @import 'vendors/bootstrap';
-@import "bootstrap";
-@import "./vendors/normalize"; // normalize file add after bootstrap
+@use 'main.scss';
 
-@import 'base/variables';
-// @import 'base/mixins';
-// @import 'base/reset';
-
-// @import 'components/buttons';
-// @import 'components/forms';
-// @import 'components/header';
-@import 'components/horizontal-menu';
-@import 'components/vertical-menu';
-@import 'components/banner';
-@import 'components/favourite-channels';
-@import 'components/favourite-categories';
-
-@import 'layout/header';
-@import 'layout/footer';
-// @import 'layout/grid';
-
-// @import 'pages/home';
-// @import 'pages/about';
-// @import 'pages/contact';
+@use 'layout/footer';
+@use 'components/banner';
+@use 'components/favourite-channels';
+@use 'components/favourite-categories';
 
 
 html,

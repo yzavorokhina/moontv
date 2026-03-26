@@ -1,17 +1,11 @@
-@import "bootstrap";
-@import "./vendors/normalize";
+@use 'main.scss';
 
-@import 'base/variables';
-
-@import 'components/vertical-menu';
-
+@import 'layout/header_channel';
 @import 'components/stream';
 @import 'components/channel_all_video';
 @import 'components/channel_favourite_category';
 @import 'components/channel_favourite_clips';
 @import 'components/channel_favourite_video';
-
-@import 'layout/header_channel';
 
 html,
 body {

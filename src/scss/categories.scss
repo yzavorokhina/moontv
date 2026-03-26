@@ -1,16 +1,10 @@
-@import "bootstrap";
-@import "./vendors/normalize";
+@use 'main.scss';
 
-@import 'base/variables';
+@use 'layout/footer';
 
-@import 'components/horizontal-menu';
-@import 'components/vertical-menu';
-@import 'components/banner';
-@import 'components/favourite-channels';
-@import 'components/favourite-categories';
-
-@import 'layout/header';
-@import 'layout/footer';
+@use 'components/banner';
+@use 'components/favourite-channels';
+@use 'components/favourite-categories';
 
 html,
 body {

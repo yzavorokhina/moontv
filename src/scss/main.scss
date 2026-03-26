@@ -1,0 +1,53 @@
+// 1. Сторонние библиотеки
+@use "bootstrap";
+@use "vendors/normalize";
+
+// 2. Утилиты (переменные, миксины, функции) — они не генерируют CSS
+@use 'utils/variables';
+// @use "utils/variables" as *;
+// @use "utils/mixins" as *;
+// @use "utils/breakpoints/breakpoints" as *;
+// @use "utils/animations/animation" as *;
+// или
+// @use "utils/all";            // Переменные, миксины, функции
+
+// 3. Собственные базовые стили (в строгой последовательности)
+// @use "base/reset";           // Сначала сброс
+@use "base/typography";         // Затем типографика
+@use "base/base";               // Потом остальные базовые стили
+// или
+// @use "base/all";             // Сброс, типографика, базовые стили
+
+// 4. Макет
+// @use "layout/grid";
+// @use "layout/header";
+// @use "layout/footer";
+@use 'layout/header';
+
+// @use 'layout/footer';
+
+// 5. Компоненты
+// @use "components/buttons";
+// @use "components/cards";
+@use 'components/horizontal-menu';
+@use 'components/vertical-menu';
+
+// @use 'components/banner';
+// @use 'components/favourite-channels';
+// @use 'components/favourite-categories';
+
+// @use 'components/stream';
+// @use 'components/channel_all_video';
+// @use 'components/channel_favourite_category';
+// @use 'components/channel_favourite_clips';
+// @use 'components/channel_favourite_video';
+// @use 'layout/header_channel';
+
+// @use 'components/category_channels';
+
+// или
+// @use "components/all";      // Все компоненты одним импортом
+
+// 6. Страницы (если нужны специфические стили)
+// @use "pages/home";
+// @use "pages/about";
