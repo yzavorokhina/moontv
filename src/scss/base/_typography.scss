@@ -1,0 +1,145 @@
+// // Переменные для типографики
+// $font-family-base: 'Helvetica Neue', Arial, sans-serif;
+// $font-size-base: 16px;
+// $line-height-base: 1.6;
+// $color-text: #333;
+// $color-link: #007bff;
+// $color-link-hover: #0056b3;
+
+// /* Базовые настройки */
+// html {
+//   font-size: $font-size-base;
+//   line-height: $line-height-base;
+// или:
+//   font-size: 16px;
+//   line-height: 1.5;
+// }
+
+// body {
+//   font-family: $font-family-base;
+//   color: $color-text;
+//   line-height: $line-height-base;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// или:
+//   font-family: 'Helvetica Neue', Arial, sans-serif;
+//   color: #333;
+//   line-height: 1.6;
+// }
+
+// /* Заголовки */
+// h1 {
+//   font-size: 2.5rem;
+//   margin-bottom: 0.5em;
+//   font-weight: bold;
+//   line-height: 1.2;
+// }
+
+// h2 {
+//   font-size: 2rem;
+//   margin-bottom: 0.75em;
+//   font-weight: bold;
+//   line-height: 1.3;
+// }
+
+// h3 {
+//   font-size: 1.75rem;
+//   margin-bottom: 1em;
+//   font-weight: 600;
+// }
+
+// h4 {
+//   font-size: 1.5rem;
+//   margin-bottom: 1em;
+//   font-weight: 600;
+// }
+
+// h5 {
+//   font-size: 1.25rem;
+//   margin-bottom: 1em;
+//   font-weight: 600;
+// }
+
+// h6 {
+//   font-size: 1rem;
+//   margin-bottom: 1em;
+//   font-weight: 600;
+// }
+
+// /* Параграфы */
+// p {
+//   margin-bottom: 1em;
+//   text-align: left;
+// }
+
+// p + p {
+//   text-indent: 1.5em;
+// }
+
+// /* Цитаты */
+// blockquote {
+//   margin: 1.5em 2em;
+//   padding: 1em 1.5em;
+//   border-left: 4px solid $color-link;
+//   background-color: #f9f9f9;
+//   font-style: italic;
+// }
+
+// blockquote p:last-child {
+//   margin-bottom: 0;
+// }
+
+// /* Ссылки */
+// a {
+//   color: $color-link;
+//   text-decoration: none;
+//   transition: color 0.2s ease;
+// или:
+//   color: $primary-color;
+//   text-decoration: underline;
+
+//   &:hover {
+//     color: $color-link-hover;
+//     text-decoration: underline;
+// или:
+// color: darken($primary-color, 10%);
+//   }
+// }
+
+// /* Списки */
+// ul, ol {
+//   margin-left: 1.5em;
+//   margin-bottom: 1em;
+// }
+
+// li {
+//   margin-bottom: 0.5em;
+// }
+
+// /* Код */
+// code,
+// pre {
+//   font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+//   font-size: 0.9em;
+// }
+
+// code {
+//   padding: 0.2em 0.4em;
+//   background: #f8f8f8;
+//   border-radius: 3px;
+// }
+
+// pre {
+//   padding: 1em;
+//   overflow: auto;
+//   background: #f0f0f0;
+//   border-radius: 4px;
+// }
+
+// /* Подписи к изображениям */
+// figcaption {
+//   font-size: 0.9em;
+//   color: #666;
+//   margin-top: 0.5em;
+//   text-align: center;
+// }

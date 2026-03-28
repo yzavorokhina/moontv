@@ -2,6 +2,14 @@ $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
 
+// // Отступы
+// $spacing-sm: 8px;
+
+// // Контрольные точки
+// $bp-mobile: 480px;
+// $bp-tablet: 768px;
+// $bp-desktop: 1024px;
+
 // Миксин для удобства
 @mixin respond-to($breakpoint) {
   @if $breakpoint == mobile {

@@ -1,11 +1,12 @@
 import _ from 'lodash';
+import '../scss/main.scss';
 import '../scss/home.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
-import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import ChannelCard from './components/channelCard';
+import Header from './components/Header';
 
 
 /* A pop-up orange-row notification: */
@@ -41,7 +42,7 @@ buttonUp.onclick = function () {
   });
 };
 
-const searchFormBlock = document.getElementById('search-form-block');
+const header = document.getElementById('react-header');
 const verticalMenu = document.getElementById('vertical-menu');
 const horizontalMenu = document.getElementById('react-horizontal-menu');
 const favoriteSoftwareDev = document.getElementById('favorite_software_development');
@@ -53,8 +54,8 @@ const favoriteReading = document.getElementById('favorite_reading');
 const favoriteTDU2 = document.getElementById('favorite_tdu2');
 const favoriteSkyrim = document.getElementById('favorite_skyrim');
 
-const rootSearchFormBlock = createRoot(searchFormBlock);
-rootSearchFormBlock.render(<SearchForm />);
+const rootHeader = createRoot(header);
+rootHeader.render(<Header />);
 
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
@@ -93,13 +94,3 @@ rootTDU2.render(<ChannelCard db={db} categoryId={categoryId} />);
 categoryId = 8;
 const rootSkyrim = createRoot(favoriteSkyrim);
 rootSkyrim.render(<ChannelCard db={db} categoryId={categoryId} />);
-
-// /* MY TODO: сделать переключение темы оформления: */
-// document.getElementById('themeToggle').addEventListener('click', function() {
-//   const currentTheme = document.getElementById('themeStyles').href;
-//   if (currentTheme.includes('light.css')) {
-//     document.getElementById('themeStyles').href = '../css/dark.css';
-//   } else {
-//     document.getElementById('themeStyles').href = '../css/light.css';
-//   }
-// });
