@@ -2,7 +2,9 @@
     "categories": [
         {
             "id": 1,
+            "menuOrder": 4,
             "name": "Разработка игр и ПО",
+            "shortName": "Разработка",
             "description": "Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.",
             "imageUrl": "./images/category_description_image_development.jpg",
             "audience": 12000,
@@ -10,7 +12,9 @@
         },
         {
             "id": 2,
+            "menuOrder": 2,
             "name": "Музыка",
+            "shortName": "Музыка",
             "description": "Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.",
             "imageUrl": "./images/category_description_image_music.jpg",
             "audience": 1238,
@@ -18,7 +22,9 @@
         },
         {
             "id": 3,
+            "menuOrder": 100,
             "name": "Английский язык",
+            "shortName": "Английский",
             "description": "Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.",
             "imageUrl": "./images/category_description_image_music.jpg",
             "audience": 12003,
@@ -26,7 +32,9 @@
         },
         {
             "id": 4,
+            "menuOrder": 100,
             "name": "ДиДжеи",
+            "shortName": "ДиДжеи",
             "description": "Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.",
             "imageUrl": "./images/category_description_image.svg",
             "audience": 12020,
@@ -34,7 +42,9 @@
         },
         {
             "id": 5,
+            "menuOrder": 10,
             "name": "Танцы",
+            "shortName": "Танцы",
             "description": "Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.",
             "imageUrl": "./images/category_description_image.svg",
             "audience": 12870,
@@ -42,7 +52,9 @@
         },
         {
             "id": 6,
+            "menuOrder": 6,
             "name": "Чтение и писательство",
+            "shortName": "Чтение",
             "description": "Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.",
             "imageUrl": "./images/category_description_image_reading.jpg",
             "audience": 120,
@@ -50,7 +62,9 @@
         },
         {
             "id": 7,
+            "menuOrder": 100,
             "name": "TDU2",
+            "shortName": "TDU2",
             "description": "Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.",
             "imageUrl": "./images/category_description_image.svg",
             "audience": 2000,
@@ -58,7 +72,9 @@
         },
         {
             "id": 8,
+            "menuOrder": 100,
             "name": "Skyrim",
+            "shortName": "Skyrim",
             "description": "The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.",
             "imageUrl": "./images/category_description_image.svg",
             "audience": 1000,
@@ -66,7 +82,9 @@
         },
         {
             "id": 9,
+            "menuOrder": 100,
             "name": "Mandala Dance",
+            "shortName": "Mandala",
             "description": "Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.",
             "imageUrl": "./images/category_description_image.svg",
             "audience": 12750,
@@ -74,7 +92,9 @@
         },
         {
             "id": 10,
+            "menuOrder": 100,
             "name": "Tribal Dance",
+            "shortName": "Tribal",
             "description": "Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.",
             "imageUrl": "./images/category_description_image.svg",
             "audience": 1230,
@@ -82,7 +102,9 @@
         },
         {
             "id": 11,
+            "menuOrder": 7,
             "name": "Общение",
+            "shortName": "Общение",
             "description": "(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.",
             "imageUrl": "./images/category_description_image_communication.jpg",
             "audience": 330,
@@ -90,7 +112,9 @@
         },
         {
             "id": 12,
+            "menuOrder": 5,
             "name": "Спорт",
+            "shortName": "Спорт",
             "description": "Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.",
             "imageUrl": "./images/category_description_image_sport.jpg",
             "audience": 1230,
@@ -98,7 +122,9 @@
         },
         {
             "id": 13,
+            "menuOrder": 8,
             "name": "Игры",
+            "shortName": "Игры",
             "description": "(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.",
             "imageUrl": "./images/category_description_image_games.jpg",
             "audience": 330,
@@ -106,7 +132,9 @@
         },
         {
             "id": 14,
+            "menuOrder": 9,
             "name": "Хобби",
+            "shortName": "Хобби",
             "description": "Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.",
             "imageUrl": "./images/category_img_top_hobby.jpg",
             "audience": 1230,
@@ -114,7 +142,9 @@
         },
         {
             "id": 15,
+            "menuOrder": 1,
             "name": "Обучение",
+            "shortName": "Обучение",
             "description": "Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.",
             "imageUrl": "./images/category_description_image_education.jpg",
             "audience": 1230,
@@ -122,7 +152,9 @@
         },
         {
             "id": 16,
+            "menuOrder": 3,
             "name": "Радио",
+            "shortName": "Радио",
             "description": "Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.",
             "imageUrl": "./images/category_description_image_radio.jpg",
             "audience": 1230,

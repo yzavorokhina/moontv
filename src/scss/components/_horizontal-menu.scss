@@ -51,6 +51,12 @@
     color: var(--color-font-gray-light, #CECED6);
 }
 
+/* MY TODO: add .active variables for buttons: */
+.hMenu li.h-menu-btn-active {
+    background-color: black;
+    color:  white;
+}
+
 .hMenu li:first-child {
     border: none;
     // font-weight: bold;

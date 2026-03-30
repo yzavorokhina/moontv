@@ -9,6 +9,10 @@ class DBHelper {
         this.data = data;
     }
 
+    getAll() {
+        return this.data;
+    }
+
     findMany(func) {
         return this.data.filter(func);
     }

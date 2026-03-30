@@ -44,4 +44,4 @@ const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
 
 const rootHorizontalMenu = createRoot(horizontalMenu);
-rootHorizontalMenu.render(<HorizontalMenu />);
+rootHorizontalMenu.render(<HorizontalMenu db={db} />);

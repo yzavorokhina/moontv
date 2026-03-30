@@ -7,24 +7,11 @@ import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import ChannelCard from './components/channelCard';
+import { getUrlParams } from '../utils/common.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Category page loaded with its styles');
 });
-
-function getUrlParams() {
-  const search = window.location.search;
-  if (!search) return {};
-
-  const params = new URLSearchParams(search);
-  const obj = {};
-
-  for (let [key, value] of params) {
-    obj[key] = value;
-  }
-
-  return obj;
-}
 
 // Использование
 const params = getUrlParams();
@@ -80,7 +67,7 @@ const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
 
 const rootHorizontalMenu = createRoot(horizontalMenu);
-rootHorizontalMenu.render(<HorizontalMenu />);
+rootHorizontalMenu.render(<HorizontalMenu db={db} />);
 
 categoryTitle.textContent = categoryData.name;
 categoryDes.textContent = categoryData.description;

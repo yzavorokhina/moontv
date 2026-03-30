@@ -7,20 +7,7 @@ import SearchForm from './components/SearchForm';
 import SearchCards from './components/SearchCards';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
-
-function getUrlParams() {
-  const search = window.location.search;
-  if (!search) return {};
-
-  const params = new URLSearchParams(search);
-  const obj = {};
-
-  for (let [key, value] of params) {
-    obj[key] = value;
-  }
-
-  return obj;
-}
+import { getUrlParams } from '../utils/common';
 
 // Использование
 const params = getUrlParams();
@@ -61,7 +48,7 @@ root.render(<SearchCards db={db} search={search} showAll={true} />);
 
 const horizontalMenu = document.getElementById('react-horizontal-menu');
 const rootHorizontalMenu = createRoot(horizontalMenu);
-rootHorizontalMenu.render(<HorizontalMenu />);
+rootHorizontalMenu.render(<HorizontalMenu db={db} />);
 
 const verticalMenu = document.getElementById('vertical-menu');
 const rootVerticalMenu = createRoot(verticalMenu);

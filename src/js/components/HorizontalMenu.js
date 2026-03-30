@@ -1,24 +1,49 @@
-export default function HorizontalMenu({ }) {
+import HorizontalMenuBtn from './HorizontalMenuBtn';
+import { getUrlParams } from '../../utils/common';
 
+export default function HorizontalMenu({ db }) {
+
+    const showItems = 10;
+    let activeId = 0;
+
+    const renderCards = () => {
+        const params = getUrlParams();
+        activeId = +params.id || 0;
+        console.log({ activeId });
+
+        let categories = db.categoriesModel.getAll();
+
+        if (categories.length > showItems) {
+            categories = categories.sort((a, b) => {
+                if (a.menuOrder > b.menuOrder) {
+                    return 1;
+                }
+                if (a.menuOrder < b.menuOrder) {
+                    return -1;
+                }
+                return 0;
+            }).slice(0, showItems);
+        }
+
+        return categories.map(category => {
+
+            return { ...category }
+        });
+    }
 
     return (
         <>
             <nav className="hMenu">
                 <ul>
-                    <li className="h-menu-first-button"><a href="./categories.html">
-                        <img src="./images/All_icon_for_categories.svg" alt="Иконка ссылки"
-                            width="11px" height="10px" />
-                        Все</a></li>
-                    <li><a href="./category.html?id=15">Обучение</a></li>
-                    <li><a href="./category.html?id=2">Музыка</a></li>
-                    <li><a href="./category.html?id=16">Радио</a></li>
-                    <li><a href="./category.html?id=1">Разработка</a></li>
-                    <li><a href="./category.html?id=12">Спорт</a></li>
-                    <li><a href="./category.html?id=6">Чтение</a></li>
-                    <li><a href="./category.html?id=11">Общение</a></li>
-                    <li><a href="./category.html?id=13">Игры</a></li>
-                    <li><a href="./category.html?id=14">Хобби</a></li>
-                    <li><a href="./category.html?id=4">Другое</a></li>
+                    <li className="h-menu-first-button">
+                        <a href="./categories.html">
+                            <img src="./images/All_icon_for_categories.svg" alt="Иконка ссылки"
+                                width="11px" height="10px" />
+                            Все</a>
+                    </li>
+                    {renderCards().map(data => (
+                        <HorizontalMenuBtn key={data.id} data={data} activeId={activeId} />
+                    ))}
                     <button className="h-menu-scroll"
                         aria-label="Следующая категория горизонтального меню">
                         <svg className="carousel-arrow" width="30px" height="30px" viewBox="0 0 24 24"
@@ -33,3 +58,4 @@ export default function HorizontalMenu({ }) {
         </>
     )
 }
+
