@@ -1,5 +1,5 @@
 import HorizontalMenuBtn from './HorizontalMenuBtn';
-import { getUrlParams } from '../../utils/common';
+import { getUrlParams } from '../utils/common.js';
 
 export default function HorizontalMenu({ db }) {
 

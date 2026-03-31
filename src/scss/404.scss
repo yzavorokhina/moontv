@@ -35,6 +35,7 @@ body {
 }
 
 .container {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +59,7 @@ body {
 }
 
 .error-message {
+    z-index: 1;
     display: flex;
     color: #E2552D;
     font-family: "Silkscreen", sans-serif;
@@ -434,6 +436,7 @@ h5,
 h6,
 p,
 center {
+    z-index: 1;
     margin: 0;
     margin-bottom: 0px;
     padding: 0;
@@ -444,6 +447,7 @@ center {
 }
 
 .error-emoji {
+    z-index: 1;
     font-size: 200px;
     line-height: 1.25;
     margin-bottom: 24px;
@@ -454,7 +458,8 @@ center {
     opacity: 0;
 }
 
-.goto-home-page {
+.goto-home-page-button {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -472,7 +477,7 @@ center {
     font-family: "Silkscreen", sans-serif !important;
 }
 
-.goto-home-page:hover {
+.goto-home-page-button:hover {
     background-color: var(--color-accent-dark, #E2552D);
 }
 

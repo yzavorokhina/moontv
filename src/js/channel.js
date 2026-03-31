@@ -6,7 +6,7 @@ import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
 import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
-import { getUrlParams } from '../utils/common';
+import { getUrlParams } from '../utils/common.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Channel page loaded with its styles');
