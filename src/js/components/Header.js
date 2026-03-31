@@ -5,13 +5,49 @@ export default function Header({ }) {
 
     const themes = ['dark', 'light'];
     const themesMap = new Map([
-        ["dark", { 
-            mainBg: '#343148', 
-            btnBg: '#16122F' 
+        ["dark", {
+            mainBg: '#343148',
+            promoBg: '#292640',
+            inputBg: '#1C173C',
+            btnBg: '#16122F',
+            activeBtnBg: '#000000',
+
+            bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
+            btnsHover: 'rgba(17, 9, 80, 0.5)',
+            blocksHover: '#2e2b50',
+            btnScrollHover: '#54506B',
+
+            accentColor: '#FF6F3A',
+            accentColorHover: '#E2552D',
+
+            tagBtnBg: 'rgba(170, 168, 181, 0.7)',
+            tagBtnBgHover: '#CECED6',
+
+            fontPrimary: '#FFFFFF',
+            fontSecondary: '#CECED6',
+            fontTertiary: 'rgba(170, 168, 181, 0.7)',
         }],
-        ["light", { 
-            mainBg: '#e74c3c', 
-            btnBg: '#f39c12' 
+        ["light", {
+            mainBg: '#FFFFFF',
+            promoBg: 'rgba(170, 168, 181, 0.5)',
+            inputBg: 'rgba(170, 168, 181, 0.5)',
+            btnBg: 'rgba(170, 168, 181, 0.5)',
+            activeBtnBg: '#AAA8B5',
+
+            bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
+            btnsHover: 'rgba(170, 168, 181, 0.7)',
+            blocksHover: '#AAA8B5',
+            btnScrollHover: '#AAA8B5',
+
+            accentColor: '#FF6F3A',
+            accentColorHover: '#E2552D',
+
+            tagBtnBg: '#CECED6',
+            tagBtnBgHover: 'rgba(170, 168, 181, 0.7)',
+
+            fontPrimary: '#343148',
+            fontSecondary: '#FFFFFF',
+            fontTertiary: '#000000',
         }]
     ]);
     const [currentTheme, setTheme] = useState('dark');
@@ -20,13 +56,39 @@ export default function Header({ }) {
         console.log('Кнопка нажата!');
         const currentIndex = themes.indexOf(currentTheme);
         const nextIndex = (currentIndex + 1) % themes.length;
-        const { mainBg, btnBg } = themesMap.get(themes[nextIndex]);
+
+        const { mainBg, promoBg, inputBg, btnBg, activeBtnBg, 
+            bannerBtnBg, btnsHover, blocksHover, btnScrollHover, 
+            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover, 
+            fontPrimary, fontSecondary, fontTertiary } = themesMap.get(themes[nextIndex]);
 
         setTheme(themes[nextIndex]);
 
-        console.log({ mainBg, btnBg });
-        document.documentElement.style.setProperty('--theme-main-background-color', mainBg);
-        document.documentElement.style.setProperty('--theme-btn-background-color', btnBg);
+        console.log({ mainBg, promoBg, inputBg, btnBg, activeBtnBg, 
+            bannerBtnBg, btnsHover, blocksHover, btnScrollHover, 
+            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover, 
+            fontPrimary, fontSecondary, fontTertiary });
+
+        document.documentElement.style.setProperty('--theme-main-bg', mainBg);
+        document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
+        document.documentElement.style.setProperty('--theme-input-bg', inputBg);
+        document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
+        document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+
+        document.documentElement.style.setProperty('--theme-transparent-banner-btn', bannerBtnBg);
+        document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);
+        document.documentElement.style.setProperty('--theme-blocks-hover', blocksHover);
+        document.documentElement.style.setProperty('--theme-button-scroll-hover', btnScrollHover);
+
+        document.documentElement.style.setProperty('--theme-accent', accentColor);
+        document.documentElement.style.setProperty('--theme-accent-hover', accentColorHover);
+
+        document.documentElement.style.setProperty('--theme-tag-button', tagBtnBg);
+        document.documentElement.style.setProperty('--theme-tag-button-bg-hover', tagBtnBgHover);
+
+        document.documentElement.style.setProperty('--theme-font-light', fontLight);
+        document.documentElement.style.setProperty('--theme-font-medium', fontMedium);
+        document.documentElement.style.setProperty('--theme-font-dark', fontDark);
     };
 
     return (
@@ -37,7 +99,7 @@ export default function Header({ }) {
                 </div>
                 <div className="logo-container">
                     <a href="./index.html" className="logo-img">
-                        <img src="./images/logo_moon_1_1-3.png" style={{width: 120 + 'px', height: 40 + 'px'}} alt="MoonTV"
+                        <img src="./images/logo_moon_1_1-3.png" style={{ width: 120 + 'px', height: 40 + 'px' }} alt="MoonTV"
                             className="logo-icon" />
                     </a>
                     <h1 className="logo-text">Moon.tv</h1>
@@ -65,7 +127,7 @@ export default function Header({ }) {
                     <div className="login">
                         <button className="login-button" type="button" aria-label="Войти в личный кабинет">
                             <a href="./auth.html">
-                                <img src="./images/avatar_disabled.svg" style={{width: 60 + 'px', height: 60 + 'px'}}
+                                <img src="./images/avatar_disabled.svg" style={{ width: 60 + 'px', height: 60 + 'px' }}
                                     alt="personal account" />
                             </a>
                         </button>

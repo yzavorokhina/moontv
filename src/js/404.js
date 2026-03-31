@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('404 page loaded with its styles');
 });
 
-/* MY TODO: make render for squares with map like in games: */
 // const boxMap = "000X000"
 
 /* Redirect to main page after some interval, variant1: */

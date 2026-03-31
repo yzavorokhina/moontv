@@ -17,7 +17,7 @@
 
 .hMenu {
     max-width: 1698px;
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-primary, #FFFFFF);
     display: inline-block;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -42,16 +42,15 @@
     height: 40px;
     border: none;
     border-radius: 30px;
-    background-color: var(--theme-btn-background-color, #16122F);
-    color: var(--color-font-white-light, #ffffff);
+    background-color: var(--theme-btn-bg, #16122F);
+    color: var(--theme-font-primary, #FFFFFF);
 }
 
 .hMenu li:hover {
     background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-secondary, #CECED6);
 }
 
-/* MY TODO: add .active variables for buttons: */
 .hMenu li.h-menu-btn-active {
     background-color: black;
     color:  white;
@@ -60,22 +59,22 @@
 .hMenu li:first-child {
     border: none;
     // font-weight: bold;
-    background-color: var(--color-accent-light, #FF6F3A);
+    background-color: var(--theme-accent, #FF6F3A);
 }
 
 .hMenu li:first-child:hover {
     // transform: scale(1.05);
-    background-color: var(--color-accent-dark, #E2552D);
+    background-color: var(--theme-accent-hover, #E2552D);
 }
 
 .hMenu a {
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-primary, #FFFFFF);
     display: block;
     transition: color 0.3s ease;
 }
 
 .hMenu li:hover a {
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-secondary, #CECED6);
 }
 
 .h-menu-first-button {
@@ -105,8 +104,8 @@
     height: 40px;
     padding: 0;
     border-radius: 5px;
-    background: var(--color-dark-button-scroll, #54506B);
-    color: var(--color-font-white-light, #ffffff);
+    background: var(--theme-button-scroll-hover, #54506B);
+    color: var(--theme-font-primary, #FFFFFF);
     border: none;
     text-align: center;
     cursor: pointer;
@@ -121,7 +120,7 @@
     justify-content: center;
     width: 16px;
     height: 16px;
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-primary, #FFFFFF);
     vertical-align: middle;
     text-align: center;
     right: -15px;
@@ -129,7 +128,7 @@
 
 .h-menu-scroll:hover {
     background-color: var(--color-background-dark, #16122F);
-    border: 1px solid var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    border: 1px solid var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
 }
 
 @media (max-width: 768px) {

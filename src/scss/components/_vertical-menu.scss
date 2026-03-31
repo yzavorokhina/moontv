@@ -9,7 +9,7 @@
     width: 222px;
     // height: 5278px;
     height: auto;
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
     border-top-right-radius: 20px;
 }
 
@@ -18,7 +18,7 @@
     width: 222px;
     // border: 1px solid lime;
     margin: 0;
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
     border-top-right-radius: 20px;
 }
 
@@ -33,13 +33,13 @@
 
 .menu-stream-info h6 {
     margin: 0;
-    color: var(--color-font-white-dark, #FDFDFF);
+    color: var(--theme-font-primary, #FFFFFF);
     line-height: 20px;
     font-size: 16px;
 }
 
 .menu-stream-info a {
-    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
     font-size: 14px;
     font-weight: 100;
 }
@@ -85,33 +85,31 @@
 }
 
 .vertical-menu li:hover {
-    //background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
-    /* Похожий цвет, но 100% непрозрачный: */
-    background-color: var(--color-dark-blocks-hover, #2e2b50);
+    background-color: var(--theme-blocks-hover, #2e2b50);
     font-size: 16px;
     cursor: pointer;
 }
 
 .vertical-menu li:hover h6 {
-    color: var(--color-accent-light, #FF6F3A);
+    color: var(--theme-accent, #FF6F3A);
     transition: color 0.1s ease;
 }
 
 .vertical-menu a {
     align-items: center;
-    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
     text-decoration: none;
     display: block;
 }
 
 .vertical-menu a:hover {
     align-items: center;
-    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
     text-decoration: none;
 }
 
 .vertical-menu h6:hover {
-    color: var(--color-accent-light, #FF6F3A);
+    color: var(--theme-accent, #FF6F3A);
 }
 
 .vertical-menu button {
@@ -123,29 +121,27 @@
 
 .vertical-menu-title {
     margin-top: 0;
-    background-color: var(--color-background-accent, #000000);
+    background-color: var(--theme-active-btn-bg, #000000);
     border-top-right-radius: 20px;
 }
 
 .vertical-menu-title button {
     margin-top: 0;
     margin-bottom: 10px;
-    border: 1px solid var(--color-accent-light, #FF6F3A);
+    border: 1px solid var(--theme-accent, #FF6F3A);
 }
 
 .vertical-menu-title h6 {
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-primary, #FFFFFF);
 }
 
 .vertical-menu-title h6:hover {
-    color: var(--color-accent-light, #FF6F3A);
+    color: var(--theme-accent, #FF6F3A);
 }
 
 /* end of the vertical menu */
 
 /* arrow up: */
-/* MY TODO: Decide what should happen to the "up" arrow when the notification block appears. Logically, the notification overlaps everything... */
-/* MY TODO: Add the button in one place: in vertical menu conteiner or in footer */
 .buttonUp button {
     width: 44px;
     height: 44px;
@@ -160,7 +156,7 @@
 
 .buttonUp:hover button {
     background-color: transparent;
-    border-color: var(--color-font-white-light, #ffffff);
+    border-color: var(--theme-font-primary, #FFFFFF);
 }
 
 .buttonUp button::before {
