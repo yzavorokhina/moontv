@@ -7,7 +7,7 @@ import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import ChannelCard from './components/channelCard';
-import { getUrlParams } from '../utils/common.js';
+import { getUrlParams } from '../js/utils/common.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Category page loaded with its styles');

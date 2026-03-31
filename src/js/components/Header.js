@@ -25,7 +25,7 @@ export default function Header({ }) {
         setTheme(themes[nextIndex]);
 
         console.log({ mainBg, btnBg });
-        document.documentElement.style.setProperty('--theme-main-background-color', mainBg);
+        document.documentElement.style.setProperty('--theme-main-bg', mainBg);
         document.documentElement.style.setProperty('--theme-btn-background-color', btnBg);
     };
 

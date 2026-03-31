@@ -49,38 +49,20 @@
     background-size: 24px 24px;
     padding-left: 40px;
     border-radius: 40px;
-    background-color: var(--color-background-input, #1C173C);
+    background-color: var(--theme-input-bg, #1C173C);
     color: var(--color-font-white-light, #ffffff);
     font-size: 16px;
     line-height: 140%;
 }
 
 .input-with-icon::placeholder {
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .input-with-icon:hover {
-    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
     color: var(--color-font-white-light, #ffffff);
 }
-
-/* MY TODO: fix shifting the button when hovering over it when use tag button*/
-/* .notification-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: 1px solid green;
-    padding: 0;
-    border-radius: 50%;
-}
-
-/* .notification-button:hover {
-    border: 3px solid #45a049;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}  */
 
 .notification-round-button {
     display: inline-flex;
@@ -92,22 +74,13 @@
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    // filter: grayscale(10%) opacity(0.9) brightness(90%);
 }
 
-/* MY TODO: fix the button shifts when hovering over: */
 .notification-round-button:hover {
     transform: scale(1.1);
-    // border: 1px solid #CECED6;
-    // background-color: #E2552D;
 }
 
-// .search a:hover {
-//     border: 1px solid #CECED6;
-//     background-color: #E2552D;
-//     /* Чтобы ссылка занимала всю площадь li: */
-//     display: block;
-// }
+
 
 .button-icon {
     width: 40px;
@@ -132,7 +105,6 @@
     text-align: center;
 }
 
-/* MY TODO: find something about variables in drop-shadow: */
 .logo-img {
     width: 120px;
     height: 40px;
@@ -224,10 +196,10 @@
     height: 34px;
     /* padding-left: 10px;
     padding-right: 10px; */
-    border: 1px solid var(--color-background-dark, #16122F);
+    border: 1px solid var(--theme-btn-bg, #16122F);
     /* border: none; */
     border-radius: 34px;
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
     color: var(--color-font-white-light, #ffffff);
     font-size: 1rem;
     cursor: pointer;
@@ -244,8 +216,7 @@
     padding-right: 10px; */
     border: none;
     border-radius: 34px;
-    /* MY TODO: create hover colors for all buttons: */
-    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
     color: var(--color-font-white-light, #ffffff);
     font-size: 16px;
     cursor: pointer;
@@ -276,16 +247,15 @@
     height: 60px;
     /* padding-left: 10px;
     padding-right: 10px; */
-    border: 1px solid var(--color-background-dark, #16122F);
+    border: 1px solid var(--theme-btn-bg, #16122F);
     /* border: none; */
     border-radius: 60px;
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
     color: var(--color-font-white-light, #ffffff);
     font-size: 16px;
     cursor: pointer;
 }
 
-/* MY TODO: fix stroke offset when hovering */
 .login-button:hover {
     display: flex;
     flex-direction: row;

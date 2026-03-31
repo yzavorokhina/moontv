@@ -7,7 +7,7 @@ import SearchForm from './components/SearchForm';
 import SearchCards from './components/SearchCards';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
-import { getUrlParams } from '../utils/common.js';
+import { getUrlParams } from '../js/utils/common.js';
 
 // Использование
 const params = getUrlParams();

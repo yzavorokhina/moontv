@@ -420,7 +420,7 @@ body {
 .error-text {
     margin-bottom: 24px;
     white-space: pre-wrap;
-    color: var(--color-accent-light, #FF6F3A);
+    color: var(--theme-accent, #FF6F3A);
     visibility: hidden;
 }
 
@@ -451,7 +451,7 @@ center {
     font-size: 200px;
     line-height: 1.25;
     margin-bottom: 24px;
-    color: var(--color-accent-light, #FF6F3A);
+    color: var(--theme-accent, #FF6F3A);
     vertical-align: baseline;
     visibility: hidden;
     transition: visibility 0.3s ease;
@@ -473,12 +473,12 @@ center {
     border: none;
     background-color: #FF6F3A;
     border-radius: 34px;
-    color: var(--color-background-dark,#16122F);
+    color: var(--theme-btn-bg,#16122F);
     font-family: "Silkscreen", sans-serif !important;
 }
 
 .goto-home-page-button:hover {
-    background-color: var(--color-accent-dark, #E2552D);
+    background-color: var(--theme-accent-hover, #E2552D);
 }
 
 @media screen and (max-width:1280px) {

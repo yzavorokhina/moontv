@@ -74,15 +74,15 @@ iframe {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     /* background: rgba(52, 49, 72, 0.7); */
-    background: var(--color-dark-button-scroll-hover, #54506B);
+    background: var(--theme-button-scroll-hoverer, #54506B);
     background: rgba(84, 80, 107, 0.5);
     /* светлый полупрозрачный фон */
     backdrop-filter: blur(10px);
     /* размытие фона */
     -webkit-backdrop-filter: blur(10px);
     /* поддержка Safari */
-    border-top: 1px solid var(--color-dark-transparent-banner-button, rgba(52, 49, 72, 0.2));
-    // color: var(--color-font-white-light, #ffffff);
+    border-top: 1px solid var(--theme-transparent-banner-btn, rgba(52, 49, 72, 0.2));
+    // color: var(--theme-font-light, #ffffff);
 }
 
 .banner-info:hover {
@@ -163,36 +163,36 @@ iframe {
 }
 
 .stream-info a {
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
     font-weight: 400;
 }
 
 .stream-info a:hover {
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .stream-info h4 {
-    color: var(--color-font-white-dark, #FDFDFF);
+    color: var(--theme-font-light, #ffffff);
     font-weight: 400;
 }
 
 .stream-info h4:hover {
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-light, #ffffff);
 }
 
 .stream-info h5 {
-    color: var(--color-font-white-dark, #FDFDFF);
+    color: var(--theme-font-light, #ffffff);
     font-weight: 400;
 }
 
 .stream-info h5:hover {
-    color: var(--color-font-white-dark, #FDFDFF);
+    color: var(--theme-font-light, #ffffff);
 }
 
 .stream-info h5:first-child {
     border: none;
     font-weight: bold;
-    color: var(--color-font-white-dark, #FDFDFF);
+    color: var(--theme-font-light, #ffffff);
 }
 
 .stream-info h5:first-child:hover {
@@ -223,7 +223,7 @@ iframe {
     height: 30px;
     padding-left: 170px;
     // border: 1px solid red;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .live-watchers h5 {
@@ -233,13 +233,13 @@ iframe {
     align-items: baseline;
     justify-content: baseline;
     /* border: 1px solid rgb(28, 198, 204); */
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
     font-size: 20px;
     margin: auto;
 }
 
 .viewers-count {
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
     font-size: 20px;
     // border: 1px solid lime;
 }
@@ -256,7 +256,7 @@ iframe {
     margin-right: 16px;
     text-align: right;
     vertical-align: middle;
-    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    color: var(--theme-font-transparent, rgba(170, 168, 181, 0.7));
     font-size: 16px;
 }
 
@@ -292,13 +292,13 @@ iframe {
     padding-left: 40px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--color-accent-light, #FF6F3A);
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-light, #ffffff);
     font-size: 16px;
     line-height: 140%;
 }
 
 .follow-button:hover {
-    background-color: var(--color-accent-dark, #E2552D);
+    background-color: var(--theme-accent-hover, #E2552D);
 }
 
 .subscribe-button {
@@ -324,7 +324,7 @@ iframe {
     padding-left: 40px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--color-background-dark, #16122F);
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-light, #ffffff);
     font-size: 16px;
     line-height: 140%;
 }
@@ -392,10 +392,9 @@ iframe {
 .chat-header {
     position: relative;
     padding: 15px 20px;
-    border-bottom: 1px solid var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
-    // background-color: var(--color-background-dark, #16122F);
-    // background-color: var(--color-background-accent, #000000);
-    color: var(--color-font-white-light, #FFFFFF);
+    border-bottom: 1px solid var(--theme-font-transparent, rgba(170, 168, 181, 0.7));
+    // background-color: var(--theme-active-btn-bg, #000000);
+    color: var(--theme-font-light, #FFFFFF);
     text-align: center;
     margin-left: 6px;
     margin-right: 6px;
@@ -440,14 +439,14 @@ iframe {
 .user-message {
     align-self: flex-end;
     background-color: transparent;
-    color: var(--color-font-white-light, #FFFFFF);
+    color: var(--theme-font-light, #FFFFFF);
     border-bottom-right-radius: 0px;
 }
 
 .bot-message {
     align-self: flex-start;
     background: var(--color-background-dark, #16122F);
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
     border-bottom-left-radius: 0px;
     border: 1px solid var(--color-accent-light, #FF6F3A);
     font-size: 14px;
@@ -483,7 +482,7 @@ iframe {
     border-top: 1px solid #eee;
     gap: 10px;
     background-color: var(--color-background-dark, #16122F);
-    border-top: 1px solid var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    border-top: 1px solid var(--theme-font-transparent, rgba(170, 168, 181, 0.7));
 }
 
 /* emoji-block: */
@@ -494,7 +493,7 @@ iframe {
     width: 26px;
     height: 26px;
     padding: 8px;
-    background: var(--color-dark-button-scroll-hover, #54506B);
+    background: var(--theme-button-scroll-hover, #54506B);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -502,8 +501,7 @@ iframe {
 }
 
 .emoji-toggle:hover {
-    background-color: var(--color-dark-blocks-hover, #2e2b50);
-    // border: 1px solid var(--color-font-gray-dark, rgba(170, 168, 181, 0.7));
+    background-color: var(--theme-blocks-hover, #2e2b50);
 }
 
 .emoji-panel {
@@ -564,8 +562,8 @@ iframe {
     border-radius: 16px;
     outline: none;
     font-size: 14px;
-    background: var(--color-background-input, #1C173C);
-    color: var(--color-font-gray-light, #CECED6);
+    background: var(--theme-input-bg, #1C173C);
+    color: var(--theme-font-medium, #CECED6);
     margin-bottom: 6px;
 }
 
@@ -584,7 +582,7 @@ iframe {
     height: 32px;
     padding: 4px 24px;
     background: var(--color-accent-light, #FF6F3A);
-    color: var(--color-font-white-light, #FFFFFF);
+    color: var(--theme-font-light, #FFFFFF);
     border: none;
     border-radius: 24px;
     cursor: pointer;
@@ -592,7 +590,7 @@ iframe {
 }
 
 #sendButton:hover {
-    background-color: var(--color-accent-dark, #E2552D);
+    background-color: var(--theme-accent-hover, #E2552D);
 }
 
 #settingsButton {
@@ -603,8 +601,8 @@ iframe {
     width: 32px;
     border-radius: 32px;
     border: none;
-    background-color: var(--color-background-input, #1C173C);
-    color: var(--color-font-white-light, #FFFFFF);
+    background-color: var(--theme-input-bg, #1C173C);
+    color: var(--theme-font-light, #FFFFFF);
     cursor: pointer;
 }
 

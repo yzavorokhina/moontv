@@ -1,66 +1,66 @@
 :root {
-        // $font-open-sans-sass: "Open Sans", sans-serif;
-        // $font-source-code-sass: "Source Code Pro", monospace;
-        // $font-silkscreen-sass: "Silkscreen", sans-serif;
-        // $font-press-start-sass: "Press Start 2P", system-ui;
-        // $font-ibm-plex-sass: "IBM Plex Mono", monospace;
-        // --font-silkscreen: "Silkscreen", sans-serif;
-        // --font-press-start: "Press Start 2P", system-ui;
-        // --font-ibm-plex: "IBM Plex Mono", monospace;
-
-        $color-background-light-sass: #343148;
-        $color-background-dark-sass: #16122F;
-        $color-background-accent-sass: #000000;
-        $color-background-input-sass: #1C173C;
-        $color-background-promo-sass: #292640;
-        $color-accent-light-sass: #FF6F3A;
-        $color-accent-dark-sass: #E2552D;
-        $color-font-white-light-sass: #FFFFFF;
-        $color-font-white-dark-sass: #FDFDFF;  // заменить на белый (разница небольшая)
-        $color-font-gray-light-sass: #CECED6;
-        $color-font-gray-dark-sass: rgba(170,168,181,0.7);
-        $color-dark-button-scroll-sass: #54506B;
-        $color-dark-transparent-banner-button-sass: rgba(52, 49, 72, 0.2);
-        $color-dark-buttons-hover-sass: rgba(17, 9, 80, 0.5);
-        $color-dark-blocks-hover-sass:  #2e2b50;
+    $font-open-sans-sass: "Open Sans", sans-serif;
+    $font-source-code-sass: "Source Code Pro", monospace;
+    $font-silkscreen-sass: "Silkscreen", sans-serif;
+    $font-press-start-sass: "Press Start 2P", system-ui;
+    $font-ibm-plex-sass: "IBM Plex Mono", monospace;
 
     //  background variables:
-    //--theme-main-bg: #343148;                                 //--color-background-light #343148; 
-    //--theme-promo-bg: #292640;                                //--color-background-promo  #292640;   
-    //--theme-input-bg: #1C173C;                                //--color-background-input  #1C173C;   
-    //--theme-btn-bg: #16122F;                                  //--color-background-dark #16122F;    
-    //--theme-active-btn-bg: #000000;                           //--color-background-accent #000000;  
+    $theme-main-bg-sass: #343148;                                //--color-background-light #343148;  
+    $theme-promo-bg-sass: #292640;                               //--color-background-promo  #292640;  
+    $theme-input-bg-sass: #1C173C;                               //--color-background-input  #1C173C;     
+    $theme-btn-bg-sass: #16122F;                                 //--color-background-dark #16122F;    
+    $theme-active-btn-bg-sass: #000000;                          //--color-background-accent #000000;  
 
     //  transparent variables:
-    // --theme-transparent-banner-btn: rgba(52, 49, 72, 0.2);   // --color-dark-transparent-banner-button: rgba(52, 49, 72, 0.2); 
-    // --theme-btns-hover: rgba(17, 9, 80, 0.5);                // --color-dark-buttons-hover #16122F; 
-    // --theme-blocks-hover: #2e2b50;                           // --color-dark-blocks-hover  #2e2b50;                    
-    // --theme-button-scroll-hover: #54506B;                    // --color-dark-button-scroll-hover: #54506B;
+    $theme-transparent-banner-btn-sass: rgba(52, 49, 72, 0.2);   // --color-dark-transparent-banner-button: rgba(52, 49, 72, 0.2);  
+    $theme-btns-hover-sass: rgba(17, 9, 80, 0.5);                // --color-dark-buttons-hover #16122F;                    
+    $theme-blocks-hover-sass: #2e2b50;                           // --color-dark-blocks-hover  #2e2b50;  
+    $theme-button-scroll-hover-sass: #54506B;                    // --color-dark-button-scroll-hover: #54506B;
+   
+    //  accent variables: 
+    $theme-accent-sass: #FF6F3A;                                 // --color-accent-light #FF6F3A;  
+    $theme-accent-hover-sass: #E2552D;                           // --color-accent-dark #E2552D;
+    
+    // contrast variables:
+    $theme-tag-button-bg: rgba(170, 168, 181, 0.7);              // --theme-font-medium, #CECED6   
+    $theme-tag-button-bg-hover: #CECED6;                         // --theme-font-light, #FFFFFF 
+
+    $theme-font-light-sass: #FFFFFF;                             // --color-font-white-light: #FFFFFF;                         
+    $theme-font-medium-sass:  #CECED6;                           // --color-font-gray-light: #CECED6; 
+    $theme-font-transparent:  rgba(170, 168, 181, 0.7);          // --color-font-gray-dark: rgba(170, 168, 181, 0.7); 
+
+
+    /* for add as variables: */
+    // --font-silkscreen: "Silkscreen", sans-serif;
+    // --font-press-start: "Press Start 2P", system-ui;
+    // --font-ibm-plex: "IBM Plex Mono", monospace;
+
+    //  background variables:
+    //--theme-main-bg: #343148;                                    //--color-background-light #343148; 
+    //--theme-promo-bg: #292640;                                   //--color-background-promo  #292640;   
+    //--theme-input-bg: #1C173C;                                   //--color-background-input  #1C173C;   
+    //--theme-btn-bg: #16122F;                                     //--color-background-dark #16122F;      
+    //--theme-active-btn-bg: #000000;                              //--color-background-accent #000000;  
+
+    //  transparent variables:
+    // --theme-transparent-banner-btn: rgba(52, 49, 72, 0.2);      // --color-dark-transparent-banner-button: rgba(52, 49, 72, 0.2); 
+    // --theme-btns-hover: rgba(17, 9, 80, 0.5);                   // --color-dark-buttons-hover #16122F; 
+    // --theme-blocks-hover: #2e2b50;                              // --color-dark-blocks-hover  #2e2b50;                    
+    // --theme-button-scroll-hover: #54506B;                       // --color-dark-button-scroll-hover: #54506B;
    
     //  accent variables:
-    // --theme-accent: #FF6F3A;                                 // --color-accent-light #FF6F3A;  
-    // --theme-accent-hover: #E2552D;                           // --color-accent-dark #E2552D;
+    // --theme-accent: #FF6F3A;                                    // --color-accent-light #FF6F3A;   
+    // --theme-accent-hover: #E2552D;                              // --color-accent-dark #E2552D;
     
-    //  contrast variables:
-    // --theme-tag-button-bg:                                   // --color-   
-    // --theme-tag-button-bg-hover: #FFFFFF;                    // --color-
-    // --theme-font-light: #FFFFFF;                             // --color-font-white-light: #FFFFFF;                        
-    // --theme-font-medium:  #CECED6;                           // --color-font-gray-light: #CECED6;                           
-    // --theme-font-transparent:  rgba(170, 168, 181, 0.7);     // --color-font-gray-dark: rgba(170, 168, 181, 0.7);  
+    // contrast variables:
+    // --theme-tag-button-bg: rgba(170, 168, 181, 0.7);            // --theme-font-medium, #CECED6   
+    // --theme-tag-button-bg-hover: #CECED6;                       // --theme-font-light, #FFFFFF
+    // --theme-font-light: #FFFFFF;                                // --color-font-white-light: #FFFFFF;                        
+    // --theme-font-medium:  #CECED6;                              // --color-font-gray-light: #CECED6;                           
+    // --theme-font-transparent:  rgba(170, 168, 181, 0.7);        // --color-font-gray-dark: rgba(170, 168, 181, 0.7);  
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    /* initial names: */
     // $color-background-light-sass: #343148;
     // $color-background-dark-sass: #16122F;
     // $color-background-accent-sass: #000000;

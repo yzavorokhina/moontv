@@ -62,15 +62,15 @@
     padding-top: 6px;
     font-size: 20px;
     font-weight: bold;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .section-title h2:hover {
-    color: var(--color-font-white-light, #FFFFFF);
+    color: var(--theme-font-light, #FFFFFF);
 }
 
 .section-title img:hover {
-    color: var(--color-font-white-light, #FFFFFF);
+    color: var(--theme-font-light, #FFFFFF);
 }
 
 /* show-all-gray-link */
@@ -85,21 +85,21 @@
 }
 
 .show-all-categories a {
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .show-all-categories a:hover {
-    color: var(--color-font-white-light, #FFFFFF);
+    color: var(--theme-font-light, #FFFFFF);
 }
 
 .show-all-categories svg {
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .arrowed a svg {
     font-size: 14px;
     line-height: 140%;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .show-all-categories .show-all-arrow {
@@ -108,7 +108,7 @@
     margin-top: 6px;
     margin-left: 6px;
     align-items: baseline;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 /* end of the show-all-orange-link */
 
@@ -182,7 +182,7 @@
 .clip-title {
     font-size: 14px;
     font-weight: bold;
-    color: var(--color-accent-light, #FF6F3A) !important;
+    color: var(--theme-accent, #FF6F3A) !important;
     padding: 0;
     margin: 0;
     line-height: 120%;
@@ -191,18 +191,18 @@
 }
 
 .clip-title:hover {
-    color: var(--color-accent-dark, #E2552D) !important;
+    color: var(--theme-accent-hover, #E2552D) !important;
 }
 
 .clip-titles p {
     font-size: 14px;
     font-weight: lighter;
-    color: var(--color-font-gray-light, #CECED6) !important;
+    color: var(--theme-font-medium, #CECED6) !important;
     margin: 0;
 }
 
 .clip-titles p:hover {
-    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7)) !important;
+    color: var(--theme-font-transparent, rgba(170, 168, 181, 0.7)) !important;
 }
 
 .clip-author-wrapper {
@@ -212,7 +212,7 @@
     justify-content: flex-start;
     gap: 8px;
     font-size: 14px;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
     padding-left: 2px;
 }
 
@@ -223,7 +223,7 @@
     justify-content: flex-start;
     font-size: 14px;
     font-weight: lighter;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
     padding: 0;
     margin: 0;
 }
@@ -231,13 +231,13 @@
 .clip-author-name {
     font-size: 14px;
     // font-weight: bold;
-    color: var(--color-accent-light, #FF6F3A) !important;
+    color: var(--theme-accent, #FF6F3A) !important;
     padding: 0;
     margin: 0;
 }
 
 .clip-author-name:hover {
-    color: var(--color-font-gray-dark, rgba(170, 168, 181, 0.7)) !important;
+    color: var(--theme-font-transparent, rgba(170, 168, 181, 0.7)) !important;
 }
 /* end of the one channel-card */
 
@@ -251,7 +251,7 @@
     max-width: 1636px;
     height: 62px;
     background-color: transparent;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .show-all-link .show-all-arrow {
@@ -260,7 +260,7 @@
     margin-top: 6px;
     margin-left: 0;
     align-items: baseline;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
 }
 
 .divider-container {
@@ -274,13 +274,13 @@
 .divider-line {
     flex: 1;
     height: 1px;
-    background: var(--color-font-gray-light, #CECED6);
+    background: var(--theme-font-medium, #CECED6);
     border-radius: 1px;
 }
 
 .divider-button {
     margin: 0 15px;
-    color: var(--color-font-gray-light, #CECED6);
+    color: var(--theme-font-medium, #CECED6);
     cursor: pointer;
     width: fit-content;
     height: 34px;
@@ -292,12 +292,12 @@
 }
 
 .divider-button a:hover {
-    color: var(--color-font-white-light, #FFFFFF);
+    color: var(--theme-font-light, #FFFFFF);
     cursor: pointer;
 }
 
 .divider-button:hover {
-    color: var(--color-font-white-light, #FFFFFF);
+    color: var(--theme-font-light, #FFFFFF);
     cursor: pointer;
     background-color: transparent;
     border: 1px solid #CECED6;
@@ -401,7 +401,7 @@ a {
 }
 
 .link-wrapper:focus {
-    outline: 1px solid var(--color-font-white-light, #FFFFFF);
+    outline: 1px solid var(--theme-font-light, #FFFFFF);
     //outline: none;
     outline-offset: 1px;
     border-radius: 5px;
