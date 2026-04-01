@@ -23778,8 +23778,28 @@ a {
 }
 
 :root {
-  /* for add as variables: */
-  /* initial names: */
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-source-code: "Source Code Pro", monospace;
+  --font-silkscreen: "Silkscreen", sans-serif;
+  --font-press-start: "Press Start 2P", system-ui;
+  --font-ibm-plex: "IBM Plex Mono", monospace;
+  --theme-main-bg: #343148;
+  --theme-promo-bg: #292640;
+  --theme-input-bg: #1C173C;
+  --theme-btn-bg: #16122F;
+  --theme-active-btn-bg: #000000;
+  --theme-transparent-banner-btn: rgba(52, 49, 72, 0.2);
+  --theme-btns-hover: rgba(17, 9, 80, 0.5);
+  --theme-blocks-hover: #2e2b50;
+  --theme-button-scroll-hover: #54506B;
+  --theme-accent: #FF6F3A;
+  --theme-accent-hover: #E2552D;
+  --theme-tag-button-bg: rgba(170, 168, 181, 0.7);
+  --theme-tag-button-bg-hover: #CECED6;
+  --theme-font-logo: #FFFFFF;
+  --theme-font-primary: #FFFFFF;
+  --theme-font-secondary: #CECED6;
+  --theme-font-tertiary: rgba(170, 168, 181, 0.7);
 }
 
 html,
@@ -23802,7 +23822,7 @@ h4 {
   align-items: center;
   width: 100%;
   max-width: 1920px;
-  height: 122px;
+  height: 100px;
   margin: 0 auto;
   padding: 0 50px;
   /* border: 1px solid red; */
@@ -23949,7 +23969,7 @@ h4 {
   margin-top: 0;
   margin-bottom: 42px;
   /* border: 1px solid green; */
-  color: var(--color-font-white-light, #ffffff);
+  color: var(--theme-font-logo, #ffffff);
   font-size: 32px;
   line-height: 32px;
   font-weight: 800;
@@ -24072,7 +24092,7 @@ h4 {
   height: 40px;
   /* border: 1px solid pink; */
   margin-left: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }

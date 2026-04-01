@@ -585,8 +585,12 @@ function _temp(text, wordCount) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   getUrlParams: () => (/* binding */ getUrlParams)
+/* harmony export */   getUrlParams: () => (/* binding */ getUrlParams),
+/* harmony export */   useLocalStorage: () => (/* binding */ useLocalStorage)
 /* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
 function getUrlParams() {
   const search = window.location.search;
   if (!search) return {};
@@ -596,6 +600,26 @@ function getUrlParams() {
     obj[key] = value;
   }
   return obj;
+}
+function useLocalStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      console.error('Ошибка чтения из localStorage:', error);
+      return initialValue;
+    }
+  });
+  const setValue = value => {
+    try {
+      setStoredValue(value);
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch (error_0) {
+      console.error('Ошибка записи в localStorage:', error_0);
+    }
+  };
+  return [storedValue, setValue];
 }
 
 /***/ },
