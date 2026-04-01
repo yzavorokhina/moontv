@@ -3,6 +3,7 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/categories.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
+import Header from './components/Header.js';
 import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
@@ -33,12 +34,12 @@ buttonUp.onclick = function () {
   });
 };
 
-const searchFormBlock = document.getElementById('search-form-block');
+const header = document.getElementById('react-header');
 const verticalMenu = document.getElementById('vertical-menu');
 const horizontalMenu = document.getElementById('react-horizontal-menu');
 
-const rootSearchFormBlock = createRoot(searchFormBlock);
-rootSearchFormBlock.render(<SearchForm />);
+const rootHeader = createRoot(header);
+rootHeader.render(<Header />);
 
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);

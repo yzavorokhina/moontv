@@ -315,7 +315,7 @@ iframe {
     padding-right: 24px;
     color: white;
     height: 40px;
-    border: none;
+    border: 1px solid rgba(84, 80, 107, 0.5);
     outline: none;
     background-image: url('../img/channel_star_subscribe_button.svg');
     background-repeat: no-repeat;
@@ -323,14 +323,15 @@ iframe {
     background-size: 20px 20px; // Icon size
     padding-left: 40px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
     color: var(--theme-font-primary, #FFFFFF);
     font-size: 16px;
     line-height: 140%;
 }
 
 .subscribe-button:hover {
-    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+    background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
+    border: 1px solid #54506B;
 }
 
 /* Вариант карусели с видео-содержимым: */
@@ -386,13 +387,13 @@ iframe {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
 }
 
 .chat-header {
     position: relative;
     padding: 15px 20px;
-    border-bottom: 1px solid var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
+    border-bottom: 1px solid var(--theme-font-primary, #FFFFFF);
     // background-color: var(--theme-active-btn-bg, #000000);
     color: var(--theme-font-primary, #FFFFFF);
     text-align: center;
@@ -419,7 +420,7 @@ iframe {
     padding: 12px;
     overflow-y: auto;
     gap: 12px;
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
 }
 
 .message {
@@ -445,7 +446,7 @@ iframe {
 
 .bot-message {
     align-self: flex-start;
-    background: var(--color-background-dark, #16122F);
+    background: var(--theme-btn-bg, #16122F);
     color: var(--theme-font-secondary, #CECED6);
     border-bottom-left-radius: 0px;
     border: 1px solid var(--color-accent-light, #FF6F3A);
@@ -479,9 +480,9 @@ iframe {
     flex-direction: column;
     height: 180px;
     padding: 16px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--theme-font-primary, #FFFFFF);
     gap: 10px;
-    background-color: var(--color-background-dark, #16122F);
+    background-color: var(--theme-btn-bg, #16122F);
     border-top: 1px solid var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
 }
 

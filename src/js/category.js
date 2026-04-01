@@ -3,6 +3,7 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/category.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper.js';
+import Header from './components/Header.js';
 import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
@@ -51,7 +52,7 @@ root.render(<ChannelCard db={db} categoryId={categoryId} showAll={true} />);
 
 console.log({ params, streamData, channelData });
 
-const searchFormBlock = document.getElementById('search-form-block');
+const header = document.getElementById('react-header');
 const verticalMenu = document.getElementById('vertical-menu');
 const horizontalMenu = document.getElementById('react-horizontal-menu');
 const categoryTitle = document.getElementById("categoryTitle");
@@ -60,8 +61,8 @@ const categoryImage = document.getElementById("categoryImage");
 const categoryAudience = document.getElementById("categoryAudience");
 const categoryFollowers = document.getElementById("categoryFollowers");
 
-const rootSearchFormBlock = createRoot(searchFormBlock);
-rootSearchFormBlock.render(<SearchForm />);
+const rootHeader = createRoot(header);
+rootHeader.render(<Header />);
 
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);

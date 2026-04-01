@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SearchForm from './SearchForm';
+import { useLocalStorage } from '../utils/common';
 
 export default function Header({ }) {
 
@@ -23,6 +24,7 @@ export default function Header({ }) {
             tagBtnBg: 'rgba(170, 168, 181, 0.7)',
             tagBtnBgHover: '#CECED6',
 
+            fontLogo: '#FFFFFF',
             fontPrimary: '#FFFFFF',
             fontSecondary: '#CECED6',
             fontTertiary: 'rgba(170, 168, 181, 0.7)',
@@ -45,29 +47,28 @@ export default function Header({ }) {
             tagBtnBg: '#CECED6',
             tagBtnBgHover: 'rgba(170, 168, 181, 0.7)',
 
+            fontLogo: '#FF6F3A',
             fontPrimary: '#343148',
             fontSecondary: '#FFFFFF',
             fontTertiary: '#000000',
         }]
     ]);
-    const [currentTheme, setTheme] = useState('dark');
+    const [currentTheme, setTheme] = useLocalStorage('currentTheme', 'dark');
 
-    const handleClick = () => {
-        console.log('Кнопка нажата!');
-        const currentIndex = themes.indexOf(currentTheme);
-        const nextIndex = (currentIndex + 1) % themes.length;
+    const updateTheme = (themeId) => {
+        const { mainBg, promoBg, inputBg, btnBg, activeBtnBg,
+            bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
+            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover,
+            fontLogo, fontPrimary, fontSecondary, fontTertiary } = themesMap.get(themeId);
 
-        const { mainBg, promoBg, inputBg, btnBg, activeBtnBg, 
-            bannerBtnBg, btnsHover, blocksHover, btnScrollHover, 
-            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover, 
-            fontPrimary, fontSecondary, fontTertiary } = themesMap.get(themes[nextIndex]);
+        setTheme(themeId);
 
-        setTheme(themes[nextIndex]);
-
-        console.log({ mainBg, promoBg, inputBg, btnBg, activeBtnBg, 
-            bannerBtnBg, btnsHover, blocksHover, btnScrollHover, 
-            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover, 
-            fontPrimary, fontSecondary, fontTertiary });
+        console.log({
+            mainBg, promoBg, inputBg, btnBg, activeBtnBg,
+            bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
+            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover,
+            fontLogo, fontPrimary, fontSecondary, fontTertiary
+        });
 
         document.documentElement.style.setProperty('--theme-main-bg', mainBg);
         document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -86,9 +87,23 @@ export default function Header({ }) {
         document.documentElement.style.setProperty('--theme-tag-button', tagBtnBg);
         document.documentElement.style.setProperty('--theme-tag-button-bg-hover', tagBtnBgHover);
 
-        document.documentElement.style.setProperty('--theme-font-light', fontLight);
-        document.documentElement.style.setProperty('--theme-font-medium', fontMedium);
-        document.documentElement.style.setProperty('--theme-font-dark', fontDark);
+        document.documentElement.style.setProperty('--theme-font-logo', fontLogo);
+        document.documentElement.style.setProperty('--theme-font-primary', fontPrimary);
+        document.documentElement.style.setProperty('--theme-font-secondary', fontSecondary);
+        document.documentElement.style.setProperty('--theme-font-tertiary', fontTertiary);
+    }
+
+    useEffect(() => {
+        updateTheme(currentTheme);
+    }, []);
+
+    const handleClick = () => {
+        console.log('Кнопка нажата!');
+
+        const currentIndex = themes.indexOf(currentTheme);
+        const nextIndex = (currentIndex + 1) % themes.length;
+
+        updateTheme(themes[nextIndex]);
     };
 
     return (
@@ -99,35 +114,35 @@ export default function Header({ }) {
                 </div>
                 <div className="logo-container">
                     <a href="./index.html" className="logo-img">
-                        <img src="./images/logo_moon_1_1-3.png" style={{ width: 120 + 'px', height: 40 + 'px' }} alt="MoonTV"
+                        <img id="site-logo" src={`./images/logo_moon_1_1-3-${currentTheme}.png`} style={{ width: 120 + 'px', height: 40 + 'px' }} alt="MoonTV"
                             className="logo-icon" />
                     </a>
-                    <h1 className="logo-text">Moon.tv</h1>
+                    <h1 id="logo-text" className="logo-text">Moon.tv</h1>
                 </div>
                 <div className="container-menu">
                     <button className="menu-button" type="button" aria-label="Включить звук">
                         <a href="./404.html">
-                            <img src="./images/header_icon_music.svg" title="mute" width="26px" height="26px" />
+                            <img src={`./images/header_icon_music-${currentTheme}.svg`} title="mute" width="26px" height="26px" />
                         </a>
                     </button>
 
                     <button id="themeToggle" onClick={handleClick} className="menu-button" type="button" aria-label="Переключить тему оформления">
-                        <img src="./images/header_icon_theme.svg" title="theme" width="26px" height="26px" />
+                        <img src={`./images/header_icon_theme-${currentTheme}.svg`} title="theme" width="26px" height="26px" />
                     </button>
                     <button className="menu-button" type="button" aria-label="Выбрать язык оформления">
                         <a href="./404.html">
-                            <img src="./images/header_icon_globe.svg" title="language" width="26px" height="26px" />
+                            <img src={`./images/header_icon_globe-${currentTheme}.svg`} title="language" width="26px" height="26px" />
                         </a>
                     </button>
                     <button className="menu-button" type="button" aria-label="Войти в свой аккаунт">
                         <a href="./auth.html">
-                            <img src="./images/header_icon_login.svg" title="login" width="26px" height="26px" />
+                            <img src={`./images/header_icon_login-${currentTheme}.svg`} title="login" width="26px" height="26px" />
                         </a>
                     </button>
                     <div className="login">
                         <button className="login-button" type="button" aria-label="Войти в личный кабинет">
                             <a href="./auth.html">
-                                <img src="./images/avatar_disabled.svg" style={{ width: 60 + 'px', height: 60 + 'px' }}
+                                <img src={`./images/avatar_disabled-${currentTheme}.svg`} style={{ width: 60 + 'px', height: 60 + 'px' }}
                                     alt="personal account" />
                             </a>
                         </button>

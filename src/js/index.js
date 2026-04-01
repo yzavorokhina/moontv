@@ -3,10 +3,11 @@ import '../scss/main.scss';
 import '../scss/home.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
+import Header from './components/Header';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import ChannelCard from './components/channelCard';
-import Header from './components/Header';
+
 
 
 /* A pop-up orange-row notification: */

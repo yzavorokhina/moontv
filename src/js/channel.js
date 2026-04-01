@@ -4,6 +4,7 @@ import '../scss/channel.scss';
 import './components/chat';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
+import Header from './components/Header';
 import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import { getUrlParams } from '../js/utils/common.js';
@@ -22,7 +23,7 @@ const channelData = db.channelsModel.findOneById(streamData.channelId);
 
 console.log({ params, streamData, channelData });
 
-const searchFormBlock = document.getElementById('search-form-block');
+const header = document.getElementById('react-header');
 const verticalMenu = document.getElementById('vertical-menu');
 const streamTV = document.getElementById("streamTV");
 const streamTitle = document.getElementById("streamTitle");
@@ -32,8 +33,8 @@ const currentViewers = document.getElementById("current-viewers");
 const ageRating = document.getElementById("ageRating");
 const channelIcon = document.getElementById("channelIcon");
 
-const rootSearchFormBlock = createRoot(searchFormBlock);
-rootSearchFormBlock.render(<SearchForm />);
+const rootHeader = createRoot(header);
+rootHeader.render(<Header />);
 
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);

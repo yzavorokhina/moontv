@@ -14,7 +14,7 @@
     // border: 1px solid orange;
 }
 
-.favoutite-channels-title {
+.favourite-channels-title {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -25,7 +25,7 @@
     // border: 1px solid orange;
 }
 
-.favoutite-channels-title h2 {
+.favourite-channels-title h2 {
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 32px;
@@ -34,11 +34,11 @@
     color: var(--theme-accent, #FF6F3A);
 }
 
-.favoutite-channels-title h2:hover {
+.favourite-channels-title h2:hover {
     color: var(--theme-accent-hover, #E2552D);
 }
 
-.favoutite-channels-title h3 {
+.favourite-channels-title h3 {
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 32px;
@@ -47,12 +47,12 @@
     color: var(--theme-accent, #FF6F3A);
 }
 
-.favoutite-channels-title h3:hover {
+.favourite-channels-title h3:hover {
     color: var(--theme-accent-hover, #E2552D);
 }
 
 /* show-all-orange-link */
-.favoutite-channels-show-all {
+.favourite-channels-show-all {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -67,11 +67,11 @@
     color: var(--theme-accent, #FF6F3A);
 }
 
-.favoutite-channels-show-all a {
+.favourite-channels-show-all a {
     color: var(--theme-accent, #FF6F3A);
 }
 
-.favoutite-channels-show-all a:hover {
+.favourite-channels-show-all a:hover {
     color: var(--theme-accent-hover, #E2552D);
 }
 

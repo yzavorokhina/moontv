@@ -1,6 +1,6 @@
 @use 'main.scss';
 
-@import 'layout/header_channel';
+@import 'layout/header';
 @import 'components/stream';
 @import 'components/channel_all_video';
 @import 'components/channel_favourite_category';
@@ -17,6 +17,14 @@
 header {
     flex-shrink: 0;
     height: 122px;
+}
+
+#site-logo {
+    filter: grayscale(50%) opacity(0.8) brightness(90%);
+}
+
+#logo-text {
+    filter: grayscale(50%) opacity(0.8) brightness(90%);
 }
 
 main {
@@ -189,7 +197,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: #54506B;
+    background-color: var(--theme-button-scroll-hover, #54506B);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 1280px;
@@ -249,7 +257,7 @@ footer {
     // border: 1px solid red;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #54506B;
+    background-color: var(--theme-button-scroll-hover, #54506B);
 }
 
 .channel-info-block img {
