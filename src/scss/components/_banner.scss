@@ -123,6 +123,8 @@ iframe {
 .banner-ava {
     border: none;
     margin-right: 24px;
+    width: 80px;
+    height: 80px;
 }
 
 .banner-ava:hover {
@@ -204,6 +206,11 @@ iframe {
     color: var(--theme-font-secondary, #CECED6);
     font-size: 20px;
     margin: auto;
+}
+
+.live-watchers span {
+    color: #E2552D;
+    font-size: 12px;
 }
 
 .viewers-count {
@@ -442,5 +449,6 @@ iframe {
     border-radius: 5px;
     background-color: var(--theme-promo-bg, #292640);
 }
+
 
 /* end of the banner */

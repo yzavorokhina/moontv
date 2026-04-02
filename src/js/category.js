@@ -3,12 +3,13 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/category.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper.js';
+import { getUrlParams } from '../js/utils/common.js';
 import Header from './components/Header.js';
 import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import ChannelCard from './components/channelCard';
-import { getUrlParams } from '../js/utils/common.js';
+import Footer from './components/Footer.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Category page loaded with its styles');
@@ -17,28 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Использование
 const params = getUrlParams();
 console.log(params.id); // '1'
-
-// Получаем кнопку по ID
-var buttonUp = document.getElementById("buttonUp");
-// Обработчик скролла: показываем/скрываем кнопку
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-  // Показываем кнопку, если проскроллили больше 20 px
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    buttonUp.style.display = "block";
-  } else {
-    // Скрываем, если вернулись наверх
-    buttonUp.style.display = "none";
-  }
-}
-
-buttonUp.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
 
 const categoryId = +params.id || 1;
 const categoryData = db.categoriesModel.findOneById(categoryId);
@@ -53,25 +32,32 @@ root.render(<ChannelCard db={db} categoryId={categoryId} showAll={true} />);
 console.log({ params, streamData, channelData });
 
 const header = document.getElementById('react-header');
-const verticalMenu = document.getElementById('vertical-menu');
-const horizontalMenu = document.getElementById('react-horizontal-menu');
-const categoryTitle = document.getElementById("categoryTitle");
-const categoryDes = document.getElementById("categoryDes");
-const categoryImage = document.getElementById("categoryImage");
-const categoryAudience = document.getElementById("categoryAudience");
-const categoryFollowers = document.getElementById("categoryFollowers");
-
 const rootHeader = createRoot(header);
 rootHeader.render(<Header />);
 
+const verticalMenu = document.getElementById('vertical-menu');
 const rootVerticalMenu = createRoot(verticalMenu);
 rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
 
+const horizontalMenu = document.getElementById('react-horizontal-menu');
 const rootHorizontalMenu = createRoot(horizontalMenu);
 rootHorizontalMenu.render(<HorizontalMenu db={db} />);
 
+const categoryTitle = document.getElementById("categoryTitle");
 categoryTitle.textContent = categoryData.name;
+
+const categoryDes = document.getElementById("categoryDes");
 categoryDes.textContent = categoryData.description;
+
+const categoryImage = document.getElementById("categoryImage");
 categoryImage.src = categoryData.imageUrl;
+
+const categoryAudience = document.getElementById("categoryAudience");
 categoryAudience.textContent = categoryData.audience;
+
+const categoryFollowers = document.getElementById("categoryFollowers");
 categoryFollowers.textContent = categoryData.followers;
+
+const footer = document.getElementById('react-footer');
+const rootFooter = createRoot(footer);
+rootFooter.render(<Footer />);

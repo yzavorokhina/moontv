@@ -52,7 +52,7 @@ iframe {
     border-radius: 20px;
 }
 
-.banner-info {
+.channel-info {
     // position: absolute;
     // z-index: 3;
     // bottom: 0;
@@ -85,7 +85,7 @@ iframe {
     // color: var(--theme-font-primary, #FFFFFF);
 }
 
-.banner-info:hover {
+.channel-info:hover {
     cursor: pointer;
 }
 
@@ -132,7 +132,7 @@ iframe {
 /*} */
 /*------------*/
 
-.banner-stream-info {
+.channel-stream-info {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -140,7 +140,7 @@ iframe {
     flex-shrink: 0;
 }
 
-.banner-ava {
+.channel-ava {
     border: none;
     outline: 3px solid var(--color-accent-light, #FF6F3A); // Outline color and thickness
     outline-offset: 10px; // The distance from the image to the outline
@@ -148,8 +148,13 @@ iframe {
     border-radius: 60px;
 }
 
+.channel-ava img{
+    width: 60px;
+    height: 60px;
+}
+
 /* На странице самого канала вряд ли нужен hover для перехода на канал: */
-.banner-ava:hover {
+.channel-ava:hover {
     border-radius: 80px;
     filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
     animation: glow 6s infinite ease-in-out;
@@ -236,6 +241,11 @@ iframe {
     color: var(--theme-font-secondary, #CECED6);
     font-size: 20px;
     margin: auto;
+}
+
+.live-watchers span {
+    color: #E2552D;
+    font-size: 12px;
 }
 
 .viewers-count {
@@ -355,8 +365,9 @@ iframe {
   object-fit: cover;
 } */
 
-/* block promo: */
-.promo {
+
+/* chat block: */
+.chat {
     // position: fixed;
     // right: 0;
     display: flex;

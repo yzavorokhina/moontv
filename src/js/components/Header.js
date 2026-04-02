@@ -109,9 +109,7 @@ export default function Header({ }) {
     return (
         <>
             <header className="site-header">
-                <div className="search" id="search-form-block">
-                    <SearchForm />
-                </div>
+                <SearchForm />
                 <div className="logo-container">
                     <a href="./index.html" className="logo-img">
                         <img id="site-logo" src={`./images/logo_moon_1_1-3-${currentTheme}.png`} style={{ width: 120 + 'px', height: 40 + 'px' }} alt="MoonTV"
