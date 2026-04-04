@@ -12188,6 +12188,12 @@ h4 {
   cursor: pointer;
 }
 
+.login-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
 /*---------------------------------------------------------------*/
 /* horizontal menu: */
 .horizontal-menu {
@@ -12273,6 +12279,12 @@ h4 {
   justify-content: baseline;
   width: 64px !important;
   height: 40px !important;
+}
+
+.h-menu-first-button img {
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
 }
 
 .h-menu-scroll {
@@ -12610,10 +12622,6 @@ h4 {
   color: var(--theme-font-secondary, #CECED6);
 }
 
-/* arrow up: */
-/*when the cursor is at the top of the page*/
-/* end of the arrow up */
-/* end of the footer */
 /* banner: */
 .main-banner {
   display: flex;
@@ -12735,12 +12743,19 @@ iframe {
 .banner-ava {
   border: none;
   margin-right: 24px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
 }
 
 .banner-ava:hover {
   border-radius: 80px;
   filter: drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
   animation: glow 6s infinite ease-in-out;
+}
+
+.banner-ava img {
+  border-radius: 80px;
 }
 
 .stream-info a {
@@ -12816,6 +12831,11 @@ iframe {
   color: var(--theme-font-secondary, #CECED6);
   font-size: 20px;
   margin: auto;
+}
+
+.live-watchers span {
+  color: #E2552D;
+  font-size: 12px;
 }
 
 .viewers-count {
@@ -12965,6 +12985,7 @@ iframe {
   width: 98px;
   height: 98px;
   margin-right: 21px;
+  border-radius: 6px;
 }
 
 .promo1 {
@@ -26054,6 +26075,12 @@ h4 {
   cursor: pointer;
 }
 
+.login-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
 /*---------------------------------------------------------------*/
 /* horizontal menu: */
 .horizontal-menu {
@@ -26139,6 +26166,12 @@ h4 {
   justify-content: baseline;
   width: 64px !important;
   height: 40px !important;
+}
+
+.h-menu-first-button img {
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
 }
 
 .h-menu-scroll {
@@ -26476,10 +26509,6 @@ h4 {
   color: var(--theme-font-secondary, #CECED6);
 }
 
-/* arrow up: */
-/*when the cursor is at the top of the page*/
-/* end of the arrow up */
-/* end of the footer */
 /* banner: */
 .main-banner {
   display: flex;
@@ -26601,12 +26630,19 @@ iframe {
 .banner-ava {
   border: none;
   margin-right: 24px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
 }
 
 .banner-ava:hover {
   border-radius: 80px;
   filter: drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
   animation: glow 6s infinite ease-in-out;
+}
+
+.banner-ava img {
+  border-radius: 80px;
 }
 
 .stream-info a {
@@ -26682,6 +26718,11 @@ iframe {
   color: var(--theme-font-secondary, #CECED6);
   font-size: 20px;
   margin: auto;
+}
+
+.live-watchers span {
+  color: #E2552D;
+  font-size: 12px;
 }
 
 .viewers-count {
@@ -26831,6 +26872,7 @@ iframe {
   width: 98px;
   height: 98px;
   margin-right: 21px;
+  border-radius: 6px;
 }
 
 .promo1 {

@@ -24079,6 +24079,12 @@ h4 {
   cursor: pointer;
 }
 
+.login-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
 /*---------------------------------------------------------------*/
 /* horizontal menu: */
 .horizontal-menu {
@@ -24164,6 +24170,12 @@ h4 {
   justify-content: baseline;
   width: 64px !important;
   height: 40px !important;
+}
+
+.h-menu-first-button img {
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
 }
 
 .h-menu-scroll {
@@ -24501,10 +24513,6 @@ h4 {
   color: var(--theme-font-secondary, #CECED6);
 }
 
-/* arrow up: */
-/*when the cursor is at the top of the page*/
-/* end of the arrow up */
-/* end of the footer */
 .favourite-categories {
   display: flex;
   flex-direction: column;
@@ -25201,7 +25209,7 @@ main {
   border: none;
   outline: none;
   margin-right: 20px;
-  background-image: url(images/category_chevron_down.svg);
+  background-image: url(images/category-chevron-down.svg);
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 24px 24px;

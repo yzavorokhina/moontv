@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/db/dbHelper.js"
@@ -7,7 +8,6 @@
   \****************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -63,13 +63,255 @@ const db = {
 
 /***/ },
 
+/***/ "./src/js/components/Chat.js"
+/*!***********************************!*\
+  !*** ./src/js/components/Chat.js ***!
+  \***********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Chat)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function Chat(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(11);
+  let scrollToBottom;
+  let sendMessage;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const addMessage = (text, isUser) => {
+      const chatMessages = document.getElementById("chatMessages");
+      const messageDiv = document.createElement("div");
+      messageDiv.className = `message ${isUser ? "user-message" : "bot-message"}`;
+      const currentTime = new Date();
+      const hours = currentTime.getHours().toString().padStart(2, "0");
+      const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+      const timeString = `${hours}:${minutes}`;
+      messageDiv.innerHTML = `
+      <div class="message-content">${text}</div>
+      <div class="message-time">${timeString}</div>
+    `;
+      chatMessages.appendChild(messageDiv);
+      scrollToBottom();
+    };
+    scrollToBottom = _temp;
+    sendMessage = () => {
+      const userInput = document.getElementById("userInput");
+      const text_0 = userInput.value.trim();
+      if (text_0 === "") {
+        return;
+      }
+      addMessage(text_0, true);
+      userInput.value = "";
+      setTimeout(() => {
+        const botResponse = getBotResponse(text_0);
+        addMessage(botResponse, false);
+      }, 1000);
+    };
+    const getBotResponse = _temp2;
+    t1 = () => {
+      if (e.key === "Enter") {
+        sendMessage();
+      }
+    };
+    $[0] = scrollToBottom;
+    $[1] = sendMessage;
+    $[2] = t1;
+  } else {
+    scrollToBottom = $[0];
+    sendMessage = $[1];
+    t1 = $[2];
+  }
+  const onKeyPress = t1;
+  let t2;
+  let t3;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = () => {
+      scrollToBottom();
+    };
+    t3 = [];
+    $[3] = t2;
+    $[4] = t3;
+  } else {
+    t2 = $[3];
+    t3 = $[4];
+  }
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t2, t3);
+  let t4;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "chat-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+        children: "\u0427\u0430\u0442 \u0432 \u043F\u0440\u044F\u043C\u043E\u043C \u044D\u0444\u0438\u0440\u0435:"
+      })
+    });
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "chat-messages",
+      id: "chatMessages",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "message bot-message",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "./channel.html",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "./images/Mask_group_ava1_1.svg",
+            alt: "channel ava"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "channel-name",
+          children: "orignMasteR"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "message-content",
+          children: "\u0422\u0435\u043C\u0430 \u0434\u043D\u044F: \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "message-time",
+          children: "10:00"
+        })]
+      })
+    });
+    $[6] = t5;
+  } else {
+    t5 = $[6];
+  }
+  let t6;
+  let t7;
+  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "emoji-toggle",
+      id: "emojiToggle",
+      children: "\uD83D\uDE0A"
+    });
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+      type: "text",
+      id: "userInput",
+      placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435...",
+      onKeyDown: onKeyPress
+    });
+    $[7] = t6;
+    $[8] = t7;
+  } else {
+    t6 = $[7];
+    t7 = $[8];
+  }
+  let t8;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "message-buttons",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        id: "settingsButton",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+          fill: "#E2552D",
+          width: "20px",
+          height: "20px",
+          viewBox: "0 0 24 24",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+            d: "M12,16a4,4,0,1,0-4-4A4,4,0,0,0,12,16Zm0-6a2,2,0,1,1-2,2A2,2,0,0,1,12,10ZM3.5,12.877l-1,.579a2,2,0,0,0-.733,2.732l1.489,2.578A2,2,0,0,0,5.99,19.5L7,18.916a1.006,1.006,0,0,1,1.008.011.992.992,0,0,1,.495.857V21a2,2,0,0,0,2,2h3a2,2,0,0,0,2-2V19.782a1.009,1.009,0,0,1,1.5-.866l1.009.582a2,2,0,0,0,2.732-.732l1.488-2.578a2,2,0,0,0-.733-2.732l-1-.579a1.007,1.007,0,0,1-.5-.89,1,1,0,0,1,.5-.864l1-.579a2,2,0,0,0,.733-2.732L20.742,5.234A2,2,0,0,0,18.01,4.5L17,5.083a1.008,1.008,0,0,1-1.5-.867V3a2,2,0,0,0-2-2h-3a2,2,0,0,0-2,2V4.294a.854.854,0,0,1-.428.74l-.154.089a.864.864,0,0,1-.854,0L5.99,4.5a2,2,0,0,0-2.733.732L1.769,7.813A2,2,0,0,0,2.5,10.544l1,.578a1.011,1.011,0,0,1,.5.891A.994.994,0,0,1,3.5,12.877Zm1-3.487-1-.578L4.99,6.234l1.074.62a2.86,2.86,0,0,0,2.85,0l.154-.088A2.863,2.863,0,0,0,10.5,4.294V3h3V4.216a3.008,3.008,0,0,0,4.5,2.6l1.007-.582L20.5,8.812l-1,.578a3.024,3.024,0,0,0,0,5.219l1,.579h0l-1.488,2.578L18,17.184a3.008,3.008,0,0,0-4.5,2.6V21h-3V19.784a3.006,3.006,0,0,0-4.5-2.6l-1.007.582L3.5,15.188l1-.579a3.024,3.024,0,0,0,0-5.219Z"
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        id: "sendButton",
+        onClick: sendMessage,
+        children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C"
+      })]
+    });
+    $[9] = t8;
+  } else {
+    t8 = $[9];
+  }
+  let t9;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "chat-container",
+        children: [t4, t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "chat-input",
+          children: [t6, t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "emoji-panel",
+            id: "emojiPanel",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE0A",
+              children: "\uD83D\uDE0A"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE02",
+              children: "\uD83D\uDE02"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE0D",
+              children: "\uD83D\uDE0D"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDC4D",
+              children: "\uD83D\uDC4D"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83E\uDD14",
+              children: "\uD83E\uDD14"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83C\uDF89",
+              children: "\uD83C\uDF89"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\u2764\uFE0F",
+              children: "\u2764\uFE0F"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE4F",
+              children: "\uD83D\uDE4F"
+            })]
+          })]
+        })]
+      })
+    });
+    $[10] = t9;
+  } else {
+    t9 = $[10];
+  }
+  return t9;
+}
+function _temp2(userMessage) {
+  const lowerMessage = userMessage.toLowerCase();
+  if (lowerMessage.includes("\u043F\u0440\u0438\u0432\u0435\u0442") || lowerMessage.includes("\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439")) {
+    return "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435! \u0427\u0435\u043C \u043C\u043E\u0433\u0443 \u043F\u043E\u043C\u043E\u0447\u044C?";
+  } else {
+    if (lowerMessage.includes("\u043F\u043E\u043A\u0430") || lowerMessage.includes("\u0434\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F")) {
+      return "\u0414\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F! \u0411\u044B\u043B\u043E \u043F\u0440\u0438\u044F\u0442\u043D\u043E \u043F\u043E\u043E\u0431\u0449\u0430\u0442\u044C\u0441\u044F!";
+    } else {
+      if (lowerMessage.includes("\u043F\u043E\u043C\u043E\u0449\u044C")) {
+        return "\u042F \u0437\u0434\u0435\u0441\u044C, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043C\u043E\u0447\u044C. \u0427\u0442\u043E \u0432\u0430\u0441 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0443\u0435\u0442?";
+      } else {
+        return "\u041F\u043E\u043D\u044F\u043B \u0432\u0430\u0441. \u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u0443\u0442\u043E\u0447\u043D\u0438\u043C \u0434\u0435\u0442\u0430\u043B\u0438...";
+      }
+    }
+  }
+}
+function _temp() {
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+/***/ },
+
 /***/ "./src/js/components/Header.js"
 /*!*************************************!*\
   !*** ./src/js/components/Header.js ***!
   \*************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Header)
@@ -86,7 +328,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(42);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(40);
   let t1;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t1 = ["dark", "light"];
@@ -249,176 +491,143 @@ function Header(t0) {
   const handleClick = t7;
   let t8;
   if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "search",
-      id: "search-form-block",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {})
-    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {});
     $[12] = t8;
   } else {
     t8 = $[12];
   }
   const t9 = `./images/logo_moon_1_1-3-${currentTheme}.png`;
   let t10;
-  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-    t10 = {
-      width: 120 + "px",
-      height: 40 + "px"
-    };
-    $[13] = t10;
-  } else {
-    t10 = $[13];
-  }
-  let t11;
-  if ($[14] !== t9) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+  if ($[13] !== t9) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
       href: "./index.html",
       className: "logo-img",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
         id: "site-logo",
         src: t9,
-        style: t10,
         alt: "MoonTV",
         className: "logo-icon"
       })
     });
-    $[14] = t9;
+    $[13] = t9;
+    $[14] = t10;
+  } else {
+    t10 = $[14];
+  }
+  let t11;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+      id: "logo-text",
+      className: "logo-text",
+      children: "Moon.tv"
+    });
     $[15] = t11;
   } else {
     t11 = $[15];
   }
   let t12;
-  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
-      id: "logo-text",
-      className: "logo-text",
-      children: "Moon.tv"
-    });
-    $[16] = t12;
-  } else {
-    t12 = $[16];
-  }
-  let t13;
-  if ($[17] !== t11) {
-    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  if ($[16] !== t10) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "logo-container",
-      children: [t11, t12]
+      children: [t10, t11]
     });
-    $[17] = t11;
-    $[18] = t13;
+    $[16] = t10;
+    $[17] = t12;
   } else {
-    t13 = $[18];
+    t12 = $[17];
   }
-  const t14 = `./images/header_icon_music-${currentTheme}.svg`;
-  let t15;
-  if ($[19] !== t14) {
-    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+  const t13 = `./images/header_icon_music-${currentTheme}.svg`;
+  let t14;
+  if ($[18] !== t13) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0437\u0432\u0443\u043A",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
         href: "./404.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-          src: t14,
-          title: "mute",
-          width: "26px",
-          height: "26px"
+          src: t13,
+          title: "mute"
         })
       })
     });
+    $[18] = t13;
     $[19] = t14;
-    $[20] = t15;
   } else {
-    t15 = $[20];
+    t14 = $[19];
   }
-  const t16 = `./images/header_icon_theme-${currentTheme}.svg`;
-  let t17;
-  if ($[21] !== t16) {
-    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-      src: t16,
-      title: "theme",
-      width: "26px",
-      height: "26px"
+  const t15 = `./images/header_icon_theme-${currentTheme}.svg`;
+  let t16;
+  if ($[20] !== t15) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+      src: t15,
+      title: "theme"
     });
+    $[20] = t15;
     $[21] = t16;
-    $[22] = t17;
   } else {
-    t17 = $[22];
+    t16 = $[21];
   }
-  let t18;
-  if ($[23] !== handleClick || $[24] !== t17) {
-    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+  let t17;
+  if ($[22] !== handleClick || $[23] !== t16) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       id: "themeToggle",
       onClick: handleClick,
       className: "menu-button",
       type: "button",
       "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
-      children: t17
+      children: t16
     });
-    $[23] = handleClick;
+    $[22] = handleClick;
+    $[23] = t16;
     $[24] = t17;
-    $[25] = t18;
   } else {
-    t18 = $[25];
+    t17 = $[24];
   }
-  const t19 = `./images/header_icon_globe-${currentTheme}.svg`;
-  let t20;
-  if ($[26] !== t19) {
-    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+  const t18 = `./images/header_icon_globe-${currentTheme}.svg`;
+  let t19;
+  if ($[25] !== t18) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
         href: "./404.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-          src: t19,
-          title: "language",
-          width: "26px",
-          height: "26px"
+          src: t18,
+          title: "language"
         })
       })
     });
+    $[25] = t18;
     $[26] = t19;
-    $[27] = t20;
   } else {
-    t20 = $[27];
+    t19 = $[26];
   }
-  const t21 = `./images/header_icon_login-${currentTheme}.svg`;
-  let t22;
-  if ($[28] !== t21) {
-    t22 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+  const t20 = `./images/header_icon_login-${currentTheme}.svg`;
+  let t21;
+  if ($[27] !== t20) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0432\u043E\u0439 \u0430\u043A\u043A\u0430\u0443\u043D\u0442",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
         href: "./auth.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-          src: t21,
-          title: "login",
-          width: "26px",
-          height: "26px"
+          src: t20,
+          title: "login"
         })
       })
     });
+    $[27] = t20;
     $[28] = t21;
-    $[29] = t22;
   } else {
-    t22 = $[29];
+    t21 = $[28];
   }
-  const t23 = `./images/avatar_disabled-${currentTheme}.svg`;
-  let t24;
-  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
-    t24 = {
-      width: 60 + "px",
-      height: 60 + "px"
-    };
-    $[30] = t24;
-  } else {
-    t24 = $[30];
-  }
-  let t25;
-  if ($[31] !== t23) {
-    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  const t22 = `./images/avatar-disabled-${currentTheme}.jpg`;
+  let t23;
+  if ($[29] !== t22) {
+    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "login",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
         className: "login-button",
@@ -427,48 +636,47 @@ function Header(t0) {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
           href: "./auth.html",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-            src: t23,
-            style: t24,
+            src: t22,
             alt: "personal account"
           })
         })
       })
     });
-    $[31] = t23;
-    $[32] = t25;
+    $[29] = t22;
+    $[30] = t23;
   } else {
-    t25 = $[32];
+    t23 = $[30];
   }
-  let t26;
-  if ($[33] !== t15 || $[34] !== t18 || $[35] !== t20 || $[36] !== t22 || $[37] !== t25) {
-    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  let t24;
+  if ($[31] !== t14 || $[32] !== t17 || $[33] !== t19 || $[34] !== t21 || $[35] !== t23) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "container-menu",
-      children: [t15, t18, t20, t22, t25]
+      children: [t14, t17, t19, t21, t23]
     });
-    $[33] = t15;
-    $[34] = t18;
-    $[35] = t20;
-    $[36] = t22;
-    $[37] = t25;
-    $[38] = t26;
+    $[31] = t14;
+    $[32] = t17;
+    $[33] = t19;
+    $[34] = t21;
+    $[35] = t23;
+    $[36] = t24;
   } else {
-    t26 = $[38];
+    t24 = $[36];
   }
-  let t27;
-  if ($[39] !== t13 || $[40] !== t26) {
-    t27 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+  let t25;
+  if ($[37] !== t12 || $[38] !== t24) {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
         className: "site-header",
-        children: [t8, t13, t26]
+        children: [t8, t12, t24]
       })
     });
-    $[39] = t13;
-    $[40] = t26;
-    $[41] = t27;
+    $[37] = t12;
+    $[38] = t24;
+    $[39] = t25;
   } else {
-    t27 = $[41];
+    t25 = $[39];
   }
-  return t27;
+  return t25;
 }
 
 /***/ },
@@ -479,7 +687,6 @@ function Header(t0) {
   \*****************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ SearchForm)
@@ -515,21 +722,25 @@ function SearchForm(t0) {
   let t3;
   if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
     t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
-        action: "./search.html",
-        id: "searchForm",
-        method: "get",
-        children: [t1, t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#notifications",
-          className: "notification-round-button",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-            src: "./images/notifications_button.svg",
-            className: "button-icon",
-            alt: "Search",
-            width: "40px",
-            height: "40px"
-          })
-        })]
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "search",
+        id: "search-form-block",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
+          action: "./search.html",
+          id: "searchForm",
+          method: "get",
+          children: [t1, t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#notifications",
+            className: "notification-round-button",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+              src: "./images/notifications_button.svg",
+              className: "button-icon",
+              alt: "Search",
+              width: "40px",
+              height: "40px"
+            })
+          })]
+        })
       })
     });
     $[2] = t3;
@@ -541,13 +752,245 @@ function SearchForm(t0) {
 
 /***/ },
 
+/***/ "./src/js/components/Stream.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Stream.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Stream)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Chat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Chat */ "./src/js/components/Chat.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function Stream(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
+  const {
+    streamData,
+    channelData
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "stream-video",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("iframe", {
+        id: "streamTV",
+        src: "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+        title: "YouTube video player",
+        frameBorder: "0",
+        allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        referrerPolicy: "strict-origin-when-cross-origin",
+        allowFullScreen: true
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] !== channelData.iconUrl) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+          id: "channelIcon",
+          src: channelData.iconUrl,
+          alt: "channel ava"
+        })
+      })
+    });
+    $[1] = channelData.iconUrl;
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] !== streamData.title) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+      id: "streamTitle",
+      children: streamData.title
+    });
+    $[3] = streamData.title;
+    $[4] = t3;
+  } else {
+    t3 = $[4];
+  }
+  let t4;
+  if ($[5] !== streamData.description) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+      id: "streamDes",
+      children: streamData.description
+    });
+    $[5] = streamData.description;
+    $[6] = t4;
+  } else {
+    t4 = $[6];
+  }
+  let t5;
+  if ($[7] !== channelData.name) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: "./channel.html",
+      id: "channelName",
+      children: channelData.name
+    });
+    $[7] = channelData.name;
+    $[8] = t5;
+  } else {
+    t5 = $[8];
+  }
+  let t6;
+  if ($[9] !== t3 || $[10] !== t4 || $[11] !== t5) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-info",
+      children: [t3, t4, t5]
+    });
+    $[9] = t3;
+    $[10] = t4;
+    $[11] = t5;
+    $[12] = t6;
+  } else {
+    t6 = $[12];
+  }
+  let t7;
+  if ($[13] !== t2 || $[14] !== t6) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "channel-stream-info",
+      children: [t2, t6]
+    });
+    $[13] = t2;
+    $[14] = t6;
+    $[15] = t7;
+  } else {
+    t7 = $[15];
+  }
+  let t8;
+  let t9;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+    });
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      children: "\u2B24"
+    });
+    $[16] = t8;
+    $[17] = t9;
+  } else {
+    t8 = $[16];
+    t9 = $[17];
+  }
+  let t10;
+  if ($[18] !== streamData.audience) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "live-watchers",
+      children: [t8, t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "viewer-count",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+          id: "current-viewers",
+          children: streamData.audience
+        })
+      })]
+    });
+    $[18] = streamData.audience;
+    $[19] = t10;
+  } else {
+    t10 = $[19];
+  }
+  let t11;
+  let t12;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "follow-button",
+      children: "\u041E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u0442\u044C"
+    });
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "subscribe-button",
+      children: "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+    });
+    $[20] = t11;
+    $[21] = t12;
+  } else {
+    t11 = $[20];
+    t12 = $[21];
+  }
+  let t13;
+  if ($[22] !== streamData.ageRate) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "buttons-row",
+      children: [t11, t12, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+        id: "ageRating",
+        className: "age-rating",
+        children: [streamData.ageRate, "+"]
+      })]
+    });
+    $[22] = streamData.ageRate;
+    $[23] = t13;
+  } else {
+    t13 = $[23];
+  }
+  let t14;
+  if ($[24] !== t10 || $[25] !== t13) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-statistic",
+      children: [t10, t13]
+    });
+    $[24] = t10;
+    $[25] = t13;
+    $[26] = t14;
+  } else {
+    t14 = $[26];
+  }
+  let t15;
+  if ($[27] !== t14 || $[28] !== t7) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-wrapper",
+      children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "channel-info",
+        children: [t7, t14]
+      })]
+    });
+    $[27] = t14;
+    $[28] = t7;
+    $[29] = t15;
+  } else {
+    t15 = $[29];
+  }
+  let t16;
+  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "chat",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Chat__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+    });
+    $[30] = t16;
+  } else {
+    t16 = $[30];
+  }
+  let t17;
+  if ($[31] !== t15) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: [t15, t16]
+    });
+    $[31] = t15;
+    $[32] = t17;
+  } else {
+    t17 = $[32];
+  }
+  return t17;
+}
+
+/***/ },
+
 /***/ "./src/js/components/VerticalMenu.js"
 /*!*******************************************!*\
   !*** ./src/js/components/VerticalMenu.js ***!
   \*******************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ VerticalMenu)
@@ -697,203 +1140,12 @@ function _temp(text, wordCount) {
 
 /***/ },
 
-/***/ "./src/js/components/chat.js"
-/*!***********************************!*\
-  !*** ./src/js/components/chat.js ***!
-  \***********************************/
-() {
-
-document.addEventListener('DOMContentLoaded', function () {
-  const chatMessages = document.getElementById('chatMessages');
-  const userInput = document.getElementById('userInput');
-  const sendButton = document.getElementById('sendButton');
-
-  // Функция добавления сообщения
-  function addMessage(text, isUser) {
-    const messageDiv = document.createElement('div');
-    messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
-    const currentTime = new Date();
-    const hours = currentTime.getHours().toString().padStart(2, '0');
-    const minutes = currentTime.getMinutes().toString().padStart(2, '0');
-    const timeString = `${hours}:${minutes}`;
-    messageDiv.innerHTML = `
-      <div class="message-content">${text}</div>
-      <div class="message-time">${timeString}</div>
-    `;
-    chatMessages.appendChild(messageDiv);
-    scrollToBottom();
-  }
-
-  // Прокрутка к последнему сообщению
-  function scrollToBottom() {
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-  }
-
-  // Обработка отправки сообщения
-  function sendMessage() {
-    const text = userInput.value.trim();
-    if (text === '') return;
-
-    // Добавляем сообщение пользователя
-    addMessage(text, true);
-    userInput.value = '';
-
-    // Имитация ответа бота через 1 секунду
-    setTimeout(() => {
-      const botResponse = getBotResponse(text);
-      addMessage(botResponse, false);
-    }, 1000);
-  }
-
-  // Простая логика ответов бота
-  function getBotResponse(userMessage) {
-    const lowerMessage = userMessage.toLowerCase();
-    if (lowerMessage.includes('привет') || lowerMessage.includes('здравствуй')) {
-      return 'Здравствуйте! Чем могу помочь?';
-    } else if (lowerMessage.includes('пока') || lowerMessage.includes('до свидания')) {
-      return 'До свидания! Было приятно пообщаться!';
-    } else if (lowerMessage.includes('помощь')) {
-      return 'Я здесь, чтобы помочь. Что вас интересует?';
-    } else {
-      return 'Понял вас. Давайте уточним детали...';
-    }
-  }
-
-  // Обработчики событий
-  sendButton.addEventListener('click', sendMessage);
-  userInput.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      sendMessage();
-    }
-  });
-
-  // Автопрокрутка при загрузке
-  scrollToBottom();
-});
-
-/* with emodji: */
-// document.addEventListener('DOMContentLoaded', function() {
-//   const chatMessages = document.getElementById('chatMessages');
-//   const userInput = document.getElementById('userInput');
-//   const sendButton = document.getElementById('sendButton');
-//   const emojiToggle = document.getElementById('emojiToggle');
-//   const emojiPanel = document.getElementById('emojiPanel');
-
-//   // Функция добавления сообщения
-//   function addMessage(text, isUser) {
-//     const messageDiv = document.createElement('div');
-//     messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
-
-//     const currentTime = new Date();
-//     const hours = currentTime.getHours().toString().padStart(2, '0');
-//     const minutes = currentTime.getMinutes().toString().padStart(2, '0');
-//     const timeString = `${hours}:${minutes}`;
-
-//     // Безопасное отображение текста с эмодзи
-//     const safeText = text
-//       .replace(/&/g, '&amp;')
-//       .replace(/</g, '&lt;')
-//       .replace(/>/g, '&gt;');
-
-//     messageDiv.innerHTML = `
-//       <div class="message-content">${safeText}</div>
-//       <div class="message-time">${timeString}</div>
-//     `;
-
-//     chatMessages.appendChild(messageDiv);
-//     scrollToBottom();
-//   }
-
-//   // Прокрутка к последнему сообщению
-//   function scrollToBottom() {
-//     chatMessages.scrollTop = chatMessages.scrollHeight;
-//   }
-
-//   // Переключение видимости панели эмодзи
-//   function toggleEmojiPanel() {
-//     emojiPanel.classList.toggle('active');
-//   }
-
-//   // Вставка эмодзи в поле ввода
-//   function insertEmoji(emoji) {
-//     userInput.value += emoji;
-//     userInput.focus();
-//   }
-
-//   // Обработка отправки сообщения
-//   function sendMessage() {
-//     const text = userInput.value.trim();
-//     if (text === '') return;
-
-//     // Добавляем сообщение пользователя
-//     addMessage(text, true);
-//     userInput.value = '';
-
-//     // Скрываем панель эмодзи после отправки
-//     emojiPanel.classList.remove('active');
-
-//     // Имитация ответа бота через 1 секунду
-//     setTimeout(() => {
-//       const botResponse = getBotResponse(text);
-//       addMessage(botResponse, false);
-//     }, 1000);
-//   }
-
-//   // Простая логика ответов бота
-//   function getBotResponse(userMessage) {
-//     const lowerMessage = userMessage.toLowerCase();
-
-//     if (lowerMessage.includes('привет') || lowerMessage.includes('здравствуй')) {
-//       return 'Здравствуйте! Чем могу помочь? 😊';
-//     } else if (lowerMessage.includes('пока') || lowerMessage.includes('до свидания')) {
-//       return 'До свидания! Было приятно пообщаться! 👋';
-//     } else if (lowerMessage.includes('помощь')) {
-//       return 'Я здесь, чтобы помочь. Что вас интересует? 🤔';
-//     } else {
-//       return 'Понял вас. Давайте уточним детали... 👍';
-//     }
-//   }
-
-//   // Обработчики событий
-//   sendButton.addEventListener('click', sendMessage);
-
-//   userInput.addEventListener('keypress', function(e) {
-//     if (e.key === 'Enter') {
-//       sendMessage();
-//     }
-//   });
-
-//   // Переключение панели эмодзи
-//   emojiToggle.addEventListener('click', toggleEmojiPanel);
-
-//   // Закрытие панели при клике вне её
-//   document.addEventListener('click', function(e) {
-//     if (!emojiPanel.contains(e.target) && !emojiToggle.contains(e.target)) {
-//       emojiPanel.classList.remove('active');
-//     }
-//   });
-
-//   // Добавление эмодзи по клику
-//   emojiPanel.addEventListener('click', function(e) {
-//     if (e.target.classList.contains('emoji-item')) {
-//       const emoji = e.target.getAttribute('data-emoji');
-//       insertEmoji(emoji);
-//     }
-//   });
-
-//   // Автопрокрутка при загрузке
-//   scrollToBottom();
-// });
-
-/***/ },
-
 /***/ "./src/js/utils/common.js"
 /*!********************************!*\
   !*** ./src/js/utils/common.js ***!
   \********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getUrlParams: () => (/* binding */ getUrlParams),
@@ -941,7 +1193,6 @@ function useLocalStorage(key, initialValue) {
   \*******************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -954,7 +1205,6 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -967,7 +1217,6 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -980,7 +1229,6 @@ __webpack_require__.r(__webpack_exports__);
   \********************************************************************/
 (__unused_webpack_module, exports, __webpack_require__) {
 
-"use strict";
 /**
  * @license React
  * react-dom-client.development.js
@@ -29111,7 +29359,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************************************/
 (__unused_webpack_module, exports, __webpack_require__) {
 
-"use strict";
 /**
  * @license React
  * react-dom.development.js
@@ -29546,7 +29793,6 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 function checkDCE() {
@@ -29585,7 +29831,6 @@ if (false) // removed by dead control flow
   \*****************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 function checkDCE() {
@@ -29624,7 +29869,6 @@ if (false) // removed by dead control flow
   \**********************************************************************/
 (__unused_webpack_module, exports, __webpack_require__) {
 
-"use strict";
 /**
  * @license React
  * react-compiler-runtime.development.js
@@ -29659,7 +29903,6 @@ if (false) // removed by dead control flow
   \*****************************************************************/
 (__unused_webpack_module, exports, __webpack_require__) {
 
-"use strict";
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -30022,7 +30265,6 @@ if (false) // removed by dead control flow
   \*****************************************************/
 (module, exports, __webpack_require__) {
 
-"use strict";
 /* module decorator */ module = __webpack_require__.nmd(module);
 /**
  * @license React
@@ -31318,7 +31560,6 @@ if (false) // removed by dead control flow
   \************************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -31342,7 +31583,6 @@ if (false) // removed by dead control flow
   \*************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 if (false) // removed by dead control flow
@@ -31359,7 +31599,6 @@ if (false) // removed by dead control flow
   \*******************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 if (false) // removed by dead control flow
@@ -31376,7 +31615,6 @@ if (false) // removed by dead control flow
   \*************************************************************/
 (__unused_webpack_module, exports) {
 
-"use strict";
 /**
  * @license React
  * scheduler.development.js
@@ -31751,7 +31989,6 @@ if (false) // removed by dead control flow
   \*****************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 if (false) // removed by dead control flow
@@ -31768,8 +32005,7 @@ if (false) // removed by dead control flow
   \********************************/
 (module) {
 
-"use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","imageUrl":"./images/category_description_image_development.jpg","audience":12000,"followers":382},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","imageUrl":"./images/category_description_image_music.jpg","audience":1238,"followers":2798},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","imageUrl":"./images/category_description_image_music.jpg","audience":12003,"followers":2323},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","imageUrl":"./images/category_description_image.svg","audience":12020,"followers":3442},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","imageUrl":"./images/category_description_image.svg","audience":12870,"followers":64554},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","imageUrl":"./images/category_description_image_reading.jpg","audience":120,"followers":445},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","imageUrl":"./images/category_description_image.svg","audience":2000,"followers":544},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","imageUrl":"./images/category_description_image.svg","audience":1000,"followers":221},{"id":9,"menuOrder":100,"name":"Mandala Dance","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","imageUrl":"./images/category_description_image.svg","audience":12750,"followers":12},{"id":10,"menuOrder":100,"name":"Tribal Dance","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","imageUrl":"./images/category_description_image.svg","audience":1230,"followers":34},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category_description_image_communication.jpg","audience":330,"followers":38},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","imageUrl":"./images/category_description_image_sport.jpg","audience":1230,"followers":34},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category_description_image_games.jpg","audience":330,"followers":38},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","imageUrl":"./images/category_img_top_hobby.jpg","audience":1230,"followers":34},{"id":15,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","imageUrl":"./images/category_description_image_education.jpg","audience":1230,"followers":34},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","imageUrl":"./images/category_description_image_radio.jpg","audience":1230,"followers":34}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","imageUrl":"./images/category-description-image-development.jpg","audience":12000,"followers":382},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","imageUrl":"./images/category-description-image-music.jpg","audience":1238,"followers":2798},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","imageUrl":"./images/category_description_image_music.jpg","audience":12003,"followers":2323},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","imageUrl":"./images/category_description_image.svg","audience":12020,"followers":3442},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","imageUrl":"./images/category-description-image-dance.jpg","audience":12870,"followers":64554},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","imageUrl":"./images/category-description-image-reading.jpg","audience":120,"followers":445},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","imageUrl":"./images/category_description_image.svg","audience":2000,"followers":544},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","imageUrl":"./images/category_description_image.svg","audience":1000,"followers":221},{"id":9,"menuOrder":100,"name":"Mandala Dance","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","imageUrl":"./images/category_description_image.svg","audience":12750,"followers":12},{"id":10,"menuOrder":100,"name":"Tribal Dance","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","imageUrl":"./images/category_description_image.svg","audience":1230,"followers":34},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category-description-image-communication.jpg","audience":330,"followers":38},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","imageUrl":"./images/category-description-image-sport.jpg","audience":1230,"followers":34},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category-description-image-games.jpg","audience":330,"followers":38},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","imageUrl":"./images/category-description-image-hobby.jpg","audience":1230,"followers":34},{"id":15,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","imageUrl":"./images/category-description-image-education.jpg","audience":1230,"followers":34},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","imageUrl":"./images/category-description-image-radio.jpg","audience":1230,"followers":34}]}');
 
 /***/ },
 
@@ -31779,7 +32015,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"
   \******************************/
 (module) {
 
-"use strict";
 module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner_ava.svg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner_ava.svg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner_ava.svg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner_ava.svg","categories":[1]},{"id":5,"name":"ProBabushka","title":"Вяжем носки и смотрим фильм # Легенда об Искателе","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner_ava.svg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava1_1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava1_2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava1_3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava1_4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava1_5.svg","categories":[1]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava2_1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava2_2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava2_3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava2_4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava2_5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava3_1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava3_2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava3_3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava3_4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava3_5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava4_1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava4_2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava4_3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava4_4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava4_5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava5_1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava5_2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava5_3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava5_4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava5_5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava6_1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava6_2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava6_3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava6_4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava6_5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava7_1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava7_2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava7_3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava7_4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava7_5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava8_1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava8_2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava8_3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava8_4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/Mask_group_ava8_5.svg","categories":[8]}]}');
 
 /***/ },
@@ -31790,8 +32025,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_act
   \*****************************/
 (module) {
 
-"use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":11,"promo":true,"title":"Разрабатываю игру KUPOL. Выращивание фруктов под колпаком","description":"День 4 / Основная концепция","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":11,"promo":true,"title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":11,"promo":true,"title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":11,"promo":true,"title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":11,"promo":true,"title":"Вяжем носки и смотрим фильм # Легенда об Искателе","description":"Тренируем навыки многопоточности","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/Mask_group_video1_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/Mask_group_video1_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/Mask_group_video1_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/Mask_group_video1_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/Mask_group_video2_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/Mask_group_video2_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/Mask_group_video2_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/Mask_group_video2_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/Mask_group_video2_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/Mask_group_video3_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/Mask_group_video3_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/Mask_group_video3_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/Mask_group_video3_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/Mask_group_video3_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/Mask_group_video4_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/Mask_group_video4_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/Mask_group_video4_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/Mask_group_video4_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/Mask_group_video4_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/Mask_group_video5_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/Mask_group_video5_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/Mask_group_video5_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/Mask_group_video5_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/Mask_group_video5_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/Mask_group_video6_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/Mask_group_video6_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"DU2 club","previewUrl":"images/Mask_group_video7_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"DU2 club","previewUrl":"images/Mask_group_video7_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"DU2 club","previewUrl":"images/Mask_group_video7_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"DU2 club","previewUrl":"images/Mask_group_video7_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/Mask_group_video7_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":11,"promo":true,"title":"Разрабатываю игру KUPOL - Выращивание фруктов на Луне","description":"День 4 / Основная концепция","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":11,"promo":true,"title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":11,"promo":true,"title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":11,"promo":true,"title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":11,"promo":true,"title":"Вяжем носки и смотрим фильм # Легенда об Искателе","description":"Тренируем навыки многопоточности","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/Mask_group_video1_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/Mask_group_video1_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/Mask_group_video1_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/Mask_group_video1_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/Mask_group_video2_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/Mask_group_video2_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/Mask_group_video2_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/Mask_group_video2_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/Mask_group_video2_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/Mask_group_video3_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/Mask_group_video3_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/Mask_group_video3_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/Mask_group_video3_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/Mask_group_video3_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/Mask_group_video4_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/Mask_group_video4_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/Mask_group_video4_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/Mask_group_video4_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/Mask_group_video4_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/Mask_group_video5_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/Mask_group_video5_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/Mask_group_video5_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/Mask_group_video5_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/Mask_group_video5_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/Mask_group_video6_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/Mask_group_video6_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"DU2 club","previewUrl":"images/Mask_group_video7_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"DU2 club","previewUrl":"images/Mask_group_video7_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"DU2 club","previewUrl":"images/Mask_group_video7_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"DU2 club","previewUrl":"images/Mask_group_video7_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/Mask_group_video7_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]}]}');
 
 /***/ }
 
@@ -31882,9 +32116,8 @@ module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"chan
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!***************************!*\
   !*** ./src/js/channel.js ***!
   \***************************/
@@ -31892,16 +32125,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_vendors_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/vendors/_bootstrap.scss */ "./src/scss/vendors/_bootstrap.scss");
 /* harmony import */ var _scss_vendors_normalize_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/vendors/_normalize.scss */ "./src/scss/vendors/_normalize.scss");
 /* harmony import */ var _scss_channel_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/channel.scss */ "./src/scss/channel.scss");
-/* harmony import */ var _components_chat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/chat */ "./src/js/components/chat.js");
-/* harmony import */ var _components_chat__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_chat__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
+/* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
+/* harmony import */ var _js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/utils/common.js */ "./src/js/utils/common.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Header */ "./src/js/components/Header.js");
-/* harmony import */ var _components_SearchForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/SearchForm */ "./src/js/components/SearchForm.js");
-/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var _js_utils_common_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../js/utils/common.js */ "./src/js/utils/common.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var _components_Stream_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Stream.js */ "./src/js/components/Stream.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -31917,40 +32147,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Использование
-const params = (0,_js_utils_common_js__WEBPACK_IMPORTED_MODULE_9__.getUrlParams)();
+const params = (0,_js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__.getUrlParams)();
 console.log(params.id); // '1'
 
 const streamId = +params.id || 1;
-const streamData = _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"].streamsModel.findOneById(streamId);
-const channelData = _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"].channelsModel.findOneById(streamData.channelId);
+const streamData = _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"].streamsModel.findOneById(streamId);
+const channelData = _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"].channelsModel.findOneById(streamData.channelId);
 console.log({
   params,
   streamData,
   channelData
 });
 const header = document.getElementById('react-header');
+const rootHeader = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(header);
+rootHeader.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {}));
 const verticalMenu = document.getElementById('vertical-menu');
-const streamTV = document.getElementById("streamTV");
-const streamTitle = document.getElementById("streamTitle");
-const streamDes = document.getElementById("streamDes");
-const channelName = document.getElementById("channelName");
-const currentViewers = document.getElementById("current-viewers");
-const ageRating = document.getElementById("ageRating");
-const channelIcon = document.getElementById("channelIcon");
-const rootHeader = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(header);
-rootHeader.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {}));
-const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(verticalMenu);
-rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_8__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
+const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(verticalMenu);
+rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"],
   showAll: false
 }));
-streamTV.src = streamData.videoUrl;
-streamTitle.textContent = streamData.title;
-streamDes.textContent = streamData.description;
-channelName.textContent = channelData.name;
-currentViewers.textContent = streamData.audience;
-ageRating.textContent = streamData.ageRate + "+";
-channelIcon.src = channelData.iconUrl;
+const stream = document.getElementById('react-stream');
+const rootStream = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(stream);
+rootStream.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Stream_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  streamData: streamData,
+  channelData: channelData
+}));
 })();
 
 /******/ })()

@@ -63,6 +63,460 @@ const db = {
 
 /***/ },
 
+/***/ "./src/js/components/Footer.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Footer.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Footer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function Footer({}) {
+  const scrollFunction = () => {
+    // Показываем кнопку, если проскроллили больше 20 px
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      buttonUp.style.display = "block";
+    } else {
+      // Скрываем, если вернулись наверх
+      buttonUp.style.display = "none";
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    // Получаем кнопку по ID
+    var buttonUp = document.getElementById("buttonUp");
+    // Обработчик скролла: показываем/скрываем кнопку
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  }, []);
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "buttonUp buttonUp_hide",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+        id: "buttonUp",
+        onClick: handleClick
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "footer-container",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["12+ \xA92025 \u041E\u041E\u041E \"Moon TV\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B. ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\u0412\u0441\u0435 \u0442\u043E\u0432\u0430\u0440\u043D\u044B\u0435 \u0437\u043D\u0430\u043A\u0438 \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E \u0438\u0445 \u0432\u043B\u0430\u0434\u0435\u043B\u044C\u0446\u0435\u0432."]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "footer-menu",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0435 \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 "
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("hr", {
+        className: "horizontal-separator"
+      })]
+    })]
+  });
+}
+
+/***/ },
+
+/***/ "./src/js/components/Header.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Header.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Header)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _SearchForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SearchForm */ "./src/js/components/SearchForm.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+function Header(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(40);
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = ["dark", "light"];
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  const themes = t1;
+  let t2;
+  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = ["dark", {
+      mainBg: "#343148",
+      promoBg: "#292640",
+      inputBg: "#1C173C",
+      btnBg: "#16122F",
+      activeBtnBg: "#000000",
+      bannerBtnBg: "rgba(52, 49, 72, 0.2)",
+      btnsHover: "rgba(17, 9, 80, 0.5)",
+      blocksHover: "#2e2b50",
+      btnScrollHover: "#54506B",
+      accentColor: "#FF6F3A",
+      accentColorHover: "#E2552D",
+      tagBtnBg: "rgba(170, 168, 181, 0.7)",
+      tagBtnBgHover: "#CECED6",
+      fontLogo: "#FFFFFF",
+      fontPrimary: "#FFFFFF",
+      fontSecondary: "#CECED6",
+      fontTertiary: "rgba(170, 168, 181, 0.7)"
+    }];
+    $[1] = t2;
+  } else {
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = new Map([t2, ["light", {
+      mainBg: "#FFFFFF",
+      promoBg: "rgba(170, 168, 181, 0.5)",
+      inputBg: "rgba(170, 168, 181, 0.5)",
+      btnBg: "rgba(170, 168, 181, 0.5)",
+      activeBtnBg: "#AAA8B5",
+      bannerBtnBg: "rgba(170, 168, 181, 0.7)",
+      btnsHover: "rgba(170, 168, 181, 0.7)",
+      blocksHover: "#AAA8B5",
+      btnScrollHover: "#AAA8B5",
+      accentColor: "#FF6F3A",
+      accentColorHover: "#E2552D",
+      tagBtnBg: "#CECED6",
+      tagBtnBgHover: "rgba(170, 168, 181, 0.7)",
+      fontLogo: "#FF6F3A",
+      fontPrimary: "#343148",
+      fontSecondary: "#FFFFFF",
+      fontTertiary: "#000000"
+    }]]);
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  const themesMap = t3;
+  const [currentTheme, setTheme] = (0,_utils_common__WEBPACK_IMPORTED_MODULE_3__.useLocalStorage)("currentTheme", "dark");
+  let t4;
+  if ($[3] !== setTheme) {
+    t4 = themeId => {
+      const {
+        mainBg,
+        promoBg,
+        inputBg,
+        btnBg,
+        activeBtnBg,
+        bannerBtnBg,
+        btnsHover,
+        blocksHover,
+        btnScrollHover,
+        accentColor,
+        accentColorHover,
+        tagBtnBg,
+        tagBtnBgHover,
+        fontLogo,
+        fontPrimary,
+        fontSecondary,
+        fontTertiary
+      } = themesMap.get(themeId);
+      setTheme(themeId);
+      console.log({
+        mainBg,
+        promoBg,
+        inputBg,
+        btnBg,
+        activeBtnBg,
+        bannerBtnBg,
+        btnsHover,
+        blocksHover,
+        btnScrollHover,
+        accentColor,
+        accentColorHover,
+        tagBtnBg,
+        tagBtnBgHover,
+        fontLogo,
+        fontPrimary,
+        fontSecondary,
+        fontTertiary
+      });
+      document.documentElement.style.setProperty("--theme-main-bg", mainBg);
+      document.documentElement.style.setProperty("--theme-promo-bg", promoBg);
+      document.documentElement.style.setProperty("--theme-input-bg", inputBg);
+      document.documentElement.style.setProperty("--theme-btn-bg", btnBg);
+      document.documentElement.style.setProperty("--theme-active-btn-bg", activeBtnBg);
+      document.documentElement.style.setProperty("--theme-transparent-banner-btn", bannerBtnBg);
+      document.documentElement.style.setProperty("--theme-btns-hover", btnsHover);
+      document.documentElement.style.setProperty("--theme-blocks-hover", blocksHover);
+      document.documentElement.style.setProperty("--theme-button-scroll-hover", btnScrollHover);
+      document.documentElement.style.setProperty("--theme-accent", accentColor);
+      document.documentElement.style.setProperty("--theme-accent-hover", accentColorHover);
+      document.documentElement.style.setProperty("--theme-tag-button", tagBtnBg);
+      document.documentElement.style.setProperty("--theme-tag-button-bg-hover", tagBtnBgHover);
+      document.documentElement.style.setProperty("--theme-font-logo", fontLogo);
+      document.documentElement.style.setProperty("--theme-font-primary", fontPrimary);
+      document.documentElement.style.setProperty("--theme-font-secondary", fontSecondary);
+      document.documentElement.style.setProperty("--theme-font-tertiary", fontTertiary);
+    };
+    $[3] = setTheme;
+    $[4] = t4;
+  } else {
+    t4 = $[4];
+  }
+  const updateTheme = t4;
+  let t5;
+  if ($[5] !== currentTheme || $[6] !== updateTheme) {
+    t5 = () => {
+      updateTheme(currentTheme);
+    };
+    $[5] = currentTheme;
+    $[6] = updateTheme;
+    $[7] = t5;
+  } else {
+    t5 = $[7];
+  }
+  let t6;
+  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = [];
+    $[8] = t6;
+  } else {
+    t6 = $[8];
+  }
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t5, t6);
+  let t7;
+  if ($[9] !== currentTheme || $[10] !== updateTheme) {
+    t7 = () => {
+      console.log("\u041A\u043D\u043E\u043F\u043A\u0430 \u043D\u0430\u0436\u0430\u0442\u0430!");
+      const currentIndex = themes.indexOf(currentTheme);
+      const nextIndex = (currentIndex + 1) % themes.length;
+      updateTheme(themes[nextIndex]);
+    };
+    $[9] = currentTheme;
+    $[10] = updateTheme;
+    $[11] = t7;
+  } else {
+    t7 = $[11];
+  }
+  const handleClick = t7;
+  let t8;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {});
+    $[12] = t8;
+  } else {
+    t8 = $[12];
+  }
+  const t9 = `./images/logo_moon_1_1-3-${currentTheme}.png`;
+  let t10;
+  if ($[13] !== t9) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+      href: "./index.html",
+      className: "logo-img",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+        id: "site-logo",
+        src: t9,
+        alt: "MoonTV",
+        className: "logo-icon"
+      })
+    });
+    $[13] = t9;
+    $[14] = t10;
+  } else {
+    t10 = $[14];
+  }
+  let t11;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
+      id: "logo-text",
+      className: "logo-text",
+      children: "Moon.tv"
+    });
+    $[15] = t11;
+  } else {
+    t11 = $[15];
+  }
+  let t12;
+  if ($[16] !== t10) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "logo-container",
+      children: [t10, t11]
+    });
+    $[16] = t10;
+    $[17] = t12;
+  } else {
+    t12 = $[17];
+  }
+  const t13 = `./images/header_icon_music-${currentTheme}.svg`;
+  let t14;
+  if ($[18] !== t13) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      className: "menu-button",
+      type: "button",
+      "aria-label": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0437\u0432\u0443\u043A",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "./404.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          src: t13,
+          title: "mute"
+        })
+      })
+    });
+    $[18] = t13;
+    $[19] = t14;
+  } else {
+    t14 = $[19];
+  }
+  const t15 = `./images/header_icon_theme-${currentTheme}.svg`;
+  let t16;
+  if ($[20] !== t15) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+      src: t15,
+      title: "theme"
+    });
+    $[20] = t15;
+    $[21] = t16;
+  } else {
+    t16 = $[21];
+  }
+  let t17;
+  if ($[22] !== handleClick || $[23] !== t16) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      id: "themeToggle",
+      onClick: handleClick,
+      className: "menu-button",
+      type: "button",
+      "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
+      children: t16
+    });
+    $[22] = handleClick;
+    $[23] = t16;
+    $[24] = t17;
+  } else {
+    t17 = $[24];
+  }
+  const t18 = `./images/header_icon_globe-${currentTheme}.svg`;
+  let t19;
+  if ($[25] !== t18) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      className: "menu-button",
+      type: "button",
+      "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "./404.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          src: t18,
+          title: "language"
+        })
+      })
+    });
+    $[25] = t18;
+    $[26] = t19;
+  } else {
+    t19 = $[26];
+  }
+  const t20 = `./images/header_icon_login-${currentTheme}.svg`;
+  let t21;
+  if ($[27] !== t20) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      className: "menu-button",
+      type: "button",
+      "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0432\u043E\u0439 \u0430\u043A\u043A\u0430\u0443\u043D\u0442",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "./auth.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+          src: t20,
+          title: "login"
+        })
+      })
+    });
+    $[27] = t20;
+    $[28] = t21;
+  } else {
+    t21 = $[28];
+  }
+  const t22 = `./images/avatar-disabled-${currentTheme}.jpg`;
+  let t23;
+  if ($[29] !== t22) {
+    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "login",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+        className: "login-button",
+        type: "button",
+        "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u043B\u0438\u0447\u043D\u044B\u0439 \u043A\u0430\u0431\u0438\u043D\u0435\u0442",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+          href: "./auth.html",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+            src: t22,
+            alt: "personal account"
+          })
+        })
+      })
+    });
+    $[29] = t22;
+    $[30] = t23;
+  } else {
+    t23 = $[30];
+  }
+  let t24;
+  if ($[31] !== t14 || $[32] !== t17 || $[33] !== t19 || $[34] !== t21 || $[35] !== t23) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "container-menu",
+      children: [t14, t17, t19, t21, t23]
+    });
+    $[31] = t14;
+    $[32] = t17;
+    $[33] = t19;
+    $[34] = t21;
+    $[35] = t23;
+    $[36] = t24;
+  } else {
+    t24 = $[36];
+  }
+  let t25;
+  if ($[37] !== t12 || $[38] !== t24) {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
+        className: "site-header",
+        children: [t8, t12, t24]
+      })
+    });
+    $[37] = t12;
+    $[38] = t24;
+    $[39] = t25;
+  } else {
+    t25 = $[39];
+  }
+  return t25;
+}
+
+/***/ },
+
 /***/ "./src/js/components/HorizontalMenu.js"
 /*!*********************************************!*\
   !*** ./src/js/components/HorizontalMenu.js ***!
@@ -118,10 +572,8 @@ function HorizontalMenu({
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
             href: "./categories.html",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-              src: "./images/All_icon_for_categories.svg",
-              alt: "\u0418\u043A\u043E\u043D\u043A\u0430 \u0441\u0441\u044B\u043B\u043A\u0438",
-              width: "11px",
-              height: "10px"
+              src: "./images/all-icon-for-categories.svg",
+              alt: "\u0412\u0441\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
             }), "\u0412\u0441\u0435"]
           })
         }), renderCards().map(data => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_HorizontalMenuBtn__WEBPACK_IMPORTED_MODULE_0__["default"], {
@@ -394,21 +846,25 @@ function SearchForm(t0) {
   let t3;
   if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
     t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
-        action: "./search.html",
-        id: "searchForm",
-        method: "get",
-        children: [t1, t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#notifications",
-          className: "notification-round-button",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-            src: "./images/notifications_button.svg",
-            className: "button-icon",
-            alt: "Search",
-            width: "40px",
-            height: "40px"
-          })
-        })]
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "search",
+        id: "search-form-block",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
+          action: "./search.html",
+          id: "searchForm",
+          method: "get",
+          children: [t1, t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#notifications",
+            className: "notification-round-button",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+              src: "./images/notifications_button.svg",
+              className: "button-icon",
+              alt: "Search",
+              width: "40px",
+              height: "40px"
+            })
+          })]
+        })
       })
     });
     $[2] = t3;
@@ -48697,7 +49153,7 @@ if (false) // removed by dead control flow
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","imageUrl":"./images/category_description_image_development.jpg","audience":12000,"followers":382},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","imageUrl":"./images/category_description_image_music.jpg","audience":1238,"followers":2798},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","imageUrl":"./images/category_description_image_music.jpg","audience":12003,"followers":2323},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","imageUrl":"./images/category_description_image.svg","audience":12020,"followers":3442},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","imageUrl":"./images/category_description_image.svg","audience":12870,"followers":64554},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","imageUrl":"./images/category_description_image_reading.jpg","audience":120,"followers":445},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","imageUrl":"./images/category_description_image.svg","audience":2000,"followers":544},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","imageUrl":"./images/category_description_image.svg","audience":1000,"followers":221},{"id":9,"menuOrder":100,"name":"Mandala Dance","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","imageUrl":"./images/category_description_image.svg","audience":12750,"followers":12},{"id":10,"menuOrder":100,"name":"Tribal Dance","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","imageUrl":"./images/category_description_image.svg","audience":1230,"followers":34},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category_description_image_communication.jpg","audience":330,"followers":38},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","imageUrl":"./images/category_description_image_sport.jpg","audience":1230,"followers":34},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category_description_image_games.jpg","audience":330,"followers":38},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","imageUrl":"./images/category_img_top_hobby.jpg","audience":1230,"followers":34},{"id":15,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","imageUrl":"./images/category_description_image_education.jpg","audience":1230,"followers":34},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","imageUrl":"./images/category_description_image_radio.jpg","audience":1230,"followers":34}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","imageUrl":"./images/category-description-image-development.jpg","audience":12000,"followers":382},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","imageUrl":"./images/category-description-image-music.jpg","audience":1238,"followers":2798},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","imageUrl":"./images/category_description_image_music.jpg","audience":12003,"followers":2323},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","imageUrl":"./images/category_description_image.svg","audience":12020,"followers":3442},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","imageUrl":"./images/category-description-image-dance.jpg","audience":12870,"followers":64554},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","imageUrl":"./images/category-description-image-reading.jpg","audience":120,"followers":445},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","imageUrl":"./images/category_description_image.svg","audience":2000,"followers":544},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","imageUrl":"./images/category_description_image.svg","audience":1000,"followers":221},{"id":9,"menuOrder":100,"name":"Mandala Dance","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","imageUrl":"./images/category_description_image.svg","audience":12750,"followers":12},{"id":10,"menuOrder":100,"name":"Tribal Dance","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","imageUrl":"./images/category_description_image.svg","audience":1230,"followers":34},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category-description-image-communication.jpg","audience":330,"followers":38},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","imageUrl":"./images/category-description-image-sport.jpg","audience":1230,"followers":34},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","imageUrl":"./images/category-description-image-games.jpg","audience":330,"followers":38},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","imageUrl":"./images/category-description-image-hobby.jpg","audience":1230,"followers":34},{"id":15,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","imageUrl":"./images/category-description-image-education.jpg","audience":1230,"followers":34},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","imageUrl":"./images/category-description-image-radio.jpg","audience":1230,"followers":34}]}');
 
 /***/ },
 
@@ -48719,7 +49175,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_act
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":11,"promo":true,"title":"Разрабатываю игру KUPOL. Выращивание фруктов под колпаком","description":"День 4 / Основная концепция","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":11,"promo":true,"title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":11,"promo":true,"title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":11,"promo":true,"title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":11,"promo":true,"title":"Вяжем носки и смотрим фильм # Легенда об Искателе","description":"Тренируем навыки многопоточности","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/Mask_group_video1_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/Mask_group_video1_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/Mask_group_video1_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/Mask_group_video1_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/Mask_group_video2_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/Mask_group_video2_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/Mask_group_video2_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/Mask_group_video2_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/Mask_group_video2_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/Mask_group_video3_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/Mask_group_video3_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/Mask_group_video3_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/Mask_group_video3_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/Mask_group_video3_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/Mask_group_video4_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/Mask_group_video4_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/Mask_group_video4_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/Mask_group_video4_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/Mask_group_video4_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/Mask_group_video5_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/Mask_group_video5_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/Mask_group_video5_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/Mask_group_video5_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/Mask_group_video5_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/Mask_group_video6_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/Mask_group_video6_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"DU2 club","previewUrl":"images/Mask_group_video7_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"DU2 club","previewUrl":"images/Mask_group_video7_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"DU2 club","previewUrl":"images/Mask_group_video7_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"DU2 club","previewUrl":"images/Mask_group_video7_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/Mask_group_video7_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":11,"promo":true,"title":"Разрабатываю игру KUPOL - Выращивание фруктов на Луне","description":"День 4 / Основная концепция","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":11,"promo":true,"title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":11,"promo":true,"title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":11,"promo":true,"title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":11,"promo":true,"title":"Вяжем носки и смотрим фильм # Легенда об Искателе","description":"Тренируем навыки многопоточности","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/Mask_group_video1_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/Mask_group_video1_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/Mask_group_video1_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/Mask_group_video1_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/Mask_group_video1_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/Mask_group_video2_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/Mask_group_video2_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/Mask_group_video2_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/Mask_group_video2_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/Mask_group_video2_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/Mask_group_video3_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/Mask_group_video3_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/Mask_group_video3_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/Mask_group_video3_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/Mask_group_video3_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/Mask_group_video4_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/Mask_group_video4_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/Mask_group_video4_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/Mask_group_video4_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/Mask_group_video4_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/Mask_group_video5_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/Mask_group_video5_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/Mask_group_video5_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/Mask_group_video5_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/Mask_group_video5_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/Mask_group_video6_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/Mask_group_video6_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/Mask_group_video6_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"DU2 club","previewUrl":"images/Mask_group_video7_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"DU2 club","previewUrl":"images/Mask_group_video7_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"DU2 club","previewUrl":"images/Mask_group_video7_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"DU2 club","previewUrl":"images/Mask_group_video7_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/Mask_group_video7_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_1.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_2.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_3.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_4.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/Mask_group_video8_5.svg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]}]}');
 
 /***/ }
 
@@ -48835,12 +49291,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_search_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/search.scss */ "./src/scss/search.scss");
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
-/* harmony import */ var _components_SearchForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/SearchForm */ "./src/js/components/SearchForm.js");
-/* harmony import */ var _components_SearchCards__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/SearchCards */ "./src/js/components/SearchCards.js");
-/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var _components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
-/* harmony import */ var _js_utils_common_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../js/utils/common.js */ "./src/js/utils/common.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/utils/common.js */ "./src/js/utils/common.js");
+/* harmony import */ var _components_Header_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Header.js */ "./src/js/components/Header.js");
+/* harmony import */ var _components_SearchCards__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/SearchCards */ "./src/js/components/SearchCards.js");
+/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var _components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
+/* harmony import */ var _components_Footer_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Footer.js */ "./src/js/components/Footer.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -48854,54 +49312,36 @@ __webpack_require__.r(__webpack_exports__);
 
 // Использование
 
-const params = (0,_js_utils_common_js__WEBPACK_IMPORTED_MODULE_9__.getUrlParams)();
+const params = (0,_js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__.getUrlParams)();
 console.log({
   params
 }); // '1'
 
-// Получаем кнопку по ID
-var buttonUp = document.getElementById("buttonUp");
-// Обработчик скролла: показываем/скрываем кнопку
-window.onscroll = function () {
-  scrollFunction();
-};
-function scrollFunction() {
-  // Показываем кнопку, если проскроллили больше 20 px
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    buttonUp.style.display = "block";
-  } else {
-    // Скрываем, если вернулись наверх
-    buttonUp.style.display = "none";
-  }
-}
-buttonUp.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
 const search = params.q || "";
-const searchFormBlock = document.getElementById('search-form-block');
-const rootSearchFormBlock = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(searchFormBlock);
-rootSearchFormBlock.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_SearchForm__WEBPACK_IMPORTED_MODULE_5__["default"], {}));
+const header = document.getElementById('react-header');
+const rootHeader = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(header);
+rootHeader.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_Header_js__WEBPACK_IMPORTED_MODULE_6__["default"], {}));
 const categoryCards = document.getElementById('search_result');
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(categoryCards);
-root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_SearchCards__WEBPACK_IMPORTED_MODULE_6__["default"], {
+root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_SearchCards__WEBPACK_IMPORTED_MODULE_7__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"],
   search: search,
   showAll: true
 }));
 const horizontalMenu = document.getElementById('react-horizontal-menu');
 const rootHorizontalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(horizontalMenu);
-rootHorizontalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_8__["default"], {
+rootHorizontalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_9__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"]
 }));
 const verticalMenu = document.getElementById('vertical-menu');
 const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(verticalMenu);
-rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {
+rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_8__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"],
   showAll: false
 }));
+const footer = document.getElementById('react-footer');
+const rootFooter = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(footer);
+rootFooter.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_Footer_js__WEBPACK_IMPORTED_MODULE_10__["default"], {}));
 })();
 
 /******/ })()

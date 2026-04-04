@@ -24079,6 +24079,12 @@ h4 {
   cursor: pointer;
 }
 
+.login-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
 /*---------------------------------------------------------------*/
 /* horizontal menu: */
 .horizontal-menu {
@@ -24164,6 +24170,12 @@ h4 {
   justify-content: baseline;
   width: 64px !important;
   height: 40px !important;
+}
+
+.h-menu-first-button img {
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
 }
 
 .h-menu-scroll {
@@ -24653,6 +24665,12 @@ h4 {
   cursor: pointer;
 }
 
+.login-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
 /*---------------------------------------------------------------*/
 /* stream screen and chat: */
 .main-banner {
@@ -24701,7 +24719,7 @@ iframe {
   border-radius: 20px;
 }
 
-.banner-info {
+.channel-info {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -24727,7 +24745,7 @@ iframe {
   border-top: 1px solid var(--theme-transparent-banner-btn, rgba(52, 49, 72, 0.2));
 }
 
-.banner-info:hover {
+.channel-info:hover {
   cursor: pointer;
 }
 
@@ -24772,7 +24790,7 @@ iframe {
   border-radius: 4px; */
 /*} */
 /*------------*/
-.banner-stream-info {
+.channel-stream-info {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24780,7 +24798,7 @@ iframe {
   flex-shrink: 0;
 }
 
-.banner-ava {
+.channel-ava {
   border: none;
   outline: 3px solid var(--color-accent-light, #FF6F3A);
   outline-offset: 10px;
@@ -24788,8 +24806,13 @@ iframe {
   border-radius: 60px;
 }
 
+.channel-ava img {
+  width: 60px;
+  height: 60px;
+}
+
 /* На странице самого канала вряд ли нужен hover для перехода на канал: */
-.banner-ava:hover {
+.channel-ava:hover {
   border-radius: 80px;
   filter: drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
   animation: glow 6s infinite ease-in-out;
@@ -24874,6 +24897,11 @@ iframe {
   color: var(--theme-font-secondary, #CECED6);
   font-size: 20px;
   margin: auto;
+}
+
+.live-watchers span {
+  color: #E2552D;
+  font-size: 12px;
 }
 
 .viewers-count {
@@ -24981,8 +25009,8 @@ iframe {
   height: 100%;
   object-fit: cover;
 } */
-/* block promo: */
-.promo {
+/* chat block: */
+.chat {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;

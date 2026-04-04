@@ -24079,6 +24079,12 @@ h4 {
   cursor: pointer;
 }
 
+.login-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
 /*---------------------------------------------------------------*/
 /* horizontal menu: */
 .horizontal-menu {
@@ -24164,6 +24170,12 @@ h4 {
   justify-content: baseline;
   width: 64px !important;
   height: 40px !important;
+}
+
+.h-menu-first-button img {
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
 }
 
 .h-menu-scroll {
@@ -24403,7 +24415,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url(images/auth_background_2.png);
+  background-image: url(images/auth-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Source Code Pro", monospace;
