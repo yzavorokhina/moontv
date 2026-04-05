@@ -5,7 +5,6 @@ import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper.js';
 import { getUrlParams } from '../js/utils/common.js';
 import Header from './components/Header.js';
-import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import ChannelCard from './components/channelCard';

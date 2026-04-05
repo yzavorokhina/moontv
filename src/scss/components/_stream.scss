@@ -151,6 +151,7 @@ iframe {
 .channel-ava img{
     width: 60px;
     height: 60px;
+    border-radius: 60px;
 }
 
 /* На странице самого канала вряд ли нужен hover для перехода на канал: */
@@ -295,7 +296,7 @@ iframe {
     height: 40px;
     border: none;
     outline: none;
-    background-image: url('../img/channel_heart_follow_button.svg');
+    background-image: url('../img/channel-follow-button.svg');
     background-repeat: no-repeat;
     background-position: 14px center; // Icon position
     background-size: 20px 20px; // Icon size
@@ -327,7 +328,7 @@ iframe {
     height: 40px;
     border: 1px solid rgba(84, 80, 107, 0.5);
     outline: none;
-    background-image: url('../img/channel_star_subscribe_button.svg');
+    background-image: url('../img/channel-subscribe-button.svg');
     background-repeat: no-repeat;
     background-position: 14px center; // Icon position
     background-size: 20px 20px; // Icon size

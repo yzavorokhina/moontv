@@ -169,6 +169,7 @@ main {
 .category-description-img {
     max-width: 100%;
     height: 260px;
+    // width: 186px;
     object-fit: contain;
     border-radius: 5px;
 }
@@ -219,7 +220,7 @@ main {
     height: 40px;
     border: none;
     outline: none;
-    background-image: url('../img/channel_heart_follow_button.svg');
+    background-image: url('../img/channel-follow-button.svg');
     background-repeat: no-repeat;
     background-position: 14px center; // Icon position
     background-size: 20px 20px; // Icon size
@@ -253,7 +254,7 @@ main {
     border: none;
     outline: none;
     margin-right: 20px;
-    background-image: url('../img/category_chevron_down.svg');
+    background-image: url('../img/category-chevron-down.svg');
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 24px 24px;
@@ -280,7 +281,7 @@ main {
     border: none;
     outline: none;
     margin-right: 20px;
-    background-image: url('../img/search-icon.svg');
+    background-image: url('../img/search-icon-dark.svg');
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 24px 24px;

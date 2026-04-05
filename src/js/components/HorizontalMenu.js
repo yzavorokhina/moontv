@@ -37,9 +37,9 @@ export default function HorizontalMenu({ db }) {
                 <ul>
                     <li className="h-menu-first-button">
                         <a href="./categories.html">
-                            <img src="./images/All_icon_for_categories.svg" alt="Иконка ссылки"
-                                width="11px" height="10px" />
-                            Все</a>
+                            <img src="./images/all-icon-for-categories.svg" alt="Все категории" />
+                            Все
+                        </a>
                     </li>
                     {renderCards().map(data => (
                         <HorizontalMenuBtn key={data.id} data={data} activeId={activeId} />

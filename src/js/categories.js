@@ -4,7 +4,6 @@ import '../scss/categories.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
 import Header from './components/Header.js';
-import SearchForm from './components/SearchForm';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import Footer from './components/Footer.js';

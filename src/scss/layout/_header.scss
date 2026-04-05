@@ -43,7 +43,7 @@
     border: none;
     outline: none;
     margin-right: 20px;
-    background-image: url('../img/search-icon.svg');
+    background-image: url('../img/search-icon-dark.svg');
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 24px 24px;
@@ -264,6 +264,12 @@
     -webkit-box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
     -moz-box-shadow: -1px 1px 36px 8px rgba(94, 84, 158, 0.51);
     cursor: pointer;
+}
+
+.login-button img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
 }
 
 /*---------------------------------------------------------------*/

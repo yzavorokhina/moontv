@@ -5,7 +5,7 @@
             "name": "neuro_activate",
             "title" : "Разрабатываю игру KUPOL День 4 / Основная концепция",
             "description": "Разрабатываю игры для внеземных сообществ",
-            "iconUrl": "./images/banner_ava.svg",
+            "iconUrl": "./images/banner-ava.jpg",
             "categories": [ 1 ]
         },
         {
@@ -13,7 +13,7 @@
             "name": "LuckyKhajiit",
             "title" : "Skyrim-прокачка до 17 уровня и обратно до 1-го...",
             "description": "Профессиональный проходильщик территорий Skirim",
-            "iconUrl": "./images/banner_ava.svg",
+            "iconUrl": "./images/banner-ava.jpg",
             "categories": [ 1 ]
         },
         {
@@ -21,7 +21,7 @@
             "name": "MultiPupsik",
             "title" : "Смешарики 3 часа подряд - Часть 1-ая из 10-ти",
             "description": "Мультики для самых смышленых",
-            "iconUrl": "./images/banner_ava.svg",
+            "iconUrl": "./images/banner-ava.jpg",
             "categories": [ 1 ]
         },
         {
@@ -29,7 +29,7 @@
             "name": "KidsPlanet",
             "title" : "Крутой замес. Делаем рыбок из марсианской глины",
             "description": "Задача дня: добыть марсианскую глину",
-            "iconUrl": "./images/banner_ava.svg",
+            "iconUrl": "./images/banner-ava.jpg",
             "categories": [ 1 ]
         },
         {
@@ -37,7 +37,7 @@
             "name": "ProBabushka",
             "title" : "Вяжем носки и смотрим фильм # Легенда об Искателе",
             "description": "Тренируем навыки многопоточности",
-            "iconUrl": "./images/banner_ava.svg",
+            "iconUrl": "./images/banner-ava.jpg",
             "categories": [ 1 ]
         },
         {
@@ -45,7 +45,7 @@
             "name": "coffee_lover",
             "title" : "Coffe Lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava1_1.svg",
+            "iconUrl": "./images/channel-ava-1-1.svg",
             "categories": [ 1 ]
         },
         {
@@ -53,7 +53,7 @@
             "name": "neoElectron",
             "title" : "neoElectron",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava1_2.svg",
+            "iconUrl": "./images/channel-ava-1-2.svg",
             "categories": [ 1 ]
         },
         {
@@ -61,7 +61,7 @@
             "name": "JustCodingNotTalking",
             "title" : "JustCodingNotTalking",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava1_3.svg",
+            "iconUrl": "./images/channel-ava-1-3.svg",
             "categories": [ 1 ]
         },
         {
@@ -69,7 +69,7 @@
             "name": "programmer_at_noon",
             "title" : "programmer_at_noon",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava1_4.svg",
+            "iconUrl": "./images/channel-ava-1-4.svg",
             "categories": [ 1 ]
         },
         {
@@ -77,7 +77,7 @@
             "name": "neuro_activate",
             "title" : "neuro_activate",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava1_5.svg",
+            "iconUrl": "./images/channel-ava-1-5.svg",
             "categories": [ 1 ]
         },
         {
@@ -85,7 +85,7 @@
             "name": "loffee_cats_lover",
             "title" : "loffee_cats_lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava2_1.svg",
+            "iconUrl": "./images/channel-ava-2-1.svg",
             "categories": [ 2 ]
         },
         {
@@ -93,7 +93,7 @@
             "name": "neoLoffii",
             "title" : "neoLoffii",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava2_2.svg",
+            "iconUrl": "./images/channel-ava-2-2.svg",
             "categories": [ 2 ]
         },
         {
@@ -101,7 +101,7 @@
             "name": "JustLoffiiNotCoffee",
             "title" : "JustLoffiiNotCoffee",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava2_3.svg",
+            "iconUrl": "./images/channel-ava-2-3.svg",
             "categories": [ 2 ]
         },
         {
@@ -109,7 +109,7 @@
             "name": "Loffii_at_noon",
             "title" : "Loffii_at_noon",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava2_4.svg",
+            "iconUrl": "./images/channel-ava-2-4.svg",
             "categories": [ 2 ]
         },
         {
@@ -117,7 +117,7 @@
             "name": "Loffii_activate",
             "title" : "Loffii_activate",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava2_5.svg",
+            "iconUrl": "./images/channel-ava-2-5.svg",
             "categories": [ 2 ]
         },
         {
@@ -125,7 +125,7 @@
             "name": "english_lover",
             "title" : "english_lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava3_1.svg",
+            "iconUrl": "./images/channel-ava-3-1.svg",
             "categories": [ 3 ]
         },
         {
@@ -133,7 +133,7 @@
             "name": "neoLing",
             "title" : "neoLing",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava3_2.svg",
+            "iconUrl": "./images/channel-ava-3-2.svg",
             "categories": [ 3 ]
         },
         {
@@ -141,7 +141,7 @@
             "name": "JustEnglishNotTalking",
             "title" : "JustEnglishNotTalking",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava3_3.svg",
+            "iconUrl": "./images/channel-ava-3-3.svg",
             "categories": [ 3 ]
         },
         {
@@ -149,7 +149,7 @@
             "name": "english_at_noon",
             "title" : "english_at_noon",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava3_4.svg",
+            "iconUrl": "./images/channel-ava-3-4.svg",
             "categories": [ 3 ]
         },
         {
@@ -157,7 +157,7 @@
             "name": "eng_activate",
             "title" : "eng_activate",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava3_5.svg",
+            "iconUrl": "./images/channel-ava-3-5.svg",
             "categories": [ 3 ]
         },
         {
@@ -165,7 +165,7 @@
             "name": "wanna_play",
             "title" : "wanna_play",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava4_1.svg",
+            "iconUrl": "./images/channel-ava-4-1.svg",
             "categories": [ 4 ]
         },
         {
@@ -173,7 +173,7 @@
             "name": "bubblebuttons",
             "title" : "bubblebuttons",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava4_2.svg",
+            "iconUrl": "./images/channel-ava-4-2.svg",
             "categories": [ 4 ]
         },
         {
@@ -181,7 +181,7 @@
             "name": "NotTalkingAndListen",
             "title" : "NotTalkingAndListen",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava4_3.svg",
+            "iconUrl": "./images/channel-ava-4-3.svg",
             "categories": [ 4 ]
         },
         {
@@ -189,7 +189,7 @@
             "name": "apply-to-all",
             "title" : "apply-to-all",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava4_4.svg",
+            "iconUrl": "./images/channel-ava-4-4.svg",
             "categories": [ 4 ]
         },
         {
@@ -197,7 +197,7 @@
             "name": "brain_activ",
             "title" : "brain_activ",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava4_5.svg",
+            "iconUrl": "./images/channel-ava-4-5.svg",
             "categories": [ 4 ]
         },
         {
@@ -205,7 +205,7 @@
             "name": "dance_lover",
             "title" : "dance_lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava5_1.svg",
+            "iconUrl": "./images/channel-ava-5-1.svg",
             "categories": [ 5 ]
         },
         {
@@ -213,7 +213,7 @@
             "name": "balanceEgo",
             "title" : "balanceEgo",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava5_2.svg",
+            "iconUrl": "./images/channel-ava-5-2.svg",
             "categories": [ 5 ]
         },
         {
@@ -221,7 +221,7 @@
             "name": "JustDanceIt",
             "title" : "JustDanceIt",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava5_3.svg",
+            "iconUrl": "./images/channel-ava-5-3.svg",
             "categories": [ 5 ]
         },
         {
@@ -229,7 +229,7 @@
             "name": "dance_on_moon",
             "title" : "dance_on_moon",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava5_4.svg",
+            "iconUrl": "./images/channel-ava-5-4.svg",
             "categories": [ 5 ]
         },
         {
@@ -237,7 +237,7 @@
             "name": "dancing_queen",
             "title" : "dancing_queen",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava5_5.svg",
+            "iconUrl": "./images/channel-ava-5-5.svg",
             "categories": [ 5 ]
         },
         {
@@ -245,7 +245,7 @@
             "name": "sweet_story_lover",
             "title" : "sweet_story_lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava6_1.svg",
+            "iconUrl": "./images/channel-ava-6-1.svg",
             "categories": [ 6 ]
         },
         {
@@ -253,7 +253,7 @@
             "name": "annihilation_of_an_e_and_a_p",
             "title" : "annihilation_of_an_e_and_a_p",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava6_2.svg",
+            "iconUrl": "./images/channel-ava-6-2.svg",
             "categories": [ 6 ]
         },
         {
@@ -261,7 +261,7 @@
             "name": "JustReadIt",
             "title" : "JustReadIt",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava6_3.svg",
+            "iconUrl": "./images/channel-ava-6-3.svg",
             "categories": [ 6 ]
         },
         {
@@ -269,7 +269,7 @@
             "name": "Hello Letters",
             "title" : "Hello Letters",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava6_4.svg",
+            "iconUrl": "./images/channel-ava-6-4.svg",
             "categories": [ 6 ]
         },
         {
@@ -277,7 +277,7 @@
             "name": "Angélique_activate",
             "title" : "Angélique_activate",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava6_5.svg",
+            "iconUrl": "./images/channel-ava-6-5.svg",
             "categories": [6 ]
         },
         {
@@ -285,7 +285,7 @@
             "name": "tdu_lover",
             "title" : "tdu_lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava7_1.svg",
+            "iconUrl": "./images/channel-ava-7-1.svg",
             "categories": [ 7 ]
         },
         {
@@ -293,7 +293,7 @@
             "name": "Stef",
             "title" : "Stef",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava7_2.svg",
+            "iconUrl": "./images/channel-ava-7-2.svg",
             "categories": [ 7 ]
         },
         {
@@ -301,7 +301,7 @@
             "name": "cars_so_cool",
             "title" : "cars_so_cool",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava7_3.svg",
+            "iconUrl": "./images/channel-ava-7-3.svg",
             "categories": [ 7 ]
         },
         {
@@ -309,7 +309,7 @@
             "name": "on_the_road_again",
             "title" : "on_the_road_again",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava7_4.svg",
+            "iconUrl": "./images/channel-ava-7-4.svg",
             "categories": [ 7 ]
         },
         {
@@ -317,7 +317,7 @@
             "name": "motor_activate",
             "title" : "motor_activate",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava7_5.svg",
+            "iconUrl": "./images/channel-ava-7-5.svg",
             "categories": [ 7 ]
         },
         {
@@ -325,7 +325,7 @@
             "name": "skyrim_lover",
             "title" : "skyrim_lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava8_1.svg",
+            "iconUrl": "./images/channel-ava-8-1.svg",
             "categories": [ 8 ]
         },
         {
@@ -333,7 +333,7 @@
             "name": "Shrouded-Grove-Gourmet",
             "title" : "Shrouded-Grove-Gourmet",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava8_2.svg",
+            "iconUrl": "./images/channel-ava-8-2.svg",
             "categories": [ 8 ]
         },
         {
@@ -341,7 +341,7 @@
             "name": "JustHaveALook",
             "title" : "JustHaveALook",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava8_3.svg",
+            "iconUrl": "./images/channel-ava-8-3.svg",
             "categories": [ 8 ]
         },
         {
@@ -349,7 +349,7 @@
             "name": "levelUpMaster",
             "title" : "levelUpMaster",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava8_4.svg",
+            "iconUrl": "./images/channel-ava-8-4.svg",
             "categories": [ 8 ]
         },
         {
@@ -357,7 +357,7 @@
             "name": "calm_activate",
             "title" : "calm_activate",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
-            "iconUrl": "./images/Mask_group_ava8_5.svg",
+            "iconUrl": "./images/channel-ava-8-5.svg",
             "categories": [ 8 ]
         }
     ]

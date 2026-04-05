@@ -112,7 +112,7 @@ export default function Header({ }) {
                 <SearchForm />
                 <div className="logo-container">
                     <a href="./index.html" className="logo-img">
-                        <img id="site-logo" src={`./images/logo_moon_1_1-3-${currentTheme}.png`} style={{ width: 120 + 'px', height: 40 + 'px' }} alt="MoonTV"
+                        <img id="site-logo" src={`./images/logo-moon-header-${currentTheme}.png`} alt="MoonTV"
                             className="logo-icon" />
                     </a>
                     <h1 id="logo-text" className="logo-text">Moon.tv</h1>
@@ -120,28 +120,27 @@ export default function Header({ }) {
                 <div className="container-menu">
                     <button className="menu-button" type="button" aria-label="Включить звук">
                         <a href="./404.html">
-                            <img src={`./images/header_icon_music-${currentTheme}.svg`} title="mute" width="26px" height="26px" />
+                            <img src={`./images/header-icon-music-${currentTheme}.svg`} title="mute" />
                         </a>
                     </button>
 
                     <button id="themeToggle" onClick={handleClick} className="menu-button" type="button" aria-label="Переключить тему оформления">
-                        <img src={`./images/header_icon_theme-${currentTheme}.svg`} title="theme" width="26px" height="26px" />
+                        <img src={`./images/header-icon-theme-${currentTheme}.svg`} title="theme" />
                     </button>
                     <button className="menu-button" type="button" aria-label="Выбрать язык оформления">
                         <a href="./404.html">
-                            <img src={`./images/header_icon_globe-${currentTheme}.svg`} title="language" width="26px" height="26px" />
+                            <img src={`./images/header-icon-globe-${currentTheme}.svg`} title="language" />
                         </a>
                     </button>
                     <button className="menu-button" type="button" aria-label="Войти в свой аккаунт">
                         <a href="./auth.html">
-                            <img src={`./images/header_icon_login-${currentTheme}.svg`} title="login" width="26px" height="26px" />
+                            <img src={`./images/header-icon-login-${currentTheme}.svg`} title="login" />
                         </a>
                     </button>
                     <div className="login">
                         <button className="login-button" type="button" aria-label="Войти в личный кабинет">
                             <a href="./auth.html">
-                                <img src={`./images/avatar_disabled-${currentTheme}.svg`} style={{ width: 60 + 'px', height: 60 + 'px' }}
-                                    alt="personal account" />
+                                <img src={`./images/avatar-disabled-${currentTheme}.svg`} alt="personal account" />
                             </a>
                         </button>
                     </div>

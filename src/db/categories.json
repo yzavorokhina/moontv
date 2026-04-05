@@ -6,7 +6,7 @@
             "name": "Разработка игр и ПО",
             "shortName": "Разработка",
             "description": "Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.",
-            "imageUrl": "./images/category_description_image_development.jpg",
+            "imageUrl": "./images/category-description-image-development.jpg",
             "audience": 12000,
             "followers": 382
         },
@@ -16,7 +16,7 @@
             "name": "Музыка",
             "shortName": "Музыка",
             "description": "Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.",
-            "imageUrl": "./images/category_description_image_music.jpg",
+            "imageUrl": "./images/category-description-image-music.jpg",
             "audience": 1238,
             "followers": 2798
         },
@@ -46,7 +46,7 @@
             "name": "Танцы",
             "shortName": "Танцы",
             "description": "Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.",
-            "imageUrl": "./images/category_description_image.svg",
+            "imageUrl": "./images/category-description-image-dance.jpg",
             "audience": 12870,
             "followers": 64554
         },
@@ -56,7 +56,7 @@
             "name": "Чтение и писательство",
             "shortName": "Чтение",
             "description": "Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.",
-            "imageUrl": "./images/category_description_image_reading.jpg",
+            "imageUrl": "./images/category-description-image-reading.jpg",
             "audience": 120,
             "followers": 445
         },
@@ -106,7 +106,7 @@
             "name": "Общение",
             "shortName": "Общение",
             "description": "(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.",
-            "imageUrl": "./images/category_description_image_communication.jpg",
+            "imageUrl": "./images/category-description-image-communication.jpg",
             "audience": 330,
             "followers": 38
         },
@@ -116,7 +116,7 @@
             "name": "Спорт",
             "shortName": "Спорт",
             "description": "Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.",
-            "imageUrl": "./images/category_description_image_sport.jpg",
+            "imageUrl": "./images/category-description-image-sport.jpg",
             "audience": 1230,
             "followers": 34
         },
@@ -125,8 +125,8 @@
             "menuOrder": 8,
             "name": "Игры",
             "shortName": "Игры",
-            "description": "(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.",
-            "imageUrl": "./images/category_description_image_games.jpg",
+            "description": "Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.",
+            "imageUrl": "./images/category-description-image-games.jpg",
             "audience": 330,
             "followers": 38
         },
@@ -136,7 +136,7 @@
             "name": "Хобби",
             "shortName": "Хобби",
             "description": "Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.",
-            "imageUrl": "./images/category_img_top_hobby.jpg",
+            "imageUrl": "./images/category-description-image-hobby.jpg",
             "audience": 1230,
             "followers": 34
         },
@@ -146,7 +146,7 @@
             "name": "Обучение",
             "shortName": "Обучение",
             "description": "Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.",
-            "imageUrl": "./images/category_description_image_education.jpg",
+            "imageUrl": "./images/category-description-image-education.jpg",
             "audience": 1230,
             "followers": 34
         },
@@ -156,7 +156,7 @@
             "name": "Радио",
             "shortName": "Радио",
             "description": "Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.",
-            "imageUrl": "./images/category_description_image_radio.jpg",
+            "imageUrl": "./images/category-description-image-radio.jpg",
             "audience": 1230,
             "followers": 34
         }

@@ -37,7 +37,7 @@ export default function Banner({ db, showAll }) {
                   <div className="banner-stream-info">
                       <div className="banner-ava">
                           <a href="./channel.html">
-                              <img src="./images/banner_ava.svg" alt="banner ava"/>
+                              <img src="./images/banner-ava.jpg" alt="banner ava"/>
                           </a>
                       </div>
                       <div className="stream-info">
@@ -65,7 +65,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo1">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img className="promo-img" src="./images/banner_stream_prewiev1.svg" alt="stream prewiev" />
+                          <img className="promo-img" src="./images/banner-stream-prewiev1.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -77,7 +77,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo2">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img src="./images/banner_stream_prewiev2.svg" alt="stream prewiev" />
+                          <img className="promo-img" src="./images/banner-stream-prewiev2.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -89,7 +89,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo3">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img src="./images/banner_stream_prewiev3.svg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev3.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -101,7 +101,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo4">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img src="./images/banner_stream_prewiev4.svg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev4.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -113,7 +113,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo5">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img src="./images/banner_stream_prewiev5.svg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev5.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">

@@ -80,7 +80,7 @@ export default function Chat({}) {
           <div className="chat-messages" id="chatMessages">
               <div className="message bot-message">
                   <a href="./channel.html">
-                      <img src="./images/Mask_group_ava1_1.svg" alt="channel ava" />
+                      <img src="./images/channel-ava-1-1.svg" alt="channel ava" />
                   </a>
                   <div className="channel-name">orignMasteR</div>
                   <div className="message-content">Тема дня: разработка концепции игры
