@@ -11968,7 +11968,7 @@ h4 {
   border: none;
   outline: none;
   margin-right: 20px;
-  background-image: url(images/search-icon.svg);
+  background-image: url(images/search-icon-dark.svg);
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 24px 24px;
@@ -24481,7 +24481,7 @@ h4 {
   border: none;
   outline: none;
   margin-right: 20px;
-  background-image: url(images/search-icon.svg);
+  background-image: url(images/search-icon-dark.svg);
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 24px 24px;
@@ -25663,9 +25663,9 @@ iframe {
   flex-shrink: 0;
   width: 148px;
   height: 148px;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 22px;
-  background-image: url(images/Category1_edu.svg);
+  background-image: url(images/favourite-category-background-dark.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -25758,6 +25758,7 @@ iframe {
 .favorite-channel-ava img {
   width: 40px;
   height: 40px;
+  border-radius: 40px;
   margin-right: 16px;
   margin-left: 36px;
 }
