@@ -33,7 +33,7 @@ export default function Footer({}) {
             </div>
             <div className='footer-container'>
                 {/* <p>12+ ©2025 ООО "VK Planets". <br> */}
-                <p>12+ ©2025 ООО "Moon TV" <br/>
+                <p> ©2025 ООО "Moon TV" <br/>
                     Все права защищены. <br/>
                     Все товарные знаки являются <br/>
                     собственностью их владельцев.

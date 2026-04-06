@@ -75,6 +75,7 @@ footer {
 }
 
 .channel-discription {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -82,16 +83,28 @@ footer {
     flex-shrink: 0;
     //  width: 100%;
     width: calc(100vw - 222px);
-    min-height: 720px;
+    // min-height: 720px;
+    min-height: fit-content;
     margin-top: 24px;
     // border: 1px solid green;
     background: var(--theme-button-scroll-hover, #54506B);
     background: rgba(84, 80, 107, 0.5);
-
-    background-image: url("../img/channel_background.svg");
+    background-image: url("../img/channel-background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.channel-discription::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
+  background-color: rgba(7, 0, 37, 0.8);
+  z-index: 1;
 }
 
 /* channel-horizontal-menu: */
@@ -201,11 +214,11 @@ footer {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 1280px;
-    min-height: 150px;
+    min-height: 200px;
     margin-left: 24px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 16px;
+    padding-top: 24px;
     color: var(--theme-font-primary, #FFFFFF);
 }
 
@@ -214,7 +227,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
+    gap: 2px;
 }
 
 .info-links {
@@ -233,7 +246,8 @@ footer {
     justify-content: space-between;
     background-color: transparent;
     width: 1280px;
-    min-height: 400px;
+    // min-height: 400px;
+    min-height: fit-content;
     margin-left: 24px;
     // padding-left: 32px;
     // padding-right: 32px;
@@ -250,7 +264,9 @@ footer {
     align-items: flex-start;
     gap: 6px;
     width: 420px;
-    height: 600px;
+    // height: 600px;
+    height: fit-content;
+    min-height: 870px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 16px;
@@ -266,7 +282,8 @@ footer {
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 200px;
+    height: 300px;
+    border-radius: 6px;
     // padding-left: 60px;
     // padding-right: 60px;
 }

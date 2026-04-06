@@ -41,7 +41,7 @@ export default function Banner({ db, showAll }) {
                           </a>
                       </div>
                       <div className="stream-info">
-                          <h5>Разрабатываю игру KUPOL. Выращивание фруктов на Луне</h5>
+                          <h5>Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне</h5>
                           <h5>День 4 / Основная концепция</h5>
                           <a href="./channel.html">neuro_activate</a>
                       </div>
@@ -65,7 +65,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo1">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img className="promo-img" src="./images/banner-stream-prewiev1.jpg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev-1.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -77,7 +77,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo2">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img className="promo-img" src="./images/banner-stream-prewiev2.jpg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev-2.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -89,7 +89,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo3">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img src="./images/banner-stream-prewiev3.jpg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev-3.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -101,7 +101,7 @@ export default function Banner({ db, showAll }) {
               <div className="promo4">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img src="./images/banner-stream-prewiev4.jpg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev-4.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
@@ -113,13 +113,12 @@ export default function Banner({ db, showAll }) {
               <div className="promo5">
                   <div className="promo-stream-cover">
                       <a href="./channel.html">
-                          <img src="./images/banner-stream-prewiev5.jpg" alt="stream prewiev" />
+                          <img src="./images/banner-stream-prewiev-5.jpg" alt="stream prewiev" />
                       </a>
                   </div>
                   <div className="promo-stream-info">
-                      <h6>Вяжем носки и смотрим фильм
-                          # Легенда об Искателе</h6>
-                      <a href="./channel.html">ProBabushka </a>
+                      <h6>PROграммирование для будущего </h6>
+                      <a href="./channel.html">Programming </a>
                   </div>
               </div>
           </div>

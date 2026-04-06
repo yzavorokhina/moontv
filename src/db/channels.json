@@ -34,10 +34,10 @@
         },
         {
             "id": 5,
-            "name": "ProBabushka",
-            "title" : "Вяжем носки и смотрим фильм # Легенда об Искателе",
+            "name": "Programming",
+            "title" : "PROграммирование для будущего",
             "description": "Тренируем навыки многопоточности",
-            "iconUrl": "./images/banner-ava.jpg",
+            "iconUrl": "./images/banner-stream-prewiev-5.jpg",
             "categories": [ 1 ]
         },
         {
