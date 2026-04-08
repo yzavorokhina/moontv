@@ -1,5 +1,5 @@
 
-export default function ChannelCard({ db, categoryId, showAll }) {
+export default function ChannelCards({ db, categoryId, showAll }) {
 
     const showOnPage = 5;
 

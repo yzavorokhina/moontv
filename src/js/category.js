@@ -7,8 +7,9 @@ import { getUrlParams } from '../js/utils/common.js';
 import Header from './components/Header.js';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
-import ChannelCard from './components/channelCard';
+import ChannelCards from './components/ChannelCards.js';
 import Footer from './components/Footer.js';
+import CategoryDescription from './components/CategoryDescription.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Category page loaded with its styles');
@@ -26,7 +27,7 @@ const channelData = db.channelsModel.findOneById(streamData.channelId);
 const categoryCards = document.getElementById('category_cards');
 const root = createRoot(categoryCards);
 
-root.render(<ChannelCard db={db} categoryId={categoryId} showAll={true} />);
+root.render(<ChannelCards db={db} categoryId={categoryId} showAll={true} />);
 
 console.log({ params, streamData, channelData });
 
@@ -42,20 +43,9 @@ const horizontalMenu = document.getElementById('react-horizontal-menu');
 const rootHorizontalMenu = createRoot(horizontalMenu);
 rootHorizontalMenu.render(<HorizontalMenu db={db} />);
 
-const categoryTitle = document.getElementById("categoryTitle");
-categoryTitle.textContent = categoryData.name;
-
-const categoryDes = document.getElementById("categoryDes");
-categoryDes.textContent = categoryData.description;
-
-const categoryImage = document.getElementById("categoryImage");
-categoryImage.src = categoryData.imageUrl;
-
-const categoryAudience = document.getElementById("categoryAudience");
-categoryAudience.textContent = categoryData.audience;
-
-const categoryFollowers = document.getElementById("categoryFollowers");
-categoryFollowers.textContent = categoryData.followers;
+const categoryDescription = document.getElementById('react-category-description');
+const rootCategoryDescription = createRoot(categoryDescription);
+rootCategoryDescription.render(<CategoryDescription categoryData={categoryData} channelData={channelData} />);
 
 const footer = document.getElementById('react-footer');
 const rootFooter = createRoot(footer);

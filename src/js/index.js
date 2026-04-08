@@ -8,7 +8,7 @@ import Header from './components/Header';
 import VerticalMenu from './components/VerticalMenu';
 import HorizontalMenu from './components/HorizontalMenu';
 import Banner from './components/banner';
-import ChannelCard from './components/channelCard';
+import ChannelCards from './components/ChannelCards';
 import Footer from './components/Footer';
 
 
@@ -43,42 +43,42 @@ rootHorizontalMenu.render(<HorizontalMenu db={db} />);
 const favoriteSoftwareDev = document.getElementById('favorite_software_development');
 let categoryId = 1;
 const rootSoftwareDev = createRoot(favoriteSoftwareDev);
-rootSoftwareDev.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootSoftwareDev.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const favoriteMusic = document.getElementById('favorite_music');
 categoryId = 2;
 const rootMusic = createRoot(favoriteMusic);
-rootMusic.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootMusic.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const favoriteEnglish = document.getElementById('favorite_english');
 categoryId = 3;
 const rootEnglish = createRoot(favoriteEnglish);
-rootEnglish.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootEnglish.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const favoriteDJs = document.getElementById('favorite_djs');
 categoryId = 4;
 const rootDJs = createRoot(favoriteDJs);
-rootDJs.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootDJs.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const favoriteDance = document.getElementById('favorite_dance');
 categoryId = 5;
 const rootDance = createRoot(favoriteDance);
-rootDance.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootDance.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const favoriteReading = document.getElementById('favorite_reading');
 categoryId = 6;
 const rootReading = createRoot(favoriteReading);
-rootReading.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootReading.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const favoriteTDU2 = document.getElementById('favorite_tdu2');
 categoryId = 7;
 const rootTDU2 = createRoot(favoriteTDU2);
-rootTDU2.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootTDU2.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const favoriteSkyrim = document.getElementById('favorite_skyrim');
 categoryId = 8;
 const rootSkyrim = createRoot(favoriteSkyrim);
-rootSkyrim.render(<ChannelCard db={db} categoryId={categoryId} />);
+rootSkyrim.render(<ChannelCards db={db} categoryId={categoryId} />);
 
 const footer = document.getElementById('react-footer');
 const rootFooter = createRoot(footer);
