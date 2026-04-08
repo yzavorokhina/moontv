@@ -12815,7 +12815,7 @@ iframe {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  max-width: 400px;
+  max-width: 500px;
   height: 30px;
   /* border: 1px solid red; */
   color: var(--theme-font-secondary, #CECED6);
@@ -12835,7 +12835,7 @@ iframe {
 
 .live-watchers span {
   color: #E2552D;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .viewers-count {
@@ -12860,7 +12860,7 @@ iframe {
   bottom: 0;
   right: 0;
   color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* Вариант карусели с видео-содержимым: */
@@ -26703,7 +26703,7 @@ iframe {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  max-width: 400px;
+  max-width: 500px;
   height: 30px;
   /* border: 1px solid red; */
   color: var(--theme-font-secondary, #CECED6);
@@ -26723,7 +26723,7 @@ iframe {
 
 .live-watchers span {
   color: #E2552D;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .viewers-count {
@@ -26748,7 +26748,7 @@ iframe {
   bottom: 0;
   right: 0;
   color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* Вариант карусели с видео-содержимым: */
