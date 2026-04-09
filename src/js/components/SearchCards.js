@@ -6,7 +6,7 @@ export default function SearchCards({ db, search, showAll }) {
     const renderCards = () => {
 
         if (!search) {
-            return;
+            search = "search";
         }
 
         let streamsFiltered = db.streamsModel.findByNameRegex('title', search);

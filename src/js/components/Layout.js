@@ -2,29 +2,30 @@ import Footer from "./Footer";
 import Header from "./Header";
 import HorizontalMenu from "./HorizontalMenu";
 import VerticalMenu from "./VerticalMenu";
+import Notification from "./Notification";
 
-export default function Layout({ children }) {
+export default function Layout({ db, children }) {
 
-    retrun (
+    return (
         <>
-        <div class="page">
-            <div id="react-header" class="site-header">
+        <div className="page">
+            <div id="react-header" className="site-header">
                 <Header />
             </div>
 
             <main>
-                <div class="vertical-blocks">
-                    <div class="vertical-menu-container">
-                        <nav class="vertical-menu" id="vertical-menu">
-                            <VerticalMenu />
+                <div className="vertical-blocks">
+                    <div className="vertical-menu-container">
+                        <nav className="vertical-menu" id="vertical-menu">
+                            <VerticalMenu db={db} />
                         </nav>
                     </div>
-                    <div class="main-of-the-main">
-                        <div class="horizontal-blocks">
-                            <div class="main-screen-block">
+                    <div className="main-of-the-main">
+                        <div className="horizontal-blocks">
+                            <div className="main-screen-block">
 
-                                <div id="react-horizontal-menu" class="horizontal-menu">
-                                    <HorizontalMenu />
+                                <div id="react-horizontal-menu" className="horizontal-menu">
+                                    <HorizontalMenu db={db} />
                                 </div>
 
                                 {children}
@@ -32,9 +33,10 @@ export default function Layout({ children }) {
                         </div>
                     </div>
                 </div>
+                <Notification />
             </main>
 
-            <footer class="site-footer" id="react-footer">
+            <footer className="site-footer" id="react-footer">
                 <Footer />
             </footer>
         </div>
