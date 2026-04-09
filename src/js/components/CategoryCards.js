@@ -14,7 +14,6 @@ export default function CategoryCards({ db }) {
         } else {
             categories = db.categoriesModel.findMany(cat => cat.tags.indexOf(tagId) > -1);
         }
-
         return categories.map(category => {
             let tags = db.tagsModel.findByIds(category.tags);
 
@@ -25,7 +24,6 @@ export default function CategoryCards({ db }) {
             }
         });
     }
-
     return (
         <>
             {renderCards().map(data => (
