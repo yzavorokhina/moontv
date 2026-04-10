@@ -3,6 +3,7 @@ export default function Banner({ db, showAll }) {
 
     return (
         <>
+        <div className="main-banner">
             <div className="video-carousel">
                 <button className="carousel-btn prev-btn" aria-label="Предыдущее видео">
                     {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
@@ -33,35 +34,33 @@ export default function Banner({ db, showAll }) {
                             fill="#FFFFFF" />
                     </svg>
                 </button>
-                <a href="./channel.html">
-                    <div className="banner-info">
-                        <div className="banner-stream-info">
-                            <div className="banner-ava">
-                                <a href="./channel.html">
-                                    <img src="./images/banner-ava.jpg" alt="banner ava" />
-                                </a>
-                            </div>
-                            <div className="stream-info">
-                                <a href="./channel.html"><h5>Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне</h5></a>
-                                <a href="./channel.html"><h5>День 4 / Основная концепция</h5></a>
-                                <a href="./channel.html">neuro_activate</a>
-                            </div>
+                <div className="banner-info">
+                    <div className="banner-stream-info">
+                        <div className="banner-ava">
+                            <a href="./channel.html">
+                                <img src="./images/banner-ava.jpg" alt="banner ava" />
+                            </a>
                         </div>
-                        <div className="stream-statistic">
-                            <div className="live-watchers">
-                                <h5>В эфире</h5>
-                                <span>&#11044;</span>
-
-                                <div className="viewer-count">
-                                    <span id="current-viewers">323</span>
-                                </div>
-                            </div>
-                            <div className="age-rating-row">
-                                <span className="age-rating">12+</span>
-                            </div>
+                        <div className="stream-info">
+                            <a href="./channel.html"><h5>Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне</h5></a>
+                            <a href="./channel.html"><h5>День 4 / Основная концепция</h5></a>
+                            <a href="./channel.html">neuro_activate</a>
                         </div>
                     </div>
-                </a>
+                    <div className="stream-statistic">
+                        <div className="live-watchers">
+                            <h5>В эфире</h5>
+                            <span>&#11044;</span>
+
+                            <div className="viewer-count">
+                                <span id="current-viewers">323</span>
+                            </div>
+                        </div>
+                        <div className="age-rating-row">
+                            <span className="age-rating">12+</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="promo">
                 <div className="promo1">
@@ -124,6 +123,7 @@ export default function Banner({ db, showAll }) {
                     </div>
                 </div>
             </div>
+        </div>
         </>
     );
 }

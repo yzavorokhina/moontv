@@ -1,8 +1,8 @@
+import Layout from './Layout';
 import Stream from './Stream';
 import ChannelDescription from './ChannelDescription';
 import ChannelCardsLine from './ChannelCardsLine';
 import ClipsCardsLine from './ClipsCardsLine';
-import Layout from './Layout';
 import GoToBtn from './GoToBtn';
 import ChannelCategories from './ChannelCategories';
 
@@ -14,7 +14,7 @@ export default function ChannelPage({ db, streamId, showAll }) {
 
     return (
         <>
-            <Layout db={db} >
+            <Layout db={db} showFooter={false}>
                 <div className="main-screen-block">
                     <div className="main-banner" id="react-stream">
                         <Stream streamData={streamData} channelData={channelData} />

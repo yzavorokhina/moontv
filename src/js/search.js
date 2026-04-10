@@ -6,7 +6,6 @@ import db from '../db/dbHelper';
 import { getUrlParams } from '../js/utils/common.js';
 import SearchPage from './components/SearchPage.js';
 
-// Использование
 const params = getUrlParams();
 console.log({ params }); // '1'
 

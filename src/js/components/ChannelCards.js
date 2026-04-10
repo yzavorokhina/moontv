@@ -5,7 +5,7 @@ export default function ChannelCards({ db, categoryId, showAll }) {
 
     const renderCards = () => {
         let streamsFiltered = db.streamsModel.findByName('categoryId', categoryId);
-        // let streamsFiltered = streams.filter(stream => stream.categoryId === categoryId);
+        console.log({ categoryId, streamsFiltered });
 
         if (!showAll && streamsFiltered.length > showOnPage) {
             streamsFiltered = streamsFiltered.slice(0, showOnPage);

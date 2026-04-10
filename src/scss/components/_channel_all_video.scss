@@ -7,6 +7,8 @@
     //  width: 100%;
     width: calc(100vw - 222px);
     max-height: 3940px;
+    margin-left: 16px;
+    margin-right: 50px;
     // border: 1px solid green;
 }
 
@@ -24,7 +26,9 @@
     margin-top: 24px;
     height: fit-content;
     margin-left: 16px;
-    margin-right: 50px;
+    // margin-right: 50px;
+    padding-left: 16px;
+    // padding-right: 50px;
     //border: 1px solid rgb(63, 223, 48);
     background-color: transparent;
 }

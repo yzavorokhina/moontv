@@ -4,7 +4,10 @@ import HorizontalMenu from "./HorizontalMenu";
 import VerticalMenu from "./VerticalMenu";
 import Notification from "./Notification";
 
-export default function Layout({ db, children, showFooter }) {
+export default function Layout(props) {
+
+    const showFooter = props.showFooter === undefined ? true : props.showFooter;
+    const { db, children } = props;
 
     return (
         <>

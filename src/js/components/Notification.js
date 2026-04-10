@@ -1,5 +1,16 @@
 export default function Notification({ }) {
 
+  /* A pop-up orange-row notification: */
+  /* вариант 3 (более плавное исчезновение блока): */
+  const handleClick = () => {
+      const element = document.getElementById('myElement');
+      element.classList.add('fade-out');
+      // Удаляем элемент из потока после завершения анимации
+      setTimeout(() => {
+        element.style.display = 'none';
+      }, 500);
+  }
+
   return (
     <>
       <div className="notification" id="myElement">

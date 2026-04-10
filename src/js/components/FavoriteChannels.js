@@ -31,12 +31,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-1-1.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-1-1.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">WeDontNeedNo</h6>
@@ -48,12 +47,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-1-2.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-1-2.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">Rosenthal</h6>
@@ -65,12 +63,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-1-3.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-1-3.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">S'il vous plait</h6>
@@ -89,12 +86,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-2-1.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-2-1.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">satriano</h6>
@@ -106,12 +102,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-2-2.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-2-2.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">LikeAPro</h6>
@@ -123,12 +118,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-2-3.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-2-3.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">VioletStar</h6>
@@ -147,12 +141,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-3-1.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-3-1.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">LuckyKhajiit</h6>
@@ -164,12 +157,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-3-2.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-3-2.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">chatgpt_24_7</h6>
@@ -181,12 +173,11 @@ export default function FavoriteChannels() {
                             <div className="favorite-channel">
                                 <div className="favorite-channel-ava">
                                     <a href="">
-                                        <img src="./img/favorite-channels-ava-3-3.svg"
-                                            style="width: 40px; height: 40px;" alt="personal account"/>
+                                        <img src="./images/favorite-channels-ava-3-3.svg" alt="personal account"/>
                                     </a>
                                 </div>
                                 <div className="stream-live-indicator">
-                                    <span style="color: #E2552D; font-size: 6px;">&#11044;</span>
+                                    <span>&#11044;</span>
                                 </div>
                                 <div className="favorite-channel-info">
                                     <h6 className="favorite-channel-title">Сhat Master</h6>
