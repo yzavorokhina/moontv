@@ -16,6 +16,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _channels_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./channels.json */ "./src/db/channels.json");
 /* harmony import */ var _categories_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./categories.json */ "./src/db/categories.json");
 /* harmony import */ var _tags_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tags.json */ "./src/db/tags.json");
+/* harmony import */ var _clips_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clips.json */ "./src/db/clips.json");
+
 
 
 
@@ -63,13 +65,1183 @@ const streamsModel = new DBHelper(_streams_json__WEBPACK_IMPORTED_MODULE_0__.str
 const channelsModel = new DBHelper(_channels_json__WEBPACK_IMPORTED_MODULE_1__.channels);
 const categoriesModel = new DBHelper(_categories_json__WEBPACK_IMPORTED_MODULE_2__.categories);
 const tagsModel = new DBHelper(_tags_json__WEBPACK_IMPORTED_MODULE_3__.tags);
+const clipsModel = new DBHelper(_clips_json__WEBPACK_IMPORTED_MODULE_4__.clips);
 const db = {
   streamsModel,
   channelsModel,
   categoriesModel,
-  tagsModel
+  tagsModel,
+  clipsModel
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (db);
+
+/***/ },
+
+/***/ "./src/js/components/ChannelCards.js"
+/*!*******************************************!*\
+  !*** ./src/js/components/ChannelCards.js ***!
+  \*******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelCards)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function ChannelCards(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(8);
+  const {
+    db,
+    categoryId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] !== categoryId || $[1] !== db.categoriesModel || $[2] !== db.channelsModel || $[3] !== db.streamsModel || $[4] !== showAll) {
+    const renderCards = () => {
+      let streamsFiltered = db.streamsModel.findByName("categoryId", categoryId);
+      if (!showAll && streamsFiltered.length > 5) {
+        streamsFiltered = streamsFiltered.slice(0, 5);
+      }
+      return streamsFiltered.map(stream => {
+        const channel = db.channelsModel.findOneById(stream.channelId);
+        const category = db.categoriesModel.findOneById(stream.categoryId);
+        return {
+          stream,
+          channel,
+          category,
+          streamUrl: "./channel.html?id=" + stream.id,
+          categoryUrl: "./category.html?id=" + category.id
+        };
+      });
+    };
+    t1 = renderCards().map(_temp);
+    $[0] = categoryId;
+    $[1] = db.categoriesModel;
+    $[2] = db.channelsModel;
+    $[3] = db.streamsModel;
+    $[4] = showAll;
+    $[5] = t1;
+  } else {
+    t1 = $[5];
+  }
+  let t2;
+  if ($[6] !== t1) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: t1
+    });
+    $[6] = t1;
+    $[7] = t2;
+  } else {
+    t2 = $[7];
+  }
+  return t2;
+}
+function _temp(data) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "channel-card mb-3",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: data.streamUrl,
+      className: "link-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "card-img-top",
+        src: data.stream.previewUrl,
+        alt: "foto"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "card-body",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-info-row",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.streamUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            className: "channel-img",
+            src: data.channel.iconUrl,
+            alt: "foto"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "stream-titles",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.streamUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+              className: "stream-title",
+              children: data.stream.title
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.streamUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+              className: "channel-title",
+              children: data.channel.name
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: data.categoryUrl,
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "category-name-info",
+          children: data.category.name
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "tags-row",
+        role: "group",
+        "aria-label": "tags-group",
+        children: data.stream.languages.map((lang, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.streamUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            type: "button",
+            className: "button-tag",
+            children: lang
+          })
+        }, index))
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "stream-labels",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-live",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          children: "\u2B24"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "stream-age-rating",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          className: "label-age-rating",
+          children: "12+"
+        })
+      })]
+    })]
+  }, data.stream.id);
+}
+
+/***/ },
+
+/***/ "./src/js/components/ChannelCardsLine.js"
+/*!***********************************************!*\
+  !*** ./src/js/components/ChannelCardsLine.js ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelCardsLine)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _ChannelCards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ChannelCards */ "./src/js/components/ChannelCards.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function ChannelCardsLine(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
+  const {
+    db,
+    title,
+    categoryId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+      fill: "#CECED6",
+      width: "16px",
+      height: "16px",
+      viewBox: "0 0 15 15",
+      version: "1.1",
+      id: "circle",
+      xmlns: "http://www.w3.org/2000/svg",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+        d: "M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] !== title) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "section-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: "/page",
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h2", {
+          children: [t1, title]
+        })
+      })
+    });
+    $[1] = title;
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "show-all-categories",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+        href: "#",
+        className: "arrowed",
+        children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+          className: "show-all-arrow",
+          width: "24px",
+          height: "24px",
+          viewBox: "0 0 24 24",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+            d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+            fill: "#CECED6"
+          })
+        })]
+      })
+    });
+    $[3] = t3;
+  } else {
+    t3 = $[3];
+  }
+  let t4;
+  if ($[4] !== t2) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "titles-row",
+      children: [t2, t3]
+    });
+    $[4] = t2;
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] !== categoryId || $[7] !== db || $[8] !== showAll) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "channels-row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ChannelCards__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        db: db,
+        categoryId: categoryId,
+        showAll: showAll
+      })
+    });
+    $[6] = categoryId;
+    $[7] = db;
+    $[8] = showAll;
+    $[9] = t5;
+  } else {
+    t5 = $[9];
+  }
+  let t6;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "divider-line"
+    });
+    $[10] = t6;
+  } else {
+    t6 = $[10];
+  }
+  let t7;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "show-all-link divider-container",
+      children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        className: "divider-button",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+          href: "#",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#CECED6"
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "divider-line"
+      })]
+    });
+    $[11] = t7;
+  } else {
+    t7 = $[11];
+  }
+  let t8;
+  if ($[12] !== t4 || $[13] !== t5) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "all-video-container",
+        children: [t4, t5, t7]
+      })
+    });
+    $[12] = t4;
+    $[13] = t5;
+    $[14] = t8;
+  } else {
+    t8 = $[14];
+  }
+  return t8;
+}
+
+/***/ },
+
+/***/ "./src/js/components/ChannelCategories.js"
+/*!************************************************!*\
+  !*** ./src/js/components/ChannelCategories.js ***!
+  \************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelCategories)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function ChannelCategories(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
+  const {
+    db,
+    channelId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] !== channelId || $[1] !== db.categoriesModel || $[2] !== db.channelsModel || $[3] !== showAll) {
+    t1 = () => {
+      const channel = db.channelsModel.findOneById(channelId);
+      let categories = db.categoriesModel.findByIds(channel.categories);
+      if (!showAll && categories.length > 5) {
+        categories = categories.slice(0, 5);
+      }
+      return categories.map(category => ({
+        channel,
+        category,
+        categoryUrl: "./category.html?id=" + category.id
+      }));
+    };
+    $[0] = channelId;
+    $[1] = db.categoriesModel;
+    $[2] = db.channelsModel;
+    $[3] = showAll;
+    $[4] = t1;
+  } else {
+    t1 = $[4];
+  }
+  const renderCards = t1;
+  let t2;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favourite-channels-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+        children: "\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0439 \u043A\u0430\u043D\u0430\u043B\u0430"
+      })
+    });
+    $[5] = t2;
+  } else {
+    t2 = $[5];
+  }
+  let t3;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-categories-titles",
+      children: [t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "favourite-channels-show-all",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+          href: "#",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#FF6F3A"
+            })
+          })]
+        })
+      })]
+    });
+    $[6] = t3;
+  } else {
+    t3 = $[6];
+  }
+  let t4;
+  if ($[7] !== renderCards) {
+    t4 = renderCards().map(_temp);
+    $[7] = renderCards;
+    $[8] = t4;
+  } else {
+    t4 = $[8];
+  }
+  const t5 = channelId + "_key";
+  let t6;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+      children: "\u0414\u0440\u0443\u0433\u043E\u0435"
+    });
+    $[9] = t6;
+  } else {
+    t6 = $[9];
+  }
+  let t7;
+  if ($[10] !== t5) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category",
+      children: t6
+    }, t5);
+    $[10] = t5;
+    $[11] = t7;
+  } else {
+    t7 = $[11];
+  }
+  let t8;
+  if ($[12] !== t4 || $[13] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "channel-categories-container",
+        children: [t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "channel-categories",
+          children: [t4, t7]
+        })]
+      })
+    });
+    $[12] = t4;
+    $[13] = t7;
+    $[14] = t8;
+  } else {
+    t8 = $[14];
+  }
+  return t8;
+}
+function _temp(data) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "channel-categories-row",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: data.categoryUrl,
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+          children: data.category.shortName
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category-description",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: data.categoryUrl,
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+          children: data.category.shortDescription
+        })
+      })
+    })]
+  }, data.category.id);
+}
+
+/***/ },
+
+/***/ "./src/js/components/ChannelDescription.js"
+/*!*************************************************!*\
+  !*** ./src/js/components/ChannelDescription.js ***!
+  \*************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelDescription)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function ChannelDescription(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(51);
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
+      className: "channel-menu",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          className: "channel-menu-first-button",
+          children: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u0420\u0430\u0441\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u0412\u0438\u0434\u0435\u043E"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u0427\u0430\u0442"
+          })
+        })]
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-horizontal-menu",
+      children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+          width: "16px",
+          height: "16px",
+          viewBox: "0 0 16 16",
+          xmlns: "http://www.w3.org/2000/svg",
+          fill: "#CECED6",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+            d: "M14.88 4.78a3.489 3.489 0 0 0-.37-.9 3.24 3.24 0 0 0-.6-.79 3.78 3.78 0 0 0-1.21-.81 3.74 3.74 0 0 0-2.84 0 4 4 0 0 0-1.16.75l-.05.06-.65.65-.65-.65-.05-.06a4 4 0 0 0-1.16-.75 3.74 3.74 0 0 0-2.84 0 3.78 3.78 0 0 0-1.21.81 3.55 3.55 0 0 0-.97 1.69 3.75 3.75 0 0 0-.12 1c0 .317.04.633.12.94a4 4 0 0 0 .36.89 3.8 3.8 0 0 0 .61.79L8 14.31l5.91-5.91c.237-.233.44-.5.6-.79A3.578 3.578 0 0 0 15 5.78a3.747 3.747 0 0 0-.12-1zm-1 1.63a2.69 2.69 0 0 1-.69 1.21l-5.21 5.2-5.21-5.2a2.9 2.9 0 0 1-.44-.57 3 3 0 0 1-.27-.65 3.25 3.25 0 0 1-.08-.69A3.36 3.36 0 0 1 2.06 5a2.8 2.8 0 0 1 .27-.65c.12-.21.268-.4.44-.57a2.91 2.91 0 0 1 .89-.6 2.8 2.8 0 0 1 2.08 0c.33.137.628.338.88.59l1.36 1.37 1.36-1.37a2.72 2.72 0 0 1 .88-.59 2.8 2.8 0 0 1 2.08 0c.331.143.633.347.89.6.174.165.32.357.43.57a2.69 2.69 0 0 1 .35 1.34 2.6 2.6 0 0 1-.06.72h-.03z"
+          })
+        }), "\xA0\xA09,3\xA0\u0442\u044B\u0441. \u043E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0445"]
+      })]
+    });
+    $[1] = t2;
+  } else {
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "info-about",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u041D\u0430 \u0434\u0430\u043D\u043D\u043E\u043C \u043A\u0430\u043D\u0430\u043B\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u0438\u0440\u0443\u044E\u0442\u0441\u044F \u0437\u0430\u043F\u0438\u0441\u0438 \u043E \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438\u0433\u0440:"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u041E\u0442 \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0434\u043E \u043F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0439 \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0432\u043C\u0435\u0441\u0442\u0435 \u0441\u043E \u0437\u0440\u0438\u0442\u0435\u043B\u044F\u043C\u0438"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438, \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E\u0442 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u043A\u043D\u0438\u0433 \u0434\u0430\u043D\u043D\u043E\u0439 \u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438,"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u0430 \u0442\u0430\u043A\u0436\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0441\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0438\u0434\u0435\u0439 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0418\u0418"
+      })]
+    });
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+      href: "#",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+        fill: "#CECED6",
+        width: "16px",
+        height: "16px",
+        viewBox: "0 0 20 20",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+          d: "M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M14.4415206,6 C14.060553,6.00676048 13.476055,6.20741135 10.663148,7.36249773 C9.67796175,7.7670526 7.70897661,8.60437935 4.75619264,9.87447795 C4.27670659,10.0627254 4.02553067,10.2468857 4.00266485,10.4269588 C3.95876487,10.7726802 4.46291296,10.8803081 5.09723696,11.0838761 C5.61440201,11.2498453 6.31007997,11.4440124 6.67173438,11.4517262 C6.99978943,11.4587234 7.36593635,11.3251987 7.77017511,11.051152 C10.5290529,9.21254679 11.9531977,8.28322679 12.0426094,8.26319203 C12.1056879,8.24905787 12.1930992,8.23128593 12.2523244,8.28325656 C12.3115496,8.33522719 12.3057275,8.43364956 12.299454,8.46005377 C12.2492926,8.67117474 9.65764825,10.998457 9.50849738,11.1513987 L9.43697409,11.2233057 C8.88741493,11.7661123 8.33196049,12.1205055 9.290333,12.7440164 C10.155665,13.3069957 10.6592923,13.6661378 11.5507686,14.2430701 C12.1204738,14.6117635 12.5671299,15.0489784 13.1553348,14.9955401 C13.4259939,14.9709508 13.705567,14.7196888 13.8475521,13.9703127 C14.1831052,12.1993135 14.8426779,8.36209709 14.9951103,6.78087197 C15.0084653,6.64233621 14.9916649,6.46503787 14.9781732,6.38720805 C14.9646815,6.30937823 14.9364876,6.19848702 14.8340164,6.11639754 C14.7126597,6.01917896 14.5253109,5.99867765 14.4415206,6 Z"
+        })
+      }), "\xA0Telegram"]
+    });
+    $[3] = t4;
+  } else {
+    t4 = $[3];
+  }
+  let t5;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+      href: "#",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+        fill: "#CECED6",
+        height: "16px",
+        width: "16px",
+        version: "1.1",
+        id: "Layer_1",
+        xmlns: "http://www.w3.org/2000/svg",
+        xlink: "http://www.w3.org/1999/xlink",
+        viewBox: "-143 145 512 512",
+        space: "preserve",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("g", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+            d: "M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7\r\n                                c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4\r\n                                c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8\r\n                                c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4\r\n                                c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+            d: "M196.9,311.2H29.1c0,0-44.1,0-44.1,44.1v91.5c0,0,0,44.1,44.1,44.1h167.8c0,0,44.1,0,44.1-44.1v-91.5\r\n                                C241,355.3,241,311.2,196.9,311.2z M78.9,450.3v-98.5l83.8,49.3L78.9,450.3z"
+          })]
+        })
+      }), "\xA0YouTube"]
+    });
+    $[4] = t5;
+  } else {
+    t5 = $[4];
+  }
+  let t6;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "about",
+      children: [t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "info-links",
+        children: [t4, t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+          href: "#",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+            fill: "#CECED6",
+            width: "16px",
+            height: "16px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            "data-name": "Layer 1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+              d: "M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+            })
+          }), "\xA0GitHub"]
+        })]
+      })]
+    });
+    $[5] = t6;
+  } else {
+    t6 = $[5];
+  }
+  let t7;
+  let t8;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "channel-images",
+      src: "./images/channel-image-1.jpg",
+      alt: "channel-images"
+    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+      children: "\u0421\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435:"
+    });
+    $[6] = t7;
+    $[7] = t8;
+  } else {
+    t7 = $[6];
+    t8 = $[7];
+  }
+  let t9;
+  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[8] = t9;
+  } else {
+    t9 = $[8];
+  }
+  let t10;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[9] = t10;
+  } else {
+    t10 = $[9];
+  }
+  let t11;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[10] = t11;
+  } else {
+    t11 = $[10];
+  }
+  let t12;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[11] = t12;
+  } else {
+    t12 = $[11];
+  }
+  let t13;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[12] = t13;
+  } else {
+    t13 = $[12];
+  }
+  let t14;
+  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[13] = t14;
+  } else {
+    t14 = $[13];
+  }
+  let t15;
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[14] = t15;
+  } else {
+    t15 = $[14];
+  }
+  let t16;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[15] = t16;
+  } else {
+    t16 = $[15];
+  }
+  let t17;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[16] = t17;
+  } else {
+    t17 = $[16];
+  }
+  let t18;
+  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0421\u0442\u0440\u0438\u043C\u0435\u0440 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 ", t9, "\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435: ", t10, "\u2295 \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0442\u0447\u0438\u043A\u0438 \u0438 \u043F\u0440\u0438\u0451\u043C\u043D\u0438\u043A\u0438, ", t11, "\u2295 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0431\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438  ", t12, "\u0441 \u0432\u044B\u0441\u043E\u043A\u043E\u0442\u043E\u0447\u043D\u044B\u043C\u0438 \u043F\u043E\u0434\u0432\u0438\u0436\u043D\u044B\u043C\u0438 \u0437\u0435\u0440\u043A\u0430\u043B\u0430\u043C\u0438 \u0438 \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438,  ", t13, "\u2295 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B \u0444\u043E\u0442\u043E\u043D\u043E\u0432: \u043E\u0434\u043D\u043E\u0444\u043E\u0442\u043E\u043D\u043D\u044B\u0435 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B (SNSPD), ", t14, "\u2295 \u0440\u0435\u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0442\u043E\u0440\u044B, ", t15, "\u2295 \u0431\u043E\u0440\u0442\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u044B \u0438 \u043C\u043E\u0434\u0435\u043C\u044B: \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043C\u043E\u0434\u0443\u043B\u044C MAScOT \u0438 \u043C\u043E\u0434\u0435\u043C, ", t16, "\u2295 \u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430 \u0434\u043B\u044F \u043A\u0430\u043C\u0435\u0440 \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F ", t17, "\u2295 \u0438, \u0440\u0430\u0437\u0443\u043C\u0435\u0435\u0442\u0441\u044F, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \xAB\u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0443 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B\xBB ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+      })]
+    });
+    $[17] = t18;
+  } else {
+    t18 = $[17];
+  }
+  let t19;
+  let t20;
+  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "channel-images",
+      src: "./images/channel-image-2.jpg",
+      alt: "channel-images"
+    });
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+      children: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B \u0434\u043B\u044F \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430"
+    });
+    $[18] = t19;
+    $[19] = t20;
+  } else {
+    t19 = $[18];
+    t20 = $[19];
+  }
+  let t21;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[20] = t21;
+  } else {
+    t21 = $[20];
+  }
+  let t22;
+  if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+    t22 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[21] = t22;
+  } else {
+    t22 = $[21];
+  }
+  let t23;
+  if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
+    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[22] = t23;
+  } else {
+    t23 = $[22];
+  }
+  let t24;
+  if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[23] = t24;
+  } else {
+    t24 = $[23];
+  }
+  let t25;
+  if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[24] = t25;
+  } else {
+    t25 = $[24];
+  }
+  let t26;
+  if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
+    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[25] = t26;
+  } else {
+    t26 = $[25];
+  }
+  let t27;
+  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+    t27 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[26] = t27;
+  } else {
+    t27 = $[26];
+  }
+  let t28;
+  if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+    t28 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[27] = t28;
+  } else {
+    t28 = $[27];
+  }
+  let t29;
+  if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
+    t29 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[28] = t29;
+  } else {
+    t29 = $[28];
+  }
+  let t30;
+  if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
+    t30 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[29] = t30;
+  } else {
+    t30 = $[29];
+  }
+  let t31;
+  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+    t31 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[30] = t31;
+  } else {
+    t31 = $[30];
+  }
+  let t32;
+  if ($[31] === Symbol.for("react.memo_cache_sentinel")) {
+    t32 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[31] = t32;
+  } else {
+    t32 = $[31];
+  }
+  let t33;
+  if ($[32] === Symbol.for("react.memo_cache_sentinel")) {
+    t33 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[32] = t33;
+  } else {
+    t33 = $[32];
+  }
+  let t34;
+  if ($[33] === Symbol.for("react.memo_cache_sentinel")) {
+    t34 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[33] = t34;
+  } else {
+    t34 = $[33];
+  }
+  let t35;
+  if ($[34] === Symbol.for("react.memo_cache_sentinel")) {
+    t35 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t19, t20, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0415\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u043D\u0430\u043B\u0430\u0434\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442 \u0441\u043E \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u043E\u043C", t21, "\u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u0435\u043A\u0442\u044B \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430", t22, "\u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F ", t23, "\u043F\u0440\u0438\u0441\u044B\u043B\u0430\u0439\u0442\u0435 \u0441\u0432\u043E\u0438 \u043F\u0440\u043E\u0431\u043D\u044B\u0435 \u043F\u0440\u043E\u0435\u043A\u0442\u044B ", t24, "\u0432 \u043D\u0435\u0439\u0440\u043E\u0441\u0435\u0442\u0435\u0432\u0443\u044E \u041B\u0421 \u0434\u043B\u044F \u043E\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u044F: ", t25, "neuro_activate: 0xAB3F9C2D@moon ", t26, "\u2248 \u2248 \u2248 ", t27, "\u0434\u043B\u044F \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u0430\u0446\u0438\u0438 \u0432 \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u0435:", t28, "metaverse:moonland:zone3:x128y45z200", t29, "vrchat:worldID:portal7", t30, "\u2248 \u2248 \u2248 ", t31, "\u043E\u0442 \u0432\u0430\u0448\u0435\u0433\u043E AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043D\u0442\u0430 \u043A AI-\u0430\u0433\u0435\u043D\u0442\u0443 \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u0430:", t32, "\"primary_ai\": \"neuro_activate_ai_core_v3.2\", ", t33, "\"chat_bot\": \"neuro_activate_chat_bot_v1.8\",", t34, "\"wss://chat.neuro_activate.ai/ws\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\"preferred_modes\": [\"text\", \"voice\", \"vr_gesture\"]"]
+      })]
+    });
+    $[34] = t35;
+  } else {
+    t35 = $[34];
+  }
+  let t36;
+  let t37;
+  if ($[35] === Symbol.for("react.memo_cache_sentinel")) {
+    t36 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "channel-images",
+      src: "./images/channel-image-3.jpg",
+      alt: "channel-images"
+    });
+    t37 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+      children: "LunaBoard"
+    });
+    $[35] = t36;
+    $[36] = t37;
+  } else {
+    t36 = $[35];
+    t37 = $[36];
+  }
+  let t38;
+  if ($[37] === Symbol.for("react.memo_cache_sentinel")) {
+    t38 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[37] = t38;
+  } else {
+    t38 = $[37];
+  }
+  let t39;
+  if ($[38] === Symbol.for("react.memo_cache_sentinel")) {
+    t39 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[38] = t39;
+  } else {
+    t39 = $[38];
+  }
+  let t40;
+  if ($[39] === Symbol.for("react.memo_cache_sentinel")) {
+    t40 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[39] = t40;
+  } else {
+    t40 = $[39];
+  }
+  let t41;
+  if ($[40] === Symbol.for("react.memo_cache_sentinel")) {
+    t41 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[40] = t41;
+  } else {
+    t41 = $[40];
+  }
+  let t42;
+  if ($[41] === Symbol.for("react.memo_cache_sentinel")) {
+    t42 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[41] = t42;
+  } else {
+    t42 = $[41];
+  }
+  let t43;
+  if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
+    t43 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[42] = t43;
+  } else {
+    t43 = $[42];
+  }
+  let t44;
+  if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
+    t44 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[43] = t44;
+  } else {
+    t44 = $[43];
+  }
+  let t45;
+  if ($[44] === Symbol.for("react.memo_cache_sentinel")) {
+    t45 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[44] = t45;
+  } else {
+    t45 = $[44];
+  }
+  let t46;
+  if ($[45] === Symbol.for("react.memo_cache_sentinel")) {
+    t46 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[45] = t46;
+  } else {
+    t46 = $[45];
+  }
+  let t47;
+  if ($[46] === Symbol.for("react.memo_cache_sentinel")) {
+    t47 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[46] = t47;
+  } else {
+    t47 = $[46];
+  }
+  let t48;
+  if ($[47] === Symbol.for("react.memo_cache_sentinel")) {
+    t48 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[47] = t48;
+  } else {
+    t48 = $[47];
+  }
+  let t49;
+  if ($[48] === Symbol.for("react.memo_cache_sentinel")) {
+    t49 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[48] = t49;
+  } else {
+    t49 = $[48];
+  }
+  let t50;
+  if ($[49] === Symbol.for("react.memo_cache_sentinel")) {
+    t50 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[49] = t50;
+  } else {
+    t50 = $[49];
+  }
+  let t51;
+  if ($[50] === Symbol.for("react.memo_cache_sentinel")) {
+    t51 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "channel-discription",
+        children: [t2, t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "info-blocks-row",
+          children: [t18, t35, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "channel-info-block",
+            children: [t36, t37, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+              children: ["\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u043E\u0432\u043E\u0439 \u0438\u0433\u0440\u0435 ", t38, "\u043D\u0430 \u043E\u0431\u0449\u0435\u043C \u0445\u043E\u043B\u0441\u0442\u0435 \u0434\u043B\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB", t39, "\u043B\u0443\u0447\u0448\u0438\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0431\u0443\u0434\u0443\u0442 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u044B ", t40, "\u2297 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u043C \u043F\u0438\u0433\u043C\u0435\u043D\u0442\u043E\u043C, ", t41, "\u2297 \u0444\u0435\u0440\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u044B\u043C\u0438 \u0447\u0430\u0441\u0442\u0438\u0446\u0430\u043C\u0438, ", t42, "\u2297 \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u0438, ", t43, "\u2297 \u0437\u0432\u0435\u0437\u0434\u043D\u044B\u043C \u0441\u0432\u0435\u0442\u043E\u043C ", t44, "\u2297 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043C\u043D\u043E\u0433\u043E\u043C\u0435\u0440\u043D\u044B\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 ", t45, "\u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u044B \u0440\u043E\u0431\u043E\u0442\u043E\u043C \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u044E \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB \u043F\u043E\u0434 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u043C \u043A\u0443\u043F\u043E\u043B\u043E\u043C ", t46, "\u0441 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0432\u0438\u0434\u043E\u043C \u043D\u0430 \u0417\u0435\u043C\u043B\u044E ", t47, "\u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443:  CosmoArtHub.space  \u2248 ", t48, "CosmoArtHub-gallery.cosmos ", t49, "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432 \u043C\u043E\u0436\u043D\u043E  ", t50, "\u0432 \u043D\u0430\u0448\u0435\u0439 \u0433\u0440\u0443\u043F\u043F\u0435 \"LunaBoard\"  ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+            })]
+          })]
+        })]
+      })
+    });
+    $[50] = t51;
+  } else {
+    t51 = $[50];
+  }
+  return t51;
+}
+
+/***/ },
+
+/***/ "./src/js/components/ChannelPage.js"
+/*!******************************************!*\
+  !*** ./src/js/components/ChannelPage.js ***!
+  \******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelPage)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Stream */ "./src/js/components/Stream.js");
+/* harmony import */ var _ChannelDescription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ChannelDescription */ "./src/js/components/ChannelDescription.js");
+/* harmony import */ var _ChannelCardsLine__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ChannelCardsLine */ "./src/js/components/ChannelCardsLine.js");
+/* harmony import */ var _ClipsCardsLine__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ClipsCardsLine */ "./src/js/components/ClipsCardsLine.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
+/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
+/* harmony import */ var _ChannelCategories__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ChannelCategories */ "./src/js/components/ChannelCategories.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+function ChannelPage(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
+  const {
+    db,
+    streamId,
+    showAll
+  } = t0;
+  let streamData;
+  let t1;
+  if ($[0] !== db.channelsModel || $[1] !== db.streamsModel || $[2] !== streamId) {
+    streamData = db.streamsModel.findOneById(streamId);
+    t1 = db.channelsModel.findOneById(streamData.channelId);
+    $[0] = db.channelsModel;
+    $[1] = db.streamsModel;
+    $[2] = streamId;
+    $[3] = streamData;
+    $[4] = t1;
+  } else {
+    streamData = $[3];
+    t1 = $[4];
+  }
+  const channelData = t1;
+  let t2;
+  if ($[5] !== channelData || $[6] !== streamData) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+      className: "main-banner",
+      id: "react-stream",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Stream__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        streamData: streamData,
+        channelData: channelData
+      })
+    });
+    $[5] = channelData;
+    $[6] = streamData;
+    $[7] = t2;
+  } else {
+    t2 = $[7];
+  }
+  let t3;
+  if ($[8] !== db || $[9] !== showAll || $[10] !== streamId) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+      className: "channel-discription",
+      id: "react-channel-description",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelDescription__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        db: db,
+        streamId: streamId,
+        showAll: showAll
+      })
+    });
+    $[8] = db;
+    $[9] = showAll;
+    $[10] = streamId;
+    $[11] = t3;
+  } else {
+    t3 = $[11];
+  }
+  let t4;
+  if ($[12] !== t2 || $[13] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      className: "main-screen-block",
+      children: [t2, t3]
+    });
+    $[12] = t2;
+    $[13] = t3;
+    $[14] = t4;
+  } else {
+    t4 = $[14];
+  }
+  let t5;
+  let t6;
+  let t7;
+  if ($[15] !== db || $[16] !== showAll) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      db: db,
+      title: "\u0412\u0441\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438",
+      categoryId: 1,
+      showAll: showAll
+    });
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      db: db,
+      title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u0432\u0438\u0434\u0435\u043E",
+      categoryId: 1,
+      showAll: showAll
+    });
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ClipsCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      db: db,
+      title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043A\u043B\u0438\u043F\u044B",
+      channelId: 10,
+      showAll: showAll
+    });
+    $[15] = db;
+    $[16] = showAll;
+    $[17] = t5;
+    $[18] = t6;
+    $[19] = t7;
+  } else {
+    t5 = $[17];
+    t6 = $[18];
+    t7 = $[19];
+  }
+  let t8;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_6__["default"], {});
+    $[20] = t8;
+  } else {
+    t8 = $[20];
+  }
+  let t9;
+  if ($[21] !== db || $[22] !== showAll) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCategories__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      db: db,
+      channelId: 10,
+      showAll: showAll
+    });
+    $[21] = db;
+    $[22] = showAll;
+    $[23] = t9;
+  } else {
+    t9 = $[23];
+  }
+  let t10;
+  if ($[24] !== t5 || $[25] !== t6 || $[26] !== t7 || $[27] !== t9) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      className: "favourite-categories",
+      children: [t5, t6, t7, t8, t9]
+    });
+    $[24] = t5;
+    $[25] = t6;
+    $[26] = t7;
+    $[27] = t9;
+    $[28] = t10;
+  } else {
+    t10 = $[28];
+  }
+  let t11;
+  if ($[29] !== db || $[30] !== t10 || $[31] !== t4) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        children: [t4, t10]
+      })
+    });
+    $[29] = db;
+    $[30] = t10;
+    $[31] = t4;
+    $[32] = t11;
+  } else {
+    t11 = $[32];
+  }
+  return t11;
+}
 
 /***/ },
 
@@ -312,6 +1484,430 @@ function _temp2(userMessage) {
 }
 function _temp() {
   chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+/***/ },
+
+/***/ "./src/js/components/ClipsCards.js"
+/*!*****************************************!*\
+  !*** ./src/js/components/ClipsCards.js ***!
+  \*****************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ClipsCards)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function ClipsCards(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(7);
+  const {
+    db,
+    channelId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] !== channelId || $[1] !== db.channelsModel || $[2] !== db.clipsModel || $[3] !== showAll) {
+    const renderCards = () => {
+      let clipsFiltered = db.clipsModel.findByName("channelId", channelId);
+      console.log({
+        channelId,
+        clipsFiltered
+      });
+      if (!showAll && clipsFiltered.length > 5) {
+        clipsFiltered = clipsFiltered.slice(0, 5);
+      }
+      return clipsFiltered.map(clip => {
+        const channel = db.channelsModel.findOneById(clip.channelId);
+        return {
+          clip,
+          channel,
+          clipUrl: "./channel.html?id=" + clip.id,
+          channelUrl: "./channel.html?id=" + clip.id
+        };
+      });
+    };
+    t1 = renderCards().map(_temp);
+    $[0] = channelId;
+    $[1] = db.channelsModel;
+    $[2] = db.clipsModel;
+    $[3] = showAll;
+    $[4] = t1;
+  } else {
+    t1 = $[4];
+  }
+  let t2;
+  if ($[5] !== t1) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: t1
+    });
+    $[5] = t1;
+    $[6] = t2;
+  } else {
+    t2 = $[6];
+  }
+  return t2;
+}
+function _temp(data) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "channel-card mb-3",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: data.clipUrl,
+      className: "link-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "card-img-top",
+        src: data.clip.previewUrl,
+        alt: "foto"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "card-body",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-info-row",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.channelUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            className: "channel-img",
+            src: data.channel.iconUrl,
+            alt: "foto"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "clip-titles",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.clipUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+              className: "clip-title",
+              children: data.clip.title
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.channelUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+              className: "channel-title",
+              children: data.channel.name
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "clip-author-wrapper",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          children: "Clip author:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.channelUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "clip-author-name",
+            children: data.channel.name
+          })
+        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "stream-labels",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "clip-always-offline",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          children: "\u2B24"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "stream-age-rating",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
+          className: "label-age-rating",
+          children: [data.clip.ageRate, " +"]
+        })
+      })]
+    })]
+  }, data.clip.id);
+}
+
+/***/ },
+
+/***/ "./src/js/components/ClipsCardsLine.js"
+/*!*********************************************!*\
+  !*** ./src/js/components/ClipsCardsLine.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ClipsCardsLine)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _ClipsCards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClipsCards */ "./src/js/components/ClipsCards.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function ClipsCardsLine(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
+  const {
+    db,
+    title,
+    channelId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+      fill: "#CECED6",
+      width: "16px",
+      height: "16px",
+      viewBox: "0 0 15 15",
+      version: "1.1",
+      id: "circle",
+      xmlns: "http://www.w3.org/2000/svg",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+        d: "M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] !== title) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "section-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: "/page",
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h2", {
+          children: [t1, title]
+        })
+      })
+    });
+    $[1] = title;
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "show-all-categories",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+        href: "#",
+        className: "arrowed",
+        children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+          className: "show-all-arrow",
+          width: "24px",
+          height: "24px",
+          viewBox: "0 0 24 24",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+            d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+            fill: "#CECED6"
+          })
+        })]
+      })
+    });
+    $[3] = t3;
+  } else {
+    t3 = $[3];
+  }
+  let t4;
+  if ($[4] !== t2) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "titles-row",
+      children: [t2, t3]
+    });
+    $[4] = t2;
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] !== channelId || $[7] !== db || $[8] !== showAll) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "clips-row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ClipsCards__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        db: db,
+        channelId: channelId,
+        showAll: showAll
+      })
+    });
+    $[6] = channelId;
+    $[7] = db;
+    $[8] = showAll;
+    $[9] = t5;
+  } else {
+    t5 = $[9];
+  }
+  let t6;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "divider-line"
+    });
+    $[10] = t6;
+  } else {
+    t6 = $[10];
+  }
+  let t7;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "show-all-link divider-container",
+      children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        className: "divider-button",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+          href: "#",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#CECED6"
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "divider-line"
+      })]
+    });
+    $[11] = t7;
+  } else {
+    t7 = $[11];
+  }
+  let t8;
+  if ($[12] !== t4 || $[13] !== t5) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: [t4, t5, t7]
+    });
+    $[12] = t4;
+    $[13] = t5;
+    $[14] = t8;
+  } else {
+    t8 = $[14];
+  }
+  return t8;
+}
+
+/***/ },
+
+/***/ "./src/js/components/Footer.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Footer.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Footer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function Footer({}) {
+  const scrollFunction = () => {
+    // Показываем кнопку, если проскроллили больше 20 px
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      buttonUp.style.display = "block";
+    } else {
+      // Скрываем, если вернулись наверх
+      buttonUp.style.display = "none";
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    // Получаем кнопку по ID
+    var buttonUp = document.getElementById("buttonUp");
+    // Обработчик скролла: показываем/скрываем кнопку
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  }, []);
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "buttonUp buttonUp_hide",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+        id: "buttonUp",
+        onClick: handleClick
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "footer-container",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: [" \xA92025 \u041E\u041E\u041E \"Moon TV\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B. ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\u0412\u0441\u0435 \u0442\u043E\u0432\u0430\u0440\u043D\u044B\u0435 \u0437\u043D\u0430\u043A\u0438 \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E \u0438\u0445 \u0432\u043B\u0430\u0434\u0435\u043B\u044C\u0446\u0435\u0432."]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "footer-menu",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0435 \u0441\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          children: "\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 "
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("hr", {
+        className: "horizontal-separator"
+      })]
+    })]
+  });
+}
+
+/***/ },
+
+/***/ "./src/js/components/GoToBtn.js"
+/*!**************************************!*\
+  !*** ./src/js/components/GoToBtn.js ***!
+  \**************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ GoToBtn)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function GoToBtn(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(1);
+  const handleClick = _temp;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "show-all-button-row",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+          className: "show-all-button",
+          type: "button",
+          onClick: handleClick,
+          "aria-label": "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u0432 \u0440\u0430\u0437\u0434\u0435\u043B \u0432\u0441\u0435\u0445 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0439 \u0438 \u0436\u0430\u043D\u0440\u043E\u0432",
+          children: "\u041D\u0430\u0437\u0430\u0434 \u043D\u0430 \u0433\u043B\u0430\u0432\u043D\u0443\u044E"
+        })
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  return t1;
+}
+function _temp() {
+  window.location.href = "./index.html";
 }
 
 /***/ },
@@ -687,6 +2283,381 @@ function Header(t0) {
     t25 = $[39];
   }
   return t25;
+}
+
+/***/ },
+
+/***/ "./src/js/components/HorizontalMenu.js"
+/*!*********************************************!*\
+  !*** ./src/js/components/HorizontalMenu.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ HorizontalMenu)
+/* harmony export */ });
+/* harmony import */ var _HorizontalMenuBtn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HorizontalMenuBtn */ "./src/js/components/HorizontalMenuBtn.js");
+/* harmony import */ var _utils_common_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/common.js */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function HorizontalMenu({
+  db
+}) {
+  const showItems = 10;
+  let activeId = 0;
+  const renderCards = () => {
+    const params = (0,_utils_common_js__WEBPACK_IMPORTED_MODULE_1__.getUrlParams)();
+    activeId = +params.id || 0;
+    console.log({
+      activeId
+    });
+    let categories = db.categoriesModel.getAll();
+    if (categories.length > showItems) {
+      categories = categories.sort((a, b) => {
+        if (a.menuOrder > b.menuOrder) {
+          return 1;
+        }
+        if (a.menuOrder < b.menuOrder) {
+          return -1;
+        }
+        return 0;
+      }).slice(0, showItems);
+    }
+    return categories.map(category => {
+      return {
+        ...category
+      };
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("nav", {
+      className: "hMenu",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+          className: "h-menu-first-button",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+            href: "./categories.html",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+              src: "./images/all-icon-for-categories.svg",
+              alt: "\u0412\u0441\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
+            }), "\u0412\u0441\u0435"]
+          })
+        }), renderCards().map(data => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_HorizontalMenuBtn__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          data: data,
+          activeId: activeId
+        }, data.id)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          className: "h-menu-scroll",
+          "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+            className: "carousel-arrow",
+            width: "30px",
+            height: "30px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#CECED6"
+            })
+          })
+        })]
+      })
+    })
+  });
+}
+
+/***/ },
+
+/***/ "./src/js/components/HorizontalMenuBtn.js"
+/*!************************************************!*\
+  !*** ./src/js/components/HorizontalMenuBtn.js ***!
+  \************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ HorizontalMenuBtn)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function HorizontalMenuBtn(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(7);
+  const {
+    data,
+    activeId
+  } = t0;
+  const t1 = `h-menu-btn${activeId === data.id ? "-active" : ""}`;
+  const t2 = `./category.html?id=${data.id}`;
+  let t3;
+  if ($[0] !== data.shortName || $[1] !== t2) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: t2,
+      children: data.shortName
+    });
+    $[0] = data.shortName;
+    $[1] = t2;
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] !== data.id || $[4] !== t1 || $[5] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+        className: t1,
+        children: t3
+      }, data.id)
+    });
+    $[3] = data.id;
+    $[4] = t1;
+    $[5] = t3;
+    $[6] = t4;
+  } else {
+    t4 = $[6];
+  }
+  return t4;
+}
+
+/***/ },
+
+/***/ "./src/js/components/Layout.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Layout.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Layout)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./src/js/components/Footer.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/js/components/Header.js");
+/* harmony import */ var _HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
+/* harmony import */ var _VerticalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Notification */ "./src/js/components/Notification.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+function Layout(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(19);
+  const {
+    db,
+    children,
+    showFooter
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      id: "react-header",
+      className: "site-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] !== db) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "vertical-menu-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("nav", {
+        className: "vertical-menu",
+        id: "vertical-menu",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_VerticalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          db: db
+        })
+      })
+    });
+    $[1] = db;
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] !== db) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      id: "react-horizontal-menu",
+      className: "horizontal-menu",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        db: db
+      })
+    });
+    $[3] = db;
+    $[4] = t3;
+  } else {
+    t3 = $[4];
+  }
+  let t4;
+  if ($[5] !== children || $[6] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "main-of-the-main",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "horizontal-blocks",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "main-screen-block",
+          children: [t3, children]
+        })
+      })
+    });
+    $[5] = children;
+    $[6] = t3;
+    $[7] = t4;
+  } else {
+    t4 = $[7];
+  }
+  let t5;
+  if ($[8] !== t2 || $[9] !== t4) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "vertical-blocks",
+      children: [t2, t4]
+    });
+    $[8] = t2;
+    $[9] = t4;
+    $[10] = t5;
+  } else {
+    t5 = $[10];
+  }
+  let t6;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_5__["default"], {});
+    $[11] = t6;
+  } else {
+    t6 = $[11];
+  }
+  let t7;
+  if ($[12] !== t5) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
+      children: [t5, t6]
+    });
+    $[12] = t5;
+    $[13] = t7;
+  } else {
+    t7 = $[13];
+  }
+  let t8;
+  if ($[14] !== showFooter) {
+    t8 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("footer", {
+      className: "site-footer",
+      id: "react-footer",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+    });
+    $[14] = showFooter;
+    $[15] = t8;
+  } else {
+    t8 = $[15];
+  }
+  let t9;
+  if ($[16] !== t7 || $[17] !== t8) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "page",
+        children: [t1, t7, t8]
+      })
+    });
+    $[16] = t7;
+    $[17] = t8;
+    $[18] = t9;
+  } else {
+    t9 = $[18];
+  }
+  return t9;
+}
+
+/***/ },
+
+/***/ "./src/js/components/Notification.js"
+/*!*******************************************!*\
+  !*** ./src/js/components/Notification.js ***!
+  \*******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Notification)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function Notification(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(5);
+  let t1;
+  let t2;
+  let t3;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "notification-moon-logo-1",
+      src: "./img/notification-moon-1.svg",
+      alt: "moon-logo"
+    });
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "notification-moon-logo-2",
+      src: "./img/notification-moon-2.svg",
+      alt: "moon-logo"
+    });
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "notification-moon-logo-3",
+      src: "./img/notification-moon-3.svg",
+      alt: "moon-logo"
+    });
+    $[0] = t1;
+    $[1] = t2;
+    $[2] = t3;
+  } else {
+    t1 = $[0];
+    t2 = $[1];
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: "/page",
+      className: "link-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+        children: "\u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0442\u0435\u0441\u044C \u043A \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0443 \u043C\u0435\u0436\u0433\u0430\u043B\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0439 \u043D\u0430 Moon.tv!"
+      })
+    });
+    $[3] = t4;
+  } else {
+    t4 = $[3];
+  }
+  let t5;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "notification",
+        id: "myElement",
+        children: [t1, t2, t3, t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "/page",
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            type: "button",
+            className: "button-notification",
+            children: "\u0412\u043E\u0439\u0442\u0438 / \u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+          id: "closeButton",
+          type: "button",
+          className: "btn-close",
+          "aria-label": "Close"
+        })]
+      })
+    });
+    $[4] = t5;
+  } else {
+    t5 = $[4];
+  }
+  return t5;
 }
 
 /***/ },
@@ -32025,7 +33996,17 @@ module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"
   \******************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner-stream-prewiev-5.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner-stream-prewiev-5.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1,2,9]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
+
+/***/ },
+
+/***/ "./src/db/clips.json"
+/*!***************************!*\
+  !*** ./src/db/clips.json ***!
+  \***************************/
+(module) {
+
+module.exports = /*#__PURE__*/JSON.parse('{"clips":[{"id":1,"authorId":31,"channelId":10,"title":"Funny moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":780,"ageRate":6},{"id":2,"authorId":32,"channelId":10,"title":"Droll moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":342,"ageRate":12},{"id":3,"authorId":33,"channelId":10,"title":"Witty moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":4830,"ageRate":18},{"id":4,"authorId":34,"channelId":10,"title":"Comical moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":230,"ageRate":18},{"id":5,"authorId":35,"channelId":10,"title":"Hilarious moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":761,"ageRate":18}]}');
 
 /***/ },
 
@@ -32151,7 +34132,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Header */ "./src/js/components/Header.js");
 /* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
 /* harmony import */ var _components_Stream_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Stream.js */ "./src/js/components/Stream.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_ChannelPage_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/ChannelPage.js */ "./src/js/components/ChannelPage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -32171,27 +34154,12 @@ const params = (0,_js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__.getUrlParams)
 console.log(params.id); // '1'
 
 const streamId = +params.id || 1;
-const streamData = _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"].streamsModel.findOneById(streamId);
-const channelData = _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"].channelsModel.findOneById(streamData.channelId);
-console.log({
-  params,
-  streamData,
-  channelData
-});
-const header = document.getElementById('react-header');
-const rootHeader = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(header);
-rootHeader.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {}));
-const verticalMenu = document.getElementById('vertical-menu');
-const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(verticalMenu);
-rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {
+const body = document.getElementById('react-body');
+const rootBody = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(body);
+rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_components_ChannelPage_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"],
-  showAll: false
-}));
-const stream = document.getElementById('react-stream');
-const rootStream = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(stream);
-rootStream.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Stream_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-  streamData: streamData,
-  channelData: channelData
+  streamId: streamId,
+  showAll: true
 }));
 })();
 

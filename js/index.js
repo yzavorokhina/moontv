@@ -16,6 +16,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _channels_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./channels.json */ "./src/db/channels.json");
 /* harmony import */ var _categories_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./categories.json */ "./src/db/categories.json");
 /* harmony import */ var _tags_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tags.json */ "./src/db/tags.json");
+/* harmony import */ var _clips_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clips.json */ "./src/db/clips.json");
+
 
 
 
@@ -63,11 +65,13 @@ const streamsModel = new DBHelper(_streams_json__WEBPACK_IMPORTED_MODULE_0__.str
 const channelsModel = new DBHelper(_channels_json__WEBPACK_IMPORTED_MODULE_1__.channels);
 const categoriesModel = new DBHelper(_categories_json__WEBPACK_IMPORTED_MODULE_2__.categories);
 const tagsModel = new DBHelper(_tags_json__WEBPACK_IMPORTED_MODULE_3__.tags);
+const clipsModel = new DBHelper(_clips_json__WEBPACK_IMPORTED_MODULE_4__.clips);
 const db = {
   streamsModel,
   channelsModel,
   categoriesModel,
-  tagsModel
+  tagsModel,
+  clipsModel
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (db);
 
@@ -1057,7 +1061,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Banner(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(19);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(20);
   let t1;
   let t2;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1131,71 +1135,62 @@ function Banner(t0) {
   }
   let t5;
   if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "banner-stream-info",
-      children: [t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "stream-info",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-          children: "\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E \u0438\u0433\u0440\u0443 KUPOL : \u0432\u044B\u0440\u0430\u0449\u0438\u0432\u0430\u043D\u0438\u0435 \u0444\u0440\u0443\u043A\u0442\u043E\u0432\u044B\u0445 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432 \u043D\u0430 \u041B\u0443\u043D\u0435"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-          children: "\u0414\u0435\u043D\u044C 4 / \u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "./channel.html",
-          children: "neuro_activate"
-        })]
-      })]
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: "./channel.html",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+        children: "\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E \u0438\u0433\u0440\u0443 KUPOL : \u0432\u044B\u0440\u0430\u0449\u0438\u0432\u0430\u043D\u0438\u0435 \u0444\u0440\u0443\u043A\u0442\u043E\u0432\u044B\u0445 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432 \u043D\u0430 \u041B\u0443\u043D\u0435"
+      })
     });
     $[4] = t5;
   } else {
     t5 = $[4];
   }
   let t6;
-  let t7;
   if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
-    });
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-      children: "\u2B24"
-    });
-    $[5] = t6;
-    $[6] = t7;
-  } else {
-    t6 = $[5];
-    t7 = $[6];
-  }
-  let t8;
-  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "live-watchers",
-      children: [t6, t7, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "viewer-count",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-          id: "current-viewers",
-          children: "323"
-        })
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "banner-stream-info",
+      children: [t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-info",
+        children: [t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+            children: "\u0414\u0435\u043D\u044C 4 / \u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: "neuro_activate"
+        })]
       })]
     });
+    $[5] = t6;
+  } else {
+    t6 = $[5];
+  }
+  let t7;
+  let t8;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      children: "\u2B24"
+    });
+    $[6] = t7;
     $[7] = t8;
   } else {
+    t7 = $[6];
     t8 = $[7];
   }
   let t9;
   if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
     t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "video-carousel",
-      children: [t1, t2, t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "banner-info",
-        children: [t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "stream-statistic",
-          children: [t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-            className: "age-rating-row",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-              className: "age-rating",
-              children: "12+"
-            })
-          })]
-        })]
+      className: "live-watchers",
+      children: [t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "viewer-count",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          id: "current-viewers",
+          children: "323"
+        })
       })]
     });
     $[8] = t9;
@@ -1204,7 +1199,32 @@ function Banner(t0) {
   }
   let t10;
   if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "video-carousel",
+      children: [t1, t2, t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "banner-info",
+          children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "stream-statistic",
+            children: [t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+              className: "age-rating-row",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+                className: "age-rating",
+                children: "12+"
+              })
+            })]
+          })]
+        })
+      })]
+    });
+    $[9] = t10;
+  } else {
+    t10 = $[9];
+  }
+  let t11;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "promo-stream-cover",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
         href: "./channel.html",
@@ -1214,15 +1234,15 @@ function Banner(t0) {
         })
       })
     });
-    $[9] = t10;
+    $[10] = t11;
   } else {
-    t10 = $[9];
+    t11 = $[10];
   }
-  let t11;
-  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  let t12;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "promo1",
-      children: [t10, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      children: [t11, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "promo-stream-info",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
           children: "\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E \u0438\u0433\u0440\u0443 KUPOL \u0414\u0435\u043D\u044C 4 / \u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F"
@@ -1232,13 +1252,13 @@ function Banner(t0) {
         })]
       })]
     });
-    $[10] = t11;
+    $[11] = t12;
   } else {
-    t11 = $[10];
+    t12 = $[11];
   }
-  let t12;
-  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  let t13;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "promo-stream-cover",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
         href: "./channel.html",
@@ -1248,15 +1268,15 @@ function Banner(t0) {
         })
       })
     });
-    $[11] = t12;
+    $[12] = t13;
   } else {
-    t12 = $[11];
+    t13 = $[12];
   }
-  let t13;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  let t14;
+  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "promo2",
-      children: [t12, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      children: [t13, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "promo-stream-info",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
           children: "Skyrim-\u043F\u0440\u043E\u043A\u0430\u0447\u043A\u0430 \u0434\u043E 17 \u0443\u0440\u043E\u0432\u043D\u044F \u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E \u0434\u043E 1-\u0433\u043E..."
@@ -1266,13 +1286,13 @@ function Banner(t0) {
         })]
       })]
     });
-    $[12] = t13;
+    $[13] = t14;
   } else {
-    t13 = $[12];
+    t14 = $[13];
   }
-  let t14;
-  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  let t15;
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "promo-stream-cover",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
         href: "./channel.html",
@@ -1282,15 +1302,15 @@ function Banner(t0) {
         })
       })
     });
-    $[13] = t14;
+    $[14] = t15;
   } else {
-    t14 = $[13];
+    t15 = $[14];
   }
-  let t15;
-  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
-    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  let t16;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "promo3",
-      children: [t14, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      children: [t15, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "promo-stream-info",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
           children: "\u0421\u043C\u0435\u0448\u0430\u0440\u0438\u043A\u0438 3 \u0447\u0430\u0441\u0430 \u043F\u043E\u0434\u0440\u044F\u0434 - \u0427\u0430\u0441\u0442\u044C 1-\u0430\u044F \u0438\u0437 10-\u0442\u0438"
@@ -1300,13 +1320,13 @@ function Banner(t0) {
         })]
       })]
     });
-    $[14] = t15;
+    $[15] = t16;
   } else {
-    t15 = $[14];
+    t16 = $[15];
   }
-  let t16;
-  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  let t17;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "promo-stream-cover",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
         href: "./channel.html",
@@ -1316,15 +1336,15 @@ function Banner(t0) {
         })
       })
     });
-    $[15] = t16;
+    $[16] = t17;
   } else {
-    t16 = $[15];
+    t17 = $[16];
   }
-  let t17;
-  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  let t18;
+  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "promo4",
-      children: [t16, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      children: [t17, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "promo-stream-info",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
           children: "\u041A\u0440\u0443\u0442\u043E\u0439 \u0437\u0430\u043C\u0435\u0441. \u0414\u0435\u043B\u0430\u0435\u043C \u0440\u044B\u0431\u043E\u043A \u0438\u0437 \u043C\u0430\u0440\u0441\u0438\u0430\u043D\u0441\u043A\u043E\u0439 \u0433\u043B\u0438\u043D\u044B"
@@ -1334,13 +1354,13 @@ function Banner(t0) {
         })]
       })]
     });
-    $[16] = t17;
+    $[17] = t18;
   } else {
-    t17 = $[16];
+    t18 = $[17];
   }
-  let t18;
-  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
-    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  let t19;
+  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "promo-stream-cover",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
         href: "./channel.html",
@@ -1350,18 +1370,18 @@ function Banner(t0) {
         })
       })
     });
-    $[17] = t18;
+    $[18] = t19;
   } else {
-    t18 = $[17];
+    t19 = $[18];
   }
-  let t19;
-  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-      children: [t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  let t20;
+  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: [t10, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "promo",
-        children: [t11, t13, t15, t17, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        children: [t12, t14, t16, t18, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           className: "promo5",
-          children: [t18, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          children: [t19, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
             className: "promo-stream-info",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
               children: "PRO\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0434\u043B\u044F \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E "
@@ -1373,11 +1393,11 @@ function Banner(t0) {
         })]
       })]
     });
-    $[18] = t19;
+    $[19] = t20;
   } else {
-    t19 = $[18];
+    t20 = $[19];
   }
-  return t19;
+  return t20;
 }
 
 // document.addEventListener('DOMContentLoaded', function() {
@@ -49566,7 +49586,18 @@ module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner-stream-prewiev-5.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner-stream-prewiev-5.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1,2,9]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
+
+/***/ },
+
+/***/ "./src/db/clips.json"
+/*!***************************!*\
+  !*** ./src/db/clips.json ***!
+  \***************************/
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"clips":[{"id":1,"authorId":31,"channelId":10,"title":"Funny moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":780,"ageRate":6},{"id":2,"authorId":32,"channelId":10,"title":"Droll moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":342,"ageRate":12},{"id":3,"authorId":33,"channelId":10,"title":"Witty moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":4830,"ageRate":18},{"id":4,"authorId":34,"channelId":10,"title":"Comical moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":230,"ageRate":18},{"id":5,"authorId":35,"channelId":10,"title":"Hilarious moment","previewUrl":"images/channel-favourite-clip-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","watched":761,"ageRate":18}]}');
 
 /***/ },
 
