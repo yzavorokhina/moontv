@@ -4,7 +4,7 @@ import HorizontalMenu from "./HorizontalMenu";
 import VerticalMenu from "./VerticalMenu";
 import Notification from "./Notification";
 
-export default function Layout({ db, children }) {
+export default function Layout({ db, children, showFooter }) {
 
     return (
         <>
@@ -35,10 +35,11 @@ export default function Layout({ db, children }) {
                 </div>
                 <Notification />
             </main>
-
+            {showFooter &&
             <footer className="site-footer" id="react-footer">
                 <Footer />
             </footer>
+            }
         </div>
         </>
     );

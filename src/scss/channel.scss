@@ -3,7 +3,7 @@
 @import 'layout/header';
 @import 'components/stream';
 @import 'components/channel_all_video';
-@import 'components/channel_favourite_category';
+@import 'components/channel_categories';
 @import 'components/channel_favourite_clips';
 @import 'components/channel_favourite_video';
 
@@ -85,7 +85,6 @@ footer {
     width: calc(100vw - 222px);
     // min-height: 720px;
     min-height: fit-content;
-    margin-top: 24px;
     // border: 1px solid green;
     background: var(--theme-button-scroll-hover, #54506B);
     background: rgba(84, 80, 107, 0.5);
@@ -103,7 +102,7 @@ footer {
   width: 100%;
   height: 100%;
   //background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
-  background-color: rgba(7, 0, 37, 0.8);
+  background-color: rgba(7, 0, 37, 0.5);
   z-index: 1;
 }
 

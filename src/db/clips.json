@@ -1,0 +1,54 @@
+{
+    "clips": [
+        {
+            "id": 1,
+            "authorId": 31,
+            "channelId": 10,
+            "title": "Funny moment",
+            "previewUrl": "images/channel-favourite-clip-1-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "watched": 780,
+            "ageRate": 6
+        },
+        {
+            "id": 2,
+            "authorId": 32,
+            "channelId": 10,
+            "title": "Droll moment",
+            "previewUrl": "images/channel-favourite-clip-1-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "watched": 342,
+            "ageRate": 12
+        },
+        {
+            "id": 3,
+            "authorId": 33,
+            "channelId": 10,
+            "title": "Witty moment",
+            "previewUrl": "images/channel-favourite-clip-1-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "watched": 4830,
+            "ageRate": 18
+        },
+        {
+            "id": 4,
+            "authorId": 34,
+            "channelId": 10,
+            "title": "Comical moment",
+            "previewUrl": "images/channel-favourite-clip-1-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "watched": 230,
+            "ageRate": 18
+        },
+        {
+            "id": 5,
+            "authorId": 35,
+            "channelId": 10,
+            "title": "Hilarious moment",
+            "previewUrl": "images/channel-favourite-clip-1-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "watched": 761,
+            "ageRate": 18
+        }
+    ]
+}

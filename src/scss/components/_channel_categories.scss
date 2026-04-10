@@ -83,6 +83,15 @@
 
 /* end of the show-all-orange-link */
 
+.channel-categories-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16.5px;
+    flex-shrink: 0;
+}
+
 .channel-categories {
     display: flex;
     flex-direction: row;

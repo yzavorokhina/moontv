@@ -7,6 +7,7 @@ import { getUrlParams } from '../js/utils/common.js';
 import Header from './components/Header';
 import VerticalMenu from './components/VerticalMenu';
 import Stream from './components/Stream.js';
+import ChannelPage from './components/ChannelPage.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,20 +19,7 @@ const params = getUrlParams();
 console.log(params.id); // '1'
 
 const streamId = +params.id || 1;
-const streamData = db.streamsModel.findOneById(streamId);
-const channelData = db.channelsModel.findOneById(streamData.channelId);
 
-console.log({ params, streamData, channelData });
-
-
-const header = document.getElementById('react-header');
-const rootHeader = createRoot(header);
-rootHeader.render(<Header />);
-
-const verticalMenu = document.getElementById('vertical-menu');
-const rootVerticalMenu = createRoot(verticalMenu);
-rootVerticalMenu.render(<VerticalMenu db={db} showAll={false} />);
-
-const stream = document.getElementById('react-stream');
-const rootStream = createRoot(stream);
-rootStream.render(<Stream streamData={streamData} channelData={channelData} />);
+const body = document.getElementById('react-body');
+const rootBody = createRoot(body);
+rootBody.render(<ChannelPage db={db} streamId={streamId} showAll={true} />);
