@@ -3,6 +3,7 @@ import channels from './channels.json' with { type: 'json' };
 import categories from './categories.json' with { type: 'json' };
 import tags from './tags.json' with { type: 'json' };
 import clips from './clips.json' with { type: 'json' };
+import users from './users.json' with { type: 'json' };
 
 class DBHelper {
     data = [];
@@ -51,12 +52,14 @@ const channelsModel = new DBHelper(channels.channels);
 const categoriesModel = new DBHelper(categories.categories);
 const tagsModel = new DBHelper(tags.tags);
 const clipsModel = new DBHelper(clips.clips);
+const usersModel = new DBHelper(users.users);
 const db = {
     streamsModel,
     channelsModel,
     categoriesModel,
     tagsModel,
-    clipsModel
+    clipsModel,
+    usersModel
 };
 
 export default db;

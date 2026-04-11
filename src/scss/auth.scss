@@ -51,7 +51,7 @@ body {
     background-color: rgba(52, 49, 72, 0.5);
 }
 
-.buttons {
+.top-buttons {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -64,11 +64,12 @@ body {
     // border: 1px solid blue;
 }
 
-.buttons a {
+.top-buttons a {
     display: block;
 }
 
-.btn-secondary {
+/* button with arrow: */
+.btn-back {
     height: 24px;
     width: 24px;
     padding: 0;
@@ -76,7 +77,7 @@ body {
     color: rgba(52, 49, 72, 0.5);
 }
 
-.btn-secondary:hover {
+.btn-back:hover {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 5px 5px rgba(0, 151, 211, 0.2);
     border-radius: .375rem;
@@ -142,16 +143,6 @@ body {
     background-color: rgba(5, 5, 5);
 }
 
-// .btn-close {
-//     color: rgba(52, 49, 72, 0.5);
-//     box-shadow: 0 3px 5px rgba(0, 151, 211, 0.2);
-// }
-
-// .btn-close:hover {
-//     background-color: rgba(255, 255, 255, 0.3);
-//     /* box-shadow: 0 3px 5px rgba(0, 151, 211, 0.2); */
-// }
-
 .form {
     display: flex;
     flex-direction: column;
@@ -169,7 +160,7 @@ body {
     /* border: 1px solid rgb(251, 255, 0); */
 }
 
-.form .auth_logo {
+.auth_logo img{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,6 +353,10 @@ h1 {
     cursor: pointer;
 }
 
+.button-3 img {
+    width: 30px;
+}
+
 .links {
     display: flex;
     flex-direction: row;
@@ -372,8 +367,8 @@ h1 {
 
 .links img {
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     filter: none;
 }

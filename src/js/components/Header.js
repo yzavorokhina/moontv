@@ -54,6 +54,7 @@ export default function Header({ }) {
         }]
     ]);
     const [currentTheme, setTheme] = useLocalStorage('currentTheme', 'dark');
+    const [currentUser, setUser] = useState('currentUser');
 
     const updateTheme = (themeId) => {
         const { mainBg, promoBg, inputBg, btnBg, activeBtnBg,
@@ -94,7 +95,14 @@ export default function Header({ }) {
     }
 
     useEffect(() => {
-        updateTheme(currentTheme);
+        console.log({currentTheme});
+        // updateTheme(currentTheme);
+        
+        const authStr = localStorage.getItem('auth');
+        const auth = authStr ? JSON.parse(authStr) : {};
+        setUser(auth);
+        console.log({ auth });
+
     }, []);
 
     const handleClick = () => {
@@ -140,7 +148,7 @@ export default function Header({ }) {
                     <div className="login">
                         <button className="login-button" type="button" aria-label="Войти в личный кабинет">
                             <a href="./auth.html">
-                                <img src={`./images/avatar-disabled-${currentTheme}.svg`} alt="personal account" />
+                                <img src={`./images/${currentUser.iconUrl || 'avatar-disabled-dark.svg'}`} alt="personal account" />
                             </a>
                         </button>
                     </div>

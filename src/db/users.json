@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "email": "konfeta@mail.ru",
+            "password": "12345"
+        },
+        {
+            "username": "user",
+            "email": "zefir@mail.ru",
+            "password": "password"
+        }
+    ]
+}
