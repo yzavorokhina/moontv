@@ -25284,6 +25284,8 @@ iframe {
   flex-shrink: 0;
   width: calc(100vw - 222px);
   max-height: 3940px;
+  margin-left: 16px;
+  margin-right: 50px;
 }
 
 /* section row: */
@@ -25298,7 +25300,7 @@ iframe {
   margin-top: 24px;
   height: fit-content;
   margin-left: 16px;
-  margin-right: 50px;
+  padding-left: 16px;
   background-color: transparent;
 }
 

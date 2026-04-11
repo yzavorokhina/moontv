@@ -17,6 +17,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _categories_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./categories.json */ "./src/db/categories.json");
 /* harmony import */ var _tags_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tags.json */ "./src/db/tags.json");
 /* harmony import */ var _clips_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clips.json */ "./src/db/clips.json");
+/* harmony import */ var _users_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users.json */ "./src/db/users.json");
+
 
 
 
@@ -66,14 +68,412 @@ const channelsModel = new DBHelper(_channels_json__WEBPACK_IMPORTED_MODULE_1__.c
 const categoriesModel = new DBHelper(_categories_json__WEBPACK_IMPORTED_MODULE_2__.categories);
 const tagsModel = new DBHelper(_tags_json__WEBPACK_IMPORTED_MODULE_3__.tags);
 const clipsModel = new DBHelper(_clips_json__WEBPACK_IMPORTED_MODULE_4__.clips);
+const usersModel = new DBHelper(_users_json__WEBPACK_IMPORTED_MODULE_5__.users);
 const db = {
   streamsModel,
   channelsModel,
   categoriesModel,
   tagsModel,
-  clipsModel
+  clipsModel,
+  usersModel
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (db);
+
+/***/ },
+
+/***/ "./src/js/components/Banner.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Banner.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Banner)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function Banner(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(20);
+  let t1;
+  let t2;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+      className: "carousel-btn prev-btn",
+      "aria-label": "\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0435 \u0432\u0438\u0434\u0435\u043E",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+        className: "carousel-arrow",
+        width: "40px",
+        height: "40px",
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+          d: "M17 9H5.414l3.293-3.293a.999.999 0 10-1.414-1.414l-5 5a.999.999 0 000 1.414l5 5a.997.997 0 001.414 0 .999.999 0 000-1.414L5.414 11H17a1 1 0 100-2z",
+          fill: "#FFFFFF"
+        })
+      })
+    });
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("iframe", {
+      width: "1138px",
+      height: "574px",
+      src: "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+      title: "YouTube video player",
+      frameBorder: "0",
+      allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      referrerPolicy: "strict-origin-when-cross-origin",
+      allowFullScreen: true
+    });
+    $[0] = t1;
+    $[1] = t2;
+  } else {
+    t1 = $[0];
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+      className: "carousel-btn next-btn",
+      "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0435 \u0432\u0438\u0434\u0435\u043E",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+        className: "carousel-arrow",
+        width: "40px",
+        height: "40px",
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+          d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+          fill: "#FFFFFF"
+        })
+      })
+    });
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "banner-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/banner-ava.jpg",
+          alt: "banner ava"
+        })
+      })
+    });
+    $[3] = t4;
+  } else {
+    t4 = $[3];
+  }
+  let t5;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: "./channel.html",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+        children: "\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E \u0438\u0433\u0440\u0443 KUPOL : \u0432\u044B\u0440\u0430\u0449\u0438\u0432\u0430\u043D\u0438\u0435 \u0444\u0440\u0443\u043A\u0442\u043E\u0432\u044B\u0445 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432 \u043D\u0430 \u041B\u0443\u043D\u0435"
+      })
+    });
+    $[4] = t5;
+  } else {
+    t5 = $[4];
+  }
+  let t6;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "banner-stream-info",
+      children: [t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-info",
+        children: [t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+            children: "\u0414\u0435\u043D\u044C 4 / \u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: "neuro_activate"
+        })]
+      })]
+    });
+    $[5] = t6;
+  } else {
+    t6 = $[5];
+  }
+  let t7;
+  let t8;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      children: "\u2B24"
+    });
+    $[6] = t7;
+    $[7] = t8;
+  } else {
+    t7 = $[6];
+    t8 = $[7];
+  }
+  let t9;
+  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "live-watchers",
+      children: [t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "viewer-count",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          id: "current-viewers",
+          children: "323"
+        })
+      })]
+    });
+    $[8] = t9;
+  } else {
+    t9 = $[8];
+  }
+  let t10;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "video-carousel",
+      children: [t1, t2, t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "banner-info",
+        children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "stream-statistic",
+          children: [t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            className: "age-rating-row",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+              className: "age-rating",
+              children: "12+"
+            })
+          })]
+        })]
+      })]
+    });
+    $[9] = t10;
+  } else {
+    t10 = $[9];
+  }
+  let t11;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "promo-stream-cover",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/banner-stream-prewiev-1.jpg",
+          alt: "stream prewiev"
+        })
+      })
+    });
+    $[10] = t11;
+  } else {
+    t11 = $[10];
+  }
+  let t12;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "promo1",
+      children: [t11, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "promo-stream-info",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E \u0438\u0433\u0440\u0443 KUPOL \u0414\u0435\u043D\u044C 4 / \u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: "neuro_activate"
+        })]
+      })]
+    });
+    $[11] = t12;
+  } else {
+    t12 = $[11];
+  }
+  let t13;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "promo-stream-cover",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/banner-stream-prewiev-2.jpg",
+          alt: "stream prewiev"
+        })
+      })
+    });
+    $[12] = t13;
+  } else {
+    t13 = $[12];
+  }
+  let t14;
+  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "promo2",
+      children: [t13, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "promo-stream-info",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "Skyrim-\u043F\u0440\u043E\u043A\u0430\u0447\u043A\u0430 \u0434\u043E 17 \u0443\u0440\u043E\u0432\u043D\u044F \u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E \u0434\u043E 1-\u0433\u043E..."
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: "LuckyKhajiit"
+        })]
+      })]
+    });
+    $[13] = t14;
+  } else {
+    t14 = $[13];
+  }
+  let t15;
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "promo-stream-cover",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/banner-stream-prewiev-3.jpg",
+          alt: "stream prewiev"
+        })
+      })
+    });
+    $[14] = t15;
+  } else {
+    t15 = $[14];
+  }
+  let t16;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "promo3",
+      children: [t15, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "promo-stream-info",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "\u0421\u043C\u0435\u0448\u0430\u0440\u0438\u043A\u0438 3 \u0447\u0430\u0441\u0430 \u043F\u043E\u0434\u0440\u044F\u0434 - \u0427\u0430\u0441\u0442\u044C 1-\u0430\u044F \u0438\u0437 10-\u0442\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: "MultiPupsik"
+        })]
+      })]
+    });
+    $[15] = t16;
+  } else {
+    t16 = $[15];
+  }
+  let t17;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "promo-stream-cover",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/banner-stream-prewiev-4.jpg",
+          alt: "stream prewiev"
+        })
+      })
+    });
+    $[16] = t17;
+  } else {
+    t17 = $[16];
+  }
+  let t18;
+  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "promo4",
+      children: [t17, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "promo-stream-info",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "\u041A\u0440\u0443\u0442\u043E\u0439 \u0437\u0430\u043C\u0435\u0441. \u0414\u0435\u043B\u0430\u0435\u043C \u0440\u044B\u0431\u043E\u043A \u0438\u0437 \u043C\u0430\u0440\u0441\u0438\u0430\u043D\u0441\u043A\u043E\u0439 \u0433\u043B\u0438\u043D\u044B"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "./channel.html",
+          children: "KidsPlanet"
+        })]
+      })]
+    });
+    $[17] = t18;
+  } else {
+    t18 = $[17];
+  }
+  let t19;
+  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "promo-stream-cover",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/banner-stream-prewiev-5.jpg",
+          alt: "stream prewiev"
+        })
+      })
+    });
+    $[18] = t19;
+  } else {
+    t19 = $[18];
+  }
+  let t20;
+  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "main-banner",
+        children: [t10, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "promo",
+          children: [t12, t14, t16, t18, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "promo5",
+            children: [t19, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "promo-stream-info",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+                children: "PRO\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0434\u043B\u044F \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E "
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "./channel.html",
+                children: "Programming "
+              })]
+            })]
+          })]
+        })]
+      })
+    });
+    $[19] = t20;
+  } else {
+    t20 = $[19];
+  }
+  return t20;
+}
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const prevBtn = document.querySelector('.prev-btn');
+//   const nextBtn = document.querySelector('.next-btn');
+//   const videoElement = document.querySelector('.current-video');
+
+//   // Массив с путями к видео
+//   const videos = [
+//     'video1.mp4',
+//     'video2.mp4',
+//     'video3.mp4'
+//   ];
+
+//   let currentIndex = 0;
+
+//   function loadVideo(index) {
+//     const videoSrc = videos[index];
+//     videoElement.src = videoSrc;
+//     videoElement.load();
+//   }
+
+//   prevBtn.addEventListener('click', function() {
+//     currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+//     loadVideo(currentIndex);
+//   });
+
+//   nextBtn.addEventListener('click', function() {
+//     currentIndex = (currentIndex + 1) % videos.length;
+//     loadVideo(currentIndex);
+//   });
+
+//   // Загружаем первое видео при инициализации
+//   loadVideo(currentIndex);
+// });
+
+/* Автопрокрутка (может и не нужна, чтобы не мельтешила перед глазами главная трансляция века: если есть кнопки перелистывания тем более */
+// setInterval(() => {
+//   nextBtn.click();
+// }, 5000); // каждые 5 секунд
 
 /***/ },
 
@@ -103,6 +503,10 @@ function ChannelCards(t0) {
   if ($[0] !== categoryId || $[1] !== db.categoriesModel || $[2] !== db.channelsModel || $[3] !== db.streamsModel || $[4] !== showAll) {
     const renderCards = () => {
       let streamsFiltered = db.streamsModel.findByName("categoryId", categoryId);
+      console.log({
+        categoryId,
+        streamsFiltered
+      });
       if (!showAll && streamsFiltered.length > 5) {
         streamsFiltered = streamsFiltered.slice(0, 5);
       }
@@ -224,6 +628,754 @@ function _temp(data) {
 
 /***/ },
 
+/***/ "./src/js/components/ChannelCardsLine.js"
+/*!***********************************************!*\
+  !*** ./src/js/components/ChannelCardsLine.js ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelCardsLine)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _ChannelCards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ChannelCards */ "./src/js/components/ChannelCards.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function ChannelCardsLine(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
+  const {
+    db,
+    title,
+    categoryId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+      fill: "#CECED6",
+      width: "16px",
+      height: "16px",
+      viewBox: "0 0 15 15",
+      version: "1.1",
+      id: "circle",
+      xmlns: "http://www.w3.org/2000/svg",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+        d: "M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] !== title) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "section-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: "/page",
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h2", {
+          children: [t1, title]
+        })
+      })
+    });
+    $[1] = title;
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "show-all-categories",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+        href: "#",
+        className: "arrowed",
+        children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+          className: "show-all-arrow",
+          width: "24px",
+          height: "24px",
+          viewBox: "0 0 24 24",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+            d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+            fill: "#CECED6"
+          })
+        })]
+      })
+    });
+    $[3] = t3;
+  } else {
+    t3 = $[3];
+  }
+  let t4;
+  if ($[4] !== t2) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "titles-row",
+      children: [t2, t3]
+    });
+    $[4] = t2;
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] !== categoryId || $[7] !== db || $[8] !== showAll) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "channels-row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ChannelCards__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        db: db,
+        categoryId: categoryId,
+        showAll: showAll
+      })
+    });
+    $[6] = categoryId;
+    $[7] = db;
+    $[8] = showAll;
+    $[9] = t5;
+  } else {
+    t5 = $[9];
+  }
+  let t6;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "divider-line"
+    });
+    $[10] = t6;
+  } else {
+    t6 = $[10];
+  }
+  let t7;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "show-all-link divider-container",
+      children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        className: "divider-button",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+          href: "#",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#CECED6"
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "divider-line"
+      })]
+    });
+    $[11] = t7;
+  } else {
+    t7 = $[11];
+  }
+  let t8;
+  if ($[12] !== t4 || $[13] !== t5) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "all-video-container",
+        children: [t4, t5, t7]
+      })
+    });
+    $[12] = t4;
+    $[13] = t5;
+    $[14] = t8;
+  } else {
+    t8 = $[14];
+  }
+  return t8;
+}
+
+/***/ },
+
+/***/ "./src/js/components/FavoriteChannels.js"
+/*!***********************************************!*\
+  !*** ./src/js/components/FavoriteChannels.js ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FavoriteChannels)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function FavoriteChannels() {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
+  let t0;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t0 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favourite-channels-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+        children: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043A\u0430\u043D\u0430\u043B\u044B"
+      })
+    });
+    $[0] = t0;
+  } else {
+    t0 = $[0];
+  }
+  let t1;
+  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "favourite-channels-titles",
+      children: [t0, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "favourite-channels-show-all",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+          href: "#",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#FF6F3A"
+            })
+          })]
+        })
+      })]
+    });
+    $[1] = t1;
+  } else {
+    t1 = $[1];
+  }
+  let t2;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+        children: "\u041E\u0431\u0443\u0447\u0435\u043D\u0438\u0435"
+      })
+    });
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-1-1.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[3] = t3;
+  } else {
+    t3 = $[3];
+  }
+  let t4;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[4] = t4;
+  } else {
+    t4 = $[4];
+  }
+  let t5;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "favorite-channel",
+        children: [t3, t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "favorite-channel-info",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+            className: "favorite-channel-title",
+            children: "WeDontNeedNo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            className: "category-name",
+            children: "English for astronauts"
+          })]
+        })]
+      })
+    });
+    $[5] = t5;
+  } else {
+    t5 = $[5];
+  }
+  let t6;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-1-2.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[6] = t6;
+  } else {
+    t6 = $[6];
+  }
+  let t7;
+  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[7] = t7;
+  } else {
+    t7 = $[7];
+  }
+  let t8;
+  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "favorite-channel",
+        children: [t6, t7, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "favorite-channel-info",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+            className: "favorite-channel-title",
+            children: "Rosenthal"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            className: "category-name",
+            children: "Speak and write correctly"
+          })]
+        })]
+      })
+    });
+    $[8] = t8;
+  } else {
+    t8 = $[8];
+  }
+  let t9;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-1-3.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[9] = t9;
+  } else {
+    t9 = $[9];
+  }
+  let t10;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[10] = t10;
+  } else {
+    t10 = $[10];
+  }
+  let t11;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channels",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+        children: [t5, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "favorite-channel",
+            children: [t9, t10, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "favorite-channel-info",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+                className: "favorite-channel-title",
+                children: "S'il vous plait"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "#",
+                className: "category-name",
+                children: "Etiquette in space"
+              })]
+            })]
+          })
+        })]
+      })
+    });
+    $[11] = t11;
+  } else {
+    t11 = $[11];
+  }
+  let t12;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+        children: "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430"
+      })
+    });
+    $[12] = t12;
+  } else {
+    t12 = $[12];
+  }
+  let t13;
+  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-2-1.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[13] = t13;
+  } else {
+    t13 = $[13];
+  }
+  let t14;
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[14] = t14;
+  } else {
+    t14 = $[14];
+  }
+  let t15;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "favorite-channel",
+        children: [t13, t14, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "favorite-channel-info",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+            className: "favorite-channel-title",
+            children: "satriano"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            className: "category-name",
+            children: "Software and game development"
+          })]
+        })]
+      })
+    });
+    $[15] = t15;
+  } else {
+    t15 = $[15];
+  }
+  let t16;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-2-2.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[16] = t16;
+  } else {
+    t16 = $[16];
+  }
+  let t17;
+  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[17] = t17;
+  } else {
+    t17 = $[17];
+  }
+  let t18;
+  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "favorite-channel",
+        children: [t16, t17, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "favorite-channel-info",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+            className: "favorite-channel-title",
+            children: "LikeAPro"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            className: "category-name",
+            children: "Software and game development"
+          })]
+        })]
+      })
+    });
+    $[18] = t18;
+  } else {
+    t18 = $[18];
+  }
+  let t19;
+  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-2-3.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[19] = t19;
+  } else {
+    t19 = $[19];
+  }
+  let t20;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[20] = t20;
+  } else {
+    t20 = $[20];
+  }
+  let t21;
+  if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channels",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+        children: [t15, t18, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "favorite-channel",
+            children: [t19, t20, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "favorite-channel-info",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+                className: "favorite-channel-title",
+                children: "VioletStar"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "#",
+                className: "category-name",
+                children: "Software and game development"
+              })]
+            })]
+          })
+        })]
+      })
+    });
+    $[21] = t21;
+  } else {
+    t21 = $[21];
+  }
+  let t22;
+  if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
+    t22 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+        children: "\u041E\u0431\u0449\u0435\u043D\u0438\u0435"
+      })
+    });
+    $[22] = t22;
+  } else {
+    t22 = $[22];
+  }
+  let t23;
+  if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-3-1.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[23] = t23;
+  } else {
+    t23 = $[23];
+  }
+  let t24;
+  if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[24] = t24;
+  } else {
+    t24 = $[24];
+  }
+  let t25;
+  if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "favorite-channel",
+        children: [t23, t24, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "favorite-channel-info",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+            className: "favorite-channel-title",
+            children: "LuckyKhajiit"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            className: "category-name",
+            children: "Skyrim Chatting"
+          })]
+        })]
+      })
+    });
+    $[25] = t25;
+  } else {
+    t25 = $[25];
+  }
+  let t26;
+  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-3-2.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[26] = t26;
+  } else {
+    t26 = $[26];
+  }
+  let t27;
+  if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+    t27 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[27] = t27;
+  } else {
+    t27 = $[27];
+  }
+  let t28;
+  if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
+    t28 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "favorite-channel",
+        children: [t26, t27, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "favorite-channel-info",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+            className: "favorite-channel-title",
+            children: "chatgpt_24_7"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            className: "category-name",
+            children: "Just Chatting"
+          })]
+        })]
+      })
+    });
+    $[28] = t28;
+  } else {
+    t28 = $[28];
+  }
+  let t29;
+  if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
+    t29 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+          src: "./images/favorite-channels-ava-3-3.svg",
+          alt: "personal account"
+        })
+      })
+    });
+    $[29] = t29;
+  } else {
+    t29 = $[29];
+  }
+  let t30;
+  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+    t30 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "stream-live-indicator",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u2B24"
+      })
+    });
+    $[30] = t30;
+  } else {
+    t30 = $[30];
+  }
+  let t31;
+  if ($[31] === Symbol.for("react.memo_cache_sentinel")) {
+    t31 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-channels",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+        children: [t25, t28, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "favorite-channel",
+            children: [t29, t30, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+              className: "favorite-channel-info",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+                className: "favorite-channel-title",
+                children: "\u0421hat Master"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "#",
+                className: "category-name",
+                children: "Just Chatting"
+              })]
+            })]
+          })
+        })]
+      })
+    });
+    $[31] = t31;
+  } else {
+    t31 = $[31];
+  }
+  let t32;
+  if ($[32] === Symbol.for("react.memo_cache_sentinel")) {
+    t32 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "favourite-channels-blocks",
+        children: [t2, t11, t12, t21, t22, t31, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "favorite-category",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+            children: "\u0414\u0440\u0443\u0433\u043E\u0435"
+          })
+        })]
+      })]
+    });
+    $[32] = t32;
+  } else {
+    t32 = $[32];
+  }
+  return t32;
+}
+
+/***/ },
+
 /***/ "./src/js/components/Footer.js"
 /*!*************************************!*\
   !*** ./src/js/components/Footer.js ***!
@@ -302,6 +1454,50 @@ function Footer({}) {
 
 /***/ },
 
+/***/ "./src/js/components/GoToBtn.js"
+/*!**************************************!*\
+  !*** ./src/js/components/GoToBtn.js ***!
+  \**************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ GoToBtn)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function GoToBtn(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(1);
+  const handleClick = _temp;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "show-all-button-row",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+          className: "show-all-button",
+          type: "button",
+          onClick: handleClick,
+          "aria-label": "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u0432 \u0440\u0430\u0437\u0434\u0435\u043B \u0432\u0441\u0435\u0445 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0439 \u0438 \u0436\u0430\u043D\u0440\u043E\u0432",
+          children: "\u041D\u0430\u0437\u0430\u0434 \u043D\u0430 \u0433\u043B\u0430\u0432\u043D\u0443\u044E"
+        })
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  return t1;
+}
+function _temp() {
+  window.location.href = "./index.html";
+}
+
+/***/ },
+
 /***/ "./src/js/components/Header.js"
 /*!*************************************!*\
   !*** ./src/js/components/Header.js ***!
@@ -325,7 +1521,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(40);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(39);
   let t1;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t1 = ["dark", "light"];
@@ -386,6 +1582,7 @@ function Header(t0) {
   }
   const themesMap = t3;
   const [currentTheme, setTheme] = (0,_utils_common__WEBPACK_IMPORTED_MODULE_3__.useLocalStorage)("currentTheme", "dark");
+  const [currentUser, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("currentUser");
   let t4;
   if ($[3] !== setTheme) {
     t4 = themeId => {
@@ -453,49 +1650,56 @@ function Header(t0) {
   }
   const updateTheme = t4;
   let t5;
-  if ($[5] !== currentTheme || $[6] !== updateTheme) {
+  if ($[5] !== currentTheme) {
     t5 = () => {
-      updateTheme(currentTheme);
+      console.log({
+        currentTheme
+      });
+      const authStr = localStorage.getItem("auth");
+      const auth = authStr ? JSON.parse(authStr) : {};
+      setUser(auth);
+      console.log({
+        auth
+      });
     };
     $[5] = currentTheme;
-    $[6] = updateTheme;
-    $[7] = t5;
+    $[6] = t5;
   } else {
-    t5 = $[7];
+    t5 = $[6];
   }
   let t6;
-  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
     t6 = [];
-    $[8] = t6;
+    $[7] = t6;
   } else {
-    t6 = $[8];
+    t6 = $[7];
   }
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t5, t6);
   let t7;
-  if ($[9] !== currentTheme || $[10] !== updateTheme) {
+  if ($[8] !== currentTheme || $[9] !== updateTheme) {
     t7 = () => {
       console.log("\u041A\u043D\u043E\u043F\u043A\u0430 \u043D\u0430\u0436\u0430\u0442\u0430!");
       const currentIndex = themes.indexOf(currentTheme);
       const nextIndex = (currentIndex + 1) % themes.length;
       updateTheme(themes[nextIndex]);
     };
-    $[9] = currentTheme;
-    $[10] = updateTheme;
-    $[11] = t7;
+    $[8] = currentTheme;
+    $[9] = updateTheme;
+    $[10] = t7;
   } else {
-    t7 = $[11];
+    t7 = $[10];
   }
   const handleClick = t7;
   let t8;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[12] = t8;
+    $[11] = t8;
   } else {
-    t8 = $[12];
+    t8 = $[11];
   }
   const t9 = `./images/logo-moon-header-${currentTheme}.png`;
   let t10;
-  if ($[13] !== t9) {
+  if ($[12] !== t9) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
       href: "./index.html",
       className: "logo-img",
@@ -506,36 +1710,36 @@ function Header(t0) {
         className: "logo-icon"
       })
     });
-    $[13] = t9;
-    $[14] = t10;
+    $[12] = t9;
+    $[13] = t10;
   } else {
-    t10 = $[14];
+    t10 = $[13];
   }
   let t11;
-  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
     t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
       id: "logo-text",
       className: "logo-text",
       children: "Moon.tv"
     });
-    $[15] = t11;
+    $[14] = t11;
   } else {
-    t11 = $[15];
+    t11 = $[14];
   }
   let t12;
-  if ($[16] !== t10) {
+  if ($[15] !== t10) {
     t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "logo-container",
       children: [t10, t11]
     });
-    $[16] = t10;
-    $[17] = t12;
+    $[15] = t10;
+    $[16] = t12;
   } else {
-    t12 = $[17];
+    t12 = $[16];
   }
   const t13 = `./images/header-icon-music-${currentTheme}.svg`;
   let t14;
-  if ($[18] !== t13) {
+  if ($[17] !== t13) {
     t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -548,25 +1752,25 @@ function Header(t0) {
         })
       })
     });
-    $[18] = t13;
-    $[19] = t14;
+    $[17] = t13;
+    $[18] = t14;
   } else {
-    t14 = $[19];
+    t14 = $[18];
   }
   const t15 = `./images/header-icon-theme-${currentTheme}.svg`;
   let t16;
-  if ($[20] !== t15) {
+  if ($[19] !== t15) {
     t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: t15,
       title: "theme"
     });
-    $[20] = t15;
-    $[21] = t16;
+    $[19] = t15;
+    $[20] = t16;
   } else {
-    t16 = $[21];
+    t16 = $[20];
   }
   let t17;
-  if ($[22] !== handleClick || $[23] !== t16) {
+  if ($[21] !== handleClick || $[22] !== t16) {
     t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       id: "themeToggle",
       onClick: handleClick,
@@ -575,15 +1779,15 @@ function Header(t0) {
       "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: t16
     });
-    $[22] = handleClick;
-    $[23] = t16;
-    $[24] = t17;
+    $[21] = handleClick;
+    $[22] = t16;
+    $[23] = t17;
   } else {
-    t17 = $[24];
+    t17 = $[23];
   }
   const t18 = `./images/header-icon-globe-${currentTheme}.svg`;
   let t19;
-  if ($[25] !== t18) {
+  if ($[24] !== t18) {
     t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -596,14 +1800,14 @@ function Header(t0) {
         })
       })
     });
-    $[25] = t18;
-    $[26] = t19;
+    $[24] = t18;
+    $[25] = t19;
   } else {
-    t19 = $[26];
+    t19 = $[25];
   }
   const t20 = `./images/header-icon-login-${currentTheme}.svg`;
   let t21;
-  if ($[27] !== t20) {
+  if ($[26] !== t20) {
     t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -616,14 +1820,14 @@ function Header(t0) {
         })
       })
     });
-    $[27] = t20;
-    $[28] = t21;
+    $[26] = t20;
+    $[27] = t21;
   } else {
-    t21 = $[28];
+    t21 = $[27];
   }
-  const t22 = `./images/avatar-disabled-${currentTheme}.svg`;
+  const t22 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
   let t23;
-  if ($[29] !== t22) {
+  if ($[28] !== t22) {
     t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "login",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
@@ -639,41 +1843,266 @@ function Header(t0) {
         })
       })
     });
-    $[29] = t22;
-    $[30] = t23;
+    $[28] = t22;
+    $[29] = t23;
   } else {
-    t23 = $[30];
+    t23 = $[29];
   }
   let t24;
-  if ($[31] !== t14 || $[32] !== t17 || $[33] !== t19 || $[34] !== t21 || $[35] !== t23) {
+  if ($[30] !== t14 || $[31] !== t17 || $[32] !== t19 || $[33] !== t21 || $[34] !== t23) {
     t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "container-menu",
       children: [t14, t17, t19, t21, t23]
     });
-    $[31] = t14;
-    $[32] = t17;
-    $[33] = t19;
-    $[34] = t21;
-    $[35] = t23;
-    $[36] = t24;
+    $[30] = t14;
+    $[31] = t17;
+    $[32] = t19;
+    $[33] = t21;
+    $[34] = t23;
+    $[35] = t24;
   } else {
-    t24 = $[36];
+    t24 = $[35];
   }
   let t25;
-  if ($[37] !== t12 || $[38] !== t24) {
+  if ($[36] !== t12 || $[37] !== t24) {
     t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
         className: "site-header",
         children: [t8, t12, t24]
       })
     });
-    $[37] = t12;
-    $[38] = t24;
-    $[39] = t25;
+    $[36] = t12;
+    $[37] = t24;
+    $[38] = t25;
   } else {
-    t25 = $[39];
+    t25 = $[38];
   }
   return t25;
+}
+
+/***/ },
+
+/***/ "./src/js/components/HomePage.js"
+/*!***************************************!*\
+  !*** ./src/js/components/HomePage.js ***!
+  \***************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ HomePage)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
+/* harmony import */ var _Banner__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Banner */ "./src/js/components/Banner.js");
+/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
+/* harmony import */ var _FavoriteChannels__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FavoriteChannels */ "./src/js/components/FavoriteChannels.js");
+/* harmony import */ var _ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ChannelCardsLine */ "./src/js/components/ChannelCardsLine.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+function HomePage(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(32);
+  const {
+    db
+  } = t0;
+  let t1;
+  let t2;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Banner__WEBPACK_IMPORTED_MODULE_2__["default"], {});
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_FavoriteChannels__WEBPACK_IMPORTED_MODULE_4__["default"], {});
+    $[0] = t1;
+    $[1] = t2;
+  } else {
+    t1 = $[0];
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-categories-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h2", {
+        children: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
+      })
+    });
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] !== db) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u0438\u0433\u0440 \u0438 \u041F\u041E",
+        categoryId: 1,
+        showAll: false
+      })
+    });
+    $[3] = db;
+    $[4] = t4;
+  } else {
+    t4 = $[4];
+  }
+  let t5;
+  if ($[5] !== db) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "\u041C\u0443\u0437\u044B\u043A\u0430",
+        categoryId: 2,
+        showAll: false
+      })
+    });
+    $[5] = db;
+    $[6] = t5;
+  } else {
+    t5 = $[6];
+  }
+  let t6;
+  if ($[7] !== db) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 \u044F\u0437\u044B\u043A",
+        categoryId: 3,
+        showAll: false
+      })
+    });
+    $[7] = db;
+    $[8] = t6;
+  } else {
+    t6 = $[8];
+  }
+  let t7;
+  if ($[9] !== db) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "\u0414\u0438\u0414\u0436\u0435\u0438",
+        categoryId: 4,
+        showAll: false
+      })
+    });
+    $[9] = db;
+    $[10] = t7;
+  } else {
+    t7 = $[10];
+  }
+  let t8;
+  if ($[11] !== db) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "\u0422\u0430\u043D\u0446\u044B",
+        categoryId: 5,
+        showAll: false
+      })
+    });
+    $[11] = db;
+    $[12] = t8;
+  } else {
+    t8 = $[12];
+  }
+  let t9;
+  if ($[13] !== db) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "\u0427\u0442\u0435\u043D\u0438\u0435 \u0438 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E",
+        categoryId: 6,
+        showAll: false
+      })
+    });
+    $[13] = db;
+    $[14] = t9;
+  } else {
+    t9 = $[14];
+  }
+  let t10;
+  if ($[15] !== db) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "TDU2",
+        categoryId: 7,
+        showAll: false
+      })
+    });
+    $[15] = db;
+    $[16] = t10;
+  } else {
+    t10 = $[16];
+  }
+  let t11;
+  if ($[17] !== db) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "favourite-category-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db,
+        title: "Skyrim",
+        categoryId: 8,
+        showAll: false
+      })
+    });
+    $[17] = db;
+    $[18] = t11;
+  } else {
+    t11 = $[18];
+  }
+  let t12;
+  if ($[19] !== t10 || $[20] !== t11 || $[21] !== t4 || $[22] !== t5 || $[23] !== t6 || $[24] !== t7 || $[25] !== t8 || $[26] !== t9) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "favourite-categories",
+      children: [t3, t4, t5, t6, t7, t8, t9, t10, t11]
+    });
+    $[19] = t10;
+    $[20] = t11;
+    $[21] = t4;
+    $[22] = t5;
+    $[23] = t6;
+    $[24] = t7;
+    $[25] = t8;
+    $[26] = t9;
+    $[27] = t12;
+  } else {
+    t12 = $[27];
+  }
+  let t13;
+  if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_3__["default"], {});
+    $[28] = t13;
+  } else {
+    t13 = $[28];
+  }
+  let t14;
+  if ($[29] !== db || $[30] !== t12) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        db: db,
+        children: [t1, t2, t12, t13]
+      })
+    });
+    $[29] = db;
+    $[30] = t12;
+    $[31] = t14;
+  } else {
+    t14 = $[31];
+  }
+  return t14;
 }
 
 /***/ },
@@ -813,6 +2242,246 @@ function HorizontalMenuBtn(t0) {
     t4 = $[6];
   }
   return t4;
+}
+
+/***/ },
+
+/***/ "./src/js/components/Layout.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Layout.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Layout)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./src/js/components/Footer.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/js/components/Header.js");
+/* harmony import */ var _HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
+/* harmony import */ var _VerticalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Notification */ "./src/js/components/Notification.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+function Layout(props) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(19);
+  const showFooter = props.showFooter === undefined ? true : props.showFooter;
+  const {
+    db,
+    children
+  } = props;
+  let t0;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t0 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      id: "react-header",
+      className: "site-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+    });
+    $[0] = t0;
+  } else {
+    t0 = $[0];
+  }
+  let t1;
+  if ($[1] !== db) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "vertical-menu-container",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("nav", {
+        className: "vertical-menu",
+        id: "vertical-menu",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_VerticalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          db: db
+        })
+      })
+    });
+    $[1] = db;
+    $[2] = t1;
+  } else {
+    t1 = $[2];
+  }
+  let t2;
+  if ($[3] !== db) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      id: "react-horizontal-menu",
+      className: "horizontal-menu",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        db: db
+      })
+    });
+    $[3] = db;
+    $[4] = t2;
+  } else {
+    t2 = $[4];
+  }
+  let t3;
+  if ($[5] !== children || $[6] !== t2) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "main-of-the-main",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "horizontal-blocks",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "main-screen-block",
+          children: [t2, children]
+        })
+      })
+    });
+    $[5] = children;
+    $[6] = t2;
+    $[7] = t3;
+  } else {
+    t3 = $[7];
+  }
+  let t4;
+  if ($[8] !== t1 || $[9] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "vertical-blocks",
+      children: [t1, t3]
+    });
+    $[8] = t1;
+    $[9] = t3;
+    $[10] = t4;
+  } else {
+    t4 = $[10];
+  }
+  let t5;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_5__["default"], {});
+    $[11] = t5;
+  } else {
+    t5 = $[11];
+  }
+  let t6;
+  if ($[12] !== t4) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
+      children: [t4, t5]
+    });
+    $[12] = t4;
+    $[13] = t6;
+  } else {
+    t6 = $[13];
+  }
+  let t7;
+  if ($[14] !== showFooter) {
+    t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("footer", {
+      className: "site-footer",
+      id: "react-footer",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+    });
+    $[14] = showFooter;
+    $[15] = t7;
+  } else {
+    t7 = $[15];
+  }
+  let t8;
+  if ($[16] !== t6 || $[17] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        className: "page",
+        children: [t0, t6, t7]
+      })
+    });
+    $[16] = t6;
+    $[17] = t7;
+    $[18] = t8;
+  } else {
+    t8 = $[18];
+  }
+  return t8;
+}
+
+/***/ },
+
+/***/ "./src/js/components/Notification.js"
+/*!*******************************************!*\
+  !*** ./src/js/components/Notification.js ***!
+  \*******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Notification)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function Notification(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(5);
+  let t1;
+  let t2;
+  let t3;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "notification-moon-logo-1",
+      src: "./img/notification-moon-1.svg",
+      alt: "moon-logo"
+    });
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "notification-moon-logo-2",
+      src: "./img/notification-moon-2.svg",
+      alt: "moon-logo"
+    });
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "notification-moon-logo-3",
+      src: "./img/notification-moon-3.svg",
+      alt: "moon-logo"
+    });
+    $[0] = t1;
+    $[1] = t2;
+    $[2] = t3;
+  } else {
+    t1 = $[0];
+    t2 = $[1];
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: "/page",
+      className: "link-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+        children: "\u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0442\u0435\u0441\u044C \u043A \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0443 \u043C\u0435\u0436\u0433\u0430\u043B\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0439 \u043D\u0430 Moon.tv!"
+      })
+    });
+    $[3] = t4;
+  } else {
+    t4 = $[3];
+  }
+  let t5;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "notification",
+        id: "myElement",
+        children: [t1, t2, t3, t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "/page",
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            type: "button",
+            className: "button-notification",
+            children: "\u0412\u043E\u0439\u0442\u0438 / \u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+          id: "closeButton",
+          type: "button",
+          className: "btn-close",
+          "aria-label": "Close"
+        })]
+      })
+    });
+    $[4] = t5;
+  } else {
+    t5 = $[4];
+  }
+  return t5;
 }
 
 /***/ },
@@ -1042,402 +2711,6 @@ function _temp(text, wordCount) {
   }
   return words.slice(0, wordCount).join(" ") + "...";
 }
-
-/***/ },
-
-/***/ "./src/js/components/banner.js"
-/*!*************************************!*\
-  !*** ./src/js/components/banner.js ***!
-  \*************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Banner)
-/* harmony export */ });
-/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-function Banner(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(20);
-  let t1;
-  let t2;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-      className: "carousel-btn prev-btn",
-      "aria-label": "\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0435 \u0432\u0438\u0434\u0435\u043E",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
-        className: "carousel-arrow",
-        width: "40px",
-        height: "40px",
-        viewBox: "0 0 24 24",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-          d: "M17 9H5.414l3.293-3.293a.999.999 0 10-1.414-1.414l-5 5a.999.999 0 000 1.414l5 5a.997.997 0 001.414 0 .999.999 0 000-1.414L5.414 11H17a1 1 0 100-2z",
-          fill: "#FFFFFF"
-        })
-      })
-    });
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("iframe", {
-      width: "1138px",
-      height: "574px",
-      src: "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
-      title: "YouTube video player",
-      frameBorder: "0",
-      allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
-      referrerPolicy: "strict-origin-when-cross-origin",
-      allowFullScreen: true
-    });
-    $[0] = t1;
-    $[1] = t2;
-  } else {
-    t1 = $[0];
-    t2 = $[1];
-  }
-  let t3;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-      className: "carousel-btn next-btn",
-      "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0435 \u0432\u0438\u0434\u0435\u043E",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
-        className: "carousel-arrow",
-        width: "40px",
-        height: "40px",
-        viewBox: "0 0 24 24",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-          d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
-          fill: "#FFFFFF"
-        })
-      })
-    });
-    $[2] = t3;
-  } else {
-    t3 = $[2];
-  }
-  let t4;
-  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "banner-ava",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          src: "./images/banner-ava.jpg",
-          alt: "banner ava"
-        })
-      })
-    });
-    $[3] = t4;
-  } else {
-    t4 = $[3];
-  }
-  let t5;
-  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-      href: "./channel.html",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-        children: "\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E \u0438\u0433\u0440\u0443 KUPOL : \u0432\u044B\u0440\u0430\u0449\u0438\u0432\u0430\u043D\u0438\u0435 \u0444\u0440\u0443\u043A\u0442\u043E\u0432\u044B\u0445 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432 \u043D\u0430 \u041B\u0443\u043D\u0435"
-      })
-    });
-    $[4] = t5;
-  } else {
-    t5 = $[4];
-  }
-  let t6;
-  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "banner-stream-info",
-      children: [t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "stream-info",
-        children: [t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "./channel.html",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-            children: "\u0414\u0435\u043D\u044C 4 / \u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "./channel.html",
-          children: "neuro_activate"
-        })]
-      })]
-    });
-    $[5] = t6;
-  } else {
-    t6 = $[5];
-  }
-  let t7;
-  let t8;
-  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
-    });
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-      children: "\u2B24"
-    });
-    $[6] = t7;
-    $[7] = t8;
-  } else {
-    t7 = $[6];
-    t8 = $[7];
-  }
-  let t9;
-  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "live-watchers",
-      children: [t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "viewer-count",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-          id: "current-viewers",
-          children: "323"
-        })
-      })]
-    });
-    $[8] = t9;
-  } else {
-    t9 = $[8];
-  }
-  let t10;
-  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "video-carousel",
-      children: [t1, t2, t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "banner-info",
-          children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-            className: "stream-statistic",
-            children: [t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-              className: "age-rating-row",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-                className: "age-rating",
-                children: "12+"
-              })
-            })]
-          })]
-        })
-      })]
-    });
-    $[9] = t10;
-  } else {
-    t10 = $[9];
-  }
-  let t11;
-  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "promo-stream-cover",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          src: "./images/banner-stream-prewiev-1.jpg",
-          alt: "stream prewiev"
-        })
-      })
-    });
-    $[10] = t11;
-  } else {
-    t11 = $[10];
-  }
-  let t12;
-  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "promo1",
-      children: [t11, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "promo-stream-info",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
-          children: "\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E \u0438\u0433\u0440\u0443 KUPOL \u0414\u0435\u043D\u044C 4 / \u041E\u0441\u043D\u043E\u0432\u043D\u0430\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u044F"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "./channel.html",
-          children: "neuro_activate"
-        })]
-      })]
-    });
-    $[11] = t12;
-  } else {
-    t12 = $[11];
-  }
-  let t13;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "promo-stream-cover",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          src: "./images/banner-stream-prewiev-2.jpg",
-          alt: "stream prewiev"
-        })
-      })
-    });
-    $[12] = t13;
-  } else {
-    t13 = $[12];
-  }
-  let t14;
-  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "promo2",
-      children: [t13, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "promo-stream-info",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
-          children: "Skyrim-\u043F\u0440\u043E\u043A\u0430\u0447\u043A\u0430 \u0434\u043E 17 \u0443\u0440\u043E\u0432\u043D\u044F \u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E \u0434\u043E 1-\u0433\u043E..."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "./channel.html",
-          children: "LuckyKhajiit"
-        })]
-      })]
-    });
-    $[13] = t14;
-  } else {
-    t14 = $[13];
-  }
-  let t15;
-  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
-    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "promo-stream-cover",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          src: "./images/banner-stream-prewiev-3.jpg",
-          alt: "stream prewiev"
-        })
-      })
-    });
-    $[14] = t15;
-  } else {
-    t15 = $[14];
-  }
-  let t16;
-  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "promo3",
-      children: [t15, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "promo-stream-info",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
-          children: "\u0421\u043C\u0435\u0448\u0430\u0440\u0438\u043A\u0438 3 \u0447\u0430\u0441\u0430 \u043F\u043E\u0434\u0440\u044F\u0434 - \u0427\u0430\u0441\u0442\u044C 1-\u0430\u044F \u0438\u0437 10-\u0442\u0438"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "./channel.html",
-          children: "MultiPupsik"
-        })]
-      })]
-    });
-    $[15] = t16;
-  } else {
-    t16 = $[15];
-  }
-  let t17;
-  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "promo-stream-cover",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          src: "./images/banner-stream-prewiev-4.jpg",
-          alt: "stream prewiev"
-        })
-      })
-    });
-    $[16] = t17;
-  } else {
-    t17 = $[16];
-  }
-  let t18;
-  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
-    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "promo4",
-      children: [t17, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "promo-stream-info",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
-          children: "\u041A\u0440\u0443\u0442\u043E\u0439 \u0437\u0430\u043C\u0435\u0441. \u0414\u0435\u043B\u0430\u0435\u043C \u0440\u044B\u0431\u043E\u043A \u0438\u0437 \u043C\u0430\u0440\u0441\u0438\u0430\u043D\u0441\u043A\u043E\u0439 \u0433\u043B\u0438\u043D\u044B"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "./channel.html",
-          children: "KidsPlanet"
-        })]
-      })]
-    });
-    $[17] = t18;
-  } else {
-    t18 = $[17];
-  }
-  let t19;
-  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "promo-stream-cover",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-          src: "./images/banner-stream-prewiev-5.jpg",
-          alt: "stream prewiev"
-        })
-      })
-    });
-    $[18] = t19;
-  } else {
-    t19 = $[18];
-  }
-  let t20;
-  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
-    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-      children: [t10, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "promo",
-        children: [t12, t14, t16, t18, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "promo5",
-          children: [t19, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-            className: "promo-stream-info",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
-              children: "PRO\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0434\u043B\u044F \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E "
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-              href: "./channel.html",
-              children: "Programming "
-            })]
-          })]
-        })]
-      })]
-    });
-    $[19] = t20;
-  } else {
-    t20 = $[19];
-  }
-  return t20;
-}
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const prevBtn = document.querySelector('.prev-btn');
-//   const nextBtn = document.querySelector('.next-btn');
-//   const videoElement = document.querySelector('.current-video');
-
-//   // Массив с путями к видео
-//   const videos = [
-//     'video1.mp4',
-//     'video2.mp4',
-//     'video3.mp4'
-//   ];
-
-//   let currentIndex = 0;
-
-//   function loadVideo(index) {
-//     const videoSrc = videos[index];
-//     videoElement.src = videoSrc;
-//     videoElement.load();
-//   }
-
-//   prevBtn.addEventListener('click', function() {
-//     currentIndex = (currentIndex - 1 + videos.length) % videos.length;
-//     loadVideo(currentIndex);
-//   });
-
-//   nextBtn.addEventListener('click', function() {
-//     currentIndex = (currentIndex + 1) % videos.length;
-//     loadVideo(currentIndex);
-//   });
-
-//   // Загружаем первое видео при инициализации
-//   loadVideo(currentIndex);
-// });
-
-/* Автопрокрутка (может и не нужна, чтобы не мельтешила перед глазами главная трансляция века: если есть кнопки перелистывания тем более */
-// setInterval(() => {
-//   nextBtn.click();
-// }, 5000); // каждые 5 секунд
 
 /***/ },
 
@@ -49621,6 +50894,17 @@ module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"chan
 "use strict";
 module.exports = /*#__PURE__*/JSON.parse('{"tags":[{"id":1,"name":"Обучение"},{"id":2,"name":"Французский"},{"id":3,"name":"Русский"},{"id":4,"name":"Английский"},{"id":5,"name":"Игры"},{"id":6,"name":"Танцы"},{"id":7,"name":"Искусство"},{"id":8,"name":"Общение"},{"id":9,"name":"Музыка"},{"id":10,"name":"Хобби"},{"id":11,"name":"Спорт"},{"id":12,"name":"Отдых"},{"id":13,"name":"Красота"},{"id":14,"name":"Другое"},{"id":15,"name":"Творчество"},{"id":16,"name":"Кулинария"},{"id":17,"name":"Новости"}]}');
 
+/***/ },
+
+/***/ "./src/db/users.json"
+/*!***************************!*\
+  !*** ./src/db/users.json ***!
+  \***************************/
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"users":[{"username":"admin","email":"konfeta@mail.ru","password":"12345"},{"username":"user","email":"zefir@mail.ru","password":"password"}]}');
+
 /***/ }
 
 /******/ 	});
@@ -49736,13 +51020,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_components_banner_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/components/_banner.scss */ "./src/scss/components/_banner.scss");
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Header */ "./src/js/components/Header.js");
-/* harmony import */ var _components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var _components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
-/* harmony import */ var _components_banner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/banner */ "./src/js/components/banner.js");
-/* harmony import */ var _components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/ChannelCards */ "./src/js/components/ChannelCards.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Footer */ "./src/js/components/Footer.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_HomePage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/HomePage */ "./src/js/components/HomePage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -49751,100 +51030,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-/* A pop-up orange-row notification: */
-/* вариант 3 (более плавное исчезновение блока): */
-
-document.getElementById('closeButton').addEventListener('click', function () {
-  const element = document.getElementById('myElement');
-  element.classList.add('fade-out');
-  // Удаляем элемент из потока после завершения анимации
-  setTimeout(() => {
-    element.style.display = 'none';
-  }, 500);
-});
-const header = document.getElementById('react-header');
-const rootHeader = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(header);
-rootHeader.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], {}));
-
-// react-banner
-const banner = document.getElementById('react-banner');
-const rootBanner = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(banner);
-rootBanner.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_banner__WEBPACK_IMPORTED_MODULE_9__["default"], {}));
-const verticalMenu = document.getElementById('vertical-menu');
-const rootVerticalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(verticalMenu);
-rootVerticalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_VerticalMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  showAll: false
-}));
-const horizontalMenu = document.getElementById('react-horizontal-menu');
-const rootHorizontalMenu = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(horizontalMenu);
-rootHorizontalMenu.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_HorizontalMenu__WEBPACK_IMPORTED_MODULE_8__["default"], {
+const body = document.getElementById('react-body');
+const rootBody = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(body);
+rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_HomePage__WEBPACK_IMPORTED_MODULE_6__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"]
 }));
-const favoriteSoftwareDev = document.getElementById('favorite_software_development');
-let categoryId = 1;
-const rootSoftwareDev = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteSoftwareDev);
-rootSoftwareDev.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const favoriteMusic = document.getElementById('favorite_music');
-categoryId = 2;
-const rootMusic = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteMusic);
-rootMusic.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const favoriteEnglish = document.getElementById('favorite_english');
-categoryId = 3;
-const rootEnglish = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteEnglish);
-rootEnglish.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const favoriteDJs = document.getElementById('favorite_djs');
-categoryId = 4;
-const rootDJs = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteDJs);
-rootDJs.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const favoriteDance = document.getElementById('favorite_dance');
-categoryId = 5;
-const rootDance = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteDance);
-rootDance.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const favoriteReading = document.getElementById('favorite_reading');
-categoryId = 6;
-const rootReading = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteReading);
-rootReading.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const favoriteTDU2 = document.getElementById('favorite_tdu2');
-categoryId = 7;
-const rootTDU2 = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteTDU2);
-rootTDU2.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const favoriteSkyrim = document.getElementById('favorite_skyrim');
-categoryId = 8;
-const rootSkyrim = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(favoriteSkyrim);
-rootSkyrim.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_ChannelCards__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"],
-  categoryId: categoryId
-}));
-const footer = document.getElementById('react-footer');
-const rootFooter = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(footer);
-rootFooter.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {}));
 })();
 
 /******/ })()

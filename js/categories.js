@@ -17,6 +17,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _categories_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./categories.json */ "./src/db/categories.json");
 /* harmony import */ var _tags_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tags.json */ "./src/db/tags.json");
 /* harmony import */ var _clips_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clips.json */ "./src/db/clips.json");
+/* harmony import */ var _users_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users.json */ "./src/db/users.json");
+
 
 
 
@@ -66,12 +68,14 @@ const channelsModel = new DBHelper(_channels_json__WEBPACK_IMPORTED_MODULE_1__.c
 const categoriesModel = new DBHelper(_categories_json__WEBPACK_IMPORTED_MODULE_2__.categories);
 const tagsModel = new DBHelper(_tags_json__WEBPACK_IMPORTED_MODULE_3__.tags);
 const clipsModel = new DBHelper(_clips_json__WEBPACK_IMPORTED_MODULE_4__.clips);
+const usersModel = new DBHelper(_users_json__WEBPACK_IMPORTED_MODULE_5__.users);
 const db = {
   streamsModel,
   channelsModel,
   categoriesModel,
   tagsModel,
-  clipsModel
+  clipsModel,
+  usersModel
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (db);
 
@@ -583,7 +587,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(40);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(39);
   let t1;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t1 = ["dark", "light"];
@@ -644,6 +648,7 @@ function Header(t0) {
   }
   const themesMap = t3;
   const [currentTheme, setTheme] = (0,_utils_common__WEBPACK_IMPORTED_MODULE_3__.useLocalStorage)("currentTheme", "dark");
+  const [currentUser, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("currentUser");
   let t4;
   if ($[3] !== setTheme) {
     t4 = themeId => {
@@ -711,49 +716,56 @@ function Header(t0) {
   }
   const updateTheme = t4;
   let t5;
-  if ($[5] !== currentTheme || $[6] !== updateTheme) {
+  if ($[5] !== currentTheme) {
     t5 = () => {
-      updateTheme(currentTheme);
+      console.log({
+        currentTheme
+      });
+      const authStr = localStorage.getItem("auth");
+      const auth = authStr ? JSON.parse(authStr) : {};
+      setUser(auth);
+      console.log({
+        auth
+      });
     };
     $[5] = currentTheme;
-    $[6] = updateTheme;
-    $[7] = t5;
+    $[6] = t5;
   } else {
-    t5 = $[7];
+    t5 = $[6];
   }
   let t6;
-  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
     t6 = [];
-    $[8] = t6;
+    $[7] = t6;
   } else {
-    t6 = $[8];
+    t6 = $[7];
   }
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t5, t6);
   let t7;
-  if ($[9] !== currentTheme || $[10] !== updateTheme) {
+  if ($[8] !== currentTheme || $[9] !== updateTheme) {
     t7 = () => {
       console.log("\u041A\u043D\u043E\u043F\u043A\u0430 \u043D\u0430\u0436\u0430\u0442\u0430!");
       const currentIndex = themes.indexOf(currentTheme);
       const nextIndex = (currentIndex + 1) % themes.length;
       updateTheme(themes[nextIndex]);
     };
-    $[9] = currentTheme;
-    $[10] = updateTheme;
-    $[11] = t7;
+    $[8] = currentTheme;
+    $[9] = updateTheme;
+    $[10] = t7;
   } else {
-    t7 = $[11];
+    t7 = $[10];
   }
   const handleClick = t7;
   let t8;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[12] = t8;
+    $[11] = t8;
   } else {
-    t8 = $[12];
+    t8 = $[11];
   }
   const t9 = `./images/logo-moon-header-${currentTheme}.png`;
   let t10;
-  if ($[13] !== t9) {
+  if ($[12] !== t9) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
       href: "./index.html",
       className: "logo-img",
@@ -764,36 +776,36 @@ function Header(t0) {
         className: "logo-icon"
       })
     });
-    $[13] = t9;
-    $[14] = t10;
+    $[12] = t9;
+    $[13] = t10;
   } else {
-    t10 = $[14];
+    t10 = $[13];
   }
   let t11;
-  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
     t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
       id: "logo-text",
       className: "logo-text",
       children: "Moon.tv"
     });
-    $[15] = t11;
+    $[14] = t11;
   } else {
-    t11 = $[15];
+    t11 = $[14];
   }
   let t12;
-  if ($[16] !== t10) {
+  if ($[15] !== t10) {
     t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "logo-container",
       children: [t10, t11]
     });
-    $[16] = t10;
-    $[17] = t12;
+    $[15] = t10;
+    $[16] = t12;
   } else {
-    t12 = $[17];
+    t12 = $[16];
   }
   const t13 = `./images/header-icon-music-${currentTheme}.svg`;
   let t14;
-  if ($[18] !== t13) {
+  if ($[17] !== t13) {
     t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -806,25 +818,25 @@ function Header(t0) {
         })
       })
     });
-    $[18] = t13;
-    $[19] = t14;
+    $[17] = t13;
+    $[18] = t14;
   } else {
-    t14 = $[19];
+    t14 = $[18];
   }
   const t15 = `./images/header-icon-theme-${currentTheme}.svg`;
   let t16;
-  if ($[20] !== t15) {
+  if ($[19] !== t15) {
     t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: t15,
       title: "theme"
     });
-    $[20] = t15;
-    $[21] = t16;
+    $[19] = t15;
+    $[20] = t16;
   } else {
-    t16 = $[21];
+    t16 = $[20];
   }
   let t17;
-  if ($[22] !== handleClick || $[23] !== t16) {
+  if ($[21] !== handleClick || $[22] !== t16) {
     t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       id: "themeToggle",
       onClick: handleClick,
@@ -833,15 +845,15 @@ function Header(t0) {
       "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: t16
     });
-    $[22] = handleClick;
-    $[23] = t16;
-    $[24] = t17;
+    $[21] = handleClick;
+    $[22] = t16;
+    $[23] = t17;
   } else {
-    t17 = $[24];
+    t17 = $[23];
   }
   const t18 = `./images/header-icon-globe-${currentTheme}.svg`;
   let t19;
-  if ($[25] !== t18) {
+  if ($[24] !== t18) {
     t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -854,14 +866,14 @@ function Header(t0) {
         })
       })
     });
-    $[25] = t18;
-    $[26] = t19;
+    $[24] = t18;
+    $[25] = t19;
   } else {
-    t19 = $[26];
+    t19 = $[25];
   }
   const t20 = `./images/header-icon-login-${currentTheme}.svg`;
   let t21;
-  if ($[27] !== t20) {
+  if ($[26] !== t20) {
     t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -874,14 +886,14 @@ function Header(t0) {
         })
       })
     });
-    $[27] = t20;
-    $[28] = t21;
+    $[26] = t20;
+    $[27] = t21;
   } else {
-    t21 = $[28];
+    t21 = $[27];
   }
-  const t22 = `./images/avatar-disabled-${currentTheme}.svg`;
+  const t22 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
   let t23;
-  if ($[29] !== t22) {
+  if ($[28] !== t22) {
     t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "login",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
@@ -897,39 +909,39 @@ function Header(t0) {
         })
       })
     });
-    $[29] = t22;
-    $[30] = t23;
+    $[28] = t22;
+    $[29] = t23;
   } else {
-    t23 = $[30];
+    t23 = $[29];
   }
   let t24;
-  if ($[31] !== t14 || $[32] !== t17 || $[33] !== t19 || $[34] !== t21 || $[35] !== t23) {
+  if ($[30] !== t14 || $[31] !== t17 || $[32] !== t19 || $[33] !== t21 || $[34] !== t23) {
     t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "container-menu",
       children: [t14, t17, t19, t21, t23]
     });
-    $[31] = t14;
-    $[32] = t17;
-    $[33] = t19;
-    $[34] = t21;
-    $[35] = t23;
-    $[36] = t24;
+    $[30] = t14;
+    $[31] = t17;
+    $[32] = t19;
+    $[33] = t21;
+    $[34] = t23;
+    $[35] = t24;
   } else {
-    t24 = $[36];
+    t24 = $[35];
   }
   let t25;
-  if ($[37] !== t12 || $[38] !== t24) {
+  if ($[36] !== t12 || $[37] !== t24) {
     t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
         className: "site-header",
         children: [t8, t12, t24]
       })
     });
-    $[37] = t12;
-    $[38] = t24;
-    $[39] = t25;
+    $[36] = t12;
+    $[37] = t24;
+    $[38] = t25;
   } else {
-    t25 = $[39];
+    t25 = $[38];
   }
   return t25;
 }
@@ -1097,27 +1109,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Layout(t0) {
+function Layout(props) {
   const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(19);
+  const showFooter = props.showFooter === undefined ? true : props.showFooter;
   const {
     db,
-    children,
-    showFooter
-  } = t0;
-  let t1;
+    children
+  } = props;
+  let t0;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+    t0 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       id: "react-header",
       className: "site-header",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {})
     });
-    $[0] = t1;
+    $[0] = t0;
   } else {
-    t1 = $[0];
+    t0 = $[0];
   }
-  let t2;
+  let t1;
   if ($[1] !== db) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "vertical-menu-container",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("nav", {
         className: "vertical-menu",
@@ -1128,13 +1140,13 @@ function Layout(t0) {
       })
     });
     $[1] = db;
-    $[2] = t2;
+    $[2] = t1;
   } else {
-    t2 = $[2];
+    t1 = $[2];
   }
-  let t3;
+  let t2;
   if ($[3] !== db) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       id: "react-horizontal-menu",
       className: "horizontal-menu",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1142,84 +1154,84 @@ function Layout(t0) {
       })
     });
     $[3] = db;
-    $[4] = t3;
+    $[4] = t2;
   } else {
-    t3 = $[4];
+    t2 = $[4];
   }
-  let t4;
-  if ($[5] !== children || $[6] !== t3) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+  let t3;
+  if ($[5] !== children || $[6] !== t2) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "main-of-the-main",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
         className: "horizontal-blocks",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
           className: "main-screen-block",
-          children: [t3, children]
+          children: [t2, children]
         })
       })
     });
     $[5] = children;
-    $[6] = t3;
-    $[7] = t4;
+    $[6] = t2;
+    $[7] = t3;
   } else {
-    t4 = $[7];
+    t3 = $[7];
+  }
+  let t4;
+  if ($[8] !== t1 || $[9] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "vertical-blocks",
+      children: [t1, t3]
+    });
+    $[8] = t1;
+    $[9] = t3;
+    $[10] = t4;
+  } else {
+    t4 = $[10];
   }
   let t5;
-  if ($[8] !== t2 || $[9] !== t4) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "vertical-blocks",
-      children: [t2, t4]
-    });
-    $[8] = t2;
-    $[9] = t4;
-    $[10] = t5;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_5__["default"], {});
+    $[11] = t5;
   } else {
-    t5 = $[10];
+    t5 = $[11];
   }
   let t6;
-  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_5__["default"], {});
-    $[11] = t6;
+  if ($[12] !== t4) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
+      children: [t4, t5]
+    });
+    $[12] = t4;
+    $[13] = t6;
   } else {
-    t6 = $[11];
+    t6 = $[13];
   }
   let t7;
-  if ($[12] !== t5) {
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
-      children: [t5, t6]
-    });
-    $[12] = t5;
-    $[13] = t7;
-  } else {
-    t7 = $[13];
-  }
-  let t8;
   if ($[14] !== showFooter) {
-    t8 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("footer", {
+    t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("footer", {
       className: "site-footer",
       id: "react-footer",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {})
     });
     $[14] = showFooter;
-    $[15] = t8;
+    $[15] = t7;
   } else {
-    t8 = $[15];
+    t7 = $[15];
   }
-  let t9;
-  if ($[16] !== t7 || $[17] !== t8) {
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+  let t8;
+  if ($[16] !== t6 || $[17] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
         className: "page",
-        children: [t1, t7, t8]
+        children: [t0, t6, t7]
       })
     });
-    $[16] = t7;
-    $[17] = t8;
-    $[18] = t9;
+    $[16] = t6;
+    $[17] = t7;
+    $[18] = t8;
   } else {
-    t9 = $[18];
+    t8 = $[18];
   }
-  return t9;
+  return t8;
 }
 
 /***/ },
@@ -32443,6 +32455,16 @@ module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"chan
 (module) {
 
 module.exports = /*#__PURE__*/JSON.parse('{"tags":[{"id":1,"name":"Обучение"},{"id":2,"name":"Французский"},{"id":3,"name":"Русский"},{"id":4,"name":"Английский"},{"id":5,"name":"Игры"},{"id":6,"name":"Танцы"},{"id":7,"name":"Искусство"},{"id":8,"name":"Общение"},{"id":9,"name":"Музыка"},{"id":10,"name":"Хобби"},{"id":11,"name":"Спорт"},{"id":12,"name":"Отдых"},{"id":13,"name":"Красота"},{"id":14,"name":"Другое"},{"id":15,"name":"Творчество"},{"id":16,"name":"Кулинария"},{"id":17,"name":"Новости"}]}');
+
+/***/ },
+
+/***/ "./src/db/users.json"
+/*!***************************!*\
+  !*** ./src/db/users.json ***!
+  \***************************/
+(module) {
+
+module.exports = /*#__PURE__*/JSON.parse('{"users":[{"username":"admin","email":"konfeta@mail.ru","password":"12345"},{"username":"user","email":"zefir@mail.ru","password":"password"}]}');
 
 /***/ }
 
