@@ -11889,9 +11889,9 @@ ol {
 a {
   text-decoration: none;
 }
-/*!************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/404.scss ***!
-  \************************************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/notFound.scss ***!
+  \*****************************************************************************************************************/
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
@@ -24896,4 +24896,4 @@ center {
   }
 }
 
-/*# sourceMappingURL=404.css.map*/
+/*# sourceMappingURL=notFound.css.map*/

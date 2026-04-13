@@ -1089,7 +1089,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ClipsCardsLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ClipsCardsLine */ "./src/js/components/ClipsCardsLine.js");
 /* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
 /* harmony import */ var _ChannelCategories__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ChannelCategories */ "./src/js/components/ChannelCategories.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -1100,49 +1102,57 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ChannelPage(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(32);
   const {
     db,
-    streamId,
     showAll
   } = t0;
-  let streamData;
   let t1;
-  if ($[0] !== db.channelsModel || $[1] !== db.streamsModel || $[2] !== streamId) {
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = (0,_utils_common__WEBPACK_IMPORTED_MODULE_8__.getUrlParams)();
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  const params = t1;
+  console.log(params.id);
+  const streamId = +params.id || 1;
+  let streamData;
+  let t2;
+  if ($[1] !== db.channelsModel || $[2] !== db.streamsModel) {
     streamData = db.streamsModel.findOneById(streamId);
-    t1 = db.channelsModel.findOneById(streamData.channelId);
-    $[0] = db.channelsModel;
-    $[1] = db.streamsModel;
-    $[2] = streamId;
+    t2 = db.channelsModel.findOneById(streamData.channelId);
+    $[1] = db.channelsModel;
+    $[2] = db.streamsModel;
     $[3] = streamData;
-    $[4] = t1;
+    $[4] = t2;
   } else {
     streamData = $[3];
-    t1 = $[4];
+    t2 = $[4];
   }
-  const channelData = t1;
-  let t2;
+  const channelData = t2;
+  let t3;
   if ($[5] !== channelData || $[6] !== streamData) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
       className: "main-banner",
       id: "react-stream",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Stream__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Stream__WEBPACK_IMPORTED_MODULE_2__["default"], {
         streamData: streamData,
         channelData: channelData
       })
     });
     $[5] = channelData;
     $[6] = streamData;
-    $[7] = t2;
+    $[7] = t3;
   } else {
-    t2 = $[7];
+    t3 = $[7];
   }
-  let t3;
-  if ($[8] !== db || $[9] !== showAll || $[10] !== streamId) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+  let t4;
+  if ($[8] !== db || $[9] !== showAll) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
       className: "channel-discription",
       id: "react-channel-description",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelDescription__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelDescription__WEBPACK_IMPORTED_MODULE_3__["default"], {
         db: db,
         streamId: streamId,
         showAll: showAll
@@ -1150,106 +1160,105 @@ function ChannelPage(t0) {
     });
     $[8] = db;
     $[9] = showAll;
-    $[10] = streamId;
-    $[11] = t3;
+    $[10] = t4;
   } else {
-    t3 = $[11];
-  }
-  let t4;
-  if ($[12] !== t2 || $[13] !== t3) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-      className: "main-screen-block",
-      children: [t2, t3]
-    });
-    $[12] = t2;
-    $[13] = t3;
-    $[14] = t4;
-  } else {
-    t4 = $[14];
+    t4 = $[10];
   }
   let t5;
+  if ($[11] !== t3 || $[12] !== t4) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      className: "main-screen-block",
+      children: [t3, t4]
+    });
+    $[11] = t3;
+    $[12] = t4;
+    $[13] = t5;
+  } else {
+    t5 = $[13];
+  }
   let t6;
   let t7;
-  if ($[15] !== db || $[16] !== showAll) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  let t8;
+  if ($[14] !== db || $[15] !== showAll) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
       db: db,
       title: "\u0412\u0441\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438",
       categoryId: 1,
       showAll: showAll
     });
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
       db: db,
       title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u0432\u0438\u0434\u0435\u043E",
       categoryId: 1,
       showAll: showAll
     });
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ClipsCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ClipsCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
       db: db,
       title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043A\u043B\u0438\u043F\u044B",
       channelId: 10,
       showAll: showAll
     });
-    $[15] = db;
-    $[16] = showAll;
-    $[17] = t5;
-    $[18] = t6;
-    $[19] = t7;
+    $[14] = db;
+    $[15] = showAll;
+    $[16] = t6;
+    $[17] = t7;
+    $[18] = t8;
   } else {
-    t5 = $[17];
-    t6 = $[18];
-    t7 = $[19];
-  }
-  let t8;
-  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_6__["default"], {});
-    $[20] = t8;
-  } else {
-    t8 = $[20];
+    t6 = $[16];
+    t7 = $[17];
+    t8 = $[18];
   }
   let t9;
-  if ($[21] !== db || $[22] !== showAll) {
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCategories__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_6__["default"], {});
+    $[19] = t9;
+  } else {
+    t9 = $[19];
+  }
+  let t10;
+  if ($[20] !== db || $[21] !== showAll) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCategories__WEBPACK_IMPORTED_MODULE_7__["default"], {
       db: db,
       channelId: 10,
       showAll: showAll
     });
-    $[21] = db;
-    $[22] = showAll;
-    $[23] = t9;
+    $[20] = db;
+    $[21] = showAll;
+    $[22] = t10;
   } else {
-    t9 = $[23];
-  }
-  let t10;
-  if ($[24] !== t5 || $[25] !== t6 || $[26] !== t7 || $[27] !== t9) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-      className: "favourite-categories",
-      children: [t5, t6, t7, t8, t9]
-    });
-    $[24] = t5;
-    $[25] = t6;
-    $[26] = t7;
-    $[27] = t9;
-    $[28] = t10;
-  } else {
-    t10 = $[28];
+    t10 = $[22];
   }
   let t11;
-  if ($[29] !== db || $[30] !== t10 || $[31] !== t4) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  if ($[23] !== t10 || $[24] !== t6 || $[25] !== t7 || $[26] !== t8) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      className: "favourite-categories",
+      children: [t6, t7, t8, t9, t10]
+    });
+    $[23] = t10;
+    $[24] = t6;
+    $[25] = t7;
+    $[26] = t8;
+    $[27] = t11;
+  } else {
+    t11 = $[27];
+  }
+  let t12;
+  if ($[28] !== db || $[29] !== t11 || $[30] !== t5) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
         db: db,
         showFooter: false,
-        children: [t4, t10]
+        children: [t5, t11]
       })
     });
-    $[29] = db;
-    $[30] = t10;
-    $[31] = t4;
-    $[32] = t11;
+    $[28] = db;
+    $[29] = t11;
+    $[30] = t5;
+    $[31] = t12;
   } else {
-    t11 = $[32];
+    t12 = $[31];
   }
-  return t11;
+  return t12;
 }
 
 /***/ },
@@ -2167,7 +2176,7 @@ function Header(t0) {
       type: "button",
       "aria-label": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0437\u0432\u0443\u043A",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-        href: "./404.html",
+        href: "./notFound.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
           src: t13,
           title: "mute"
@@ -2215,7 +2224,7 @@ function Header(t0) {
       type: "button",
       "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-        href: "./404.html",
+        href: "./notFound.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
           src: t18,
           title: "language"
@@ -34155,9 +34164,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_channel_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/channel.scss */ "./src/scss/channel.scss");
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
-/* harmony import */ var _js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/utils/common.js */ "./src/js/utils/common.js");
-/* harmony import */ var _components_ChannelPage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/ChannelPage.js */ "./src/js/components/ChannelPage.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_ChannelPage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/ChannelPage.js */ "./src/js/components/ChannelPage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -34165,19 +34173,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Channel page loaded with its styles');
-});
-const params = (0,_js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__.getUrlParams)();
-console.log(params.id); // '1'
-
-const streamId = +params.id || 1;
 const body = document.getElementById('react-body');
 const rootBody = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(body);
-rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_ChannelPage_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_ChannelPage_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"],
-  streamId: streamId,
   showAll: true
 }));
 })();

@@ -450,7 +450,7 @@ function Header(t0) {
       type: "button",
       "aria-label": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0437\u0432\u0443\u043A",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-        href: "./404.html",
+        href: "./notFound.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
           src: t13,
           title: "mute"
@@ -498,7 +498,7 @@ function Header(t0) {
       type: "button",
       "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-        href: "./404.html",
+        href: "./notFound.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
           src: t18,
           title: "language"
@@ -1177,7 +1177,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
 /* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
 /* harmony import */ var _SearchCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SearchCards */ "./src/js/components/SearchCards.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -1187,121 +1189,131 @@ function SearchPage(t0) {
   const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
   const {
     db,
-    search,
     showAll
   } = t0;
   let t1;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "favourite-categories-title",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
-        children: "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B \u043F\u043E\u0438\u0441\u043A\u0430:"
-      })
-    });
+    t1 = (0,_utils_common__WEBPACK_IMPORTED_MODULE_4__.getUrlParams)();
     $[0] = t1;
   } else {
     t1 = $[0];
   }
+  const params = t1;
+  console.log({
+    params
+  });
+  const search = params.q || "";
   let t2;
-  if ($[1] !== db || $[2] !== search || $[3] !== showAll) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "favourite-categories-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
+        children: "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B \u043F\u043E\u0438\u0441\u043A\u0430:"
+      })
+    });
+    $[1] = t2;
+  } else {
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] !== db || $[3] !== showAll) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "channels-row",
       id: "search_result",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_SearchCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_SearchCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
         db: db,
         search: search,
         showAll: showAll
       })
     });
-    $[1] = db;
-    $[2] = search;
+    $[2] = db;
     $[3] = showAll;
-    $[4] = t2;
+    $[4] = t3;
   } else {
-    t2 = $[4];
-  }
-  let t3;
-  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "divider-line"
-    });
-    $[5] = t3;
-  } else {
-    t3 = $[5];
+    t3 = $[4];
   }
   let t4;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "divider-line"
+    });
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
   if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "show-all-link divider-container",
-      children: [t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+      children: [t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
         className: "divider-button",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
           href: "./categories.html",
           className: "arrowed",
-          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
             className: "show-all-arrow",
             width: "24px",
             height: "24px",
             viewBox: "0 0 24 24",
             xmlns: "http://www.w3.org/2000/svg",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
               d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
               fill: "#CECED6"
             })
           })]
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         className: "divider-line"
       })]
     });
-    $[6] = t4;
+    $[6] = t5;
   } else {
-    t4 = $[6];
-  }
-  let t5;
-  if ($[7] !== t2) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "favourite-category-container",
-      children: [t2, t4]
-    });
-    $[7] = t2;
-    $[8] = t5;
-  } else {
-    t5 = $[8];
+    t5 = $[6];
   }
   let t6;
-  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_1__["default"], {});
-    $[9] = t6;
+  if ($[7] !== t3) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "favourite-category-container",
+      children: [t3, t5]
+    });
+    $[7] = t3;
+    $[8] = t6;
   } else {
-    t6 = $[9];
+    t6 = $[8];
   }
   let t7;
-  if ($[10] !== t5) {
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "favourite-categories",
-      children: [t1, t5, t6]
-    });
-    $[10] = t5;
-    $[11] = t7;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_1__["default"], {});
+    $[9] = t7;
   } else {
-    t7 = $[11];
+    t7 = $[9];
   }
   let t8;
-  if ($[12] !== db || $[13] !== t7) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  if ($[10] !== t6) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "favourite-categories",
+      children: [t2, t6, t7]
+    });
+    $[10] = t6;
+    $[11] = t8;
+  } else {
+    t8 = $[11];
+  }
+  let t9;
+  if ($[12] !== db || $[13] !== t8) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
         db: db,
-        children: t7
+        children: t8
       })
     });
     $[12] = db;
-    $[13] = t7;
-    $[14] = t8;
+    $[13] = t8;
+    $[14] = t9;
   } else {
-    t8 = $[14];
+    t9 = $[14];
   }
-  return t8;
+  return t9;
 }
 
 /***/ },
@@ -49754,9 +49766,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_search_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/search.scss */ "./src/scss/search.scss");
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
-/* harmony import */ var _js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/utils/common.js */ "./src/js/utils/common.js");
-/* harmony import */ var _components_SearchPage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/SearchPage.js */ "./src/js/components/SearchPage.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_SearchPage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/SearchPage.js */ "./src/js/components/SearchPage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -49764,18 +49775,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-const params = (0,_js_utils_common_js__WEBPACK_IMPORTED_MODULE_5__.getUrlParams)();
-console.log({
-  params
-}); // '1'
-
-const search = params.q || "";
 const body = document.getElementById('react-body');
 const rootBody = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_3__.createRoot)(body);
-rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_SearchPage_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_SearchPage_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_4__["default"],
-  search: search,
   showAll: true
 }));
 })();
