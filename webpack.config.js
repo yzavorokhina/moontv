@@ -154,4 +154,19 @@ module.exports = {
       ]
     })
   ],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+  devServer: {
+    historyApiFallback: {
+      index: '/index.html',
+    },
+    static: {
+      directory: path.join(__dirname, 'dist')
+    },
+    watchFiles:[path.join(__dirname, 'src')],
+    compress: true,
+    hot: true,
+    port: 9000,
+  },
 };

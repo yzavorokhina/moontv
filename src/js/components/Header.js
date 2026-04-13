@@ -96,7 +96,7 @@ export default function Header({ }) {
 
     useEffect(() => {
         console.log({currentTheme});
-        // updateTheme(currentTheme);
+        updateTheme(currentTheme);
         
         const authStr = localStorage.getItem('auth');
         const auth = authStr ? JSON.parse(authStr) : {};

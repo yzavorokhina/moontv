@@ -1,28 +1,26 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ChannelPage from './ChannelPage';
+import HomePage from './HomePage';
+import AuthPage from './AuthPage';
+import NotFoundPage from './NotFoundPage';
+import CategoryPage from './CategoriesPage';
+import CategoriesPage from './CategoriesPage';
+import SearchPage from './SearchPage';
 
-export default function App({ db, categoryId, showAll }) {
-
-    const showOnPage = 5;
-
-    const renderCards = () => {
-
-    }
+export default function App({ db }) {
 
     return (
         <>
             <BrowserRouter>
-                <nav>
-                    <Link to="/">Главная</Link> | <Link to="/about">О нас</Link>
-                </nav>
-
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/auth" element={<AuthPage />} />
-                    <Route path="/notFound" element={<NotFoundPage />} />
-                    <Route path="/channel" element={<ChannelPage />} />
-                    <Route path="/category" element={<CategoryPage />} />
-                    <Route path="/categories" element={<CategoriesPage />} />
-                    <Route path="/search" element={<SearchPage />} />
+                    <Route path="/" element={<HomePage db={db} />} />
+                    <Route path="/auth" element={<AuthPage db={db} />} />
+                    <Route path="/404" element={<NotFoundPage db={db} />} />
+                    <Route path="/channel" element={<ChannelPage db={db} />} />
+                    <Route path="/category" element={<CategoryPage db={db} />} />
+                    <Route path="/categories" element={<CategoriesPage db={db} />} />
+                    <Route path="/search" element={<SearchPage db={db} />} />
                 </Routes>
             </BrowserRouter>
         </>
