@@ -2,8 +2,14 @@ import Layout from "./Layout";
 import CategoryDescription from './CategoryDescription';
 import ChannelCards from './ChannelCards';
 import GoToBtn from "./GoToBtn";
+import { getUrlParams } from '../utils/common.js';
 
-export default function CategoryPage({ db, categoryId, showAll }) {
+export default function CategoryPage({ db, showAll }) {
+
+    const params = getUrlParams();
+    console.log(params.id); // '1'
+    
+    const categoryId = +params.id || 1;
 
     const categoryData = db.categoriesModel.findOneById(categoryId);
     const streamData = db.streamsModel.findOneById(categoryId);

@@ -18,7 +18,7 @@ export default function App({ db, categoryId, showAll }) {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/auth" element={<AuthPage />} />
-                    <Route path="/404" element={<NotFoundPage />} />
+                    <Route path="/notFound" element={<NotFoundPage />} />
                     <Route path="/channel" element={<ChannelPage />} />
                     <Route path="/category" element={<CategoryPage />} />
                     <Route path="/categories" element={<CategoriesPage />} />

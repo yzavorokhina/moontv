@@ -10,7 +10,7 @@ module.exports = {
     index: './src/js/index.js',
     search: './src/js/search.js',
     auth: './src/js/auth.js',
-    404: './src/js/404.js',
+    notFound: './src/js/notFound.js',
     channel: './src/js/channel.js',
     category: './src/js/category.js',
     categories: './src/js/categories.js',
@@ -111,9 +111,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Output Management',
-      template: path.resolve(__dirname, 'src/404.html'),
-      filename: '404.html',
-      chunks: ['404'] // подключает только 404.js
+      template: path.resolve(__dirname, 'src/notFound.html'),
+      filename: 'notFound.html',
+      chunks: ['notFound'] // подключает только notFound.js
     }),
     new HtmlWebpackPlugin({
       title: 'Output Management',

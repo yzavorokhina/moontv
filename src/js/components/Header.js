@@ -127,7 +127,7 @@ export default function Header({ }) {
                 </div>
                 <div className="container-menu">
                     <button className="menu-button" type="button" aria-label="Включить звук">
-                        <a href="./404.html">
+                        <a href="./notFound.html">
                             <img src={`./images/header-icon-music-${currentTheme}.svg`} title="mute" />
                         </a>
                     </button>
@@ -136,7 +136,7 @@ export default function Header({ }) {
                         <img src={`./images/header-icon-theme-${currentTheme}.svg`} title="theme" />
                     </button>
                     <button className="menu-button" type="button" aria-label="Выбрать язык оформления">
-                        <a href="./404.html">
+                        <a href="./notFound.html">
                             <img src={`./images/header-icon-globe-${currentTheme}.svg`} title="language" />
                         </a>
                     </button>

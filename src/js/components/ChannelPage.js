@@ -5,8 +5,14 @@ import ChannelCardsLine from './ChannelCardsLine';
 import ClipsCardsLine from './ClipsCardsLine';
 import GoToBtn from './GoToBtn';
 import ChannelCategories from './ChannelCategories';
+import { getUrlParams } from '../utils/common';
 
-export default function ChannelPage({ db, streamId, showAll }) {
+export default function ChannelPage({ db, showAll }) {
+
+    const params = getUrlParams();
+    console.log(params.id); // '1'
+
+    const streamId = +params.id || 1;
 
     const streamData = db.streamsModel.findOneById(streamId);
     const channelData = db.channelsModel.findOneById(streamData.channelId);
