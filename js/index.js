@@ -81,6 +81,357 @@ const db = {
 
 /***/ },
 
+/***/ "./src/js/components/App.js"
+/*!**********************************!*\
+  !*** ./src/js/components/App.js ***!
+  \**********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs");
+/* harmony import */ var _ChannelPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ChannelPage */ "./src/js/components/ChannelPage.js");
+/* harmony import */ var _HomePage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HomePage */ "./src/js/components/HomePage.js");
+/* harmony import */ var _AuthPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AuthPage */ "./src/js/components/AuthPage.js");
+/* harmony import */ var _NotFoundPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./NotFoundPage */ "./src/js/components/NotFoundPage.js");
+/* harmony import */ var _CategoriesPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CategoriesPage */ "./src/js/components/CategoriesPage.js");
+/* harmony import */ var _SearchPage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SearchPage */ "./src/js/components/SearchPage.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+
+
+function App(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(22);
+  const {
+    db
+  } = t0;
+  let t1;
+  if ($[0] !== db) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      path: "/",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_HomePage__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        db: db
+      })
+    });
+    $[0] = db;
+    $[1] = t1;
+  } else {
+    t1 = $[1];
+  }
+  let t2;
+  if ($[2] !== db) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      path: "/auth",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_AuthPage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        db: db
+      })
+    });
+    $[2] = db;
+    $[3] = t2;
+  } else {
+    t2 = $[3];
+  }
+  let t3;
+  if ($[4] !== db) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      path: "/404",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_NotFoundPage__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        db: db
+      })
+    });
+    $[4] = db;
+    $[5] = t3;
+  } else {
+    t3 = $[5];
+  }
+  let t4;
+  if ($[6] !== db) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      path: "/channel",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelPage__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        db: db
+      })
+    });
+    $[6] = db;
+    $[7] = t4;
+  } else {
+    t4 = $[7];
+  }
+  let t5;
+  if ($[8] !== db) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      path: "/category",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_CategoriesPage__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        db: db
+      })
+    });
+    $[8] = db;
+    $[9] = t5;
+  } else {
+    t5 = $[9];
+  }
+  let t6;
+  if ($[10] !== db) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      path: "/categories",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_CategoriesPage__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        db: db
+      })
+    });
+    $[10] = db;
+    $[11] = t6;
+  } else {
+    t6 = $[11];
+  }
+  let t7;
+  if ($[12] !== db) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+      path: "/search",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_SearchPage__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        db: db
+      })
+    });
+    $[12] = db;
+    $[13] = t7;
+  } else {
+    t7 = $[13];
+  }
+  let t8;
+  if ($[14] !== t1 || $[15] !== t2 || $[16] !== t3 || $[17] !== t4 || $[18] !== t5 || $[19] !== t6 || $[20] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.BrowserRouter, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Routes, {
+          children: [t1, t2, t3, t4, t5, t6, t7]
+        })
+      })
+    });
+    $[14] = t1;
+    $[15] = t2;
+    $[16] = t3;
+    $[17] = t4;
+    $[18] = t5;
+    $[19] = t6;
+    $[20] = t7;
+    $[21] = t8;
+  } else {
+    t8 = $[21];
+  }
+  return t8;
+}
+
+/***/ },
+
+/***/ "./src/js/components/AuthPage.js"
+/*!***************************************!*\
+  !*** ./src/js/components/AuthPage.js ***!
+  \***************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AuthPage)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+function AuthPage() {
+  const handleOnSubmit = async event => {
+    event.preventDefault();
+    const loginForm = document.getElementById('loginForm');
+    const formData = new FormData(loginForm);
+    const credentials = {
+      email: formData.get('email'),
+      password: formData.get('password')
+    };
+    try {
+      const response = await fetch('http://127.0.0.1:3000/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(credentials)
+      });
+      const result = await response.json();
+      const messageDiv = document.getElementById('message');
+      if (response.ok) {
+        messageDiv.style.color = 'lime';
+        messageDiv.textContent = 'Успешный вход! Перенаправление...';
+        localStorage.setItem('auth', JSON.stringify(result));
+        // setTimeout(() => {
+        //     window.location.href = '/index.html';
+        // }, 1000);
+      } else {
+        messageDiv.style.color = 'red';
+        messageDiv.textContent = result.message || 'Ошибка авторизации';
+      }
+    } catch (error) {
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').textContent = 'Ошибка сети';
+    }
+  };
+  const handleClick = () => {
+    window.location.href = './index.html';
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "login-container",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "top-buttons",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "./index.html",
+          className: "btn-back",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: "arrow-1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {})
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+          type: "button",
+          onClick: handleClick,
+          className: "btn-close",
+          "data-bs-dismiss": "modal",
+          "aria-label": "Close"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "form",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
+          id: "loginForm",
+          action: "",
+          method: "POST",
+          onSubmit: handleOnSubmit,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+            href: "./index.html",
+            className: "auth_logo mx-auto",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+              src: "./images/logo-moon-auth-page.png",
+              alt: "bootstrap-logo"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+            children: "\u0412\u0445\u043E\u0434 \u043D\u0430 Moon TV"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: "form-floating",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+              type: "email",
+              name: "email",
+              placeholder: "Email",
+              required: true,
+              maxLength: "60"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: "form-floating",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+              type: "password",
+              name: "password",
+              placeholder: "Password",
+              required: true,
+              maxLength: "60"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+            type: "submit",
+            className: "button-1",
+            children: "\u0412\u043E\u0439\u0442\u0438"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+            type: "submit",
+            className: "button-2",
+            children: "\u0421\u043E\u0437\u0434\u0430\u0442\u044C \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: "form-check",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: "#",
+              className: "forgot-password",
+              children: "\u0417\u0430\u0431\u044B\u043B\u0438 \u043F\u0430\u0440\u043E\u043B\u044C?"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+            className: "copy",
+            children: "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 \u0412\u043E\u0439\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
+            type: "submit",
+            className: "button-3",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+                href: "https://vk.com/username",
+                target: "_blank",
+                rel: "noopenerer noreferrer",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+                  src: "./images/mini-icons-vk-square.svg",
+                  alt: "social-button",
+                  className: "vk-id-button"
+                })
+              })
+            }), "\u0412\u043E\u0439\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 VK ID"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "links",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: "https://vkvideo.ru/@channel",
+              target: "_blank",
+              rel: "noopenerer noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+                src: "./images/icon-vk-video.png",
+                alt: "social-button",
+                className: "social-button"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: "https://www.rutube.ru/channel",
+              target: "_blank",
+              className: "rutube-button",
+              rel: "noopenerer noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+                src: "./images/icon-rutube.png",
+                alt: "social-button",
+                className: "social-button"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: "https://www.youtube.com/@channel",
+              target: "_blank",
+              rel: "noopenerer noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+                src: "./images/icon-youtube-live.svg",
+                alt: "social-button",
+                className: "social-button"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: "https://www.youtube.com/@channel",
+              target: "_blank",
+              rel: "noopenerer noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+                src: "./images/icon-youtube.svg",
+                alt: "social-button",
+                className: "social-button"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: "https://vkplay.ru/live/",
+              target: "_blank",
+              rel: "noopenerer noreferrer",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+                src: "./images/icon-vk-play.png",
+                alt: "social-button",
+                className: "social-button"
+              })
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          id: "message"
+        })]
+      })]
+    })
+  });
+}
+
+/***/ },
+
 /***/ "./src/js/components/Banner.js"
 /*!*************************************!*\
   !*** ./src/js/components/Banner.js ***!
@@ -477,6 +828,372 @@ function Banner(t0) {
 
 /***/ },
 
+/***/ "./src/js/components/CategoriesPage.js"
+/*!*********************************************!*\
+  !*** ./src/js/components/CategoriesPage.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CategoriesPage)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
+/* harmony import */ var _CategoryCards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CategoryCards */ "./src/js/components/CategoryCards.js");
+/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+function CategoriesPage(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(17);
+  const {
+    db
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "arrow-back",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
+        href: "./index.html",
+        className: "arrowed",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
+          className: "carousel-arrow",
+          width: "20px",
+          height: "20px",
+          viewBox: "0 0 24 24",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+            d: "M17 9H5.414l3.293-3.293a.999.999 0 10-1.414-1.414l-5 5a.999.999 0 000 1.414l5 5a.997.997 0 001.414 0 .999.999 0 000-1.414L5.414 11H17a1 1 0 100-2z",
+            fill: "#FF6F3A"
+          })
+        }), "\u041D\u0430\u0437\u0430\u0434"]
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "category-section-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+        href: "/page",
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+          children: "\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
+        })
+      })
+    });
+    $[1] = t2;
+  } else {
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+      children: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430 \u043F\u043E:"
+    });
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
+        fill: "#FFFFFF",
+        width: "20px",
+        height: "20px",
+        viewBox: "0 0 24 24",
+        version: "1.2",
+        baseProfile: "tiny",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+          d: "M10.895 16.553l-4-8c-.339-.678-1.45-.678-1.789 0l-4 8c-.247.494-.047 1.095.447 1.342.495.248 1.095.046 1.342-.447l.723-1.448h4.764l.724 1.447c.175.351.528.553.895.553.15 0 .303-.034.446-.105.494-.248.695-.848.448-1.342zm-6.277-2.553l1.382-2.764 1.382 2.764h-2.764zM22 18h-6c-.379 0-.725-.214-.895-.553s-.132-.744.095-1.047l4.8-6.4h-4c-.552 0-1-.448-1-1s.448-1 1-1h6c.379 0 .725.214.895.553s.132.744-.095 1.047l-4.8 6.4h4c.552 0 1 .448 1 1s-.448 1-1 1zM14 14h-2c-.552 0-1-.448-1-1s.448-1 1-1h2c.552 0 1 .448 1 1s-.448 1-1 1z"
+        })
+      }), "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u044E"]
+    });
+    $[3] = t4;
+  } else {
+    t4 = $[3];
+  }
+  let t5;
+  let t6;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("title", {
+      children: "ic_fluent_people_28_regular"
+    });
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("desc", {
+      children: "Created with Sketch."
+    });
+    $[4] = t5;
+    $[5] = t6;
+  } else {
+    t5 = $[4];
+    t6 = $[5];
+  }
+  let t7;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", {
+        width: "16px",
+        height: "16px",
+        viewBox: "0 0 28 28",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        xlink: "http://www.w3.org/1999/xlink",
+        children: [t5, t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("g", {
+          id: "\uD83D\uDD0D-Product-Icons",
+          stroke: "none",
+          strokeWidth: "1",
+          fill: "none",
+          fillRule: "evenodd",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("g", {
+            id: "ic_fluent_people_28_regular",
+            fill: "#FFFFFF",
+            fillRule: "nonzero",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+              d: "M4,16 L15,16.001 C16.0538182,16.001 16.9181157,16.8164855 16.9945109,17.8516842 L17,18.001 L17,20.5 C16.999,24.7 12.713,26 9.5,26 C6.35126,26 2.1710504,24.75148 2.00510151,20.7485328 L2,20.5 L2,18 C2,16.9461818 2.81639669,16.0818843 3.85080841,16.0054891 L4,16 Z M24,16 L24.1491916,16.0054891 C25.1318827,16.0780645 25.9178153,16.8617218 25.9939518,17.8434235 L26,18 L26,20 C25.999,23.759 22.57,25 20,25 C18.942,25 17.741,24.785 16.691,24.275 C17.009,23.897 17.278,23.477 17.488,23.007 C18.4456,23.427 19.4789867,23.4924578 19.9157784,23.4993188 L20.2043433,23.4963225 C21.2400556,23.4606629 24.334766,23.1116572 24.4936471,20.2325914 L24.5,20 L24.5,18 C24.5,17.7546667 24.3222222,17.5504198 24.0895748,17.5080604 L24,17.5 L17.949,17.501 C17.865,16.999625 17.6554375,16.5434219 17.3544785,16.1605273 L17.22,16.001 L24,16 Z M4,17.5 L3.899344,17.51 C3.77496,17.53528 3.69,17.6028 3.646,17.646 C3.6028,17.69 3.53528,17.77432 3.51,17.89896 L3.5,18 L3.5,20.5 C3.5,21.839 4.087,22.829 5.295,23.525 C6.29135714,24.1007143 7.68434694,24.4479337 9.15851093,24.4945991 L9.5,24.5 L9.93487113,24.4897846 C11.4554554,24.4219073 15.3140372,23.9331951 15.4935181,20.7322803 L15.5,20.499 L15.5,18.001 C15.5,17.7565556 15.3222222,17.5516173 15.0895748,17.5090933 L15,17.501 L4,17.5 Z M9.5,3 C12.538,3 15,5.463 15,8.5 C15,11.537 12.538,14 9.5,14 C6.462,14 4,11.537 4,8.5 C4,5.463 6.462,3 9.5,3 Z M20.5,5 C22.985,5 25,7.015 25,9.5 C25,11.985 22.985,14 20.5,14 C18.015,14 16,11.985 16,9.5 C16,7.015 18.015,5 20.5,5 Z M9.5,4.5 C7.294,4.5 5.5,6.294 5.5,8.5 C5.5,10.706 7.294,12.5 9.5,12.5 C11.706,12.5 13.5,10.706 13.5,8.5 C13.5,6.294 11.706,4.5 9.5,4.5 Z M20.5,6.5 C18.846,6.5 17.5,7.846 17.5,9.5 C17.5,11.154 18.846,12.5 20.5,12.5 C22.154,12.5 23.5,11.154 23.5,9.5 C23.5,7.846 22.154,6.5 20.5,6.5 Z",
+              id: "\uD83C\uDFA8-Color"
+            })
+          })
+        })]
+      }), "\u041A\u043E\u043B-\u0432\u0443 \u0437\u0440\u0438\u0442\u0435\u043B\u0435\u0439"]
+    });
+    $[6] = t7;
+  } else {
+    t7 = $[6];
+  }
+  let t8;
+  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("svg", {
+        width: "20px",
+        height: "20px",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+          d: "M1.99984 5.75C1.99984 5.33579 2.33562 5 2.74984 5H21.2498C21.664 5 21.9998 5.33579 21.9998 5.75C21.9998 6.16421 21.664 6.5 21.2498 6.5H2.74984C2.33562 6.5 1.99984 6.16421 1.99984 5.75ZM1.99984 12.25C1.99984 11.8358 2.33562 11.5 2.74984 11.5H21.2498C21.664 11.5 21.9998 11.8358 21.9998 12.25C21.9998 12.6642 21.664 13 21.2498 13H2.74984C2.33562 13 1.99984 12.6642 1.99984 12.25ZM18.9998 18.75C18.9998 18.3358 19.3356 18 19.7498 18H21.2498C21.664 18 21.9998 18.3358 21.9998 18.75C21.9998 19.1642 21.664 19.5 21.2498 19.5H19.7498C19.3356 19.5 18.9998 19.1642 18.9998 18.75Z",
+          fill: "#FFFFFF"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+          d: "M2.41586 18.7377C2.62651 18.5972 2.83038 18.4376 3.02319 18.2633V22.25C3.02319 22.6642 3.35898 23 3.77319 23C4.18741 23 4.52319 22.6642 4.52319 22.25V15.75C4.52319 15.356 4.21942 15.033 3.83332 15.0024C3.46457 14.9719 3.12113 15.2183 3.03989 15.5897C2.91329 16.1684 2.34817 16.98 1.58381 17.4896C1.23916 17.7194 1.14603 18.185 1.3758 18.5297C1.60556 18.8743 2.07121 18.9674 2.41586 18.7377Z",
+          fill: "#FFFFFF"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+          d: "M7.99976 17.5227C7.99976 16.995 8.44328 16.5 8.98552 16.5C9.39269 16.5 9.72045 16.6909 9.87891 16.9345C10.0148 17.1434 10.0963 17.4998 9.78534 18.0292C9.63583 18.2837 9.4098 18.5114 9.10378 18.7531C8.95132 18.8735 8.78821 18.9904 8.61083 19.1158L8.53705 19.1679C8.38482 19.2753 8.22186 19.3902 8.06445 19.5087C7.32083 20.0683 6.49976 20.8536 6.49976 22.25C6.49976 22.6642 6.83554 23 7.24976 23L7.25793 23L7.26611 23H10.7003C11.1145 23 11.4503 22.6642 11.4503 22.25C11.4503 21.8358 11.1145 21.5 10.7003 21.5H8.18741C8.34819 21.2182 8.61035 20.9752 8.96639 20.7072C9.10386 20.6038 9.24576 20.5036 9.39901 20.3955L9.47661 20.3407C9.6552 20.2145 9.84692 20.0775 10.0335 19.9302C10.4055 19.6364 10.7942 19.2731 11.0787 18.789C11.6356 17.8411 11.625 16.868 11.1363 16.1166C10.6701 15.4 9.84073 15 8.98552 15C7.50797 15 6.49976 16.2777 6.49976 17.5227C6.49976 17.9369 6.83554 18.2727 7.24976 18.2727C7.66397 18.2727 7.99976 17.9369 7.99976 17.5227Z",
+          fill: "#FFFFFF"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+          d: "M14.4709 17.1377C14.5029 17.0255 14.5792 16.8666 14.7218 16.7409C14.8502 16.6276 15.0773 16.5 15.4997 16.5C16.261 16.5 16.4997 17.0002 16.4997 17.2273C16.4997 17.4724 16.4474 17.7178 16.3099 17.8907C16.1986 18.0308 15.9313 18.25 15.208 18.25C14.7938 18.25 14.458 18.5858 14.458 19C14.458 19.4142 14.7938 19.75 15.208 19.75C15.4815 19.75 15.8594 19.7864 16.1424 19.9191C16.2743 19.9809 16.3569 20.0505 16.4069 20.1207C16.4517 20.1837 16.4997 20.287 16.4997 20.4773C16.4997 20.965 16.3475 21.1807 16.2191 21.2891C16.068 21.4167 15.8237 21.5 15.4997 21.5C15.1377 21.5 14.9328 21.4374 14.8072 21.3578C14.6958 21.2873 14.5675 21.1538 14.4621 20.8338C14.3327 20.4403 13.9087 20.2263 13.5153 20.3558C13.1218 20.4852 12.9078 20.9092 13.0373 21.3026C13.2236 21.8689 13.5328 22.3263 14.0048 22.6252C14.4624 22.9149 14.9867 23 15.4997 23C16.0507 23 16.6815 22.8618 17.1866 22.4353C17.7145 21.9898 17.9997 21.3191 17.9997 20.4773C17.9997 20.0027 17.8699 19.5891 17.6285 19.2504C17.5499 19.14 17.4628 19.0423 17.3706 18.9559C17.4102 18.9135 17.4481 18.8695 17.4842 18.8241C17.9221 18.2731 17.9997 17.6321 17.9997 17.2273C17.9997 16.1543 17.0718 15 15.4997 15C14.7343 15 14.1483 15.2466 13.7295 15.616C13.325 15.9728 13.1202 16.4048 13.0285 16.7259C12.9148 17.1242 13.1455 17.5393 13.5438 17.653C13.9421 17.7667 14.3572 17.536 14.4709 17.1377Z",
+          fill: "#FFFFFF"
+        })]
+      }), "\u041A\u043E\u043B-\u0432\u0443 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u043E\u0432"]
+    });
+    $[7] = t8;
+  } else {
+    t8 = $[7];
+  }
+  let t9;
+  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "category-titles-row",
+      children: [t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "sorting-buttons",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "sorting-buttons-2",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            className: "block-buttons-2",
+            children: [t3, t4, t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("svg", {
+                fill: "#FFFFFF",
+                width: "18px",
+                height: "18px",
+                viewBox: "0 0 24 24",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("path", {
+                  fillRule: "evenodd",
+                  d: "M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M13,11 L17,11 L17,13 L11,13 L11,6 L13,6 L13,11 Z"
+                })
+              }), "\u0412\u0440\u0435\u043C\u0435\u043D\u0438 "]
+            })]
+          })
+        })
+      })]
+    });
+    $[8] = t9;
+  } else {
+    t9 = $[8];
+  }
+  let t10;
+  if ($[9] !== db) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      id: "react-category-cards",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_CategoryCards__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        db: db
+      })
+    });
+    $[9] = db;
+    $[10] = t10;
+  } else {
+    t10 = $[10];
+  }
+  let t11;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_3__["default"], {});
+    $[11] = t11;
+  } else {
+    t11 = $[11];
+  }
+  let t12;
+  if ($[12] !== t10) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "favourite-categories",
+      children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "category-container",
+        children: [t9, t10, t11]
+      })]
+    });
+    $[12] = t10;
+    $[13] = t12;
+  } else {
+    t12 = $[13];
+  }
+  let t13;
+  if ($[14] !== db || $[15] !== t12) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        db: db,
+        children: t12
+      })
+    });
+    $[14] = db;
+    $[15] = t12;
+    $[16] = t13;
+  } else {
+    t13 = $[16];
+  }
+  return t13;
+}
+
+/***/ },
+
+/***/ "./src/js/components/CategoryCards.js"
+/*!********************************************!*\
+  !*** ./src/js/components/CategoryCards.js ***!
+  \********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CategoryCards)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _utils_common_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/common.js */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function CategoryCards(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(5);
+  const {
+    db
+  } = t0;
+  let t1;
+  if ($[0] !== db.categoriesModel || $[1] !== db.tagsModel) {
+    const renderCards = () => {
+      const params = (0,_utils_common_js__WEBPACK_IMPORTED_MODULE_1__.getUrlParams)();
+      const tagId = +params.tag || 0;
+      console.log({
+        tagId
+      });
+      let categories;
+      if (tagId === 0) {
+        categories = db.categoriesModel.getAll();
+      } else {
+        categories = db.categoriesModel.findMany(cat => cat.tags.indexOf(tagId) > -1);
+      }
+      return categories.map(category => {
+        const tags = db.tagsModel.findByIds(category.tags);
+        return {
+          category,
+          tags: tags.slice(0, 2),
+          categoryUrl: "./category.html?id=" + category.id
+        };
+      });
+    };
+    t1 = renderCards().map(_temp2);
+    $[0] = db.categoriesModel;
+    $[1] = db.tagsModel;
+    $[2] = t1;
+  } else {
+    t1 = $[2];
+  }
+  let t2;
+  if ($[3] !== t1) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: t1
+    });
+    $[3] = t1;
+    $[4] = t2;
+  } else {
+    t2 = $[4];
+  }
+  return t2;
+}
+function _temp2(data) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "category-card ",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: data.categoryUrl,
+      className: "category-link-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+        className: "category-img-top",
+        src: data.category.imagePreviewUrl,
+        alt: "foto"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "card-body",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: data.categoryUrl,
+        className: "category-link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          className: "category-name-info",
+          children: data.category.name
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "category-info-row",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          children: data.category.shortDescription
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tags-row",
+        role: "group",
+        "aria-label": "tags-group",
+        children: data.tags.map(_temp)
+      })]
+    })]
+  }, data.category.id);
+}
+function _temp(tag) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+    href: `./categories.html?tag=${tag.id}`,
+    className: "link-wrapper",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      type: "button",
+      className: "button-tag",
+      children: tag.name
+    })
+  }, tag.id);
+}
+
+/***/ },
+
 /***/ "./src/js/components/ChannelCards.js"
 /*!*******************************************!*\
   !*** ./src/js/components/ChannelCards.js ***!
@@ -783,6 +1500,1426 @@ function ChannelCardsLine(t0) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "all-video-container",
+        children: [t4, t5, t7]
+      })
+    });
+    $[12] = t4;
+    $[13] = t5;
+    $[14] = t8;
+  } else {
+    t8 = $[14];
+  }
+  return t8;
+}
+
+/***/ },
+
+/***/ "./src/js/components/ChannelCategories.js"
+/*!************************************************!*\
+  !*** ./src/js/components/ChannelCategories.js ***!
+  \************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelCategories)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function ChannelCategories(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
+  const {
+    db,
+    channelId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] !== channelId || $[1] !== db.categoriesModel || $[2] !== db.channelsModel || $[3] !== showAll) {
+    t1 = () => {
+      const channel = db.channelsModel.findOneById(channelId);
+      let categories = db.categoriesModel.findByIds(channel.categories);
+      if (!showAll && categories.length > 5) {
+        categories = categories.slice(0, 5);
+      }
+      return categories.map(category => ({
+        channel,
+        category,
+        categoryUrl: "./category.html?id=" + category.id
+      }));
+    };
+    $[0] = channelId;
+    $[1] = db.categoriesModel;
+    $[2] = db.channelsModel;
+    $[3] = showAll;
+    $[4] = t1;
+  } else {
+    t1 = $[4];
+  }
+  const renderCards = t1;
+  let t2;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favourite-channels-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+        children: "\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0439 \u043A\u0430\u043D\u0430\u043B\u0430"
+      })
+    });
+    $[5] = t2;
+  } else {
+    t2 = $[5];
+  }
+  let t3;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-categories-titles",
+      children: [t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "favourite-channels-show-all",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+          href: "#",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#FF6F3A"
+            })
+          })]
+        })
+      })]
+    });
+    $[6] = t3;
+  } else {
+    t3 = $[6];
+  }
+  let t4;
+  if ($[7] !== renderCards) {
+    t4 = renderCards().map(_temp);
+    $[7] = renderCards;
+    $[8] = t4;
+  } else {
+    t4 = $[8];
+  }
+  const t5 = channelId + "_key";
+  let t6;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+      children: "\u0414\u0440\u0443\u0433\u043E\u0435"
+    });
+    $[9] = t6;
+  } else {
+    t6 = $[9];
+  }
+  let t7;
+  if ($[10] !== t5) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category",
+      children: t6
+    }, t5);
+    $[10] = t5;
+    $[11] = t7;
+  } else {
+    t7 = $[11];
+  }
+  let t8;
+  if ($[12] !== t4 || $[13] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "channel-categories-container",
+        children: [t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "channel-categories",
+          children: [t4, t7]
+        })]
+      })
+    });
+    $[12] = t4;
+    $[13] = t7;
+    $[14] = t8;
+  } else {
+    t8 = $[14];
+  }
+  return t8;
+}
+function _temp(data) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "channel-categories-row",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: data.categoryUrl,
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h4", {
+          children: data.category.shortName
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "favorite-category-description",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: data.categoryUrl,
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+          children: data.category.shortDescription
+        })
+      })
+    })]
+  }, data.category.id);
+}
+
+/***/ },
+
+/***/ "./src/js/components/ChannelDescription.js"
+/*!*************************************************!*\
+  !*** ./src/js/components/ChannelDescription.js ***!
+  \*************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelDescription)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function ChannelDescription(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(51);
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
+      className: "channel-menu",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          className: "channel-menu-first-button",
+          children: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u0420\u0430\u0441\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u0412\u0438\u0434\u0435\u043E"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: "#",
+            children: "\u0427\u0430\u0442"
+          })
+        })]
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-horizontal-menu",
+      children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+          width: "16px",
+          height: "16px",
+          viewBox: "0 0 16 16",
+          xmlns: "http://www.w3.org/2000/svg",
+          fill: "#CECED6",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+            d: "M14.88 4.78a3.489 3.489 0 0 0-.37-.9 3.24 3.24 0 0 0-.6-.79 3.78 3.78 0 0 0-1.21-.81 3.74 3.74 0 0 0-2.84 0 4 4 0 0 0-1.16.75l-.05.06-.65.65-.65-.65-.05-.06a4 4 0 0 0-1.16-.75 3.74 3.74 0 0 0-2.84 0 3.78 3.78 0 0 0-1.21.81 3.55 3.55 0 0 0-.97 1.69 3.75 3.75 0 0 0-.12 1c0 .317.04.633.12.94a4 4 0 0 0 .36.89 3.8 3.8 0 0 0 .61.79L8 14.31l5.91-5.91c.237-.233.44-.5.6-.79A3.578 3.578 0 0 0 15 5.78a3.747 3.747 0 0 0-.12-1zm-1 1.63a2.69 2.69 0 0 1-.69 1.21l-5.21 5.2-5.21-5.2a2.9 2.9 0 0 1-.44-.57 3 3 0 0 1-.27-.65 3.25 3.25 0 0 1-.08-.69A3.36 3.36 0 0 1 2.06 5a2.8 2.8 0 0 1 .27-.65c.12-.21.268-.4.44-.57a2.91 2.91 0 0 1 .89-.6 2.8 2.8 0 0 1 2.08 0c.33.137.628.338.88.59l1.36 1.37 1.36-1.37a2.72 2.72 0 0 1 .88-.59 2.8 2.8 0 0 1 2.08 0c.331.143.633.347.89.6.174.165.32.357.43.57a2.69 2.69 0 0 1 .35 1.34 2.6 2.6 0 0 1-.06.72h-.03z"
+          })
+        }), "\xA0\xA09,3\xA0\u0442\u044B\u0441. \u043E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0445"]
+      })]
+    });
+    $[1] = t2;
+  } else {
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "info-about",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u041D\u0430 \u0434\u0430\u043D\u043D\u043E\u043C \u043A\u0430\u043D\u0430\u043B\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u0438\u0440\u0443\u044E\u0442\u0441\u044F \u0437\u0430\u043F\u0438\u0441\u0438 \u043E \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438\u0433\u0440:"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u041E\u0442 \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0434\u043E \u043F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0439 \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0432\u043C\u0435\u0441\u0442\u0435 \u0441\u043E \u0437\u0440\u0438\u0442\u0435\u043B\u044F\u043C\u0438"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438, \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E\u0442 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u043A\u043D\u0438\u0433 \u0434\u0430\u043D\u043D\u043E\u0439 \u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438,"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: "\u0430 \u0442\u0430\u043A\u0436\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0441\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0438\u0434\u0435\u0439 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0418\u0418"
+      })]
+    });
+    $[2] = t3;
+  } else {
+    t3 = $[2];
+  }
+  let t4;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+      href: "#",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+        fill: "#CECED6",
+        width: "16px",
+        height: "16px",
+        viewBox: "0 0 20 20",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+          d: "M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M14.4415206,6 C14.060553,6.00676048 13.476055,6.20741135 10.663148,7.36249773 C9.67796175,7.7670526 7.70897661,8.60437935 4.75619264,9.87447795 C4.27670659,10.0627254 4.02553067,10.2468857 4.00266485,10.4269588 C3.95876487,10.7726802 4.46291296,10.8803081 5.09723696,11.0838761 C5.61440201,11.2498453 6.31007997,11.4440124 6.67173438,11.4517262 C6.99978943,11.4587234 7.36593635,11.3251987 7.77017511,11.051152 C10.5290529,9.21254679 11.9531977,8.28322679 12.0426094,8.26319203 C12.1056879,8.24905787 12.1930992,8.23128593 12.2523244,8.28325656 C12.3115496,8.33522719 12.3057275,8.43364956 12.299454,8.46005377 C12.2492926,8.67117474 9.65764825,10.998457 9.50849738,11.1513987 L9.43697409,11.2233057 C8.88741493,11.7661123 8.33196049,12.1205055 9.290333,12.7440164 C10.155665,13.3069957 10.6592923,13.6661378 11.5507686,14.2430701 C12.1204738,14.6117635 12.5671299,15.0489784 13.1553348,14.9955401 C13.4259939,14.9709508 13.705567,14.7196888 13.8475521,13.9703127 C14.1831052,12.1993135 14.8426779,8.36209709 14.9951103,6.78087197 C15.0084653,6.64233621 14.9916649,6.46503787 14.9781732,6.38720805 C14.9646815,6.30937823 14.9364876,6.19848702 14.8340164,6.11639754 C14.7126597,6.01917896 14.5253109,5.99867765 14.4415206,6 Z"
+        })
+      }), "\xA0Telegram"]
+    });
+    $[3] = t4;
+  } else {
+    t4 = $[3];
+  }
+  let t5;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+      href: "#",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+        fill: "#CECED6",
+        height: "16px",
+        width: "16px",
+        version: "1.1",
+        id: "Layer_1",
+        xmlns: "http://www.w3.org/2000/svg",
+        xlink: "http://www.w3.org/1999/xlink",
+        viewBox: "-143 145 512 512",
+        space: "preserve",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("g", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+            d: "M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7\r\n                                c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4\r\n                                c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8\r\n                                c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4\r\n                                c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+            d: "M196.9,311.2H29.1c0,0-44.1,0-44.1,44.1v91.5c0,0,0,44.1,44.1,44.1h167.8c0,0,44.1,0,44.1-44.1v-91.5\r\n                                C241,355.3,241,311.2,196.9,311.2z M78.9,450.3v-98.5l83.8,49.3L78.9,450.3z"
+          })]
+        })
+      }), "\xA0YouTube"]
+    });
+    $[4] = t5;
+  } else {
+    t5 = $[4];
+  }
+  let t6;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "about",
+      children: [t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "info-links",
+        children: [t4, t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+          href: "#",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+            fill: "#CECED6",
+            width: "16px",
+            height: "16px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            "data-name": "Layer 1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+              d: "M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+            })
+          }), "\xA0GitHub"]
+        })]
+      })]
+    });
+    $[5] = t6;
+  } else {
+    t6 = $[5];
+  }
+  let t7;
+  let t8;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "channel-images",
+      src: "./images/channel-image-1.jpg",
+      alt: "channel-images"
+    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+      children: "\u0421\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435:"
+    });
+    $[6] = t7;
+    $[7] = t8;
+  } else {
+    t7 = $[6];
+    t8 = $[7];
+  }
+  let t9;
+  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[8] = t9;
+  } else {
+    t9 = $[8];
+  }
+  let t10;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[9] = t10;
+  } else {
+    t10 = $[9];
+  }
+  let t11;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[10] = t11;
+  } else {
+    t11 = $[10];
+  }
+  let t12;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[11] = t12;
+  } else {
+    t12 = $[11];
+  }
+  let t13;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[12] = t13;
+  } else {
+    t13 = $[12];
+  }
+  let t14;
+  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[13] = t14;
+  } else {
+    t14 = $[13];
+  }
+  let t15;
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[14] = t15;
+  } else {
+    t15 = $[14];
+  }
+  let t16;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[15] = t16;
+  } else {
+    t16 = $[15];
+  }
+  let t17;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[16] = t17;
+  } else {
+    t17 = $[16];
+  }
+  let t18;
+  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0421\u0442\u0440\u0438\u043C\u0435\u0440 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 ", t9, "\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435: ", t10, "\u2295 \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0442\u0447\u0438\u043A\u0438 \u0438 \u043F\u0440\u0438\u0451\u043C\u043D\u0438\u043A\u0438, ", t11, "\u2295 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0431\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438  ", t12, "\u0441 \u0432\u044B\u0441\u043E\u043A\u043E\u0442\u043E\u0447\u043D\u044B\u043C\u0438 \u043F\u043E\u0434\u0432\u0438\u0436\u043D\u044B\u043C\u0438 \u0437\u0435\u0440\u043A\u0430\u043B\u0430\u043C\u0438 \u0438 \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438,  ", t13, "\u2295 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B \u0444\u043E\u0442\u043E\u043D\u043E\u0432: \u043E\u0434\u043D\u043E\u0444\u043E\u0442\u043E\u043D\u043D\u044B\u0435 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B (SNSPD), ", t14, "\u2295 \u0440\u0435\u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0442\u043E\u0440\u044B, ", t15, "\u2295 \u0431\u043E\u0440\u0442\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u044B \u0438 \u043C\u043E\u0434\u0435\u043C\u044B: \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043C\u043E\u0434\u0443\u043B\u044C MAScOT \u0438 \u043C\u043E\u0434\u0435\u043C, ", t16, "\u2295 \u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430 \u0434\u043B\u044F \u043A\u0430\u043C\u0435\u0440 \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F ", t17, "\u2295 \u0438, \u0440\u0430\u0437\u0443\u043C\u0435\u0435\u0442\u0441\u044F, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \xAB\u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0443 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B\xBB ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+      })]
+    });
+    $[17] = t18;
+  } else {
+    t18 = $[17];
+  }
+  let t19;
+  let t20;
+  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "channel-images",
+      src: "./images/channel-image-2.jpg",
+      alt: "channel-images"
+    });
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+      children: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B \u0434\u043B\u044F \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430"
+    });
+    $[18] = t19;
+    $[19] = t20;
+  } else {
+    t19 = $[18];
+    t20 = $[19];
+  }
+  let t21;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[20] = t21;
+  } else {
+    t21 = $[20];
+  }
+  let t22;
+  if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+    t22 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[21] = t22;
+  } else {
+    t22 = $[21];
+  }
+  let t23;
+  if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
+    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[22] = t23;
+  } else {
+    t23 = $[22];
+  }
+  let t24;
+  if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[23] = t24;
+  } else {
+    t24 = $[23];
+  }
+  let t25;
+  if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[24] = t25;
+  } else {
+    t25 = $[24];
+  }
+  let t26;
+  if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
+    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[25] = t26;
+  } else {
+    t26 = $[25];
+  }
+  let t27;
+  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+    t27 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[26] = t27;
+  } else {
+    t27 = $[26];
+  }
+  let t28;
+  if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+    t28 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[27] = t28;
+  } else {
+    t28 = $[27];
+  }
+  let t29;
+  if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
+    t29 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[28] = t29;
+  } else {
+    t29 = $[28];
+  }
+  let t30;
+  if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
+    t30 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[29] = t30;
+  } else {
+    t30 = $[29];
+  }
+  let t31;
+  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+    t31 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[30] = t31;
+  } else {
+    t31 = $[30];
+  }
+  let t32;
+  if ($[31] === Symbol.for("react.memo_cache_sentinel")) {
+    t32 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[31] = t32;
+  } else {
+    t32 = $[31];
+  }
+  let t33;
+  if ($[32] === Symbol.for("react.memo_cache_sentinel")) {
+    t33 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[32] = t33;
+  } else {
+    t33 = $[32];
+  }
+  let t34;
+  if ($[33] === Symbol.for("react.memo_cache_sentinel")) {
+    t34 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[33] = t34;
+  } else {
+    t34 = $[33];
+  }
+  let t35;
+  if ($[34] === Symbol.for("react.memo_cache_sentinel")) {
+    t35 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t19, t20, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0415\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u043D\u0430\u043B\u0430\u0434\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442 \u0441\u043E \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u043E\u043C", t21, "\u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u0435\u043A\u0442\u044B \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430", t22, "\u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F ", t23, "\u043F\u0440\u0438\u0441\u044B\u043B\u0430\u0439\u0442\u0435 \u0441\u0432\u043E\u0438 \u043F\u0440\u043E\u0431\u043D\u044B\u0435 \u043F\u0440\u043E\u0435\u043A\u0442\u044B ", t24, "\u0432 \u043D\u0435\u0439\u0440\u043E\u0441\u0435\u0442\u0435\u0432\u0443\u044E \u041B\u0421 \u0434\u043B\u044F \u043E\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u044F: ", t25, "neuro_activate: 0xAB3F9C2D@moon ", t26, "\u2248 \u2248 \u2248 ", t27, "\u0434\u043B\u044F \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u0430\u0446\u0438\u0438 \u0432 \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u0435:", t28, "metaverse:moonland:zone3:x128y45z200", t29, "vrchat:worldID:portal7", t30, "\u2248 \u2248 \u2248 ", t31, "\u043E\u0442 \u0432\u0430\u0448\u0435\u0433\u043E AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043D\u0442\u0430 \u043A AI-\u0430\u0433\u0435\u043D\u0442\u0443 \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u0430:", t32, "\"primary_ai\": \"neuro_activate_ai_core_v3.2\", ", t33, "\"chat_bot\": \"neuro_activate_chat_bot_v1.8\",", t34, "\"wss://chat.neuro_activate.ai/ws\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\"preferred_modes\": [\"text\", \"voice\", \"vr_gesture\"]"]
+      })]
+    });
+    $[34] = t35;
+  } else {
+    t35 = $[34];
+  }
+  let t36;
+  let t37;
+  if ($[35] === Symbol.for("react.memo_cache_sentinel")) {
+    t36 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "channel-images",
+      src: "./images/channel-image-3.jpg",
+      alt: "channel-images"
+    });
+    t37 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+      children: "LunaBoard"
+    });
+    $[35] = t36;
+    $[36] = t37;
+  } else {
+    t36 = $[35];
+    t37 = $[36];
+  }
+  let t38;
+  if ($[37] === Symbol.for("react.memo_cache_sentinel")) {
+    t38 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[37] = t38;
+  } else {
+    t38 = $[37];
+  }
+  let t39;
+  if ($[38] === Symbol.for("react.memo_cache_sentinel")) {
+    t39 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[38] = t39;
+  } else {
+    t39 = $[38];
+  }
+  let t40;
+  if ($[39] === Symbol.for("react.memo_cache_sentinel")) {
+    t40 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[39] = t40;
+  } else {
+    t40 = $[39];
+  }
+  let t41;
+  if ($[40] === Symbol.for("react.memo_cache_sentinel")) {
+    t41 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[40] = t41;
+  } else {
+    t41 = $[40];
+  }
+  let t42;
+  if ($[41] === Symbol.for("react.memo_cache_sentinel")) {
+    t42 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[41] = t42;
+  } else {
+    t42 = $[41];
+  }
+  let t43;
+  if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
+    t43 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[42] = t43;
+  } else {
+    t43 = $[42];
+  }
+  let t44;
+  if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
+    t44 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[43] = t44;
+  } else {
+    t44 = $[43];
+  }
+  let t45;
+  if ($[44] === Symbol.for("react.memo_cache_sentinel")) {
+    t45 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[44] = t45;
+  } else {
+    t45 = $[44];
+  }
+  let t46;
+  if ($[45] === Symbol.for("react.memo_cache_sentinel")) {
+    t46 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[45] = t46;
+  } else {
+    t46 = $[45];
+  }
+  let t47;
+  if ($[46] === Symbol.for("react.memo_cache_sentinel")) {
+    t47 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[46] = t47;
+  } else {
+    t47 = $[46];
+  }
+  let t48;
+  if ($[47] === Symbol.for("react.memo_cache_sentinel")) {
+    t48 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[47] = t48;
+  } else {
+    t48 = $[47];
+  }
+  let t49;
+  if ($[48] === Symbol.for("react.memo_cache_sentinel")) {
+    t49 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[48] = t49;
+  } else {
+    t49 = $[48];
+  }
+  let t50;
+  if ($[49] === Symbol.for("react.memo_cache_sentinel")) {
+    t50 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[49] = t50;
+  } else {
+    t50 = $[49];
+  }
+  let t51;
+  if ($[50] === Symbol.for("react.memo_cache_sentinel")) {
+    t51 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "channel-discription",
+        children: [t2, t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "info-blocks-row",
+          children: [t18, t35, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            className: "channel-info-block",
+            children: [t36, t37, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+              children: ["\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u043E\u0432\u043E\u0439 \u0438\u0433\u0440\u0435 ", t38, "\u043D\u0430 \u043E\u0431\u0449\u0435\u043C \u0445\u043E\u043B\u0441\u0442\u0435 \u0434\u043B\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB", t39, "\u043B\u0443\u0447\u0448\u0438\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0431\u0443\u0434\u0443\u0442 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u044B ", t40, "\u2297 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u043C \u043F\u0438\u0433\u043C\u0435\u043D\u0442\u043E\u043C, ", t41, "\u2297 \u0444\u0435\u0440\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u044B\u043C\u0438 \u0447\u0430\u0441\u0442\u0438\u0446\u0430\u043C\u0438, ", t42, "\u2297 \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u0438, ", t43, "\u2297 \u0437\u0432\u0435\u0437\u0434\u043D\u044B\u043C \u0441\u0432\u0435\u0442\u043E\u043C ", t44, "\u2297 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043C\u043D\u043E\u0433\u043E\u043C\u0435\u0440\u043D\u044B\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 ", t45, "\u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u044B \u0440\u043E\u0431\u043E\u0442\u043E\u043C \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u044E \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB \u043F\u043E\u0434 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u043C \u043A\u0443\u043F\u043E\u043B\u043E\u043C ", t46, "\u0441 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0432\u0438\u0434\u043E\u043C \u043D\u0430 \u0417\u0435\u043C\u043B\u044E ", t47, "\u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443:  CosmoArtHub.space  \u2248 ", t48, "CosmoArtHub-gallery.cosmos ", t49, "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432 \u043C\u043E\u0436\u043D\u043E  ", t50, "\u0432 \u043D\u0430\u0448\u0435\u0439 \u0433\u0440\u0443\u043F\u043F\u0435 \"LunaBoard\"  ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+            })]
+          })]
+        })]
+      })
+    });
+    $[50] = t51;
+  } else {
+    t51 = $[50];
+  }
+  return t51;
+}
+
+/***/ },
+
+/***/ "./src/js/components/ChannelPage.js"
+/*!******************************************!*\
+  !*** ./src/js/components/ChannelPage.js ***!
+  \******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChannelPage)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
+/* harmony import */ var _Stream__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Stream */ "./src/js/components/Stream.js");
+/* harmony import */ var _ChannelDescription__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ChannelDescription */ "./src/js/components/ChannelDescription.js");
+/* harmony import */ var _ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ChannelCardsLine */ "./src/js/components/ChannelCardsLine.js");
+/* harmony import */ var _ClipsCardsLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ClipsCardsLine */ "./src/js/components/ClipsCardsLine.js");
+/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
+/* harmony import */ var _ChannelCategories__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ChannelCategories */ "./src/js/components/ChannelCategories.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+
+function ChannelPage(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(32);
+  const {
+    db,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = (0,_utils_common__WEBPACK_IMPORTED_MODULE_8__.getUrlParams)();
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  const params = t1;
+  console.log(params.id);
+  const streamId = +params.id || 1;
+  let streamData;
+  let t2;
+  if ($[1] !== db.channelsModel || $[2] !== db.streamsModel) {
+    streamData = db.streamsModel.findOneById(streamId);
+    t2 = db.channelsModel.findOneById(streamData.channelId);
+    $[1] = db.channelsModel;
+    $[2] = db.streamsModel;
+    $[3] = streamData;
+    $[4] = t2;
+  } else {
+    streamData = $[3];
+    t2 = $[4];
+  }
+  const channelData = t2;
+  let t3;
+  if ($[5] !== channelData || $[6] !== streamData) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+      className: "main-banner",
+      id: "react-stream",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Stream__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        streamData: streamData,
+        channelData: channelData
+      })
+    });
+    $[5] = channelData;
+    $[6] = streamData;
+    $[7] = t3;
+  } else {
+    t3 = $[7];
+  }
+  let t4;
+  if ($[8] !== db || $[9] !== showAll) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+      className: "channel-discription",
+      id: "react-channel-description",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelDescription__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        db: db,
+        streamId: streamId,
+        showAll: showAll
+      })
+    });
+    $[8] = db;
+    $[9] = showAll;
+    $[10] = t4;
+  } else {
+    t4 = $[10];
+  }
+  let t5;
+  if ($[11] !== t3 || $[12] !== t4) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      className: "main-screen-block",
+      children: [t3, t4]
+    });
+    $[11] = t3;
+    $[12] = t4;
+    $[13] = t5;
+  } else {
+    t5 = $[13];
+  }
+  let t6;
+  let t7;
+  let t8;
+  if ($[14] !== db || $[15] !== showAll) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      db: db,
+      title: "\u0412\u0441\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438",
+      categoryId: 1,
+      showAll: showAll
+    });
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      db: db,
+      title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u0432\u0438\u0434\u0435\u043E",
+      categoryId: 1,
+      showAll: showAll
+    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ClipsCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      db: db,
+      title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043A\u043B\u0438\u043F\u044B",
+      channelId: 10,
+      showAll: showAll
+    });
+    $[14] = db;
+    $[15] = showAll;
+    $[16] = t6;
+    $[17] = t7;
+    $[18] = t8;
+  } else {
+    t6 = $[16];
+    t7 = $[17];
+    t8 = $[18];
+  }
+  let t9;
+  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_6__["default"], {});
+    $[19] = t9;
+  } else {
+    t9 = $[19];
+  }
+  let t10;
+  if ($[20] !== db || $[21] !== showAll) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCategories__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      db: db,
+      channelId: 10,
+      showAll: showAll
+    });
+    $[20] = db;
+    $[21] = showAll;
+    $[22] = t10;
+  } else {
+    t10 = $[22];
+  }
+  let t11;
+  if ($[23] !== t10 || $[24] !== t6 || $[25] !== t7 || $[26] !== t8) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      className: "favourite-categories",
+      children: [t6, t7, t8, t9, t10]
+    });
+    $[23] = t10;
+    $[24] = t6;
+    $[25] = t7;
+    $[26] = t8;
+    $[27] = t11;
+  } else {
+    t11 = $[27];
+  }
+  let t12;
+  if ($[28] !== db || $[29] !== t11 || $[30] !== t5) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        db: db,
+        showFooter: false,
+        children: [t5, t11]
+      })
+    });
+    $[28] = db;
+    $[29] = t11;
+    $[30] = t5;
+    $[31] = t12;
+  } else {
+    t12 = $[31];
+  }
+  return t12;
+}
+
+/***/ },
+
+/***/ "./src/js/components/Chat.js"
+/*!***********************************!*\
+  !*** ./src/js/components/Chat.js ***!
+  \***********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Chat)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function Chat(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(11);
+  let scrollToBottom;
+  let sendMessage;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const addMessage = (text, isUser) => {
+      const chatMessages = document.getElementById("chatMessages");
+      const messageDiv = document.createElement("div");
+      messageDiv.className = `message ${isUser ? "user-message" : "bot-message"}`;
+      const currentTime = new Date();
+      const hours = currentTime.getHours().toString().padStart(2, "0");
+      const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+      const timeString = `${hours}:${minutes}`;
+      messageDiv.innerHTML = `
+      <div class="message-content">${text}</div>
+      <div class="message-time">${timeString}</div>
+    `;
+      chatMessages.appendChild(messageDiv);
+      scrollToBottom();
+    };
+    scrollToBottom = _temp;
+    sendMessage = () => {
+      const userInput = document.getElementById("userInput");
+      const text_0 = userInput.value.trim();
+      if (text_0 === "") {
+        return;
+      }
+      addMessage(text_0, true);
+      userInput.value = "";
+      setTimeout(() => {
+        const botResponse = getBotResponse(text_0);
+        addMessage(botResponse, false);
+      }, 1000);
+    };
+    const getBotResponse = _temp2;
+    t1 = () => {
+      if (e.key === "Enter") {
+        sendMessage();
+      }
+    };
+    $[0] = scrollToBottom;
+    $[1] = sendMessage;
+    $[2] = t1;
+  } else {
+    scrollToBottom = $[0];
+    sendMessage = $[1];
+    t1 = $[2];
+  }
+  const onKeyPress = t1;
+  let t2;
+  let t3;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = () => {
+      scrollToBottom();
+    };
+    t3 = [];
+    $[3] = t2;
+    $[4] = t3;
+  } else {
+    t2 = $[3];
+    t3 = $[4];
+  }
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t2, t3);
+  let t4;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "chat-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+        children: "\u0427\u0430\u0442 \u0432 \u043F\u0440\u044F\u043C\u043E\u043C \u044D\u0444\u0438\u0440\u0435:"
+      })
+    });
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "chat-messages",
+      id: "chatMessages",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "message bot-message",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "./channel.html",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "./images/channel-ava-1-1.svg",
+            alt: "channel ava"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "channel-name",
+          children: "orignMasteR"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "message-content",
+          children: "\u0422\u0435\u043C\u0430 \u0434\u043D\u044F: \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438\u0433\u0440\u044B"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "message-time",
+          children: "10:00"
+        })]
+      })
+    });
+    $[6] = t5;
+  } else {
+    t5 = $[6];
+  }
+  let t6;
+  let t7;
+  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "emoji-toggle",
+      id: "emojiToggle",
+      children: "\uD83D\uDE0A"
+    });
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+      type: "text",
+      id: "userInput",
+      placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435...",
+      onKeyDown: onKeyPress
+    });
+    $[7] = t6;
+    $[8] = t7;
+  } else {
+    t6 = $[7];
+    t7 = $[8];
+  }
+  let t8;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "message-buttons",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        id: "settingsButton",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+          fill: "#E2552D",
+          width: "20px",
+          height: "20px",
+          viewBox: "0 0 24 24",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+            d: "M12,16a4,4,0,1,0-4-4A4,4,0,0,0,12,16Zm0-6a2,2,0,1,1-2,2A2,2,0,0,1,12,10ZM3.5,12.877l-1,.579a2,2,0,0,0-.733,2.732l1.489,2.578A2,2,0,0,0,5.99,19.5L7,18.916a1.006,1.006,0,0,1,1.008.011.992.992,0,0,1,.495.857V21a2,2,0,0,0,2,2h3a2,2,0,0,0,2-2V19.782a1.009,1.009,0,0,1,1.5-.866l1.009.582a2,2,0,0,0,2.732-.732l1.488-2.578a2,2,0,0,0-.733-2.732l-1-.579a1.007,1.007,0,0,1-.5-.89,1,1,0,0,1,.5-.864l1-.579a2,2,0,0,0,.733-2.732L20.742,5.234A2,2,0,0,0,18.01,4.5L17,5.083a1.008,1.008,0,0,1-1.5-.867V3a2,2,0,0,0-2-2h-3a2,2,0,0,0-2,2V4.294a.854.854,0,0,1-.428.74l-.154.089a.864.864,0,0,1-.854,0L5.99,4.5a2,2,0,0,0-2.733.732L1.769,7.813A2,2,0,0,0,2.5,10.544l1,.578a1.011,1.011,0,0,1,.5.891A.994.994,0,0,1,3.5,12.877Zm1-3.487-1-.578L4.99,6.234l1.074.62a2.86,2.86,0,0,0,2.85,0l.154-.088A2.863,2.863,0,0,0,10.5,4.294V3h3V4.216a3.008,3.008,0,0,0,4.5,2.6l1.007-.582L20.5,8.812l-1,.578a3.024,3.024,0,0,0,0,5.219l1,.579h0l-1.488,2.578L18,17.184a3.008,3.008,0,0,0-4.5,2.6V21h-3V19.784a3.006,3.006,0,0,0-4.5-2.6l-1.007.582L3.5,15.188l1-.579a3.024,3.024,0,0,0,0-5.219Z"
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        id: "sendButton",
+        onClick: sendMessage,
+        children: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C"
+      })]
+    });
+    $[9] = t8;
+  } else {
+    t8 = $[9];
+  }
+  let t9;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "chat-container",
+        children: [t4, t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "chat-input",
+          children: [t6, t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "emoji-panel",
+            id: "emojiPanel",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE0A",
+              children: "\uD83D\uDE0A"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE02",
+              children: "\uD83D\uDE02"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE0D",
+              children: "\uD83D\uDE0D"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDC4D",
+              children: "\uD83D\uDC4D"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83E\uDD14",
+              children: "\uD83E\uDD14"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83C\uDF89",
+              children: "\uD83C\uDF89"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\u2764\uFE0F",
+              children: "\u2764\uFE0F"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "emoji-item",
+              "data-emoji": "\uD83D\uDE4F",
+              children: "\uD83D\uDE4F"
+            })]
+          })]
+        })]
+      })
+    });
+    $[10] = t9;
+  } else {
+    t9 = $[10];
+  }
+  return t9;
+}
+function _temp2(userMessage) {
+  const lowerMessage = userMessage.toLowerCase();
+  if (lowerMessage.includes("\u043F\u0440\u0438\u0432\u0435\u0442") || lowerMessage.includes("\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439")) {
+    return "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435! \u0427\u0435\u043C \u043C\u043E\u0433\u0443 \u043F\u043E\u043C\u043E\u0447\u044C?";
+  } else {
+    if (lowerMessage.includes("\u043F\u043E\u043A\u0430") || lowerMessage.includes("\u0434\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F")) {
+      return "\u0414\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F! \u0411\u044B\u043B\u043E \u043F\u0440\u0438\u044F\u0442\u043D\u043E \u043F\u043E\u043E\u0431\u0449\u0430\u0442\u044C\u0441\u044F!";
+    } else {
+      if (lowerMessage.includes("\u043F\u043E\u043C\u043E\u0449\u044C")) {
+        return "\u042F \u0437\u0434\u0435\u0441\u044C, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043C\u043E\u0447\u044C. \u0427\u0442\u043E \u0432\u0430\u0441 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0443\u0435\u0442?";
+      } else {
+        return "\u041F\u043E\u043D\u044F\u043B \u0432\u0430\u0441. \u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u0443\u0442\u043E\u0447\u043D\u0438\u043C \u0434\u0435\u0442\u0430\u043B\u0438...";
+      }
+    }
+  }
+}
+function _temp() {
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+/***/ },
+
+/***/ "./src/js/components/ClipsCards.js"
+/*!*****************************************!*\
+  !*** ./src/js/components/ClipsCards.js ***!
+  \*****************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ClipsCards)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function ClipsCards(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(7);
+  const {
+    db,
+    channelId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] !== channelId || $[1] !== db.channelsModel || $[2] !== db.clipsModel || $[3] !== showAll) {
+    const renderCards = () => {
+      let clipsFiltered = db.clipsModel.findByName("channelId", channelId);
+      console.log({
+        channelId,
+        clipsFiltered
+      });
+      if (!showAll && clipsFiltered.length > 5) {
+        clipsFiltered = clipsFiltered.slice(0, 5);
+      }
+      return clipsFiltered.map(clip => {
+        const channel = db.channelsModel.findOneById(clip.channelId);
+        return {
+          clip,
+          channel,
+          clipUrl: "./channel.html?id=" + clip.id,
+          channelUrl: "./channel.html?id=" + clip.id
+        };
+      });
+    };
+    t1 = renderCards().map(_temp);
+    $[0] = channelId;
+    $[1] = db.channelsModel;
+    $[2] = db.clipsModel;
+    $[3] = showAll;
+    $[4] = t1;
+  } else {
+    t1 = $[4];
+  }
+  let t2;
+  if ($[5] !== t1) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: t1
+    });
+    $[5] = t1;
+    $[6] = t2;
+  } else {
+    t2 = $[6];
+  }
+  return t2;
+}
+function _temp(data) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "channel-card mb-3",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+      href: data.clipUrl,
+      className: "link-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+        className: "card-img-top",
+        src: data.clip.previewUrl,
+        alt: "foto"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "card-body",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "stream-info-row",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.channelUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+            className: "channel-img",
+            src: data.channel.iconUrl,
+            alt: "foto"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: "clip-titles",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.clipUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+              className: "clip-title",
+              children: data.clip.title
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+            href: data.channelUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+              className: "channel-title",
+              children: data.channel.name
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "clip-author-wrapper",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          children: "Clip author:"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: data.channelUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            className: "clip-author-name",
+            children: data.channel.name
+          })
+        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "stream-labels",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "clip-always-offline",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          children: "\u2B24"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h6", {
+          children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "stream-age-rating",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
+          className: "label-age-rating",
+          children: [data.clip.ageRate, " +"]
+        })
+      })]
+    })]
+  }, data.clip.id);
+}
+
+/***/ },
+
+/***/ "./src/js/components/ClipsCardsLine.js"
+/*!*********************************************!*\
+  !*** ./src/js/components/ClipsCardsLine.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ClipsCardsLine)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _ClipsCards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClipsCards */ "./src/js/components/ClipsCards.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function ClipsCardsLine(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
+  const {
+    db,
+    title,
+    channelId,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+      fill: "#CECED6",
+      width: "16px",
+      height: "16px",
+      viewBox: "0 0 15 15",
+      version: "1.1",
+      id: "circle",
+      xmlns: "http://www.w3.org/2000/svg",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+        d: "M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] !== title) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "section-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: "/page",
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h2", {
+          children: [t1, title]
+        })
+      })
+    });
+    $[1] = title;
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "show-all-categories",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+        href: "#",
+        className: "arrowed",
+        children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+          className: "show-all-arrow",
+          width: "24px",
+          height: "24px",
+          viewBox: "0 0 24 24",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+            d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+            fill: "#CECED6"
+          })
+        })]
+      })
+    });
+    $[3] = t3;
+  } else {
+    t3 = $[3];
+  }
+  let t4;
+  if ($[4] !== t2) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "titles-row",
+      children: [t2, t3]
+    });
+    $[4] = t2;
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] !== channelId || $[7] !== db || $[8] !== showAll) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "clips-row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ClipsCards__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        db: db,
+        channelId: channelId,
+        showAll: showAll
+      })
+    });
+    $[6] = channelId;
+    $[7] = db;
+    $[8] = showAll;
+    $[9] = t5;
+  } else {
+    t5 = $[9];
+  }
+  let t6;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "divider-line"
+    });
+    $[10] = t6;
+  } else {
+    t6 = $[10];
+  }
+  let t7;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "show-all-link divider-container",
+      children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        className: "divider-button",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+          href: "#",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#CECED6"
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "divider-line"
+      })]
+    });
+    $[11] = t7;
+  } else {
+    t7 = $[11];
+  }
+  let t8;
+  if ($[12] !== t4 || $[13] !== t5) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "favourite-clips-container",
         children: [t4, t5, t7]
       })
     });
@@ -1521,7 +3658,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(39);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(40);
   let t1;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t1 = ["dark", "light"];
@@ -1537,15 +3674,16 @@ function Header(t0) {
       promoBg: "#292640",
       inputBg: "#1C173C",
       btnBg: "#16122F",
+      btnScrollBg: "#54506B",
       activeBtnBg: "#000000",
       bannerBtnBg: "rgba(52, 49, 72, 0.2)",
+      tagBtnBg: "rgba(170, 168, 181, 0.7)",
+      accentColorBg: "#FF6F3A",
       btnsHover: "rgba(17, 9, 80, 0.5)",
       blocksHover: "#2e2b50",
-      btnScrollHover: "#54506B",
-      accentColor: "#FF6F3A",
-      accentColorHover: "#E2552D",
-      tagBtnBg: "rgba(170, 168, 181, 0.7)",
+      btnScrollHover: "#16122F",
       tagBtnBgHover: "#CECED6",
+      accentColorHover: "#E2552D",
       fontLogo: "#FFFFFF",
       fontPrimary: "#FFFFFF",
       fontSecondary: "#CECED6",
@@ -1559,21 +3697,22 @@ function Header(t0) {
   if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
     t3 = new Map([t2, ["light", {
       mainBg: "#FFFFFF",
-      promoBg: "rgba(170, 168, 181, 0.5)",
+      promoBg: "rgba(134, 129, 153, 0.5)",
       inputBg: "rgba(170, 168, 181, 0.5)",
       btnBg: "rgba(170, 168, 181, 0.5)",
+      btnScrollBg: "#AAA8B5",
       activeBtnBg: "#AAA8B5",
       bannerBtnBg: "rgba(170, 168, 181, 0.7)",
-      btnsHover: "rgba(170, 168, 181, 0.7)",
-      blocksHover: "#AAA8B5",
-      btnScrollHover: "#AAA8B5",
-      accentColor: "#FF6F3A",
-      accentColorHover: "#E2552D",
       tagBtnBg: "#CECED6",
+      accentColorBg: "#FF6F3A",
+      btnsHover: "#b6b4be",
+      blocksHover: "#b6b4be",
+      btnScrollHover: "#b6b4be",
+      accentColorHover: "#E2552D",
       tagBtnBgHover: "rgba(170, 168, 181, 0.7)",
       fontLogo: "#FF6F3A",
       fontPrimary: "#343148",
-      fontSecondary: "#FFFFFF",
+      fontSecondary: "#1C173C",
       fontTertiary: "#000000"
     }]]);
     $[2] = t3;
@@ -1581,7 +3720,7 @@ function Header(t0) {
     t3 = $[2];
   }
   const themesMap = t3;
-  const [currentTheme, setTheme] = (0,_utils_common__WEBPACK_IMPORTED_MODULE_3__.useLocalStorage)("currentTheme", "dark");
+  const [currentTheme, setTheme] = (0,_utils_common__WEBPACK_IMPORTED_MODULE_3__.useLocalStorage)("currentTheme", "light");
   const [currentUser, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("currentUser");
   let t4;
   if ($[3] !== setTheme) {
@@ -1591,12 +3730,13 @@ function Header(t0) {
         promoBg,
         inputBg,
         btnBg,
+        btnScrollBg,
         activeBtnBg,
         bannerBtnBg,
         btnsHover,
         blocksHover,
         btnScrollHover,
-        accentColor,
+        accentColorBg,
         accentColorHover,
         tagBtnBg,
         tagBtnBgHover,
@@ -1611,12 +3751,13 @@ function Header(t0) {
         promoBg,
         inputBg,
         btnBg,
+        btnScrollBg,
         activeBtnBg,
         bannerBtnBg,
         btnsHover,
         blocksHover,
         btnScrollHover,
-        accentColor,
+        accentColorBg,
         accentColorHover,
         tagBtnBg,
         tagBtnBgHover,
@@ -1629,12 +3770,13 @@ function Header(t0) {
       document.documentElement.style.setProperty("--theme-promo-bg", promoBg);
       document.documentElement.style.setProperty("--theme-input-bg", inputBg);
       document.documentElement.style.setProperty("--theme-btn-bg", btnBg);
+      document.documentElement.style.setProperty("--theme-button-scroll-bg", btnScrollBg);
       document.documentElement.style.setProperty("--theme-active-btn-bg", activeBtnBg);
-      document.documentElement.style.setProperty("--theme-transparent-banner-btn", bannerBtnBg);
+      document.documentElement.style.setProperty("--theme-transparent-banner-btn-bg", bannerBtnBg);
       document.documentElement.style.setProperty("--theme-btns-hover", btnsHover);
       document.documentElement.style.setProperty("--theme-blocks-hover", blocksHover);
       document.documentElement.style.setProperty("--theme-button-scroll-hover", btnScrollHover);
-      document.documentElement.style.setProperty("--theme-accent", accentColor);
+      document.documentElement.style.setProperty("--theme-accent-bg", accentColorBg);
       document.documentElement.style.setProperty("--theme-accent-hover", accentColorHover);
       document.documentElement.style.setProperty("--theme-tag-button", tagBtnBg);
       document.documentElement.style.setProperty("--theme-tag-button-bg-hover", tagBtnBgHover);
@@ -1650,11 +3792,12 @@ function Header(t0) {
   }
   const updateTheme = t4;
   let t5;
-  if ($[5] !== currentTheme) {
+  if ($[5] !== currentTheme || $[6] !== updateTheme) {
     t5 = () => {
       console.log({
         currentTheme
       });
+      updateTheme(currentTheme);
       const authStr = localStorage.getItem("auth");
       const auth = authStr ? JSON.parse(authStr) : {};
       setUser(auth);
@@ -1663,43 +3806,44 @@ function Header(t0) {
       });
     };
     $[5] = currentTheme;
-    $[6] = t5;
+    $[6] = updateTheme;
+    $[7] = t5;
   } else {
-    t5 = $[6];
+    t5 = $[7];
   }
   let t6;
-  if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
     t6 = [];
-    $[7] = t6;
+    $[8] = t6;
   } else {
-    t6 = $[7];
+    t6 = $[8];
   }
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t5, t6);
   let t7;
-  if ($[8] !== currentTheme || $[9] !== updateTheme) {
+  if ($[9] !== currentTheme || $[10] !== updateTheme) {
     t7 = () => {
       console.log("\u041A\u043D\u043E\u043F\u043A\u0430 \u043D\u0430\u0436\u0430\u0442\u0430!");
       const currentIndex = themes.indexOf(currentTheme);
       const nextIndex = (currentIndex + 1) % themes.length;
       updateTheme(themes[nextIndex]);
     };
-    $[8] = currentTheme;
-    $[9] = updateTheme;
-    $[10] = t7;
+    $[9] = currentTheme;
+    $[10] = updateTheme;
+    $[11] = t7;
   } else {
-    t7 = $[10];
+    t7 = $[11];
   }
   const handleClick = t7;
   let t8;
-  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[11] = t8;
+    $[12] = t8;
   } else {
-    t8 = $[11];
+    t8 = $[12];
   }
   const t9 = `./images/logo-moon-header-${currentTheme}.png`;
   let t10;
-  if ($[12] !== t9) {
+  if ($[13] !== t9) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
       href: "./index.html",
       className: "logo-img",
@@ -1710,36 +3854,36 @@ function Header(t0) {
         className: "logo-icon"
       })
     });
-    $[12] = t9;
-    $[13] = t10;
+    $[13] = t9;
+    $[14] = t10;
   } else {
-    t10 = $[13];
+    t10 = $[14];
   }
   let t11;
-  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
     t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
       id: "logo-text",
       className: "logo-text",
       children: "Moon.tv"
     });
-    $[14] = t11;
+    $[15] = t11;
   } else {
-    t11 = $[14];
+    t11 = $[15];
   }
   let t12;
-  if ($[15] !== t10) {
+  if ($[16] !== t10) {
     t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "logo-container",
       children: [t10, t11]
     });
-    $[15] = t10;
-    $[16] = t12;
+    $[16] = t10;
+    $[17] = t12;
   } else {
-    t12 = $[16];
+    t12 = $[17];
   }
   const t13 = `./images/header-icon-music-${currentTheme}.svg`;
   let t14;
-  if ($[17] !== t13) {
+  if ($[18] !== t13) {
     t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -1752,25 +3896,25 @@ function Header(t0) {
         })
       })
     });
-    $[17] = t13;
-    $[18] = t14;
+    $[18] = t13;
+    $[19] = t14;
   } else {
-    t14 = $[18];
+    t14 = $[19];
   }
   const t15 = `./images/header-icon-theme-${currentTheme}.svg`;
   let t16;
-  if ($[19] !== t15) {
+  if ($[20] !== t15) {
     t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
       src: t15,
       title: "theme"
     });
-    $[19] = t15;
-    $[20] = t16;
+    $[20] = t15;
+    $[21] = t16;
   } else {
-    t16 = $[20];
+    t16 = $[21];
   }
   let t17;
-  if ($[21] !== handleClick || $[22] !== t16) {
+  if ($[22] !== handleClick || $[23] !== t16) {
     t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       id: "themeToggle",
       onClick: handleClick,
@@ -1779,15 +3923,15 @@ function Header(t0) {
       "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: t16
     });
-    $[21] = handleClick;
-    $[22] = t16;
-    $[23] = t17;
+    $[22] = handleClick;
+    $[23] = t16;
+    $[24] = t17;
   } else {
-    t17 = $[23];
+    t17 = $[24];
   }
   const t18 = `./images/header-icon-globe-${currentTheme}.svg`;
   let t19;
-  if ($[24] !== t18) {
+  if ($[25] !== t18) {
     t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -1800,14 +3944,14 @@ function Header(t0) {
         })
       })
     });
-    $[24] = t18;
-    $[25] = t19;
+    $[25] = t18;
+    $[26] = t19;
   } else {
-    t19 = $[25];
+    t19 = $[26];
   }
   const t20 = `./images/header-icon-login-${currentTheme}.svg`;
   let t21;
-  if ($[26] !== t20) {
+  if ($[27] !== t20) {
     t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -1820,14 +3964,14 @@ function Header(t0) {
         })
       })
     });
-    $[26] = t20;
-    $[27] = t21;
+    $[27] = t20;
+    $[28] = t21;
   } else {
-    t21 = $[27];
+    t21 = $[28];
   }
   const t22 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
   let t23;
-  if ($[28] !== t22) {
+  if ($[29] !== t22) {
     t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "login",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
@@ -1843,39 +3987,39 @@ function Header(t0) {
         })
       })
     });
-    $[28] = t22;
-    $[29] = t23;
+    $[29] = t22;
+    $[30] = t23;
   } else {
-    t23 = $[29];
+    t23 = $[30];
   }
   let t24;
-  if ($[30] !== t14 || $[31] !== t17 || $[32] !== t19 || $[33] !== t21 || $[34] !== t23) {
+  if ($[31] !== t14 || $[32] !== t17 || $[33] !== t19 || $[34] !== t21 || $[35] !== t23) {
     t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "container-menu",
       children: [t14, t17, t19, t21, t23]
     });
-    $[30] = t14;
-    $[31] = t17;
-    $[32] = t19;
-    $[33] = t21;
-    $[34] = t23;
-    $[35] = t24;
+    $[31] = t14;
+    $[32] = t17;
+    $[33] = t19;
+    $[34] = t21;
+    $[35] = t23;
+    $[36] = t24;
   } else {
-    t24 = $[35];
+    t24 = $[36];
   }
   let t25;
-  if ($[36] !== t12 || $[37] !== t24) {
+  if ($[37] !== t12 || $[38] !== t24) {
     t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("header", {
         className: "site-header",
         children: [t8, t12, t24]
       })
     });
-    $[36] = t12;
-    $[37] = t24;
-    $[38] = t25;
+    $[37] = t12;
+    $[38] = t24;
+    $[39] = t25;
   } else {
-    t25 = $[38];
+    t25 = $[39];
   }
   return t25;
 }
@@ -2154,36 +4298,40 @@ function HorizontalMenu({
     });
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("nav", {
-      className: "hMenu",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          className: "h-menu-first-button",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
-            href: "./categories.html",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-              src: "./images/all-icon-for-categories.svg",
-              alt: "\u0412\u0441\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
-            }), "\u0412\u0441\u0435"]
-          })
-        }), renderCards().map(data => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_HorizontalMenuBtn__WEBPACK_IMPORTED_MODULE_0__["default"], {
-          data: data,
-          activeId: activeId
-        }, data.id)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-          className: "h-menu-scroll",
-          "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
-            className: "carousel-arrow",
-            width: "30px",
-            height: "30px",
-            viewBox: "0 0 24 24",
-            xmlns: "http://www.w3.org/2000/svg",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
-              fill: "#CECED6"
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      id: "react-horizontal-menu",
+      className: "horizontal-menu-row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("nav", {
+        className: "horizontal-menu",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+            className: "horizontal-menu-first-button",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+              href: "./categories.html",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+                src: "./images/all-icon-for-categories.svg",
+                alt: "\u0412\u0441\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
+              }), "\u0412\u0441\u0435"]
             })
-          })
-        })]
+          }), renderCards().map(data => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_HorizontalMenuBtn__WEBPACK_IMPORTED_MODULE_0__["default"], {
+            data: data,
+            activeId: activeId
+          }, data.id)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            className: "horizontal-menu-scroll",
+            "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
+              className: "carousel-arrow",
+              width: "30px",
+              height: "30px",
+              viewBox: "0 0 24 24",
+              xmlns: "http://www.w3.org/2000/svg",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
+                d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+                fill: "#CECED6"
+              })
+            })
+          })]
+        })
       })
     })
   });
@@ -2308,12 +4456,8 @@ function Layout(props) {
   }
   let t2;
   if ($[3] !== db) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-      id: "react-horizontal-menu",
-      className: "horizontal-menu",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        db: db
-      })
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      db: db
     });
     $[3] = db;
     $[4] = t2;
@@ -2394,6 +4538,132 @@ function Layout(props) {
     t8 = $[18];
   }
   return t8;
+}
+
+/***/ },
+
+/***/ "./src/js/components/NotFoundPage.js"
+/*!*******************************************!*\
+  !*** ./src/js/components/NotFoundPage.js ***!
+  \*******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NotFoundPage)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+function NotFoundPage() {
+  setTimeout(() => {
+    window.location.href = './index.html';
+  }, 5000);
+  const handleClick = () => {
+    window.location.href = './index.html';
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      class: "wrapper",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "container",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+          class: "numbers",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "four",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page2"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page3"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page4"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page5"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page6"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page7"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page8"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "page9"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "zero",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero2"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero3"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero4"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero5"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero6"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero7"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero8"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero9"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero10"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero11"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "zero12"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "fourAgain",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four2"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four3"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four4"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four5"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four6"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four7"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four8"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              id: "four9"
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+          class: "emoji",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            role: "img",
+            "aria-hidden": "true",
+            class: "error-emoji",
+            children: " \\(o_o)/"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            class: "error-text gf-title-medium",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              children: "\u041D\u0435 \u043C\u043E\u0433\u0443 \u043D\u0430\u0439\u0442\u0438 \u043D\u0438 \u043E\u0434\u043D\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B."
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        class: "error-message",
+        children: "\u0421\u0422\u0420\u0410\u041D\u0418\u0426\u0410 \u041D\u0415 \u041D\u0410\u0419\u0414\u0415\u041D\u0410"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+        type: "button",
+        onClick: handleClick,
+        class: "goto-home-page-button",
+        children: "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 \u0433\u043B\u0430\u0432\u043D\u0443\u044E"
+      })]
+    })
+  });
 }
 
 /***/ },
@@ -2486,6 +4756,130 @@ function Notification(t0) {
 
 /***/ },
 
+/***/ "./src/js/components/SearchCards.js"
+/*!******************************************!*\
+  !*** ./src/js/components/SearchCards.js ***!
+  \******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SearchCards)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+function SearchCards({
+  db,
+  search,
+  showAll
+}) {
+  const showOnPage = 5;
+  const renderCards = () => {
+    if (!search) {
+      search = "search";
+    }
+    let streamsFiltered = db.streamsModel.findByNameRegex('title', search);
+    if (!showAll && streamsFiltered.length > showOnPage) {
+      streamsFiltered = streamsFiltered.slice(0, showOnPage);
+    }
+    return streamsFiltered.map(stream => {
+      const channel = db.channelsModel.findOneById(stream.channelId);
+      const category = db.categoriesModel.findOneById(stream.categoryId);
+      return {
+        stream,
+        channel,
+        category,
+        streamUrl: "./channel.html?id=" + stream.id,
+        categoryUrl: "./category.html?id=" + category.id
+      };
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: renderCards().map(data => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      className: "channel-card mb-3",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+        href: data.streamUrl,
+        className: "link-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+          className: "card-img-top",
+          src: data.stream.previewUrl,
+          alt: "foto"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "card-body",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+          className: "stream-info-row",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+            href: data.streamUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+              className: "channel-img",
+              src: data.channel.iconUrl,
+              alt: "foto"
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "stream-titles",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: data.streamUrl,
+              className: "link-wrapper",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h5", {
+                className: "stream-title",
+                children: data.stream.title
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              href: data.streamUrl,
+              className: "link-wrapper",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                className: "channel-title",
+                children: data.channel.name
+              })
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: data.categoryUrl,
+          className: "link-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+            className: "category-name-info",
+            children: data.category.name
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "tags-row",
+          role: "group",
+          "aria-label": "tags-group",
+          children: data.stream.languages.map((lang, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+            href: data.streamUrl,
+            className: "link-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+              type: "button",
+              className: "button-tag",
+              children: lang
+            })
+          }, index))
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "stream-labels",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+          className: "stream-live",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            children: "\u2B24"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h6", {
+            children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "stream-age-rating",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            className: "label-age-rating",
+            children: "12+"
+          })
+        })]
+      })]
+    }, data.stream.id))
+  });
+}
+
+/***/ },
+
 /***/ "./src/js/components/SearchForm.js"
 /*!*****************************************!*\
   !*** ./src/js/components/SearchForm.js ***!
@@ -2554,6 +4948,396 @@ function SearchForm(t0) {
     t3 = $[2];
   }
   return t3;
+}
+
+/***/ },
+
+/***/ "./src/js/components/SearchPage.js"
+/*!*****************************************!*\
+  !*** ./src/js/components/SearchPage.js ***!
+  \*****************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SearchPage)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
+/* harmony import */ var _SearchCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SearchCards */ "./src/js/components/SearchCards.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function SearchPage(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(15);
+  const {
+    db,
+    showAll
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = (0,_utils_common__WEBPACK_IMPORTED_MODULE_4__.getUrlParams)();
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  const params = t1;
+  console.log({
+    params
+  });
+  const search = params.q || "";
+  let t2;
+  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "favourite-categories-title",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
+        children: "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B \u043F\u043E\u0438\u0441\u043A\u0430:"
+      })
+    });
+    $[1] = t2;
+  } else {
+    t2 = $[1];
+  }
+  let t3;
+  if ($[2] !== db || $[3] !== showAll) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "channels-row",
+      id: "search_result",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_SearchCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        db: db,
+        search: search,
+        showAll: showAll
+      })
+    });
+    $[2] = db;
+    $[3] = showAll;
+    $[4] = t3;
+  } else {
+    t3 = $[4];
+  }
+  let t4;
+  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "divider-line"
+    });
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "show-all-link divider-container",
+      children: [t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+        className: "divider-button",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
+          href: "./categories.html",
+          className: "arrowed",
+          children: ["\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0432\u0441\u0435", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
+            className: "show-all-arrow",
+            width: "24px",
+            height: "24px",
+            viewBox: "0 0 24 24",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+              d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
+              fill: "#CECED6"
+            })
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        className: "divider-line"
+      })]
+    });
+    $[6] = t5;
+  } else {
+    t5 = $[6];
+  }
+  let t6;
+  if ($[7] !== t3) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "favourite-category-container",
+      children: [t3, t5]
+    });
+    $[7] = t3;
+    $[8] = t6;
+  } else {
+    t6 = $[8];
+  }
+  let t7;
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_1__["default"], {});
+    $[9] = t7;
+  } else {
+    t7 = $[9];
+  }
+  let t8;
+  if ($[10] !== t6) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "favourite-categories",
+      children: [t2, t6, t7]
+    });
+    $[10] = t6;
+    $[11] = t8;
+  } else {
+    t8 = $[11];
+  }
+  let t9;
+  if ($[12] !== db || $[13] !== t8) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        db: db,
+        children: t8
+      })
+    });
+    $[12] = db;
+    $[13] = t8;
+    $[14] = t9;
+  } else {
+    t9 = $[14];
+  }
+  return t9;
+}
+
+/***/ },
+
+/***/ "./src/js/components/Stream.js"
+/*!*************************************!*\
+  !*** ./src/js/components/Stream.js ***!
+  \*************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Stream)
+/* harmony export */ });
+/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
+/* harmony import */ var _Chat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Chat */ "./src/js/components/Chat.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function Stream(t0) {
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
+  const {
+    streamData,
+    channelData
+  } = t0;
+  let t1;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "stream-video",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("iframe", {
+        id: "streamTV",
+        src: "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+        title: "YouTube video player",
+        frameBorder: "0",
+        allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        referrerPolicy: "strict-origin-when-cross-origin",
+        allowFullScreen: true
+      })
+    });
+    $[0] = t1;
+  } else {
+    t1 = $[0];
+  }
+  let t2;
+  if ($[1] !== channelData.iconUrl) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: "./channel.html",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+          id: "channelIcon",
+          src: channelData.iconUrl,
+          alt: "channel ava"
+        })
+      })
+    });
+    $[1] = channelData.iconUrl;
+    $[2] = t2;
+  } else {
+    t2 = $[2];
+  }
+  let t3;
+  if ($[3] !== streamData.title) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+      id: "streamTitle",
+      children: streamData.title
+    });
+    $[3] = streamData.title;
+    $[4] = t3;
+  } else {
+    t3 = $[4];
+  }
+  let t4;
+  if ($[5] !== streamData.description) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+      id: "streamDes",
+      children: streamData.description
+    });
+    $[5] = streamData.description;
+    $[6] = t4;
+  } else {
+    t4 = $[6];
+  }
+  let t5;
+  if ($[7] !== channelData.name) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: "./channel.html",
+      id: "channelName",
+      children: channelData.name
+    });
+    $[7] = channelData.name;
+    $[8] = t5;
+  } else {
+    t5 = $[8];
+  }
+  let t6;
+  if ($[9] !== t3 || $[10] !== t4 || $[11] !== t5) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-info",
+      children: [t3, t4, t5]
+    });
+    $[9] = t3;
+    $[10] = t4;
+    $[11] = t5;
+    $[12] = t6;
+  } else {
+    t6 = $[12];
+  }
+  let t7;
+  if ($[13] !== t2 || $[14] !== t6) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "channel-stream-info",
+      children: [t2, t6]
+    });
+    $[13] = t2;
+    $[14] = t6;
+    $[15] = t7;
+  } else {
+    t7 = $[15];
+  }
+  let t8;
+  let t9;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+    });
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      children: "\u2B24"
+    });
+    $[16] = t8;
+    $[17] = t9;
+  } else {
+    t8 = $[16];
+    t9 = $[17];
+  }
+  let t10;
+  if ($[18] !== streamData.audience) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "live-watchers",
+      children: [t8, t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "viewer-count",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+          id: "current-viewers",
+          children: streamData.audience
+        })
+      })]
+    });
+    $[18] = streamData.audience;
+    $[19] = t10;
+  } else {
+    t10 = $[19];
+  }
+  let t11;
+  let t12;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "follow-button",
+      children: "\u041E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u0442\u044C"
+    });
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "subscribe-button",
+      children: "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+    });
+    $[20] = t11;
+    $[21] = t12;
+  } else {
+    t11 = $[20];
+    t12 = $[21];
+  }
+  let t13;
+  if ($[22] !== streamData.ageRate) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "buttons-row",
+      children: [t11, t12, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+        id: "ageRating",
+        className: "age-rating",
+        children: [streamData.ageRate, "+"]
+      })]
+    });
+    $[22] = streamData.ageRate;
+    $[23] = t13;
+  } else {
+    t13 = $[23];
+  }
+  let t14;
+  if ($[24] !== t10 || $[25] !== t13) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-statistic",
+      children: [t10, t13]
+    });
+    $[24] = t10;
+    $[25] = t13;
+    $[26] = t14;
+  } else {
+    t14 = $[26];
+  }
+  let t15;
+  if ($[27] !== t14 || $[28] !== t7) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-wrapper",
+      children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "channel-info",
+        children: [t7, t14]
+      })]
+    });
+    $[27] = t14;
+    $[28] = t7;
+    $[29] = t15;
+  } else {
+    t15 = $[29];
+  }
+  let t16;
+  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "chat",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Chat__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+    });
+    $[30] = t16;
+  } else {
+    t16 = $[30];
+  }
+  let t17;
+  if ($[31] !== t15) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+      children: [t15, t16]
+    });
+    $[31] = t15;
+    $[32] = t17;
+  } else {
+    t17 = $[32];
+  }
+  return t17;
 }
 
 /***/ },
@@ -50841,6 +53625,11119 @@ if (false) // removed by dead control flow
 
 /***/ },
 
+/***/ "./node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs"
+/*!***********************************************************************!*\
+  !*** ./node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs ***!
+  \***********************************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var react__WEBPACK_IMPORTED_MODULE_0___namespace_cache;
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Action: () => (/* binding */ Action),
+/* harmony export */   Await: () => (/* binding */ Await),
+/* harmony export */   AwaitContextProvider: () => (/* binding */ AwaitContextProvider),
+/* harmony export */   BrowserRouter: () => (/* binding */ BrowserRouter),
+/* harmony export */   CRITICAL_CSS_DATA_ATTRIBUTE: () => (/* binding */ CRITICAL_CSS_DATA_ATTRIBUTE),
+/* harmony export */   DataRouterContext: () => (/* binding */ DataRouterContext),
+/* harmony export */   DataRouterStateContext: () => (/* binding */ DataRouterStateContext),
+/* harmony export */   ENABLE_DEV_WARNINGS: () => (/* binding */ ENABLE_DEV_WARNINGS),
+/* harmony export */   ErrorResponseImpl: () => (/* binding */ ErrorResponseImpl),
+/* harmony export */   FetchersContext: () => (/* binding */ FetchersContext),
+/* harmony export */   Form: () => (/* binding */ Form),
+/* harmony export */   FrameworkContext: () => (/* binding */ FrameworkContext),
+/* harmony export */   HashRouter: () => (/* binding */ HashRouter),
+/* harmony export */   HistoryRouter: () => (/* binding */ HistoryRouter),
+/* harmony export */   IDLE_BLOCKER: () => (/* binding */ IDLE_BLOCKER),
+/* harmony export */   IDLE_FETCHER: () => (/* binding */ IDLE_FETCHER),
+/* harmony export */   IDLE_NAVIGATION: () => (/* binding */ IDLE_NAVIGATION),
+/* harmony export */   Link: () => (/* binding */ Link),
+/* harmony export */   Links: () => (/* binding */ Links),
+/* harmony export */   LocationContext: () => (/* binding */ LocationContext),
+/* harmony export */   MemoryRouter: () => (/* binding */ MemoryRouter),
+/* harmony export */   Meta: () => (/* binding */ Meta),
+/* harmony export */   NO_BODY_STATUS_CODES: () => (/* binding */ NO_BODY_STATUS_CODES),
+/* harmony export */   NavLink: () => (/* binding */ NavLink),
+/* harmony export */   Navigate: () => (/* binding */ Navigate),
+/* harmony export */   NavigationContext: () => (/* binding */ NavigationContext),
+/* harmony export */   Outlet: () => (/* binding */ Outlet),
+/* harmony export */   PrefetchPageLinks: () => (/* binding */ PrefetchPageLinks),
+/* harmony export */   RSCRouterContext: () => (/* binding */ RSCRouterContext),
+/* harmony export */   RemixErrorBoundary: () => (/* binding */ RemixErrorBoundary),
+/* harmony export */   Route: () => (/* binding */ Route),
+/* harmony export */   RouteContext: () => (/* binding */ RouteContext),
+/* harmony export */   Router: () => (/* binding */ Router),
+/* harmony export */   RouterContextProvider: () => (/* binding */ RouterContextProvider),
+/* harmony export */   RouterProvider: () => (/* binding */ RouterProvider),
+/* harmony export */   Routes: () => (/* binding */ Routes),
+/* harmony export */   SINGLE_FETCH_REDIRECT_STATUS: () => (/* binding */ SINGLE_FETCH_REDIRECT_STATUS),
+/* harmony export */   Scripts: () => (/* binding */ Scripts),
+/* harmony export */   ScrollRestoration: () => (/* binding */ ScrollRestoration),
+/* harmony export */   SingleFetchRedirectSymbol: () => (/* binding */ SingleFetchRedirectSymbol),
+/* harmony export */   StaticRouter: () => (/* binding */ StaticRouter),
+/* harmony export */   StaticRouterProvider: () => (/* binding */ StaticRouterProvider),
+/* harmony export */   StreamTransfer: () => (/* binding */ StreamTransfer),
+/* harmony export */   ViewTransitionContext: () => (/* binding */ ViewTransitionContext),
+/* harmony export */   WithComponentProps: () => (/* binding */ WithComponentProps),
+/* harmony export */   WithErrorBoundaryProps: () => (/* binding */ WithErrorBoundaryProps),
+/* harmony export */   WithHydrateFallbackProps: () => (/* binding */ WithHydrateFallbackProps),
+/* harmony export */   convertRoutesToDataRoutes: () => (/* binding */ convertRoutesToDataRoutes),
+/* harmony export */   createBrowserHistory: () => (/* binding */ createBrowserHistory),
+/* harmony export */   createBrowserRouter: () => (/* binding */ createBrowserRouter),
+/* harmony export */   createClientRoutes: () => (/* binding */ createClientRoutes),
+/* harmony export */   createClientRoutesWithHMRRevalidationOptOut: () => (/* binding */ createClientRoutesWithHMRRevalidationOptOut),
+/* harmony export */   createContext: () => (/* binding */ createContext),
+/* harmony export */   createHashHistory: () => (/* binding */ createHashHistory),
+/* harmony export */   createHashRouter: () => (/* binding */ createHashRouter),
+/* harmony export */   createMemoryHistory: () => (/* binding */ createMemoryHistory),
+/* harmony export */   createMemoryRouter: () => (/* binding */ createMemoryRouter),
+/* harmony export */   createPath: () => (/* binding */ createPath),
+/* harmony export */   createRequestInit: () => (/* binding */ createRequestInit),
+/* harmony export */   createRouter: () => (/* binding */ createRouter),
+/* harmony export */   createRoutesFromChildren: () => (/* binding */ createRoutesFromChildren),
+/* harmony export */   createRoutesFromElements: () => (/* binding */ createRoutesFromElements),
+/* harmony export */   createSearchParams: () => (/* binding */ createSearchParams),
+/* harmony export */   createServerRoutes: () => (/* binding */ createServerRoutes),
+/* harmony export */   createStaticHandler: () => (/* binding */ createStaticHandler),
+/* harmony export */   createStaticHandler2: () => (/* binding */ createStaticHandler2),
+/* harmony export */   createStaticRouter: () => (/* binding */ createStaticRouter),
+/* harmony export */   data: () => (/* binding */ data),
+/* harmony export */   decodeRedirectErrorDigest: () => (/* binding */ decodeRedirectErrorDigest),
+/* harmony export */   decodeRouteErrorResponseDigest: () => (/* binding */ decodeRouteErrorResponseDigest),
+/* harmony export */   decodeViaTurboStream: () => (/* binding */ decodeViaTurboStream),
+/* harmony export */   encode: () => (/* binding */ encode),
+/* harmony export */   escapeHtml: () => (/* binding */ escapeHtml),
+/* harmony export */   generatePath: () => (/* binding */ generatePath),
+/* harmony export */   getManifestPath: () => (/* binding */ getManifestPath),
+/* harmony export */   getPatchRoutesOnNavigationFunction: () => (/* binding */ getPatchRoutesOnNavigationFunction),
+/* harmony export */   getSingleFetchDataStrategyImpl: () => (/* binding */ getSingleFetchDataStrategyImpl),
+/* harmony export */   getStaticContextFromError: () => (/* binding */ getStaticContextFromError),
+/* harmony export */   getTurboStreamSingleFetchDataStrategy: () => (/* binding */ getTurboStreamSingleFetchDataStrategy),
+/* harmony export */   hydrationRouteProperties: () => (/* binding */ hydrationRouteProperties),
+/* harmony export */   instrumentHandler: () => (/* binding */ instrumentHandler),
+/* harmony export */   invariant: () => (/* binding */ invariant),
+/* harmony export */   isDataWithResponseInit: () => (/* binding */ isDataWithResponseInit),
+/* harmony export */   isMutationMethod: () => (/* binding */ isMutationMethod),
+/* harmony export */   isRedirectResponse: () => (/* binding */ isRedirectResponse),
+/* harmony export */   isRedirectStatusCode: () => (/* binding */ isRedirectStatusCode),
+/* harmony export */   isResponse: () => (/* binding */ isResponse),
+/* harmony export */   isRouteErrorResponse: () => (/* binding */ isRouteErrorResponse),
+/* harmony export */   mapRouteProperties: () => (/* binding */ mapRouteProperties),
+/* harmony export */   matchPath: () => (/* binding */ matchPath),
+/* harmony export */   matchRoutes: () => (/* binding */ matchRoutes),
+/* harmony export */   noActionDefinedError: () => (/* binding */ noActionDefinedError),
+/* harmony export */   parsePath: () => (/* binding */ parsePath),
+/* harmony export */   redirect: () => (/* binding */ redirect),
+/* harmony export */   redirectDocument: () => (/* binding */ redirectDocument),
+/* harmony export */   renderMatches: () => (/* binding */ renderMatches),
+/* harmony export */   replace: () => (/* binding */ replace),
+/* harmony export */   resolvePath: () => (/* binding */ resolvePath),
+/* harmony export */   setIsHydrated: () => (/* binding */ setIsHydrated),
+/* harmony export */   shouldHydrateRouteLoader: () => (/* binding */ shouldHydrateRouteLoader),
+/* harmony export */   singleFetchUrl: () => (/* binding */ singleFetchUrl),
+/* harmony export */   stripBasename: () => (/* binding */ stripBasename),
+/* harmony export */   stripIndexParam: () => (/* binding */ stripIndexParam),
+/* harmony export */   useActionData: () => (/* binding */ useActionData),
+/* harmony export */   useAsyncError: () => (/* binding */ useAsyncError),
+/* harmony export */   useAsyncValue: () => (/* binding */ useAsyncValue),
+/* harmony export */   useBeforeUnload: () => (/* binding */ useBeforeUnload),
+/* harmony export */   useBlocker: () => (/* binding */ useBlocker),
+/* harmony export */   useFetcher: () => (/* binding */ useFetcher),
+/* harmony export */   useFetchers: () => (/* binding */ useFetchers),
+/* harmony export */   useFogOFWarDiscovery: () => (/* binding */ useFogOFWarDiscovery),
+/* harmony export */   useFormAction: () => (/* binding */ useFormAction),
+/* harmony export */   useHref: () => (/* binding */ useHref),
+/* harmony export */   useInRouterContext: () => (/* binding */ useInRouterContext),
+/* harmony export */   useLinkClickHandler: () => (/* binding */ useLinkClickHandler),
+/* harmony export */   useLoaderData: () => (/* binding */ useLoaderData),
+/* harmony export */   useLocation: () => (/* binding */ useLocation),
+/* harmony export */   useMatch: () => (/* binding */ useMatch),
+/* harmony export */   useMatches: () => (/* binding */ useMatches),
+/* harmony export */   useNavigate: () => (/* binding */ useNavigate),
+/* harmony export */   useNavigation: () => (/* binding */ useNavigation),
+/* harmony export */   useNavigationType: () => (/* binding */ useNavigationType),
+/* harmony export */   useOutlet: () => (/* binding */ useOutlet),
+/* harmony export */   useOutletContext: () => (/* binding */ useOutletContext),
+/* harmony export */   useParams: () => (/* binding */ useParams),
+/* harmony export */   usePrompt: () => (/* binding */ usePrompt),
+/* harmony export */   useResolvedPath: () => (/* binding */ useResolvedPath),
+/* harmony export */   useRevalidator: () => (/* binding */ useRevalidator),
+/* harmony export */   useRoute: () => (/* binding */ useRoute),
+/* harmony export */   useRouteError: () => (/* binding */ useRouteError),
+/* harmony export */   useRouteLoaderData: () => (/* binding */ useRouteLoaderData),
+/* harmony export */   useRoutes: () => (/* binding */ useRoutes),
+/* harmony export */   useScrollRestoration: () => (/* binding */ useScrollRestoration),
+/* harmony export */   useSearchParams: () => (/* binding */ useSearchParams),
+/* harmony export */   useSubmit: () => (/* binding */ useSubmit),
+/* harmony export */   useViewTransitionState: () => (/* binding */ useViewTransitionState),
+/* harmony export */   warnOnce: () => (/* binding */ warnOnce),
+/* harmony export */   withComponentProps: () => (/* binding */ withComponentProps),
+/* harmony export */   withErrorBoundaryProps: () => (/* binding */ withErrorBoundaryProps),
+/* harmony export */   withHydrateFallbackProps: () => (/* binding */ withHydrateFallbackProps)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/**
+ * react-router v7.13.1
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+var __typeError = (msg) => {
+  throw TypeError(msg);
+};
+var __accessCheck = (obj, member, msg) => member.has(obj) || __typeError("Cannot " + msg);
+var __privateGet = (obj, member, getter) => (__accessCheck(obj, member, "read from private field"), getter ? getter.call(obj) : member.get(obj));
+var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot add the same private member more than once") : member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
+
+// lib/router/history.ts
+var Action = /* @__PURE__ */ ((Action2) => {
+  Action2["Pop"] = "POP";
+  Action2["Push"] = "PUSH";
+  Action2["Replace"] = "REPLACE";
+  return Action2;
+})(Action || {});
+var PopStateEventType = "popstate";
+function isLocation(obj) {
+  return typeof obj === "object" && obj != null && "pathname" in obj && "search" in obj && "hash" in obj && "state" in obj && "key" in obj;
+}
+function createMemoryHistory(options = {}) {
+  let { initialEntries = ["/"], initialIndex, v5Compat = false } = options;
+  let entries;
+  entries = initialEntries.map(
+    (entry, index2) => createMemoryLocation(
+      entry,
+      typeof entry === "string" ? null : entry.state,
+      index2 === 0 ? "default" : void 0,
+      typeof entry === "string" ? void 0 : entry.unstable_mask
+    )
+  );
+  let index = clampIndex(
+    initialIndex == null ? entries.length - 1 : initialIndex
+  );
+  let action = "POP" /* Pop */;
+  let listener = null;
+  function clampIndex(n) {
+    return Math.min(Math.max(n, 0), entries.length - 1);
+  }
+  function getCurrentLocation() {
+    return entries[index];
+  }
+  function createMemoryLocation(to, state = null, key, unstable_mask) {
+    let location = createLocation(
+      entries ? getCurrentLocation().pathname : "/",
+      to,
+      state,
+      key,
+      unstable_mask
+    );
+    warning(
+      location.pathname.charAt(0) === "/",
+      `relative pathnames are not supported in memory history: ${JSON.stringify(
+        to
+      )}`
+    );
+    return location;
+  }
+  function createHref2(to) {
+    return typeof to === "string" ? to : createPath(to);
+  }
+  let history = {
+    get index() {
+      return index;
+    },
+    get action() {
+      return action;
+    },
+    get location() {
+      return getCurrentLocation();
+    },
+    createHref: createHref2,
+    createURL(to) {
+      return new URL(createHref2(to), "http://localhost");
+    },
+    encodeLocation(to) {
+      let path = typeof to === "string" ? parsePath(to) : to;
+      return {
+        pathname: path.pathname || "",
+        search: path.search || "",
+        hash: path.hash || ""
+      };
+    },
+    push(to, state) {
+      action = "PUSH" /* Push */;
+      let nextLocation = isLocation(to) ? to : createMemoryLocation(to, state);
+      index += 1;
+      entries.splice(index, entries.length, nextLocation);
+      if (v5Compat && listener) {
+        listener({ action, location: nextLocation, delta: 1 });
+      }
+    },
+    replace(to, state) {
+      action = "REPLACE" /* Replace */;
+      let nextLocation = isLocation(to) ? to : createMemoryLocation(to, state);
+      entries[index] = nextLocation;
+      if (v5Compat && listener) {
+        listener({ action, location: nextLocation, delta: 0 });
+      }
+    },
+    go(delta) {
+      action = "POP" /* Pop */;
+      let nextIndex = clampIndex(index + delta);
+      let nextLocation = entries[nextIndex];
+      index = nextIndex;
+      if (listener) {
+        listener({ action, location: nextLocation, delta });
+      }
+    },
+    listen(fn) {
+      listener = fn;
+      return () => {
+        listener = null;
+      };
+    }
+  };
+  return history;
+}
+function createBrowserHistory(options = {}) {
+  function createBrowserLocation(window2, globalHistory) {
+    let maskedLocation = globalHistory.state?.masked;
+    let { pathname, search, hash } = maskedLocation || window2.location;
+    return createLocation(
+      "",
+      { pathname, search, hash },
+      // state defaults to `null` because `window.history.state` does
+      globalHistory.state && globalHistory.state.usr || null,
+      globalHistory.state && globalHistory.state.key || "default",
+      maskedLocation ? {
+        pathname: window2.location.pathname,
+        search: window2.location.search,
+        hash: window2.location.hash
+      } : void 0
+    );
+  }
+  function createBrowserHref(window2, to) {
+    return typeof to === "string" ? to : createPath(to);
+  }
+  return getUrlBasedHistory(
+    createBrowserLocation,
+    createBrowserHref,
+    null,
+    options
+  );
+}
+function createHashHistory(options = {}) {
+  function createHashLocation(window2, globalHistory) {
+    let {
+      pathname = "/",
+      search = "",
+      hash = ""
+    } = parsePath(window2.location.hash.substring(1));
+    if (!pathname.startsWith("/") && !pathname.startsWith(".")) {
+      pathname = "/" + pathname;
+    }
+    return createLocation(
+      "",
+      { pathname, search, hash },
+      // state defaults to `null` because `window.history.state` does
+      globalHistory.state && globalHistory.state.usr || null,
+      globalHistory.state && globalHistory.state.key || "default"
+    );
+  }
+  function createHashHref(window2, to) {
+    let base = window2.document.querySelector("base");
+    let href = "";
+    if (base && base.getAttribute("href")) {
+      let url = window2.location.href;
+      let hashIndex = url.indexOf("#");
+      href = hashIndex === -1 ? url : url.slice(0, hashIndex);
+    }
+    return href + "#" + (typeof to === "string" ? to : createPath(to));
+  }
+  function validateHashLocation(location, to) {
+    warning(
+      location.pathname.charAt(0) === "/",
+      `relative pathnames are not supported in hash history.push(${JSON.stringify(
+        to
+      )})`
+    );
+  }
+  return getUrlBasedHistory(
+    createHashLocation,
+    createHashHref,
+    validateHashLocation,
+    options
+  );
+}
+function invariant(value, message) {
+  if (value === false || value === null || typeof value === "undefined") {
+    throw new Error(message);
+  }
+}
+function warning(cond, message) {
+  if (!cond) {
+    if (typeof console !== "undefined") console.warn(message);
+    try {
+      throw new Error(message);
+    } catch (e) {
+    }
+  }
+}
+function createKey() {
+  return Math.random().toString(36).substring(2, 10);
+}
+function getHistoryState(location, index) {
+  return {
+    usr: location.state,
+    key: location.key,
+    idx: index,
+    masked: location.unstable_mask ? {
+      pathname: location.pathname,
+      search: location.search,
+      hash: location.hash
+    } : void 0
+  };
+}
+function createLocation(current, to, state = null, key, unstable_mask) {
+  let location = {
+    pathname: typeof current === "string" ? current : current.pathname,
+    search: "",
+    hash: "",
+    ...typeof to === "string" ? parsePath(to) : to,
+    state,
+    // TODO: This could be cleaned up.  push/replace should probably just take
+    // full Locations now and avoid the need to run through this flow at all
+    // But that's a pretty big refactor to the current test suite so going to
+    // keep as is for the time being and just let any incoming keys take precedence
+    key: to && to.key || key || createKey(),
+    unstable_mask
+  };
+  return location;
+}
+function createPath({
+  pathname = "/",
+  search = "",
+  hash = ""
+}) {
+  if (search && search !== "?")
+    pathname += search.charAt(0) === "?" ? search : "?" + search;
+  if (hash && hash !== "#")
+    pathname += hash.charAt(0) === "#" ? hash : "#" + hash;
+  return pathname;
+}
+function parsePath(path) {
+  let parsedPath = {};
+  if (path) {
+    let hashIndex = path.indexOf("#");
+    if (hashIndex >= 0) {
+      parsedPath.hash = path.substring(hashIndex);
+      path = path.substring(0, hashIndex);
+    }
+    let searchIndex = path.indexOf("?");
+    if (searchIndex >= 0) {
+      parsedPath.search = path.substring(searchIndex);
+      path = path.substring(0, searchIndex);
+    }
+    if (path) {
+      parsedPath.pathname = path;
+    }
+  }
+  return parsedPath;
+}
+function getUrlBasedHistory(getLocation, createHref2, validateLocation, options = {}) {
+  let { window: window2 = document.defaultView, v5Compat = false } = options;
+  let globalHistory = window2.history;
+  let action = "POP" /* Pop */;
+  let listener = null;
+  let index = getIndex();
+  if (index == null) {
+    index = 0;
+    globalHistory.replaceState({ ...globalHistory.state, idx: index }, "");
+  }
+  function getIndex() {
+    let state = globalHistory.state || { idx: null };
+    return state.idx;
+  }
+  function handlePop() {
+    action = "POP" /* Pop */;
+    let nextIndex = getIndex();
+    let delta = nextIndex == null ? null : nextIndex - index;
+    index = nextIndex;
+    if (listener) {
+      listener({ action, location: history.location, delta });
+    }
+  }
+  function push(to, state) {
+    action = "PUSH" /* Push */;
+    let location = isLocation(to) ? to : createLocation(history.location, to, state);
+    if (validateLocation) validateLocation(location, to);
+    index = getIndex() + 1;
+    let historyState = getHistoryState(location, index);
+    let url = history.createHref(location.unstable_mask || location);
+    try {
+      globalHistory.pushState(historyState, "", url);
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "DataCloneError") {
+        throw error;
+      }
+      window2.location.assign(url);
+    }
+    if (v5Compat && listener) {
+      listener({ action, location: history.location, delta: 1 });
+    }
+  }
+  function replace2(to, state) {
+    action = "REPLACE" /* Replace */;
+    let location = isLocation(to) ? to : createLocation(history.location, to, state);
+    if (validateLocation) validateLocation(location, to);
+    index = getIndex();
+    let historyState = getHistoryState(location, index);
+    let url = history.createHref(location.unstable_mask || location);
+    globalHistory.replaceState(historyState, "", url);
+    if (v5Compat && listener) {
+      listener({ action, location: history.location, delta: 0 });
+    }
+  }
+  function createURL(to) {
+    return createBrowserURLImpl(to);
+  }
+  let history = {
+    get action() {
+      return action;
+    },
+    get location() {
+      return getLocation(window2, globalHistory);
+    },
+    listen(fn) {
+      if (listener) {
+        throw new Error("A history only accepts one active listener");
+      }
+      window2.addEventListener(PopStateEventType, handlePop);
+      listener = fn;
+      return () => {
+        window2.removeEventListener(PopStateEventType, handlePop);
+        listener = null;
+      };
+    },
+    createHref(to) {
+      return createHref2(window2, to);
+    },
+    createURL,
+    encodeLocation(to) {
+      let url = createURL(to);
+      return {
+        pathname: url.pathname,
+        search: url.search,
+        hash: url.hash
+      };
+    },
+    push,
+    replace: replace2,
+    go(n) {
+      return globalHistory.go(n);
+    }
+  };
+  return history;
+}
+function createBrowserURLImpl(to, isAbsolute = false) {
+  let base = "http://localhost";
+  if (typeof window !== "undefined") {
+    base = window.location.origin !== "null" ? window.location.origin : window.location.href;
+  }
+  invariant(base, "No window.location.(origin|href) available to create URL");
+  let href = typeof to === "string" ? to : createPath(to);
+  href = href.replace(/ $/, "%20");
+  if (!isAbsolute && href.startsWith("//")) {
+    href = base + href;
+  }
+  return new URL(href, base);
+}
+
+// lib/router/utils.ts
+function createContext(defaultValue) {
+  return { defaultValue };
+}
+var _map;
+var RouterContextProvider = class {
+  /**
+   * Create a new `RouterContextProvider` instance
+   * @param init An optional initial context map to populate the provider with
+   */
+  constructor(init) {
+    __privateAdd(this, _map, /* @__PURE__ */ new Map());
+    if (init) {
+      for (let [context, value] of init) {
+        this.set(context, value);
+      }
+    }
+  }
+  /**
+   * Access a value from the context. If no value has been set for the context,
+   * it will return the context's `defaultValue` if provided, or throw an error
+   * if no `defaultValue` was set.
+   * @param context The context to get the value for
+   * @returns The value for the context, or the context's `defaultValue` if no
+   * value was set
+   */
+  get(context) {
+    if (__privateGet(this, _map).has(context)) {
+      return __privateGet(this, _map).get(context);
+    }
+    if (context.defaultValue !== void 0) {
+      return context.defaultValue;
+    }
+    throw new Error("No value found for context");
+  }
+  /**
+   * Set a value for the context. If the context already has a value set, this
+   * will overwrite it.
+   *
+   * @param context The context to set the value for
+   * @param value The value to set for the context
+   * @returns {void}
+   */
+  set(context, value) {
+    __privateGet(this, _map).set(context, value);
+  }
+};
+_map = new WeakMap();
+var unsupportedLazyRouteObjectKeys = /* @__PURE__ */ new Set([
+  "lazy",
+  "caseSensitive",
+  "path",
+  "id",
+  "index",
+  "children"
+]);
+function isUnsupportedLazyRouteObjectKey(key) {
+  return unsupportedLazyRouteObjectKeys.has(
+    key
+  );
+}
+var unsupportedLazyRouteFunctionKeys = /* @__PURE__ */ new Set([
+  "lazy",
+  "caseSensitive",
+  "path",
+  "id",
+  "index",
+  "middleware",
+  "children"
+]);
+function isUnsupportedLazyRouteFunctionKey(key) {
+  return unsupportedLazyRouteFunctionKeys.has(
+    key
+  );
+}
+function isIndexRoute(route) {
+  return route.index === true;
+}
+function convertRoutesToDataRoutes(routes, mapRouteProperties2, parentPath = [], manifest = {}, allowInPlaceMutations = false) {
+  return routes.map((route, index) => {
+    let treePath = [...parentPath, String(index)];
+    let id = typeof route.id === "string" ? route.id : treePath.join("-");
+    invariant(
+      route.index !== true || !route.children,
+      `Cannot specify children on an index route`
+    );
+    invariant(
+      allowInPlaceMutations || !manifest[id],
+      `Found a route id collision on id "${id}".  Route id's must be globally unique within Data Router usages`
+    );
+    if (isIndexRoute(route)) {
+      let indexRoute = {
+        ...route,
+        id
+      };
+      manifest[id] = mergeRouteUpdates(
+        indexRoute,
+        mapRouteProperties2(indexRoute)
+      );
+      return indexRoute;
+    } else {
+      let pathOrLayoutRoute = {
+        ...route,
+        id,
+        children: void 0
+      };
+      manifest[id] = mergeRouteUpdates(
+        pathOrLayoutRoute,
+        mapRouteProperties2(pathOrLayoutRoute)
+      );
+      if (route.children) {
+        pathOrLayoutRoute.children = convertRoutesToDataRoutes(
+          route.children,
+          mapRouteProperties2,
+          treePath,
+          manifest,
+          allowInPlaceMutations
+        );
+      }
+      return pathOrLayoutRoute;
+    }
+  });
+}
+function mergeRouteUpdates(route, updates) {
+  return Object.assign(route, {
+    ...updates,
+    ...typeof updates.lazy === "object" && updates.lazy != null ? {
+      lazy: {
+        ...route.lazy,
+        ...updates.lazy
+      }
+    } : {}
+  });
+}
+function matchRoutes(routes, locationArg, basename = "/") {
+  return matchRoutesImpl(routes, locationArg, basename, false);
+}
+function matchRoutesImpl(routes, locationArg, basename, allowPartial) {
+  let location = typeof locationArg === "string" ? parsePath(locationArg) : locationArg;
+  let pathname = stripBasename(location.pathname || "/", basename);
+  if (pathname == null) {
+    return null;
+  }
+  let branches = flattenRoutes(routes);
+  rankRouteBranches(branches);
+  let matches = null;
+  for (let i = 0; matches == null && i < branches.length; ++i) {
+    let decoded = decodePath(pathname);
+    matches = matchRouteBranch(
+      branches[i],
+      decoded,
+      allowPartial
+    );
+  }
+  return matches;
+}
+function convertRouteMatchToUiMatch(match, loaderData) {
+  let { route, pathname, params } = match;
+  return {
+    id: route.id,
+    pathname,
+    params,
+    data: loaderData[route.id],
+    loaderData: loaderData[route.id],
+    handle: route.handle
+  };
+}
+function flattenRoutes(routes, branches = [], parentsMeta = [], parentPath = "", _hasParentOptionalSegments = false) {
+  let flattenRoute = (route, index, hasParentOptionalSegments = _hasParentOptionalSegments, relativePath) => {
+    let meta = {
+      relativePath: relativePath === void 0 ? route.path || "" : relativePath,
+      caseSensitive: route.caseSensitive === true,
+      childrenIndex: index,
+      route
+    };
+    if (meta.relativePath.startsWith("/")) {
+      if (!meta.relativePath.startsWith(parentPath) && hasParentOptionalSegments) {
+        return;
+      }
+      invariant(
+        meta.relativePath.startsWith(parentPath),
+        `Absolute route path "${meta.relativePath}" nested under path "${parentPath}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`
+      );
+      meta.relativePath = meta.relativePath.slice(parentPath.length);
+    }
+    let path = joinPaths([parentPath, meta.relativePath]);
+    let routesMeta = parentsMeta.concat(meta);
+    if (route.children && route.children.length > 0) {
+      invariant(
+        // Our types know better, but runtime JS may not!
+        // @ts-expect-error
+        route.index !== true,
+        `Index routes must not have child routes. Please remove all child routes from route path "${path}".`
+      );
+      flattenRoutes(
+        route.children,
+        branches,
+        routesMeta,
+        path,
+        hasParentOptionalSegments
+      );
+    }
+    if (route.path == null && !route.index) {
+      return;
+    }
+    branches.push({
+      path,
+      score: computeScore(path, route.index),
+      routesMeta
+    });
+  };
+  routes.forEach((route, index) => {
+    if (route.path === "" || !route.path?.includes("?")) {
+      flattenRoute(route, index);
+    } else {
+      for (let exploded of explodeOptionalSegments(route.path)) {
+        flattenRoute(route, index, true, exploded);
+      }
+    }
+  });
+  return branches;
+}
+function explodeOptionalSegments(path) {
+  let segments = path.split("/");
+  if (segments.length === 0) return [];
+  let [first, ...rest] = segments;
+  let isOptional = first.endsWith("?");
+  let required = first.replace(/\?$/, "");
+  if (rest.length === 0) {
+    return isOptional ? [required, ""] : [required];
+  }
+  let restExploded = explodeOptionalSegments(rest.join("/"));
+  let result = [];
+  result.push(
+    ...restExploded.map(
+      (subpath) => subpath === "" ? required : [required, subpath].join("/")
+    )
+  );
+  if (isOptional) {
+    result.push(...restExploded);
+  }
+  return result.map(
+    (exploded) => path.startsWith("/") && exploded === "" ? "/" : exploded
+  );
+}
+function rankRouteBranches(branches) {
+  branches.sort(
+    (a, b) => a.score !== b.score ? b.score - a.score : compareIndexes(
+      a.routesMeta.map((meta) => meta.childrenIndex),
+      b.routesMeta.map((meta) => meta.childrenIndex)
+    )
+  );
+}
+var paramRe = /^:[\w-]+$/;
+var dynamicSegmentValue = 3;
+var indexRouteValue = 2;
+var emptySegmentValue = 1;
+var staticSegmentValue = 10;
+var splatPenalty = -2;
+var isSplat = (s) => s === "*";
+function computeScore(path, index) {
+  let segments = path.split("/");
+  let initialScore = segments.length;
+  if (segments.some(isSplat)) {
+    initialScore += splatPenalty;
+  }
+  if (index) {
+    initialScore += indexRouteValue;
+  }
+  return segments.filter((s) => !isSplat(s)).reduce(
+    (score, segment) => score + (paramRe.test(segment) ? dynamicSegmentValue : segment === "" ? emptySegmentValue : staticSegmentValue),
+    initialScore
+  );
+}
+function compareIndexes(a, b) {
+  let siblings = a.length === b.length && a.slice(0, -1).every((n, i) => n === b[i]);
+  return siblings ? (
+    // If two routes are siblings, we should try to match the earlier sibling
+    // first. This allows people to have fine-grained control over the matching
+    // behavior by simply putting routes with identical paths in the order they
+    // want them tried.
+    a[a.length - 1] - b[b.length - 1]
+  ) : (
+    // Otherwise, it doesn't really make sense to rank non-siblings by index,
+    // so they sort equally.
+    0
+  );
+}
+function matchRouteBranch(branch, pathname, allowPartial = false) {
+  let { routesMeta } = branch;
+  let matchedParams = {};
+  let matchedPathname = "/";
+  let matches = [];
+  for (let i = 0; i < routesMeta.length; ++i) {
+    let meta = routesMeta[i];
+    let end = i === routesMeta.length - 1;
+    let remainingPathname = matchedPathname === "/" ? pathname : pathname.slice(matchedPathname.length) || "/";
+    let match = matchPath(
+      { path: meta.relativePath, caseSensitive: meta.caseSensitive, end },
+      remainingPathname
+    );
+    let route = meta.route;
+    if (!match && end && allowPartial && !routesMeta[routesMeta.length - 1].route.index) {
+      match = matchPath(
+        {
+          path: meta.relativePath,
+          caseSensitive: meta.caseSensitive,
+          end: false
+        },
+        remainingPathname
+      );
+    }
+    if (!match) {
+      return null;
+    }
+    Object.assign(matchedParams, match.params);
+    matches.push({
+      // TODO: Can this as be avoided?
+      params: matchedParams,
+      pathname: joinPaths([matchedPathname, match.pathname]),
+      pathnameBase: normalizePathname(
+        joinPaths([matchedPathname, match.pathnameBase])
+      ),
+      route
+    });
+    if (match.pathnameBase !== "/") {
+      matchedPathname = joinPaths([matchedPathname, match.pathnameBase]);
+    }
+  }
+  return matches;
+}
+function generatePath(originalPath, params = {}) {
+  let path = originalPath;
+  if (path.endsWith("*") && path !== "*" && !path.endsWith("/*")) {
+    warning(
+      false,
+      `Route path "${path}" will be treated as if it were "${path.replace(/\*$/, "/*")}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${path.replace(/\*$/, "/*")}".`
+    );
+    path = path.replace(/\*$/, "/*");
+  }
+  const prefix = path.startsWith("/") ? "/" : "";
+  const stringify2 = (p) => p == null ? "" : typeof p === "string" ? p : String(p);
+  const segments = path.split(/\/+/).map((segment, index, array) => {
+    const isLastSegment = index === array.length - 1;
+    if (isLastSegment && segment === "*") {
+      const star = "*";
+      return stringify2(params[star]);
+    }
+    const keyMatch = segment.match(/^:([\w-]+)(\??)(.*)/);
+    if (keyMatch) {
+      const [, key, optional, suffix] = keyMatch;
+      let param = params[key];
+      invariant(optional === "?" || param != null, `Missing ":${key}" param`);
+      return encodeURIComponent(stringify2(param)) + suffix;
+    }
+    return segment.replace(/\?$/g, "");
+  }).filter((segment) => !!segment);
+  return prefix + segments.join("/");
+}
+function matchPath(pattern, pathname) {
+  if (typeof pattern === "string") {
+    pattern = { path: pattern, caseSensitive: false, end: true };
+  }
+  let [matcher, compiledParams] = compilePath(
+    pattern.path,
+    pattern.caseSensitive,
+    pattern.end
+  );
+  let match = pathname.match(matcher);
+  if (!match) return null;
+  let matchedPathname = match[0];
+  let pathnameBase = matchedPathname.replace(/(.)\/+$/, "$1");
+  let captureGroups = match.slice(1);
+  let params = compiledParams.reduce(
+    (memo2, { paramName, isOptional }, index) => {
+      if (paramName === "*") {
+        let splatValue = captureGroups[index] || "";
+        pathnameBase = matchedPathname.slice(0, matchedPathname.length - splatValue.length).replace(/(.)\/+$/, "$1");
+      }
+      const value = captureGroups[index];
+      if (isOptional && !value) {
+        memo2[paramName] = void 0;
+      } else {
+        memo2[paramName] = (value || "").replace(/%2F/g, "/");
+      }
+      return memo2;
+    },
+    {}
+  );
+  return {
+    params,
+    pathname: matchedPathname,
+    pathnameBase,
+    pattern
+  };
+}
+function compilePath(path, caseSensitive = false, end = true) {
+  warning(
+    path === "*" || !path.endsWith("*") || path.endsWith("/*"),
+    `Route path "${path}" will be treated as if it were "${path.replace(/\*$/, "/*")}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${path.replace(/\*$/, "/*")}".`
+  );
+  let params = [];
+  let regexpSource = "^" + path.replace(/\/*\*?$/, "").replace(/^\/*/, "/").replace(/[\\.*+^${}|()[\]]/g, "\\$&").replace(
+    /\/:([\w-]+)(\?)?/g,
+    (match, paramName, isOptional, index, str) => {
+      params.push({ paramName, isOptional: isOptional != null });
+      if (isOptional) {
+        let nextChar = str.charAt(index + match.length);
+        if (nextChar && nextChar !== "/") {
+          return "/([^\\/]*)";
+        }
+        return "(?:/([^\\/]*))?";
+      }
+      return "/([^\\/]+)";
+    }
+  ).replace(/\/([\w-]+)\?(\/|$)/g, "(/$1)?$2");
+  if (path.endsWith("*")) {
+    params.push({ paramName: "*" });
+    regexpSource += path === "*" || path === "/*" ? "(.*)$" : "(?:\\/(.+)|\\/*)$";
+  } else if (end) {
+    regexpSource += "\\/*$";
+  } else if (path !== "" && path !== "/") {
+    regexpSource += "(?:(?=\\/|$))";
+  } else {
+  }
+  let matcher = new RegExp(regexpSource, caseSensitive ? void 0 : "i");
+  return [matcher, params];
+}
+function decodePath(value) {
+  try {
+    return value.split("/").map((v) => decodeURIComponent(v).replace(/\//g, "%2F")).join("/");
+  } catch (error) {
+    warning(
+      false,
+      `The URL path "${value}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${error}).`
+    );
+    return value;
+  }
+}
+function stripBasename(pathname, basename) {
+  if (basename === "/") return pathname;
+  if (!pathname.toLowerCase().startsWith(basename.toLowerCase())) {
+    return null;
+  }
+  let startIndex = basename.endsWith("/") ? basename.length - 1 : basename.length;
+  let nextChar = pathname.charAt(startIndex);
+  if (nextChar && nextChar !== "/") {
+    return null;
+  }
+  return pathname.slice(startIndex) || "/";
+}
+function prependBasename({
+  basename,
+  pathname
+}) {
+  return pathname === "/" ? basename : joinPaths([basename, pathname]);
+}
+var ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+var isAbsoluteUrl = (url) => ABSOLUTE_URL_REGEX.test(url);
+function resolvePath(to, fromPathname = "/") {
+  let {
+    pathname: toPathname,
+    search = "",
+    hash = ""
+  } = typeof to === "string" ? parsePath(to) : to;
+  let pathname;
+  if (toPathname) {
+    toPathname = toPathname.replace(/\/\/+/g, "/");
+    if (toPathname.startsWith("/")) {
+      pathname = resolvePathname(toPathname.substring(1), "/");
+    } else {
+      pathname = resolvePathname(toPathname, fromPathname);
+    }
+  } else {
+    pathname = fromPathname;
+  }
+  return {
+    pathname,
+    search: normalizeSearch(search),
+    hash: normalizeHash(hash)
+  };
+}
+function resolvePathname(relativePath, fromPathname) {
+  let segments = fromPathname.replace(/\/+$/, "").split("/");
+  let relativeSegments = relativePath.split("/");
+  relativeSegments.forEach((segment) => {
+    if (segment === "..") {
+      if (segments.length > 1) segments.pop();
+    } else if (segment !== ".") {
+      segments.push(segment);
+    }
+  });
+  return segments.length > 1 ? segments.join("/") : "/";
+}
+function getInvalidPathError(char, field, dest, path) {
+  return `Cannot include a '${char}' character in a manually specified \`to.${field}\` field [${JSON.stringify(
+    path
+  )}].  Please separate it out to the \`to.${dest}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`;
+}
+function getPathContributingMatches(matches) {
+  return matches.filter(
+    (match, index) => index === 0 || match.route.path && match.route.path.length > 0
+  );
+}
+function getResolveToMatches(matches) {
+  let pathMatches = getPathContributingMatches(matches);
+  return pathMatches.map(
+    (match, idx) => idx === pathMatches.length - 1 ? match.pathname : match.pathnameBase
+  );
+}
+function resolveTo(toArg, routePathnames, locationPathname, isPathRelative = false) {
+  let to;
+  if (typeof toArg === "string") {
+    to = parsePath(toArg);
+  } else {
+    to = { ...toArg };
+    invariant(
+      !to.pathname || !to.pathname.includes("?"),
+      getInvalidPathError("?", "pathname", "search", to)
+    );
+    invariant(
+      !to.pathname || !to.pathname.includes("#"),
+      getInvalidPathError("#", "pathname", "hash", to)
+    );
+    invariant(
+      !to.search || !to.search.includes("#"),
+      getInvalidPathError("#", "search", "hash", to)
+    );
+  }
+  let isEmptyPath = toArg === "" || to.pathname === "";
+  let toPathname = isEmptyPath ? "/" : to.pathname;
+  let from;
+  if (toPathname == null) {
+    from = locationPathname;
+  } else {
+    let routePathnameIndex = routePathnames.length - 1;
+    if (!isPathRelative && toPathname.startsWith("..")) {
+      let toSegments = toPathname.split("/");
+      while (toSegments[0] === "..") {
+        toSegments.shift();
+        routePathnameIndex -= 1;
+      }
+      to.pathname = toSegments.join("/");
+    }
+    from = routePathnameIndex >= 0 ? routePathnames[routePathnameIndex] : "/";
+  }
+  let path = resolvePath(to, from);
+  let hasExplicitTrailingSlash = toPathname && toPathname !== "/" && toPathname.endsWith("/");
+  let hasCurrentTrailingSlash = (isEmptyPath || toPathname === ".") && locationPathname.endsWith("/");
+  if (!path.pathname.endsWith("/") && (hasExplicitTrailingSlash || hasCurrentTrailingSlash)) {
+    path.pathname += "/";
+  }
+  return path;
+}
+var joinPaths = (paths) => paths.join("/").replace(/\/\/+/g, "/");
+var normalizePathname = (pathname) => pathname.replace(/\/+$/, "").replace(/^\/*/, "/");
+var normalizeSearch = (search) => !search || search === "?" ? "" : search.startsWith("?") ? search : "?" + search;
+var normalizeHash = (hash) => !hash || hash === "#" ? "" : hash.startsWith("#") ? hash : "#" + hash;
+var DataWithResponseInit = class {
+  constructor(data2, init) {
+    this.type = "DataWithResponseInit";
+    this.data = data2;
+    this.init = init || null;
+  }
+};
+function data(data2, init) {
+  return new DataWithResponseInit(
+    data2,
+    typeof init === "number" ? { status: init } : init
+  );
+}
+var redirect = (url, init = 302) => {
+  let responseInit = init;
+  if (typeof responseInit === "number") {
+    responseInit = { status: responseInit };
+  } else if (typeof responseInit.status === "undefined") {
+    responseInit.status = 302;
+  }
+  let headers = new Headers(responseInit.headers);
+  headers.set("Location", url);
+  return new Response(null, { ...responseInit, headers });
+};
+var redirectDocument = (url, init) => {
+  let response = redirect(url, init);
+  response.headers.set("X-Remix-Reload-Document", "true");
+  return response;
+};
+var replace = (url, init) => {
+  let response = redirect(url, init);
+  response.headers.set("X-Remix-Replace", "true");
+  return response;
+};
+var ErrorResponseImpl = class {
+  constructor(status, statusText, data2, internal = false) {
+    this.status = status;
+    this.statusText = statusText || "";
+    this.internal = internal;
+    if (data2 instanceof Error) {
+      this.data = data2.toString();
+      this.error = data2;
+    } else {
+      this.data = data2;
+    }
+  }
+};
+function isRouteErrorResponse(error) {
+  return error != null && typeof error.status === "number" && typeof error.statusText === "string" && typeof error.internal === "boolean" && "data" in error;
+}
+function getRoutePattern(matches) {
+  return matches.map((m) => m.route.path).filter(Boolean).join("/").replace(/\/\/*/g, "/") || "/";
+}
+var isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
+function parseToInfo(_to, basename) {
+  let to = _to;
+  if (typeof to !== "string" || !ABSOLUTE_URL_REGEX.test(to)) {
+    return {
+      absoluteURL: void 0,
+      isExternal: false,
+      to
+    };
+  }
+  let absoluteURL = to;
+  let isExternal = false;
+  if (isBrowser) {
+    try {
+      let currentUrl = new URL(window.location.href);
+      let targetUrl = to.startsWith("//") ? new URL(currentUrl.protocol + to) : new URL(to);
+      let path = stripBasename(targetUrl.pathname, basename);
+      if (targetUrl.origin === currentUrl.origin && path != null) {
+        to = path + targetUrl.search + targetUrl.hash;
+      } else {
+        isExternal = true;
+      }
+    } catch (e) {
+      warning(
+        false,
+        `<Link to="${to}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`
+      );
+    }
+  }
+  return {
+    absoluteURL,
+    isExternal,
+    to
+  };
+}
+
+// lib/router/instrumentation.ts
+var UninstrumentedSymbol = Symbol("Uninstrumented");
+function getRouteInstrumentationUpdates(fns, route) {
+  let aggregated = {
+    lazy: [],
+    "lazy.loader": [],
+    "lazy.action": [],
+    "lazy.middleware": [],
+    middleware: [],
+    loader: [],
+    action: []
+  };
+  fns.forEach(
+    (fn) => fn({
+      id: route.id,
+      index: route.index,
+      path: route.path,
+      instrument(i) {
+        let keys = Object.keys(aggregated);
+        for (let key of keys) {
+          if (i[key]) {
+            aggregated[key].push(i[key]);
+          }
+        }
+      }
+    })
+  );
+  let updates = {};
+  if (typeof route.lazy === "function" && aggregated.lazy.length > 0) {
+    let instrumented = wrapImpl(aggregated.lazy, route.lazy, () => void 0);
+    if (instrumented) {
+      updates.lazy = instrumented;
+    }
+  }
+  if (typeof route.lazy === "object") {
+    let lazyObject = route.lazy;
+    ["middleware", "loader", "action"].forEach((key) => {
+      let lazyFn = lazyObject[key];
+      let instrumentations = aggregated[`lazy.${key}`];
+      if (typeof lazyFn === "function" && instrumentations.length > 0) {
+        let instrumented = wrapImpl(instrumentations, lazyFn, () => void 0);
+        if (instrumented) {
+          updates.lazy = Object.assign(updates.lazy || {}, {
+            [key]: instrumented
+          });
+        }
+      }
+    });
+  }
+  ["loader", "action"].forEach((key) => {
+    let handler = route[key];
+    if (typeof handler === "function" && aggregated[key].length > 0) {
+      let original = handler[UninstrumentedSymbol] ?? handler;
+      let instrumented = wrapImpl(
+        aggregated[key],
+        original,
+        (...args) => getHandlerInfo(args[0])
+      );
+      if (instrumented) {
+        if (key === "loader" && original.hydrate === true) {
+          instrumented.hydrate = true;
+        }
+        instrumented[UninstrumentedSymbol] = original;
+        updates[key] = instrumented;
+      }
+    }
+  });
+  if (route.middleware && route.middleware.length > 0 && aggregated.middleware.length > 0) {
+    updates.middleware = route.middleware.map((middleware) => {
+      let original = middleware[UninstrumentedSymbol] ?? middleware;
+      let instrumented = wrapImpl(
+        aggregated.middleware,
+        original,
+        (...args) => getHandlerInfo(args[0])
+      );
+      if (instrumented) {
+        instrumented[UninstrumentedSymbol] = original;
+        return instrumented;
+      }
+      return middleware;
+    });
+  }
+  return updates;
+}
+function instrumentClientSideRouter(router, fns) {
+  let aggregated = {
+    navigate: [],
+    fetch: []
+  };
+  fns.forEach(
+    (fn) => fn({
+      instrument(i) {
+        let keys = Object.keys(i);
+        for (let key of keys) {
+          if (i[key]) {
+            aggregated[key].push(i[key]);
+          }
+        }
+      }
+    })
+  );
+  if (aggregated.navigate.length > 0) {
+    let navigate = router.navigate[UninstrumentedSymbol] ?? router.navigate;
+    let instrumentedNavigate = wrapImpl(
+      aggregated.navigate,
+      navigate,
+      (...args) => {
+        let [to, opts] = args;
+        return {
+          to: typeof to === "number" || typeof to === "string" ? to : to ? createPath(to) : ".",
+          ...getRouterInfo(router, opts ?? {})
+        };
+      }
+    );
+    if (instrumentedNavigate) {
+      instrumentedNavigate[UninstrumentedSymbol] = navigate;
+      router.navigate = instrumentedNavigate;
+    }
+  }
+  if (aggregated.fetch.length > 0) {
+    let fetch2 = router.fetch[UninstrumentedSymbol] ?? router.fetch;
+    let instrumentedFetch = wrapImpl(aggregated.fetch, fetch2, (...args) => {
+      let [key, , href, opts] = args;
+      return {
+        href: href ?? ".",
+        fetcherKey: key,
+        ...getRouterInfo(router, opts ?? {})
+      };
+    });
+    if (instrumentedFetch) {
+      instrumentedFetch[UninstrumentedSymbol] = fetch2;
+      router.fetch = instrumentedFetch;
+    }
+  }
+  return router;
+}
+function instrumentHandler(handler, fns) {
+  let aggregated = {
+    request: []
+  };
+  fns.forEach(
+    (fn) => fn({
+      instrument(i) {
+        let keys = Object.keys(i);
+        for (let key of keys) {
+          if (i[key]) {
+            aggregated[key].push(i[key]);
+          }
+        }
+      }
+    })
+  );
+  let instrumentedHandler = handler;
+  if (aggregated.request.length > 0) {
+    instrumentedHandler = wrapImpl(aggregated.request, handler, (...args) => {
+      let [request, context] = args;
+      return {
+        request: getReadonlyRequest(request),
+        context: context != null ? getReadonlyContext(context) : context
+      };
+    });
+  }
+  return instrumentedHandler;
+}
+function wrapImpl(impls, handler, getInfo) {
+  if (impls.length === 0) {
+    return null;
+  }
+  return async (...args) => {
+    let result = await recurseRight(
+      impls,
+      getInfo(...args),
+      () => handler(...args),
+      impls.length - 1
+    );
+    if (result.type === "error") {
+      throw result.value;
+    }
+    return result.value;
+  };
+}
+async function recurseRight(impls, info, handler, index) {
+  let impl = impls[index];
+  let result;
+  if (!impl) {
+    try {
+      let value = await handler();
+      result = { type: "success", value };
+    } catch (e) {
+      result = { type: "error", value: e };
+    }
+  } else {
+    let handlerPromise = void 0;
+    let callHandler = async () => {
+      if (handlerPromise) {
+        console.error("You cannot call instrumented handlers more than once");
+      } else {
+        handlerPromise = recurseRight(impls, info, handler, index - 1);
+      }
+      result = await handlerPromise;
+      invariant(result, "Expected a result");
+      if (result.type === "error" && result.value instanceof Error) {
+        return { status: "error", error: result.value };
+      }
+      return { status: "success", error: void 0 };
+    };
+    try {
+      await impl(callHandler, info);
+    } catch (e) {
+      console.error("An instrumentation function threw an error:", e);
+    }
+    if (!handlerPromise) {
+      await callHandler();
+    }
+    await handlerPromise;
+  }
+  if (result) {
+    return result;
+  }
+  return {
+    type: "error",
+    value: new Error("No result assigned in instrumentation chain.")
+  };
+}
+function getHandlerInfo(args) {
+  let { request, context, params, unstable_pattern } = args;
+  return {
+    request: getReadonlyRequest(request),
+    params: { ...params },
+    unstable_pattern,
+    context: getReadonlyContext(context)
+  };
+}
+function getRouterInfo(router, opts) {
+  return {
+    currentUrl: createPath(router.state.location),
+    ..."formMethod" in opts ? { formMethod: opts.formMethod } : {},
+    ..."formEncType" in opts ? { formEncType: opts.formEncType } : {},
+    ..."formData" in opts ? { formData: opts.formData } : {},
+    ..."body" in opts ? { body: opts.body } : {}
+  };
+}
+function getReadonlyRequest(request) {
+  return {
+    method: request.method,
+    url: request.url,
+    headers: {
+      get: (...args) => request.headers.get(...args)
+    }
+  };
+}
+function getReadonlyContext(context) {
+  if (isPlainObject(context)) {
+    let frozen = { ...context };
+    Object.freeze(frozen);
+    return frozen;
+  } else {
+    return {
+      get: (ctx) => context.get(ctx)
+    };
+  }
+}
+var objectProtoNames = Object.getOwnPropertyNames(Object.prototype).sort().join("\0");
+function isPlainObject(thing) {
+  if (thing === null || typeof thing !== "object") {
+    return false;
+  }
+  const proto = Object.getPrototypeOf(thing);
+  return proto === Object.prototype || proto === null || Object.getOwnPropertyNames(proto).sort().join("\0") === objectProtoNames;
+}
+
+// lib/router/router.ts
+var validMutationMethodsArr = [
+  "POST",
+  "PUT",
+  "PATCH",
+  "DELETE"
+];
+var validMutationMethods = new Set(
+  validMutationMethodsArr
+);
+var validRequestMethodsArr = [
+  "GET",
+  ...validMutationMethodsArr
+];
+var validRequestMethods = new Set(validRequestMethodsArr);
+var redirectStatusCodes = /* @__PURE__ */ new Set([301, 302, 303, 307, 308]);
+var redirectPreserveMethodStatusCodes = /* @__PURE__ */ new Set([307, 308]);
+var IDLE_NAVIGATION = {
+  state: "idle",
+  location: void 0,
+  formMethod: void 0,
+  formAction: void 0,
+  formEncType: void 0,
+  formData: void 0,
+  json: void 0,
+  text: void 0
+};
+var IDLE_FETCHER = {
+  state: "idle",
+  data: void 0,
+  formMethod: void 0,
+  formAction: void 0,
+  formEncType: void 0,
+  formData: void 0,
+  json: void 0,
+  text: void 0
+};
+var IDLE_BLOCKER = {
+  state: "unblocked",
+  proceed: void 0,
+  reset: void 0,
+  location: void 0
+};
+var defaultMapRouteProperties = (route) => ({
+  hasErrorBoundary: Boolean(route.hasErrorBoundary)
+});
+var TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
+var ResetLoaderDataSymbol = Symbol("ResetLoaderData");
+function createRouter(init) {
+  const routerWindow = init.window ? init.window : typeof window !== "undefined" ? window : void 0;
+  const isBrowser3 = typeof routerWindow !== "undefined" && typeof routerWindow.document !== "undefined" && typeof routerWindow.document.createElement !== "undefined";
+  invariant(
+    init.routes.length > 0,
+    "You must provide a non-empty routes array to createRouter"
+  );
+  let hydrationRouteProperties2 = init.hydrationRouteProperties || [];
+  let _mapRouteProperties = init.mapRouteProperties || defaultMapRouteProperties;
+  let mapRouteProperties2 = _mapRouteProperties;
+  if (init.unstable_instrumentations) {
+    let instrumentations = init.unstable_instrumentations;
+    mapRouteProperties2 = (route) => {
+      return {
+        ..._mapRouteProperties(route),
+        ...getRouteInstrumentationUpdates(
+          instrumentations.map((i) => i.route).filter(Boolean),
+          route
+        )
+      };
+    };
+  }
+  let manifest = {};
+  let dataRoutes = convertRoutesToDataRoutes(
+    init.routes,
+    mapRouteProperties2,
+    void 0,
+    manifest
+  );
+  let inFlightDataRoutes;
+  let basename = init.basename || "/";
+  if (!basename.startsWith("/")) {
+    basename = `/${basename}`;
+  }
+  let dataStrategyImpl = init.dataStrategy || defaultDataStrategyWithMiddleware;
+  let future = {
+    ...init.future
+  };
+  let unlistenHistory = null;
+  let subscribers = /* @__PURE__ */ new Set();
+  let savedScrollPositions2 = null;
+  let getScrollRestorationKey2 = null;
+  let getScrollPosition = null;
+  let initialScrollRestored = init.hydrationData != null;
+  let initialMatches = matchRoutes(dataRoutes, init.history.location, basename);
+  let initialMatchesIsFOW = false;
+  let initialErrors = null;
+  let initialized;
+  let renderFallback;
+  if (initialMatches == null && !init.patchRoutesOnNavigation) {
+    let error = getInternalRouterError(404, {
+      pathname: init.history.location.pathname
+    });
+    let { matches, route } = getShortCircuitMatches(dataRoutes);
+    initialized = true;
+    renderFallback = !initialized;
+    initialMatches = matches;
+    initialErrors = { [route.id]: error };
+  } else {
+    if (initialMatches && !init.hydrationData) {
+      let fogOfWar = checkFogOfWar(
+        initialMatches,
+        dataRoutes,
+        init.history.location.pathname
+      );
+      if (fogOfWar.active) {
+        initialMatches = null;
+      }
+    }
+    if (!initialMatches) {
+      initialized = false;
+      renderFallback = !initialized;
+      initialMatches = [];
+      let fogOfWar = checkFogOfWar(
+        null,
+        dataRoutes,
+        init.history.location.pathname
+      );
+      if (fogOfWar.active && fogOfWar.matches) {
+        initialMatchesIsFOW = true;
+        initialMatches = fogOfWar.matches;
+      }
+    } else if (initialMatches.some((m) => m.route.lazy)) {
+      initialized = false;
+      renderFallback = !initialized;
+    } else if (!initialMatches.some((m) => routeHasLoaderOrMiddleware(m.route))) {
+      initialized = true;
+      renderFallback = !initialized;
+    } else {
+      let loaderData = init.hydrationData ? init.hydrationData.loaderData : null;
+      let errors = init.hydrationData ? init.hydrationData.errors : null;
+      let relevantMatches = initialMatches;
+      if (errors) {
+        let idx = initialMatches.findIndex(
+          (m) => errors[m.route.id] !== void 0
+        );
+        relevantMatches = relevantMatches.slice(0, idx + 1);
+      }
+      renderFallback = false;
+      initialized = relevantMatches.every((m) => {
+        let status = getRouteHydrationStatus(m.route, loaderData, errors);
+        renderFallback = renderFallback || status.renderFallback;
+        return !status.shouldLoad;
+      });
+    }
+  }
+  let router;
+  let state = {
+    historyAction: init.history.action,
+    location: init.history.location,
+    matches: initialMatches,
+    initialized,
+    renderFallback,
+    navigation: IDLE_NAVIGATION,
+    // Don't restore on initial updateState() if we were SSR'd
+    restoreScrollPosition: init.hydrationData != null ? false : null,
+    preventScrollReset: false,
+    revalidation: "idle",
+    loaderData: init.hydrationData && init.hydrationData.loaderData || {},
+    actionData: init.hydrationData && init.hydrationData.actionData || null,
+    errors: init.hydrationData && init.hydrationData.errors || initialErrors,
+    fetchers: /* @__PURE__ */ new Map(),
+    blockers: /* @__PURE__ */ new Map()
+  };
+  let pendingAction = "POP" /* Pop */;
+  let pendingPopstateNavigationDfd = null;
+  let pendingPreventScrollReset = false;
+  let pendingNavigationController;
+  let pendingViewTransitionEnabled = false;
+  let appliedViewTransitions = /* @__PURE__ */ new Map();
+  let removePageHideEventListener = null;
+  let isUninterruptedRevalidation = false;
+  let isRevalidationRequired = false;
+  let cancelledFetcherLoads = /* @__PURE__ */ new Set();
+  let fetchControllers = /* @__PURE__ */ new Map();
+  let incrementingLoadId = 0;
+  let pendingNavigationLoadId = -1;
+  let fetchReloadIds = /* @__PURE__ */ new Map();
+  let fetchRedirectIds = /* @__PURE__ */ new Set();
+  let fetchLoadMatches = /* @__PURE__ */ new Map();
+  let activeFetchers = /* @__PURE__ */ new Map();
+  let fetchersQueuedForDeletion = /* @__PURE__ */ new Set();
+  let blockerFunctions = /* @__PURE__ */ new Map();
+  let unblockBlockerHistoryUpdate = void 0;
+  let pendingRevalidationDfd = null;
+  function initialize() {
+    unlistenHistory = init.history.listen(
+      ({ action: historyAction, location, delta }) => {
+        if (unblockBlockerHistoryUpdate) {
+          unblockBlockerHistoryUpdate();
+          unblockBlockerHistoryUpdate = void 0;
+          return;
+        }
+        warning(
+          blockerFunctions.size === 0 || delta != null,
+          "You are trying to use a blocker on a POP navigation to a location that was not created by @remix-run/router. This will fail silently in production. This can happen if you are navigating outside the router via `window.history.pushState`/`window.location.hash` instead of using router navigation APIs.  This can also happen if you are using createHashRouter and the user manually changes the URL."
+        );
+        let blockerKey = shouldBlockNavigation({
+          currentLocation: state.location,
+          nextLocation: location,
+          historyAction
+        });
+        if (blockerKey && delta != null) {
+          let nextHistoryUpdatePromise = new Promise((resolve) => {
+            unblockBlockerHistoryUpdate = resolve;
+          });
+          init.history.go(delta * -1);
+          updateBlocker(blockerKey, {
+            state: "blocked",
+            location,
+            proceed() {
+              updateBlocker(blockerKey, {
+                state: "proceeding",
+                proceed: void 0,
+                reset: void 0,
+                location
+              });
+              nextHistoryUpdatePromise.then(() => init.history.go(delta));
+            },
+            reset() {
+              let blockers = new Map(state.blockers);
+              blockers.set(blockerKey, IDLE_BLOCKER);
+              updateState({ blockers });
+            }
+          });
+          pendingPopstateNavigationDfd?.resolve();
+          pendingPopstateNavigationDfd = null;
+          return;
+        }
+        return startNavigation(historyAction, location);
+      }
+    );
+    if (isBrowser3) {
+      restoreAppliedTransitions(routerWindow, appliedViewTransitions);
+      let _saveAppliedTransitions = () => persistAppliedTransitions(routerWindow, appliedViewTransitions);
+      routerWindow.addEventListener("pagehide", _saveAppliedTransitions);
+      removePageHideEventListener = () => routerWindow.removeEventListener("pagehide", _saveAppliedTransitions);
+    }
+    if (!state.initialized) {
+      startNavigation("POP" /* Pop */, state.location, {
+        initialHydration: true
+      });
+    }
+    return router;
+  }
+  function dispose() {
+    if (unlistenHistory) {
+      unlistenHistory();
+    }
+    if (removePageHideEventListener) {
+      removePageHideEventListener();
+    }
+    subscribers.clear();
+    pendingNavigationController && pendingNavigationController.abort();
+    state.fetchers.forEach((_, key) => deleteFetcher(key));
+    state.blockers.forEach((_, key) => deleteBlocker(key));
+  }
+  function subscribe(fn) {
+    subscribers.add(fn);
+    return () => subscribers.delete(fn);
+  }
+  function updateState(newState, opts = {}) {
+    if (newState.matches) {
+      newState.matches = newState.matches.map((m) => {
+        let route = manifest[m.route.id];
+        let matchRoute = m.route;
+        if (matchRoute.element !== route.element || matchRoute.errorElement !== route.errorElement || matchRoute.hydrateFallbackElement !== route.hydrateFallbackElement) {
+          return {
+            ...m,
+            route
+          };
+        }
+        return m;
+      });
+    }
+    state = {
+      ...state,
+      ...newState
+    };
+    let unmountedFetchers = [];
+    let mountedFetchers = [];
+    state.fetchers.forEach((fetcher, key) => {
+      if (fetcher.state === "idle") {
+        if (fetchersQueuedForDeletion.has(key)) {
+          unmountedFetchers.push(key);
+        } else {
+          mountedFetchers.push(key);
+        }
+      }
+    });
+    fetchersQueuedForDeletion.forEach((key) => {
+      if (!state.fetchers.has(key) && !fetchControllers.has(key)) {
+        unmountedFetchers.push(key);
+      }
+    });
+    [...subscribers].forEach(
+      (subscriber) => subscriber(state, {
+        deletedFetchers: unmountedFetchers,
+        newErrors: newState.errors ?? null,
+        viewTransitionOpts: opts.viewTransitionOpts,
+        flushSync: opts.flushSync === true
+      })
+    );
+    unmountedFetchers.forEach((key) => deleteFetcher(key));
+    mountedFetchers.forEach((key) => state.fetchers.delete(key));
+  }
+  function completeNavigation(location, newState, { flushSync } = {}) {
+    let isActionReload = state.actionData != null && state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && state.navigation.state === "loading" && location.state?._isRedirect !== true;
+    let actionData;
+    if (newState.actionData) {
+      if (Object.keys(newState.actionData).length > 0) {
+        actionData = newState.actionData;
+      } else {
+        actionData = null;
+      }
+    } else if (isActionReload) {
+      actionData = state.actionData;
+    } else {
+      actionData = null;
+    }
+    let loaderData = newState.loaderData ? mergeLoaderData(
+      state.loaderData,
+      newState.loaderData,
+      newState.matches || [],
+      newState.errors
+    ) : state.loaderData;
+    let blockers = state.blockers;
+    if (blockers.size > 0) {
+      blockers = new Map(blockers);
+      blockers.forEach((_, k) => blockers.set(k, IDLE_BLOCKER));
+    }
+    let restoreScrollPosition = isUninterruptedRevalidation ? false : getSavedScrollPosition(location, newState.matches || state.matches);
+    let preventScrollReset = pendingPreventScrollReset === true || state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && location.state?._isRedirect !== true;
+    if (inFlightDataRoutes) {
+      dataRoutes = inFlightDataRoutes;
+      inFlightDataRoutes = void 0;
+    }
+    if (isUninterruptedRevalidation) {
+    } else if (pendingAction === "POP" /* Pop */) {
+    } else if (pendingAction === "PUSH" /* Push */) {
+      init.history.push(location, location.state);
+    } else if (pendingAction === "REPLACE" /* Replace */) {
+      init.history.replace(location, location.state);
+    }
+    let viewTransitionOpts;
+    if (pendingAction === "POP" /* Pop */) {
+      let priorPaths = appliedViewTransitions.get(state.location.pathname);
+      if (priorPaths && priorPaths.has(location.pathname)) {
+        viewTransitionOpts = {
+          currentLocation: state.location,
+          nextLocation: location
+        };
+      } else if (appliedViewTransitions.has(location.pathname)) {
+        viewTransitionOpts = {
+          currentLocation: location,
+          nextLocation: state.location
+        };
+      }
+    } else if (pendingViewTransitionEnabled) {
+      let toPaths = appliedViewTransitions.get(state.location.pathname);
+      if (toPaths) {
+        toPaths.add(location.pathname);
+      } else {
+        toPaths = /* @__PURE__ */ new Set([location.pathname]);
+        appliedViewTransitions.set(state.location.pathname, toPaths);
+      }
+      viewTransitionOpts = {
+        currentLocation: state.location,
+        nextLocation: location
+      };
+    }
+    updateState(
+      {
+        ...newState,
+        // matches, errors, fetchers go through as-is
+        actionData,
+        loaderData,
+        historyAction: pendingAction,
+        location,
+        initialized: true,
+        renderFallback: false,
+        navigation: IDLE_NAVIGATION,
+        revalidation: "idle",
+        restoreScrollPosition,
+        preventScrollReset,
+        blockers
+      },
+      {
+        viewTransitionOpts,
+        flushSync: flushSync === true
+      }
+    );
+    pendingAction = "POP" /* Pop */;
+    pendingPreventScrollReset = false;
+    pendingViewTransitionEnabled = false;
+    isUninterruptedRevalidation = false;
+    isRevalidationRequired = false;
+    pendingPopstateNavigationDfd?.resolve();
+    pendingPopstateNavigationDfd = null;
+    pendingRevalidationDfd?.resolve();
+    pendingRevalidationDfd = null;
+  }
+  async function navigate(to, opts) {
+    pendingPopstateNavigationDfd?.resolve();
+    pendingPopstateNavigationDfd = null;
+    if (typeof to === "number") {
+      if (!pendingPopstateNavigationDfd) {
+        pendingPopstateNavigationDfd = createDeferred();
+      }
+      let promise = pendingPopstateNavigationDfd.promise;
+      init.history.go(to);
+      return promise;
+    }
+    let normalizedPath = normalizeTo(
+      state.location,
+      state.matches,
+      basename,
+      to,
+      opts?.fromRouteId,
+      opts?.relative
+    );
+    let { path, submission, error } = normalizeNavigateOptions(
+      false,
+      normalizedPath,
+      opts
+    );
+    let maskPath;
+    if (opts?.unstable_mask) {
+      let partialPath = typeof opts.unstable_mask === "string" ? parsePath(opts.unstable_mask) : {
+        ...state.location.unstable_mask,
+        ...opts.unstable_mask
+      };
+      maskPath = {
+        pathname: "",
+        search: "",
+        hash: "",
+        ...partialPath
+      };
+    }
+    let currentLocation = state.location;
+    let nextLocation = createLocation(
+      currentLocation,
+      path,
+      opts && opts.state,
+      void 0,
+      maskPath
+    );
+    nextLocation = {
+      ...nextLocation,
+      ...init.history.encodeLocation(nextLocation)
+    };
+    let userReplace = opts && opts.replace != null ? opts.replace : void 0;
+    let historyAction = "PUSH" /* Push */;
+    if (userReplace === true) {
+      historyAction = "REPLACE" /* Replace */;
+    } else if (userReplace === false) {
+    } else if (submission != null && isMutationMethod(submission.formMethod) && submission.formAction === state.location.pathname + state.location.search) {
+      historyAction = "REPLACE" /* Replace */;
+    }
+    let preventScrollReset = opts && "preventScrollReset" in opts ? opts.preventScrollReset === true : void 0;
+    let flushSync = (opts && opts.flushSync) === true;
+    let blockerKey = shouldBlockNavigation({
+      currentLocation,
+      nextLocation,
+      historyAction
+    });
+    if (blockerKey) {
+      updateBlocker(blockerKey, {
+        state: "blocked",
+        location: nextLocation,
+        proceed() {
+          updateBlocker(blockerKey, {
+            state: "proceeding",
+            proceed: void 0,
+            reset: void 0,
+            location: nextLocation
+          });
+          navigate(to, opts);
+        },
+        reset() {
+          let blockers = new Map(state.blockers);
+          blockers.set(blockerKey, IDLE_BLOCKER);
+          updateState({ blockers });
+        }
+      });
+      return;
+    }
+    await startNavigation(historyAction, nextLocation, {
+      submission,
+      // Send through the formData serialization error if we have one so we can
+      // render at the right error boundary after we match routes
+      pendingError: error,
+      preventScrollReset,
+      replace: opts && opts.replace,
+      enableViewTransition: opts && opts.viewTransition,
+      flushSync,
+      callSiteDefaultShouldRevalidate: opts && opts.unstable_defaultShouldRevalidate
+    });
+  }
+  function revalidate() {
+    if (!pendingRevalidationDfd) {
+      pendingRevalidationDfd = createDeferred();
+    }
+    interruptActiveLoads();
+    updateState({ revalidation: "loading" });
+    let promise = pendingRevalidationDfd.promise;
+    if (state.navigation.state === "submitting") {
+      return promise;
+    }
+    if (state.navigation.state === "idle") {
+      startNavigation(state.historyAction, state.location, {
+        startUninterruptedRevalidation: true
+      });
+      return promise;
+    }
+    startNavigation(
+      pendingAction || state.historyAction,
+      state.navigation.location,
+      {
+        overrideNavigation: state.navigation,
+        // Proxy through any rending view transition
+        enableViewTransition: pendingViewTransitionEnabled === true
+      }
+    );
+    return promise;
+  }
+  async function startNavigation(historyAction, location, opts) {
+    pendingNavigationController && pendingNavigationController.abort();
+    pendingNavigationController = null;
+    pendingAction = historyAction;
+    isUninterruptedRevalidation = (opts && opts.startUninterruptedRevalidation) === true;
+    saveScrollPosition(state.location, state.matches);
+    pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
+    pendingViewTransitionEnabled = (opts && opts.enableViewTransition) === true;
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let loadingNavigation = opts && opts.overrideNavigation;
+    let matches = opts?.initialHydration && state.matches && state.matches.length > 0 && !initialMatchesIsFOW ? (
+      // `matchRoutes()` has already been called if we're in here via `router.initialize()`
+      state.matches
+    ) : matchRoutes(routesToUse, location, basename);
+    let flushSync = (opts && opts.flushSync) === true;
+    if (matches && state.initialized && !isRevalidationRequired && isHashChangeOnly(state.location, location) && !(opts && opts.submission && isMutationMethod(opts.submission.formMethod))) {
+      completeNavigation(location, { matches }, { flushSync });
+      return;
+    }
+    let fogOfWar = checkFogOfWar(matches, routesToUse, location.pathname);
+    if (fogOfWar.active && fogOfWar.matches) {
+      matches = fogOfWar.matches;
+    }
+    if (!matches) {
+      let { error, notFoundMatches, route } = handleNavigational404(
+        location.pathname
+      );
+      completeNavigation(
+        location,
+        {
+          matches: notFoundMatches,
+          loaderData: {},
+          errors: {
+            [route.id]: error
+          }
+        },
+        { flushSync }
+      );
+      return;
+    }
+    pendingNavigationController = new AbortController();
+    let request = createClientSideRequest(
+      init.history,
+      location,
+      pendingNavigationController.signal,
+      opts && opts.submission
+    );
+    let scopedContext = init.getContext ? await init.getContext() : new RouterContextProvider();
+    let pendingActionResult;
+    if (opts && opts.pendingError) {
+      pendingActionResult = [
+        findNearestBoundary(matches).route.id,
+        { type: "error" /* error */, error: opts.pendingError }
+      ];
+    } else if (opts && opts.submission && isMutationMethod(opts.submission.formMethod)) {
+      let actionResult = await handleAction(
+        request,
+        location,
+        opts.submission,
+        matches,
+        scopedContext,
+        fogOfWar.active,
+        opts && opts.initialHydration === true,
+        { replace: opts.replace, flushSync }
+      );
+      if (actionResult.shortCircuited) {
+        return;
+      }
+      if (actionResult.pendingActionResult) {
+        let [routeId, result] = actionResult.pendingActionResult;
+        if (isErrorResult(result) && isRouteErrorResponse(result.error) && result.error.status === 404) {
+          pendingNavigationController = null;
+          completeNavigation(location, {
+            matches: actionResult.matches,
+            loaderData: {},
+            errors: {
+              [routeId]: result.error
+            }
+          });
+          return;
+        }
+      }
+      matches = actionResult.matches || matches;
+      pendingActionResult = actionResult.pendingActionResult;
+      loadingNavigation = getLoadingNavigation(location, opts.submission);
+      flushSync = false;
+      fogOfWar.active = false;
+      request = createClientSideRequest(
+        init.history,
+        request.url,
+        request.signal
+      );
+    }
+    let {
+      shortCircuited,
+      matches: updatedMatches,
+      loaderData,
+      errors
+    } = await handleLoaders(
+      request,
+      location,
+      matches,
+      scopedContext,
+      fogOfWar.active,
+      loadingNavigation,
+      opts && opts.submission,
+      opts && opts.fetcherSubmission,
+      opts && opts.replace,
+      opts && opts.initialHydration === true,
+      flushSync,
+      pendingActionResult,
+      opts && opts.callSiteDefaultShouldRevalidate
+    );
+    if (shortCircuited) {
+      return;
+    }
+    pendingNavigationController = null;
+    completeNavigation(location, {
+      matches: updatedMatches || matches,
+      ...getActionDataForCommit(pendingActionResult),
+      loaderData,
+      errors
+    });
+  }
+  async function handleAction(request, location, submission, matches, scopedContext, isFogOfWar, initialHydration, opts = {}) {
+    interruptActiveLoads();
+    let navigation = getSubmittingNavigation(location, submission);
+    updateState({ navigation }, { flushSync: opts.flushSync === true });
+    if (isFogOfWar) {
+      let discoverResult = await discoverRoutes(
+        matches,
+        location.pathname,
+        request.signal
+      );
+      if (discoverResult.type === "aborted") {
+        return { shortCircuited: true };
+      } else if (discoverResult.type === "error") {
+        if (discoverResult.partialMatches.length === 0) {
+          let { matches: matches2, route } = getShortCircuitMatches(dataRoutes);
+          return {
+            matches: matches2,
+            pendingActionResult: [
+              route.id,
+              {
+                type: "error" /* error */,
+                error: discoverResult.error
+              }
+            ]
+          };
+        }
+        let boundaryId = findNearestBoundary(discoverResult.partialMatches).route.id;
+        return {
+          matches: discoverResult.partialMatches,
+          pendingActionResult: [
+            boundaryId,
+            {
+              type: "error" /* error */,
+              error: discoverResult.error
+            }
+          ]
+        };
+      } else if (!discoverResult.matches) {
+        let { notFoundMatches, error, route } = handleNavigational404(
+          location.pathname
+        );
+        return {
+          matches: notFoundMatches,
+          pendingActionResult: [
+            route.id,
+            {
+              type: "error" /* error */,
+              error
+            }
+          ]
+        };
+      } else {
+        matches = discoverResult.matches;
+      }
+    }
+    let result;
+    let actionMatch = getTargetMatch(matches, location);
+    if (!actionMatch.route.action && !actionMatch.route.lazy) {
+      result = {
+        type: "error" /* error */,
+        error: getInternalRouterError(405, {
+          method: request.method,
+          pathname: location.pathname,
+          routeId: actionMatch.route.id
+        })
+      };
+    } else {
+      let dsMatches = getTargetedDataStrategyMatches(
+        mapRouteProperties2,
+        manifest,
+        request,
+        matches,
+        actionMatch,
+        initialHydration ? [] : hydrationRouteProperties2,
+        scopedContext
+      );
+      let results = await callDataStrategy(
+        request,
+        dsMatches,
+        scopedContext,
+        null
+      );
+      result = results[actionMatch.route.id];
+      if (!result) {
+        for (let match of matches) {
+          if (results[match.route.id]) {
+            result = results[match.route.id];
+            break;
+          }
+        }
+      }
+      if (request.signal.aborted) {
+        return { shortCircuited: true };
+      }
+    }
+    if (isRedirectResult(result)) {
+      let replace2;
+      if (opts && opts.replace != null) {
+        replace2 = opts.replace;
+      } else {
+        let location2 = normalizeRedirectLocation(
+          result.response.headers.get("Location"),
+          new URL(request.url),
+          basename,
+          init.history
+        );
+        replace2 = location2 === state.location.pathname + state.location.search;
+      }
+      await startRedirectNavigation(request, result, true, {
+        submission,
+        replace: replace2
+      });
+      return { shortCircuited: true };
+    }
+    if (isErrorResult(result)) {
+      let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
+      if ((opts && opts.replace) !== true) {
+        pendingAction = "PUSH" /* Push */;
+      }
+      return {
+        matches,
+        pendingActionResult: [
+          boundaryMatch.route.id,
+          result,
+          actionMatch.route.id
+        ]
+      };
+    }
+    return {
+      matches,
+      pendingActionResult: [actionMatch.route.id, result]
+    };
+  }
+  async function handleLoaders(request, location, matches, scopedContext, isFogOfWar, overrideNavigation, submission, fetcherSubmission, replace2, initialHydration, flushSync, pendingActionResult, callSiteDefaultShouldRevalidate) {
+    let loadingNavigation = overrideNavigation || getLoadingNavigation(location, submission);
+    let activeSubmission = submission || fetcherSubmission || getSubmissionFromNavigation(loadingNavigation);
+    let shouldUpdateNavigationState = !isUninterruptedRevalidation && !initialHydration;
+    if (isFogOfWar) {
+      if (shouldUpdateNavigationState) {
+        let actionData = getUpdatedActionData(pendingActionResult);
+        updateState(
+          {
+            navigation: loadingNavigation,
+            ...actionData !== void 0 ? { actionData } : {}
+          },
+          {
+            flushSync
+          }
+        );
+      }
+      let discoverResult = await discoverRoutes(
+        matches,
+        location.pathname,
+        request.signal
+      );
+      if (discoverResult.type === "aborted") {
+        return { shortCircuited: true };
+      } else if (discoverResult.type === "error") {
+        if (discoverResult.partialMatches.length === 0) {
+          let { matches: matches2, route } = getShortCircuitMatches(dataRoutes);
+          return {
+            matches: matches2,
+            loaderData: {},
+            errors: {
+              [route.id]: discoverResult.error
+            }
+          };
+        }
+        let boundaryId = findNearestBoundary(discoverResult.partialMatches).route.id;
+        return {
+          matches: discoverResult.partialMatches,
+          loaderData: {},
+          errors: {
+            [boundaryId]: discoverResult.error
+          }
+        };
+      } else if (!discoverResult.matches) {
+        let { error, notFoundMatches, route } = handleNavigational404(
+          location.pathname
+        );
+        return {
+          matches: notFoundMatches,
+          loaderData: {},
+          errors: {
+            [route.id]: error
+          }
+        };
+      } else {
+        matches = discoverResult.matches;
+      }
+    }
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let { dsMatches, revalidatingFetchers } = getMatchesToLoad(
+      request,
+      scopedContext,
+      mapRouteProperties2,
+      manifest,
+      init.history,
+      state,
+      matches,
+      activeSubmission,
+      location,
+      initialHydration ? [] : hydrationRouteProperties2,
+      initialHydration === true,
+      isRevalidationRequired,
+      cancelledFetcherLoads,
+      fetchersQueuedForDeletion,
+      fetchLoadMatches,
+      fetchRedirectIds,
+      routesToUse,
+      basename,
+      init.patchRoutesOnNavigation != null,
+      pendingActionResult,
+      callSiteDefaultShouldRevalidate
+    );
+    pendingNavigationLoadId = ++incrementingLoadId;
+    if (!init.dataStrategy && !dsMatches.some((m) => m.shouldLoad) && !dsMatches.some(
+      (m) => m.route.middleware && m.route.middleware.length > 0
+    ) && revalidatingFetchers.length === 0) {
+      let updatedFetchers2 = markFetchRedirectsDone();
+      completeNavigation(
+        location,
+        {
+          matches,
+          loaderData: {},
+          // Commit pending error if we're short circuiting
+          errors: pendingActionResult && isErrorResult(pendingActionResult[1]) ? { [pendingActionResult[0]]: pendingActionResult[1].error } : null,
+          ...getActionDataForCommit(pendingActionResult),
+          ...updatedFetchers2 ? { fetchers: new Map(state.fetchers) } : {}
+        },
+        { flushSync }
+      );
+      return { shortCircuited: true };
+    }
+    if (shouldUpdateNavigationState) {
+      let updates = {};
+      if (!isFogOfWar) {
+        updates.navigation = loadingNavigation;
+        let actionData = getUpdatedActionData(pendingActionResult);
+        if (actionData !== void 0) {
+          updates.actionData = actionData;
+        }
+      }
+      if (revalidatingFetchers.length > 0) {
+        updates.fetchers = getUpdatedRevalidatingFetchers(revalidatingFetchers);
+      }
+      updateState(updates, { flushSync });
+    }
+    revalidatingFetchers.forEach((rf) => {
+      abortFetcher(rf.key);
+      if (rf.controller) {
+        fetchControllers.set(rf.key, rf.controller);
+      }
+    });
+    let abortPendingFetchRevalidations = () => revalidatingFetchers.forEach((f) => abortFetcher(f.key));
+    if (pendingNavigationController) {
+      pendingNavigationController.signal.addEventListener(
+        "abort",
+        abortPendingFetchRevalidations
+      );
+    }
+    let { loaderResults, fetcherResults } = await callLoadersAndMaybeResolveData(
+      dsMatches,
+      revalidatingFetchers,
+      request,
+      scopedContext
+    );
+    if (request.signal.aborted) {
+      return { shortCircuited: true };
+    }
+    if (pendingNavigationController) {
+      pendingNavigationController.signal.removeEventListener(
+        "abort",
+        abortPendingFetchRevalidations
+      );
+    }
+    revalidatingFetchers.forEach((rf) => fetchControllers.delete(rf.key));
+    let redirect2 = findRedirect(loaderResults);
+    if (redirect2) {
+      await startRedirectNavigation(request, redirect2.result, true, {
+        replace: replace2
+      });
+      return { shortCircuited: true };
+    }
+    redirect2 = findRedirect(fetcherResults);
+    if (redirect2) {
+      fetchRedirectIds.add(redirect2.key);
+      await startRedirectNavigation(request, redirect2.result, true, {
+        replace: replace2
+      });
+      return { shortCircuited: true };
+    }
+    let { loaderData, errors } = processLoaderData(
+      state,
+      matches,
+      loaderResults,
+      pendingActionResult,
+      revalidatingFetchers,
+      fetcherResults
+    );
+    if (initialHydration && state.errors) {
+      errors = { ...state.errors, ...errors };
+    }
+    let updatedFetchers = markFetchRedirectsDone();
+    let didAbortFetchLoads = abortStaleFetchLoads(pendingNavigationLoadId);
+    let shouldUpdateFetchers = updatedFetchers || didAbortFetchLoads || revalidatingFetchers.length > 0;
+    return {
+      matches,
+      loaderData,
+      errors,
+      ...shouldUpdateFetchers ? { fetchers: new Map(state.fetchers) } : {}
+    };
+  }
+  function getUpdatedActionData(pendingActionResult) {
+    if (pendingActionResult && !isErrorResult(pendingActionResult[1])) {
+      return {
+        [pendingActionResult[0]]: pendingActionResult[1].data
+      };
+    } else if (state.actionData) {
+      if (Object.keys(state.actionData).length === 0) {
+        return null;
+      } else {
+        return state.actionData;
+      }
+    }
+  }
+  function getUpdatedRevalidatingFetchers(revalidatingFetchers) {
+    revalidatingFetchers.forEach((rf) => {
+      let fetcher = state.fetchers.get(rf.key);
+      let revalidatingFetcher = getLoadingFetcher(
+        void 0,
+        fetcher ? fetcher.data : void 0
+      );
+      state.fetchers.set(rf.key, revalidatingFetcher);
+    });
+    return new Map(state.fetchers);
+  }
+  async function fetch2(key, routeId, href, opts) {
+    abortFetcher(key);
+    let flushSync = (opts && opts.flushSync) === true;
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let normalizedPath = normalizeTo(
+      state.location,
+      state.matches,
+      basename,
+      href,
+      routeId,
+      opts?.relative
+    );
+    let matches = matchRoutes(routesToUse, normalizedPath, basename);
+    let fogOfWar = checkFogOfWar(matches, routesToUse, normalizedPath);
+    if (fogOfWar.active && fogOfWar.matches) {
+      matches = fogOfWar.matches;
+    }
+    if (!matches) {
+      setFetcherError(
+        key,
+        routeId,
+        getInternalRouterError(404, { pathname: normalizedPath }),
+        { flushSync }
+      );
+      return;
+    }
+    let { path, submission, error } = normalizeNavigateOptions(
+      true,
+      normalizedPath,
+      opts
+    );
+    if (error) {
+      setFetcherError(key, routeId, error, { flushSync });
+      return;
+    }
+    let scopedContext = init.getContext ? await init.getContext() : new RouterContextProvider();
+    let preventScrollReset = (opts && opts.preventScrollReset) === true;
+    if (submission && isMutationMethod(submission.formMethod)) {
+      await handleFetcherAction(
+        key,
+        routeId,
+        path,
+        matches,
+        scopedContext,
+        fogOfWar.active,
+        flushSync,
+        preventScrollReset,
+        submission,
+        opts && opts.unstable_defaultShouldRevalidate
+      );
+      return;
+    }
+    fetchLoadMatches.set(key, { routeId, path });
+    await handleFetcherLoader(
+      key,
+      routeId,
+      path,
+      matches,
+      scopedContext,
+      fogOfWar.active,
+      flushSync,
+      preventScrollReset,
+      submission
+    );
+  }
+  async function handleFetcherAction(key, routeId, path, requestMatches, scopedContext, isFogOfWar, flushSync, preventScrollReset, submission, callSiteDefaultShouldRevalidate) {
+    interruptActiveLoads();
+    fetchLoadMatches.delete(key);
+    let existingFetcher = state.fetchers.get(key);
+    updateFetcherState(key, getSubmittingFetcher(submission, existingFetcher), {
+      flushSync
+    });
+    let abortController = new AbortController();
+    let fetchRequest = createClientSideRequest(
+      init.history,
+      path,
+      abortController.signal,
+      submission
+    );
+    if (isFogOfWar) {
+      let discoverResult = await discoverRoutes(
+        requestMatches,
+        new URL(fetchRequest.url).pathname,
+        fetchRequest.signal,
+        key
+      );
+      if (discoverResult.type === "aborted") {
+        return;
+      } else if (discoverResult.type === "error") {
+        setFetcherError(key, routeId, discoverResult.error, { flushSync });
+        return;
+      } else if (!discoverResult.matches) {
+        setFetcherError(
+          key,
+          routeId,
+          getInternalRouterError(404, { pathname: path }),
+          { flushSync }
+        );
+        return;
+      } else {
+        requestMatches = discoverResult.matches;
+      }
+    }
+    let match = getTargetMatch(requestMatches, path);
+    if (!match.route.action && !match.route.lazy) {
+      let error = getInternalRouterError(405, {
+        method: submission.formMethod,
+        pathname: path,
+        routeId
+      });
+      setFetcherError(key, routeId, error, { flushSync });
+      return;
+    }
+    fetchControllers.set(key, abortController);
+    let originatingLoadId = incrementingLoadId;
+    let fetchMatches = getTargetedDataStrategyMatches(
+      mapRouteProperties2,
+      manifest,
+      fetchRequest,
+      requestMatches,
+      match,
+      hydrationRouteProperties2,
+      scopedContext
+    );
+    let actionResults = await callDataStrategy(
+      fetchRequest,
+      fetchMatches,
+      scopedContext,
+      key
+    );
+    let actionResult = actionResults[match.route.id];
+    if (!actionResult) {
+      for (let match2 of fetchMatches) {
+        if (actionResults[match2.route.id]) {
+          actionResult = actionResults[match2.route.id];
+          break;
+        }
+      }
+    }
+    if (fetchRequest.signal.aborted) {
+      if (fetchControllers.get(key) === abortController) {
+        fetchControllers.delete(key);
+      }
+      return;
+    }
+    if (fetchersQueuedForDeletion.has(key)) {
+      if (isRedirectResult(actionResult) || isErrorResult(actionResult)) {
+        updateFetcherState(key, getDoneFetcher(void 0));
+        return;
+      }
+    } else {
+      if (isRedirectResult(actionResult)) {
+        fetchControllers.delete(key);
+        if (pendingNavigationLoadId > originatingLoadId) {
+          updateFetcherState(key, getDoneFetcher(void 0));
+          return;
+        } else {
+          fetchRedirectIds.add(key);
+          updateFetcherState(key, getLoadingFetcher(submission));
+          return startRedirectNavigation(fetchRequest, actionResult, false, {
+            fetcherSubmission: submission,
+            preventScrollReset
+          });
+        }
+      }
+      if (isErrorResult(actionResult)) {
+        setFetcherError(key, routeId, actionResult.error);
+        return;
+      }
+    }
+    let nextLocation = state.navigation.location || state.location;
+    let revalidationRequest = createClientSideRequest(
+      init.history,
+      nextLocation,
+      abortController.signal
+    );
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let matches = state.navigation.state !== "idle" ? matchRoutes(routesToUse, state.navigation.location, basename) : state.matches;
+    invariant(matches, "Didn't find any matches after fetcher action");
+    let loadId = ++incrementingLoadId;
+    fetchReloadIds.set(key, loadId);
+    let loadFetcher = getLoadingFetcher(submission, actionResult.data);
+    state.fetchers.set(key, loadFetcher);
+    let { dsMatches, revalidatingFetchers } = getMatchesToLoad(
+      revalidationRequest,
+      scopedContext,
+      mapRouteProperties2,
+      manifest,
+      init.history,
+      state,
+      matches,
+      submission,
+      nextLocation,
+      hydrationRouteProperties2,
+      false,
+      isRevalidationRequired,
+      cancelledFetcherLoads,
+      fetchersQueuedForDeletion,
+      fetchLoadMatches,
+      fetchRedirectIds,
+      routesToUse,
+      basename,
+      init.patchRoutesOnNavigation != null,
+      [match.route.id, actionResult],
+      callSiteDefaultShouldRevalidate
+    );
+    revalidatingFetchers.filter((rf) => rf.key !== key).forEach((rf) => {
+      let staleKey = rf.key;
+      let existingFetcher2 = state.fetchers.get(staleKey);
+      let revalidatingFetcher = getLoadingFetcher(
+        void 0,
+        existingFetcher2 ? existingFetcher2.data : void 0
+      );
+      state.fetchers.set(staleKey, revalidatingFetcher);
+      abortFetcher(staleKey);
+      if (rf.controller) {
+        fetchControllers.set(staleKey, rf.controller);
+      }
+    });
+    updateState({ fetchers: new Map(state.fetchers) });
+    let abortPendingFetchRevalidations = () => revalidatingFetchers.forEach((rf) => abortFetcher(rf.key));
+    abortController.signal.addEventListener(
+      "abort",
+      abortPendingFetchRevalidations
+    );
+    let { loaderResults, fetcherResults } = await callLoadersAndMaybeResolveData(
+      dsMatches,
+      revalidatingFetchers,
+      revalidationRequest,
+      scopedContext
+    );
+    if (abortController.signal.aborted) {
+      return;
+    }
+    abortController.signal.removeEventListener(
+      "abort",
+      abortPendingFetchRevalidations
+    );
+    fetchReloadIds.delete(key);
+    fetchControllers.delete(key);
+    revalidatingFetchers.forEach((r) => fetchControllers.delete(r.key));
+    if (state.fetchers.has(key)) {
+      let doneFetcher = getDoneFetcher(actionResult.data);
+      state.fetchers.set(key, doneFetcher);
+    }
+    let redirect2 = findRedirect(loaderResults);
+    if (redirect2) {
+      return startRedirectNavigation(
+        revalidationRequest,
+        redirect2.result,
+        false,
+        { preventScrollReset }
+      );
+    }
+    redirect2 = findRedirect(fetcherResults);
+    if (redirect2) {
+      fetchRedirectIds.add(redirect2.key);
+      return startRedirectNavigation(
+        revalidationRequest,
+        redirect2.result,
+        false,
+        { preventScrollReset }
+      );
+    }
+    let { loaderData, errors } = processLoaderData(
+      state,
+      matches,
+      loaderResults,
+      void 0,
+      revalidatingFetchers,
+      fetcherResults
+    );
+    abortStaleFetchLoads(loadId);
+    if (state.navigation.state === "loading" && loadId > pendingNavigationLoadId) {
+      invariant(pendingAction, "Expected pending action");
+      pendingNavigationController && pendingNavigationController.abort();
+      completeNavigation(state.navigation.location, {
+        matches,
+        loaderData,
+        errors,
+        fetchers: new Map(state.fetchers)
+      });
+    } else {
+      updateState({
+        errors,
+        loaderData: mergeLoaderData(
+          state.loaderData,
+          loaderData,
+          matches,
+          errors
+        ),
+        fetchers: new Map(state.fetchers)
+      });
+      isRevalidationRequired = false;
+    }
+  }
+  async function handleFetcherLoader(key, routeId, path, matches, scopedContext, isFogOfWar, flushSync, preventScrollReset, submission) {
+    let existingFetcher = state.fetchers.get(key);
+    updateFetcherState(
+      key,
+      getLoadingFetcher(
+        submission,
+        existingFetcher ? existingFetcher.data : void 0
+      ),
+      { flushSync }
+    );
+    let abortController = new AbortController();
+    let fetchRequest = createClientSideRequest(
+      init.history,
+      path,
+      abortController.signal
+    );
+    if (isFogOfWar) {
+      let discoverResult = await discoverRoutes(
+        matches,
+        new URL(fetchRequest.url).pathname,
+        fetchRequest.signal,
+        key
+      );
+      if (discoverResult.type === "aborted") {
+        return;
+      } else if (discoverResult.type === "error") {
+        setFetcherError(key, routeId, discoverResult.error, { flushSync });
+        return;
+      } else if (!discoverResult.matches) {
+        setFetcherError(
+          key,
+          routeId,
+          getInternalRouterError(404, { pathname: path }),
+          { flushSync }
+        );
+        return;
+      } else {
+        matches = discoverResult.matches;
+      }
+    }
+    let match = getTargetMatch(matches, path);
+    fetchControllers.set(key, abortController);
+    let originatingLoadId = incrementingLoadId;
+    let dsMatches = getTargetedDataStrategyMatches(
+      mapRouteProperties2,
+      manifest,
+      fetchRequest,
+      matches,
+      match,
+      hydrationRouteProperties2,
+      scopedContext
+    );
+    let results = await callDataStrategy(
+      fetchRequest,
+      dsMatches,
+      scopedContext,
+      key
+    );
+    let result = results[match.route.id];
+    if (fetchControllers.get(key) === abortController) {
+      fetchControllers.delete(key);
+    }
+    if (fetchRequest.signal.aborted) {
+      return;
+    }
+    if (fetchersQueuedForDeletion.has(key)) {
+      updateFetcherState(key, getDoneFetcher(void 0));
+      return;
+    }
+    if (isRedirectResult(result)) {
+      if (pendingNavigationLoadId > originatingLoadId) {
+        updateFetcherState(key, getDoneFetcher(void 0));
+        return;
+      } else {
+        fetchRedirectIds.add(key);
+        await startRedirectNavigation(fetchRequest, result, false, {
+          preventScrollReset
+        });
+        return;
+      }
+    }
+    if (isErrorResult(result)) {
+      setFetcherError(key, routeId, result.error);
+      return;
+    }
+    updateFetcherState(key, getDoneFetcher(result.data));
+  }
+  async function startRedirectNavigation(request, redirect2, isNavigation, {
+    submission,
+    fetcherSubmission,
+    preventScrollReset,
+    replace: replace2
+  } = {}) {
+    if (!isNavigation) {
+      pendingPopstateNavigationDfd?.resolve();
+      pendingPopstateNavigationDfd = null;
+    }
+    if (redirect2.response.headers.has("X-Remix-Revalidate")) {
+      isRevalidationRequired = true;
+    }
+    let location = redirect2.response.headers.get("Location");
+    invariant(location, "Expected a Location header on the redirect Response");
+    location = normalizeRedirectLocation(
+      location,
+      new URL(request.url),
+      basename,
+      init.history
+    );
+    let redirectLocation = createLocation(state.location, location, {
+      _isRedirect: true
+    });
+    if (isBrowser3) {
+      let isDocumentReload = false;
+      if (redirect2.response.headers.has("X-Remix-Reload-Document")) {
+        isDocumentReload = true;
+      } else if (isAbsoluteUrl(location)) {
+        const url = createBrowserURLImpl(location, true);
+        isDocumentReload = // Hard reload if it's an absolute URL to a new origin
+        url.origin !== routerWindow.location.origin || // Hard reload if it's an absolute URL that does not match our basename
+        stripBasename(url.pathname, basename) == null;
+      }
+      if (isDocumentReload) {
+        if (replace2) {
+          routerWindow.location.replace(location);
+        } else {
+          routerWindow.location.assign(location);
+        }
+        return;
+      }
+    }
+    pendingNavigationController = null;
+    let redirectNavigationType = replace2 === true || redirect2.response.headers.has("X-Remix-Replace") ? "REPLACE" /* Replace */ : "PUSH" /* Push */;
+    let { formMethod, formAction, formEncType } = state.navigation;
+    if (!submission && !fetcherSubmission && formMethod && formAction && formEncType) {
+      submission = getSubmissionFromNavigation(state.navigation);
+    }
+    let activeSubmission = submission || fetcherSubmission;
+    if (redirectPreserveMethodStatusCodes.has(redirect2.response.status) && activeSubmission && isMutationMethod(activeSubmission.formMethod)) {
+      await startNavigation(redirectNavigationType, redirectLocation, {
+        submission: {
+          ...activeSubmission,
+          formAction: location
+        },
+        // Preserve these flags across redirects
+        preventScrollReset: preventScrollReset || pendingPreventScrollReset,
+        enableViewTransition: isNavigation ? pendingViewTransitionEnabled : void 0
+      });
+    } else {
+      let overrideNavigation = getLoadingNavigation(
+        redirectLocation,
+        submission
+      );
+      await startNavigation(redirectNavigationType, redirectLocation, {
+        overrideNavigation,
+        // Send fetcher submissions through for shouldRevalidate
+        fetcherSubmission,
+        // Preserve these flags across redirects
+        preventScrollReset: preventScrollReset || pendingPreventScrollReset,
+        enableViewTransition: isNavigation ? pendingViewTransitionEnabled : void 0
+      });
+    }
+  }
+  async function callDataStrategy(request, matches, scopedContext, fetcherKey) {
+    let results;
+    let dataResults = {};
+    try {
+      results = await callDataStrategyImpl(
+        dataStrategyImpl,
+        request,
+        matches,
+        fetcherKey,
+        scopedContext,
+        false
+      );
+    } catch (e) {
+      matches.filter((m) => m.shouldLoad).forEach((m) => {
+        dataResults[m.route.id] = {
+          type: "error" /* error */,
+          error: e
+        };
+      });
+      return dataResults;
+    }
+    if (request.signal.aborted) {
+      return dataResults;
+    }
+    if (!isMutationMethod(request.method)) {
+      for (let match of matches) {
+        if (results[match.route.id]?.type === "error" /* error */) {
+          break;
+        }
+        if (!results.hasOwnProperty(match.route.id) && !state.loaderData.hasOwnProperty(match.route.id) && (!state.errors || !state.errors.hasOwnProperty(match.route.id)) && match.shouldCallHandler()) {
+          results[match.route.id] = {
+            type: "error" /* error */,
+            result: new Error(
+              `No result returned from dataStrategy for route ${match.route.id}`
+            )
+          };
+        }
+      }
+    }
+    for (let [routeId, result] of Object.entries(results)) {
+      if (isRedirectDataStrategyResult(result)) {
+        let response = result.result;
+        dataResults[routeId] = {
+          type: "redirect" /* redirect */,
+          response: normalizeRelativeRoutingRedirectResponse(
+            response,
+            request,
+            routeId,
+            matches,
+            basename
+          )
+        };
+      } else {
+        dataResults[routeId] = await convertDataStrategyResultToDataResult(result);
+      }
+    }
+    return dataResults;
+  }
+  async function callLoadersAndMaybeResolveData(matches, fetchersToLoad, request, scopedContext) {
+    let loaderResultsPromise = callDataStrategy(
+      request,
+      matches,
+      scopedContext,
+      null
+    );
+    let fetcherResultsPromise = Promise.all(
+      fetchersToLoad.map(async (f) => {
+        if (f.matches && f.match && f.request && f.controller) {
+          let results = await callDataStrategy(
+            f.request,
+            f.matches,
+            scopedContext,
+            f.key
+          );
+          let result = results[f.match.route.id];
+          return { [f.key]: result };
+        } else {
+          return Promise.resolve({
+            [f.key]: {
+              type: "error" /* error */,
+              error: getInternalRouterError(404, {
+                pathname: f.path
+              })
+            }
+          });
+        }
+      })
+    );
+    let loaderResults = await loaderResultsPromise;
+    let fetcherResults = (await fetcherResultsPromise).reduce(
+      (acc, r) => Object.assign(acc, r),
+      {}
+    );
+    return {
+      loaderResults,
+      fetcherResults
+    };
+  }
+  function interruptActiveLoads() {
+    isRevalidationRequired = true;
+    fetchLoadMatches.forEach((_, key) => {
+      if (fetchControllers.has(key)) {
+        cancelledFetcherLoads.add(key);
+      }
+      abortFetcher(key);
+    });
+  }
+  function updateFetcherState(key, fetcher, opts = {}) {
+    state.fetchers.set(key, fetcher);
+    updateState(
+      { fetchers: new Map(state.fetchers) },
+      { flushSync: (opts && opts.flushSync) === true }
+    );
+  }
+  function setFetcherError(key, routeId, error, opts = {}) {
+    let boundaryMatch = findNearestBoundary(state.matches, routeId);
+    deleteFetcher(key);
+    updateState(
+      {
+        errors: {
+          [boundaryMatch.route.id]: error
+        },
+        fetchers: new Map(state.fetchers)
+      },
+      { flushSync: (opts && opts.flushSync) === true }
+    );
+  }
+  function getFetcher(key) {
+    activeFetchers.set(key, (activeFetchers.get(key) || 0) + 1);
+    if (fetchersQueuedForDeletion.has(key)) {
+      fetchersQueuedForDeletion.delete(key);
+    }
+    return state.fetchers.get(key) || IDLE_FETCHER;
+  }
+  function resetFetcher(key, opts) {
+    abortFetcher(key, opts?.reason);
+    updateFetcherState(key, getDoneFetcher(null));
+  }
+  function deleteFetcher(key) {
+    let fetcher = state.fetchers.get(key);
+    if (fetchControllers.has(key) && !(fetcher && fetcher.state === "loading" && fetchReloadIds.has(key))) {
+      abortFetcher(key);
+    }
+    fetchLoadMatches.delete(key);
+    fetchReloadIds.delete(key);
+    fetchRedirectIds.delete(key);
+    fetchersQueuedForDeletion.delete(key);
+    cancelledFetcherLoads.delete(key);
+    state.fetchers.delete(key);
+  }
+  function queueFetcherForDeletion(key) {
+    let count = (activeFetchers.get(key) || 0) - 1;
+    if (count <= 0) {
+      activeFetchers.delete(key);
+      fetchersQueuedForDeletion.add(key);
+    } else {
+      activeFetchers.set(key, count);
+    }
+    updateState({ fetchers: new Map(state.fetchers) });
+  }
+  function abortFetcher(key, reason) {
+    let controller = fetchControllers.get(key);
+    if (controller) {
+      controller.abort(reason);
+      fetchControllers.delete(key);
+    }
+  }
+  function markFetchersDone(keys) {
+    for (let key of keys) {
+      let fetcher = getFetcher(key);
+      let doneFetcher = getDoneFetcher(fetcher.data);
+      state.fetchers.set(key, doneFetcher);
+    }
+  }
+  function markFetchRedirectsDone() {
+    let doneKeys = [];
+    let updatedFetchers = false;
+    for (let key of fetchRedirectIds) {
+      let fetcher = state.fetchers.get(key);
+      invariant(fetcher, `Expected fetcher: ${key}`);
+      if (fetcher.state === "loading") {
+        fetchRedirectIds.delete(key);
+        doneKeys.push(key);
+        updatedFetchers = true;
+      }
+    }
+    markFetchersDone(doneKeys);
+    return updatedFetchers;
+  }
+  function abortStaleFetchLoads(landedId) {
+    let yeetedKeys = [];
+    for (let [key, id] of fetchReloadIds) {
+      if (id < landedId) {
+        let fetcher = state.fetchers.get(key);
+        invariant(fetcher, `Expected fetcher: ${key}`);
+        if (fetcher.state === "loading") {
+          abortFetcher(key);
+          fetchReloadIds.delete(key);
+          yeetedKeys.push(key);
+        }
+      }
+    }
+    markFetchersDone(yeetedKeys);
+    return yeetedKeys.length > 0;
+  }
+  function getBlocker(key, fn) {
+    let blocker = state.blockers.get(key) || IDLE_BLOCKER;
+    if (blockerFunctions.get(key) !== fn) {
+      blockerFunctions.set(key, fn);
+    }
+    return blocker;
+  }
+  function deleteBlocker(key) {
+    state.blockers.delete(key);
+    blockerFunctions.delete(key);
+  }
+  function updateBlocker(key, newBlocker) {
+    let blocker = state.blockers.get(key) || IDLE_BLOCKER;
+    invariant(
+      blocker.state === "unblocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "proceeding" || blocker.state === "blocked" && newBlocker.state === "unblocked" || blocker.state === "proceeding" && newBlocker.state === "unblocked",
+      `Invalid blocker state transition: ${blocker.state} -> ${newBlocker.state}`
+    );
+    let blockers = new Map(state.blockers);
+    blockers.set(key, newBlocker);
+    updateState({ blockers });
+  }
+  function shouldBlockNavigation({
+    currentLocation,
+    nextLocation,
+    historyAction
+  }) {
+    if (blockerFunctions.size === 0) {
+      return;
+    }
+    if (blockerFunctions.size > 1) {
+      warning(false, "A router only supports one blocker at a time");
+    }
+    let entries = Array.from(blockerFunctions.entries());
+    let [blockerKey, blockerFunction] = entries[entries.length - 1];
+    let blocker = state.blockers.get(blockerKey);
+    if (blocker && blocker.state === "proceeding") {
+      return;
+    }
+    if (blockerFunction({ currentLocation, nextLocation, historyAction })) {
+      return blockerKey;
+    }
+  }
+  function handleNavigational404(pathname) {
+    let error = getInternalRouterError(404, { pathname });
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let { matches, route } = getShortCircuitMatches(routesToUse);
+    return { notFoundMatches: matches, route, error };
+  }
+  function enableScrollRestoration(positions, getPosition, getKey) {
+    savedScrollPositions2 = positions;
+    getScrollPosition = getPosition;
+    getScrollRestorationKey2 = getKey || null;
+    if (!initialScrollRestored && state.navigation === IDLE_NAVIGATION) {
+      initialScrollRestored = true;
+      let y = getSavedScrollPosition(state.location, state.matches);
+      if (y != null) {
+        updateState({ restoreScrollPosition: y });
+      }
+    }
+    return () => {
+      savedScrollPositions2 = null;
+      getScrollPosition = null;
+      getScrollRestorationKey2 = null;
+    };
+  }
+  function getScrollKey(location, matches) {
+    if (getScrollRestorationKey2) {
+      let key = getScrollRestorationKey2(
+        location,
+        matches.map((m) => convertRouteMatchToUiMatch(m, state.loaderData))
+      );
+      return key || location.key;
+    }
+    return location.key;
+  }
+  function saveScrollPosition(location, matches) {
+    if (savedScrollPositions2 && getScrollPosition) {
+      let key = getScrollKey(location, matches);
+      savedScrollPositions2[key] = getScrollPosition();
+    }
+  }
+  function getSavedScrollPosition(location, matches) {
+    if (savedScrollPositions2) {
+      let key = getScrollKey(location, matches);
+      let y = savedScrollPositions2[key];
+      if (typeof y === "number") {
+        return y;
+      }
+    }
+    return null;
+  }
+  function checkFogOfWar(matches, routesToUse, pathname) {
+    if (init.patchRoutesOnNavigation) {
+      if (!matches) {
+        let fogMatches = matchRoutesImpl(
+          routesToUse,
+          pathname,
+          basename,
+          true
+        );
+        return { active: true, matches: fogMatches || [] };
+      } else {
+        if (Object.keys(matches[0].params).length > 0) {
+          let partialMatches = matchRoutesImpl(
+            routesToUse,
+            pathname,
+            basename,
+            true
+          );
+          return { active: true, matches: partialMatches };
+        }
+      }
+    }
+    return { active: false, matches: null };
+  }
+  async function discoverRoutes(matches, pathname, signal, fetcherKey) {
+    if (!init.patchRoutesOnNavigation) {
+      return { type: "success", matches };
+    }
+    let partialMatches = matches;
+    while (true) {
+      let isNonHMR = inFlightDataRoutes == null;
+      let routesToUse = inFlightDataRoutes || dataRoutes;
+      let localManifest = manifest;
+      try {
+        await init.patchRoutesOnNavigation({
+          signal,
+          path: pathname,
+          matches: partialMatches,
+          fetcherKey,
+          patch: (routeId, children) => {
+            if (signal.aborted) return;
+            patchRoutesImpl(
+              routeId,
+              children,
+              routesToUse,
+              localManifest,
+              mapRouteProperties2,
+              false
+            );
+          }
+        });
+      } catch (e) {
+        return { type: "error", error: e, partialMatches };
+      } finally {
+        if (isNonHMR && !signal.aborted) {
+          dataRoutes = [...dataRoutes];
+        }
+      }
+      if (signal.aborted) {
+        return { type: "aborted" };
+      }
+      let newMatches = matchRoutes(routesToUse, pathname, basename);
+      let newPartialMatches = null;
+      if (newMatches) {
+        if (Object.keys(newMatches[0].params).length === 0) {
+          return { type: "success", matches: newMatches };
+        } else {
+          newPartialMatches = matchRoutesImpl(
+            routesToUse,
+            pathname,
+            basename,
+            true
+          );
+          let matchedDeeper = newPartialMatches && partialMatches.length < newPartialMatches.length && compareMatches(
+            partialMatches,
+            newPartialMatches.slice(0, partialMatches.length)
+          );
+          if (!matchedDeeper) {
+            return { type: "success", matches: newMatches };
+          }
+        }
+      }
+      if (!newPartialMatches) {
+        newPartialMatches = matchRoutesImpl(
+          routesToUse,
+          pathname,
+          basename,
+          true
+        );
+      }
+      if (!newPartialMatches || compareMatches(partialMatches, newPartialMatches)) {
+        return { type: "success", matches: null };
+      }
+      partialMatches = newPartialMatches;
+    }
+  }
+  function compareMatches(a, b) {
+    return a.length === b.length && a.every((m, i) => m.route.id === b[i].route.id);
+  }
+  function _internalSetRoutes(newRoutes) {
+    manifest = {};
+    inFlightDataRoutes = convertRoutesToDataRoutes(
+      newRoutes,
+      mapRouteProperties2,
+      void 0,
+      manifest
+    );
+  }
+  function patchRoutes(routeId, children, unstable_allowElementMutations = false) {
+    let isNonHMR = inFlightDataRoutes == null;
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    patchRoutesImpl(
+      routeId,
+      children,
+      routesToUse,
+      manifest,
+      mapRouteProperties2,
+      unstable_allowElementMutations
+    );
+    if (isNonHMR) {
+      dataRoutes = [...dataRoutes];
+      updateState({});
+    }
+  }
+  router = {
+    get basename() {
+      return basename;
+    },
+    get future() {
+      return future;
+    },
+    get state() {
+      return state;
+    },
+    get routes() {
+      return dataRoutes;
+    },
+    get window() {
+      return routerWindow;
+    },
+    initialize,
+    subscribe,
+    enableScrollRestoration,
+    navigate,
+    fetch: fetch2,
+    revalidate,
+    // Passthrough to history-aware createHref used by useHref so we get proper
+    // hash-aware URLs in DOM paths
+    createHref: (to) => init.history.createHref(to),
+    encodeLocation: (to) => init.history.encodeLocation(to),
+    getFetcher,
+    resetFetcher,
+    deleteFetcher: queueFetcherForDeletion,
+    dispose,
+    getBlocker,
+    deleteBlocker,
+    patchRoutes,
+    _internalFetchControllers: fetchControllers,
+    // TODO: Remove setRoutes, it's temporary to avoid dealing with
+    // updating the tree while validating the update algorithm.
+    _internalSetRoutes,
+    _internalSetStateDoNotUseOrYouWillBreakYourApp(newState) {
+      updateState(newState);
+    }
+  };
+  if (init.unstable_instrumentations) {
+    router = instrumentClientSideRouter(
+      router,
+      init.unstable_instrumentations.map((i) => i.router).filter(Boolean)
+    );
+  }
+  return router;
+}
+function createStaticHandler(routes, opts) {
+  invariant(
+    routes.length > 0,
+    "You must provide a non-empty routes array to createStaticHandler"
+  );
+  let manifest = {};
+  let basename = (opts ? opts.basename : null) || "/";
+  let _mapRouteProperties = opts?.mapRouteProperties || defaultMapRouteProperties;
+  let mapRouteProperties2 = _mapRouteProperties;
+  if (opts?.unstable_instrumentations) {
+    let instrumentations = opts.unstable_instrumentations;
+    mapRouteProperties2 = (route) => {
+      return {
+        ..._mapRouteProperties(route),
+        ...getRouteInstrumentationUpdates(
+          instrumentations.map((i) => i.route).filter(Boolean),
+          route
+        )
+      };
+    };
+  }
+  let dataRoutes = convertRoutesToDataRoutes(
+    routes,
+    mapRouteProperties2,
+    void 0,
+    manifest
+  );
+  async function query(request, {
+    requestContext,
+    filterMatchesToLoad,
+    skipLoaderErrorBubbling,
+    skipRevalidation,
+    dataStrategy,
+    generateMiddlewareResponse
+  } = {}) {
+    let url = new URL(request.url);
+    let method = request.method;
+    let location = createLocation("", createPath(url), null, "default");
+    let matches = matchRoutes(dataRoutes, location, basename);
+    requestContext = requestContext != null ? requestContext : new RouterContextProvider();
+    if (!isValidMethod(method) && method !== "HEAD") {
+      let error = getInternalRouterError(405, { method });
+      let { matches: methodNotAllowedMatches, route } = getShortCircuitMatches(dataRoutes);
+      let staticContext = {
+        basename,
+        location,
+        matches: methodNotAllowedMatches,
+        loaderData: {},
+        actionData: null,
+        errors: {
+          [route.id]: error
+        },
+        statusCode: error.status,
+        loaderHeaders: {},
+        actionHeaders: {}
+      };
+      return generateMiddlewareResponse ? generateMiddlewareResponse(() => Promise.resolve(staticContext)) : staticContext;
+    } else if (!matches) {
+      let error = getInternalRouterError(404, { pathname: location.pathname });
+      let { matches: notFoundMatches, route } = getShortCircuitMatches(dataRoutes);
+      let staticContext = {
+        basename,
+        location,
+        matches: notFoundMatches,
+        loaderData: {},
+        actionData: null,
+        errors: {
+          [route.id]: error
+        },
+        statusCode: error.status,
+        loaderHeaders: {},
+        actionHeaders: {}
+      };
+      return generateMiddlewareResponse ? generateMiddlewareResponse(() => Promise.resolve(staticContext)) : staticContext;
+    }
+    if (generateMiddlewareResponse) {
+      invariant(
+        requestContext instanceof RouterContextProvider,
+        "When using middleware in `staticHandler.query()`, any provided `requestContext` must be an instance of `RouterContextProvider`"
+      );
+      try {
+        await loadLazyMiddlewareForMatches(
+          matches,
+          manifest,
+          mapRouteProperties2
+        );
+        let renderedStaticContext;
+        let response = await runServerMiddlewarePipeline(
+          {
+            request,
+            unstable_pattern: getRoutePattern(matches),
+            matches,
+            params: matches[0].params,
+            // If we're calling middleware then it must be enabled so we can cast
+            // this to the proper type knowing it's not an `AppLoadContext`
+            context: requestContext
+          },
+          async () => {
+            let res = await generateMiddlewareResponse(
+              async (revalidationRequest, opts2 = {}) => {
+                let result2 = await queryImpl(
+                  revalidationRequest,
+                  location,
+                  matches,
+                  requestContext,
+                  dataStrategy || null,
+                  skipLoaderErrorBubbling === true,
+                  null,
+                  "filterMatchesToLoad" in opts2 ? opts2.filterMatchesToLoad ?? null : filterMatchesToLoad ?? null,
+                  skipRevalidation === true
+                );
+                if (isResponse(result2)) {
+                  return result2;
+                }
+                renderedStaticContext = { location, basename, ...result2 };
+                return renderedStaticContext;
+              }
+            );
+            return res;
+          },
+          async (error, routeId) => {
+            if (isRedirectResponse(error)) {
+              return error;
+            }
+            if (isResponse(error)) {
+              try {
+                error = new ErrorResponseImpl(
+                  error.status,
+                  error.statusText,
+                  await parseResponseBody(error)
+                );
+              } catch (e) {
+                error = e;
+              }
+            }
+            if (isDataWithResponseInit(error)) {
+              error = dataWithResponseInitToErrorResponse(error);
+            }
+            if (renderedStaticContext) {
+              if (routeId in renderedStaticContext.loaderData) {
+                renderedStaticContext.loaderData[routeId] = void 0;
+              }
+              let staticContext = getStaticContextFromError(
+                dataRoutes,
+                renderedStaticContext,
+                error,
+                skipLoaderErrorBubbling ? routeId : findNearestBoundary(matches, routeId).route.id
+              );
+              return generateMiddlewareResponse(
+                () => Promise.resolve(staticContext)
+              );
+            } else {
+              let boundaryRouteId = skipLoaderErrorBubbling ? routeId : findNearestBoundary(
+                matches,
+                matches.find(
+                  (m) => m.route.id === routeId || m.route.loader
+                )?.route.id || routeId
+              ).route.id;
+              let staticContext = {
+                matches,
+                location,
+                basename,
+                loaderData: {},
+                actionData: null,
+                errors: {
+                  [boundaryRouteId]: error
+                },
+                statusCode: isRouteErrorResponse(error) ? error.status : 500,
+                actionHeaders: {},
+                loaderHeaders: {}
+              };
+              return generateMiddlewareResponse(
+                () => Promise.resolve(staticContext)
+              );
+            }
+          }
+        );
+        invariant(isResponse(response), "Expected a response in query()");
+        return response;
+      } catch (e) {
+        if (isResponse(e)) {
+          return e;
+        }
+        throw e;
+      }
+    }
+    let result = await queryImpl(
+      request,
+      location,
+      matches,
+      requestContext,
+      dataStrategy || null,
+      skipLoaderErrorBubbling === true,
+      null,
+      filterMatchesToLoad || null,
+      skipRevalidation === true
+    );
+    if (isResponse(result)) {
+      return result;
+    }
+    return { location, basename, ...result };
+  }
+  async function queryRoute(request, {
+    routeId,
+    requestContext,
+    dataStrategy,
+    generateMiddlewareResponse
+  } = {}) {
+    let url = new URL(request.url);
+    let method = request.method;
+    let location = createLocation("", createPath(url), null, "default");
+    let matches = matchRoutes(dataRoutes, location, basename);
+    requestContext = requestContext != null ? requestContext : new RouterContextProvider();
+    if (!isValidMethod(method) && method !== "HEAD" && method !== "OPTIONS") {
+      throw getInternalRouterError(405, { method });
+    } else if (!matches) {
+      throw getInternalRouterError(404, { pathname: location.pathname });
+    }
+    let match = routeId ? matches.find((m) => m.route.id === routeId) : getTargetMatch(matches, location);
+    if (routeId && !match) {
+      throw getInternalRouterError(403, {
+        pathname: location.pathname,
+        routeId
+      });
+    } else if (!match) {
+      throw getInternalRouterError(404, { pathname: location.pathname });
+    }
+    if (generateMiddlewareResponse) {
+      invariant(
+        requestContext instanceof RouterContextProvider,
+        "When using middleware in `staticHandler.queryRoute()`, any provided `requestContext` must be an instance of `RouterContextProvider`"
+      );
+      await loadLazyMiddlewareForMatches(matches, manifest, mapRouteProperties2);
+      let response = await runServerMiddlewarePipeline(
+        {
+          request,
+          unstable_pattern: getRoutePattern(matches),
+          matches,
+          params: matches[0].params,
+          // If we're calling middleware then it must be enabled so we can cast
+          // this to the proper type knowing it's not an `AppLoadContext`
+          context: requestContext
+        },
+        async () => {
+          let res = await generateMiddlewareResponse(
+            async (innerRequest) => {
+              let result2 = await queryImpl(
+                innerRequest,
+                location,
+                matches,
+                requestContext,
+                dataStrategy || null,
+                false,
+                match,
+                null,
+                false
+              );
+              let processed = handleQueryResult(result2);
+              return isResponse(processed) ? processed : typeof processed === "string" ? new Response(processed) : Response.json(processed);
+            }
+          );
+          return res;
+        },
+        (error) => {
+          if (isDataWithResponseInit(error)) {
+            return Promise.resolve(dataWithResponseInitToResponse(error));
+          }
+          if (isResponse(error)) {
+            return Promise.resolve(error);
+          }
+          throw error;
+        }
+      );
+      return response;
+    }
+    let result = await queryImpl(
+      request,
+      location,
+      matches,
+      requestContext,
+      dataStrategy || null,
+      false,
+      match,
+      null,
+      false
+    );
+    return handleQueryResult(result);
+    function handleQueryResult(result2) {
+      if (isResponse(result2)) {
+        return result2;
+      }
+      let error = result2.errors ? Object.values(result2.errors)[0] : void 0;
+      if (error !== void 0) {
+        throw error;
+      }
+      if (result2.actionData) {
+        return Object.values(result2.actionData)[0];
+      }
+      if (result2.loaderData) {
+        return Object.values(result2.loaderData)[0];
+      }
+      return void 0;
+    }
+  }
+  async function queryImpl(request, location, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch, filterMatchesToLoad, skipRevalidation) {
+    invariant(
+      request.signal,
+      "query()/queryRoute() requests must contain an AbortController signal"
+    );
+    try {
+      if (isMutationMethod(request.method)) {
+        let result2 = await submit(
+          request,
+          matches,
+          routeMatch || getTargetMatch(matches, location),
+          requestContext,
+          dataStrategy,
+          skipLoaderErrorBubbling,
+          routeMatch != null,
+          filterMatchesToLoad,
+          skipRevalidation
+        );
+        return result2;
+      }
+      let result = await loadRouteData(
+        request,
+        matches,
+        requestContext,
+        dataStrategy,
+        skipLoaderErrorBubbling,
+        routeMatch,
+        filterMatchesToLoad
+      );
+      return isResponse(result) ? result : {
+        ...result,
+        actionData: null,
+        actionHeaders: {}
+      };
+    } catch (e) {
+      if (isDataStrategyResult(e) && isResponse(e.result)) {
+        if (e.type === "error" /* error */) {
+          throw e.result;
+        }
+        return e.result;
+      }
+      if (isRedirectResponse(e)) {
+        return e;
+      }
+      throw e;
+    }
+  }
+  async function submit(request, matches, actionMatch, requestContext, dataStrategy, skipLoaderErrorBubbling, isRouteRequest, filterMatchesToLoad, skipRevalidation) {
+    let result;
+    if (!actionMatch.route.action && !actionMatch.route.lazy) {
+      let error = getInternalRouterError(405, {
+        method: request.method,
+        pathname: new URL(request.url).pathname,
+        routeId: actionMatch.route.id
+      });
+      if (isRouteRequest) {
+        throw error;
+      }
+      result = {
+        type: "error" /* error */,
+        error
+      };
+    } else {
+      let dsMatches = getTargetedDataStrategyMatches(
+        mapRouteProperties2,
+        manifest,
+        request,
+        matches,
+        actionMatch,
+        [],
+        requestContext
+      );
+      let results = await callDataStrategy(
+        request,
+        dsMatches,
+        isRouteRequest,
+        requestContext,
+        dataStrategy
+      );
+      result = results[actionMatch.route.id];
+      if (request.signal.aborted) {
+        throwStaticHandlerAbortedError(request, isRouteRequest);
+      }
+    }
+    if (isRedirectResult(result)) {
+      throw new Response(null, {
+        status: result.response.status,
+        headers: {
+          Location: result.response.headers.get("Location")
+        }
+      });
+    }
+    if (isRouteRequest) {
+      if (isErrorResult(result)) {
+        throw result.error;
+      }
+      return {
+        matches: [actionMatch],
+        loaderData: {},
+        actionData: { [actionMatch.route.id]: result.data },
+        errors: null,
+        // Note: statusCode + headers are unused here since queryRoute will
+        // return the raw Response or value
+        statusCode: 200,
+        loaderHeaders: {},
+        actionHeaders: {}
+      };
+    }
+    if (skipRevalidation) {
+      if (isErrorResult(result)) {
+        let boundaryMatch = skipLoaderErrorBubbling ? actionMatch : findNearestBoundary(matches, actionMatch.route.id);
+        return {
+          statusCode: isRouteErrorResponse(result.error) ? result.error.status : result.statusCode != null ? result.statusCode : 500,
+          actionData: null,
+          actionHeaders: {
+            ...result.headers ? { [actionMatch.route.id]: result.headers } : {}
+          },
+          matches,
+          loaderData: {},
+          errors: {
+            [boundaryMatch.route.id]: result.error
+          },
+          loaderHeaders: {}
+        };
+      } else {
+        return {
+          actionData: {
+            [actionMatch.route.id]: result.data
+          },
+          actionHeaders: result.headers ? { [actionMatch.route.id]: result.headers } : {},
+          matches,
+          loaderData: {},
+          errors: null,
+          statusCode: result.statusCode || 200,
+          loaderHeaders: {}
+        };
+      }
+    }
+    let loaderRequest = new Request(request.url, {
+      headers: request.headers,
+      redirect: request.redirect,
+      signal: request.signal
+    });
+    if (isErrorResult(result)) {
+      let boundaryMatch = skipLoaderErrorBubbling ? actionMatch : findNearestBoundary(matches, actionMatch.route.id);
+      let handlerContext2 = await loadRouteData(
+        loaderRequest,
+        matches,
+        requestContext,
+        dataStrategy,
+        skipLoaderErrorBubbling,
+        null,
+        filterMatchesToLoad,
+        [boundaryMatch.route.id, result]
+      );
+      return {
+        ...handlerContext2,
+        statusCode: isRouteErrorResponse(result.error) ? result.error.status : result.statusCode != null ? result.statusCode : 500,
+        actionData: null,
+        actionHeaders: {
+          ...result.headers ? { [actionMatch.route.id]: result.headers } : {}
+        }
+      };
+    }
+    let handlerContext = await loadRouteData(
+      loaderRequest,
+      matches,
+      requestContext,
+      dataStrategy,
+      skipLoaderErrorBubbling,
+      null,
+      filterMatchesToLoad
+    );
+    return {
+      ...handlerContext,
+      actionData: {
+        [actionMatch.route.id]: result.data
+      },
+      // action status codes take precedence over loader status codes
+      ...result.statusCode ? { statusCode: result.statusCode } : {},
+      actionHeaders: result.headers ? { [actionMatch.route.id]: result.headers } : {}
+    };
+  }
+  async function loadRouteData(request, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch, filterMatchesToLoad, pendingActionResult) {
+    let isRouteRequest = routeMatch != null;
+    if (isRouteRequest && !routeMatch?.route.loader && !routeMatch?.route.lazy) {
+      throw getInternalRouterError(400, {
+        method: request.method,
+        pathname: new URL(request.url).pathname,
+        routeId: routeMatch?.route.id
+      });
+    }
+    let dsMatches;
+    if (routeMatch) {
+      dsMatches = getTargetedDataStrategyMatches(
+        mapRouteProperties2,
+        manifest,
+        request,
+        matches,
+        routeMatch,
+        [],
+        requestContext
+      );
+    } else {
+      let maxIdx = pendingActionResult && isErrorResult(pendingActionResult[1]) ? (
+        // Up to but not including the boundary
+        matches.findIndex((m) => m.route.id === pendingActionResult[0]) - 1
+      ) : void 0;
+      let pattern = getRoutePattern(matches);
+      dsMatches = matches.map((match, index) => {
+        if (maxIdx != null && index > maxIdx) {
+          return getDataStrategyMatch(
+            mapRouteProperties2,
+            manifest,
+            request,
+            pattern,
+            match,
+            [],
+            requestContext,
+            false
+          );
+        }
+        return getDataStrategyMatch(
+          mapRouteProperties2,
+          manifest,
+          request,
+          pattern,
+          match,
+          [],
+          requestContext,
+          (match.route.loader || match.route.lazy) != null && (!filterMatchesToLoad || filterMatchesToLoad(match))
+        );
+      });
+    }
+    if (!dataStrategy && !dsMatches.some((m) => m.shouldLoad)) {
+      return {
+        matches,
+        loaderData: {},
+        errors: pendingActionResult && isErrorResult(pendingActionResult[1]) ? {
+          [pendingActionResult[0]]: pendingActionResult[1].error
+        } : null,
+        statusCode: 200,
+        loaderHeaders: {}
+      };
+    }
+    let results = await callDataStrategy(
+      request,
+      dsMatches,
+      isRouteRequest,
+      requestContext,
+      dataStrategy
+    );
+    if (request.signal.aborted) {
+      throwStaticHandlerAbortedError(request, isRouteRequest);
+    }
+    let handlerContext = processRouteLoaderData(
+      matches,
+      results,
+      pendingActionResult,
+      true,
+      skipLoaderErrorBubbling
+    );
+    return {
+      ...handlerContext,
+      matches
+    };
+  }
+  async function callDataStrategy(request, matches, isRouteRequest, requestContext, dataStrategy) {
+    let results = await callDataStrategyImpl(
+      dataStrategy || defaultDataStrategy,
+      request,
+      matches,
+      null,
+      requestContext,
+      true
+    );
+    let dataResults = {};
+    await Promise.all(
+      matches.map(async (match) => {
+        if (!(match.route.id in results)) {
+          return;
+        }
+        let result = results[match.route.id];
+        if (isRedirectDataStrategyResult(result)) {
+          let response = result.result;
+          throw normalizeRelativeRoutingRedirectResponse(
+            response,
+            request,
+            match.route.id,
+            matches,
+            basename
+          );
+        }
+        if (isRouteRequest) {
+          if (isResponse(result.result)) {
+            throw result;
+          } else if (isDataWithResponseInit(result.result)) {
+            throw dataWithResponseInitToResponse(result.result);
+          }
+        }
+        dataResults[match.route.id] = await convertDataStrategyResultToDataResult(result);
+      })
+    );
+    return dataResults;
+  }
+  return {
+    dataRoutes,
+    query,
+    queryRoute
+  };
+}
+function getStaticContextFromError(routes, handlerContext, error, boundaryId) {
+  let errorBoundaryId = boundaryId || handlerContext._deepestRenderedBoundaryId || routes[0].id;
+  return {
+    ...handlerContext,
+    statusCode: isRouteErrorResponse(error) ? error.status : 500,
+    errors: {
+      [errorBoundaryId]: error
+    }
+  };
+}
+function throwStaticHandlerAbortedError(request, isRouteRequest) {
+  if (request.signal.reason !== void 0) {
+    throw request.signal.reason;
+  }
+  let method = isRouteRequest ? "queryRoute" : "query";
+  throw new Error(
+    `${method}() call aborted without an \`AbortSignal.reason\`: ${request.method} ${request.url}`
+  );
+}
+function isSubmissionNavigation(opts) {
+  return opts != null && ("formData" in opts && opts.formData != null || "body" in opts && opts.body !== void 0);
+}
+function normalizeTo(location, matches, basename, to, fromRouteId, relative) {
+  let contextualMatches;
+  let activeRouteMatch;
+  if (fromRouteId) {
+    contextualMatches = [];
+    for (let match of matches) {
+      contextualMatches.push(match);
+      if (match.route.id === fromRouteId) {
+        activeRouteMatch = match;
+        break;
+      }
+    }
+  } else {
+    contextualMatches = matches;
+    activeRouteMatch = matches[matches.length - 1];
+  }
+  let path = resolveTo(
+    to ? to : ".",
+    getResolveToMatches(contextualMatches),
+    stripBasename(location.pathname, basename) || location.pathname,
+    relative === "path"
+  );
+  if (to == null) {
+    path.search = location.search;
+    path.hash = location.hash;
+  }
+  if ((to == null || to === "" || to === ".") && activeRouteMatch) {
+    let nakedIndex = hasNakedIndexQuery(path.search);
+    if (activeRouteMatch.route.index && !nakedIndex) {
+      path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+    } else if (!activeRouteMatch.route.index && nakedIndex) {
+      let params = new URLSearchParams(path.search);
+      let indexValues = params.getAll("index");
+      params.delete("index");
+      indexValues.filter((v) => v).forEach((v) => params.append("index", v));
+      let qs = params.toString();
+      path.search = qs ? `?${qs}` : "";
+    }
+  }
+  if (basename !== "/") {
+    path.pathname = prependBasename({ basename, pathname: path.pathname });
+  }
+  return createPath(path);
+}
+function normalizeNavigateOptions(isFetcher, path, opts) {
+  if (!opts || !isSubmissionNavigation(opts)) {
+    return { path };
+  }
+  if (opts.formMethod && !isValidMethod(opts.formMethod)) {
+    return {
+      path,
+      error: getInternalRouterError(405, { method: opts.formMethod })
+    };
+  }
+  let getInvalidBodyError = () => ({
+    path,
+    error: getInternalRouterError(400, { type: "invalid-body" })
+  });
+  let rawFormMethod = opts.formMethod || "get";
+  let formMethod = rawFormMethod.toUpperCase();
+  let formAction = stripHashFromPath(path);
+  if (opts.body !== void 0) {
+    if (opts.formEncType === "text/plain") {
+      if (!isMutationMethod(formMethod)) {
+        return getInvalidBodyError();
+      }
+      let text = typeof opts.body === "string" ? opts.body : opts.body instanceof FormData || opts.body instanceof URLSearchParams ? (
+        // https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plain-text-form-data
+        Array.from(opts.body.entries()).reduce(
+          (acc, [name, value]) => `${acc}${name}=${value}
+`,
+          ""
+        )
+      ) : String(opts.body);
+      return {
+        path,
+        submission: {
+          formMethod,
+          formAction,
+          formEncType: opts.formEncType,
+          formData: void 0,
+          json: void 0,
+          text
+        }
+      };
+    } else if (opts.formEncType === "application/json") {
+      if (!isMutationMethod(formMethod)) {
+        return getInvalidBodyError();
+      }
+      try {
+        let json = typeof opts.body === "string" ? JSON.parse(opts.body) : opts.body;
+        return {
+          path,
+          submission: {
+            formMethod,
+            formAction,
+            formEncType: opts.formEncType,
+            formData: void 0,
+            json,
+            text: void 0
+          }
+        };
+      } catch (e) {
+        return getInvalidBodyError();
+      }
+    }
+  }
+  invariant(
+    typeof FormData === "function",
+    "FormData is not available in this environment"
+  );
+  let searchParams;
+  let formData;
+  if (opts.formData) {
+    searchParams = convertFormDataToSearchParams(opts.formData);
+    formData = opts.formData;
+  } else if (opts.body instanceof FormData) {
+    searchParams = convertFormDataToSearchParams(opts.body);
+    formData = opts.body;
+  } else if (opts.body instanceof URLSearchParams) {
+    searchParams = opts.body;
+    formData = convertSearchParamsToFormData(searchParams);
+  } else if (opts.body == null) {
+    searchParams = new URLSearchParams();
+    formData = new FormData();
+  } else {
+    try {
+      searchParams = new URLSearchParams(opts.body);
+      formData = convertSearchParamsToFormData(searchParams);
+    } catch (e) {
+      return getInvalidBodyError();
+    }
+  }
+  let submission = {
+    formMethod,
+    formAction,
+    formEncType: opts && opts.formEncType || "application/x-www-form-urlencoded",
+    formData,
+    json: void 0,
+    text: void 0
+  };
+  if (isMutationMethod(submission.formMethod)) {
+    return { path, submission };
+  }
+  let parsedPath = parsePath(path);
+  if (isFetcher && parsedPath.search && hasNakedIndexQuery(parsedPath.search)) {
+    searchParams.append("index", "");
+  }
+  parsedPath.search = `?${searchParams}`;
+  return { path: createPath(parsedPath), submission };
+}
+function getMatchesToLoad(request, scopedContext, mapRouteProperties2, manifest, history, state, matches, submission, location, lazyRoutePropertiesToSkip, initialHydration, isRevalidationRequired, cancelledFetcherLoads, fetchersQueuedForDeletion, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, hasPatchRoutesOnNavigation, pendingActionResult, callSiteDefaultShouldRevalidate) {
+  let actionResult = pendingActionResult ? isErrorResult(pendingActionResult[1]) ? pendingActionResult[1].error : pendingActionResult[1].data : void 0;
+  let currentUrl = history.createURL(state.location);
+  let nextUrl = history.createURL(location);
+  let maxIdx;
+  if (initialHydration && state.errors) {
+    let boundaryId = Object.keys(state.errors)[0];
+    maxIdx = matches.findIndex((m) => m.route.id === boundaryId);
+  } else if (pendingActionResult && isErrorResult(pendingActionResult[1])) {
+    let boundaryId = pendingActionResult[0];
+    maxIdx = matches.findIndex((m) => m.route.id === boundaryId) - 1;
+  }
+  let actionStatus = pendingActionResult ? pendingActionResult[1].statusCode : void 0;
+  let shouldSkipRevalidation = actionStatus && actionStatus >= 400;
+  let baseShouldRevalidateArgs = {
+    currentUrl,
+    currentParams: state.matches[0]?.params || {},
+    nextUrl,
+    nextParams: matches[0].params,
+    ...submission,
+    actionResult,
+    actionStatus
+  };
+  let pattern = getRoutePattern(matches);
+  let dsMatches = matches.map((match, index) => {
+    let { route } = match;
+    let forceShouldLoad = null;
+    if (maxIdx != null && index > maxIdx) {
+      forceShouldLoad = false;
+    } else if (route.lazy) {
+      forceShouldLoad = true;
+    } else if (!routeHasLoaderOrMiddleware(route)) {
+      forceShouldLoad = false;
+    } else if (initialHydration) {
+      let { shouldLoad: shouldLoad2 } = getRouteHydrationStatus(
+        route,
+        state.loaderData,
+        state.errors
+      );
+      forceShouldLoad = shouldLoad2;
+    } else if (isNewLoader(state.loaderData, state.matches[index], match)) {
+      forceShouldLoad = true;
+    }
+    if (forceShouldLoad !== null) {
+      return getDataStrategyMatch(
+        mapRouteProperties2,
+        manifest,
+        request,
+        pattern,
+        match,
+        lazyRoutePropertiesToSkip,
+        scopedContext,
+        forceShouldLoad
+      );
+    }
+    let defaultShouldRevalidate = false;
+    if (typeof callSiteDefaultShouldRevalidate === "boolean") {
+      defaultShouldRevalidate = callSiteDefaultShouldRevalidate;
+    } else if (shouldSkipRevalidation) {
+      defaultShouldRevalidate = false;
+    } else if (isRevalidationRequired) {
+      defaultShouldRevalidate = true;
+    } else if (currentUrl.pathname + currentUrl.search === nextUrl.pathname + nextUrl.search) {
+      defaultShouldRevalidate = true;
+    } else if (currentUrl.search !== nextUrl.search) {
+      defaultShouldRevalidate = true;
+    } else if (isNewRouteInstance(state.matches[index], match)) {
+      defaultShouldRevalidate = true;
+    }
+    let shouldRevalidateArgs = {
+      ...baseShouldRevalidateArgs,
+      defaultShouldRevalidate
+    };
+    let shouldLoad = shouldRevalidateLoader(match, shouldRevalidateArgs);
+    return getDataStrategyMatch(
+      mapRouteProperties2,
+      manifest,
+      request,
+      pattern,
+      match,
+      lazyRoutePropertiesToSkip,
+      scopedContext,
+      shouldLoad,
+      shouldRevalidateArgs,
+      callSiteDefaultShouldRevalidate
+    );
+  });
+  let revalidatingFetchers = [];
+  fetchLoadMatches.forEach((f, key) => {
+    if (initialHydration || !matches.some((m) => m.route.id === f.routeId) || fetchersQueuedForDeletion.has(key)) {
+      return;
+    }
+    let fetcher = state.fetchers.get(key);
+    let isMidInitialLoad = fetcher && fetcher.state !== "idle" && fetcher.data === void 0;
+    let fetcherMatches = matchRoutes(routesToUse, f.path, basename);
+    if (!fetcherMatches) {
+      if (hasPatchRoutesOnNavigation && isMidInitialLoad) {
+        return;
+      }
+      revalidatingFetchers.push({
+        key,
+        routeId: f.routeId,
+        path: f.path,
+        matches: null,
+        match: null,
+        request: null,
+        controller: null
+      });
+      return;
+    }
+    if (fetchRedirectIds.has(key)) {
+      return;
+    }
+    let fetcherMatch = getTargetMatch(fetcherMatches, f.path);
+    let fetchController = new AbortController();
+    let fetchRequest = createClientSideRequest(
+      history,
+      f.path,
+      fetchController.signal
+    );
+    let fetcherDsMatches = null;
+    if (cancelledFetcherLoads.has(key)) {
+      cancelledFetcherLoads.delete(key);
+      fetcherDsMatches = getTargetedDataStrategyMatches(
+        mapRouteProperties2,
+        manifest,
+        fetchRequest,
+        fetcherMatches,
+        fetcherMatch,
+        lazyRoutePropertiesToSkip,
+        scopedContext
+      );
+    } else if (isMidInitialLoad) {
+      if (isRevalidationRequired) {
+        fetcherDsMatches = getTargetedDataStrategyMatches(
+          mapRouteProperties2,
+          manifest,
+          fetchRequest,
+          fetcherMatches,
+          fetcherMatch,
+          lazyRoutePropertiesToSkip,
+          scopedContext
+        );
+      }
+    } else {
+      let defaultShouldRevalidate;
+      if (typeof callSiteDefaultShouldRevalidate === "boolean") {
+        defaultShouldRevalidate = callSiteDefaultShouldRevalidate;
+      } else if (shouldSkipRevalidation) {
+        defaultShouldRevalidate = false;
+      } else {
+        defaultShouldRevalidate = isRevalidationRequired;
+      }
+      let shouldRevalidateArgs = {
+        ...baseShouldRevalidateArgs,
+        defaultShouldRevalidate
+      };
+      if (shouldRevalidateLoader(fetcherMatch, shouldRevalidateArgs)) {
+        fetcherDsMatches = getTargetedDataStrategyMatches(
+          mapRouteProperties2,
+          manifest,
+          fetchRequest,
+          fetcherMatches,
+          fetcherMatch,
+          lazyRoutePropertiesToSkip,
+          scopedContext,
+          shouldRevalidateArgs
+        );
+      }
+    }
+    if (fetcherDsMatches) {
+      revalidatingFetchers.push({
+        key,
+        routeId: f.routeId,
+        path: f.path,
+        matches: fetcherDsMatches,
+        match: fetcherMatch,
+        request: fetchRequest,
+        controller: fetchController
+      });
+    }
+  });
+  return { dsMatches, revalidatingFetchers };
+}
+function routeHasLoaderOrMiddleware(route) {
+  return route.loader != null || route.middleware != null && route.middleware.length > 0;
+}
+function getRouteHydrationStatus(route, loaderData, errors) {
+  if (route.lazy) {
+    return { shouldLoad: true, renderFallback: true };
+  }
+  if (!routeHasLoaderOrMiddleware(route)) {
+    return { shouldLoad: false, renderFallback: false };
+  }
+  let hasData = loaderData != null && route.id in loaderData;
+  let hasError = errors != null && errors[route.id] !== void 0;
+  if (!hasData && hasError) {
+    return { shouldLoad: false, renderFallback: false };
+  }
+  if (typeof route.loader === "function" && route.loader.hydrate === true) {
+    return { shouldLoad: true, renderFallback: !hasData };
+  }
+  let shouldLoad = !hasData && !hasError;
+  return { shouldLoad, renderFallback: shouldLoad };
+}
+function isNewLoader(currentLoaderData, currentMatch, match) {
+  let isNew = (
+    // [a] -> [a, b]
+    !currentMatch || // [a, b] -> [a, c]
+    match.route.id !== currentMatch.route.id
+  );
+  let isMissingData = !currentLoaderData.hasOwnProperty(match.route.id);
+  return isNew || isMissingData;
+}
+function isNewRouteInstance(currentMatch, match) {
+  let currentPath = currentMatch.route.path;
+  return (
+    // param change for this match, /users/123 -> /users/456
+    currentMatch.pathname !== match.pathname || // splat param changed, which is not present in match.path
+    // e.g. /files/images/avatar.jpg -> files/finances.xls
+    currentPath != null && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"]
+  );
+}
+function shouldRevalidateLoader(loaderMatch, arg) {
+  if (loaderMatch.route.shouldRevalidate) {
+    let routeChoice = loaderMatch.route.shouldRevalidate(arg);
+    if (typeof routeChoice === "boolean") {
+      return routeChoice;
+    }
+  }
+  return arg.defaultShouldRevalidate;
+}
+function patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties2, allowElementMutations) {
+  let childrenToPatch;
+  if (routeId) {
+    let route = manifest[routeId];
+    invariant(
+      route,
+      `No route found to patch children into: routeId = ${routeId}`
+    );
+    if (!route.children) {
+      route.children = [];
+    }
+    childrenToPatch = route.children;
+  } else {
+    childrenToPatch = routesToUse;
+  }
+  let uniqueChildren = [];
+  let existingChildren = [];
+  children.forEach((newRoute) => {
+    let existingRoute = childrenToPatch.find(
+      (existingRoute2) => isSameRoute(newRoute, existingRoute2)
+    );
+    if (existingRoute) {
+      existingChildren.push({ existingRoute, newRoute });
+    } else {
+      uniqueChildren.push(newRoute);
+    }
+  });
+  if (uniqueChildren.length > 0) {
+    let newRoutes = convertRoutesToDataRoutes(
+      uniqueChildren,
+      mapRouteProperties2,
+      [routeId || "_", "patch", String(childrenToPatch?.length || "0")],
+      manifest
+    );
+    childrenToPatch.push(...newRoutes);
+  }
+  if (allowElementMutations && existingChildren.length > 0) {
+    for (let i = 0; i < existingChildren.length; i++) {
+      let { existingRoute, newRoute } = existingChildren[i];
+      let existingRouteTyped = existingRoute;
+      let [newRouteTyped] = convertRoutesToDataRoutes(
+        [newRoute],
+        mapRouteProperties2,
+        [],
+        // Doesn't matter for mutated routes since they already have an id
+        {},
+        // Don't touch the manifest here since we're updating in place
+        true
+      );
+      Object.assign(existingRouteTyped, {
+        element: newRouteTyped.element ? newRouteTyped.element : existingRouteTyped.element,
+        errorElement: newRouteTyped.errorElement ? newRouteTyped.errorElement : existingRouteTyped.errorElement,
+        hydrateFallbackElement: newRouteTyped.hydrateFallbackElement ? newRouteTyped.hydrateFallbackElement : existingRouteTyped.hydrateFallbackElement
+      });
+    }
+  }
+}
+function isSameRoute(newRoute, existingRoute) {
+  if ("id" in newRoute && "id" in existingRoute && newRoute.id === existingRoute.id) {
+    return true;
+  }
+  if (!(newRoute.index === existingRoute.index && newRoute.path === existingRoute.path && newRoute.caseSensitive === existingRoute.caseSensitive)) {
+    return false;
+  }
+  if ((!newRoute.children || newRoute.children.length === 0) && (!existingRoute.children || existingRoute.children.length === 0)) {
+    return true;
+  }
+  return newRoute.children?.every(
+    (aChild, i) => existingRoute.children?.some((bChild) => isSameRoute(aChild, bChild))
+  ) ?? false;
+}
+var lazyRoutePropertyCache = /* @__PURE__ */ new WeakMap();
+var loadLazyRouteProperty = ({
+  key,
+  route,
+  manifest,
+  mapRouteProperties: mapRouteProperties2
+}) => {
+  let routeToUpdate = manifest[route.id];
+  invariant(routeToUpdate, "No route found in manifest");
+  if (!routeToUpdate.lazy || typeof routeToUpdate.lazy !== "object") {
+    return;
+  }
+  let lazyFn = routeToUpdate.lazy[key];
+  if (!lazyFn) {
+    return;
+  }
+  let cache = lazyRoutePropertyCache.get(routeToUpdate);
+  if (!cache) {
+    cache = {};
+    lazyRoutePropertyCache.set(routeToUpdate, cache);
+  }
+  let cachedPromise = cache[key];
+  if (cachedPromise) {
+    return cachedPromise;
+  }
+  let propertyPromise = (async () => {
+    let isUnsupported = isUnsupportedLazyRouteObjectKey(key);
+    let staticRouteValue = routeToUpdate[key];
+    let isStaticallyDefined = staticRouteValue !== void 0 && key !== "hasErrorBoundary";
+    if (isUnsupported) {
+      warning(
+        !isUnsupported,
+        "Route property " + key + " is not a supported lazy route property. This property will be ignored."
+      );
+      cache[key] = Promise.resolve();
+    } else if (isStaticallyDefined) {
+      warning(
+        false,
+        `Route "${routeToUpdate.id}" has a static property "${key}" defined. The lazy property will be ignored.`
+      );
+    } else {
+      let value = await lazyFn();
+      if (value != null) {
+        Object.assign(routeToUpdate, { [key]: value });
+        Object.assign(routeToUpdate, mapRouteProperties2(routeToUpdate));
+      }
+    }
+    if (typeof routeToUpdate.lazy === "object") {
+      routeToUpdate.lazy[key] = void 0;
+      if (Object.values(routeToUpdate.lazy).every((value) => value === void 0)) {
+        routeToUpdate.lazy = void 0;
+      }
+    }
+  })();
+  cache[key] = propertyPromise;
+  return propertyPromise;
+};
+var lazyRouteFunctionCache = /* @__PURE__ */ new WeakMap();
+function loadLazyRoute(route, type, manifest, mapRouteProperties2, lazyRoutePropertiesToSkip) {
+  let routeToUpdate = manifest[route.id];
+  invariant(routeToUpdate, "No route found in manifest");
+  if (!route.lazy) {
+    return {
+      lazyRoutePromise: void 0,
+      lazyHandlerPromise: void 0
+    };
+  }
+  if (typeof route.lazy === "function") {
+    let cachedPromise = lazyRouteFunctionCache.get(routeToUpdate);
+    if (cachedPromise) {
+      return {
+        lazyRoutePromise: cachedPromise,
+        lazyHandlerPromise: cachedPromise
+      };
+    }
+    let lazyRoutePromise2 = (async () => {
+      invariant(
+        typeof route.lazy === "function",
+        "No lazy route function found"
+      );
+      let lazyRoute = await route.lazy();
+      let routeUpdates = {};
+      for (let lazyRouteProperty in lazyRoute) {
+        let lazyValue = lazyRoute[lazyRouteProperty];
+        if (lazyValue === void 0) {
+          continue;
+        }
+        let isUnsupported = isUnsupportedLazyRouteFunctionKey(lazyRouteProperty);
+        let staticRouteValue = routeToUpdate[lazyRouteProperty];
+        let isStaticallyDefined = staticRouteValue !== void 0 && // This property isn't static since it should always be updated based
+        // on the route updates
+        lazyRouteProperty !== "hasErrorBoundary";
+        if (isUnsupported) {
+          warning(
+            !isUnsupported,
+            "Route property " + lazyRouteProperty + " is not a supported property to be returned from a lazy route function. This property will be ignored."
+          );
+        } else if (isStaticallyDefined) {
+          warning(
+            !isStaticallyDefined,
+            `Route "${routeToUpdate.id}" has a static property "${lazyRouteProperty}" defined but its lazy function is also returning a value for this property. The lazy route property "${lazyRouteProperty}" will be ignored.`
+          );
+        } else {
+          routeUpdates[lazyRouteProperty] = lazyValue;
+        }
+      }
+      Object.assign(routeToUpdate, routeUpdates);
+      Object.assign(routeToUpdate, {
+        // To keep things framework agnostic, we use the provided `mapRouteProperties`
+        // function to set the framework-aware properties (`element`/`hasErrorBoundary`)
+        // since the logic will differ between frameworks.
+        ...mapRouteProperties2(routeToUpdate),
+        lazy: void 0
+      });
+    })();
+    lazyRouteFunctionCache.set(routeToUpdate, lazyRoutePromise2);
+    lazyRoutePromise2.catch(() => {
+    });
+    return {
+      lazyRoutePromise: lazyRoutePromise2,
+      lazyHandlerPromise: lazyRoutePromise2
+    };
+  }
+  let lazyKeys = Object.keys(route.lazy);
+  let lazyPropertyPromises = [];
+  let lazyHandlerPromise = void 0;
+  for (let key of lazyKeys) {
+    if (lazyRoutePropertiesToSkip && lazyRoutePropertiesToSkip.includes(key)) {
+      continue;
+    }
+    let promise = loadLazyRouteProperty({
+      key,
+      route,
+      manifest,
+      mapRouteProperties: mapRouteProperties2
+    });
+    if (promise) {
+      lazyPropertyPromises.push(promise);
+      if (key === type) {
+        lazyHandlerPromise = promise;
+      }
+    }
+  }
+  let lazyRoutePromise = lazyPropertyPromises.length > 0 ? Promise.all(lazyPropertyPromises).then(() => {
+  }) : void 0;
+  lazyRoutePromise?.catch(() => {
+  });
+  lazyHandlerPromise?.catch(() => {
+  });
+  return {
+    lazyRoutePromise,
+    lazyHandlerPromise
+  };
+}
+function isNonNullable(value) {
+  return value !== void 0;
+}
+function loadLazyMiddlewareForMatches(matches, manifest, mapRouteProperties2) {
+  let promises = matches.map(({ route }) => {
+    if (typeof route.lazy !== "object" || !route.lazy.middleware) {
+      return void 0;
+    }
+    return loadLazyRouteProperty({
+      key: "middleware",
+      route,
+      manifest,
+      mapRouteProperties: mapRouteProperties2
+    });
+  }).filter(isNonNullable);
+  return promises.length > 0 ? Promise.all(promises) : void 0;
+}
+async function defaultDataStrategy(args) {
+  let matchesToLoad = args.matches.filter((m) => m.shouldLoad);
+  let keyedResults = {};
+  let results = await Promise.all(matchesToLoad.map((m) => m.resolve()));
+  results.forEach((result, i) => {
+    keyedResults[matchesToLoad[i].route.id] = result;
+  });
+  return keyedResults;
+}
+async function defaultDataStrategyWithMiddleware(args) {
+  if (!args.matches.some((m) => m.route.middleware)) {
+    return defaultDataStrategy(args);
+  }
+  return runClientMiddlewarePipeline(args, () => defaultDataStrategy(args));
+}
+function runServerMiddlewarePipeline(args, handler, errorHandler) {
+  return runMiddlewarePipeline(
+    args,
+    handler,
+    processResult,
+    isResponse,
+    errorHandler
+  );
+  function processResult(result) {
+    return isDataWithResponseInit(result) ? dataWithResponseInitToResponse(result) : result;
+  }
+}
+function runClientMiddlewarePipeline(args, handler) {
+  return runMiddlewarePipeline(
+    args,
+    handler,
+    (r) => {
+      if (isRedirectResponse(r)) {
+        throw r;
+      }
+      return r;
+    },
+    isDataStrategyResults,
+    errorHandler
+  );
+  function errorHandler(error, routeId, nextResult) {
+    if (nextResult) {
+      return Promise.resolve(
+        Object.assign(nextResult.value, {
+          [routeId]: { type: "error", result: error }
+        })
+      );
+    } else {
+      let { matches } = args;
+      let maxBoundaryIdx = Math.min(
+        // Throwing route
+        Math.max(
+          matches.findIndex((m) => m.route.id === routeId),
+          0
+        ),
+        // or the shallowest route that needs to load data
+        Math.max(
+          matches.findIndex((m) => m.shouldCallHandler()),
+          0
+        )
+      );
+      let boundaryRouteId = findNearestBoundary(
+        matches,
+        matches[maxBoundaryIdx].route.id
+      ).route.id;
+      return Promise.resolve({
+        [boundaryRouteId]: { type: "error", result: error }
+      });
+    }
+  }
+}
+async function runMiddlewarePipeline(args, handler, processResult, isResult, errorHandler) {
+  let { matches, request, params, context, unstable_pattern } = args;
+  let tuples = matches.flatMap(
+    (m) => m.route.middleware ? m.route.middleware.map((fn) => [m.route.id, fn]) : []
+  );
+  let result = await callRouteMiddleware(
+    {
+      request,
+      params,
+      context,
+      unstable_pattern
+    },
+    tuples,
+    handler,
+    processResult,
+    isResult,
+    errorHandler
+  );
+  return result;
+}
+async function callRouteMiddleware(args, middlewares, handler, processResult, isResult, errorHandler, idx = 0) {
+  let { request } = args;
+  if (request.signal.aborted) {
+    throw request.signal.reason ?? new Error(`Request aborted: ${request.method} ${request.url}`);
+  }
+  let tuple = middlewares[idx];
+  if (!tuple) {
+    let result = await handler();
+    return result;
+  }
+  let [routeId, middleware] = tuple;
+  let nextResult;
+  let next = async () => {
+    if (nextResult) {
+      throw new Error("You may only call `next()` once per middleware");
+    }
+    try {
+      let result = await callRouteMiddleware(
+        args,
+        middlewares,
+        handler,
+        processResult,
+        isResult,
+        errorHandler,
+        idx + 1
+      );
+      nextResult = { value: result };
+      return nextResult.value;
+    } catch (error) {
+      nextResult = { value: await errorHandler(error, routeId, nextResult) };
+      return nextResult.value;
+    }
+  };
+  try {
+    let value = await middleware(args, next);
+    let result = value != null ? processResult(value) : void 0;
+    if (isResult(result)) {
+      return result;
+    } else if (nextResult) {
+      return result ?? nextResult.value;
+    } else {
+      nextResult = { value: await next() };
+      return nextResult.value;
+    }
+  } catch (error) {
+    let response = await errorHandler(error, routeId, nextResult);
+    return response;
+  }
+}
+function getDataStrategyMatchLazyPromises(mapRouteProperties2, manifest, request, match, lazyRoutePropertiesToSkip) {
+  let lazyMiddlewarePromise = loadLazyRouteProperty({
+    key: "middleware",
+    route: match.route,
+    manifest,
+    mapRouteProperties: mapRouteProperties2
+  });
+  let lazyRoutePromises = loadLazyRoute(
+    match.route,
+    isMutationMethod(request.method) ? "action" : "loader",
+    manifest,
+    mapRouteProperties2,
+    lazyRoutePropertiesToSkip
+  );
+  return {
+    middleware: lazyMiddlewarePromise,
+    route: lazyRoutePromises.lazyRoutePromise,
+    handler: lazyRoutePromises.lazyHandlerPromise
+  };
+}
+function getDataStrategyMatch(mapRouteProperties2, manifest, request, unstable_pattern, match, lazyRoutePropertiesToSkip, scopedContext, shouldLoad, shouldRevalidateArgs = null, callSiteDefaultShouldRevalidate) {
+  let isUsingNewApi = false;
+  let _lazyPromises = getDataStrategyMatchLazyPromises(
+    mapRouteProperties2,
+    manifest,
+    request,
+    match,
+    lazyRoutePropertiesToSkip
+  );
+  return {
+    ...match,
+    _lazyPromises,
+    shouldLoad,
+    shouldRevalidateArgs,
+    shouldCallHandler(defaultShouldRevalidate) {
+      isUsingNewApi = true;
+      if (!shouldRevalidateArgs) {
+        return shouldLoad;
+      }
+      if (typeof callSiteDefaultShouldRevalidate === "boolean") {
+        return shouldRevalidateLoader(match, {
+          ...shouldRevalidateArgs,
+          defaultShouldRevalidate: callSiteDefaultShouldRevalidate
+        });
+      }
+      if (typeof defaultShouldRevalidate === "boolean") {
+        return shouldRevalidateLoader(match, {
+          ...shouldRevalidateArgs,
+          defaultShouldRevalidate
+        });
+      }
+      return shouldRevalidateLoader(match, shouldRevalidateArgs);
+    },
+    resolve(handlerOverride) {
+      let { lazy, loader, middleware } = match.route;
+      let callHandler = isUsingNewApi || shouldLoad || handlerOverride && !isMutationMethod(request.method) && (lazy || loader);
+      let isMiddlewareOnlyRoute = middleware && middleware.length > 0 && !loader && !lazy;
+      if (callHandler && (isMutationMethod(request.method) || !isMiddlewareOnlyRoute)) {
+        return callLoaderOrAction({
+          request,
+          unstable_pattern,
+          match,
+          lazyHandlerPromise: _lazyPromises?.handler,
+          lazyRoutePromise: _lazyPromises?.route,
+          handlerOverride,
+          scopedContext
+        });
+      }
+      return Promise.resolve({ type: "data" /* data */, result: void 0 });
+    }
+  };
+}
+function getTargetedDataStrategyMatches(mapRouteProperties2, manifest, request, matches, targetMatch, lazyRoutePropertiesToSkip, scopedContext, shouldRevalidateArgs = null) {
+  return matches.map((match) => {
+    if (match.route.id !== targetMatch.route.id) {
+      return {
+        ...match,
+        shouldLoad: false,
+        shouldRevalidateArgs,
+        shouldCallHandler: () => false,
+        _lazyPromises: getDataStrategyMatchLazyPromises(
+          mapRouteProperties2,
+          manifest,
+          request,
+          match,
+          lazyRoutePropertiesToSkip
+        ),
+        resolve: () => Promise.resolve({ type: "data", result: void 0 })
+      };
+    }
+    return getDataStrategyMatch(
+      mapRouteProperties2,
+      manifest,
+      request,
+      getRoutePattern(matches),
+      match,
+      lazyRoutePropertiesToSkip,
+      scopedContext,
+      true,
+      shouldRevalidateArgs
+    );
+  });
+}
+async function callDataStrategyImpl(dataStrategyImpl, request, matches, fetcherKey, scopedContext, isStaticHandler) {
+  if (matches.some((m) => m._lazyPromises?.middleware)) {
+    await Promise.all(matches.map((m) => m._lazyPromises?.middleware));
+  }
+  let dataStrategyArgs = {
+    request,
+    unstable_pattern: getRoutePattern(matches),
+    params: matches[0].params,
+    context: scopedContext,
+    matches
+  };
+  let runClientMiddleware = isStaticHandler ? () => {
+    throw new Error(
+      "You cannot call `runClientMiddleware()` from a static handler `dataStrategy`. Middleware is run outside of `dataStrategy` during SSR in order to bubble up the Response.  You can enable middleware via the `respond` API in `query`/`queryRoute`"
+    );
+  } : (cb) => {
+    let typedDataStrategyArgs = dataStrategyArgs;
+    return runClientMiddlewarePipeline(typedDataStrategyArgs, () => {
+      return cb({
+        ...typedDataStrategyArgs,
+        fetcherKey,
+        runClientMiddleware: () => {
+          throw new Error(
+            "Cannot call `runClientMiddleware()` from within an `runClientMiddleware` handler"
+          );
+        }
+      });
+    });
+  };
+  let results = await dataStrategyImpl({
+    ...dataStrategyArgs,
+    fetcherKey,
+    runClientMiddleware
+  });
+  try {
+    await Promise.all(
+      matches.flatMap((m) => [
+        m._lazyPromises?.handler,
+        m._lazyPromises?.route
+      ])
+    );
+  } catch (e) {
+  }
+  return results;
+}
+async function callLoaderOrAction({
+  request,
+  unstable_pattern,
+  match,
+  lazyHandlerPromise,
+  lazyRoutePromise,
+  handlerOverride,
+  scopedContext
+}) {
+  let result;
+  let onReject;
+  let isAction = isMutationMethod(request.method);
+  let type = isAction ? "action" : "loader";
+  let runHandler = (handler) => {
+    let reject;
+    let abortPromise = new Promise((_, r) => reject = r);
+    onReject = () => reject();
+    request.signal.addEventListener("abort", onReject);
+    let actualHandler = (ctx) => {
+      if (typeof handler !== "function") {
+        return Promise.reject(
+          new Error(
+            `You cannot call the handler for a route which defines a boolean "${type}" [routeId: ${match.route.id}]`
+          )
+        );
+      }
+      return handler(
+        {
+          request,
+          unstable_pattern,
+          params: match.params,
+          context: scopedContext
+        },
+        ...ctx !== void 0 ? [ctx] : []
+      );
+    };
+    let handlerPromise = (async () => {
+      try {
+        let val = await (handlerOverride ? handlerOverride((ctx) => actualHandler(ctx)) : actualHandler());
+        return { type: "data", result: val };
+      } catch (e) {
+        return { type: "error", result: e };
+      }
+    })();
+    return Promise.race([handlerPromise, abortPromise]);
+  };
+  try {
+    let handler = isAction ? match.route.action : match.route.loader;
+    if (lazyHandlerPromise || lazyRoutePromise) {
+      if (handler) {
+        let handlerError;
+        let [value] = await Promise.all([
+          // If the handler throws, don't let it immediately bubble out,
+          // since we need to let the lazy() execution finish so we know if this
+          // route has a boundary that can handle the error
+          runHandler(handler).catch((e) => {
+            handlerError = e;
+          }),
+          // Ensure all lazy route promises are resolved before continuing
+          lazyHandlerPromise,
+          lazyRoutePromise
+        ]);
+        if (handlerError !== void 0) {
+          throw handlerError;
+        }
+        result = value;
+      } else {
+        await lazyHandlerPromise;
+        let handler2 = isAction ? match.route.action : match.route.loader;
+        if (handler2) {
+          [result] = await Promise.all([runHandler(handler2), lazyRoutePromise]);
+        } else if (type === "action") {
+          let url = new URL(request.url);
+          let pathname = url.pathname + url.search;
+          throw getInternalRouterError(405, {
+            method: request.method,
+            pathname,
+            routeId: match.route.id
+          });
+        } else {
+          return { type: "data" /* data */, result: void 0 };
+        }
+      }
+    } else if (!handler) {
+      let url = new URL(request.url);
+      let pathname = url.pathname + url.search;
+      throw getInternalRouterError(404, {
+        pathname
+      });
+    } else {
+      result = await runHandler(handler);
+    }
+  } catch (e) {
+    return { type: "error" /* error */, result: e };
+  } finally {
+    if (onReject) {
+      request.signal.removeEventListener("abort", onReject);
+    }
+  }
+  return result;
+}
+async function parseResponseBody(response) {
+  let contentType = response.headers.get("Content-Type");
+  if (contentType && /\bapplication\/json\b/.test(contentType)) {
+    return response.body == null ? null : response.json();
+  }
+  return response.text();
+}
+async function convertDataStrategyResultToDataResult(dataStrategyResult) {
+  let { result, type } = dataStrategyResult;
+  if (isResponse(result)) {
+    let data2;
+    try {
+      data2 = await parseResponseBody(result);
+    } catch (e) {
+      return { type: "error" /* error */, error: e };
+    }
+    if (type === "error" /* error */) {
+      return {
+        type: "error" /* error */,
+        error: new ErrorResponseImpl(result.status, result.statusText, data2),
+        statusCode: result.status,
+        headers: result.headers
+      };
+    }
+    return {
+      type: "data" /* data */,
+      data: data2,
+      statusCode: result.status,
+      headers: result.headers
+    };
+  }
+  if (type === "error" /* error */) {
+    if (isDataWithResponseInit(result)) {
+      if (result.data instanceof Error) {
+        return {
+          type: "error" /* error */,
+          error: result.data,
+          statusCode: result.init?.status,
+          headers: result.init?.headers ? new Headers(result.init.headers) : void 0
+        };
+      }
+      return {
+        type: "error" /* error */,
+        error: dataWithResponseInitToErrorResponse(result),
+        statusCode: isRouteErrorResponse(result) ? result.status : void 0,
+        headers: result.init?.headers ? new Headers(result.init.headers) : void 0
+      };
+    }
+    return {
+      type: "error" /* error */,
+      error: result,
+      statusCode: isRouteErrorResponse(result) ? result.status : void 0
+    };
+  }
+  if (isDataWithResponseInit(result)) {
+    return {
+      type: "data" /* data */,
+      data: result.data,
+      statusCode: result.init?.status,
+      headers: result.init?.headers ? new Headers(result.init.headers) : void 0
+    };
+  }
+  return { type: "data" /* data */, data: result };
+}
+function normalizeRelativeRoutingRedirectResponse(response, request, routeId, matches, basename) {
+  let location = response.headers.get("Location");
+  invariant(
+    location,
+    "Redirects returned/thrown from loaders/actions must have a Location header"
+  );
+  if (!isAbsoluteUrl(location)) {
+    let trimmedMatches = matches.slice(
+      0,
+      matches.findIndex((m) => m.route.id === routeId) + 1
+    );
+    location = normalizeTo(
+      new URL(request.url),
+      trimmedMatches,
+      basename,
+      location
+    );
+    response.headers.set("Location", location);
+  }
+  return response;
+}
+function normalizeRedirectLocation(location, currentUrl, basename, historyInstance) {
+  let invalidProtocols = [
+    "about:",
+    "blob:",
+    "chrome:",
+    "chrome-untrusted:",
+    "content:",
+    "data:",
+    "devtools:",
+    "file:",
+    "filesystem:",
+    // eslint-disable-next-line no-script-url
+    "javascript:"
+  ];
+  if (isAbsoluteUrl(location)) {
+    let normalizedLocation = location;
+    let url = normalizedLocation.startsWith("//") ? new URL(currentUrl.protocol + normalizedLocation) : new URL(normalizedLocation);
+    if (invalidProtocols.includes(url.protocol)) {
+      throw new Error("Invalid redirect location");
+    }
+    let isSameBasename = stripBasename(url.pathname, basename) != null;
+    if (url.origin === currentUrl.origin && isSameBasename) {
+      return url.pathname + url.search + url.hash;
+    }
+  }
+  try {
+    let url = historyInstance.createURL(location);
+    if (invalidProtocols.includes(url.protocol)) {
+      throw new Error("Invalid redirect location");
+    }
+  } catch (e) {
+  }
+  return location;
+}
+function createClientSideRequest(history, location, signal, submission) {
+  let url = history.createURL(stripHashFromPath(location)).toString();
+  let init = { signal };
+  if (submission && isMutationMethod(submission.formMethod)) {
+    let { formMethod, formEncType } = submission;
+    init.method = formMethod.toUpperCase();
+    if (formEncType === "application/json") {
+      init.headers = new Headers({ "Content-Type": formEncType });
+      init.body = JSON.stringify(submission.json);
+    } else if (formEncType === "text/plain") {
+      init.body = submission.text;
+    } else if (formEncType === "application/x-www-form-urlencoded" && submission.formData) {
+      init.body = convertFormDataToSearchParams(submission.formData);
+    } else {
+      init.body = submission.formData;
+    }
+  }
+  return new Request(url, init);
+}
+function convertFormDataToSearchParams(formData) {
+  let searchParams = new URLSearchParams();
+  for (let [key, value] of formData.entries()) {
+    searchParams.append(key, typeof value === "string" ? value : value.name);
+  }
+  return searchParams;
+}
+function convertSearchParamsToFormData(searchParams) {
+  let formData = new FormData();
+  for (let [key, value] of searchParams.entries()) {
+    formData.append(key, value);
+  }
+  return formData;
+}
+function processRouteLoaderData(matches, results, pendingActionResult, isStaticHandler = false, skipLoaderErrorBubbling = false) {
+  let loaderData = {};
+  let errors = null;
+  let statusCode;
+  let foundError = false;
+  let loaderHeaders = {};
+  let pendingError = pendingActionResult && isErrorResult(pendingActionResult[1]) ? pendingActionResult[1].error : void 0;
+  matches.forEach((match) => {
+    if (!(match.route.id in results)) {
+      return;
+    }
+    let id = match.route.id;
+    let result = results[id];
+    invariant(
+      !isRedirectResult(result),
+      "Cannot handle redirect results in processLoaderData"
+    );
+    if (isErrorResult(result)) {
+      let error = result.error;
+      if (pendingError !== void 0) {
+        error = pendingError;
+        pendingError = void 0;
+      }
+      errors = errors || {};
+      if (skipLoaderErrorBubbling) {
+        errors[id] = error;
+      } else {
+        let boundaryMatch = findNearestBoundary(matches, id);
+        if (errors[boundaryMatch.route.id] == null) {
+          errors[boundaryMatch.route.id] = error;
+        }
+      }
+      if (!isStaticHandler) {
+        loaderData[id] = ResetLoaderDataSymbol;
+      }
+      if (!foundError) {
+        foundError = true;
+        statusCode = isRouteErrorResponse(result.error) ? result.error.status : 500;
+      }
+      if (result.headers) {
+        loaderHeaders[id] = result.headers;
+      }
+    } else {
+      loaderData[id] = result.data;
+      if (result.statusCode && result.statusCode !== 200 && !foundError) {
+        statusCode = result.statusCode;
+      }
+      if (result.headers) {
+        loaderHeaders[id] = result.headers;
+      }
+    }
+  });
+  if (pendingError !== void 0 && pendingActionResult) {
+    errors = { [pendingActionResult[0]]: pendingError };
+    if (pendingActionResult[2]) {
+      loaderData[pendingActionResult[2]] = void 0;
+    }
+  }
+  return {
+    loaderData,
+    errors,
+    statusCode: statusCode || 200,
+    loaderHeaders
+  };
+}
+function processLoaderData(state, matches, results, pendingActionResult, revalidatingFetchers, fetcherResults) {
+  let { loaderData, errors } = processRouteLoaderData(
+    matches,
+    results,
+    pendingActionResult
+  );
+  revalidatingFetchers.filter((f) => !f.matches || f.matches.some((m) => m.shouldLoad)).forEach((rf) => {
+    let { key, match, controller } = rf;
+    if (controller && controller.signal.aborted) {
+      return;
+    }
+    let result = fetcherResults[key];
+    invariant(result, "Did not find corresponding fetcher result");
+    if (isErrorResult(result)) {
+      let boundaryMatch = findNearestBoundary(state.matches, match?.route.id);
+      if (!(errors && errors[boundaryMatch.route.id])) {
+        errors = {
+          ...errors,
+          [boundaryMatch.route.id]: result.error
+        };
+      }
+      state.fetchers.delete(key);
+    } else if (isRedirectResult(result)) {
+      invariant(false, "Unhandled fetcher revalidation redirect");
+    } else {
+      let doneFetcher = getDoneFetcher(result.data);
+      state.fetchers.set(key, doneFetcher);
+    }
+  });
+  return { loaderData, errors };
+}
+function mergeLoaderData(loaderData, newLoaderData, matches, errors) {
+  let mergedLoaderData = Object.entries(newLoaderData).filter(([, v]) => v !== ResetLoaderDataSymbol).reduce((merged, [k, v]) => {
+    merged[k] = v;
+    return merged;
+  }, {});
+  for (let match of matches) {
+    let id = match.route.id;
+    if (!newLoaderData.hasOwnProperty(id) && loaderData.hasOwnProperty(id) && match.route.loader) {
+      mergedLoaderData[id] = loaderData[id];
+    }
+    if (errors && errors.hasOwnProperty(id)) {
+      break;
+    }
+  }
+  return mergedLoaderData;
+}
+function getActionDataForCommit(pendingActionResult) {
+  if (!pendingActionResult) {
+    return {};
+  }
+  return isErrorResult(pendingActionResult[1]) ? {
+    // Clear out prior actionData on errors
+    actionData: {}
+  } : {
+    actionData: {
+      [pendingActionResult[0]]: pendingActionResult[1].data
+    }
+  };
+}
+function findNearestBoundary(matches, routeId) {
+  let eligibleMatches = routeId ? matches.slice(0, matches.findIndex((m) => m.route.id === routeId) + 1) : [...matches];
+  return eligibleMatches.reverse().find((m) => m.route.hasErrorBoundary === true) || matches[0];
+}
+function getShortCircuitMatches(routes) {
+  let route = routes.length === 1 ? routes[0] : routes.find((r) => r.index || !r.path || r.path === "/") || {
+    id: `__shim-error-route__`
+  };
+  return {
+    matches: [
+      {
+        params: {},
+        pathname: "",
+        pathnameBase: "",
+        route
+      }
+    ],
+    route
+  };
+}
+function getInternalRouterError(status, {
+  pathname,
+  routeId,
+  method,
+  type,
+  message
+} = {}) {
+  let statusText = "Unknown Server Error";
+  let errorMessage = "Unknown @remix-run/router error";
+  if (status === 400) {
+    statusText = "Bad Request";
+    if (method && pathname && routeId) {
+      errorMessage = `You made a ${method} request to "${pathname}" but did not provide a \`loader\` for route "${routeId}", so there is no way to handle the request.`;
+    } else if (type === "invalid-body") {
+      errorMessage = "Unable to encode submission body";
+    }
+  } else if (status === 403) {
+    statusText = "Forbidden";
+    errorMessage = `Route "${routeId}" does not match URL "${pathname}"`;
+  } else if (status === 404) {
+    statusText = "Not Found";
+    errorMessage = `No route matches URL "${pathname}"`;
+  } else if (status === 405) {
+    statusText = "Method Not Allowed";
+    if (method && pathname && routeId) {
+      errorMessage = `You made a ${method.toUpperCase()} request to "${pathname}" but did not provide an \`action\` for route "${routeId}", so there is no way to handle the request.`;
+    } else if (method) {
+      errorMessage = `Invalid request method "${method.toUpperCase()}"`;
+    }
+  }
+  return new ErrorResponseImpl(
+    status || 500,
+    statusText,
+    new Error(errorMessage),
+    true
+  );
+}
+function findRedirect(results) {
+  let entries = Object.entries(results);
+  for (let i = entries.length - 1; i >= 0; i--) {
+    let [key, result] = entries[i];
+    if (isRedirectResult(result)) {
+      return { key, result };
+    }
+  }
+}
+function stripHashFromPath(path) {
+  let parsedPath = typeof path === "string" ? parsePath(path) : path;
+  return createPath({ ...parsedPath, hash: "" });
+}
+function isHashChangeOnly(a, b) {
+  if (a.pathname !== b.pathname || a.search !== b.search) {
+    return false;
+  }
+  if (a.hash === "") {
+    return b.hash !== "";
+  } else if (a.hash === b.hash) {
+    return true;
+  } else if (b.hash !== "") {
+    return true;
+  }
+  return false;
+}
+function dataWithResponseInitToResponse(data2) {
+  return Response.json(data2.data, data2.init ?? void 0);
+}
+function dataWithResponseInitToErrorResponse(data2) {
+  return new ErrorResponseImpl(
+    data2.init?.status ?? 500,
+    data2.init?.statusText ?? "Internal Server Error",
+    data2.data
+  );
+}
+function isDataStrategyResults(result) {
+  return result != null && typeof result === "object" && Object.entries(result).every(
+    ([key, value]) => typeof key === "string" && isDataStrategyResult(value)
+  );
+}
+function isDataStrategyResult(result) {
+  return result != null && typeof result === "object" && "type" in result && "result" in result && (result.type === "data" /* data */ || result.type === "error" /* error */);
+}
+function isRedirectDataStrategyResult(result) {
+  return isResponse(result.result) && redirectStatusCodes.has(result.result.status);
+}
+function isErrorResult(result) {
+  return result.type === "error" /* error */;
+}
+function isRedirectResult(result) {
+  return (result && result.type) === "redirect" /* redirect */;
+}
+function isDataWithResponseInit(value) {
+  return typeof value === "object" && value != null && "type" in value && "data" in value && "init" in value && value.type === "DataWithResponseInit";
+}
+function isResponse(value) {
+  return value != null && typeof value.status === "number" && typeof value.statusText === "string" && typeof value.headers === "object" && typeof value.body !== "undefined";
+}
+function isRedirectStatusCode(statusCode) {
+  return redirectStatusCodes.has(statusCode);
+}
+function isRedirectResponse(result) {
+  return isResponse(result) && isRedirectStatusCode(result.status) && result.headers.has("Location");
+}
+function isValidMethod(method) {
+  return validRequestMethods.has(method.toUpperCase());
+}
+function isMutationMethod(method) {
+  return validMutationMethods.has(method.toUpperCase());
+}
+function hasNakedIndexQuery(search) {
+  return new URLSearchParams(search).getAll("index").some((v) => v === "");
+}
+function getTargetMatch(matches, location) {
+  let search = typeof location === "string" ? parsePath(location).search : location.search;
+  if (matches[matches.length - 1].route.index && hasNakedIndexQuery(search || "")) {
+    return matches[matches.length - 1];
+  }
+  let pathMatches = getPathContributingMatches(matches);
+  return pathMatches[pathMatches.length - 1];
+}
+function getSubmissionFromNavigation(navigation) {
+  let { formMethod, formAction, formEncType, text, formData, json } = navigation;
+  if (!formMethod || !formAction || !formEncType) {
+    return;
+  }
+  if (text != null) {
+    return {
+      formMethod,
+      formAction,
+      formEncType,
+      formData: void 0,
+      json: void 0,
+      text
+    };
+  } else if (formData != null) {
+    return {
+      formMethod,
+      formAction,
+      formEncType,
+      formData,
+      json: void 0,
+      text: void 0
+    };
+  } else if (json !== void 0) {
+    return {
+      formMethod,
+      formAction,
+      formEncType,
+      formData: void 0,
+      json,
+      text: void 0
+    };
+  }
+}
+function getLoadingNavigation(location, submission) {
+  if (submission) {
+    let navigation = {
+      state: "loading",
+      location,
+      formMethod: submission.formMethod,
+      formAction: submission.formAction,
+      formEncType: submission.formEncType,
+      formData: submission.formData,
+      json: submission.json,
+      text: submission.text
+    };
+    return navigation;
+  } else {
+    let navigation = {
+      state: "loading",
+      location,
+      formMethod: void 0,
+      formAction: void 0,
+      formEncType: void 0,
+      formData: void 0,
+      json: void 0,
+      text: void 0
+    };
+    return navigation;
+  }
+}
+function getSubmittingNavigation(location, submission) {
+  let navigation = {
+    state: "submitting",
+    location,
+    formMethod: submission.formMethod,
+    formAction: submission.formAction,
+    formEncType: submission.formEncType,
+    formData: submission.formData,
+    json: submission.json,
+    text: submission.text
+  };
+  return navigation;
+}
+function getLoadingFetcher(submission, data2) {
+  if (submission) {
+    let fetcher = {
+      state: "loading",
+      formMethod: submission.formMethod,
+      formAction: submission.formAction,
+      formEncType: submission.formEncType,
+      formData: submission.formData,
+      json: submission.json,
+      text: submission.text,
+      data: data2
+    };
+    return fetcher;
+  } else {
+    let fetcher = {
+      state: "loading",
+      formMethod: void 0,
+      formAction: void 0,
+      formEncType: void 0,
+      formData: void 0,
+      json: void 0,
+      text: void 0,
+      data: data2
+    };
+    return fetcher;
+  }
+}
+function getSubmittingFetcher(submission, existingFetcher) {
+  let fetcher = {
+    state: "submitting",
+    formMethod: submission.formMethod,
+    formAction: submission.formAction,
+    formEncType: submission.formEncType,
+    formData: submission.formData,
+    json: submission.json,
+    text: submission.text,
+    data: existingFetcher ? existingFetcher.data : void 0
+  };
+  return fetcher;
+}
+function getDoneFetcher(data2) {
+  let fetcher = {
+    state: "idle",
+    formMethod: void 0,
+    formAction: void 0,
+    formEncType: void 0,
+    formData: void 0,
+    json: void 0,
+    text: void 0,
+    data: data2
+  };
+  return fetcher;
+}
+function restoreAppliedTransitions(_window, transitions) {
+  try {
+    let sessionPositions = _window.sessionStorage.getItem(
+      TRANSITIONS_STORAGE_KEY
+    );
+    if (sessionPositions) {
+      let json = JSON.parse(sessionPositions);
+      for (let [k, v] of Object.entries(json || {})) {
+        if (v && Array.isArray(v)) {
+          transitions.set(k, new Set(v || []));
+        }
+      }
+    }
+  } catch (e) {
+  }
+}
+function persistAppliedTransitions(_window, transitions) {
+  if (transitions.size > 0) {
+    let json = {};
+    for (let [k, v] of transitions) {
+      json[k] = [...v];
+    }
+    try {
+      _window.sessionStorage.setItem(
+        TRANSITIONS_STORAGE_KEY,
+        JSON.stringify(json)
+      );
+    } catch (error) {
+      warning(
+        false,
+        `Failed to save applied view transitions in sessionStorage (${error}).`
+      );
+    }
+  }
+}
+function createDeferred() {
+  let resolve;
+  let reject;
+  let promise = new Promise((res, rej) => {
+    resolve = async (val) => {
+      res(val);
+      try {
+        await promise;
+      } catch (e) {
+      }
+    };
+    reject = async (error) => {
+      rej(error);
+      try {
+        await promise;
+      } catch (e) {
+      }
+    };
+  });
+  return {
+    promise,
+    //@ts-ignore
+    resolve,
+    //@ts-ignore
+    reject
+  };
+}
+
+// lib/context.ts
+
+var DataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+DataRouterContext.displayName = "DataRouter";
+var DataRouterStateContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+DataRouterStateContext.displayName = "DataRouterState";
+var RSCRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(false);
+function useIsRSCRouterContext() {
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(RSCRouterContext);
+}
+var ViewTransitionContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({
+  isTransitioning: false
+});
+ViewTransitionContext.displayName = "ViewTransition";
+var FetchersContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(
+  /* @__PURE__ */ new Map()
+);
+FetchersContext.displayName = "Fetchers";
+var AwaitContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+AwaitContext.displayName = "Await";
+var AwaitContextProvider = (props) => react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, props);
+var NavigationContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(
+  null
+);
+NavigationContext.displayName = "Navigation";
+var LocationContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(
+  null
+);
+LocationContext.displayName = "Location";
+var RouteContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({
+  outlet: null,
+  matches: [],
+  isDataRoute: false
+});
+RouteContext.displayName = "Route";
+var RouteErrorContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+RouteErrorContext.displayName = "RouteError";
+var ENABLE_DEV_WARNINGS = true;
+
+// lib/hooks.tsx
+
+
+// lib/errors.ts
+var ERROR_DIGEST_BASE = "REACT_ROUTER_ERROR";
+var ERROR_DIGEST_REDIRECT = "REDIRECT";
+var ERROR_DIGEST_ROUTE_ERROR_RESPONSE = "ROUTE_ERROR_RESPONSE";
+function decodeRedirectErrorDigest(digest) {
+  if (digest.startsWith(`${ERROR_DIGEST_BASE}:${ERROR_DIGEST_REDIRECT}:{`)) {
+    try {
+      let parsed = JSON.parse(digest.slice(28));
+      if (typeof parsed === "object" && parsed && typeof parsed.status === "number" && typeof parsed.statusText === "string" && typeof parsed.location === "string" && typeof parsed.reloadDocument === "boolean" && typeof parsed.replace === "boolean") {
+        return parsed;
+      }
+    } catch {
+    }
+  }
+}
+function decodeRouteErrorResponseDigest(digest) {
+  if (digest.startsWith(
+    `${ERROR_DIGEST_BASE}:${ERROR_DIGEST_ROUTE_ERROR_RESPONSE}:{`
+  )) {
+    try {
+      let parsed = JSON.parse(digest.slice(40));
+      if (typeof parsed === "object" && parsed && typeof parsed.status === "number" && typeof parsed.statusText === "string") {
+        return new ErrorResponseImpl(
+          parsed.status,
+          parsed.statusText,
+          parsed.data
+        );
+      }
+    } catch {
+    }
+  }
+}
+
+// lib/hooks.tsx
+function useHref(to, { relative } = {}) {
+  invariant(
+    useInRouterContext(),
+    // TODO: This error is probably because they somehow have 2 versions of the
+    // router loaded. We can help them understand how to avoid that.
+    `useHref() may be used only in the context of a <Router> component.`
+  );
+  let { basename, navigator } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  let { hash, pathname, search } = useResolvedPath(to, { relative });
+  let joinedPathname = pathname;
+  if (basename !== "/") {
+    joinedPathname = pathname === "/" ? basename : joinPaths([basename, pathname]);
+  }
+  return navigator.createHref({ pathname: joinedPathname, search, hash });
+}
+function useInRouterContext() {
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext) != null;
+}
+function useLocation() {
+  invariant(
+    useInRouterContext(),
+    // TODO: This error is probably because they somehow have 2 versions of the
+    // router loaded. We can help them understand how to avoid that.
+    `useLocation() may be used only in the context of a <Router> component.`
+  );
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext).location;
+}
+function useNavigationType() {
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext).navigationType;
+}
+function useMatch(pattern) {
+  invariant(
+    useInRouterContext(),
+    // TODO: This error is probably because they somehow have 2 versions of the
+    // router loaded. We can help them understand how to avoid that.
+    `useMatch() may be used only in the context of a <Router> component.`
+  );
+  let { pathname } = useLocation();
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => matchPath(pattern, decodePath(pathname)),
+    [pathname, pattern]
+  );
+}
+var navigateEffectWarning = `You should call navigate() in a React.useEffect(), not when your component is first rendered.`;
+function useIsomorphicLayoutEffect(cb) {
+  let isStatic = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext).static;
+  if (!isStatic) {
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(cb);
+  }
+}
+function useNavigate() {
+  let { isDataRoute } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  return isDataRoute ? useNavigateStable() : useNavigateUnstable();
+}
+function useNavigateUnstable() {
+  invariant(
+    useInRouterContext(),
+    // TODO: This error is probably because they somehow have 2 versions of the
+    // router loaded. We can help them understand how to avoid that.
+    `useNavigate() may be used only in the context of a <Router> component.`
+  );
+  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
+  let { basename, navigator } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  let { pathname: locationPathname } = useLocation();
+  let routePathnamesJson = JSON.stringify(getResolveToMatches(matches));
+  let activeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+  useIsomorphicLayoutEffect(() => {
+    activeRef.current = true;
+  });
+  let navigate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (to, options = {}) => {
+      warning(activeRef.current, navigateEffectWarning);
+      if (!activeRef.current) return;
+      if (typeof to === "number") {
+        navigator.go(to);
+        return;
+      }
+      let path = resolveTo(
+        to,
+        JSON.parse(routePathnamesJson),
+        locationPathname,
+        options.relative === "path"
+      );
+      if (dataRouterContext == null && basename !== "/") {
+        path.pathname = path.pathname === "/" ? basename : joinPaths([basename, path.pathname]);
+      }
+      (!!options.replace ? navigator.replace : navigator.push)(
+        path,
+        options.state,
+        options
+      );
+    },
+    [
+      basename,
+      navigator,
+      routePathnamesJson,
+      locationPathname,
+      dataRouterContext
+    ]
+  );
+  return navigate;
+}
+var OutletContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+function useOutletContext() {
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(OutletContext);
+}
+function useOutlet(context) {
+  let outlet = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext).outlet;
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => outlet && /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(OutletContext.Provider, { value: context }, outlet),
+    [outlet, context]
+  );
+}
+function useParams() {
+  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  let routeMatch = matches[matches.length - 1];
+  return routeMatch ? routeMatch.params : {};
+}
+function useResolvedPath(to, { relative } = {}) {
+  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  let { pathname: locationPathname } = useLocation();
+  let routePathnamesJson = JSON.stringify(getResolveToMatches(matches));
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => resolveTo(
+      to,
+      JSON.parse(routePathnamesJson),
+      locationPathname,
+      relative === "path"
+    ),
+    [to, routePathnamesJson, locationPathname, relative]
+  );
+}
+function useRoutes(routes, locationArg) {
+  return useRoutesImpl(routes, locationArg);
+}
+function useRoutesImpl(routes, locationArg, dataRouterOpts) {
+  invariant(
+    useInRouterContext(),
+    // TODO: This error is probably because they somehow have 2 versions of the
+    // router loaded. We can help them understand how to avoid that.
+    `useRoutes() may be used only in the context of a <Router> component.`
+  );
+  let { navigator } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  let { matches: parentMatches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  let routeMatch = parentMatches[parentMatches.length - 1];
+  let parentParams = routeMatch ? routeMatch.params : {};
+  let parentPathname = routeMatch ? routeMatch.pathname : "/";
+  let parentPathnameBase = routeMatch ? routeMatch.pathnameBase : "/";
+  let parentRoute = routeMatch && routeMatch.route;
+  if (ENABLE_DEV_WARNINGS) {
+    let parentPath = parentRoute && parentRoute.path || "";
+    warningOnce(
+      parentPathname,
+      !parentRoute || parentPath.endsWith("*") || parentPath.endsWith("*?"),
+      `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${parentPathname}" (under <Route path="${parentPath}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
+
+Please change the parent <Route path="${parentPath}"> to <Route path="${parentPath === "/" ? "*" : `${parentPath}/*`}">.`
+    );
+  }
+  let locationFromContext = useLocation();
+  let location;
+  if (locationArg) {
+    let parsedLocationArg = typeof locationArg === "string" ? parsePath(locationArg) : locationArg;
+    invariant(
+      parentPathnameBase === "/" || parsedLocationArg.pathname?.startsWith(parentPathnameBase),
+      `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${parentPathnameBase}" but pathname "${parsedLocationArg.pathname}" was given in the \`location\` prop.`
+    );
+    location = parsedLocationArg;
+  } else {
+    location = locationFromContext;
+  }
+  let pathname = location.pathname || "/";
+  let remainingPathname = pathname;
+  if (parentPathnameBase !== "/") {
+    let parentSegments = parentPathnameBase.replace(/^\//, "").split("/");
+    let segments = pathname.replace(/^\//, "").split("/");
+    remainingPathname = "/" + segments.slice(parentSegments.length).join("/");
+  }
+  let matches = matchRoutes(routes, { pathname: remainingPathname });
+  if (ENABLE_DEV_WARNINGS) {
+    warning(
+      parentRoute || matches != null,
+      `No routes matched location "${location.pathname}${location.search}${location.hash}" `
+    );
+    warning(
+      matches == null || matches[matches.length - 1].route.element !== void 0 || matches[matches.length - 1].route.Component !== void 0 || matches[matches.length - 1].route.lazy !== void 0,
+      `Matched leaf route at location "${location.pathname}${location.search}${location.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`
+    );
+  }
+  let renderedMatches = _renderMatches(
+    matches && matches.map(
+      (match) => Object.assign({}, match, {
+        params: Object.assign({}, parentParams, match.params),
+        pathname: joinPaths([
+          parentPathnameBase,
+          // Re-encode pathnames that were decoded inside matchRoutes.
+          // Pre-encode `?` and `#` ahead of `encodeLocation` because it uses
+          // `new URL()` internally and we need to prevent it from treating
+          // them as separators
+          navigator.encodeLocation ? navigator.encodeLocation(
+            match.pathname.replace(/\?/g, "%3F").replace(/#/g, "%23")
+          ).pathname : match.pathname
+        ]),
+        pathnameBase: match.pathnameBase === "/" ? parentPathnameBase : joinPaths([
+          parentPathnameBase,
+          // Re-encode pathnames that were decoded inside matchRoutes
+          // Pre-encode `?` and `#` ahead of `encodeLocation` because it uses
+          // `new URL()` internally and we need to prevent it from treating
+          // them as separators
+          navigator.encodeLocation ? navigator.encodeLocation(
+            match.pathnameBase.replace(/\?/g, "%3F").replace(/#/g, "%23")
+          ).pathname : match.pathnameBase
+        ])
+      })
+    ),
+    parentMatches,
+    dataRouterOpts
+  );
+  if (locationArg && renderedMatches) {
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      LocationContext.Provider,
+      {
+        value: {
+          location: {
+            pathname: "/",
+            search: "",
+            hash: "",
+            state: null,
+            key: "default",
+            unstable_mask: void 0,
+            ...location
+          },
+          navigationType: "POP" /* Pop */
+        }
+      },
+      renderedMatches
+    );
+  }
+  return renderedMatches;
+}
+function DefaultErrorComponent() {
+  let error = useRouteError();
+  let message = isRouteErrorResponse(error) ? `${error.status} ${error.statusText}` : error instanceof Error ? error.message : JSON.stringify(error);
+  let stack = error instanceof Error ? error.stack : null;
+  let lightgrey = "rgba(200,200,200, 0.5)";
+  let preStyles = { padding: "0.5rem", backgroundColor: lightgrey };
+  let codeStyles = { padding: "2px 4px", backgroundColor: lightgrey };
+  let devInfo = null;
+  if (ENABLE_DEV_WARNINGS) {
+    console.error(
+      "Error handled by React Router default ErrorBoundary:",
+      error
+    );
+    devInfo = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u{1F4BF} Hey developer \u{1F44B}"), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", { style: codeStyles }, "ErrorBoundary"), " or", " ", /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", { style: codeStyles }, "errorElement"), " prop on your route."));
+  }
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { style: { fontStyle: "italic" } }, message), stack ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("pre", { style: preStyles }, stack) : null, devInfo);
+}
+var defaultErrorElement = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DefaultErrorComponent, null);
+var RenderErrorBoundary = class extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      location: props.location,
+      revalidation: props.revalidation,
+      error: props.error
+    };
+  }
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+  static getDerivedStateFromProps(props, state) {
+    if (state.location !== props.location || state.revalidation !== "idle" && props.revalidation === "idle") {
+      return {
+        error: props.error,
+        location: props.location,
+        revalidation: props.revalidation
+      };
+    }
+    return {
+      error: props.error !== void 0 ? props.error : state.error,
+      location: state.location,
+      revalidation: props.revalidation || state.revalidation
+    };
+  }
+  componentDidCatch(error, errorInfo) {
+    if (this.props.onError) {
+      this.props.onError(error, errorInfo);
+    } else {
+      console.error(
+        "React Router caught the following error during render",
+        error
+      );
+    }
+  }
+  render() {
+    let error = this.state.error;
+    if (this.context && typeof error === "object" && error && "digest" in error && typeof error.digest === "string") {
+      const decoded = decodeRouteErrorResponseDigest(error.digest);
+      if (decoded) error = decoded;
+    }
+    let result = error !== void 0 ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(RouteContext.Provider, { value: this.props.routeContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      RouteErrorContext.Provider,
+      {
+        value: error,
+        children: this.props.component
+      }
+    )) : this.props.children;
+    if (this.context) {
+      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(RSCErrorHandler, { error }, result);
+    }
+    return result;
+  }
+};
+RenderErrorBoundary.contextType = RSCRouterContext;
+var errorRedirectHandledMap = /* @__PURE__ */ new WeakMap();
+function RSCErrorHandler({
+  children,
+  error
+}) {
+  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  if (typeof error === "object" && error && "digest" in error && typeof error.digest === "string") {
+    let redirect2 = decodeRedirectErrorDigest(error.digest);
+    if (redirect2) {
+      let existingRedirect = errorRedirectHandledMap.get(error);
+      if (existingRedirect) throw existingRedirect;
+      let parsed = parseToInfo(redirect2.location, basename);
+      if (isBrowser && !errorRedirectHandledMap.get(error)) {
+        if (parsed.isExternal || redirect2.reloadDocument) {
+          window.location.href = parsed.absoluteURL || parsed.to;
+        } else {
+          const redirectPromise = Promise.resolve().then(
+            () => window.__reactRouterDataRouter.navigate(parsed.to, {
+              replace: redirect2.replace
+            })
+          );
+          errorRedirectHandledMap.set(error, redirectPromise);
+          throw redirectPromise;
+        }
+      }
+      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+        "meta",
+        {
+          httpEquiv: "refresh",
+          content: `0;url=${parsed.absoluteURL || parsed.to}`
+        }
+      );
+    }
+  }
+  return children;
+}
+function RenderedRoute({ routeContext, match, children }) {
+  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
+  if (dataRouterContext && dataRouterContext.static && dataRouterContext.staticContext && (match.route.errorElement || match.route.ErrorBoundary)) {
+    dataRouterContext.staticContext._deepestRenderedBoundaryId = match.route.id;
+  }
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(RouteContext.Provider, { value: routeContext }, children);
+}
+function _renderMatches(matches, parentMatches = [], dataRouterOpts) {
+  let dataRouterState = dataRouterOpts?.state;
+  if (matches == null) {
+    if (!dataRouterState) {
+      return null;
+    }
+    if (dataRouterState.errors) {
+      matches = dataRouterState.matches;
+    } else if (parentMatches.length === 0 && !dataRouterState.initialized && dataRouterState.matches.length > 0) {
+      matches = dataRouterState.matches;
+    } else {
+      return null;
+    }
+  }
+  let renderedMatches = matches;
+  let errors = dataRouterState?.errors;
+  if (errors != null) {
+    let errorIndex = renderedMatches.findIndex(
+      (m) => m.route.id && errors?.[m.route.id] !== void 0
+    );
+    invariant(
+      errorIndex >= 0,
+      `Could not find a matching route for errors on route IDs: ${Object.keys(
+        errors
+      ).join(",")}`
+    );
+    renderedMatches = renderedMatches.slice(
+      0,
+      Math.min(renderedMatches.length, errorIndex + 1)
+    );
+  }
+  let renderFallback = false;
+  let fallbackIndex = -1;
+  if (dataRouterOpts && dataRouterState) {
+    renderFallback = dataRouterState.renderFallback;
+    for (let i = 0; i < renderedMatches.length; i++) {
+      let match = renderedMatches[i];
+      if (match.route.HydrateFallback || match.route.hydrateFallbackElement) {
+        fallbackIndex = i;
+      }
+      if (match.route.id) {
+        let { loaderData, errors: errors2 } = dataRouterState;
+        let needsToRunLoader = match.route.loader && !loaderData.hasOwnProperty(match.route.id) && (!errors2 || errors2[match.route.id] === void 0);
+        if (match.route.lazy || needsToRunLoader) {
+          if (dataRouterOpts.isStatic) {
+            renderFallback = true;
+          }
+          if (fallbackIndex >= 0) {
+            renderedMatches = renderedMatches.slice(0, fallbackIndex + 1);
+          } else {
+            renderedMatches = [renderedMatches[0]];
+          }
+          break;
+        }
+      }
+    }
+  }
+  let onErrorHandler = dataRouterOpts?.onError;
+  let onError = dataRouterState && onErrorHandler ? (error, errorInfo) => {
+    onErrorHandler(error, {
+      location: dataRouterState.location,
+      params: dataRouterState.matches?.[0]?.params ?? {},
+      unstable_pattern: getRoutePattern(dataRouterState.matches),
+      errorInfo
+    });
+  } : void 0;
+  return renderedMatches.reduceRight(
+    (outlet, match, index) => {
+      let error;
+      let shouldRenderHydrateFallback = false;
+      let errorElement = null;
+      let hydrateFallbackElement = null;
+      if (dataRouterState) {
+        error = errors && match.route.id ? errors[match.route.id] : void 0;
+        errorElement = match.route.errorElement || defaultErrorElement;
+        if (renderFallback) {
+          if (fallbackIndex < 0 && index === 0) {
+            warningOnce(
+              "route-fallback",
+              false,
+              "No `HydrateFallback` element provided to render during initial hydration"
+            );
+            shouldRenderHydrateFallback = true;
+            hydrateFallbackElement = null;
+          } else if (fallbackIndex === index) {
+            shouldRenderHydrateFallback = true;
+            hydrateFallbackElement = match.route.hydrateFallbackElement || null;
+          }
+        }
+      }
+      let matches2 = parentMatches.concat(renderedMatches.slice(0, index + 1));
+      let getChildren = () => {
+        let children;
+        if (error) {
+          children = errorElement;
+        } else if (shouldRenderHydrateFallback) {
+          children = hydrateFallbackElement;
+        } else if (match.route.Component) {
+          children = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(match.route.Component, null);
+        } else if (match.route.element) {
+          children = match.route.element;
+        } else {
+          children = outlet;
+        }
+        return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+          RenderedRoute,
+          {
+            match,
+            routeContext: {
+              outlet,
+              matches: matches2,
+              isDataRoute: dataRouterState != null
+            },
+            children
+          }
+        );
+      };
+      return dataRouterState && (match.route.ErrorBoundary || match.route.errorElement || index === 0) ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+        RenderErrorBoundary,
+        {
+          location: dataRouterState.location,
+          revalidation: dataRouterState.revalidation,
+          component: errorElement,
+          error,
+          children: getChildren(),
+          routeContext: { outlet: null, matches: matches2, isDataRoute: true },
+          onError
+        }
+      ) : getChildren();
+    },
+    null
+  );
+}
+function getDataRouterConsoleError(hookName) {
+  return `${hookName} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
+}
+function useDataRouterContext(hookName) {
+  let ctx = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
+  invariant(ctx, getDataRouterConsoleError(hookName));
+  return ctx;
+}
+function useDataRouterState(hookName) {
+  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
+  invariant(state, getDataRouterConsoleError(hookName));
+  return state;
+}
+function useRouteContext(hookName) {
+  let route = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  invariant(route, getDataRouterConsoleError(hookName));
+  return route;
+}
+function useCurrentRouteId(hookName) {
+  let route = useRouteContext(hookName);
+  let thisRoute = route.matches[route.matches.length - 1];
+  invariant(
+    thisRoute.route.id,
+    `${hookName} can only be used on routes that contain a unique "id"`
+  );
+  return thisRoute.route.id;
+}
+function useRouteId() {
+  return useCurrentRouteId("useRouteId" /* UseRouteId */);
+}
+function useNavigation() {
+  let state = useDataRouterState("useNavigation" /* UseNavigation */);
+  return state.navigation;
+}
+function useRevalidator() {
+  let dataRouterContext = useDataRouterContext("useRevalidator" /* UseRevalidator */);
+  let state = useDataRouterState("useRevalidator" /* UseRevalidator */);
+  let revalidate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(async () => {
+    await dataRouterContext.router.revalidate();
+  }, [dataRouterContext.router]);
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => ({ revalidate, state: state.revalidation }),
+    [revalidate, state.revalidation]
+  );
+}
+function useMatches() {
+  let { matches, loaderData } = useDataRouterState(
+    "useMatches" /* UseMatches */
+  );
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => matches.map((m) => convertRouteMatchToUiMatch(m, loaderData)),
+    [matches, loaderData]
+  );
+}
+function useLoaderData() {
+  let state = useDataRouterState("useLoaderData" /* UseLoaderData */);
+  let routeId = useCurrentRouteId("useLoaderData" /* UseLoaderData */);
+  return state.loaderData[routeId];
+}
+function useRouteLoaderData(routeId) {
+  let state = useDataRouterState("useRouteLoaderData" /* UseRouteLoaderData */);
+  return state.loaderData[routeId];
+}
+function useActionData() {
+  let state = useDataRouterState("useActionData" /* UseActionData */);
+  let routeId = useCurrentRouteId("useLoaderData" /* UseLoaderData */);
+  return state.actionData ? state.actionData[routeId] : void 0;
+}
+function useRouteError() {
+  let error = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteErrorContext);
+  let state = useDataRouterState("useRouteError" /* UseRouteError */);
+  let routeId = useCurrentRouteId("useRouteError" /* UseRouteError */);
+  if (error !== void 0) {
+    return error;
+  }
+  return state.errors?.[routeId];
+}
+function useAsyncValue() {
+  let value = react__WEBPACK_IMPORTED_MODULE_0__.useContext(AwaitContext);
+  return value?._data;
+}
+function useAsyncError() {
+  let value = react__WEBPACK_IMPORTED_MODULE_0__.useContext(AwaitContext);
+  return value?._error;
+}
+var blockerId = 0;
+function useBlocker(shouldBlock) {
+  let { router, basename } = useDataRouterContext("useBlocker" /* UseBlocker */);
+  let state = useDataRouterState("useBlocker" /* UseBlocker */);
+  let [blockerKey, setBlockerKey] = react__WEBPACK_IMPORTED_MODULE_0__.useState("");
+  let blockerFunction = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (arg) => {
+      if (typeof shouldBlock !== "function") {
+        return !!shouldBlock;
+      }
+      if (basename === "/") {
+        return shouldBlock(arg);
+      }
+      let { currentLocation, nextLocation, historyAction } = arg;
+      return shouldBlock({
+        currentLocation: {
+          ...currentLocation,
+          pathname: stripBasename(currentLocation.pathname, basename) || currentLocation.pathname
+        },
+        nextLocation: {
+          ...nextLocation,
+          pathname: stripBasename(nextLocation.pathname, basename) || nextLocation.pathname
+        },
+        historyAction
+      });
+    },
+    [basename, shouldBlock]
+  );
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    let key = String(++blockerId);
+    setBlockerKey(key);
+    return () => router.deleteBlocker(key);
+  }, [router]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (blockerKey !== "") {
+      router.getBlocker(blockerKey, blockerFunction);
+    }
+  }, [router, blockerKey, blockerFunction]);
+  return blockerKey && state.blockers.has(blockerKey) ? state.blockers.get(blockerKey) : IDLE_BLOCKER;
+}
+function useNavigateStable() {
+  let { router } = useDataRouterContext("useNavigate" /* UseNavigateStable */);
+  let id = useCurrentRouteId("useNavigate" /* UseNavigateStable */);
+  let activeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+  useIsomorphicLayoutEffect(() => {
+    activeRef.current = true;
+  });
+  let navigate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    async (to, options = {}) => {
+      warning(activeRef.current, navigateEffectWarning);
+      if (!activeRef.current) return;
+      if (typeof to === "number") {
+        await router.navigate(to);
+      } else {
+        await router.navigate(to, { fromRouteId: id, ...options });
+      }
+    },
+    [router, id]
+  );
+  return navigate;
+}
+var alreadyWarned = {};
+function warningOnce(key, cond, message) {
+  if (!cond && !alreadyWarned[key]) {
+    alreadyWarned[key] = true;
+    warning(false, message);
+  }
+}
+function useRoute(...args) {
+  const currentRouteId = useCurrentRouteId(
+    "useRoute" /* UseRoute */
+  );
+  const id = args[0] ?? currentRouteId;
+  const state = useDataRouterState("useRoute" /* UseRoute */);
+  const route = state.matches.find(({ route: route2 }) => route2.id === id);
+  if (route === void 0) return void 0;
+  return {
+    handle: route.route.handle,
+    loaderData: state.loaderData[id],
+    actionData: state.actionData?.[id]
+  };
+}
+
+// lib/components.tsx
+
+
+// lib/server-runtime/warnings.ts
+var alreadyWarned2 = {};
+function warnOnce(condition, message) {
+  if (!condition && !alreadyWarned2[message]) {
+    alreadyWarned2[message] = true;
+    console.warn(message);
+  }
+}
+
+// lib/components.tsx
+var USE_OPTIMISTIC = "useOptimistic";
+var useOptimisticImpl = /*#__PURE__*/ (react__WEBPACK_IMPORTED_MODULE_0___namespace_cache || (react__WEBPACK_IMPORTED_MODULE_0___namespace_cache = __webpack_require__.t(react__WEBPACK_IMPORTED_MODULE_0__, 2)))[USE_OPTIMISTIC];
+var stableUseOptimisticSetter = () => void 0;
+function useOptimisticSafe(val) {
+  if (useOptimisticImpl) {
+    return useOptimisticImpl(val);
+  } else {
+    return [val, stableUseOptimisticSetter];
+  }
+}
+function mapRouteProperties(route) {
+  let updates = {
+    // Note: this check also occurs in createRoutesFromChildren so update
+    // there if you change this -- please and thank you!
+    hasErrorBoundary: route.hasErrorBoundary || route.ErrorBoundary != null || route.errorElement != null
+  };
+  if (route.Component) {
+    if (ENABLE_DEV_WARNINGS) {
+      if (route.element) {
+        warning(
+          false,
+          "You should not include both `Component` and `element` on your route - `Component` will be used."
+        );
+      }
+    }
+    Object.assign(updates, {
+      element: react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.Component),
+      Component: void 0
+    });
+  }
+  if (route.HydrateFallback) {
+    if (ENABLE_DEV_WARNINGS) {
+      if (route.hydrateFallbackElement) {
+        warning(
+          false,
+          "You should not include both `HydrateFallback` and `hydrateFallbackElement` on your route - `HydrateFallback` will be used."
+        );
+      }
+    }
+    Object.assign(updates, {
+      hydrateFallbackElement: react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.HydrateFallback),
+      HydrateFallback: void 0
+    });
+  }
+  if (route.ErrorBoundary) {
+    if (ENABLE_DEV_WARNINGS) {
+      if (route.errorElement) {
+        warning(
+          false,
+          "You should not include both `ErrorBoundary` and `errorElement` on your route - `ErrorBoundary` will be used."
+        );
+      }
+    }
+    Object.assign(updates, {
+      errorElement: react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.ErrorBoundary),
+      ErrorBoundary: void 0
+    });
+  }
+  return updates;
+}
+var hydrationRouteProperties = [
+  "HydrateFallback",
+  "hydrateFallbackElement"
+];
+function createMemoryRouter(routes, opts) {
+  return createRouter({
+    basename: opts?.basename,
+    getContext: opts?.getContext,
+    future: opts?.future,
+    history: createMemoryHistory({
+      initialEntries: opts?.initialEntries,
+      initialIndex: opts?.initialIndex
+    }),
+    hydrationData: opts?.hydrationData,
+    routes,
+    hydrationRouteProperties,
+    mapRouteProperties,
+    dataStrategy: opts?.dataStrategy,
+    patchRoutesOnNavigation: opts?.patchRoutesOnNavigation,
+    unstable_instrumentations: opts?.unstable_instrumentations
+  }).initialize();
+}
+var Deferred = class {
+  constructor() {
+    this.status = "pending";
+    this.promise = new Promise((resolve, reject) => {
+      this.resolve = (value) => {
+        if (this.status === "pending") {
+          this.status = "resolved";
+          resolve(value);
+        }
+      };
+      this.reject = (reason) => {
+        if (this.status === "pending") {
+          this.status = "rejected";
+          reject(reason);
+        }
+      };
+    });
+  }
+};
+function RouterProvider({
+  router,
+  flushSync: reactDomFlushSyncImpl,
+  onError,
+  unstable_useTransitions
+}) {
+  let unstable_rsc = useIsRSCRouterContext();
+  unstable_useTransitions = unstable_rsc || unstable_useTransitions;
+  let [_state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState(router.state);
+  let [state, setOptimisticState] = useOptimisticSafe(_state);
+  let [pendingState, setPendingState] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
+  let [vtContext, setVtContext] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    isTransitioning: false
+  });
+  let [renderDfd, setRenderDfd] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
+  let [transition, setTransition] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
+  let [interruption, setInterruption] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
+  let fetcherData = react__WEBPACK_IMPORTED_MODULE_0__.useRef(/* @__PURE__ */ new Map());
+  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (newState, { deletedFetchers, newErrors, flushSync, viewTransitionOpts }) => {
+      if (newErrors && onError) {
+        Object.values(newErrors).forEach(
+          (error) => onError(error, {
+            location: newState.location,
+            params: newState.matches[0]?.params ?? {},
+            unstable_pattern: getRoutePattern(newState.matches)
+          })
+        );
+      }
+      newState.fetchers.forEach((fetcher, key) => {
+        if (fetcher.data !== void 0) {
+          fetcherData.current.set(key, fetcher.data);
+        }
+      });
+      deletedFetchers.forEach((key) => fetcherData.current.delete(key));
+      warnOnce(
+        flushSync === false || reactDomFlushSyncImpl != null,
+        'You provided the `flushSync` option to a router update, but you are not using the `<RouterProvider>` from `react-router/dom` so `ReactDOM.flushSync()` is unavailable.  Please update your app to `import { RouterProvider } from "react-router/dom"` and ensure you have `react-dom` installed as a dependency to use the `flushSync` option.'
+      );
+      let isViewTransitionAvailable = router.window != null && router.window.document != null && typeof router.window.document.startViewTransition === "function";
+      warnOnce(
+        viewTransitionOpts == null || isViewTransitionAvailable,
+        "You provided the `viewTransition` option to a router update, but you do not appear to be running in a DOM environment as `window.startViewTransition` is not available."
+      );
+      if (!viewTransitionOpts || !isViewTransitionAvailable) {
+        if (reactDomFlushSyncImpl && flushSync) {
+          reactDomFlushSyncImpl(() => setStateImpl(newState));
+        } else if (unstable_useTransitions === false) {
+          setStateImpl(newState);
+        } else {
+          react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => {
+            if (unstable_useTransitions === true) {
+              setOptimisticState((s) => getOptimisticRouterState(s, newState));
+            }
+            setStateImpl(newState);
+          });
+        }
+        return;
+      }
+      if (reactDomFlushSyncImpl && flushSync) {
+        reactDomFlushSyncImpl(() => {
+          if (transition) {
+            renderDfd?.resolve();
+            transition.skipTransition();
+          }
+          setVtContext({
+            isTransitioning: true,
+            flushSync: true,
+            currentLocation: viewTransitionOpts.currentLocation,
+            nextLocation: viewTransitionOpts.nextLocation
+          });
+        });
+        let t = router.window.document.startViewTransition(() => {
+          reactDomFlushSyncImpl(() => setStateImpl(newState));
+        });
+        t.finished.finally(() => {
+          reactDomFlushSyncImpl(() => {
+            setRenderDfd(void 0);
+            setTransition(void 0);
+            setPendingState(void 0);
+            setVtContext({ isTransitioning: false });
+          });
+        });
+        reactDomFlushSyncImpl(() => setTransition(t));
+        return;
+      }
+      if (transition) {
+        renderDfd?.resolve();
+        transition.skipTransition();
+        setInterruption({
+          state: newState,
+          currentLocation: viewTransitionOpts.currentLocation,
+          nextLocation: viewTransitionOpts.nextLocation
+        });
+      } else {
+        setPendingState(newState);
+        setVtContext({
+          isTransitioning: true,
+          flushSync: false,
+          currentLocation: viewTransitionOpts.currentLocation,
+          nextLocation: viewTransitionOpts.nextLocation
+        });
+      }
+    },
+    [
+      router.window,
+      reactDomFlushSyncImpl,
+      transition,
+      renderDfd,
+      unstable_useTransitions,
+      setOptimisticState,
+      onError
+    ]
+  );
+  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => router.subscribe(setState), [router, setState]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (vtContext.isTransitioning && !vtContext.flushSync) {
+      setRenderDfd(new Deferred());
+    }
+  }, [vtContext]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (renderDfd && pendingState && router.window) {
+      let newState = pendingState;
+      let renderPromise = renderDfd.promise;
+      let transition2 = router.window.document.startViewTransition(async () => {
+        if (unstable_useTransitions === false) {
+          setStateImpl(newState);
+        } else {
+          react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => {
+            if (unstable_useTransitions === true) {
+              setOptimisticState((s) => getOptimisticRouterState(s, newState));
+            }
+            setStateImpl(newState);
+          });
+        }
+        await renderPromise;
+      });
+      transition2.finished.finally(() => {
+        setRenderDfd(void 0);
+        setTransition(void 0);
+        setPendingState(void 0);
+        setVtContext({ isTransitioning: false });
+      });
+      setTransition(transition2);
+    }
+  }, [
+    pendingState,
+    renderDfd,
+    router.window,
+    unstable_useTransitions,
+    setOptimisticState
+  ]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (renderDfd && pendingState && state.location.key === pendingState.location.key) {
+      renderDfd.resolve();
+    }
+  }, [renderDfd, transition, state.location, pendingState]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (!vtContext.isTransitioning && interruption) {
+      setPendingState(interruption.state);
+      setVtContext({
+        isTransitioning: true,
+        flushSync: false,
+        currentLocation: interruption.currentLocation,
+        nextLocation: interruption.nextLocation
+      });
+      setInterruption(void 0);
+    }
+  }, [vtContext.isTransitioning, interruption]);
+  let navigator = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    return {
+      createHref: router.createHref,
+      encodeLocation: router.encodeLocation,
+      go: (n) => router.navigate(n),
+      push: (to, state2, opts) => router.navigate(to, {
+        state: state2,
+        preventScrollReset: opts?.preventScrollReset
+      }),
+      replace: (to, state2, opts) => router.navigate(to, {
+        replace: true,
+        state: state2,
+        preventScrollReset: opts?.preventScrollReset
+      })
+    };
+  }, [router]);
+  let basename = router.basename || "/";
+  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => ({
+      router,
+      navigator,
+      static: false,
+      basename,
+      onError
+    }),
+    [router, navigator, basename, onError]
+  );
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterContext.Provider, { value: dataRouterContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterStateContext.Provider, { value: state }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(FetchersContext.Provider, { value: fetcherData.current }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ViewTransitionContext.Provider, { value: vtContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    Router,
+    {
+      basename,
+      location: state.location,
+      navigationType: state.historyAction,
+      navigator,
+      unstable_useTransitions
+    },
+    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      MemoizedDataRoutes,
+      {
+        routes: router.routes,
+        future: router.future,
+        state,
+        isStatic: false,
+        onError
+      }
+    )
+  ))))), null);
+}
+function getOptimisticRouterState(currentState, newState) {
+  return {
+    // Don't surface "current location specific" stuff mid-navigation
+    // (historyAction, location, matches, loaderData, errors, initialized,
+    // restoreScroll, preventScrollReset, blockers, etc.)
+    ...currentState,
+    // Only surface "pending/in-flight stuff"
+    // (navigation, revalidation, actionData, fetchers, )
+    navigation: newState.navigation.state !== "idle" ? newState.navigation : currentState.navigation,
+    revalidation: newState.revalidation !== "idle" ? newState.revalidation : currentState.revalidation,
+    actionData: newState.navigation.state !== "submitting" ? newState.actionData : currentState.actionData,
+    fetchers: newState.fetchers
+  };
+}
+var MemoizedDataRoutes = react__WEBPACK_IMPORTED_MODULE_0__.memo(DataRoutes);
+function DataRoutes({
+  routes,
+  future,
+  state,
+  isStatic,
+  onError
+}) {
+  return useRoutesImpl(routes, void 0, { state, isStatic, onError, future });
+}
+function MemoryRouter({
+  basename,
+  children,
+  initialEntries,
+  initialIndex,
+  unstable_useTransitions
+}) {
+  let historyRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
+  if (historyRef.current == null) {
+    historyRef.current = createMemoryHistory({
+      initialEntries,
+      initialIndex,
+      v5Compat: true
+    });
+  }
+  let history = historyRef.current;
+  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    action: history.action,
+    location: history.location
+  });
+  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (newState) => {
+      if (unstable_useTransitions === false) {
+        setStateImpl(newState);
+      } else {
+        react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
+      }
+    },
+    [unstable_useTransitions]
+  );
+  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    Router,
+    {
+      basename,
+      children,
+      location: state.location,
+      navigationType: state.action,
+      navigator: history,
+      unstable_useTransitions
+    }
+  );
+}
+function Navigate({
+  to,
+  replace: replace2,
+  state,
+  relative
+}) {
+  invariant(
+    useInRouterContext(),
+    // TODO: This error is probably because they somehow have 2 versions of
+    // the router loaded. We can help them understand how to avoid that.
+    `<Navigate> may be used only in the context of a <Router> component.`
+  );
+  let { static: isStatic } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  warning(
+    !isStatic,
+    `<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.`
+  );
+  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  let { pathname: locationPathname } = useLocation();
+  let navigate = useNavigate();
+  let path = resolveTo(
+    to,
+    getResolveToMatches(matches),
+    locationPathname,
+    relative === "path"
+  );
+  let jsonPath = JSON.stringify(path);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    navigate(JSON.parse(jsonPath), { replace: replace2, state, relative });
+  }, [navigate, jsonPath, relative, replace2, state]);
+  return null;
+}
+function Outlet(props) {
+  return useOutlet(props.context);
+}
+function Route(props) {
+  invariant(
+    false,
+    `A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.`
+  );
+}
+function Router({
+  basename: basenameProp = "/",
+  children = null,
+  location: locationProp,
+  navigationType = "POP" /* Pop */,
+  navigator,
+  static: staticProp = false,
+  unstable_useTransitions
+}) {
+  invariant(
+    !useInRouterContext(),
+    `You cannot render a <Router> inside another <Router>. You should never have more than one in your app.`
+  );
+  let basename = basenameProp.replace(/^\/*/, "/");
+  let navigationContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => ({
+      basename,
+      navigator,
+      static: staticProp,
+      unstable_useTransitions,
+      future: {}
+    }),
+    [basename, navigator, staticProp, unstable_useTransitions]
+  );
+  if (typeof locationProp === "string") {
+    locationProp = parsePath(locationProp);
+  }
+  let {
+    pathname = "/",
+    search = "",
+    hash = "",
+    state = null,
+    key = "default",
+    unstable_mask
+  } = locationProp;
+  let locationContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    let trailingPathname = stripBasename(pathname, basename);
+    if (trailingPathname == null) {
+      return null;
+    }
+    return {
+      location: {
+        pathname: trailingPathname,
+        search,
+        hash,
+        state,
+        key,
+        unstable_mask
+      },
+      navigationType
+    };
+  }, [
+    basename,
+    pathname,
+    search,
+    hash,
+    state,
+    key,
+    navigationType,
+    unstable_mask
+  ]);
+  warning(
+    locationContext != null,
+    `<Router basename="${basename}"> is not able to match the URL "${pathname}${search}${hash}" because it does not start with the basename, so the <Router> won't render anything.`
+  );
+  if (locationContext == null) {
+    return null;
+  }
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(NavigationContext.Provider, { value: navigationContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(LocationContext.Provider, { children, value: locationContext }));
+}
+function Routes({
+  children,
+  location
+}) {
+  return useRoutes(createRoutesFromChildren(children), location);
+}
+function Await({
+  children,
+  errorElement,
+  resolve
+}) {
+  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
+  let dataRouterStateContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
+  let onError = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (error, errorInfo) => {
+      if (dataRouterContext && dataRouterContext.onError && dataRouterStateContext) {
+        dataRouterContext.onError(error, {
+          location: dataRouterStateContext.location,
+          params: dataRouterStateContext.matches[0]?.params || {},
+          unstable_pattern: getRoutePattern(dataRouterStateContext.matches),
+          errorInfo
+        });
+      }
+    },
+    [dataRouterContext, dataRouterStateContext]
+  );
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    AwaitErrorBoundary,
+    {
+      resolve,
+      errorElement,
+      onError
+    },
+    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ResolveAwait, null, children)
+  );
+}
+var AwaitErrorBoundary = class extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+  componentDidCatch(error, errorInfo) {
+    if (this.props.onError) {
+      this.props.onError(error, errorInfo);
+    } else {
+      console.error(
+        "<Await> caught the following error during render",
+        error,
+        errorInfo
+      );
+    }
+  }
+  render() {
+    let { children, errorElement, resolve } = this.props;
+    let promise = null;
+    let status = 0 /* pending */;
+    if (!(resolve instanceof Promise)) {
+      status = 1 /* success */;
+      promise = Promise.resolve();
+      Object.defineProperty(promise, "_tracked", { get: () => true });
+      Object.defineProperty(promise, "_data", { get: () => resolve });
+    } else if (this.state.error) {
+      status = 2 /* error */;
+      let renderError = this.state.error;
+      promise = Promise.reject().catch(() => {
+      });
+      Object.defineProperty(promise, "_tracked", { get: () => true });
+      Object.defineProperty(promise, "_error", { get: () => renderError });
+    } else if (resolve._tracked) {
+      promise = resolve;
+      status = "_error" in promise ? 2 /* error */ : "_data" in promise ? 1 /* success */ : 0 /* pending */;
+    } else {
+      status = 0 /* pending */;
+      Object.defineProperty(resolve, "_tracked", { get: () => true });
+      promise = resolve.then(
+        (data2) => Object.defineProperty(resolve, "_data", { get: () => data2 }),
+        (error) => {
+          this.props.onError?.(error);
+          Object.defineProperty(resolve, "_error", { get: () => error });
+        }
+      );
+    }
+    if (status === 2 /* error */ && !errorElement) {
+      throw promise._error;
+    }
+    if (status === 2 /* error */) {
+      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, { value: promise, children: errorElement });
+    }
+    if (status === 1 /* success */) {
+      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, { value: promise, children });
+    }
+    throw promise;
+  }
+};
+function ResolveAwait({
+  children
+}) {
+  let data2 = useAsyncValue();
+  let toRender = typeof children === "function" ? children(data2) : children;
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, toRender);
+}
+function createRoutesFromChildren(children, parentPath = []) {
+  let routes = [];
+  react__WEBPACK_IMPORTED_MODULE_0__.Children.forEach(children, (element, index) => {
+    if (!react__WEBPACK_IMPORTED_MODULE_0__.isValidElement(element)) {
+      return;
+    }
+    let treePath = [...parentPath, index];
+    if (element.type === react__WEBPACK_IMPORTED_MODULE_0__.Fragment) {
+      routes.push.apply(
+        routes,
+        createRoutesFromChildren(element.props.children, treePath)
+      );
+      return;
+    }
+    invariant(
+      element.type === Route,
+      `[${typeof element.type === "string" ? element.type : element.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`
+    );
+    invariant(
+      !element.props.index || !element.props.children,
+      "An index route cannot have child routes."
+    );
+    let route = {
+      id: element.props.id || treePath.join("-"),
+      caseSensitive: element.props.caseSensitive,
+      element: element.props.element,
+      Component: element.props.Component,
+      index: element.props.index,
+      path: element.props.path,
+      middleware: element.props.middleware,
+      loader: element.props.loader,
+      action: element.props.action,
+      hydrateFallbackElement: element.props.hydrateFallbackElement,
+      HydrateFallback: element.props.HydrateFallback,
+      errorElement: element.props.errorElement,
+      ErrorBoundary: element.props.ErrorBoundary,
+      hasErrorBoundary: element.props.hasErrorBoundary === true || element.props.ErrorBoundary != null || element.props.errorElement != null,
+      shouldRevalidate: element.props.shouldRevalidate,
+      handle: element.props.handle,
+      lazy: element.props.lazy
+    };
+    if (element.props.children) {
+      route.children = createRoutesFromChildren(
+        element.props.children,
+        treePath
+      );
+    }
+    routes.push(route);
+  });
+  return routes;
+}
+var createRoutesFromElements = createRoutesFromChildren;
+function renderMatches(matches) {
+  return _renderMatches(matches);
+}
+function useRouteComponentProps() {
+  return {
+    params: useParams(),
+    loaderData: useLoaderData(),
+    actionData: useActionData(),
+    matches: useMatches()
+  };
+}
+function WithComponentProps({
+  children
+}) {
+  const props = useRouteComponentProps();
+  return react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, props);
+}
+function withComponentProps(Component4) {
+  return function WithComponentProps2() {
+    const props = useRouteComponentProps();
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component4, props);
+  };
+}
+function useHydrateFallbackProps() {
+  return {
+    params: useParams(),
+    loaderData: useLoaderData(),
+    actionData: useActionData()
+  };
+}
+function WithHydrateFallbackProps({
+  children
+}) {
+  const props = useHydrateFallbackProps();
+  return react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, props);
+}
+function withHydrateFallbackProps(HydrateFallback) {
+  return function WithHydrateFallbackProps2() {
+    const props = useHydrateFallbackProps();
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(HydrateFallback, props);
+  };
+}
+function useErrorBoundaryProps() {
+  return {
+    params: useParams(),
+    loaderData: useLoaderData(),
+    actionData: useActionData(),
+    error: useRouteError()
+  };
+}
+function WithErrorBoundaryProps({
+  children
+}) {
+  const props = useErrorBoundaryProps();
+  return react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, props);
+}
+function withErrorBoundaryProps(ErrorBoundary) {
+  return function WithErrorBoundaryProps2() {
+    const props = useErrorBoundaryProps();
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(ErrorBoundary, props);
+  };
+}
+
+// lib/dom/dom.ts
+var defaultMethod = "get";
+var defaultEncType = "application/x-www-form-urlencoded";
+function isHtmlElement(object) {
+  return typeof HTMLElement !== "undefined" && object instanceof HTMLElement;
+}
+function isButtonElement(object) {
+  return isHtmlElement(object) && object.tagName.toLowerCase() === "button";
+}
+function isFormElement(object) {
+  return isHtmlElement(object) && object.tagName.toLowerCase() === "form";
+}
+function isInputElement(object) {
+  return isHtmlElement(object) && object.tagName.toLowerCase() === "input";
+}
+function isModifiedEvent(event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+}
+function shouldProcessLinkClick(event, target) {
+  return event.button === 0 && // Ignore everything but left clicks
+  (!target || target === "_self") && // Let browser handle "target=_blank" etc.
+  !isModifiedEvent(event);
+}
+function createSearchParams(init = "") {
+  return new URLSearchParams(
+    typeof init === "string" || Array.isArray(init) || init instanceof URLSearchParams ? init : Object.keys(init).reduce((memo2, key) => {
+      let value = init[key];
+      return memo2.concat(
+        Array.isArray(value) ? value.map((v) => [key, v]) : [[key, value]]
+      );
+    }, [])
+  );
+}
+function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
+  let searchParams = createSearchParams(locationSearch);
+  if (defaultSearchParams) {
+    defaultSearchParams.forEach((_, key) => {
+      if (!searchParams.has(key)) {
+        defaultSearchParams.getAll(key).forEach((value) => {
+          searchParams.append(key, value);
+        });
+      }
+    });
+  }
+  return searchParams;
+}
+var _formDataSupportsSubmitter = null;
+function isFormDataSubmitterSupported() {
+  if (_formDataSupportsSubmitter === null) {
+    try {
+      new FormData(
+        document.createElement("form"),
+        // @ts-expect-error if FormData supports the submitter parameter, this will throw
+        0
+      );
+      _formDataSupportsSubmitter = false;
+    } catch (e) {
+      _formDataSupportsSubmitter = true;
+    }
+  }
+  return _formDataSupportsSubmitter;
+}
+var supportedFormEncTypes = /* @__PURE__ */ new Set([
+  "application/x-www-form-urlencoded",
+  "multipart/form-data",
+  "text/plain"
+]);
+function getFormEncType(encType) {
+  if (encType != null && !supportedFormEncTypes.has(encType)) {
+    warning(
+      false,
+      `"${encType}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${defaultEncType}"`
+    );
+    return null;
+  }
+  return encType;
+}
+function getFormSubmissionInfo(target, basename) {
+  let method;
+  let action;
+  let encType;
+  let formData;
+  let body;
+  if (isFormElement(target)) {
+    let attr = target.getAttribute("action");
+    action = attr ? stripBasename(attr, basename) : null;
+    method = target.getAttribute("method") || defaultMethod;
+    encType = getFormEncType(target.getAttribute("enctype")) || defaultEncType;
+    formData = new FormData(target);
+  } else if (isButtonElement(target) || isInputElement(target) && (target.type === "submit" || target.type === "image")) {
+    let form = target.form;
+    if (form == null) {
+      throw new Error(
+        `Cannot submit a <button> or <input type="submit"> without a <form>`
+      );
+    }
+    let attr = target.getAttribute("formaction") || form.getAttribute("action");
+    action = attr ? stripBasename(attr, basename) : null;
+    method = target.getAttribute("formmethod") || form.getAttribute("method") || defaultMethod;
+    encType = getFormEncType(target.getAttribute("formenctype")) || getFormEncType(form.getAttribute("enctype")) || defaultEncType;
+    formData = new FormData(form, target);
+    if (!isFormDataSubmitterSupported()) {
+      let { name, type, value } = target;
+      if (type === "image") {
+        let prefix = name ? `${name}.` : "";
+        formData.append(`${prefix}x`, "0");
+        formData.append(`${prefix}y`, "0");
+      } else if (name) {
+        formData.append(name, value);
+      }
+    }
+  } else if (isHtmlElement(target)) {
+    throw new Error(
+      `Cannot submit element that is not <form>, <button>, or <input type="submit|image">`
+    );
+  } else {
+    method = defaultMethod;
+    action = null;
+    encType = defaultEncType;
+    body = target;
+  }
+  if (formData && encType === "text/plain") {
+    body = formData;
+    formData = void 0;
+  }
+  return { action, method: method.toLowerCase(), encType, formData, body };
+}
+
+// lib/dom/ssr/single-fetch.tsx
+
+
+// vendor/turbo-stream-v2/utils.ts
+var HOLE = -1;
+var NAN = -2;
+var NEGATIVE_INFINITY = -3;
+var NEGATIVE_ZERO = -4;
+var NULL = -5;
+var POSITIVE_INFINITY = -6;
+var UNDEFINED = -7;
+var TYPE_BIGINT = "B";
+var TYPE_DATE = "D";
+var TYPE_ERROR = "E";
+var TYPE_MAP = "M";
+var TYPE_NULL_OBJECT = "N";
+var TYPE_PROMISE = "P";
+var TYPE_REGEXP = "R";
+var TYPE_SET = "S";
+var TYPE_SYMBOL = "Y";
+var TYPE_URL = "U";
+var TYPE_PREVIOUS_RESOLVED = "Z";
+var Deferred2 = class {
+  constructor() {
+    this.promise = new Promise((resolve, reject) => {
+      this.resolve = resolve;
+      this.reject = reject;
+    });
+  }
+};
+function createLineSplittingTransform() {
+  const decoder = new TextDecoder();
+  let leftover = "";
+  return new TransformStream({
+    transform(chunk, controller) {
+      const str = decoder.decode(chunk, { stream: true });
+      const parts = (leftover + str).split("\n");
+      leftover = parts.pop() || "";
+      for (const part of parts) {
+        controller.enqueue(part);
+      }
+    },
+    flush(controller) {
+      if (leftover) {
+        controller.enqueue(leftover);
+      }
+    }
+  });
+}
+
+// vendor/turbo-stream-v2/flatten.ts
+function flatten(input) {
+  const { indices } = this;
+  const existing = indices.get(input);
+  if (existing) return [existing];
+  if (input === void 0) return UNDEFINED;
+  if (input === null) return NULL;
+  if (Number.isNaN(input)) return NAN;
+  if (input === Number.POSITIVE_INFINITY) return POSITIVE_INFINITY;
+  if (input === Number.NEGATIVE_INFINITY) return NEGATIVE_INFINITY;
+  if (input === 0 && 1 / input < 0) return NEGATIVE_ZERO;
+  const index = this.index++;
+  indices.set(input, index);
+  stringify.call(this, input, index);
+  return index;
+}
+function stringify(input, index) {
+  const { deferred, plugins, postPlugins } = this;
+  const str = this.stringified;
+  const stack = [[input, index]];
+  while (stack.length > 0) {
+    const [input2, index2] = stack.pop();
+    const partsForObj = (obj) => Object.keys(obj).map((k) => `"_${flatten.call(this, k)}":${flatten.call(this, obj[k])}`).join(",");
+    let error = null;
+    switch (typeof input2) {
+      case "boolean":
+      case "number":
+      case "string":
+        str[index2] = JSON.stringify(input2);
+        break;
+      case "bigint":
+        str[index2] = `["${TYPE_BIGINT}","${input2}"]`;
+        break;
+      case "symbol": {
+        const keyFor = Symbol.keyFor(input2);
+        if (!keyFor) {
+          error = new Error(
+            "Cannot encode symbol unless created with Symbol.for()"
+          );
+        } else {
+          str[index2] = `["${TYPE_SYMBOL}",${JSON.stringify(keyFor)}]`;
+        }
+        break;
+      }
+      case "object": {
+        if (!input2) {
+          str[index2] = `${NULL}`;
+          break;
+        }
+        const isArray = Array.isArray(input2);
+        let pluginHandled = false;
+        if (!isArray && plugins) {
+          for (const plugin of plugins) {
+            const pluginResult = plugin(input2);
+            if (Array.isArray(pluginResult)) {
+              pluginHandled = true;
+              const [pluginIdentifier, ...rest] = pluginResult;
+              str[index2] = `[${JSON.stringify(pluginIdentifier)}`;
+              if (rest.length > 0) {
+                str[index2] += `,${rest.map((v) => flatten.call(this, v)).join(",")}`;
+              }
+              str[index2] += "]";
+              break;
+            }
+          }
+        }
+        if (!pluginHandled) {
+          let result = isArray ? "[" : "{";
+          if (isArray) {
+            for (let i = 0; i < input2.length; i++)
+              result += (i ? "," : "") + (i in input2 ? flatten.call(this, input2[i]) : HOLE);
+            str[index2] = `${result}]`;
+          } else if (input2 instanceof Date) {
+            const dateTime = input2.getTime();
+            str[index2] = `["${TYPE_DATE}",${Number.isNaN(dateTime) ? JSON.stringify("invalid") : dateTime}]`;
+          } else if (input2 instanceof URL) {
+            str[index2] = `["${TYPE_URL}",${JSON.stringify(input2.href)}]`;
+          } else if (input2 instanceof RegExp) {
+            str[index2] = `["${TYPE_REGEXP}",${JSON.stringify(
+              input2.source
+            )},${JSON.stringify(input2.flags)}]`;
+          } else if (input2 instanceof Set) {
+            if (input2.size > 0) {
+              str[index2] = `["${TYPE_SET}",${[...input2].map((val) => flatten.call(this, val)).join(",")}]`;
+            } else {
+              str[index2] = `["${TYPE_SET}"]`;
+            }
+          } else if (input2 instanceof Map) {
+            if (input2.size > 0) {
+              str[index2] = `["${TYPE_MAP}",${[...input2].flatMap(([k, v]) => [
+                flatten.call(this, k),
+                flatten.call(this, v)
+              ]).join(",")}]`;
+            } else {
+              str[index2] = `["${TYPE_MAP}"]`;
+            }
+          } else if (input2 instanceof Promise) {
+            str[index2] = `["${TYPE_PROMISE}",${index2}]`;
+            deferred[index2] = input2;
+          } else if (input2 instanceof Error) {
+            str[index2] = `["${TYPE_ERROR}",${JSON.stringify(input2.message)}`;
+            if (input2.name !== "Error") {
+              str[index2] += `,${JSON.stringify(input2.name)}`;
+            }
+            str[index2] += "]";
+          } else if (Object.getPrototypeOf(input2) === null) {
+            str[index2] = `["${TYPE_NULL_OBJECT}",{${partsForObj(input2)}}]`;
+          } else if (isPlainObject2(input2)) {
+            str[index2] = `{${partsForObj(input2)}}`;
+          } else {
+            error = new Error("Cannot encode object with prototype");
+          }
+        }
+        break;
+      }
+      default: {
+        const isArray = Array.isArray(input2);
+        let pluginHandled = false;
+        if (!isArray && plugins) {
+          for (const plugin of plugins) {
+            const pluginResult = plugin(input2);
+            if (Array.isArray(pluginResult)) {
+              pluginHandled = true;
+              const [pluginIdentifier, ...rest] = pluginResult;
+              str[index2] = `[${JSON.stringify(pluginIdentifier)}`;
+              if (rest.length > 0) {
+                str[index2] += `,${rest.map((v) => flatten.call(this, v)).join(",")}`;
+              }
+              str[index2] += "]";
+              break;
+            }
+          }
+        }
+        if (!pluginHandled) {
+          error = new Error("Cannot encode function or unexpected type");
+        }
+      }
+    }
+    if (error) {
+      let pluginHandled = false;
+      if (postPlugins) {
+        for (const plugin of postPlugins) {
+          const pluginResult = plugin(input2);
+          if (Array.isArray(pluginResult)) {
+            pluginHandled = true;
+            const [pluginIdentifier, ...rest] = pluginResult;
+            str[index2] = `[${JSON.stringify(pluginIdentifier)}`;
+            if (rest.length > 0) {
+              str[index2] += `,${rest.map((v) => flatten.call(this, v)).join(",")}`;
+            }
+            str[index2] += "]";
+            break;
+          }
+        }
+      }
+      if (!pluginHandled) {
+        throw error;
+      }
+    }
+  }
+}
+var objectProtoNames2 = Object.getOwnPropertyNames(Object.prototype).sort().join("\0");
+function isPlainObject2(thing) {
+  const proto = Object.getPrototypeOf(thing);
+  return proto === Object.prototype || proto === null || Object.getOwnPropertyNames(proto).sort().join("\0") === objectProtoNames2;
+}
+
+// vendor/turbo-stream-v2/unflatten.ts
+var globalObj = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : void 0;
+function unflatten(parsed) {
+  const { hydrated, values } = this;
+  if (typeof parsed === "number") return hydrate.call(this, parsed);
+  if (!Array.isArray(parsed) || !parsed.length) throw new SyntaxError();
+  const startIndex = values.length;
+  for (const value of parsed) {
+    values.push(value);
+  }
+  hydrated.length = values.length;
+  return hydrate.call(this, startIndex);
+}
+function hydrate(index) {
+  const { hydrated, values, deferred, plugins } = this;
+  let result;
+  const stack = [
+    [
+      index,
+      (v) => {
+        result = v;
+      }
+    ]
+  ];
+  let postRun = [];
+  while (stack.length > 0) {
+    const [index2, set] = stack.pop();
+    switch (index2) {
+      case UNDEFINED:
+        set(void 0);
+        continue;
+      case NULL:
+        set(null);
+        continue;
+      case NAN:
+        set(NaN);
+        continue;
+      case POSITIVE_INFINITY:
+        set(Infinity);
+        continue;
+      case NEGATIVE_INFINITY:
+        set(-Infinity);
+        continue;
+      case NEGATIVE_ZERO:
+        set(-0);
+        continue;
+    }
+    if (hydrated[index2]) {
+      set(hydrated[index2]);
+      continue;
+    }
+    const value = values[index2];
+    if (!value || typeof value !== "object") {
+      hydrated[index2] = value;
+      set(value);
+      continue;
+    }
+    if (Array.isArray(value)) {
+      if (typeof value[0] === "string") {
+        const [type, b, c] = value;
+        switch (type) {
+          case TYPE_DATE:
+            set(hydrated[index2] = new Date(b));
+            continue;
+          case TYPE_URL:
+            set(hydrated[index2] = new URL(b));
+            continue;
+          case TYPE_BIGINT:
+            set(hydrated[index2] = BigInt(b));
+            continue;
+          case TYPE_REGEXP:
+            set(hydrated[index2] = new RegExp(b, c));
+            continue;
+          case TYPE_SYMBOL:
+            set(hydrated[index2] = Symbol.for(b));
+            continue;
+          case TYPE_SET:
+            const newSet = /* @__PURE__ */ new Set();
+            hydrated[index2] = newSet;
+            for (let i = value.length - 1; i > 0; i--)
+              stack.push([
+                value[i],
+                (v) => {
+                  newSet.add(v);
+                }
+              ]);
+            set(newSet);
+            continue;
+          case TYPE_MAP:
+            const map = /* @__PURE__ */ new Map();
+            hydrated[index2] = map;
+            for (let i = value.length - 2; i > 0; i -= 2) {
+              const r = [];
+              stack.push([
+                value[i + 1],
+                (v) => {
+                  r[1] = v;
+                }
+              ]);
+              stack.push([
+                value[i],
+                (k) => {
+                  r[0] = k;
+                }
+              ]);
+              postRun.push(() => {
+                map.set(r[0], r[1]);
+              });
+            }
+            set(map);
+            continue;
+          case TYPE_NULL_OBJECT:
+            const obj = /* @__PURE__ */ Object.create(null);
+            hydrated[index2] = obj;
+            for (const key of Object.keys(b).reverse()) {
+              const r = [];
+              stack.push([
+                b[key],
+                (v) => {
+                  r[1] = v;
+                }
+              ]);
+              stack.push([
+                Number(key.slice(1)),
+                (k) => {
+                  r[0] = k;
+                }
+              ]);
+              postRun.push(() => {
+                obj[r[0]] = r[1];
+              });
+            }
+            set(obj);
+            continue;
+          case TYPE_PROMISE:
+            if (hydrated[b]) {
+              set(hydrated[index2] = hydrated[b]);
+            } else {
+              const d = new Deferred2();
+              deferred[b] = d;
+              set(hydrated[index2] = d.promise);
+            }
+            continue;
+          case TYPE_ERROR:
+            const [, message, errorType] = value;
+            let error = errorType && globalObj && globalObj[errorType] ? new globalObj[errorType](message) : new Error(message);
+            hydrated[index2] = error;
+            set(error);
+            continue;
+          case TYPE_PREVIOUS_RESOLVED:
+            set(hydrated[index2] = hydrated[b]);
+            continue;
+          default:
+            if (Array.isArray(plugins)) {
+              const r = [];
+              const vals = value.slice(1);
+              for (let i = 0; i < vals.length; i++) {
+                const v = vals[i];
+                stack.push([
+                  v,
+                  (v2) => {
+                    r[i] = v2;
+                  }
+                ]);
+              }
+              postRun.push(() => {
+                for (const plugin of plugins) {
+                  const result2 = plugin(value[0], ...r);
+                  if (result2) {
+                    set(hydrated[index2] = result2.value);
+                    return;
+                  }
+                }
+                throw new SyntaxError();
+              });
+              continue;
+            }
+            throw new SyntaxError();
+        }
+      } else {
+        const array = [];
+        hydrated[index2] = array;
+        for (let i = 0; i < value.length; i++) {
+          const n = value[i];
+          if (n !== HOLE) {
+            stack.push([
+              n,
+              (v) => {
+                array[i] = v;
+              }
+            ]);
+          }
+        }
+        set(array);
+        continue;
+      }
+    } else {
+      const object = {};
+      hydrated[index2] = object;
+      for (const key of Object.keys(value).reverse()) {
+        const r = [];
+        stack.push([
+          value[key],
+          (v) => {
+            r[1] = v;
+          }
+        ]);
+        stack.push([
+          Number(key.slice(1)),
+          (k) => {
+            r[0] = k;
+          }
+        ]);
+        postRun.push(() => {
+          object[r[0]] = r[1];
+        });
+      }
+      set(object);
+      continue;
+    }
+  }
+  while (postRun.length > 0) {
+    postRun.pop()();
+  }
+  return result;
+}
+
+// vendor/turbo-stream-v2/turbo-stream.ts
+async function decode(readable, options) {
+  const { plugins } = options ?? {};
+  const done = new Deferred2();
+  const reader = readable.pipeThrough(createLineSplittingTransform()).getReader();
+  const decoder = {
+    values: [],
+    hydrated: [],
+    deferred: {},
+    plugins
+  };
+  const decoded = await decodeInitial.call(decoder, reader);
+  let donePromise = done.promise;
+  if (decoded.done) {
+    done.resolve();
+  } else {
+    donePromise = decodeDeferred.call(decoder, reader).then(done.resolve).catch((reason) => {
+      for (const deferred of Object.values(decoder.deferred)) {
+        deferred.reject(reason);
+      }
+      done.reject(reason);
+    });
+  }
+  return {
+    done: donePromise.then(() => reader.closed),
+    value: decoded.value
+  };
+}
+async function decodeInitial(reader) {
+  const read = await reader.read();
+  if (!read.value) {
+    throw new SyntaxError();
+  }
+  let line;
+  try {
+    line = JSON.parse(read.value);
+  } catch (reason) {
+    throw new SyntaxError();
+  }
+  return {
+    done: read.done,
+    value: unflatten.call(this, line)
+  };
+}
+async function decodeDeferred(reader) {
+  let read = await reader.read();
+  while (!read.done) {
+    if (!read.value) continue;
+    const line = read.value;
+    switch (line[0]) {
+      case TYPE_PROMISE: {
+        const colonIndex = line.indexOf(":");
+        const deferredId = Number(line.slice(1, colonIndex));
+        const deferred = this.deferred[deferredId];
+        if (!deferred) {
+          throw new Error(`Deferred ID ${deferredId} not found in stream`);
+        }
+        const lineData = line.slice(colonIndex + 1);
+        let jsonLine;
+        try {
+          jsonLine = JSON.parse(lineData);
+        } catch (reason) {
+          throw new SyntaxError();
+        }
+        const value = unflatten.call(this, jsonLine);
+        deferred.resolve(value);
+        break;
+      }
+      case TYPE_ERROR: {
+        const colonIndex = line.indexOf(":");
+        const deferredId = Number(line.slice(1, colonIndex));
+        const deferred = this.deferred[deferredId];
+        if (!deferred) {
+          throw new Error(`Deferred ID ${deferredId} not found in stream`);
+        }
+        const lineData = line.slice(colonIndex + 1);
+        let jsonLine;
+        try {
+          jsonLine = JSON.parse(lineData);
+        } catch (reason) {
+          throw new SyntaxError();
+        }
+        const value = unflatten.call(this, jsonLine);
+        deferred.reject(value);
+        break;
+      }
+      default:
+        throw new SyntaxError();
+    }
+    read = await reader.read();
+  }
+}
+function encode(input, options) {
+  const { plugins, postPlugins, signal, onComplete } = options ?? {};
+  const encoder = {
+    deferred: {},
+    index: 0,
+    indices: /* @__PURE__ */ new Map(),
+    stringified: [],
+    plugins,
+    postPlugins,
+    signal
+  };
+  const textEncoder = new TextEncoder();
+  let lastSentIndex = 0;
+  const readable = new ReadableStream({
+    async start(controller) {
+      const id = flatten.call(encoder, input);
+      if (Array.isArray(id)) {
+        throw new Error("This should never happen");
+      }
+      if (id < 0) {
+        controller.enqueue(textEncoder.encode(`${id}
+`));
+      } else {
+        controller.enqueue(
+          textEncoder.encode(`[${encoder.stringified.join(",")}]
+`)
+        );
+        lastSentIndex = encoder.stringified.length - 1;
+      }
+      const seenPromises = /* @__PURE__ */ new WeakSet();
+      if (Object.keys(encoder.deferred).length) {
+        let raceDone;
+        const racePromise = new Promise((resolve, reject) => {
+          raceDone = resolve;
+          if (signal) {
+            const rejectPromise = () => reject(signal.reason || new Error("Signal was aborted."));
+            if (signal.aborted) {
+              rejectPromise();
+            } else {
+              signal.addEventListener("abort", (event) => {
+                rejectPromise();
+              });
+            }
+          }
+        });
+        while (Object.keys(encoder.deferred).length > 0) {
+          for (const [deferredId, deferred] of Object.entries(
+            encoder.deferred
+          )) {
+            if (seenPromises.has(deferred)) continue;
+            seenPromises.add(
+              // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
+              encoder.deferred[Number(deferredId)] = Promise.race([
+                racePromise,
+                deferred
+              ]).then(
+                (resolved) => {
+                  const id2 = flatten.call(encoder, resolved);
+                  if (Array.isArray(id2)) {
+                    controller.enqueue(
+                      textEncoder.encode(
+                        `${TYPE_PROMISE}${deferredId}:[["${TYPE_PREVIOUS_RESOLVED}",${id2[0]}]]
+`
+                      )
+                    );
+                    encoder.index++;
+                    lastSentIndex++;
+                  } else if (id2 < 0) {
+                    controller.enqueue(
+                      textEncoder.encode(
+                        `${TYPE_PROMISE}${deferredId}:${id2}
+`
+                      )
+                    );
+                  } else {
+                    const values = encoder.stringified.slice(lastSentIndex + 1).join(",");
+                    controller.enqueue(
+                      textEncoder.encode(
+                        `${TYPE_PROMISE}${deferredId}:[${values}]
+`
+                      )
+                    );
+                    lastSentIndex = encoder.stringified.length - 1;
+                  }
+                },
+                (reason) => {
+                  if (!reason || typeof reason !== "object" || !(reason instanceof Error)) {
+                    reason = new Error("An unknown error occurred");
+                  }
+                  const id2 = flatten.call(encoder, reason);
+                  if (Array.isArray(id2)) {
+                    controller.enqueue(
+                      textEncoder.encode(
+                        `${TYPE_ERROR}${deferredId}:[["${TYPE_PREVIOUS_RESOLVED}",${id2[0]}]]
+`
+                      )
+                    );
+                    encoder.index++;
+                    lastSentIndex++;
+                  } else if (id2 < 0) {
+                    controller.enqueue(
+                      textEncoder.encode(
+                        `${TYPE_ERROR}${deferredId}:${id2}
+`
+                      )
+                    );
+                  } else {
+                    const values = encoder.stringified.slice(lastSentIndex + 1).join(",");
+                    controller.enqueue(
+                      textEncoder.encode(
+                        `${TYPE_ERROR}${deferredId}:[${values}]
+`
+                      )
+                    );
+                    lastSentIndex = encoder.stringified.length - 1;
+                  }
+                }
+              ).finally(() => {
+                delete encoder.deferred[Number(deferredId)];
+              })
+            );
+          }
+          await Promise.race(Object.values(encoder.deferred));
+        }
+        raceDone();
+      }
+      await Promise.all(Object.values(encoder.deferred));
+      onComplete?.();
+      controller.close();
+    }
+  });
+  return readable;
+}
+
+// lib/dom/ssr/data.ts
+async function createRequestInit(request) {
+  let init = { signal: request.signal };
+  if (request.method !== "GET") {
+    init.method = request.method;
+    let contentType = request.headers.get("Content-Type");
+    if (contentType && /\bapplication\/json\b/.test(contentType)) {
+      init.headers = { "Content-Type": contentType };
+      init.body = JSON.stringify(await request.json());
+    } else if (contentType && /\btext\/plain\b/.test(contentType)) {
+      init.headers = { "Content-Type": contentType };
+      init.body = await request.text();
+    } else if (contentType && /\bapplication\/x-www-form-urlencoded\b/.test(contentType)) {
+      init.body = new URLSearchParams(await request.text());
+    } else {
+      init.body = await request.formData();
+    }
+  }
+  return init;
+}
+
+// lib/dom/ssr/markup.ts
+var ESCAPE_LOOKUP = {
+  "&": "\\u0026",
+  ">": "\\u003e",
+  "<": "\\u003c",
+  "\u2028": "\\u2028",
+  "\u2029": "\\u2029"
+};
+var ESCAPE_REGEX = /[&><\u2028\u2029]/g;
+function escapeHtml(html) {
+  return html.replace(ESCAPE_REGEX, (match) => ESCAPE_LOOKUP[match]);
+}
+
+// lib/dom/ssr/invariant.ts
+function invariant2(value, message) {
+  if (value === false || value === null || typeof value === "undefined") {
+    throw new Error(message);
+  }
+}
+
+// lib/dom/ssr/single-fetch.tsx
+var SingleFetchRedirectSymbol = Symbol("SingleFetchRedirect");
+var SingleFetchNoResultError = class extends Error {
+};
+var SINGLE_FETCH_REDIRECT_STATUS = 202;
+var NO_BODY_STATUS_CODES = /* @__PURE__ */ new Set([100, 101, 204, 205]);
+function StreamTransfer({
+  context,
+  identifier,
+  reader,
+  textDecoder,
+  nonce
+}) {
+  if (!context.renderMeta || !context.renderMeta.didRenderScripts) {
+    return null;
+  }
+  if (!context.renderMeta.streamCache) {
+    context.renderMeta.streamCache = {};
+  }
+  let { streamCache } = context.renderMeta;
+  let promise = streamCache[identifier];
+  if (!promise) {
+    promise = streamCache[identifier] = reader.read().then((result) => {
+      streamCache[identifier].result = {
+        done: result.done,
+        value: textDecoder.decode(result.value, { stream: true })
+      };
+    }).catch((e) => {
+      streamCache[identifier].error = e;
+    });
+  }
+  if (promise.error) {
+    throw promise.error;
+  }
+  if (promise.result === void 0) {
+    throw promise;
+  }
+  let { done, value } = promise.result;
+  let scriptTag = value ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "script",
+    {
+      nonce,
+      dangerouslySetInnerHTML: {
+        __html: `window.__reactRouterContext.streamController.enqueue(${escapeHtml(
+          JSON.stringify(value)
+        )});`
+      }
+    }
+  ) : null;
+  if (done) {
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, scriptTag, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      "script",
+      {
+        nonce,
+        dangerouslySetInnerHTML: {
+          __html: `window.__reactRouterContext.streamController.close();`
+        }
+      }
+    ));
+  } else {
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, scriptTag, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      StreamTransfer,
+      {
+        context,
+        identifier: identifier + 1,
+        reader,
+        textDecoder,
+        nonce
+      }
+    )));
+  }
+}
+function getTurboStreamSingleFetchDataStrategy(getRouter, manifest, routeModules, ssr, basename, trailingSlashAware) {
+  let dataStrategy = getSingleFetchDataStrategyImpl(
+    getRouter,
+    (match) => {
+      let manifestRoute = manifest.routes[match.route.id];
+      invariant2(manifestRoute, "Route not found in manifest");
+      let routeModule = routeModules[match.route.id];
+      return {
+        hasLoader: manifestRoute.hasLoader,
+        hasClientLoader: manifestRoute.hasClientLoader,
+        hasShouldRevalidate: Boolean(routeModule?.shouldRevalidate)
+      };
+    },
+    fetchAndDecodeViaTurboStream,
+    ssr,
+    basename,
+    trailingSlashAware
+  );
+  return async (args) => args.runClientMiddleware(dataStrategy);
+}
+function getSingleFetchDataStrategyImpl(getRouter, getRouteInfo, fetchAndDecode, ssr, basename, trailingSlashAware, shouldAllowOptOut = () => true) {
+  return async (args) => {
+    let { request, matches, fetcherKey } = args;
+    let router = getRouter();
+    if (request.method !== "GET") {
+      return singleFetchActionStrategy(
+        args,
+        fetchAndDecode,
+        basename,
+        trailingSlashAware
+      );
+    }
+    let foundRevalidatingServerLoader = matches.some((m) => {
+      let { hasLoader, hasClientLoader } = getRouteInfo(m);
+      return m.shouldCallHandler() && hasLoader && !hasClientLoader;
+    });
+    if (!ssr && !foundRevalidatingServerLoader) {
+      return nonSsrStrategy(
+        args,
+        getRouteInfo,
+        fetchAndDecode,
+        basename,
+        trailingSlashAware
+      );
+    }
+    if (fetcherKey) {
+      return singleFetchLoaderFetcherStrategy(
+        args,
+        fetchAndDecode,
+        basename,
+        trailingSlashAware
+      );
+    }
+    return singleFetchLoaderNavigationStrategy(
+      args,
+      router,
+      getRouteInfo,
+      fetchAndDecode,
+      ssr,
+      basename,
+      trailingSlashAware,
+      shouldAllowOptOut
+    );
+  };
+}
+async function singleFetchActionStrategy(args, fetchAndDecode, basename, trailingSlashAware) {
+  let actionMatch = args.matches.find((m) => m.shouldCallHandler());
+  invariant2(actionMatch, "No action match found");
+  let actionStatus = void 0;
+  let result = await actionMatch.resolve(async (handler) => {
+    let result2 = await handler(async () => {
+      let { data: data2, status } = await fetchAndDecode(
+        args,
+        basename,
+        trailingSlashAware,
+        [actionMatch.route.id]
+      );
+      actionStatus = status;
+      return unwrapSingleFetchResult(data2, actionMatch.route.id);
+    });
+    return result2;
+  });
+  if (isResponse(result.result) || isRouteErrorResponse(result.result) || isDataWithResponseInit(result.result)) {
+    return { [actionMatch.route.id]: result };
+  }
+  return {
+    [actionMatch.route.id]: {
+      type: result.type,
+      result: data(result.result, actionStatus)
+    }
+  };
+}
+async function nonSsrStrategy(args, getRouteInfo, fetchAndDecode, basename, trailingSlashAware) {
+  let matchesToLoad = args.matches.filter((m) => m.shouldCallHandler());
+  let results = {};
+  await Promise.all(
+    matchesToLoad.map(
+      (m) => m.resolve(async (handler) => {
+        try {
+          let { hasClientLoader } = getRouteInfo(m);
+          let routeId = m.route.id;
+          let result = hasClientLoader ? await handler(async () => {
+            let { data: data2 } = await fetchAndDecode(
+              args,
+              basename,
+              trailingSlashAware,
+              [routeId]
+            );
+            return unwrapSingleFetchResult(data2, routeId);
+          }) : await handler();
+          results[m.route.id] = { type: "data", result };
+        } catch (e) {
+          results[m.route.id] = { type: "error", result: e };
+        }
+      })
+    )
+  );
+  return results;
+}
+async function singleFetchLoaderNavigationStrategy(args, router, getRouteInfo, fetchAndDecode, ssr, basename, trailingSlashAware, shouldAllowOptOut = () => true) {
+  let routesParams = /* @__PURE__ */ new Set();
+  let foundOptOutRoute = false;
+  let routeDfds = args.matches.map(() => createDeferred2());
+  let singleFetchDfd = createDeferred2();
+  let results = {};
+  let resolvePromise = Promise.all(
+    args.matches.map(
+      async (m, i) => m.resolve(async (handler) => {
+        routeDfds[i].resolve();
+        let routeId = m.route.id;
+        let { hasLoader, hasClientLoader, hasShouldRevalidate } = getRouteInfo(m);
+        let defaultShouldRevalidate = !m.shouldRevalidateArgs || m.shouldRevalidateArgs.actionStatus == null || m.shouldRevalidateArgs.actionStatus < 400;
+        let shouldCall = m.shouldCallHandler(defaultShouldRevalidate);
+        if (!shouldCall) {
+          foundOptOutRoute || (foundOptOutRoute = m.shouldRevalidateArgs != null && // This is a revalidation,
+          hasLoader && // for a route with a server loader,
+          hasShouldRevalidate === true);
+          return;
+        }
+        if (shouldAllowOptOut(m) && hasClientLoader) {
+          if (hasLoader) {
+            foundOptOutRoute = true;
+          }
+          try {
+            let result = await handler(async () => {
+              let { data: data2 } = await fetchAndDecode(
+                args,
+                basename,
+                trailingSlashAware,
+                [routeId]
+              );
+              return unwrapSingleFetchResult(data2, routeId);
+            });
+            results[routeId] = { type: "data", result };
+          } catch (e) {
+            results[routeId] = { type: "error", result: e };
+          }
+          return;
+        }
+        if (hasLoader) {
+          routesParams.add(routeId);
+        }
+        try {
+          let result = await handler(async () => {
+            let data2 = await singleFetchDfd.promise;
+            return unwrapSingleFetchResult(data2, routeId);
+          });
+          results[routeId] = { type: "data", result };
+        } catch (e) {
+          results[routeId] = { type: "error", result: e };
+        }
+      })
+    )
+  );
+  await Promise.all(routeDfds.map((d) => d.promise));
+  let isInitialLoad = !router.state.initialized && router.state.navigation.state === "idle";
+  if ((isInitialLoad || routesParams.size === 0) && !window.__reactRouterHdrActive) {
+    singleFetchDfd.resolve({ routes: {} });
+  } else {
+    let targetRoutes = ssr && foundOptOutRoute && routesParams.size > 0 ? [...routesParams.keys()] : void 0;
+    try {
+      let data2 = await fetchAndDecode(
+        args,
+        basename,
+        trailingSlashAware,
+        targetRoutes
+      );
+      singleFetchDfd.resolve(data2.data);
+    } catch (e) {
+      singleFetchDfd.reject(e);
+    }
+  }
+  await resolvePromise;
+  await bubbleMiddlewareErrors(
+    singleFetchDfd.promise,
+    args.matches,
+    routesParams,
+    results
+  );
+  return results;
+}
+async function bubbleMiddlewareErrors(singleFetchPromise, matches, routesParams, results) {
+  try {
+    let middlewareError;
+    let fetchedData = await singleFetchPromise;
+    if ("routes" in fetchedData) {
+      for (let match of matches) {
+        if (match.route.id in fetchedData.routes) {
+          let routeResult = fetchedData.routes[match.route.id];
+          if ("error" in routeResult) {
+            middlewareError = routeResult.error;
+            if (results[match.route.id]?.result == null) {
+              results[match.route.id] = {
+                type: "error",
+                result: middlewareError
+              };
+            }
+            break;
+          }
+        }
+      }
+    }
+    if (middlewareError !== void 0) {
+      Array.from(routesParams.values()).forEach((routeId) => {
+        if (results[routeId].result instanceof SingleFetchNoResultError) {
+          results[routeId].result = middlewareError;
+        }
+      });
+    }
+  } catch (e) {
+  }
+}
+async function singleFetchLoaderFetcherStrategy(args, fetchAndDecode, basename, trailingSlashAware) {
+  let fetcherMatch = args.matches.find((m) => m.shouldCallHandler());
+  invariant2(fetcherMatch, "No fetcher match found");
+  let routeId = fetcherMatch.route.id;
+  let result = await fetcherMatch.resolve(
+    async (handler) => handler(async () => {
+      let { data: data2 } = await fetchAndDecode(args, basename, trailingSlashAware, [
+        routeId
+      ]);
+      return unwrapSingleFetchResult(data2, routeId);
+    })
+  );
+  return { [fetcherMatch.route.id]: result };
+}
+function stripIndexParam(url) {
+  let indexValues = url.searchParams.getAll("index");
+  url.searchParams.delete("index");
+  let indexValuesToKeep = [];
+  for (let indexValue of indexValues) {
+    if (indexValue) {
+      indexValuesToKeep.push(indexValue);
+    }
+  }
+  for (let toKeep of indexValuesToKeep) {
+    url.searchParams.append("index", toKeep);
+  }
+  return url;
+}
+function singleFetchUrl(reqUrl, basename, trailingSlashAware, extension) {
+  let url = typeof reqUrl === "string" ? new URL(
+    reqUrl,
+    // This can be called during the SSR flow via PrefetchPageLinksImpl so
+    // don't assume window is available
+    typeof window === "undefined" ? "server://singlefetch/" : window.location.origin
+  ) : reqUrl;
+  if (trailingSlashAware) {
+    if (url.pathname.endsWith("/")) {
+      url.pathname = `${url.pathname}_.${extension}`;
+    } else {
+      url.pathname = `${url.pathname}.${extension}`;
+    }
+  } else {
+    if (url.pathname === "/") {
+      url.pathname = `_root.${extension}`;
+    } else if (basename && stripBasename(url.pathname, basename) === "/") {
+      url.pathname = `${basename.replace(/\/$/, "")}/_root.${extension}`;
+    } else {
+      url.pathname = `${url.pathname.replace(/\/$/, "")}.${extension}`;
+    }
+  }
+  return url;
+}
+async function fetchAndDecodeViaTurboStream(args, basename, trailingSlashAware, targetRoutes) {
+  let { request } = args;
+  let url = singleFetchUrl(request.url, basename, trailingSlashAware, "data");
+  if (request.method === "GET") {
+    url = stripIndexParam(url);
+    if (targetRoutes) {
+      url.searchParams.set("_routes", targetRoutes.join(","));
+    }
+  }
+  let res = await fetch(url, await createRequestInit(request));
+  if (res.status >= 400 && !res.headers.has("X-Remix-Response")) {
+    throw new ErrorResponseImpl(res.status, res.statusText, await res.text());
+  }
+  if (res.status === 204 && res.headers.has("X-Remix-Redirect")) {
+    return {
+      status: SINGLE_FETCH_REDIRECT_STATUS,
+      data: {
+        redirect: {
+          redirect: res.headers.get("X-Remix-Redirect"),
+          status: Number(res.headers.get("X-Remix-Status") || "302"),
+          revalidate: res.headers.get("X-Remix-Revalidate") === "true",
+          reload: res.headers.get("X-Remix-Reload-Document") === "true",
+          replace: res.headers.get("X-Remix-Replace") === "true"
+        }
+      }
+    };
+  }
+  if (NO_BODY_STATUS_CODES.has(res.status)) {
+    let routes = {};
+    if (targetRoutes && request.method !== "GET") {
+      routes[targetRoutes[0]] = { data: void 0 };
+    }
+    return {
+      status: res.status,
+      data: { routes }
+    };
+  }
+  invariant2(res.body, "No response body to decode");
+  try {
+    let decoded = await decodeViaTurboStream(res.body, window);
+    let data2;
+    if (request.method === "GET") {
+      let typed = decoded.value;
+      if (SingleFetchRedirectSymbol in typed) {
+        data2 = { redirect: typed[SingleFetchRedirectSymbol] };
+      } else {
+        data2 = { routes: typed };
+      }
+    } else {
+      let typed = decoded.value;
+      let routeId = targetRoutes?.[0];
+      invariant2(routeId, "No routeId found for single fetch call decoding");
+      if ("redirect" in typed) {
+        data2 = { redirect: typed };
+      } else {
+        data2 = { routes: { [routeId]: typed } };
+      }
+    }
+    return { status: res.status, data: data2 };
+  } catch (e) {
+    throw new Error("Unable to decode turbo-stream response");
+  }
+}
+function decodeViaTurboStream(body, global) {
+  return decode(body, {
+    plugins: [
+      (type, ...rest) => {
+        if (type === "SanitizedError") {
+          let [name, message, stack] = rest;
+          let Constructor = Error;
+          if (name && name in global && typeof global[name] === "function") {
+            Constructor = global[name];
+          }
+          let error = new Constructor(message);
+          error.stack = stack;
+          return { value: error };
+        }
+        if (type === "ErrorResponse") {
+          let [data2, status, statusText] = rest;
+          return {
+            value: new ErrorResponseImpl(status, statusText, data2)
+          };
+        }
+        if (type === "SingleFetchRedirect") {
+          return { value: { [SingleFetchRedirectSymbol]: rest[0] } };
+        }
+        if (type === "SingleFetchClassInstance") {
+          return { value: rest[0] };
+        }
+        if (type === "SingleFetchFallback") {
+          return { value: void 0 };
+        }
+      }
+    ]
+  });
+}
+function unwrapSingleFetchResult(result, routeId) {
+  if ("redirect" in result) {
+    let {
+      redirect: location,
+      revalidate,
+      reload,
+      replace: replace2,
+      status
+    } = result.redirect;
+    throw redirect(location, {
+      status,
+      headers: {
+        // Three R's of redirecting (lol Veep)
+        ...revalidate ? { "X-Remix-Revalidate": "yes" } : null,
+        ...reload ? { "X-Remix-Reload-Document": "yes" } : null,
+        ...replace2 ? { "X-Remix-Replace": "yes" } : null
+      }
+    });
+  }
+  let routeResult = result.routes[routeId];
+  if (routeResult == null) {
+    throw new SingleFetchNoResultError(
+      `No result found for routeId "${routeId}"`
+    );
+  } else if ("error" in routeResult) {
+    throw routeResult.error;
+  } else if ("data" in routeResult) {
+    return routeResult.data;
+  } else {
+    throw new Error(`Invalid response found for routeId "${routeId}"`);
+  }
+}
+function createDeferred2() {
+  let resolve;
+  let reject;
+  let promise = new Promise((res, rej) => {
+    resolve = async (val) => {
+      res(val);
+      try {
+        await promise;
+      } catch (e) {
+      }
+    };
+    reject = async (error) => {
+      rej(error);
+      try {
+        await promise;
+      } catch (e) {
+      }
+    };
+  });
+  return {
+    promise,
+    //@ts-ignore
+    resolve,
+    //@ts-ignore
+    reject
+  };
+}
+
+// lib/dom/ssr/errorBoundaries.tsx
+
+
+// lib/dom/ssr/components.tsx
+
+
+// lib/dom/ssr/routeModules.ts
+async function loadRouteModule(route, routeModulesCache) {
+  if (route.id in routeModulesCache) {
+    return routeModulesCache[route.id];
+  }
+  try {
+    let routeModule = await import(
+      /* @vite-ignore */
+      /* webpackIgnore: true */
+      route.module
+    );
+    routeModulesCache[route.id] = routeModule;
+    return routeModule;
+  } catch (error) {
+    console.error(
+      `Error loading route module \`${route.module}\`, reloading page...`
+    );
+    console.error(error);
+    if (window.__reactRouterContext && window.__reactRouterContext.isSpaMode && // @ts-expect-error
+    /* unsupported import.meta.hot */ undefined) // removed by dead control flow
+{}
+    window.location.reload();
+    return new Promise(() => {
+    });
+  }
+}
+
+// lib/dom/ssr/links.ts
+function getKeyedLinksForMatches(matches, routeModules, manifest) {
+  let descriptors = matches.map((match) => {
+    let module = routeModules[match.route.id];
+    let route = manifest.routes[match.route.id];
+    return [
+      route && route.css ? route.css.map((href) => ({ rel: "stylesheet", href })) : [],
+      module?.links?.() || []
+    ];
+  }).flat(2);
+  let preloads = getModuleLinkHrefs(matches, manifest);
+  return dedupeLinkDescriptors(descriptors, preloads);
+}
+function getRouteCssDescriptors(route) {
+  if (!route.css) return [];
+  return route.css.map((href) => ({ rel: "stylesheet", href }));
+}
+async function prefetchRouteCss(route) {
+  if (!route.css) return;
+  let descriptors = getRouteCssDescriptors(route);
+  await Promise.all(descriptors.map(prefetchStyleLink));
+}
+async function prefetchStyleLinks(route, routeModule) {
+  if (!route.css && !routeModule.links || !isPreloadSupported()) return;
+  let descriptors = [];
+  if (route.css) {
+    descriptors.push(...getRouteCssDescriptors(route));
+  }
+  if (routeModule.links) {
+    descriptors.push(...routeModule.links());
+  }
+  if (descriptors.length === 0) return;
+  let styleLinks = [];
+  for (let descriptor of descriptors) {
+    if (!isPageLinkDescriptor(descriptor) && descriptor.rel === "stylesheet") {
+      styleLinks.push({
+        ...descriptor,
+        rel: "preload",
+        as: "style"
+      });
+    }
+  }
+  await Promise.all(styleLinks.map(prefetchStyleLink));
+}
+async function prefetchStyleLink(descriptor) {
+  return new Promise((resolve) => {
+    if (descriptor.media && !window.matchMedia(descriptor.media).matches || document.querySelector(
+      `link[rel="stylesheet"][href="${descriptor.href}"]`
+    )) {
+      return resolve();
+    }
+    let link = document.createElement("link");
+    Object.assign(link, descriptor);
+    function removeLink() {
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
+    }
+    link.onload = () => {
+      removeLink();
+      resolve();
+    };
+    link.onerror = () => {
+      removeLink();
+      resolve();
+    };
+    document.head.appendChild(link);
+  });
+}
+function isPageLinkDescriptor(object) {
+  return object != null && typeof object.page === "string";
+}
+function isHtmlLinkDescriptor(object) {
+  if (object == null) {
+    return false;
+  }
+  if (object.href == null) {
+    return object.rel === "preload" && typeof object.imageSrcSet === "string" && typeof object.imageSizes === "string";
+  }
+  return typeof object.rel === "string" && typeof object.href === "string";
+}
+async function getKeyedPrefetchLinks(matches, manifest, routeModules) {
+  let links = await Promise.all(
+    matches.map(async (match) => {
+      let route = manifest.routes[match.route.id];
+      if (route) {
+        let mod = await loadRouteModule(route, routeModules);
+        return mod.links ? mod.links() : [];
+      }
+      return [];
+    })
+  );
+  return dedupeLinkDescriptors(
+    links.flat(1).filter(isHtmlLinkDescriptor).filter((link) => link.rel === "stylesheet" || link.rel === "preload").map(
+      (link) => link.rel === "stylesheet" ? { ...link, rel: "prefetch", as: "style" } : { ...link, rel: "prefetch" }
+    )
+  );
+}
+function getNewMatchesForLinks(page, nextMatches, currentMatches, manifest, location, mode) {
+  let isNew = (match, index) => {
+    if (!currentMatches[index]) return true;
+    return match.route.id !== currentMatches[index].route.id;
+  };
+  let matchPathChanged = (match, index) => {
+    return (
+      // param change, /users/123 -> /users/456
+      currentMatches[index].pathname !== match.pathname || // splat param changed, which is not present in match.path
+      // e.g. /files/images/avatar.jpg -> files/finances.xls
+      currentMatches[index].route.path?.endsWith("*") && currentMatches[index].params["*"] !== match.params["*"]
+    );
+  };
+  if (mode === "assets") {
+    return nextMatches.filter(
+      (match, index) => isNew(match, index) || matchPathChanged(match, index)
+    );
+  }
+  if (mode === "data") {
+    return nextMatches.filter((match, index) => {
+      let manifestRoute = manifest.routes[match.route.id];
+      if (!manifestRoute || !manifestRoute.hasLoader) {
+        return false;
+      }
+      if (isNew(match, index) || matchPathChanged(match, index)) {
+        return true;
+      }
+      if (match.route.shouldRevalidate) {
+        let routeChoice = match.route.shouldRevalidate({
+          currentUrl: new URL(
+            location.pathname + location.search + location.hash,
+            window.origin
+          ),
+          currentParams: currentMatches[0]?.params || {},
+          nextUrl: new URL(page, window.origin),
+          nextParams: match.params,
+          defaultShouldRevalidate: true
+        });
+        if (typeof routeChoice === "boolean") {
+          return routeChoice;
+        }
+      }
+      return true;
+    });
+  }
+  return [];
+}
+function getModuleLinkHrefs(matches, manifest, { includeHydrateFallback } = {}) {
+  return dedupeHrefs(
+    matches.map((match) => {
+      let route = manifest.routes[match.route.id];
+      if (!route) return [];
+      let hrefs = [route.module];
+      if (route.clientActionModule) {
+        hrefs = hrefs.concat(route.clientActionModule);
+      }
+      if (route.clientLoaderModule) {
+        hrefs = hrefs.concat(route.clientLoaderModule);
+      }
+      if (includeHydrateFallback && route.hydrateFallbackModule) {
+        hrefs = hrefs.concat(route.hydrateFallbackModule);
+      }
+      if (route.imports) {
+        hrefs = hrefs.concat(route.imports);
+      }
+      return hrefs;
+    }).flat(1)
+  );
+}
+function dedupeHrefs(hrefs) {
+  return [...new Set(hrefs)];
+}
+function sortKeys(obj) {
+  let sorted = {};
+  let keys = Object.keys(obj).sort();
+  for (let key of keys) {
+    sorted[key] = obj[key];
+  }
+  return sorted;
+}
+function dedupeLinkDescriptors(descriptors, preloads) {
+  let set = /* @__PURE__ */ new Set();
+  let preloadsSet = new Set(preloads);
+  return descriptors.reduce((deduped, descriptor) => {
+    let alreadyModulePreload = preloads && !isPageLinkDescriptor(descriptor) && descriptor.as === "script" && descriptor.href && preloadsSet.has(descriptor.href);
+    if (alreadyModulePreload) {
+      return deduped;
+    }
+    let key = JSON.stringify(sortKeys(descriptor));
+    if (!set.has(key)) {
+      set.add(key);
+      deduped.push({ key, link: descriptor });
+    }
+    return deduped;
+  }, []);
+}
+var _isPreloadSupported;
+function isPreloadSupported() {
+  if (_isPreloadSupported !== void 0) {
+    return _isPreloadSupported;
+  }
+  let el = document.createElement("link");
+  _isPreloadSupported = el.relList.supports("preload");
+  el = null;
+  return _isPreloadSupported;
+}
+
+// lib/dom/ssr/fog-of-war.ts
+
+
+// lib/dom/ssr/routes.tsx
+
+
+// lib/dom/ssr/fallback.tsx
+
+function RemixRootDefaultHydrateFallback() {
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(BoundaryShell, { title: "Loading...", renderScripts: true }, ENABLE_DEV_WARNINGS ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "script",
+    {
+      dangerouslySetInnerHTML: {
+        __html: `
+              console.log(
+                "\u{1F4BF} Hey developer \u{1F44B}. You can provide a way better UX than this " +
+                "when your app is loading JS modules and/or running \`clientLoader\` " +
+                "functions. Check out https://reactrouter.com/start/framework/route-module#hydratefallback " +
+                "for more information."
+              );
+            `
+      }
+    }
+  ) : null);
+}
+
+// lib/dom/ssr/routes.tsx
+function groupRoutesByParentId(manifest) {
+  let routes = {};
+  Object.values(manifest).forEach((route) => {
+    if (route) {
+      let parentId = route.parentId || "";
+      if (!routes[parentId]) {
+        routes[parentId] = [];
+      }
+      routes[parentId].push(route);
+    }
+  });
+  return routes;
+}
+function getRouteComponents(route, routeModule, isSpaMode) {
+  let Component4 = getRouteModuleComponent(routeModule);
+  let HydrateFallback = routeModule.HydrateFallback && (!isSpaMode || route.id === "root") ? routeModule.HydrateFallback : route.id === "root" ? RemixRootDefaultHydrateFallback : void 0;
+  let ErrorBoundary = routeModule.ErrorBoundary ? routeModule.ErrorBoundary : route.id === "root" ? () => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(RemixRootDefaultErrorBoundary, { error: useRouteError() }) : void 0;
+  if (route.id === "root" && routeModule.Layout) {
+    return {
+      ...Component4 ? {
+        element: /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(routeModule.Layout, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component4, null))
+      } : { Component: Component4 },
+      ...ErrorBoundary ? {
+        errorElement: /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(routeModule.Layout, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ErrorBoundary, null))
+      } : { ErrorBoundary },
+      ...HydrateFallback ? {
+        hydrateFallbackElement: /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(routeModule.Layout, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(HydrateFallback, null))
+      } : { HydrateFallback }
+    };
+  }
+  return { Component: Component4, ErrorBoundary, HydrateFallback };
+}
+function createServerRoutes(manifest, routeModules, future, isSpaMode, parentId = "", routesByParentId = groupRoutesByParentId(manifest), spaModeLazyPromise = Promise.resolve({ Component: () => null })) {
+  return (routesByParentId[parentId] || []).map((route) => {
+    let routeModule = routeModules[route.id];
+    invariant2(
+      routeModule,
+      "No `routeModule` available to create server routes"
+    );
+    let dataRoute = {
+      ...getRouteComponents(route, routeModule, isSpaMode),
+      caseSensitive: route.caseSensitive,
+      id: route.id,
+      index: route.index,
+      path: route.path,
+      handle: routeModule.handle,
+      // For SPA Mode, all routes are lazy except root.  However we tell the
+      // router root is also lazy here too since we don't need a full
+      // implementation - we just need a `lazy` prop to tell the RR rendering
+      // where to stop which is always at the root route in SPA mode
+      lazy: isSpaMode ? () => spaModeLazyPromise : void 0,
+      // For partial hydration rendering, we need to indicate when the route
+      // has a loader/clientLoader, but it won't ever be called during the static
+      // render, so just give it a no-op function so we can render down to the
+      // proper fallback
+      loader: route.hasLoader || route.hasClientLoader ? () => null : void 0
+      // We don't need middleware/action/shouldRevalidate on these routes since
+      // they're for a static render
+    };
+    let children = createServerRoutes(
+      manifest,
+      routeModules,
+      future,
+      isSpaMode,
+      route.id,
+      routesByParentId,
+      spaModeLazyPromise
+    );
+    if (children.length > 0) dataRoute.children = children;
+    return dataRoute;
+  });
+}
+function createClientRoutesWithHMRRevalidationOptOut(needsRevalidation, manifest, routeModulesCache, initialState, ssr, isSpaMode) {
+  return createClientRoutes(
+    manifest,
+    routeModulesCache,
+    initialState,
+    ssr,
+    isSpaMode,
+    "",
+    groupRoutesByParentId(manifest),
+    needsRevalidation
+  );
+}
+function preventInvalidServerHandlerCall(type, route) {
+  if (type === "loader" && !route.hasLoader || type === "action" && !route.hasAction) {
+    let fn = type === "action" ? "serverAction()" : "serverLoader()";
+    let msg = `You are trying to call ${fn} on a route that does not have a server ${type} (routeId: "${route.id}")`;
+    console.error(msg);
+    throw new ErrorResponseImpl(400, "Bad Request", new Error(msg), true);
+  }
+}
+function noActionDefinedError(type, routeId) {
+  let article = type === "clientAction" ? "a" : "an";
+  let msg = `Route "${routeId}" does not have ${article} ${type}, but you are trying to submit to it. To fix this, please add ${article} \`${type}\` function to the route`;
+  console.error(msg);
+  throw new ErrorResponseImpl(405, "Method Not Allowed", new Error(msg), true);
+}
+function createClientRoutes(manifest, routeModulesCache, initialState, ssr, isSpaMode, parentId = "", routesByParentId = groupRoutesByParentId(manifest), needsRevalidation) {
+  return (routesByParentId[parentId] || []).map((route) => {
+    let routeModule = routeModulesCache[route.id];
+    function fetchServerHandler(singleFetch) {
+      invariant2(
+        typeof singleFetch === "function",
+        "No single fetch function available for route handler"
+      );
+      return singleFetch();
+    }
+    function fetchServerLoader(singleFetch) {
+      if (!route.hasLoader) return Promise.resolve(null);
+      return fetchServerHandler(singleFetch);
+    }
+    function fetchServerAction(singleFetch) {
+      if (!route.hasAction) {
+        throw noActionDefinedError("action", route.id);
+      }
+      return fetchServerHandler(singleFetch);
+    }
+    function prefetchModule(modulePath) {
+      import(
+        /* @vite-ignore */
+        /* webpackIgnore: true */
+        modulePath
+      );
+    }
+    function prefetchRouteModuleChunks(route2) {
+      if (route2.clientActionModule) {
+        prefetchModule(route2.clientActionModule);
+      }
+      if (route2.clientLoaderModule) {
+        prefetchModule(route2.clientLoaderModule);
+      }
+    }
+    async function prefetchStylesAndCallHandler(handler) {
+      let cachedModule = routeModulesCache[route.id];
+      let linkPrefetchPromise = cachedModule ? prefetchStyleLinks(route, cachedModule) : Promise.resolve();
+      try {
+        return handler();
+      } finally {
+        await linkPrefetchPromise;
+      }
+    }
+    let dataRoute = {
+      id: route.id,
+      index: route.index,
+      path: route.path
+    };
+    if (routeModule) {
+      Object.assign(dataRoute, {
+        ...dataRoute,
+        ...getRouteComponents(route, routeModule, isSpaMode),
+        middleware: routeModule.clientMiddleware,
+        handle: routeModule.handle,
+        shouldRevalidate: getShouldRevalidateFunction(
+          dataRoute.path,
+          routeModule,
+          route,
+          ssr,
+          needsRevalidation
+        )
+      });
+      let hasInitialData = initialState && initialState.loaderData && route.id in initialState.loaderData;
+      let initialData = hasInitialData ? initialState?.loaderData?.[route.id] : void 0;
+      let hasInitialError = initialState && initialState.errors && route.id in initialState.errors;
+      let initialError = hasInitialError ? initialState?.errors?.[route.id] : void 0;
+      let isHydrationRequest = needsRevalidation == null && (routeModule.clientLoader?.hydrate === true || !route.hasLoader);
+      dataRoute.loader = async ({ request, params, context, unstable_pattern }, singleFetch) => {
+        try {
+          let result = await prefetchStylesAndCallHandler(async () => {
+            invariant2(
+              routeModule,
+              "No `routeModule` available for critical-route loader"
+            );
+            if (!routeModule.clientLoader) {
+              return fetchServerLoader(singleFetch);
+            }
+            return routeModule.clientLoader({
+              request,
+              params,
+              context,
+              unstable_pattern,
+              async serverLoader() {
+                preventInvalidServerHandlerCall("loader", route);
+                if (isHydrationRequest) {
+                  if (hasInitialData) {
+                    return initialData;
+                  }
+                  if (hasInitialError) {
+                    throw initialError;
+                  }
+                }
+                return fetchServerLoader(singleFetch);
+              }
+            });
+          });
+          return result;
+        } finally {
+          isHydrationRequest = false;
+        }
+      };
+      dataRoute.loader.hydrate = shouldHydrateRouteLoader(
+        route.id,
+        routeModule.clientLoader,
+        route.hasLoader,
+        isSpaMode
+      );
+      dataRoute.action = ({ request, params, context, unstable_pattern }, singleFetch) => {
+        return prefetchStylesAndCallHandler(async () => {
+          invariant2(
+            routeModule,
+            "No `routeModule` available for critical-route action"
+          );
+          if (!routeModule.clientAction) {
+            if (isSpaMode) {
+              throw noActionDefinedError("clientAction", route.id);
+            }
+            return fetchServerAction(singleFetch);
+          }
+          return routeModule.clientAction({
+            request,
+            params,
+            context,
+            unstable_pattern,
+            async serverAction() {
+              preventInvalidServerHandlerCall("action", route);
+              return fetchServerAction(singleFetch);
+            }
+          });
+        });
+      };
+    } else {
+      if (!route.hasClientLoader) {
+        dataRoute.loader = (_, singleFetch) => prefetchStylesAndCallHandler(() => {
+          return fetchServerLoader(singleFetch);
+        });
+      }
+      if (!route.hasClientAction) {
+        dataRoute.action = (_, singleFetch) => prefetchStylesAndCallHandler(() => {
+          if (isSpaMode) {
+            throw noActionDefinedError("clientAction", route.id);
+          }
+          return fetchServerAction(singleFetch);
+        });
+      }
+      let lazyRoutePromise;
+      async function getLazyRoute() {
+        if (lazyRoutePromise) {
+          return await lazyRoutePromise;
+        }
+        lazyRoutePromise = (async () => {
+          if (route.clientLoaderModule || route.clientActionModule) {
+            await new Promise((resolve) => setTimeout(resolve, 0));
+          }
+          let routeModulePromise = loadRouteModuleWithBlockingLinks(
+            route,
+            routeModulesCache
+          );
+          prefetchRouteModuleChunks(route);
+          return await routeModulePromise;
+        })();
+        return await lazyRoutePromise;
+      }
+      dataRoute.lazy = {
+        loader: route.hasClientLoader ? async () => {
+          let { clientLoader } = route.clientLoaderModule ? await import(
+            /* @vite-ignore */
+            /* webpackIgnore: true */
+            route.clientLoaderModule
+          ) : await getLazyRoute();
+          invariant2(clientLoader, "No `clientLoader` export found");
+          return (args, singleFetch) => clientLoader({
+            ...args,
+            async serverLoader() {
+              preventInvalidServerHandlerCall("loader", route);
+              return fetchServerLoader(singleFetch);
+            }
+          });
+        } : void 0,
+        action: route.hasClientAction ? async () => {
+          let clientActionPromise = route.clientActionModule ? import(
+            /* @vite-ignore */
+            /* webpackIgnore: true */
+            route.clientActionModule
+          ) : getLazyRoute();
+          prefetchRouteModuleChunks(route);
+          let { clientAction } = await clientActionPromise;
+          invariant2(clientAction, "No `clientAction` export found");
+          return (args, singleFetch) => clientAction({
+            ...args,
+            async serverAction() {
+              preventInvalidServerHandlerCall("action", route);
+              return fetchServerAction(singleFetch);
+            }
+          });
+        } : void 0,
+        middleware: route.hasClientMiddleware ? async () => {
+          let { clientMiddleware } = route.clientMiddlewareModule ? await import(
+            /* @vite-ignore */
+            /* webpackIgnore: true */
+            route.clientMiddlewareModule
+          ) : await getLazyRoute();
+          invariant2(clientMiddleware, "No `clientMiddleware` export found");
+          return clientMiddleware;
+        } : void 0,
+        shouldRevalidate: async () => {
+          let lazyRoute = await getLazyRoute();
+          return getShouldRevalidateFunction(
+            dataRoute.path,
+            lazyRoute,
+            route,
+            ssr,
+            needsRevalidation
+          );
+        },
+        handle: async () => (await getLazyRoute()).handle,
+        // No need to wrap these in layout since the root route is never
+        // loaded via route.lazy()
+        Component: async () => (await getLazyRoute()).Component,
+        ErrorBoundary: route.hasErrorBoundary ? async () => (await getLazyRoute()).ErrorBoundary : void 0
+      };
+    }
+    let children = createClientRoutes(
+      manifest,
+      routeModulesCache,
+      initialState,
+      ssr,
+      isSpaMode,
+      route.id,
+      routesByParentId,
+      needsRevalidation
+    );
+    if (children.length > 0) dataRoute.children = children;
+    return dataRoute;
+  });
+}
+function getShouldRevalidateFunction(path, route, manifestRoute, ssr, needsRevalidation) {
+  if (needsRevalidation) {
+    return wrapShouldRevalidateForHdr(
+      manifestRoute.id,
+      route.shouldRevalidate,
+      needsRevalidation
+    );
+  }
+  if (!ssr && manifestRoute.hasLoader && !manifestRoute.hasClientLoader) {
+    let myParams = path ? compilePath(path)[1].map((p) => p.paramName) : [];
+    const didParamsChange = (opts) => myParams.some((p) => opts.currentParams[p] !== opts.nextParams[p]);
+    if (route.shouldRevalidate) {
+      let fn = route.shouldRevalidate;
+      return (opts) => fn({
+        ...opts,
+        defaultShouldRevalidate: didParamsChange(opts)
+      });
+    } else {
+      return (opts) => didParamsChange(opts);
+    }
+  }
+  return route.shouldRevalidate;
+}
+function wrapShouldRevalidateForHdr(routeId, routeShouldRevalidate, needsRevalidation) {
+  let handledRevalidation = false;
+  return (arg) => {
+    if (!handledRevalidation) {
+      handledRevalidation = true;
+      return needsRevalidation.has(routeId);
+    }
+    return routeShouldRevalidate ? routeShouldRevalidate(arg) : arg.defaultShouldRevalidate;
+  };
+}
+async function loadRouteModuleWithBlockingLinks(route, routeModules) {
+  let routeModulePromise = loadRouteModule(route, routeModules);
+  let prefetchRouteCssPromise = prefetchRouteCss(route);
+  let routeModule = await routeModulePromise;
+  await Promise.all([
+    prefetchRouteCssPromise,
+    prefetchStyleLinks(route, routeModule)
+  ]);
+  return {
+    Component: getRouteModuleComponent(routeModule),
+    ErrorBoundary: routeModule.ErrorBoundary,
+    clientMiddleware: routeModule.clientMiddleware,
+    clientAction: routeModule.clientAction,
+    clientLoader: routeModule.clientLoader,
+    handle: routeModule.handle,
+    links: routeModule.links,
+    meta: routeModule.meta,
+    shouldRevalidate: routeModule.shouldRevalidate
+  };
+}
+function getRouteModuleComponent(routeModule) {
+  if (routeModule.default == null) return void 0;
+  let isEmptyObject = typeof routeModule.default === "object" && Object.keys(routeModule.default).length === 0;
+  if (!isEmptyObject) {
+    return routeModule.default;
+  }
+}
+function shouldHydrateRouteLoader(routeId, clientLoader, hasLoader, isSpaMode) {
+  return isSpaMode && routeId !== "root" || clientLoader != null && (clientLoader.hydrate === true || hasLoader !== true);
+}
+
+// lib/dom/ssr/fog-of-war.ts
+var nextPaths = /* @__PURE__ */ new Set();
+var discoveredPathsMaxSize = 1e3;
+var discoveredPaths = /* @__PURE__ */ new Set();
+var URL_LIMIT = 7680;
+function isFogOfWarEnabled(routeDiscovery, ssr) {
+  return routeDiscovery.mode === "lazy" && ssr === true;
+}
+function getPartialManifest({ sri, ...manifest }, router) {
+  let routeIds = new Set(router.state.matches.map((m) => m.route.id));
+  let segments = router.state.location.pathname.split("/").filter(Boolean);
+  let paths = ["/"];
+  segments.pop();
+  while (segments.length > 0) {
+    paths.push(`/${segments.join("/")}`);
+    segments.pop();
+  }
+  paths.forEach((path) => {
+    let matches = matchRoutes(router.routes, path, router.basename);
+    if (matches) {
+      matches.forEach((m) => routeIds.add(m.route.id));
+    }
+  });
+  let initialRoutes = [...routeIds].reduce(
+    (acc, id) => Object.assign(acc, { [id]: manifest.routes[id] }),
+    {}
+  );
+  return {
+    ...manifest,
+    routes: initialRoutes,
+    sri: sri ? true : void 0
+  };
+}
+function getPatchRoutesOnNavigationFunction(getRouter, manifest, routeModules, ssr, routeDiscovery, isSpaMode, basename) {
+  if (!isFogOfWarEnabled(routeDiscovery, ssr)) {
+    return void 0;
+  }
+  return async ({ path, patch, signal, fetcherKey }) => {
+    if (discoveredPaths.has(path)) {
+      return;
+    }
+    let { state } = getRouter();
+    await fetchAndApplyManifestPatches(
+      [path],
+      // If we're patching for a fetcher call, reload the current location
+      // Otherwise prefer any ongoing navigation location
+      fetcherKey ? window.location.href : createPath(state.navigation.location || state.location),
+      manifest,
+      routeModules,
+      ssr,
+      isSpaMode,
+      basename,
+      routeDiscovery.manifestPath,
+      patch,
+      signal
+    );
+  };
+}
+function useFogOFWarDiscovery(router, manifest, routeModules, ssr, routeDiscovery, isSpaMode) {
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (!isFogOfWarEnabled(routeDiscovery, ssr) || // @ts-expect-error - TS doesn't know about this yet
+    window.navigator?.connection?.saveData === true) {
+      return;
+    }
+    function registerElement(el) {
+      let path = el.tagName === "FORM" ? el.getAttribute("action") : el.getAttribute("href");
+      if (!path) {
+        return;
+      }
+      let pathname = el.tagName === "A" ? el.pathname : new URL(path, window.location.origin).pathname;
+      if (!discoveredPaths.has(pathname)) {
+        nextPaths.add(pathname);
+      }
+    }
+    async function fetchPatches() {
+      document.querySelectorAll("a[data-discover], form[data-discover]").forEach(registerElement);
+      let lazyPaths = Array.from(nextPaths.keys()).filter((path) => {
+        if (discoveredPaths.has(path)) {
+          nextPaths.delete(path);
+          return false;
+        }
+        return true;
+      });
+      if (lazyPaths.length === 0) {
+        return;
+      }
+      try {
+        await fetchAndApplyManifestPatches(
+          lazyPaths,
+          null,
+          manifest,
+          routeModules,
+          ssr,
+          isSpaMode,
+          router.basename,
+          routeDiscovery.manifestPath,
+          router.patchRoutes
+        );
+      } catch (e) {
+        console.error("Failed to fetch manifest patches", e);
+      }
+    }
+    let debouncedFetchPatches = debounce(fetchPatches, 100);
+    fetchPatches();
+    let observer = new MutationObserver(() => debouncedFetchPatches());
+    observer.observe(document.documentElement, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ["data-discover", "href", "action"]
+    });
+    return () => observer.disconnect();
+  }, [ssr, isSpaMode, manifest, routeModules, router, routeDiscovery]);
+}
+function getManifestPath(_manifestPath, basename) {
+  let manifestPath = _manifestPath || "/__manifest";
+  if (basename == null) {
+    return manifestPath;
+  }
+  return `${basename}${manifestPath}`.replace(/\/+/g, "/");
+}
+var MANIFEST_VERSION_STORAGE_KEY = "react-router-manifest-version";
+async function fetchAndApplyManifestPatches(paths, errorReloadPath, manifest, routeModules, ssr, isSpaMode, basename, manifestPath, patchRoutes, signal) {
+  const searchParams = new URLSearchParams();
+  searchParams.set("paths", paths.sort().join(","));
+  searchParams.set("version", manifest.version);
+  let url = new URL(
+    getManifestPath(manifestPath, basename),
+    window.location.origin
+  );
+  url.search = searchParams.toString();
+  if (url.toString().length > URL_LIMIT) {
+    nextPaths.clear();
+    return;
+  }
+  let serverPatches;
+  try {
+    let res = await fetch(url, { signal });
+    if (!res.ok) {
+      throw new Error(`${res.status} ${res.statusText}`);
+    } else if (res.status === 204 && res.headers.has("X-Remix-Reload-Document")) {
+      if (!errorReloadPath) {
+        console.warn(
+          "Detected a manifest version mismatch during eager route discovery. The next navigation/fetch to an undiscovered route will result in a new document navigation to sync up with the latest manifest."
+        );
+        return;
+      }
+      try {
+        if (sessionStorage.getItem(MANIFEST_VERSION_STORAGE_KEY) === manifest.version) {
+          console.error(
+            "Unable to discover routes due to manifest version mismatch."
+          );
+          return;
+        }
+        sessionStorage.setItem(MANIFEST_VERSION_STORAGE_KEY, manifest.version);
+      } catch {
+      }
+      window.location.href = errorReloadPath;
+      console.warn("Detected manifest version mismatch, reloading...");
+      await new Promise(() => {
+      });
+    } else if (res.status >= 400) {
+      throw new Error(await res.text());
+    }
+    try {
+      sessionStorage.removeItem(MANIFEST_VERSION_STORAGE_KEY);
+    } catch {
+    }
+    serverPatches = await res.json();
+  } catch (e) {
+    if (signal?.aborted) return;
+    throw e;
+  }
+  let knownRoutes = new Set(Object.keys(manifest.routes));
+  let patches = Object.values(serverPatches).reduce((acc, route) => {
+    if (route && !knownRoutes.has(route.id)) {
+      acc[route.id] = route;
+    }
+    return acc;
+  }, {});
+  Object.assign(manifest.routes, patches);
+  paths.forEach((p) => addToFifoQueue(p, discoveredPaths));
+  let parentIds = /* @__PURE__ */ new Set();
+  Object.values(patches).forEach((patch) => {
+    if (patch && (!patch.parentId || !patches[patch.parentId])) {
+      parentIds.add(patch.parentId);
+    }
+  });
+  parentIds.forEach(
+    (parentId) => patchRoutes(
+      parentId || null,
+      createClientRoutes(patches, routeModules, null, ssr, isSpaMode, parentId)
+    )
+  );
+}
+function addToFifoQueue(path, queue) {
+  if (queue.size >= discoveredPathsMaxSize) {
+    let first = queue.values().next().value;
+    queue.delete(first);
+  }
+  queue.add(path);
+}
+function debounce(callback, wait) {
+  let timeoutId;
+  return (...args) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => callback(...args), wait);
+  };
+}
+
+// lib/dom/ssr/components.tsx
+function useDataRouterContext2() {
+  let context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
+  invariant2(
+    context,
+    "You must render this element inside a <DataRouterContext.Provider> element"
+  );
+  return context;
+}
+function useDataRouterStateContext() {
+  let context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
+  invariant2(
+    context,
+    "You must render this element inside a <DataRouterStateContext.Provider> element"
+  );
+  return context;
+}
+var FrameworkContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(void 0);
+FrameworkContext.displayName = "FrameworkContext";
+function useFrameworkContext() {
+  let context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FrameworkContext);
+  invariant2(
+    context,
+    "You must render this element inside a <HydratedRouter> element"
+  );
+  return context;
+}
+function usePrefetchBehavior(prefetch, theirElementProps) {
+  let frameworkContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FrameworkContext);
+  let [maybePrefetch, setMaybePrefetch] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
+  let [shouldPrefetch, setShouldPrefetch] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
+  let { onFocus, onBlur, onMouseEnter, onMouseLeave, onTouchStart } = theirElementProps;
+  let ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (prefetch === "render") {
+      setShouldPrefetch(true);
+    }
+    if (prefetch === "viewport") {
+      let callback = (entries) => {
+        entries.forEach((entry) => {
+          setShouldPrefetch(entry.isIntersecting);
+        });
+      };
+      let observer = new IntersectionObserver(callback, { threshold: 0.5 });
+      if (ref.current) observer.observe(ref.current);
+      return () => {
+        observer.disconnect();
+      };
+    }
+  }, [prefetch]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (maybePrefetch) {
+      let id = setTimeout(() => {
+        setShouldPrefetch(true);
+      }, 100);
+      return () => {
+        clearTimeout(id);
+      };
+    }
+  }, [maybePrefetch]);
+  let setIntent = () => {
+    setMaybePrefetch(true);
+  };
+  let cancelIntent = () => {
+    setMaybePrefetch(false);
+    setShouldPrefetch(false);
+  };
+  if (!frameworkContext) {
+    return [false, ref, {}];
+  }
+  if (prefetch !== "intent") {
+    return [shouldPrefetch, ref, {}];
+  }
+  return [
+    shouldPrefetch,
+    ref,
+    {
+      onFocus: composeEventHandlers(onFocus, setIntent),
+      onBlur: composeEventHandlers(onBlur, cancelIntent),
+      onMouseEnter: composeEventHandlers(onMouseEnter, setIntent),
+      onMouseLeave: composeEventHandlers(onMouseLeave, cancelIntent),
+      onTouchStart: composeEventHandlers(onTouchStart, setIntent)
+    }
+  ];
+}
+function composeEventHandlers(theirHandler, ourHandler) {
+  return (event) => {
+    theirHandler && theirHandler(event);
+    if (!event.defaultPrevented) {
+      ourHandler(event);
+    }
+  };
+}
+function getActiveMatches(matches, errors, isSpaMode) {
+  if (isSpaMode && !isHydrated) {
+    return [matches[0]];
+  }
+  if (errors) {
+    let errorIdx = matches.findIndex((m) => errors[m.route.id] !== void 0);
+    return matches.slice(0, errorIdx + 1);
+  }
+  return matches;
+}
+var CRITICAL_CSS_DATA_ATTRIBUTE = "data-react-router-critical-css";
+function Links({ nonce, crossOrigin }) {
+  let { isSpaMode, manifest, routeModules, criticalCss } = useFrameworkContext();
+  let { errors, matches: routerMatches } = useDataRouterStateContext();
+  let matches = getActiveMatches(routerMatches, errors, isSpaMode);
+  let keyedLinks = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => getKeyedLinksForMatches(matches, routeModules, manifest),
+    [matches, routeModules, manifest]
+  );
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, typeof criticalCss === "string" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "style",
+    {
+      ...{ [CRITICAL_CSS_DATA_ATTRIBUTE]: "" },
+      nonce,
+      dangerouslySetInnerHTML: { __html: criticalCss }
+    }
+  ) : null, typeof criticalCss === "object" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "link",
+    {
+      ...{ [CRITICAL_CSS_DATA_ATTRIBUTE]: "" },
+      rel: "stylesheet",
+      href: criticalCss.href,
+      nonce,
+      crossOrigin
+    }
+  ) : null, keyedLinks.map(
+    ({ key, link }) => isPageLinkDescriptor(link) ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      PrefetchPageLinks,
+      {
+        key,
+        nonce,
+        ...link,
+        crossOrigin: link.crossOrigin ?? crossOrigin
+      }
+    ) : /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      "link",
+      {
+        key,
+        nonce,
+        ...link,
+        crossOrigin: link.crossOrigin ?? crossOrigin
+      }
+    )
+  ));
+}
+function PrefetchPageLinks({ page, ...linkProps }) {
+  let { router } = useDataRouterContext2();
+  let matches = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => matchRoutes(router.routes, page, router.basename),
+    [router.routes, page, router.basename]
+  );
+  if (!matches) {
+    return null;
+  }
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(PrefetchPageLinksImpl, { page, matches, ...linkProps });
+}
+function useKeyedPrefetchLinks(matches) {
+  let { manifest, routeModules } = useFrameworkContext();
+  let [keyedPrefetchLinks, setKeyedPrefetchLinks] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    let interrupted = false;
+    void getKeyedPrefetchLinks(matches, manifest, routeModules).then(
+      (links) => {
+        if (!interrupted) {
+          setKeyedPrefetchLinks(links);
+        }
+      }
+    );
+    return () => {
+      interrupted = true;
+    };
+  }, [matches, manifest, routeModules]);
+  return keyedPrefetchLinks;
+}
+function PrefetchPageLinksImpl({
+  page,
+  matches: nextMatches,
+  ...linkProps
+}) {
+  let location = useLocation();
+  let { future, manifest, routeModules } = useFrameworkContext();
+  let { basename } = useDataRouterContext2();
+  let { loaderData, matches } = useDataRouterStateContext();
+  let newMatchesForData = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => getNewMatchesForLinks(
+      page,
+      nextMatches,
+      matches,
+      manifest,
+      location,
+      "data"
+    ),
+    [page, nextMatches, matches, manifest, location]
+  );
+  let newMatchesForAssets = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => getNewMatchesForLinks(
+      page,
+      nextMatches,
+      matches,
+      manifest,
+      location,
+      "assets"
+    ),
+    [page, nextMatches, matches, manifest, location]
+  );
+  let dataHrefs = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    if (page === location.pathname + location.search + location.hash) {
+      return [];
+    }
+    let routesParams = /* @__PURE__ */ new Set();
+    let foundOptOutRoute = false;
+    nextMatches.forEach((m) => {
+      let manifestRoute = manifest.routes[m.route.id];
+      if (!manifestRoute || !manifestRoute.hasLoader) {
+        return;
+      }
+      if (!newMatchesForData.some((m2) => m2.route.id === m.route.id) && m.route.id in loaderData && routeModules[m.route.id]?.shouldRevalidate) {
+        foundOptOutRoute = true;
+      } else if (manifestRoute.hasClientLoader) {
+        foundOptOutRoute = true;
+      } else {
+        routesParams.add(m.route.id);
+      }
+    });
+    if (routesParams.size === 0) {
+      return [];
+    }
+    let url = singleFetchUrl(
+      page,
+      basename,
+      future.unstable_trailingSlashAwareDataRequests,
+      "data"
+    );
+    if (foundOptOutRoute && routesParams.size > 0) {
+      url.searchParams.set(
+        "_routes",
+        nextMatches.filter((m) => routesParams.has(m.route.id)).map((m) => m.route.id).join(",")
+      );
+    }
+    return [url.pathname + url.search];
+  }, [
+    basename,
+    future.unstable_trailingSlashAwareDataRequests,
+    loaderData,
+    location,
+    manifest,
+    newMatchesForData,
+    nextMatches,
+    page,
+    routeModules
+  ]);
+  let moduleHrefs = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => getModuleLinkHrefs(newMatchesForAssets, manifest),
+    [newMatchesForAssets, manifest]
+  );
+  let keyedPrefetchLinks = useKeyedPrefetchLinks(newMatchesForAssets);
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, dataHrefs.map((href) => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", { key: href, rel: "prefetch", as: "fetch", href, ...linkProps })), moduleHrefs.map((href) => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", { key: href, rel: "modulepreload", href, ...linkProps })), keyedPrefetchLinks.map(({ key, link }) => (
+    // these don't spread `linkProps` because they are full link descriptors
+    // already with their own props
+    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      "link",
+      {
+        key,
+        nonce: linkProps.nonce,
+        ...link,
+        crossOrigin: link.crossOrigin ?? linkProps.crossOrigin
+      }
+    )
+  )));
+}
+function Meta() {
+  let { isSpaMode, routeModules } = useFrameworkContext();
+  let {
+    errors,
+    matches: routerMatches,
+    loaderData
+  } = useDataRouterStateContext();
+  let location = useLocation();
+  let _matches = getActiveMatches(routerMatches, errors, isSpaMode);
+  let error = null;
+  if (errors) {
+    error = errors[_matches[_matches.length - 1].route.id];
+  }
+  let meta = [];
+  let leafMeta = null;
+  let matches = [];
+  for (let i = 0; i < _matches.length; i++) {
+    let _match = _matches[i];
+    let routeId = _match.route.id;
+    let data2 = loaderData[routeId];
+    let params = _match.params;
+    let routeModule = routeModules[routeId];
+    let routeMeta = [];
+    let match = {
+      id: routeId,
+      data: data2,
+      loaderData: data2,
+      meta: [],
+      params: _match.params,
+      pathname: _match.pathname,
+      handle: _match.route.handle,
+      error
+    };
+    matches[i] = match;
+    if (routeModule?.meta) {
+      routeMeta = typeof routeModule.meta === "function" ? routeModule.meta({
+        data: data2,
+        loaderData: data2,
+        params,
+        location,
+        matches,
+        error
+      }) : Array.isArray(routeModule.meta) ? [...routeModule.meta] : routeModule.meta;
+    } else if (leafMeta) {
+      routeMeta = [...leafMeta];
+    }
+    routeMeta = routeMeta || [];
+    if (!Array.isArray(routeMeta)) {
+      throw new Error(
+        "The route at " + _match.route.path + " returns an invalid value. All route meta functions must return an array of meta objects.\n\nTo reference the meta function API, see https://reactrouter.com/start/framework/route-module#meta"
+      );
+    }
+    match.meta = routeMeta;
+    matches[i] = match;
+    meta = [...routeMeta];
+    leafMeta = meta;
+  }
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, meta.flat().map((metaProps) => {
+    if (!metaProps) {
+      return null;
+    }
+    if ("tagName" in metaProps) {
+      let { tagName, ...rest } = metaProps;
+      if (!isValidMetaTag(tagName)) {
+        console.warn(
+          `A meta object uses an invalid tagName: ${tagName}. Expected either 'link' or 'meta'`
+        );
+        return null;
+      }
+      let Comp = tagName;
+      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Comp, { key: JSON.stringify(rest), ...rest });
+    }
+    if ("title" in metaProps) {
+      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", { key: "title" }, String(metaProps.title));
+    }
+    if ("charset" in metaProps) {
+      metaProps.charSet ?? (metaProps.charSet = metaProps.charset);
+      delete metaProps.charset;
+    }
+    if ("charSet" in metaProps && metaProps.charSet != null) {
+      return typeof metaProps.charSet === "string" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("meta", { key: "charSet", charSet: metaProps.charSet }) : null;
+    }
+    if ("script:ld+json" in metaProps) {
+      try {
+        let json = JSON.stringify(metaProps["script:ld+json"]);
+        return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+          "script",
+          {
+            key: `script:ld+json:${json}`,
+            type: "application/ld+json",
+            dangerouslySetInnerHTML: { __html: escapeHtml(json) }
+          }
+        );
+      } catch (err) {
+        return null;
+      }
+    }
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("meta", { key: JSON.stringify(metaProps), ...metaProps });
+  }));
+}
+function isValidMetaTag(tagName) {
+  return typeof tagName === "string" && /^(meta|link)$/.test(tagName);
+}
+var isHydrated = false;
+function setIsHydrated() {
+  isHydrated = true;
+}
+function Scripts(scriptProps) {
+  let {
+    manifest,
+    serverHandoffString,
+    isSpaMode,
+    renderMeta,
+    routeDiscovery,
+    ssr
+  } = useFrameworkContext();
+  let { router, static: isStatic, staticContext } = useDataRouterContext2();
+  let { matches: routerMatches } = useDataRouterStateContext();
+  let isRSCRouterContext = useIsRSCRouterContext();
+  let enableFogOfWar = isFogOfWarEnabled(routeDiscovery, ssr);
+  if (renderMeta) {
+    renderMeta.didRenderScripts = true;
+  }
+  let matches = getActiveMatches(routerMatches, null, isSpaMode);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    setIsHydrated();
+  }, []);
+  let initialScripts = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    if (isRSCRouterContext) {
+      return null;
+    }
+    let streamScript = "window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());";
+    let contextScript = staticContext ? `window.__reactRouterContext = ${serverHandoffString};${streamScript}` : " ";
+    let routeModulesScript = !isStatic ? " " : `${manifest.hmr?.runtime ? `import ${JSON.stringify(manifest.hmr.runtime)};` : ""}${!enableFogOfWar ? `import ${JSON.stringify(manifest.url)}` : ""};
+${matches.map((match, routeIndex) => {
+      let routeVarName = `route${routeIndex}`;
+      let manifestEntry = manifest.routes[match.route.id];
+      invariant2(manifestEntry, `Route ${match.route.id} not found in manifest`);
+      let {
+        clientActionModule,
+        clientLoaderModule,
+        clientMiddlewareModule,
+        hydrateFallbackModule,
+        module
+      } = manifestEntry;
+      let chunks = [
+        ...clientActionModule ? [
+          {
+            module: clientActionModule,
+            varName: `${routeVarName}_clientAction`
+          }
+        ] : [],
+        ...clientLoaderModule ? [
+          {
+            module: clientLoaderModule,
+            varName: `${routeVarName}_clientLoader`
+          }
+        ] : [],
+        ...clientMiddlewareModule ? [
+          {
+            module: clientMiddlewareModule,
+            varName: `${routeVarName}_clientMiddleware`
+          }
+        ] : [],
+        ...hydrateFallbackModule ? [
+          {
+            module: hydrateFallbackModule,
+            varName: `${routeVarName}_HydrateFallback`
+          }
+        ] : [],
+        { module, varName: `${routeVarName}_main` }
+      ];
+      if (chunks.length === 1) {
+        return `import * as ${routeVarName} from ${JSON.stringify(module)};`;
+      }
+      let chunkImportsSnippet = chunks.map((chunk) => `import * as ${chunk.varName} from "${chunk.module}";`).join("\n");
+      let mergedChunksSnippet = `const ${routeVarName} = {${chunks.map((chunk) => `...${chunk.varName}`).join(",")}};`;
+      return [chunkImportsSnippet, mergedChunksSnippet].join("\n");
+    }).join("\n")}
+  ${enableFogOfWar ? (
+      // Inline a minimal manifest with the SSR matches
+      `window.__reactRouterManifest = ${JSON.stringify(
+        getPartialManifest(manifest, router),
+        null,
+        2
+      )};`
+    ) : ""}
+  window.__reactRouterRouteModules = {${matches.map((match, index) => `${JSON.stringify(match.route.id)}:route${index}`).join(",")}};
+
+import(${JSON.stringify(manifest.entry.module)});`;
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      "script",
+      {
+        ...scriptProps,
+        suppressHydrationWarning: true,
+        dangerouslySetInnerHTML: { __html: contextScript },
+        type: void 0
+      }
+    ), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      "script",
+      {
+        ...scriptProps,
+        suppressHydrationWarning: true,
+        dangerouslySetInnerHTML: { __html: routeModulesScript },
+        type: "module",
+        async: true
+      }
+    ));
+  }, []);
+  let preloads = isHydrated || isRSCRouterContext ? [] : dedupe(
+    manifest.entry.imports.concat(
+      getModuleLinkHrefs(matches, manifest, {
+        includeHydrateFallback: true
+      })
+    )
+  );
+  let sri = typeof manifest.sri === "object" ? manifest.sri : {};
+  warnOnce(
+    !isRSCRouterContext,
+    "The <Scripts /> element is a no-op when using RSC and can be safely removed."
+  );
+  return isHydrated || isRSCRouterContext ? null : /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, typeof manifest.sri === "object" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "script",
+    {
+      ...scriptProps,
+      "rr-importmap": "",
+      type: "importmap",
+      suppressHydrationWarning: true,
+      dangerouslySetInnerHTML: {
+        __html: JSON.stringify({
+          integrity: sri
+        })
+      }
+    }
+  ) : null, !enableFogOfWar ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "link",
+    {
+      rel: "modulepreload",
+      href: manifest.url,
+      crossOrigin: scriptProps.crossOrigin,
+      integrity: sri[manifest.url],
+      suppressHydrationWarning: true
+    }
+  ) : null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "link",
+    {
+      rel: "modulepreload",
+      href: manifest.entry.module,
+      crossOrigin: scriptProps.crossOrigin,
+      integrity: sri[manifest.entry.module],
+      suppressHydrationWarning: true
+    }
+  ), preloads.map((path) => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "link",
+    {
+      key: path,
+      rel: "modulepreload",
+      href: path,
+      crossOrigin: scriptProps.crossOrigin,
+      integrity: sri[path],
+      suppressHydrationWarning: true
+    }
+  )), initialScripts);
+}
+function dedupe(array) {
+  return [...new Set(array)];
+}
+function mergeRefs(...refs) {
+  return (value) => {
+    refs.forEach((ref) => {
+      if (typeof ref === "function") {
+        ref(value);
+      } else if (ref != null) {
+        ref.current = value;
+      }
+    });
+  };
+}
+
+// lib/dom/ssr/errorBoundaries.tsx
+var RemixErrorBoundary = class extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: props.error || null, location: props.location };
+  }
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+  static getDerivedStateFromProps(props, state) {
+    if (state.location !== props.location) {
+      return { error: props.error || null, location: props.location };
+    }
+    return { error: props.error || state.error, location: state.location };
+  }
+  render() {
+    if (this.state.error) {
+      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+        RemixRootDefaultErrorBoundary,
+        {
+          error: this.state.error,
+          isOutsideRemixApp: true
+        }
+      );
+    } else {
+      return this.props.children;
+    }
+  }
+};
+function RemixRootDefaultErrorBoundary({
+  error,
+  isOutsideRemixApp
+}) {
+  console.error(error);
+  let heyDeveloper = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "script",
+    {
+      dangerouslySetInnerHTML: {
+        __html: `
+        console.log(
+          "\u{1F4BF} Hey developer \u{1F44B}. You can provide a way better UX than this when your app throws errors. Check out https://reactrouter.com/how-to/error-boundary for more information."
+        );
+      `
+      }
+    }
+  );
+  if (isRouteErrorResponse(error)) {
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(BoundaryShell, { title: "Unhandled Thrown Response!" }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { style: { fontSize: "24px" } }, error.status, " ", error.statusText), ENABLE_DEV_WARNINGS ? heyDeveloper : null);
+  }
+  let errorInstance;
+  if (error instanceof Error) {
+    errorInstance = error;
+  } else {
+    let errorString = error == null ? "Unknown Error" : typeof error === "object" && "toString" in error ? error.toString() : JSON.stringify(error);
+    errorInstance = new Error(errorString);
+  }
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    BoundaryShell,
+    {
+      title: "Application Error!",
+      isOutsideRemixApp
+    },
+    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { style: { fontSize: "24px" } }, "Application Error"),
+    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      "pre",
+      {
+        style: {
+          padding: "2rem",
+          background: "hsla(10, 50%, 50%, 0.1)",
+          color: "red",
+          overflow: "auto"
+        }
+      },
+      errorInstance.stack
+    ),
+    heyDeveloper
+  );
+}
+function BoundaryShell({
+  title,
+  renderScripts,
+  isOutsideRemixApp,
+  children
+}) {
+  let { routeModules } = useFrameworkContext();
+  if (routeModules.root?.Layout && !isOutsideRemixApp) {
+    return children;
+  }
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("html", { lang: "en" }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("head", null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("meta", { charSet: "utf-8" }), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "meta",
+    {
+      name: "viewport",
+      content: "width=device-width,initial-scale=1,viewport-fit=cover"
+    }
+  ), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", null, title)), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("body", null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", { style: { fontFamily: "system-ui, sans-serif", padding: "2rem" } }, children, renderScripts ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Scripts, null) : null)));
+}
+
+// lib/dom/lib.tsx
+
+var isBrowser2 = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
+try {
+  if (isBrowser2) {
+    window.__reactRouterVersion = // @ts-expect-error
+    "7.13.1";
+  }
+} catch (e) {
+}
+function createBrowserRouter(routes, opts) {
+  return createRouter({
+    basename: opts?.basename,
+    getContext: opts?.getContext,
+    future: opts?.future,
+    history: createBrowserHistory({ window: opts?.window }),
+    hydrationData: opts?.hydrationData || parseHydrationData(),
+    routes,
+    mapRouteProperties,
+    hydrationRouteProperties,
+    dataStrategy: opts?.dataStrategy,
+    patchRoutesOnNavigation: opts?.patchRoutesOnNavigation,
+    window: opts?.window,
+    unstable_instrumentations: opts?.unstable_instrumentations
+  }).initialize();
+}
+function createHashRouter(routes, opts) {
+  return createRouter({
+    basename: opts?.basename,
+    getContext: opts?.getContext,
+    future: opts?.future,
+    history: createHashHistory({ window: opts?.window }),
+    hydrationData: opts?.hydrationData || parseHydrationData(),
+    routes,
+    mapRouteProperties,
+    hydrationRouteProperties,
+    dataStrategy: opts?.dataStrategy,
+    patchRoutesOnNavigation: opts?.patchRoutesOnNavigation,
+    window: opts?.window,
+    unstable_instrumentations: opts?.unstable_instrumentations
+  }).initialize();
+}
+function parseHydrationData() {
+  let state = window?.__staticRouterHydrationData;
+  if (state && state.errors) {
+    state = {
+      ...state,
+      errors: deserializeErrors(state.errors)
+    };
+  }
+  return state;
+}
+function deserializeErrors(errors) {
+  if (!errors) return null;
+  let entries = Object.entries(errors);
+  let serialized = {};
+  for (let [key, val] of entries) {
+    if (val && val.__type === "RouteErrorResponse") {
+      serialized[key] = new ErrorResponseImpl(
+        val.status,
+        val.statusText,
+        val.data,
+        val.internal === true
+      );
+    } else if (val && val.__type === "Error") {
+      if (val.__subType) {
+        let ErrorConstructor = window[val.__subType];
+        if (typeof ErrorConstructor === "function") {
+          try {
+            let error = new ErrorConstructor(val.message);
+            error.stack = "";
+            serialized[key] = error;
+          } catch (e) {
+          }
+        }
+      }
+      if (serialized[key] == null) {
+        let error = new Error(val.message);
+        error.stack = "";
+        serialized[key] = error;
+      }
+    } else {
+      serialized[key] = val;
+    }
+  }
+  return serialized;
+}
+function BrowserRouter({
+  basename,
+  children,
+  unstable_useTransitions,
+  window: window2
+}) {
+  let historyRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
+  if (historyRef.current == null) {
+    historyRef.current = createBrowserHistory({ window: window2, v5Compat: true });
+  }
+  let history = historyRef.current;
+  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    action: history.action,
+    location: history.location
+  });
+  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (newState) => {
+      if (unstable_useTransitions === false) {
+        setStateImpl(newState);
+      } else {
+        react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
+      }
+    },
+    [unstable_useTransitions]
+  );
+  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    Router,
+    {
+      basename,
+      children,
+      location: state.location,
+      navigationType: state.action,
+      navigator: history,
+      unstable_useTransitions
+    }
+  );
+}
+function HashRouter({
+  basename,
+  children,
+  unstable_useTransitions,
+  window: window2
+}) {
+  let historyRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
+  if (historyRef.current == null) {
+    historyRef.current = createHashHistory({ window: window2, v5Compat: true });
+  }
+  let history = historyRef.current;
+  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    action: history.action,
+    location: history.location
+  });
+  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (newState) => {
+      if (unstable_useTransitions === false) {
+        setStateImpl(newState);
+      } else {
+        react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
+      }
+    },
+    [unstable_useTransitions]
+  );
+  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    Router,
+    {
+      basename,
+      children,
+      location: state.location,
+      navigationType: state.action,
+      navigator: history,
+      unstable_useTransitions
+    }
+  );
+}
+function HistoryRouter({
+  basename,
+  children,
+  history,
+  unstable_useTransitions
+}) {
+  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    action: history.action,
+    location: history.location
+  });
+  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (newState) => {
+      if (unstable_useTransitions === false) {
+        setStateImpl(newState);
+      } else {
+        react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
+      }
+    },
+    [unstable_useTransitions]
+  );
+  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    Router,
+    {
+      basename,
+      children,
+      location: state.location,
+      navigationType: state.action,
+      navigator: history,
+      unstable_useTransitions
+    }
+  );
+}
+HistoryRouter.displayName = "unstable_HistoryRouter";
+var ABSOLUTE_URL_REGEX2 = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+var Link = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
+  function LinkWithRef({
+    onClick,
+    discover = "render",
+    prefetch = "none",
+    relative,
+    reloadDocument,
+    replace: replace2,
+    unstable_mask,
+    state,
+    target,
+    to,
+    preventScrollReset,
+    viewTransition,
+    unstable_defaultShouldRevalidate,
+    ...rest
+  }, forwardedRef) {
+    let { basename, navigator, unstable_useTransitions } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+    let isAbsolute = typeof to === "string" && ABSOLUTE_URL_REGEX2.test(to);
+    let parsed = parseToInfo(to, basename);
+    to = parsed.to;
+    let href = useHref(to, { relative });
+    let location = useLocation();
+    let maskedHref = null;
+    if (unstable_mask) {
+      let resolved = resolveTo(
+        unstable_mask,
+        [],
+        location.unstable_mask ? location.unstable_mask.pathname : "/",
+        true
+      );
+      if (basename !== "/") {
+        resolved.pathname = resolved.pathname === "/" ? basename : joinPaths([basename, resolved.pathname]);
+      }
+      maskedHref = navigator.createHref(resolved);
+    }
+    let [shouldPrefetch, prefetchRef, prefetchHandlers] = usePrefetchBehavior(
+      prefetch,
+      rest
+    );
+    let internalOnClick = useLinkClickHandler(to, {
+      replace: replace2,
+      unstable_mask,
+      state,
+      target,
+      preventScrollReset,
+      relative,
+      viewTransition,
+      unstable_defaultShouldRevalidate,
+      unstable_useTransitions
+    });
+    function handleClick(event) {
+      if (onClick) onClick(event);
+      if (!event.defaultPrevented) {
+        internalOnClick(event);
+      }
+    }
+    let isSpaLink = !(parsed.isExternal || reloadDocument);
+    let link = (
+      // eslint-disable-next-line jsx-a11y/anchor-has-content
+      /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+        "a",
+        {
+          ...rest,
+          ...prefetchHandlers,
+          href: (isSpaLink ? maskedHref : void 0) || parsed.absoluteURL || href,
+          onClick: isSpaLink ? handleClick : onClick,
+          ref: mergeRefs(forwardedRef, prefetchRef),
+          target,
+          "data-discover": !isAbsolute && discover === "render" ? "true" : void 0
+        }
+      )
+    );
+    return shouldPrefetch && !isAbsolute ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, link, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(PrefetchPageLinks, { page: href })) : link;
+  }
+);
+Link.displayName = "Link";
+var NavLink = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
+  function NavLinkWithRef({
+    "aria-current": ariaCurrentProp = "page",
+    caseSensitive = false,
+    className: classNameProp = "",
+    end = false,
+    style: styleProp,
+    to,
+    viewTransition,
+    children,
+    ...rest
+  }, ref) {
+    let path = useResolvedPath(to, { relative: rest.relative });
+    let location = useLocation();
+    let routerState = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
+    let { navigator, basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+    let isTransitioning = routerState != null && // Conditional usage is OK here because the usage of a data router is static
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useViewTransitionState(path) && viewTransition === true;
+    let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
+    let locationPathname = location.pathname;
+    let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
+    if (!caseSensitive) {
+      locationPathname = locationPathname.toLowerCase();
+      nextLocationPathname = nextLocationPathname ? nextLocationPathname.toLowerCase() : null;
+      toPathname = toPathname.toLowerCase();
+    }
+    if (nextLocationPathname && basename) {
+      nextLocationPathname = stripBasename(nextLocationPathname, basename) || nextLocationPathname;
+    }
+    const endSlashPosition = toPathname !== "/" && toPathname.endsWith("/") ? toPathname.length - 1 : toPathname.length;
+    let isActive = locationPathname === toPathname || !end && locationPathname.startsWith(toPathname) && locationPathname.charAt(endSlashPosition) === "/";
+    let isPending = nextLocationPathname != null && (nextLocationPathname === toPathname || !end && nextLocationPathname.startsWith(toPathname) && nextLocationPathname.charAt(toPathname.length) === "/");
+    let renderProps = {
+      isActive,
+      isPending,
+      isTransitioning
+    };
+    let ariaCurrent = isActive ? ariaCurrentProp : void 0;
+    let className;
+    if (typeof classNameProp === "function") {
+      className = classNameProp(renderProps);
+    } else {
+      className = [
+        classNameProp,
+        isActive ? "active" : null,
+        isPending ? "pending" : null,
+        isTransitioning ? "transitioning" : null
+      ].filter(Boolean).join(" ");
+    }
+    let style = typeof styleProp === "function" ? styleProp(renderProps) : styleProp;
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      Link,
+      {
+        ...rest,
+        "aria-current": ariaCurrent,
+        className,
+        ref,
+        style,
+        to,
+        viewTransition
+      },
+      typeof children === "function" ? children(renderProps) : children
+    );
+  }
+);
+NavLink.displayName = "NavLink";
+var Form = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
+  ({
+    discover = "render",
+    fetcherKey,
+    navigate,
+    reloadDocument,
+    replace: replace2,
+    state,
+    method = defaultMethod,
+    action,
+    onSubmit,
+    relative,
+    preventScrollReset,
+    viewTransition,
+    unstable_defaultShouldRevalidate,
+    ...props
+  }, forwardedRef) => {
+    let { unstable_useTransitions } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+    let submit = useSubmit();
+    let formAction = useFormAction(action, { relative });
+    let formMethod = method.toLowerCase() === "get" ? "get" : "post";
+    let isAbsolute = typeof action === "string" && ABSOLUTE_URL_REGEX2.test(action);
+    let submitHandler = (event) => {
+      onSubmit && onSubmit(event);
+      if (event.defaultPrevented) return;
+      event.preventDefault();
+      let submitter = event.nativeEvent.submitter;
+      let submitMethod = submitter?.getAttribute("formmethod") || method;
+      let doSubmit = () => submit(submitter || event.currentTarget, {
+        fetcherKey,
+        method: submitMethod,
+        navigate,
+        replace: replace2,
+        state,
+        relative,
+        preventScrollReset,
+        viewTransition,
+        unstable_defaultShouldRevalidate
+      });
+      if (unstable_useTransitions && navigate !== false) {
+        react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => doSubmit());
+      } else {
+        doSubmit();
+      }
+    };
+    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      "form",
+      {
+        ref: forwardedRef,
+        method: formMethod,
+        action: formAction,
+        onSubmit: reloadDocument ? onSubmit : submitHandler,
+        ...props,
+        "data-discover": !isAbsolute && discover === "render" ? "true" : void 0
+      }
+    );
+  }
+);
+Form.displayName = "Form";
+function ScrollRestoration({
+  getKey,
+  storageKey,
+  ...props
+}) {
+  let remixContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FrameworkContext);
+  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  let location = useLocation();
+  let matches = useMatches();
+  useScrollRestoration({ getKey, storageKey });
+  let ssrKey = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => {
+      if (!remixContext || !getKey) return null;
+      let userKey = getScrollRestorationKey(
+        location,
+        matches,
+        basename,
+        getKey
+      );
+      return userKey !== location.key ? userKey : null;
+    },
+    // Nah, we only need this the first time for the SSR render
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    []
+  );
+  if (!remixContext || remixContext.isSpaMode) {
+    return null;
+  }
+  let restoreScroll = ((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  }).toString();
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "script",
+    {
+      ...props,
+      suppressHydrationWarning: true,
+      dangerouslySetInnerHTML: {
+        __html: `(${restoreScroll})(${escapeHtml(
+          JSON.stringify(storageKey || SCROLL_RESTORATION_STORAGE_KEY)
+        )}, ${escapeHtml(JSON.stringify(ssrKey))})`
+      }
+    }
+  );
+}
+ScrollRestoration.displayName = "ScrollRestoration";
+function getDataRouterConsoleError2(hookName) {
+  return `${hookName} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
+}
+function useDataRouterContext3(hookName) {
+  let ctx = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
+  invariant(ctx, getDataRouterConsoleError2(hookName));
+  return ctx;
+}
+function useDataRouterState2(hookName) {
+  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
+  invariant(state, getDataRouterConsoleError2(hookName));
+  return state;
+}
+function useLinkClickHandler(to, {
+  target,
+  replace: replaceProp,
+  unstable_mask,
+  state,
+  preventScrollReset,
+  relative,
+  viewTransition,
+  unstable_defaultShouldRevalidate,
+  unstable_useTransitions
+} = {}) {
+  let navigate = useNavigate();
+  let location = useLocation();
+  let path = useResolvedPath(to, { relative });
+  return react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (event) => {
+      if (shouldProcessLinkClick(event, target)) {
+        event.preventDefault();
+        let replace2 = replaceProp !== void 0 ? replaceProp : createPath(location) === createPath(path);
+        let doNavigate = () => navigate(to, {
+          replace: replace2,
+          unstable_mask,
+          state,
+          preventScrollReset,
+          relative,
+          viewTransition,
+          unstable_defaultShouldRevalidate
+        });
+        if (unstable_useTransitions) {
+          react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => doNavigate());
+        } else {
+          doNavigate();
+        }
+      }
+    },
+    [
+      location,
+      navigate,
+      path,
+      replaceProp,
+      unstable_mask,
+      state,
+      target,
+      to,
+      preventScrollReset,
+      relative,
+      viewTransition,
+      unstable_defaultShouldRevalidate,
+      unstable_useTransitions
+    ]
+  );
+}
+function useSearchParams(defaultInit) {
+  warning(
+    typeof URLSearchParams !== "undefined",
+    `You cannot use the \`useSearchParams\` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.`
+  );
+  let defaultSearchParamsRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(createSearchParams(defaultInit));
+  let hasSetSearchParamsRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+  let location = useLocation();
+  let searchParams = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => (
+      // Only merge in the defaults if we haven't yet called setSearchParams.
+      // Once we call that we want those to take precedence, otherwise you can't
+      // remove a param with setSearchParams({}) if it has an initial value
+      getSearchParamsForLocation(
+        location.search,
+        hasSetSearchParamsRef.current ? null : defaultSearchParamsRef.current
+      )
+    ),
+    [location.search]
+  );
+  let navigate = useNavigate();
+  let setSearchParams = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (nextInit, navigateOptions) => {
+      const newSearchParams = createSearchParams(
+        typeof nextInit === "function" ? nextInit(new URLSearchParams(searchParams)) : nextInit
+      );
+      hasSetSearchParamsRef.current = true;
+      navigate("?" + newSearchParams, navigateOptions);
+    },
+    [navigate, searchParams]
+  );
+  return [searchParams, setSearchParams];
+}
+var fetcherId = 0;
+var getUniqueFetcherId = () => `__${String(++fetcherId)}__`;
+function useSubmit() {
+  let { router } = useDataRouterContext3("useSubmit" /* UseSubmit */);
+  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  let currentRouteId = useRouteId();
+  let routerFetch = router.fetch;
+  let routerNavigate = router.navigate;
+  return react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    async (target, options = {}) => {
+      let { action, method, encType, formData, body } = getFormSubmissionInfo(
+        target,
+        basename
+      );
+      if (options.navigate === false) {
+        let key = options.fetcherKey || getUniqueFetcherId();
+        await routerFetch(key, currentRouteId, options.action || action, {
+          unstable_defaultShouldRevalidate: options.unstable_defaultShouldRevalidate,
+          preventScrollReset: options.preventScrollReset,
+          formData,
+          body,
+          formMethod: options.method || method,
+          formEncType: options.encType || encType,
+          flushSync: options.flushSync
+        });
+      } else {
+        await routerNavigate(options.action || action, {
+          unstable_defaultShouldRevalidate: options.unstable_defaultShouldRevalidate,
+          preventScrollReset: options.preventScrollReset,
+          formData,
+          body,
+          formMethod: options.method || method,
+          formEncType: options.encType || encType,
+          replace: options.replace,
+          state: options.state,
+          fromRouteId: currentRouteId,
+          flushSync: options.flushSync,
+          viewTransition: options.viewTransition
+        });
+      }
+    },
+    [routerFetch, routerNavigate, basename, currentRouteId]
+  );
+}
+function useFormAction(action, { relative } = {}) {
+  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  let routeContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  invariant(routeContext, "useFormAction must be used inside a RouteContext");
+  let [match] = routeContext.matches.slice(-1);
+  let path = { ...useResolvedPath(action ? action : ".", { relative }) };
+  let location = useLocation();
+  if (action == null) {
+    path.search = location.search;
+    let params = new URLSearchParams(path.search);
+    let indexValues = params.getAll("index");
+    let hasNakedIndexParam = indexValues.some((v) => v === "");
+    if (hasNakedIndexParam) {
+      params.delete("index");
+      indexValues.filter((v) => v).forEach((v) => params.append("index", v));
+      let qs = params.toString();
+      path.search = qs ? `?${qs}` : "";
+    }
+  }
+  if ((!action || action === ".") && match.route.index) {
+    path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+  }
+  if (basename !== "/") {
+    path.pathname = path.pathname === "/" ? basename : joinPaths([basename, path.pathname]);
+  }
+  return createPath(path);
+}
+function useFetcher({
+  key
+} = {}) {
+  let { router } = useDataRouterContext3("useFetcher" /* UseFetcher */);
+  let state = useDataRouterState2("useFetcher" /* UseFetcher */);
+  let fetcherData = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FetchersContext);
+  let route = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  let routeId = route.matches[route.matches.length - 1]?.route.id;
+  invariant(fetcherData, `useFetcher must be used inside a FetchersContext`);
+  invariant(route, `useFetcher must be used inside a RouteContext`);
+  invariant(
+    routeId != null,
+    `useFetcher can only be used on routes that contain a unique "id"`
+  );
+  let defaultKey = react__WEBPACK_IMPORTED_MODULE_0__.useId();
+  let [fetcherKey, setFetcherKey] = react__WEBPACK_IMPORTED_MODULE_0__.useState(key || defaultKey);
+  if (key && key !== fetcherKey) {
+    setFetcherKey(key);
+  }
+  let { deleteFetcher, getFetcher, resetFetcher, fetch: routerFetch } = router;
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    getFetcher(fetcherKey);
+    return () => deleteFetcher(fetcherKey);
+  }, [deleteFetcher, getFetcher, fetcherKey]);
+  let load = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    async (href, opts) => {
+      invariant(routeId, "No routeId available for fetcher.load()");
+      await routerFetch(fetcherKey, routeId, href, opts);
+    },
+    [fetcherKey, routeId, routerFetch]
+  );
+  let submitImpl = useSubmit();
+  let submit = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    async (target, opts) => {
+      await submitImpl(target, {
+        ...opts,
+        navigate: false,
+        fetcherKey
+      });
+    },
+    [fetcherKey, submitImpl]
+  );
+  let reset = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (opts) => resetFetcher(fetcherKey, opts),
+    [resetFetcher, fetcherKey]
+  );
+  let FetcherForm = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    let FetcherForm2 = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
+      (props, ref) => {
+        return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Form, { ...props, navigate: false, fetcherKey, ref });
+      }
+    );
+    FetcherForm2.displayName = "fetcher.Form";
+    return FetcherForm2;
+  }, [fetcherKey]);
+  let fetcher = state.fetchers.get(fetcherKey) || IDLE_FETCHER;
+  let data2 = fetcherData.get(fetcherKey);
+  let fetcherWithComponents = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    () => ({
+      Form: FetcherForm,
+      submit,
+      load,
+      reset,
+      ...fetcher,
+      data: data2
+    }),
+    [FetcherForm, submit, load, reset, fetcher, data2]
+  );
+  return fetcherWithComponents;
+}
+function useFetchers() {
+  let state = useDataRouterState2("useFetchers" /* UseFetchers */);
+  return Array.from(state.fetchers.entries()).map(([key, fetcher]) => ({
+    ...fetcher,
+    key
+  }));
+}
+var SCROLL_RESTORATION_STORAGE_KEY = "react-router-scroll-positions";
+var savedScrollPositions = {};
+function getScrollRestorationKey(location, matches, basename, getKey) {
+  let key = null;
+  if (getKey) {
+    if (basename !== "/") {
+      key = getKey(
+        {
+          ...location,
+          pathname: stripBasename(location.pathname, basename) || location.pathname
+        },
+        matches
+      );
+    } else {
+      key = getKey(location, matches);
+    }
+  }
+  if (key == null) {
+    key = location.key;
+  }
+  return key;
+}
+function useScrollRestoration({
+  getKey,
+  storageKey
+} = {}) {
+  let { router } = useDataRouterContext3("useScrollRestoration" /* UseScrollRestoration */);
+  let { restoreScrollPosition, preventScrollReset } = useDataRouterState2(
+    "useScrollRestoration" /* UseScrollRestoration */
+  );
+  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
+  let location = useLocation();
+  let matches = useMatches();
+  let navigation = useNavigation();
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    return () => {
+      window.history.scrollRestoration = "auto";
+    };
+  }, []);
+  usePageHide(
+    react__WEBPACK_IMPORTED_MODULE_0__.useCallback(() => {
+      if (navigation.state === "idle") {
+        let key = getScrollRestorationKey(location, matches, basename, getKey);
+        savedScrollPositions[key] = window.scrollY;
+      }
+      try {
+        sessionStorage.setItem(
+          storageKey || SCROLL_RESTORATION_STORAGE_KEY,
+          JSON.stringify(savedScrollPositions)
+        );
+      } catch (error) {
+        warning(
+          false,
+          `Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (${error}).`
+        );
+      }
+      window.history.scrollRestoration = "auto";
+    }, [navigation.state, getKey, basename, location, matches, storageKey])
+  );
+  if (typeof document !== "undefined") {
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
+      try {
+        let sessionPositions = sessionStorage.getItem(
+          storageKey || SCROLL_RESTORATION_STORAGE_KEY
+        );
+        if (sessionPositions) {
+          savedScrollPositions = JSON.parse(sessionPositions);
+        }
+      } catch (e) {
+      }
+    }, [storageKey]);
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
+      let disableScrollRestoration = router?.enableScrollRestoration(
+        savedScrollPositions,
+        () => window.scrollY,
+        getKey ? (location2, matches2) => getScrollRestorationKey(location2, matches2, basename, getKey) : void 0
+      );
+      return () => disableScrollRestoration && disableScrollRestoration();
+    }, [router, basename, getKey]);
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
+      if (restoreScrollPosition === false) {
+        return;
+      }
+      if (typeof restoreScrollPosition === "number") {
+        window.scrollTo(0, restoreScrollPosition);
+        return;
+      }
+      try {
+        if (location.hash) {
+          let el = document.getElementById(
+            decodeURIComponent(location.hash.slice(1))
+          );
+          if (el) {
+            el.scrollIntoView();
+            return;
+          }
+        }
+      } catch {
+        warning(
+          false,
+          `"${location.hash.slice(
+            1
+          )}" is not a decodable element ID. The view will not scroll to it.`
+        );
+      }
+      if (preventScrollReset === true) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    }, [location, restoreScrollPosition, preventScrollReset]);
+  }
+}
+function useBeforeUnload(callback, options) {
+  let { capture } = options || {};
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    let opts = capture != null ? { capture } : void 0;
+    window.addEventListener("beforeunload", callback, opts);
+    return () => {
+      window.removeEventListener("beforeunload", callback, opts);
+    };
+  }, [callback, capture]);
+}
+function usePageHide(callback, options) {
+  let { capture } = options || {};
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    let opts = capture != null ? { capture } : void 0;
+    window.addEventListener("pagehide", callback, opts);
+    return () => {
+      window.removeEventListener("pagehide", callback, opts);
+    };
+  }, [callback, capture]);
+}
+function usePrompt({
+  when,
+  message
+}) {
+  let blocker = useBlocker(when);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (blocker.state === "blocked") {
+      let proceed = window.confirm(message);
+      if (proceed) {
+        setTimeout(blocker.proceed, 0);
+      } else {
+        blocker.reset();
+      }
+    }
+  }, [blocker, message]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (blocker.state === "blocked" && !when) {
+      blocker.reset();
+    }
+  }, [blocker, when]);
+}
+function useViewTransitionState(to, { relative } = {}) {
+  let vtContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(ViewTransitionContext);
+  invariant(
+    vtContext != null,
+    "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?"
+  );
+  let { basename } = useDataRouterContext3(
+    "useViewTransitionState" /* useViewTransitionState */
+  );
+  let path = useResolvedPath(to, { relative });
+  if (!vtContext.isTransitioning) {
+    return false;
+  }
+  let currentPath = stripBasename(vtContext.currentLocation.pathname, basename) || vtContext.currentLocation.pathname;
+  let nextPath = stripBasename(vtContext.nextLocation.pathname, basename) || vtContext.nextLocation.pathname;
+  return matchPath(path.pathname, nextPath) != null || matchPath(path.pathname, currentPath) != null;
+}
+
+// lib/dom/server.tsx
+
+function StaticRouter({
+  basename,
+  children,
+  location: locationProp = "/"
+}) {
+  if (typeof locationProp === "string") {
+    locationProp = parsePath(locationProp);
+  }
+  let action = "POP" /* Pop */;
+  let location = {
+    pathname: locationProp.pathname || "/",
+    search: locationProp.search || "",
+    hash: locationProp.hash || "",
+    state: locationProp.state != null ? locationProp.state : null,
+    key: locationProp.key || "default",
+    unstable_mask: void 0
+  };
+  let staticNavigator = getStatelessNavigator();
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    Router,
+    {
+      basename,
+      children,
+      location,
+      navigationType: action,
+      navigator: staticNavigator,
+      static: true,
+      unstable_useTransitions: false
+    }
+  );
+}
+function StaticRouterProvider({
+  context,
+  router,
+  hydrate: hydrate2 = true,
+  nonce
+}) {
+  invariant(
+    router && context,
+    "You must provide `router` and `context` to <StaticRouterProvider>"
+  );
+  let dataRouterContext = {
+    router,
+    navigator: getStatelessNavigator(),
+    static: true,
+    staticContext: context,
+    basename: context.basename || "/"
+  };
+  let fetchersContext = /* @__PURE__ */ new Map();
+  let hydrateScript = "";
+  if (hydrate2 !== false) {
+    let data2 = {
+      loaderData: context.loaderData,
+      actionData: context.actionData,
+      errors: serializeErrors(context.errors)
+    };
+    let json = escapeHtml(JSON.stringify(JSON.stringify(data2)));
+    hydrateScript = `window.__staticRouterHydrationData = JSON.parse(${json});`;
+  }
+  let { state } = dataRouterContext.router;
+  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterContext.Provider, { value: dataRouterContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterStateContext.Provider, { value: state }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(FetchersContext.Provider, { value: fetchersContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ViewTransitionContext.Provider, { value: { isTransitioning: false } }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    Router,
+    {
+      basename: dataRouterContext.basename,
+      location: state.location,
+      navigationType: state.historyAction,
+      navigator: dataRouterContext.navigator,
+      static: dataRouterContext.static,
+      unstable_useTransitions: false
+    },
+    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+      DataRoutes,
+      {
+        routes: router.routes,
+        future: router.future,
+        state,
+        isStatic: true
+      }
+    )
+  ))))), hydrateScript ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    "script",
+    {
+      suppressHydrationWarning: true,
+      nonce,
+      dangerouslySetInnerHTML: { __html: hydrateScript }
+    }
+  ) : null);
+}
+function serializeErrors(errors) {
+  if (!errors) return null;
+  let entries = Object.entries(errors);
+  let serialized = {};
+  for (let [key, val] of entries) {
+    if (isRouteErrorResponse(val)) {
+      serialized[key] = { ...val, __type: "RouteErrorResponse" };
+    } else if (val instanceof Error) {
+      serialized[key] = {
+        message: val.message,
+        __type: "Error",
+        // If this is a subclass (i.e., ReferenceError), send up the type so we
+        // can re-create the same type during hydration.
+        ...val.name !== "Error" ? {
+          __subType: val.name
+        } : {}
+      };
+    } else {
+      serialized[key] = val;
+    }
+  }
+  return serialized;
+}
+function getStatelessNavigator() {
+  return {
+    createHref,
+    encodeLocation,
+    push(to) {
+      throw new Error(
+        `You cannot use navigator.push() on the server because it is a stateless environment. This error was probably triggered when you did a \`navigate(${JSON.stringify(to)})\` somewhere in your app.`
+      );
+    },
+    replace(to) {
+      throw new Error(
+        `You cannot use navigator.replace() on the server because it is a stateless environment. This error was probably triggered when you did a \`navigate(${JSON.stringify(to)}, { replace: true })\` somewhere in your app.`
+      );
+    },
+    go(delta) {
+      throw new Error(
+        `You cannot use navigator.go() on the server because it is a stateless environment. This error was probably triggered when you did a \`navigate(${delta})\` somewhere in your app.`
+      );
+    },
+    back() {
+      throw new Error(
+        `You cannot use navigator.back() on the server because it is a stateless environment.`
+      );
+    },
+    forward() {
+      throw new Error(
+        `You cannot use navigator.forward() on the server because it is a stateless environment.`
+      );
+    }
+  };
+}
+function createStaticHandler2(routes, opts) {
+  return createStaticHandler(routes, {
+    ...opts,
+    mapRouteProperties
+  });
+}
+function createStaticRouter(routes, context, opts = {}) {
+  let manifest = {};
+  let dataRoutes = convertRoutesToDataRoutes(
+    routes,
+    mapRouteProperties,
+    void 0,
+    manifest
+  );
+  let matches = context.matches.map((match) => {
+    let route = manifest[match.route.id] || match.route;
+    return {
+      ...match,
+      route
+    };
+  });
+  let msg = (method) => `You cannot use router.${method}() on the server because it is a stateless environment`;
+  return {
+    get basename() {
+      return context.basename;
+    },
+    get future() {
+      return {
+        v8_middleware: false,
+        ...opts?.future
+      };
+    },
+    get state() {
+      return {
+        historyAction: "POP" /* Pop */,
+        location: context.location,
+        matches,
+        loaderData: context.loaderData,
+        actionData: context.actionData,
+        errors: context.errors,
+        initialized: true,
+        renderFallback: false,
+        navigation: IDLE_NAVIGATION,
+        restoreScrollPosition: null,
+        preventScrollReset: false,
+        revalidation: "idle",
+        fetchers: /* @__PURE__ */ new Map(),
+        blockers: /* @__PURE__ */ new Map()
+      };
+    },
+    get routes() {
+      return dataRoutes;
+    },
+    get window() {
+      return void 0;
+    },
+    initialize() {
+      throw msg("initialize");
+    },
+    subscribe() {
+      throw msg("subscribe");
+    },
+    enableScrollRestoration() {
+      throw msg("enableScrollRestoration");
+    },
+    navigate() {
+      throw msg("navigate");
+    },
+    fetch() {
+      throw msg("fetch");
+    },
+    revalidate() {
+      throw msg("revalidate");
+    },
+    createHref,
+    encodeLocation,
+    getFetcher() {
+      return IDLE_FETCHER;
+    },
+    deleteFetcher() {
+      throw msg("deleteFetcher");
+    },
+    resetFetcher() {
+      throw msg("resetFetcher");
+    },
+    dispose() {
+      throw msg("dispose");
+    },
+    getBlocker() {
+      return IDLE_BLOCKER;
+    },
+    deleteBlocker() {
+      throw msg("deleteBlocker");
+    },
+    patchRoutes() {
+      throw msg("patchRoutes");
+    },
+    _internalFetchControllers: /* @__PURE__ */ new Map(),
+    _internalSetRoutes() {
+      throw msg("_internalSetRoutes");
+    },
+    _internalSetStateDoNotUseOrYouWillBreakYourApp() {
+      throw msg("_internalSetStateDoNotUseOrYouWillBreakYourApp");
+    }
+  };
+}
+function createHref(to) {
+  return typeof to === "string" ? to : createPath(to);
+}
+function encodeLocation(to) {
+  let href = typeof to === "string" ? to : createPath(to);
+  href = href.replace(/ $/, "%20");
+  let encoded = ABSOLUTE_URL_REGEX3.test(href) ? new URL(href) : new URL(href, "http://localhost");
+  return {
+    pathname: encoded.pathname,
+    search: encoded.search,
+    hash: encoded.hash
+  };
+}
+var ABSOLUTE_URL_REGEX3 = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+
+
+
+
+/***/ },
+
 /***/ "./src/db/categories.json"
 /*!********************************!*\
   !*** ./src/db/categories.json ***!
@@ -50848,7 +64745,7 @@ if (false) // removed by dead control flow
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","shortDescription":"Программирование","imagePreviewUrl":"./images/category-image-1.jpg","imageUrl":"./images/category-description-image-1.jpg","audience":12000,"followers":382,"tags":[1,3]},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-2.jpg","imageUrl":"./images/category-description-image-2.jpg","audience":1238,"followers":2798,"tags":[1,9]},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","shortDescription":"Практика","imagePreviewUrl":"./images/category-image-3.jpg","imageUrl":"./images/category-description-image-3.jpg","audience":12003,"followers":2323,"tags":[1,4]},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","shortDescription":"Музыкальные стримы","imagePreviewUrl":"./images/category-image-4.jpg","imageUrl":"./images/category-description-image-4.jpg","audience":12020,"followers":3442,"tags":[1,9]},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12870,"followers":64554,"tags":[1,6]},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","shortDescription":"Чтение вслух","imagePreviewUrl":"./images/category-image-6.jpg","imageUrl":"./images/category-description-image-6.jpg","audience":120,"followers":445,"tags":[1,7]},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","shortDescription":"Стримы по TDU2","imagePreviewUrl":"./images/category-image-7.jpg","imageUrl":"./images/category_description_image-7.jpg","audience":2000,"followers":544,"tags":[5,8]},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","shortDescription":"Стримы по Skyrim","imagePreviewUrl":"./images/category-image-8.jpg","imageUrl":"./images/category_description_image-8.svg","audience":1000,"followers":221,"tags":[5,8]},{"id":9,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","shortDescription":"Обучающие стримы","imagePreviewUrl":"./images/category-image-9.jpg","imageUrl":"./images/category-description-image-9.jpg","audience":1230,"followers":34,"tags":[1,8]},{"id":10,"menuOrder":100,"name":"Танец Tribal","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-10.jpg","imageUrl":"./images/category_description_image-10.svg","audience":1230,"followers":34,"tags":[1,6]},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","shortDescription":"Развлечения","imagePreviewUrl":"./images/category-image-11.jpg","imageUrl":"./images/category-description-image-11.jpg","audience":330,"followers":38,"tags":[7,8]},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","shortDescription":"Спорт-мероприятия","imagePreviewUrl":"./images/category-image-12.jpg","imageUrl":"./images/category-description-image-12.jpg","audience":1230,"followers":34,"tags":[11,13]},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.","shortDescription":"Стримы по играм","imagePreviewUrl":"./images/category-image-13.jpg","imageUrl":"./images/category-description-image-13.jpg","audience":330,"followers":38,"tags":[5,12]},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","shortDescription":"Стримы по хобби","imagePreviewUrl":"./images/category-image-14.jpg","imageUrl":"./images/category-description-image-14.jpg","audience":1230,"followers":34,"tags":[10,12]},{"id":15,"menuOrder":100,"name":"Танец Mandala","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category_description_image-15.svg","audience":12750,"followers":12,"tags":[1,6]},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","shortDescription":"Радио-стримы 24/7","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-16.jpg","audience":1230,"followers":34,"tags":[9,12]},{"id":17,"menuOrder":24,"name":"Другое","shortName":"Другое","description":"Другое - стримы по тематикам, которые не вошли ни в одну категорию стримов.","shortDescription":"Уникальные стримы","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-radio.jpg","audience":560,"followers":354,"tags":[14,15]},{"id":18,"menuOrder":25,"name":"АСМР","shortName":"АСМР","description":"АСМР «автономная сенсорная меридиональная реакция» - обозначает приятные ощущения, которые возникают в ответ на аудиовизуальные стимулы: звуки природы, шепот, мурчание кота, шелест листьев, плавные движения.","shortDescription":"АСМР-стримы 24/7","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-radio.jpg","audience":860,"followers":374,"tags":[9,12]},{"id":19,"menuOrder":26,"name":"Пение","shortName":"Пение","description":"Пение - это уникальное вокальное искусство, использующее человеческий голос как инструмент для создания музыки и передачи эмоций.","shortDescription":"Вокальные стримы","imagePreviewUrl":"./images/category-image-19.jpg","imageUrl":"./images/category-description-image-19.jpg","audience":230,"followers":340,"tags":[7,9]},{"id":20,"menuOrder":27,"name":"Искусство","shortName":"Искусство","description":"Стримы по искусству (арт-стримы) - это развивающийся жанр, где процесс создания произведения искусства или обучения ему происходит в режиме реального времени. Это уникальная форма коммуникации в цифровую эпоху, позволяющая художникам делиться своим мастерством, а зрителям — погружаться в творческий процесс.","shortDescription":"Стримы по искусству","imagePreviewUrl":"./images/category-image-20.jpg","imageUrl":"./images/category-description-image-20.jpg","audience":5660,"followers":3,"tags":[7,15]},{"id":21,"menuOrder":28,"name":"Балет","shortName":"Балет","description":"Балет - это высшая форма сценического искусства, объединяющая музыку, хореографию, драматургию и изобразительное искусство.","shortDescription":"Балетные стримы","imagePreviewUrl":"./images/category-image-21.jpg","imageUrl":"./images/category-description-image-21.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":22,"menuOrder":28,"name":"Еда и напитки","shortName":"Кулинария","description":"Кулинария - это искусство и технология приготовления пищи, объединяющая способы обработки продуктов для создания вкусных и питательных блюд.","shortDescription":"Кулинарные стримы","imagePreviewUrl":"./images/category-image-22.jpg","imageUrl":"./images/category-description-image-22.jpg","audience":560,"followers":4,"tags":[10,16]},{"id":23,"menuOrder":28,"name":"Настольные игры","shortName":"Настолки","description":"Стримы по настольным играм — это формат контента, который позволяет зрителям увидеть игровой процесс в реальном времени, оценить компоненты, понять правила и проникнуться атмосферой партии.","shortDescription":"Настольные игры","imagePreviewUrl":"./images/category-image-23.jpg","imageUrl":"./images/category-description-image-23.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":24,"menuOrder":28,"name":"Наука и техника","shortName":"Наука","description":"Стримы по науке и технике трансформируют сложные научные концепции в доступный визуальный контент, позволяя зрителям задавать вопросы в режиме реального времени","shortDescription":"Научные стримы","imagePreviewUrl":"./images/category-image-24.jpg","imageUrl":"./images/category-description-image-24.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":25,"menuOrder":28,"name":"Творчество","shortName":"Творчество","description":"Стримы по творчеству (Creative Streaming) - это формат онлайн-трансляций, где авторы демонстрируют процесс создания своих произведений в реальном времени. Это позволяет зрителям не только увидеть финальный результат, но и погрузиться в закулисье творческого процесса, перенять опыт или просто отдохнуть, наблюдая за созиданием.","shortDescription":"Творческие стримы","imagePreviewUrl":"./images/category-image-25.jpg","imageUrl":"./images/category-description-image-25.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":26,"menuOrder":28,"name":"Шахматы","shortName":"Шахматы","description":"Шахматные стримы — это современный феномен, превративший интеллектуальную, зачастую тихую игру в зрелищное шоу.","shortDescription":"Шахматные стримы","imagePreviewUrl":"./images/category-image-26.jpg","imageUrl":"./images/category-description-image-26.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":27,"menuOrder":28,"name":"Миниатюры","shortName":"Миниатюры","description":"Стримы (прямые трансляции) по созданию миниатюр — это уникальный стык творчества, рукоделия и интерактивного общения. Это не просто демонстрация процесса покраски или сборки, а настоящая «медитация в прямом эфире», собирающая единомышленников.","shortDescription":"Хобби стримы","imagePreviewUrl":"./images/category-image-27.jpg","imageUrl":"./images/category-description-image-27.jpg","audience":560,"followers":4,"tags":[10,12]},{"id":28,"menuOrder":28,"name":"Красота","shortName":"Красота","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о красоте","imagePreviewUrl":"./images/category-image-28.jpg","imageUrl":"./images/category-description-image-28.jpg","audience":560,"followers":4,"tags":[8,13]},{"id":29,"menuOrder":29,"name":"Животные и зоопарки","shortName":"Животные","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о животных","imagePreviewUrl":"./images/category-image-29.jpg","imageUrl":"./images/category-description-image-29.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":30,"menuOrder":30,"name":"Со-творчество","shortName":"Коллаборация","description":"Коллаборации — это совместные трансляции двух или более блогеров, направленные на обмен аудиторией, создание уникального контента и рост каналов. Это один из самых эффективных инструментов для продвижения, так как позволяет привлечь лояльную аудиторию другого стримера.","shortDescription":"Совместные стримы","imagePreviewUrl":"./images/category-image-30.jpg","imageUrl":"./images/category-description-image-30.jpg","audience":560,"followers":4,"tags":[8,15]},{"id":31,"menuOrder":31,"name":"События","shortName":"События","description":"Прямые трансляции мероприятий — это современный медиаформат, позволяющий авторам (стримерам) транслировать интересные события в реальном времени, взаимодействуя с аудиторией через интернет-пространство.","shortDescription":"Стримы о событиях","imagePreviewUrl":"./images/category-image-31.jpg","imageUrl":"./images/category-description-image-31.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":32,"menuOrder":32,"name":"Телевидение","shortName":"Телевидение","description":"Стриминг обычных телевизионных каналов — это трансляция телевизионного контента (прямой эфир, новости, шоу, фильмы) в режиме реального времени через интернет, позволяющая зрителям смотреть ТВ не на телевизоре с антенной, а на смартфонах, компьютерах и Smart TV.","shortDescription":"ТВ стримы","imagePreviewUrl":"./images/category-image-32.jpg","imageUrl":"./images/category-description-image-32.jpg","audience":560,"followers":4,"tags":[12,17]},{"id":33,"menuOrder":33,"name":"Ремесло","shortName":"Ремесло","description":"Стримы ремесленников — это формат прямых трансляций, в которых мастера показывают процесс создания изделий ручной работы: от лепки керамики и вязания до ковки металла или работы с кожей. Это направление сочетает в себе элементы хобби, обучения (DIY — Do It Yourself) и лайфстайл-контента.","shortDescription":"Стримы о ремеслах","imagePreviewUrl":"./images/category-image-33.jpg","imageUrl":"./images/category-description-image-33.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":34,"menuOrder":34,"name":"В реальной жизни","shortName":"Жизнь","description":"Стримы о жизни — это формат контента, где ведущий транслирует свою повседневность, общается с аудиторией в реальном времени, делится мыслями, переживаниями или занимается обычными делами, создавая иллюзию присутствия и близкого общения. Это жанр, близкий к видеоблогингу, но существующий «здесь и сейчас» без монтажа.","shortDescription":"Стримы о жизни 24/7","imagePreviewUrl":"./images/category-image-34.jpg","imageUrl":"./images/category-description-image-34.jpg","audience":560,"followers":4,"tags":[8,14]},{"id":35,"menuOrder":35,"name":"Фитнес","shortName":"Фитнес","description":"Фитнес-стримы стали популярным форматом, объединяющим тренировки, мотивацию и живое общение. Они позволяют заниматься спортом в режиме реального времени, получая обратную связь от тренера или общаясь с единомышленниками.","shortDescription":"Стримы о фитнесе 24/7","imagePreviewUrl":"./images/category-image-35.jpg","imageUrl":"./images/category-description-image-35.jpg","audience":560,"followers":4,"tags":[8,11]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","shortDescription":"Программирование","imagePreviewUrl":"./images/category-image-1.jpg","imageUrl":"./images/category-description-image-1.jpg","audience":12000,"followers":382,"tags":[1,3]},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-2.jpg","imageUrl":"./images/category-description-image-2.jpg","audience":1238,"followers":2798,"tags":[1,9]},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","shortDescription":"Практика","imagePreviewUrl":"./images/category-image-3.jpg","imageUrl":"./images/category-description-image-3.jpg","audience":12003,"followers":2323,"tags":[1,4]},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","shortDescription":"Музыкальные стримы","imagePreviewUrl":"./images/category-image-4.jpg","imageUrl":"./images/category-description-image-4.jpg","audience":12020,"followers":3442,"tags":[1,9]},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12870,"followers":64554,"tags":[1,6]},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","shortDescription":"Чтение вслух","imagePreviewUrl":"./images/category-image-6.jpg","imageUrl":"./images/category-description-image-6.jpg","audience":120,"followers":445,"tags":[1,7]},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","shortDescription":"Стримы по TDU2","imagePreviewUrl":"./images/category-image-7.jpg","imageUrl":"./images/category_description_image-7.jpg","audience":2000,"followers":544,"tags":[5,8]},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","shortDescription":"Стримы по Skyrim","imagePreviewUrl":"./images/category-image-8.jpg","imageUrl":"./images/category_description_image-8.svg","audience":1000,"followers":221,"tags":[5,8]},{"id":9,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","shortDescription":"Обучающие стримы","imagePreviewUrl":"./images/category-image-9.jpg","imageUrl":"./images/category-description-image-9.jpg","audience":1230,"followers":34,"tags":[1,8]},{"id":10,"menuOrder":100,"name":"Танец Tribal","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-10.jpg","imageUrl":"./images/category_description_image-10.svg","audience":1230,"followers":34,"tags":[1,6]},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","shortDescription":"Развлечения","imagePreviewUrl":"./images/category-image-11.jpg","imageUrl":"./images/category-description-image-11.jpg","audience":330,"followers":38,"tags":[7,8]},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","shortDescription":"Спорт-мероприятия","imagePreviewUrl":"./images/category-image-12.jpg","imageUrl":"./images/category-description-image-12.jpg","audience":1230,"followers":34,"tags":[11,13]},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.","shortDescription":"Стримы по играм","imagePreviewUrl":"./images/category-image-13.jpg","imageUrl":"./images/category-description-image-13.jpg","audience":330,"followers":38,"tags":[5,12]},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","shortDescription":"Стримы по хобби","imagePreviewUrl":"./images/category-image-14.jpg","imageUrl":"./images/category-description-image-14.jpg","audience":1230,"followers":34,"tags":[10,12]},{"id":15,"menuOrder":100,"name":"Танец Mandala","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category_description_image-15.svg","audience":12750,"followers":12,"tags":[1,6]},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","shortDescription":"Радио-стримы 24/7","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-16.jpg","audience":1230,"followers":34,"tags":[9,12]},{"id":17,"menuOrder":24,"name":"Другое","shortName":"Другое","description":"Другое - стримы по тематикам, которые не вошли ни в одну категорию стримов.","shortDescription":"Уникальные стримы","imagePreviewUrl":"./images/category-image-17.jpg","imageUrl":"./images/category-description-image-17.jpg","audience":560,"followers":354,"tags":[14,15]},{"id":18,"menuOrder":25,"name":"АСМР","shortName":"АСМР","description":"АСМР «автономная сенсорная меридиональная реакция» - обозначает приятные ощущения, которые возникают в ответ на аудиовизуальные стимулы: звуки природы, шепот, мурчание кота, шелест листьев, плавные движения.","shortDescription":"АСМР-стримы 24/7","imagePreviewUrl":"./images/category-image-18.jpg","imageUrl":"./images/category-description-image-18.jpg","audience":860,"followers":374,"tags":[9,12]},{"id":19,"menuOrder":26,"name":"Пение","shortName":"Пение","description":"Пение - это уникальное вокальное искусство, использующее человеческий голос как инструмент для создания музыки и передачи эмоций.","shortDescription":"Вокальные стримы","imagePreviewUrl":"./images/category-image-19.jpg","imageUrl":"./images/category-description-image-19.jpg","audience":230,"followers":340,"tags":[7,9]},{"id":20,"menuOrder":27,"name":"Искусство","shortName":"Искусство","description":"Стримы по искусству (арт-стримы) - это развивающийся жанр, где процесс создания произведения искусства или обучения ему происходит в режиме реального времени. Это уникальная форма коммуникации в цифровую эпоху, позволяющая художникам делиться своим мастерством, а зрителям — погружаться в творческий процесс.","shortDescription":"Стримы по искусству","imagePreviewUrl":"./images/category-image-20.jpg","imageUrl":"./images/category-description-image-20.jpg","audience":5660,"followers":3,"tags":[7,15]},{"id":21,"menuOrder":28,"name":"Балет","shortName":"Балет","description":"Балет - это высшая форма сценического искусства, объединяющая музыку, хореографию, драматургию и изобразительное искусство.","shortDescription":"Балетные стримы","imagePreviewUrl":"./images/category-image-21.jpg","imageUrl":"./images/category-description-image-21.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":22,"menuOrder":28,"name":"Еда и напитки","shortName":"Кулинария","description":"Кулинария - это искусство и технология приготовления пищи, объединяющая способы обработки продуктов для создания вкусных и питательных блюд.","shortDescription":"Кулинарные стримы","imagePreviewUrl":"./images/category-image-22.jpg","imageUrl":"./images/category-description-image-22.jpg","audience":560,"followers":4,"tags":[10,16]},{"id":23,"menuOrder":28,"name":"Настольные игры","shortName":"Настолки","description":"Стримы по настольным играм — это формат контента, который позволяет зрителям увидеть игровой процесс в реальном времени, оценить компоненты, понять правила и проникнуться атмосферой партии.","shortDescription":"Настольные игры","imagePreviewUrl":"./images/category-image-23.jpg","imageUrl":"./images/category-description-image-23.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":24,"menuOrder":28,"name":"Наука и техника","shortName":"Наука","description":"Стримы по науке и технике трансформируют сложные научные концепции в доступный визуальный контент, позволяя зрителям задавать вопросы в режиме реального времени","shortDescription":"Научные стримы","imagePreviewUrl":"./images/category-image-24.jpg","imageUrl":"./images/category-description-image-24.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":25,"menuOrder":28,"name":"Творчество","shortName":"Творчество","description":"Стримы по творчеству (Creative Streaming) - это формат онлайн-трансляций, где авторы демонстрируют процесс создания своих произведений в реальном времени. Это позволяет зрителям не только увидеть финальный результат, но и погрузиться в закулисье творческого процесса, перенять опыт или просто отдохнуть, наблюдая за созиданием.","shortDescription":"Творческие стримы","imagePreviewUrl":"./images/category-image-25.jpg","imageUrl":"./images/category-description-image-25.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":26,"menuOrder":28,"name":"Шахматы","shortName":"Шахматы","description":"Шахматные стримы — это современный феномен, превративший интеллектуальную, зачастую тихую игру в зрелищное шоу.","shortDescription":"Шахматные стримы","imagePreviewUrl":"./images/category-image-26.jpg","imageUrl":"./images/category-description-image-26.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":27,"menuOrder":28,"name":"Миниатюры","shortName":"Миниатюры","description":"Стримы (прямые трансляции) по созданию миниатюр — это уникальный стык творчества, рукоделия и интерактивного общения. Это не просто демонстрация процесса покраски или сборки, а настоящая «медитация в прямом эфире», собирающая единомышленников.","shortDescription":"Хобби стримы","imagePreviewUrl":"./images/category-image-27.jpg","imageUrl":"./images/category-description-image-27.jpg","audience":560,"followers":4,"tags":[10,12]},{"id":28,"menuOrder":28,"name":"Красота","shortName":"Красота","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о красоте","imagePreviewUrl":"./images/category-image-28.jpg","imageUrl":"./images/category-description-image-28.jpg","audience":560,"followers":4,"tags":[8,13]},{"id":29,"menuOrder":29,"name":"Животные и зоопарки","shortName":"Животные","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о животных","imagePreviewUrl":"./images/category-image-29.jpg","imageUrl":"./images/category-description-image-29.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":30,"menuOrder":30,"name":"Со-творчество","shortName":"Коллаборация","description":"Коллаборации — это совместные трансляции двух или более блогеров, направленные на обмен аудиторией, создание уникального контента и рост каналов. Это один из самых эффективных инструментов для продвижения, так как позволяет привлечь лояльную аудиторию другого стримера.","shortDescription":"Совместные стримы","imagePreviewUrl":"./images/category-image-30.jpg","imageUrl":"./images/category-description-image-30.jpg","audience":560,"followers":4,"tags":[8,15]},{"id":31,"menuOrder":31,"name":"События","shortName":"События","description":"Прямые трансляции мероприятий — это современный медиаформат, позволяющий авторам (стримерам) транслировать интересные события в реальном времени, взаимодействуя с аудиторией через интернет-пространство.","shortDescription":"Стримы о событиях","imagePreviewUrl":"./images/category-image-31.jpg","imageUrl":"./images/category-description-image-31.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":32,"menuOrder":32,"name":"Телевидение","shortName":"Телевидение","description":"Стриминг обычных телевизионных каналов — это трансляция телевизионного контента (прямой эфир, новости, шоу, фильмы) в режиме реального времени через интернет, позволяющая зрителям смотреть ТВ не на телевизоре с антенной, а на смартфонах, компьютерах и Smart TV.","shortDescription":"ТВ стримы","imagePreviewUrl":"./images/category-image-32.jpg","imageUrl":"./images/category-description-image-32.jpg","audience":560,"followers":4,"tags":[12,17]},{"id":33,"menuOrder":33,"name":"Ремесло","shortName":"Ремесло","description":"Стримы ремесленников — это формат прямых трансляций, в которых мастера показывают процесс создания изделий ручной работы: от лепки керамики и вязания до ковки металла или работы с кожей. Это направление сочетает в себе элементы хобби, обучения (DIY — Do It Yourself) и лайфстайл-контента.","shortDescription":"Стримы о ремеслах","imagePreviewUrl":"./images/category-image-33.jpg","imageUrl":"./images/category-description-image-33.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":34,"menuOrder":34,"name":"В реальной жизни","shortName":"Жизнь","description":"Стримы о жизни — это формат контента, где ведущий транслирует свою повседневность, общается с аудиторией в реальном времени, делится мыслями, переживаниями или занимается обычными делами, создавая иллюзию присутствия и близкого общения. Это жанр, близкий к видеоблогингу, но существующий «здесь и сейчас» без монтажа.","shortDescription":"Стримы о жизни 24/7","imagePreviewUrl":"./images/category-image-34.jpg","imageUrl":"./images/category-description-image-34.jpg","audience":560,"followers":4,"tags":[8,14]},{"id":35,"menuOrder":35,"name":"Фитнес","shortName":"Фитнес","description":"Фитнес-стримы стали популярным форматом, объединяющим тренировки, мотивацию и живое общение. Они позволяют заниматься спортом в режиме реального времени, получая обратную связь от тренера или общаясь с единомышленниками.","shortDescription":"Стримы о фитнесе 24/7","imagePreviewUrl":"./images/category-image-35.jpg","imageUrl":"./images/category-description-image-35.jpg","audience":560,"followers":4,"tags":[8,11]}]}');
 
 /***/ },
 
@@ -50955,6 +64852,36 @@ module.exports = /*#__PURE__*/JSON.parse('{"users":[{"username":"admin","email":
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/create fake namespace object */
+/******/ 	(() => {
+/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
+/******/ 		var leafPrototypes;
+/******/ 		// create a fake namespace object
+/******/ 		// mode & 1: value is a module id, require it
+/******/ 		// mode & 2: merge all properties of value into the ns
+/******/ 		// mode & 4: return value when already ns object
+/******/ 		// mode & 16: return value when it's Promise-like
+/******/ 		// mode & 8|1: behave like require
+/******/ 		__webpack_require__.t = function(value, mode) {
+/******/ 			if(mode & 1) value = this(value);
+/******/ 			if(mode & 8) return value;
+/******/ 			if(typeof value === 'object' && value) {
+/******/ 				if((mode & 4) && value.__esModule) return value;
+/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
+/******/ 			}
+/******/ 			var ns = Object.create(null);
+/******/ 			__webpack_require__.r(ns);
+/******/ 			var def = {};
+/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
+/******/ 			for(var current = mode & 2 && value; (typeof current == 'object' || typeof current == 'function') && !~leafPrototypes.indexOf(current); current = getProto(current)) {
+/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
+/******/ 			}
+/******/ 			def['default'] = () => (value);
+/******/ 			__webpack_require__.d(ns, def);
+/******/ 			return ns;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -51021,7 +64948,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../db/dbHelper */ "./src/db/dbHelper.js");
 /* harmony import */ var _components_HomePage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/HomePage */ "./src/js/components/HomePage.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/App */ "./src/js/components/App.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -51032,9 +64961,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const body = document.getElementById('react-body');
 const rootBody = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_4__.createRoot)(body);
-rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_HomePage__WEBPACK_IMPORTED_MODULE_6__["default"], {
+rootBody.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_HomePage__WEBPACK_IMPORTED_MODULE_6__["default"], {
   db: _db_dbHelper__WEBPACK_IMPORTED_MODULE_5__["default"]
 }));
+// rootBody.render(<App db={db} />);
 })();
 
 /******/ })()
