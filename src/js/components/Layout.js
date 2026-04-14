@@ -26,11 +26,7 @@ export default function Layout(props) {
                     <div className="main-of-the-main">
                         <div className="horizontal-blocks">
                             <div className="main-screen-block">
-
-                                <div id="react-horizontal-menu" className="horizontal-menu">
                                     <HorizontalMenu db={db} />
-                                </div>
-
                                 {children}
                             </div>
                         </div>

@@ -11,18 +11,17 @@ export default function Header({ }) {
             promoBg: '#292640',
             inputBg: '#1C173C',
             btnBg: '#16122F',
+            btnScrollBg: '#54506B',
             activeBtnBg: '#000000',
-
             bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
+            tagBtnBg: 'rgba(170, 168, 181, 0.7)',
+            accentColorBg: '#FF6F3A',
+
             btnsHover: 'rgba(17, 9, 80, 0.5)',
             blocksHover: '#2e2b50',
-            btnScrollHover: '#54506B',
-
-            accentColor: '#FF6F3A',
-            accentColorHover: '#E2552D',
-
-            tagBtnBg: 'rgba(170, 168, 181, 0.7)',
+            btnScrollHover: '#16122F',
             tagBtnBgHover: '#CECED6',
+            accentColorHover: '#E2552D',
 
             fontLogo: '#FFFFFF',
             fontPrimary: '#FFFFFF',
@@ -31,43 +30,42 @@ export default function Header({ }) {
         }],
         ["light", {
             mainBg: '#FFFFFF',
-            promoBg: 'rgba(170, 168, 181, 0.5)',
+            promoBg: 'rgba(134, 129, 153, 0.5)',
             inputBg: 'rgba(170, 168, 181, 0.5)',
             btnBg: 'rgba(170, 168, 181, 0.5)',
+            btnScrollBg: '#AAA8B5',
             activeBtnBg: '#AAA8B5',
-
             bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
-            btnsHover: 'rgba(170, 168, 181, 0.7)',
-            blocksHover: '#AAA8B5',
-            btnScrollHover: '#AAA8B5',
-
-            accentColor: '#FF6F3A',
-            accentColorHover: '#E2552D',
-
             tagBtnBg: '#CECED6',
+            accentColorBg: '#FF6F3A',
+
+            btnsHover: '#b6b4be',
+            blocksHover: '#b6b4be',
+            btnScrollHover: '#b6b4be',
+            accentColorHover: '#E2552D',
             tagBtnBgHover: 'rgba(170, 168, 181, 0.7)',
 
             fontLogo: '#FF6F3A',
             fontPrimary: '#343148',
-            fontSecondary: '#FFFFFF',
+            fontSecondary: '#1C173C',
             fontTertiary: '#000000',
         }]
     ]);
-    const [currentTheme, setTheme] = useLocalStorage('currentTheme', 'dark');
+    const [currentTheme, setTheme] = useLocalStorage('currentTheme', 'light');
     const [currentUser, setUser] = useState('currentUser');
 
     const updateTheme = (themeId) => {
-        const { mainBg, promoBg, inputBg, btnBg, activeBtnBg,
+        const { mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
             bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
-            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover,
+            accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
             fontLogo, fontPrimary, fontSecondary, fontTertiary } = themesMap.get(themeId);
 
         setTheme(themeId);
 
         console.log({
-            mainBg, promoBg, inputBg, btnBg, activeBtnBg,
+            mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
             bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
-            accentColor, accentColorHover, tagBtnBg, tagBtnBgHover,
+            accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
             fontLogo, fontPrimary, fontSecondary, fontTertiary
         });
 
@@ -75,14 +73,15 @@ export default function Header({ }) {
         document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
         document.documentElement.style.setProperty('--theme-input-bg', inputBg);
         document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
+        document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
         document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
 
-        document.documentElement.style.setProperty('--theme-transparent-banner-btn', bannerBtnBg);
+        document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
         document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);
         document.documentElement.style.setProperty('--theme-blocks-hover', blocksHover);
         document.documentElement.style.setProperty('--theme-button-scroll-hover', btnScrollHover);
 
-        document.documentElement.style.setProperty('--theme-accent', accentColor);
+        document.documentElement.style.setProperty('--theme-accent-bg', accentColorBg);
         document.documentElement.style.setProperty('--theme-accent-hover', accentColorHover);
 
         document.documentElement.style.setProperty('--theme-tag-button', tagBtnBg);
@@ -95,9 +94,9 @@ export default function Header({ }) {
     }
 
     useEffect(() => {
-        console.log({currentTheme});
+        console.log({ currentTheme });
         updateTheme(currentTheme);
-        
+
         const authStr = localStorage.getItem('auth');
         const auth = authStr ? JSON.parse(authStr) : {};
         setUser(auth);

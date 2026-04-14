@@ -1,39 +1,37 @@
-/* horizontal menu: */
-.horizontal-menu {
+.horizontal-menu-row {
     position: relative;
     z-index: 5;
     display: inline-flex;
     flex-direction: row;
     flex-shrink: 0;
-    /* width: 100%; */
     width: calc(100vw - 252px);
-    height: 40px;
-    /* border: 1px solid pink; */
+    height: fit-content;
+    // border: 1px solid rgb(2, 175, 16);
     margin-left: 30px;
     margin-bottom: 30px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
-.hMenu {
-    max-width: 1698px;
+.horizontal-menu {
+    max-width: fit-content;
     color: var(--theme-font-primary, #FFFFFF);
     display: inline-block;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    /* border: 1px solid magenta; */
+    // border: 1px solid magenta;
 }
 
-.hMenu ul {
+.horizontal-menu ul {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    /* border: 1px solid rgb(194, 104, 31); */
+    // border: 1px solid rgb(197, 89, 0);
 }
 
-.hMenu li {
+.horizontal-menu li {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -46,38 +44,38 @@
     color: var(--theme-font-primary, #FFFFFF);
 }
 
-.hMenu li:hover {
-    background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+.horizontal-menu li:hover {
+    background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
     color: var(--theme-font-secondary, #CECED6);
 }
 
-.hMenu li.h-menu-btn-active {
-    background-color: black;
-    color:  white;
+.horizontal-menu li.h-menu-btn-active {
+    background-color: var(--theme-active-btn-bg, #000000);
+    color: white;
 }
 
-.hMenu li:first-child {
+.horizontal-menu li:first-child {
     border: none;
-    // font-weight: bold;
-    background-color: var(--theme-accent, #FF6F3A);
+    font-weight: bold;
+    background-color: var(----theme-accent-bg, #FF6F3A);
 }
 
-.hMenu li:first-child:hover {
+.horizontal-menu li:first-child:hover {
     // transform: scale(1.05);
     background-color: var(--theme-accent-hover, #E2552D);
 }
 
-.hMenu a {
+.horizontal-menu a {
     color: var(--theme-font-primary, #FFFFFF);
     display: block;
     transition: color 0.3s ease;
 }
 
-.hMenu li:hover a {
+.horizontal-menu li:hover a {
     color: var(--theme-font-secondary, #CECED6);
 }
 
-.h-menu-first-button {
+.horizontal-menu-first-button {
     display: inline-flex;
     flex-direction: row;
     align-items: baseline;
@@ -86,40 +84,42 @@
     height: 40px !important;
 }
 
-.h-menu-first-button img{
+.horizontal-menu-first-button a{
+    color: white; // цвет не меняется при смене темы
+}
+
+.horizontal-menu-first-button img {
     width: 11px;
     height: 11px;
     margin-right: 2px;
 }
 
-.h-menu-scroll {
+.horizontal-menu-scroll {
     position: absolute;
     z-index: 10;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     left: 94%;
-    //transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // visibility: hidden;
-    line-height: 40px; // matches the height of the button
+    line-height: 40px;
     width: 40px;
     height: 40px;
     padding: 0;
     border-radius: 5px;
-    background: var(--theme-button-scroll-hover, #54506B);
-    color: var(--theme-font-primary, #FFFFFF);
+    background: var(--theme-button-scroll-bg, #54506B);
     border: none;
+    // border: 1px solid var(--theme-font-secondary, #CECED6);
     text-align: center;
     cursor: pointer;
     z-index: 10;
     transition: background 0.3s ease;
 }
 
-.h-menu-scroll-arrow {
+.horizontal-menu-scroll-arrow {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,15 +132,21 @@
     right: -15px;
 }
 
-.h-menu-scroll:hover {
-    background-color: var(--color-background-dark, #16122F);
-    border: 1px solid var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
+.horizontal-menu-scroll:hover {
+    background-color: var(--theme-button-scroll-hover, #16122F);
+    border: 1px solid var(--theme-font-primary, #FFFFFF);
 }
 
-@media (max-width: 768px) {
-    .h-menu-scroll {
-        display: none;
+@media (max-width: 1280px) {
+
+    .horizontal-menu ul {
+        gap: 10px;
     }
 }
 
-/* end of the horizontal menu */
+@media (max-width: 768px) {
+
+    .horizontal-menu ul {
+        gap: 6px;
+    }
+}

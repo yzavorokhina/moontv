@@ -85,7 +85,7 @@ footer {
     // min-height: 720px;
     min-height: fit-content;
     // border: 1px solid green;
-    background: var(--theme-button-scroll-hover, #54506B);
+    background: var(--theme-button-scroll-bg, #54506B);
     background: rgba(84, 80, 107, 0.5);
     background-image: url("../img/channel-background.jpg");
     background-position: center center;
@@ -173,7 +173,7 @@ footer {
 .channel-menu li:first-child {
     border: none;
     // font-weight: bold;
-    background-color: var(--theme-accent, #FF6F3A);
+    background-color: var(----theme-accent-bg, #FF6F3A);
 }
 
 .channel-menu li:first-child:hover {
@@ -208,7 +208,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: var(--theme-button-scroll-hover, #54506B);
+    background-color: var(--theme-button-scroll-bg, #54506B);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 1280px;
@@ -271,7 +271,7 @@ footer {
     // border: 1px solid red;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: var(--theme-button-scroll-hover, #54506B);
+    background-color: var(--theme-button-scroll-bg, #54506B);
 }
 
 .channel-info-block img {
@@ -290,7 +290,7 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 16px;
-    color: var(--theme-accent, #FF6F3A);
+    color: var(----theme-accent-bg, #FF6F3A);
     font-size: 20px;
     font-weight: bold;
 }
@@ -315,7 +315,7 @@ footer {
     gap: 30px;
     width: 100%;
     height: 60px;
-    background-color: var(--theme-accent, #FF6F3A);
+    background-color: var(----theme-accent-bg, #FF6F3A);
     visibility: hidden;
 }
 

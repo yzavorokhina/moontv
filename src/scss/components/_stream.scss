@@ -74,14 +74,14 @@ iframe {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     /* background: rgba(52, 49, 72, 0.7); */
-    background: var(--theme-button-scroll-hoverer, #54506B);
+    background: var(--theme-button-scroll-bg, #54506B);
     background: rgba(84, 80, 107, 0.5);
     /* светлый полупрозрачный фон */
     backdrop-filter: blur(10px);
     /* размытие фона */
     -webkit-backdrop-filter: blur(10px);
     /* поддержка Safari */
-    border-top: 1px solid var(--theme-transparent-banner-btn, rgba(52, 49, 72, 0.2));
+    border-top: 1px solid var(--theme-transparent-banner-btn-bg, rgba(52, 49, 72, 0.2));
     // color: var(--theme-font-primary, #FFFFFF);
 }
 
@@ -202,7 +202,7 @@ iframe {
 }
 
 .stream-info h5:first-child:hover {
-    color: var(--color-accent-light, #FF6F3A);
+    color: var(--theme-font-secondary, #CECED6);
     font-weight: bold;
 }
 
@@ -245,7 +245,7 @@ iframe {
 }
 
 .live-watchers span {
-    color: #E2552D;
+    color: var(--theme-accent-hover, #E2552D);
     font-size: 12px;
 }
 
@@ -507,7 +507,7 @@ iframe {
     width: 26px;
     height: 26px;
     padding: 8px;
-    background: var(--theme-button-scroll-hover, #54506B);
+    background: var(--theme-button-scroll-bg, #54506B);
     border: none;
     border-radius: 50%;
     cursor: pointer;
