@@ -29,4 +29,10 @@
     --theme-font-primary: #FFFFFF;                             //--color-font-white-light: #FFFFFF;                         
     --theme-font-secondary: #CECED6;                           //--color-font-gray-light: #CECED6; 
     --theme-font-tertiary: rgba(170, 168, 181, 0.7);           //--color-font-gray-dark: rgba(170, 168, 181, 0.7);
+
+    // background images: 
+    --theme-category-bg-image: url('../img/category-bg-dark.jpg');
+    --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
+    --theme-channel-bg-image: url('../img/channel-bg-dark.jpg');
+    --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
 }

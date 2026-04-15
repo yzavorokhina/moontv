@@ -27,6 +27,11 @@ export default function Header({ }) {
             fontPrimary: '#FFFFFF',
             fontSecondary: '#CECED6',
             fontTertiary: 'rgba(170, 168, 181, 0.7)',
+
+            categoryBgImg: 'url(images/category-bg-dark.jpg)',
+            categoryBgImgTint: 'rgba(7, 1, 41, 0.5)',
+            channelBgImg: 'url(images/channel-bg-dark.jpg)',
+            channelBgImgTint: 'rgba(7, 1, 41, 0.5)',
         }],
         ["light", {
             mainBg: '#FFFFFF',
@@ -49,6 +54,11 @@ export default function Header({ }) {
             fontPrimary: '#343148',
             fontSecondary: '#1C173C',
             fontTertiary: '#000000',
+
+            categoryBgImg: 'url(images/category-bg-light.jpg)',
+            categoryBgImgTint: 'rgba(255, 254, 254, 0.1)',
+            channelBgImg: 'url(images/channel-bg-light.jpg)',
+            channelBgImgTint: 'rgba(255, 254, 254, 0.1)',
         }]
     ]);
     const [currentTheme, setTheme] = useLocalStorage('currentTheme', 'light');
@@ -58,7 +68,7 @@ export default function Header({ }) {
         const { mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
             bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
             accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-            fontLogo, fontPrimary, fontSecondary, fontTertiary } = themesMap.get(themeId);
+            fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint } = themesMap.get(themeId);
 
         setTheme(themeId);
 
@@ -66,7 +76,7 @@ export default function Header({ }) {
             mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
             bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
             accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-            fontLogo, fontPrimary, fontSecondary, fontTertiary
+            fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint
         });
 
         document.documentElement.style.setProperty('--theme-main-bg', mainBg);
@@ -91,6 +101,11 @@ export default function Header({ }) {
         document.documentElement.style.setProperty('--theme-font-primary', fontPrimary);
         document.documentElement.style.setProperty('--theme-font-secondary', fontSecondary);
         document.documentElement.style.setProperty('--theme-font-tertiary', fontTertiary);
+
+        document.documentElement.style.setProperty('--theme-category-bg-image', categoryBgImg);
+        document.documentElement.style.setProperty('--theme-category-bg-image-tint', categoryBgImgTint);
+        document.documentElement.style.setProperty('--theme-channel-bg-image', channelBgImg);
+        document.documentElement.style.setProperty('--theme-channel-bg-image-tint', channelBgImgTint);
     }
 
     useEffect(() => {

@@ -13,7 +13,7 @@
     "clean": "rimraf dist",
     "clean:wp": "rimraf node_modules/.cache/webpack",
     "clean:all": "rimraf dist && rimraf node_modules && rimraf package-lock.json",
-    "build": "npx webpack build",
+    "build": "npx webpack build --stats-error-details",
     "dev": "npx webpack --watch",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

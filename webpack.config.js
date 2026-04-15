@@ -169,4 +169,12 @@ module.exports = {
     hot: true,
     port: 9000,
   },
+  stats: {
+    errorDetails: true,
+    errors: true,
+    warnings: true,
+    colors: true, // цветной вывод в терминале
+    modules: false, // не показывать все модули
+    chunks: false  // не показывать чанки
+  },
 };
