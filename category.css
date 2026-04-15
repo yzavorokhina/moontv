@@ -23801,6 +23801,10 @@ a {
   --theme-font-primary: #FFFFFF;
   --theme-font-secondary: #CECED6;
   --theme-font-tertiary: rgba(170, 168, 181, 0.7);
+  --theme-category-bg-image: url(images/category-bg-dark.jpg);
+  --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
+  --theme-channel-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
 }
 
 html,
