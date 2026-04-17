@@ -1,8 +1,19 @@
+import React, { useState, useEffect } from 'react';
+import { defaultTheme, setCurrentTheme, setNextTheme } from '../utils/themeManager';
+
 export default function NotFoundPage() {
 
     setTimeout(() => {
         window.location.href = './index.html';
     }, 5000);
+
+    const defaultThemeValue = defaultTheme;
+    const [currentTheme, setTheme] = useState(defaultThemeValue);
+
+    useEffect(() => {
+        const currentThemeName = setCurrentTheme();
+        setTheme(currentThemeName);
+    }, []);
 
     const handleClick = () => {
         window.location.href = './index.html';
@@ -10,10 +21,10 @@ export default function NotFoundPage() {
 
     return (
         <>
-            <div class="wrapper">
-                <div class="container">
-                    <div class="numbers">
-                        <div class="four">
+            <div className="wrapper">
+                <div className="container">
+                    <div className="numbers">
+                        <div className="four">
                             <div id="page1"></div>
                             <div id="page2"></div>
                             <div id="page3"></div>
@@ -24,7 +35,7 @@ export default function NotFoundPage() {
                             <div id="page8"></div>
                             <div id="page9"></div>
                         </div>
-                        <div class="zero">
+                        <div className="zero">
                             <div id="zero1"></div>
                             <div id="zero2"></div>
                             <div id="zero3"></div>
@@ -38,7 +49,7 @@ export default function NotFoundPage() {
                             <div id="zero11"></div>
                             <div id="zero12"></div>
                         </div>
-                        <div class="fourAgain">
+                        <div className="fourAgain">
                             <div id="four1"></div>
                             <div id="four2"></div>
                             <div id="four3"></div>
@@ -49,22 +60,22 @@ export default function NotFoundPage() {
                             <div id="four8"></div>
                             <div id="four9"></div>
                         </div>
-                        {/* <span class="number">4</span>
-                        <span class="number">0</span>
-                        <span class="number">4</span> */}
+                        {/* <span className="number">4</span>
+                        <span className="number">0</span>
+                        <span className="number">4</span> */}
                     </div>
-                    <div class="emoji">
-                        <div role="img" aria-hidden="true" class="error-emoji"> \(o_o)/
+                    <div className="emoji">
+                        <div role="img" aria-hidden="true" className="error-emoji"> \(o_o)/
                         </div>
-                        <div class="error-text gf-title-medium">
+                        <div className="error-text gf-title-medium">
                             {/* <div>Can't find any pages.</div>  */}
                             <div>Не могу найти ни одной страницы.</div>
                         </div>
                     </div>
                 </div>
-                {/* <div class="error-message">PAGE NOT FOUND</div> */}
-                <div class="error-message">СТРАНИЦА НЕ НАЙДЕНА</div>
-                <button type="button" onClick={handleClick} class="goto-home-page-button">Перейти на главную</button>
+                {/* <div className="error-message">PAGE NOT FOUND</div> */}
+                <div className="error-message">СТРАНИЦА НЕ НАЙДЕНА</div>
+                <button type="button" onClick={handleClick} className="goto-home-page-button">Перейти на главную</button>
             </div>
         </>
     )

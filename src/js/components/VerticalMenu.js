@@ -41,30 +41,35 @@ export default function VerticalMenu({ db, showAll }) {
 
     return (
         <>
-            <button className="vertical-menu-title">
-                <h6>Рекомендуем</h6>
-            </button>
-            <ul>
-                {renderCards().map(data => (
-                    <li key={data.channel.id}>
-                        <div className="menu1">
-                            <div className="menu-stream-cover">
-                                <a href={data.streamUrl}>
-                                    <img src={data.channel.iconUrl}
-                                        style={{ width: 40 + 'px', height: 40 + 'px' }} alt="personal account" />
-                                </a>
-                            </div>
-                            <div className="menu-stream-live-indicator">
-                                <span style={{ color: '#E2552D', fontSize: 6 + 'px' }}>&#11044;</span>
-                            </div>
-                            <div className="menu-stream-info">
-                                <a href={data.streamUrl}><h6>{truncateByChars(data.channel.name, 12)}</h6></a>
-                                <a href={data.categoryUrl} className="category-name">{truncateByWords(data.category.name, 3)}</a>
-                            </div>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+
+            <div className="vertical-menu-container">
+                <nav className="vertical-menu" id="vertical-menu">
+                    <button className="vertical-menu-title">
+                        <h6>Рекомендуем</h6>
+                    </button>
+                    <ul>
+                        {renderCards().map(data => (
+                            <li key={data.channel.id}>
+                                <div className="menu1">
+                                    <div className="menu-stream-cover">
+                                        <a href={data.streamUrl}>
+                                            <img src={data.channel.iconUrl}
+                                                style={{ width: 40 + 'px', height: 40 + 'px' }} alt="personal account" />
+                                        </a>
+                                    </div>
+                                    <div className="menu-stream-live-indicator">
+                                        <span style={{ color: '#E2552D', fontSize: 6 + 'px' }}>&#11044;</span>
+                                    </div>
+                                    <div className="menu-stream-info">
+                                        <a href={data.streamUrl}><h6>{truncateByChars(data.channel.name, 12)}</h6></a>
+                                        <a href={data.categoryUrl} className="category-name">{truncateByWords(data.category.name, 3)}</a>
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
         </>
     )
 }

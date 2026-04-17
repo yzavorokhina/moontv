@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export function getUrlParams() {
   const search = window.location.search;
@@ -14,25 +14,23 @@ export function getUrlParams() {
   return obj;
 }
 
-export function useLocalStorage(key, initialValue) {
-  const [storedValue, setStoredValue] = useState(() => {
-    try {
-      const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : initialValue;
-    } catch (error) {
-      console.error('Ошибка чтения из localStorage:', error);
-      return initialValue;
-    }
-  });
+export const setLocalStorage = (key, value) => {
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    console.error('Ошибка записи в localStorage:', error);
+  }
+};
 
-  const setValue = (value) => {
-    try {
-      setStoredValue(value);
-      window.localStorage.setItem(key, JSON.stringify(value));
-    } catch (error) {
-      console.error('Ошибка записи в localStorage:', error);
-    }
-  };
+export const useLocalStorage = (key, initialValue) => {
+  let storedValue = initialValue;
+  try {
+    const item = window.localStorage.getItem(key);
+    storedValue = item ? JSON.parse(item) : initialValue;
+    setLocalStorage(key, storedValue);
+  } catch (error) {
+    console.error('Ошибка чтения из localStorage:', error);
+  }
 
-  return [storedValue, setValue];
+  return storedValue;
 }
