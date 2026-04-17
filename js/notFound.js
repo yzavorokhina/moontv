@@ -12,118 +12,329 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ NotFoundPage)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_themeManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/themeManager */ "./src/js/utils/themeManager.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 function NotFoundPage() {
   setTimeout(() => {
     window.location.href = './index.html';
   }, 5000);
+  const defaultThemeValue = _utils_themeManager__WEBPACK_IMPORTED_MODULE_1__.defaultTheme;
+  const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(defaultThemeValue);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const currentThemeName = (0,_utils_themeManager__WEBPACK_IMPORTED_MODULE_1__.setCurrentTheme)();
+    setTheme(currentThemeName);
+  }, []);
   const handleClick = () => {
     window.location.href = './index.html';
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-      class: "wrapper",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        class: "container",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          class: "numbers",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            class: "four",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "wrapper",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "container",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "numbers",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "four",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page1"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page2"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page3"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page4"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page5"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page6"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page7"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page8"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "page9"
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            class: "zero",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "zero",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero1"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero2"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero3"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero4"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero5"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero6"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero7"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero8"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero9"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero10"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero11"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "zero12"
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            class: "fourAgain",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "fourAgain",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four1"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four2"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four3"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four4"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four5"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four6"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four7"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four8"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               id: "four9"
             })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          class: "emoji",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "emoji",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             role: "img",
             "aria-hidden": "true",
-            class: "error-emoji",
+            className: "error-emoji",
             children: " \\(o_o)/"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-            class: "error-text gf-title-medium",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "error-text gf-title-medium",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               children: "\u041D\u0435 \u043C\u043E\u0433\u0443 \u043D\u0430\u0439\u0442\u0438 \u043D\u0438 \u043E\u0434\u043D\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B."
             })
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-        class: "error-message",
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "error-message",
         children: "\u0421\u0422\u0420\u0410\u041D\u0418\u0426\u0410 \u041D\u0415 \u041D\u0410\u0419\u0414\u0415\u041D\u0410"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
         type: "button",
         onClick: handleClick,
-        class: "goto-home-page-button",
+        className: "goto-home-page-button",
         children: "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 \u0433\u043B\u0430\u0432\u043D\u0443\u044E"
       })]
     })
   });
 }
+
+/***/ },
+
+/***/ "./src/js/utils/common.js"
+/*!********************************!*\
+  !*** ./src/js/utils/common.js ***!
+  \********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getUrlParams: () => (/* binding */ getUrlParams),
+/* harmony export */   setLocalStorage: () => (/* binding */ setLocalStorage),
+/* harmony export */   useLocalStorage: () => (/* binding */ useLocalStorage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function getUrlParams() {
+  const search = window.location.search;
+  if (!search) return {};
+  const params = new URLSearchParams(search);
+  const obj = {};
+  for (let [key, value] of params) {
+    obj[key] = value;
+  }
+  return obj;
+}
+const setLocalStorage = (key, value) => {
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    console.error('Ошибка записи в localStorage:', error);
+  }
+};
+const useLocalStorage = (key, initialValue) => {
+  let storedValue = initialValue;
+  try {
+    const item = window.localStorage.getItem(key);
+    storedValue = item ? JSON.parse(item) : initialValue;
+    setLocalStorage(key, storedValue);
+  } catch (error) {
+    console.error('Ошибка чтения из localStorage:', error);
+  }
+  return storedValue;
+};
+
+/***/ },
+
+/***/ "./src/js/utils/themeManager.js"
+/*!**************************************!*\
+  !*** ./src/js/utils/themeManager.js ***!
+  \**************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   defaultTheme: () => (/* binding */ defaultTheme),
+/* harmony export */   setCurrentTheme: () => (/* binding */ setCurrentTheme),
+/* harmony export */   setNextTheme: () => (/* binding */ setNextTheme),
+/* harmony export */   updateTheme: () => (/* binding */ updateTheme)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ "./src/js/utils/common.js");
+
+const defaultTheme = 'dark';
+let currentTheme = (0,_common__WEBPACK_IMPORTED_MODULE_0__.useLocalStorage)('currentTheme', 'light');
+const storageKey = 'currentTheme';
+const themes = ['dark', 'light'];
+const themesMap = new Map([["dark", {
+  mainBg: '#343148',
+  promoBg: '#292640',
+  inputBg: '#1C173C',
+  btnBg: '#16122F',
+  btnScrollBg: '#54506B',
+  activeBtnBg: '#000000',
+  bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
+  tagBtnBg: 'rgba(170, 168, 181, 0.7)',
+  accentColorBg: '#FF6F3A',
+  btnsHover: 'rgba(17, 9, 80, 0.5)',
+  blocksHover: '#2e2b50',
+  btnScrollHover: '#16122F',
+  tagBtnBgHover: '#CECED6',
+  accentColorHover: '#E2552D',
+  fontLogo: '#FFFFFF',
+  fontPrimary: '#FFFFFF',
+  fontSecondary: '#CECED6',
+  fontTertiary: 'rgba(170, 168, 181, 0.7)',
+  categoryBgImg: 'url(images/category-bg-dark.jpg)',
+  categoryBgImgTint: 'rgba(7, 1, 41, 0.5)',
+  channelBgImg: 'url(images/channel-bg-dark.jpg)',
+  channelBgImgTint: 'rgba(7, 1, 41, 0.5)',
+  notFoundBgImg: 'url(images/404-background-dark.jpg)',
+  notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)'
+}], ["light", {
+  mainBg: '#FFFFFF',
+  promoBg: 'rgba(134, 129, 153, 0.5)',
+  inputBg: 'rgba(170, 168, 181, 0.5)',
+  btnBg: 'rgba(170, 168, 181, 0.5)',
+  btnScrollBg: '#AAA8B5',
+  activeBtnBg: '#AAA8B5',
+  bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
+  tagBtnBg: '#CECED6',
+  accentColorBg: '#FF6F3A',
+  btnsHover: '#b6b4be',
+  blocksHover: '#b6b4be',
+  btnScrollHover: '#b6b4be',
+  accentColorHover: '#E2552D',
+  tagBtnBgHover: 'rgba(170, 168, 181, 0.7)',
+  fontLogo: '#FF6F3A',
+  fontPrimary: '#343148',
+  fontSecondary: '#1C173C',
+  fontTertiary: '#000000',
+  categoryBgImg: 'url(images/category-bg-light.jpg)',
+  categoryBgImgTint: 'rgba(255, 254, 254, 0.1)',
+  channelBgImg: 'url(images/channel-bg-light.jpg)',
+  channelBgImgTint: 'rgba(255, 254, 254, 0.1)',
+  notFoundBgImg: 'url(images/404-background-light.jpg)',
+  notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)'
+}]]);
+const updateTheme = themeId => {
+  // console.log({ updateTheme: currentTheme });
+  const {
+    mainBg,
+    promoBg,
+    inputBg,
+    btnBg,
+    btnScrollBg,
+    activeBtnBg,
+    bannerBtnBg,
+    btnsHover,
+    blocksHover,
+    btnScrollHover,
+    accentColorBg,
+    accentColorHover,
+    tagBtnBg,
+    tagBtnBgHover,
+    fontLogo,
+    fontPrimary,
+    fontSecondary,
+    fontTertiary,
+    categoryBgImg,
+    channelBgImg,
+    channelBgImgTint,
+    categoryBgImgTint,
+    notFoundBgImg,
+    notFoundBgImgTint
+  } = themesMap.get(themeId);
+  (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
+
+  // console.log({
+  //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
+  //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
+  //   accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint
+  // });
+
+  document.documentElement.style.setProperty('--theme-main-bg', mainBg);
+  document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
+  document.documentElement.style.setProperty('--theme-input-bg', inputBg);
+  document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
+  document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
+  document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+  document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
+  document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);
+  document.documentElement.style.setProperty('--theme-blocks-hover', blocksHover);
+  document.documentElement.style.setProperty('--theme-button-scroll-hover', btnScrollHover);
+  document.documentElement.style.setProperty('--theme-accent-bg', accentColorBg);
+  document.documentElement.style.setProperty('--theme-accent-hover', accentColorHover);
+  document.documentElement.style.setProperty('--theme-tag-button', tagBtnBg);
+  document.documentElement.style.setProperty('--theme-tag-button-bg-hover', tagBtnBgHover);
+  document.documentElement.style.setProperty('--theme-font-logo', fontLogo);
+  document.documentElement.style.setProperty('--theme-font-primary', fontPrimary);
+  document.documentElement.style.setProperty('--theme-font-secondary', fontSecondary);
+  document.documentElement.style.setProperty('--theme-font-tertiary', fontTertiary);
+  document.documentElement.style.setProperty('--theme-category-bg-image', categoryBgImg);
+  document.documentElement.style.setProperty('--theme-category-bg-image-tint', categoryBgImgTint);
+  document.documentElement.style.setProperty('--theme-channel-bg-image', channelBgImg);
+  document.documentElement.style.setProperty('--theme-channel-bg-image-tint', channelBgImgTint);
+  document.documentElement.style.setProperty('--theme-notFound-bg-image', notFoundBgImg);
+  document.documentElement.style.setProperty('--theme-notFound-bg-image-tint', notFoundBgImgTint);
+  return themeId;
+};
+const getCurrentTheme = () => {
+  return (0,_common__WEBPACK_IMPORTED_MODULE_0__.useLocalStorage)(storageKey, defaultTheme);
+};
+const setCurrentTheme = () => {
+  const currentTheme = getCurrentTheme(defaultTheme);
+  // console.log({ currentTheme });
+
+  updateTheme(currentTheme);
+  return currentTheme;
+};
+const setNextTheme = () => {
+  const currentTheme = getCurrentTheme();
+  const currentIndex = themes.indexOf(currentTheme);
+  const nextIndex = (currentIndex + 1) % themes.length;
+
+  // console.log({ currentTheme, currentIndex, nextIndex });
+  return updateTheme(themes[nextIndex]);
+};
 
 /***/ },
 
@@ -30918,6 +31129,18 @@ if (false) // removed by dead control flow
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports

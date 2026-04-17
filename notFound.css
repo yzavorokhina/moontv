@@ -23805,6 +23805,8 @@ a {
   --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
   --theme-channel-bg-image: url(images/channel-bg-dark.jpg);
   --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
+  --theme-notFound-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-notFound-bg-image-tint: rgba(22, 18, 47, 0.8);
 }
 
 html,
@@ -24426,7 +24428,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url(images/404-background-dark.jpg);
+  background-image: var(--theme-notFound-bg-image);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Silkscreen", sans-serif;
@@ -24465,7 +24467,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(22, 18, 47, 0.8);
+  background-color: var(--theme-notFound-bg-image-tint, rgba(22, 18, 47, 0.8));
 }
 
 .error-message {
@@ -24875,9 +24877,9 @@ center {
   padding-left: 16px;
   padding-right: 16px;
   border: none;
-  background-color: #FF6F3A;
+  background-color: var(--theme-accent-bg, #FF6F3A);
   border-radius: 34px;
-  color: var(--theme-btn-bg, #16122F);
+  color: var(--theme-main-bg, #343148);
   font-family: "Silkscreen", sans-serif !important;
 }
 
