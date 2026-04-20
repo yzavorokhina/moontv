@@ -29,7 +29,7 @@ export default function Chat({}) {
 
   // Обработка отправки сообщения
   const sendMessage = () => {
-    const userInput = document.getElementById('userInput');
+    const userInput = document.getElementById('user-input');
     const text = userInput.value.trim();
     if (text === '') return;
 
@@ -92,7 +92,7 @@ export default function Chat({}) {
 
           <div className="chat-input">
               <button className="emoji-toggle" id="emojiToggle">😊</button>
-              <input type="text" id="userInput" placeholder="Введите сообщение..." onKeyDown={onKeyPress} />
+              <input type="text" id="user-input" placeholder="Введите сообщение..." onKeyDown={onKeyPress} />
               <div className="message-buttons">
                   <button id="settingsButton">
                       {/* License: MIT. Made by Neuicons: https://github.com/neuicons/neu */}

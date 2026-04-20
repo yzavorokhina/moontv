@@ -7,8 +7,6 @@
     height: 100px;
     margin: 0 auto;
     padding: 0 50px;
-    /* border: 1px solid red; */
-    // background-color: #343148;
 }
 
 /*-------------------------------------------------------------*/
@@ -22,7 +20,6 @@
     max-width: 428px;
     height: 40px;
     height: auto;
-    // border: 1px solid green;
 }
 
 .search {
@@ -34,7 +31,6 @@
     max-width: 428px;
     height: 40px;
     height: auto;
-    /* border: 1px solid green; */
 }
 
 .input-with-icon {
@@ -93,14 +89,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* gap: 16px; */
     width: 100%;
     max-width: 1040px;
     height: 122px;
-    /* padding-left: 418px;
-    padding-right: 504px; */
-    /* border: 1px solid magenta; */
-    text-align: center; // Centers inline and inline-block elements
+    text-align: center;
 }
 
 .logo-img {
@@ -108,8 +100,6 @@
     height: 40px;
     padding-bottom: 0;
     margin-bottom: 0;
-    /* border: 1px solid yellow; */
-    /* Moon glow: */
     filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
     animation: glow 6s infinite ease-in-out;
 }
@@ -119,7 +109,6 @@
     height: 40px;
     padding-bottom: 0;
     margin-bottom: 0;
-    /* Moon glow: */
     filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
     animation: glow 6s infinite ease-in-out;
 }
@@ -151,11 +140,9 @@
 
 .logo-text {
     display: inline-block;
-    /* height: 24px;  */
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 42px;
-    /* border: 1px solid green; */
     color: var(--theme-font-logo, #ffffff);
     font-size: 32px;
     line-height: 32px;
@@ -178,9 +165,6 @@
     gap: 36px;
     height: 60px;
     width: 348px;
-    /* padding-top: 13px;
-    padding-right: 34px; */
-    /* border: 1px solid yellow; */
 }
 
 .menu-button {
@@ -190,10 +174,7 @@
     justify-content: center;
     width: 34px;
     height: 34px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
     border: 1px solid var(--theme-btn-bg, #16122F);
-    /* border: none; */
     border-radius: 34px;
     background-color: var(--theme-btn-bg, #16122F);
     color: var(--color-font-white-light, #ffffff);
@@ -208,8 +189,6 @@
     flex-direction: row;
     width: 34px;
     height: 34px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
     border: none;
     border-radius: 34px;
     background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
@@ -230,8 +209,6 @@
 .login {
     width: 60px;
     height: 60px;
-    /* border: 1px solid blue; */
-    /* margin-right: 50px; */
 }
 
 .login-button {
@@ -241,10 +218,7 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
     border: 1px solid var(--theme-btn-bg, #16122F);
-    /* border: none; */
     border-radius: 60px;
     background-color: var(--theme-btn-bg, #16122F);
     color: var(--color-font-white-light, #ffffff);
@@ -266,7 +240,7 @@
     cursor: pointer;
 }
 
-.login-button img{
+.login-button img {
     width: 60px;
     height: 60px;
     border-radius: 60px;

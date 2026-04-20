@@ -1,6 +1,4 @@
 @use 'main.scss';
-
-@use 'utils/variables';
 @use 'layout/footer';
 @use 'components/banner';
 @use 'components/favourite-channels';
@@ -21,8 +19,6 @@ main {
     flex-shrink: 0;
     flex-grow: 1;
     width: 100%;
-    // max-width: 1920px;
-    // overflow-y: auto;
 }
 
 footer {
@@ -38,18 +34,12 @@ footer {
 
 .main-of-the-main {
     display: flex;
-    // width: 100%;
-    // max-width: 1698px;
     width: calc(100vw - 222px);
-    // height: 4898px;
-    /* background-color: #19f024; */
-    // background-color: rgba(192, 191, 196, 0.3);
 }
 
 .horizontal-blocks {
     display: flex;
     flex-direction: column;
-    // height: fit-content;
 }
 
 .main-screen-block {
@@ -58,85 +48,4 @@ footer {
     justify-content: flex-start;
     align-items: center;
     width: calc(100vw - 222px);
-    // width: 100%;
-    // max-width: 1698px;
-    // height: 958px;
-    // border: 1px solid green;
-}
-
-/* Notification block: */
-.notification {
-    position: fixed;
-    z-index: 100;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    height: 60px;
-    background-color: var(----theme-accent-bg, #FF6F3A);
-    visibility: hidden;
-}
-
-.notification-moon-logo-1 {
-    width: 28px;
-    height: 28px;
-}
-
-.notification-moon-logo-2 {
-    width: 38px;
-    height: 38px;
-}
-
-.notification-moon-logo-3 {
-    width: 48px;
-    height: 48px;
-}
-
-.notification h4 {
-    color: var(--theme-font-primary, #FFFFFF);
-    font-size: 16px;
-    letter-spacing: 0.5;
-    font-weight: 400;
-}
-
-.notification button {
-    width: 176px;
-    height: 34px;
-    border: none;
-    background-color: var(--theme-font-primary, #FFFFFF);
-    color: var(--theme-accent-hover, #E2552D);
-    font-size: 14px;
-    letter-spacing: 0.5;
-    border-radius: 20px;
-    font-weight: 500;
-}
-
-.notification .btn-close {
-    width: 28px;
-    height: 28px;
-    color: rgba(52, 49, 72, 0.5);
-    box-shadow: 0 3px 5px rgba(0, 151, 211, 0.2);
-}
-
-.notification .btn-close:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 3px 5px rgba(0, 151, 211, 0.2);
-}
-
-#myElement {
-    border: none;
-}
-
-// .hidden {
-//   display: none;
-// }
-
-.fade-out {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s;
 }

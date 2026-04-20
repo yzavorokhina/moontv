@@ -258,10 +258,10 @@
 .category-name-info {
     font-size: 14px;
     font-weight: lighter;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
     // color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
     padding-left: 2px;
-    margin: 10px 0 6px 0;
+    margin: 10px 0 6px;
     // border: 1px solid blue;
 }
 
@@ -295,7 +295,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
-    padding: 4px 8px 4px 8px;
+    padding: 4px 8px;
     color: black;
     font-size: 12px;
     text-align: center;

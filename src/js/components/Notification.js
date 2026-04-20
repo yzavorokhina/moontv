@@ -3,7 +3,7 @@ export default function Notification({ }) {
   /* A pop-up orange-row notification: */
   /* вариант 3 (более плавное исчезновение блока): */
   const handleClick = () => {
-      const element = document.getElementById('myElement');
+      const element = document.getElementById('my-element');
       element.classList.add('fade-out');
       // Удаляем элемент из потока после завершения анимации
       setTimeout(() => {
@@ -13,7 +13,7 @@ export default function Notification({ }) {
 
   return (
     <>
-      <div className="notification" id="myElement">
+      <div className="notification" id="my-element">
         <img className="notification-moon-logo-1" src="./img/notification-moon-1.svg" alt="moon-logo" />
         <img className="notification-moon-logo-2" src="./img/notification-moon-2.svg" alt="moon-logo" />
         <img className="notification-moon-logo-3" src="./img/notification-moon-3.svg" alt="moon-logo" />

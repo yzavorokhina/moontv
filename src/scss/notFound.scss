@@ -420,7 +420,7 @@ body {
 .error-text {
     margin-bottom: 24px;
     white-space: pre-wrap;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
     visibility: hidden;
 }
 
@@ -451,7 +451,7 @@ center {
     font-size: 200px;
     line-height: 1.25;
     margin-bottom: 24px;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
     vertical-align: baseline;
     visibility: hidden;
     transition: visibility 0.3s ease;

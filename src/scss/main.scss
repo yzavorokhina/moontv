@@ -2,7 +2,6 @@
 @use "bootstrap";
 @use "vendors/normalize";
 
-
 // 2. Утилиты (переменные, миксины, функции) — они не генерируют CSS
 @use 'utils/variables';
 // @use "utils/variables" as *;
@@ -35,7 +34,7 @@
 // @use "components/cards";
 @use 'components/horizontal-menu';
 @use 'components/vertical-menu';
-
+@use 'components/notification';
 
 // @use 'components/banner';
 // @use 'components/favourite-channels';

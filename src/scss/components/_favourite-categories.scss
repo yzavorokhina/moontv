@@ -4,10 +4,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-shrink: 0;
-    //  width: 100%;
     width: calc(100vw - 222px);
     max-height: 3940px;
-    // border: 1px solid green;
 }
 
 .favourite-categories-title {
@@ -21,7 +19,6 @@
     max-width: fit-content;
     margin-left: 30px;
     margin-right: 50px;
-    //border: 1px solid orange;
 }
 
 .favourite-categories-title h2 {
@@ -31,7 +28,7 @@
     padding-bottom: 24px;
     font-size: 24px;
     font-weight: bold;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .favourite-categories-title h2:hover {
@@ -48,11 +45,9 @@
     flex-grow: 1;
     width: calc(100vw - 222px);
     // width: 1632px;
-    //height: 460px;
     height: fit-content;
     margin-left: 16px;
     margin-right: 50px;
-    //border: 1px solid rgb(63, 223, 48);
     background-color: transparent;
 }
 
@@ -65,7 +60,6 @@
     flex-grow: 1;
     width: 1632px;
     margin-bottom: 16px;
-    // border: 1px solid rgb(255, 255, 255);
     background-color: transparent;
 }
 
@@ -77,7 +71,6 @@
     flex-shrink: 0;
     flex-grow: 1;
     width: fit-content;
-    //border: 1px solid rgb(190, 17, 17);
     background-color: transparent;
 }
 
@@ -98,7 +91,6 @@
     font-size: 20px;
     font-weight: bold;
     color: var(--theme-font-secondary, #CECED6);
-    //border: 1px solid rgb(12, 231, 220);
 }
 
 .section-title h2:hover {
@@ -118,8 +110,6 @@
     flex-shrink: 0;
     max-width: fit-content;
     padding-top: 6px;
-    // color: var(--theme-font-secondary, #CECED6);
-    //border: 1px solid rgb(12, 231, 220);
 }
 
 .show-all-categories a {
@@ -139,7 +129,6 @@
     line-height: 140%;
     color: var(--theme-font-secondary, #CECED6);
 }
-
 
 .show-all-categories .show-all-arrow {
     width: 24px;
@@ -161,12 +150,9 @@
     flex-shrink: 0;
     gap: 20px;
     width: 100%;
-    //max-width: 1612px;
     // max-width: 1630px;
     height: 300px;
-    // margin-right: 10px;
     padding: 0;
-    // border: 1px solid rgb(197, 10, 214);
     background-color: transparent;
 }
 
@@ -182,8 +168,6 @@
     width: 100%;
     max-width: 310px;
     background-color: transparent;
-    // height: 300px;
-    // border: 1px solid red;
 }
 
 .card-img-top {
@@ -192,7 +176,6 @@
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: 9px;
-    // cursor: pointer;
 }
 
 .card-body {
@@ -224,19 +207,12 @@
     padding: 0;
 }
 
-// .channel-img:hover {
-//  border: 1px solid var(--theme-font-primary, #FFFFFF);
-//  border-radius: 40px;
-// }
-
 .stream-titles {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     gap: 4px;
-    // min-height: 60px;
-    // border: 1px solid rgb(59, 218, 130);
 }
 
 .stream-titles h5 {
@@ -248,7 +224,6 @@
     line-height: 120%;
     letter-spacing: 0%;
     font-size: 14px;
-    // border: 1px solid rgb(59, 218, 130);
 }
 
 .stream-titles h5:hover {
@@ -258,33 +233,22 @@
 .stream-titles p {
     font-size: 14px;
     font-weight: lighter;
-    // color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
     color: var(--theme-font-secondary, #CECED6);
-    // padding: 0;
     margin: 0;
-    // margin-bottom: 10px;
-    // border: 1px solid rgb(172, 230, 16);
 }
-
-// .stream-titles p:hover {
-//     color: var(--theme-font-secondary, #CECED6);
-// }
 
 .channel-title {
     margin: 0;
     margin-top: auto;
     font-size: 14px;
-    // color: #FF6F3A !important;
 }
 
 .category-name-info {
     font-size: 14px;
     font-weight: lighter;
-    color: var(----theme-accent-bg, #FF6F3A);
-    // color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
+    color: var(--theme-accent-bg, #FF6F3A);
     padding-left: 2px;
-    margin: 10px 0 6px 0;
-    // border: 1px solid blue;
+    margin: 10px 0 6px;
 }
 
 .category-name-info:hover {
@@ -299,10 +263,8 @@
     gap: 8px;
     width: 100%;
     max-width: 310px;
-    // height: 20px;
     padding-left: 2px;
     margin-bottom: 2px;
-    //border: 1px solid rgb(29, 10, 197);
 }
 
 .tags-row button {
@@ -317,7 +279,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
-    padding: 4px 8px 4px 8px;
+    padding: 4px 8px;
     color: black;
     font-size: 12px;
     text-align: center;
@@ -325,7 +287,6 @@
 
 .button-tag {
     background-color: var(--theme-tag-button-bg, rgba(170, 168, 181, 0.7));
-    //border: 1px solid rgb(175, 36, 202);
 }
 
 .button-tag:hover {
@@ -343,7 +304,6 @@
     width: 100%;
     max-width: 1636px;
     height: 62px;
-    // border: 1px solid rgb(184, 2, 2);
     background-color: transparent;
     color: var(--theme-font-secondary, #CECED6);
 }
@@ -362,7 +322,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    // border: 1px solid red;
     margin-bottom: 22px;
 }
 
@@ -375,7 +334,6 @@
 
 .divider-button {
     margin: 0 15px;
-    // padding: 10px 6px 10px 10px;
     color: var(--theme-font-secondary, #CECED6);
     cursor: pointer;
     width: fit-content;
@@ -423,7 +381,6 @@
     flex-shrink: 0;
     width: fit-content;
     height: 34px;
-    // margin-top: 60px;
     margin-bottom: 50px;
     padding-left: 16px;
     padding-right: 16px;
@@ -455,7 +412,6 @@
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
-    //border: 1px solid yellow;
 }
 
 .stream-live {
@@ -470,7 +426,6 @@
     padding-left: 6px;
     padding-right: 6px;
     border-radius: 5px;
-    //border: 1px solid red; 
     background-color: rgba(52, 49, 72, 0.6);
     color: #CECED6;
 }
@@ -479,10 +434,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* Alignment of h5 inside flex: */
     align-items: baseline;
     justify-content: baseline;
-    /* border: 1px solid rgb(28, 198, 204); */
     color: #CECED6;
     font-size: 12px;
     margin: auto;
@@ -503,7 +456,6 @@
     width: 25px;
     height: 25px;
     border-radius: 5px;
-    /* border: 1px solid lime; */
     background-color: rgba(52, 49, 72, 0.6);
     color: #CECED6;
     font-size: 12px;
@@ -516,7 +468,6 @@
     justify-content: center;
     color: #CECED6;
     font-size: 12px;
-    // border: 1px solid blue;
     text-align: center;
 }
 

@@ -5,8 +5,6 @@ body {
     height: 100%;
     margin: 0;
     min-height: 100vh;
-    // overflow-x: hidden;
-    // overflow-y: auto;
 }
 
 body {
@@ -37,7 +35,6 @@ body {
     padding-left: 38px;
     border-radius: 30px;
     background-color: rgba(205, 205, 214, 0.6);
-    /* border: 1px solid red; */
 }
 
 .login-container::before {
@@ -61,14 +58,12 @@ body {
     width: 440px;
     padding: 0;
     margin: 0;
-    // border: 1px solid blue;
 }
 
 .top-buttons a {
     display: block;
 }
 
-/* button with arrow: */
 .btn-back {
     height: 24px;
     width: 24px;
@@ -148,7 +143,6 @@ body {
     flex-direction: column;
     width: 400px;
     height: auto;
-    /* border: 1px solid lime; */
     padding-bottom: 40px;
 }
 
@@ -157,7 +151,6 @@ body {
     flex-direction: column;
     width: 400px;
     height: auto;
-    /* border: 1px solid rgb(251, 255, 0); */
 }
 
 .auth_logo img{
@@ -169,7 +162,7 @@ body {
     width: 60px;
     margin-bottom: 24px;
     vertical-align: middle;
-    /* Moon glow: */
+
     filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.5)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.5)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
     animation: glow 6s infinite ease-in-out;
 }
@@ -177,15 +170,12 @@ body {
 @keyframes glow {
     0% {
         filter: drop-shadow(0px 0px 5px rgba(255, 254, 208, 0.5));
-        /* Soft glow */
     }
     50% {
         filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.8));
-        /* Bright glow */
     }
     100% {
         filter: drop-shadow(0px 0px 5px rgba(255, 254, 208, 0.5));
-        /* Return to soft */
     }
 }
 

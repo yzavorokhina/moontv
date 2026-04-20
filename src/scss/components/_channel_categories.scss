@@ -31,7 +31,7 @@
     padding-top: 32px;
     font-size: 24px;
     font-weight: bold;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .favourite-channels-title h2:hover {
@@ -44,7 +44,7 @@
     padding-top: 32px;
     font-size: 20px;
     font-weight: bold;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .favourite-channels-title h3:hover {
@@ -64,11 +64,11 @@
     padding-bottom: 0;
     padding-top: 34px;
     // border: 1px solid orange;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .favourite-channels-show-all a {
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .favourite-channels-show-all a:hover {
@@ -78,7 +78,7 @@
 .horizontal-titles .show-all-arrow {
     width: 24px;
     height: 24px;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
 }
 
 /* end of the show-all-orange-link */

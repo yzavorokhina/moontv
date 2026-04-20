@@ -186,7 +186,7 @@
 .clip-title {
     font-size: 14px;
     font-weight: bold;
-    color: var(----theme-accent-bg, #FF6F3A) !important;
+    color: var(--theme-accent-bg, #FF6F3A) !important;
     padding: 0;
     margin: 0;
     line-height: 120%;
@@ -235,7 +235,7 @@
 .clip-author-name {
     font-size: 14px;
     // font-weight: bold;
-    color: var(----theme-accent-bg, #FF6F3A) !important;
+    color: var(--theme-accent-bg, #FF6F3A) !important;
     padding: 0;
     margin: 0;
 }

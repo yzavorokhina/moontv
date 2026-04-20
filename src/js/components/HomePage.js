@@ -45,7 +45,7 @@ export default function HomePage({ db }) {
                      </div>
                 </div>
 
-                 <GoToBtn />
+                 <GoToBtn title={"Все категории"} url={"categories.html"} />
             </Layout>
         </>
     );

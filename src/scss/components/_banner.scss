@@ -7,7 +7,6 @@
     flex-shrink: 0;
     width: 1698px;
     height: 600px;
-    // border: 1px solid lime;
 }
 
 .video-carousel {
@@ -53,15 +52,11 @@ iframe {
     padding: 18px 22px 22px 22px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    /* background: rgba(52, 49, 72, 0.7); */
     background: var(--theme-transparent-banner-btn-bg, rgba(52, 49, 72, 0.2));
-    /* светлый полупрозрачный фон */
     backdrop-filter: blur(10px);
-    /* размытие фона */
     -webkit-backdrop-filter: blur(10px);
     /* поддержка Safari */
     border-top: 1px solid var(--theme-transparent-banner-btn-bg, rgba(52, 49, 72, 0.2));
-    // color: var(--theme-font-primary, #FFFFFF);
 }
 
 .banner-info:hover {
@@ -185,7 +180,6 @@ iframe {
     width: auto;
     height: auto;
     text-align: center;
-    /* border: 1px solid yellow; */
 }
 
 .live-watchers {
@@ -197,7 +191,6 @@ iframe {
     max-width: 500px;
     height: 30px;
     margin-right: 16px;
-    // border: 1px solid red;
     color: var(--theme-font-secondary, #CECED6);
 }
 
@@ -207,21 +200,19 @@ iframe {
     flex-direction: column;
     align-items: baseline;
     justify-content: baseline;
-    /* border: 1px solid rgb(28, 198, 204); */
     color: var(--theme-font-secondary, #CECED6);
     font-size: 20px;
     margin: auto;
 }
 
 .live-watchers span {
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
     font-size: 16px;
 }
 
 .viewers-count {
     color: var(--theme-font-secondary, #CECED6);
     font-size: 20px;
-    // border: 1px solid lime;
 }
 
 .age-rating-row {
@@ -232,7 +223,6 @@ iframe {
     text-align: right;
     width: 100%;
     height: 24px;
-    // border: 1px solid lime;
 }
 
 .age-rating {
@@ -246,7 +236,6 @@ iframe {
 }
 
 /* Вариант карусели с видео-содержимым: */
-
 /* .video-carousel {
   position: relative; 
   width: 100%;
@@ -274,13 +263,11 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 40px; // matches the height of the button
+    line-height: 40px;
     width: 40px;
     height: 40px;
     padding: 0;
-    // border: 1px solid #16122F;
-    background: var(--theme-transparent-banner-btn-bg, rgba(52, 49, 72, 0.2)); 
-    // background: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
+    background: var(--theme-transparent-banner-btn-bg, rgba(52, 49, 72, 0.2));
     color: var(--theme-font-primary, #FFFFFF);
     text-align: center;
     border-radius: 50%;
@@ -290,7 +277,7 @@ iframe {
 }
 
 .carousel-btn:hover {
-    background: var(--theme-transparent-banner-btn-bg, rgba(52, 49, 72, 0.2)); 
+    background: var(--theme-transparent-banner-btn-bg, rgba(52, 49, 72, 0.2));
     border: 2px solid var(--theme-font-secondary, #CECED6);
 }
 
@@ -361,7 +348,7 @@ iframe {
     max-width: 242px;
     margin: 0;
     line-height: 20px;
-    color: var(----theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
     cursor: pointer;
     background-color: transparent;
 }
