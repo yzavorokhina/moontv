@@ -227,7 +227,9 @@ const themesMap = new Map([["dark", {
   channelBgImg: 'url(images/channel-bg-dark.jpg)',
   channelBgImgTint: 'rgba(7, 1, 41, 0.5)',
   notFoundBgImg: 'url(images/404-background-dark.jpg)',
-  notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)'
+  notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)',
+  logoGlow: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))drop-shadow(0 0 25px rgba(255, 255, 255, 0.5))',
+  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))'
 }], ["light", {
   mainBg: '#FFFFFF',
   promoBg: 'rgba(134, 129, 153, 0.5)',
@@ -252,7 +254,9 @@ const themesMap = new Map([["dark", {
   channelBgImg: 'url(images/channel-bg-light.jpg)',
   channelBgImgTint: 'rgba(255, 254, 254, 0.1)',
   notFoundBgImg: 'url(images/404-background-light.jpg)',
-  notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)'
+  notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)',
+  logoGlow: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.2))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.2))drop-shadow(0 0 25px rgba(135, 177, 250, 0.5))',
+  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))'
 }]]);
 const updateTheme = themeId => {
   // console.log({ updateTheme: currentTheme });
@@ -280,7 +284,9 @@ const updateTheme = themeId => {
     channelBgImgTint,
     categoryBgImgTint,
     notFoundBgImg,
-    notFoundBgImgTint
+    notFoundBgImgTint,
+    logoGlow,
+    logoGlowHover
   } = themesMap.get(themeId);
   (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
 
@@ -288,8 +294,7 @@ const updateTheme = themeId => {
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint
-  // });
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -315,6 +320,8 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-channel-bg-image-tint', channelBgImgTint);
   document.documentElement.style.setProperty('--theme-notFound-bg-image', notFoundBgImg);
   document.documentElement.style.setProperty('--theme-notFound-bg-image-tint', notFoundBgImgTint);
+  document.documentElement.style.setProperty('--theme-logo-glow', logoGlow);
+  document.documentElement.style.setProperty('--theme-logo-glow-hover', logoGlowHover);
   return themeId;
 };
 const getCurrentTheme = () => {
