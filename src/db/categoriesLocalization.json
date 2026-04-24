@@ -1,0 +1,498 @@
+{
+    "languages": {
+        "rus": [
+            {
+                "id": 1,
+                "name": "Разработка игр и ПО",
+                "shortName": "Разработка",
+                "description": "Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.",
+                "shortDescription": "Программирование"
+            },
+            {
+                "id": 2,
+                "name": "Музыка",
+                "shortName": "Музыка",
+                "description": "Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.",
+                "shortDescription": "Различные стили"
+            },
+            {
+                "id": 3,
+                "name": "Английский язык",
+                "shortName": "Английский",
+                "description": "Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.",
+                "shortDescription": "Практика"
+            },
+            {
+                "id": 4,
+                "name": "ДиДжеи",
+                "shortName": "ДиДжеи",
+                "description": "Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.",
+                "shortDescription": "Музыкальные стримы"
+            },
+            {
+                "id": 5,
+                "name": "Танцы",
+                "shortName": "Танцы",
+                "description": "Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.",
+                "shortDescription": "Различные стили"
+            },
+            {
+                "id": 6,
+                "name": "Чтение и писательство",
+                "shortName": "Чтение",
+                "description": "Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.",
+                "shortDescription": "Чтение вслух"
+            },
+            {
+                "id": 7,
+                "name": "TDU2",
+                "shortName": "TDU2",
+                "description": "Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.",
+                "shortDescription": "Стримы по TDU2"
+            },
+            {
+                "id": 8,
+                "name": "Skyrim",
+                "shortName": "Skyrim",
+                "description": "The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.",
+                "shortDescription": "Стримы по Skyrim"
+            },
+            {
+                "id": 9,
+                "name": "Обучение",
+                "shortName": "Обучение",
+                "description": "Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.",
+                "shortDescription": "Обучающие стримы"
+            },
+            {
+                "id": 10,
+                "name": "Танец Tribal",
+                "shortName": "Tribal",
+                "description": "Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.",
+                "shortDescription": "Стримы по танцам"
+            },
+            {
+                "id": 11,
+                "name": "Общение",
+                "shortName": "Общение",
+                "description": "(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.",
+                "shortDescription": "Развлечения"
+            },
+            {
+                "id": 12,
+                "name": "Спорт",
+                "shortName": "Спорт",
+                "description": "Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.",
+                "shortDescription": "Спорт-мероприятия"
+            },
+            {
+                "id": 13,
+                "name": "Игры",
+                "shortName": "Игры",
+                "description": "Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.",
+                "shortDescription": "Стримы по играм"
+            },
+            {
+                "id": 14,
+                "name": "Хобби",
+                "shortName": "Хобби",
+                "description": "Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.",
+                "shortDescription": "Стримы по хобби"
+            },
+            {
+                "id": 15,
+                "name": "Танец Mandala",
+                "shortName": "Mandala",
+                "description": "Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.",
+                "shortDescription": "Стримы по танцам"
+            },
+            {
+                "id": 16,
+                "name": "Радио",
+                "shortName": "Радио",
+                "description": "Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.",
+                "shortDescription": "Радио-стримы 24/7"
+            },
+            {
+                "id": 17,
+                "name": "Другое",
+                "shortName": "Другое",
+                "description": "Другое - стримы по тематикам, которые не вошли ни в одну категорию стримов.",
+                "shortDescription": "Уникальные стримы"
+            },
+            {
+                "id": 18,
+                "name": "АСМР",
+                "shortName": "АСМР",
+                "description": "АСМР «автономная сенсорная меридиональная реакция» - обозначает приятные ощущения, которые возникают в ответ на аудиовизуальные стимулы: звуки природы, шепот, мурчание кота, шелест листьев, плавные движения.",
+                "shortDescription": "АСМР-стримы 24/7"
+            },
+            {
+                "id": 19,
+                "name": "Пение",
+                "shortName": "Пение",
+                "description": "Пение - это уникальное вокальное искусство, использующее человеческий голос как инструмент для создания музыки и передачи эмоций.",
+                "shortDescription": "Вокальные стримы"
+            },
+            {
+                "id": 20,
+                "name": "Искусство",
+                "shortName": "Искусство",
+                "description": "Стримы по искусству (арт-стримы) - это развивающийся жанр, где процесс создания произведения искусства или обучения ему происходит в режиме реального времени. Это уникальная форма коммуникации в цифровую эпоху, позволяющая художникам делиться своим мастерством, а зрителям — погружаться в творческий процесс.",
+                "shortDescription": "Стримы по искусству"
+            },
+            {
+                "id": 21,
+                "name": "Балет",
+                "shortName": "Балет",
+                "description": "Балет - это высшая форма сценического искусства, объединяющая музыку, хореографию, драматургию и изобразительное искусство.",
+                "shortDescription": "Балетные стримы"
+            },
+            {
+                "id": 22,
+                "name": "Еда и напитки",
+                "shortName": "Кулинария",
+                "description": "Кулинария - это искусство и технология приготовления пищи, объединяющая способы обработки продуктов для создания вкусных и питательных блюд.",
+                "shortDescription": "Кулинарные стримы"
+            },
+            {
+                "id": 23,
+                "name": "Настольные игры",
+                "shortName": "Настолки",
+                "description": "Стримы по настольным играм — это формат контента, который позволяет зрителям увидеть игровой процесс в реальном времени, оценить компоненты, понять правила и проникнуться атмосферой партии.",
+                "shortDescription": "Настольные игры"
+            },
+            {
+                "id": 24,
+                "name": "Наука и техника",
+                "shortName": "Наука",
+                "description": "Стримы по науке и технике трансформируют сложные научные концепции в доступный визуальный контент, позволяя зрителям задавать вопросы в режиме реального времени",
+                "shortDescription": "Научные стримы"
+            },
+            {
+                "id": 25,
+                "name": "Творчество",
+                "shortName": "Творчество",
+                "description": "Стримы по творчеству (Creative Streaming) - это формат онлайн-трансляций, где авторы демонстрируют процесс создания своих произведений в реальном времени. Это позволяет зрителям не только увидеть финальный результат, но и погрузиться в закулисье творческого процесса, перенять опыт или просто отдохнуть, наблюдая за созиданием.",
+                "shortDescription": "Творческие стримы"
+            },
+            {
+                "id": 26,
+                "name": "Шахматы",
+                "shortName": "Шахматы",
+                "description": "Шахматные стримы — это современный феномен, превративший интеллектуальную, зачастую тихую игру в зрелищное шоу.",
+                "shortDescription": "Шахматные стримы"
+            },
+            {
+                "id": 27,
+                "name": "Миниатюры",
+                "shortName": "Миниатюры",
+                "description": "Стримы (прямые трансляции) по созданию миниатюр — это уникальный стык творчества, рукоделия и интерактивного общения. Это не просто демонстрация процесса покраски или сборки, а настоящая «медитация в прямом эфире», собирающая единомышленников.",
+                "shortDescription": "Хобби стримы"
+            },
+            {
+                "id": 28,
+                "name": "Красота",
+                "shortName": "Красота",
+                "description": "Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.",
+                "shortDescription": "Стримы о красоте"
+            },
+            {
+                "id": 29,
+                "name": "Животные и зоопарки",
+                "shortName": "Животные",
+                "description": "Стримы в категории «Животные и зоопарки» (Animals & Zoos) — это онлайн-трансляции для демонстрации жизни обитателей зоопарков, приютов и дикой природы в реальном времени.",
+                "shortDescription": "Стримы о животных"
+            },
+            {
+                "id": 30,
+                "name": "Со-творчество",
+                "shortName": "Коллаборация",
+                "description": "Коллаборации — это совместные трансляции двух или более блогеров, направленные на обмен аудиторией, создание уникального контента и рост каналов. Это один из самых эффективных инструментов для продвижения, так как позволяет привлечь лояльную аудиторию другого стримера.",
+                "shortDescription": "Совместные стримы"
+            },
+            {
+                "id": 31,
+                "name": "События",
+                "shortName": "События",
+                "description": "Прямые трансляции мероприятий — это современный медиаформат, позволяющий авторам (стримерам) транслировать интересные события в реальном времени, взаимодействуя с аудиторией через интернет-пространство.",
+                "shortDescription": "Стримы о событиях"
+            },
+            {
+                "id": 32,
+                "name": "Телевидение",
+                "shortName": "Телевидение",
+                "description": "Стриминг обычных телевизионных каналов — это трансляция телевизионного контента (прямой эфир, новости, шоу, фильмы) в режиме реального времени через интернет, позволяющая зрителям смотреть ТВ не на телевизоре с антенной, а на смартфонах, компьютерах и Smart TV.",
+                "shortDescription": "ТВ стримы"
+            },
+            {
+                "id": 33,
+                "name": "Ремесло",
+                "shortName": "Ремесло",
+                "description": "Стримы ремесленников — это формат прямых трансляций, в которых мастера показывают процесс создания изделий ручной работы: от лепки керамики и вязания до ковки металла или работы с кожей. Это направление сочетает в себе элементы хобби, обучения (DIY — Do It Yourself) и лайфстайл-контента.",
+                "shortDescription": "Стримы о ремеслах"
+            },
+            {
+                "id": 34,
+                "name": "В реальной жизни",
+                "shortName": "Жизнь",
+                "description": "Стримы о жизни — это формат контента, где ведущий транслирует свою повседневность, общается с аудиторией в реальном времени, делится мыслями, переживаниями или занимается обычными делами, создавая иллюзию присутствия и близкого общения. Это жанр, близкий к видеоблогингу, но существующий «здесь и сейчас» без монтажа.",
+                "shortDescription": "Стримы о жизни 24/7"
+            },
+            {
+                "id": 35,
+                "name": "Фитнес",
+                "shortName": "Фитнес",
+                "description": "Фитнес-стримы стали популярным форматом, объединяющим тренировки, мотивацию и живое общение. Они позволяют заниматься спортом в режиме реального времени, получая обратную связь от тренера или общаясь с единомышленниками.",
+                "shortDescription": "Стримы о фитнесе 24/7"
+            }
+        ],
+        "eng": [
+            {
+                "id": 1,
+                "name": "Software development",
+                "shortName": "Software",
+                "description": "Software development is an engineering discipline, a development process through which user needs are transformed into a software product for gaming or other purposes.",
+                "shortDescription": "Programming"
+            },
+            {
+                "id": 2,
+                "name": "Music",
+                "shortName": "Music",
+                "description": "Music is a universal language of art that organizes sounds in time to express emotions, images, and meanings. It inspires, heals, relieves stress, and accompanies people everywhere, uniting cultures and eras.",
+                "shortDescription": "Different styles"
+            },
+            {
+                "id": 3,
+                "name": "English language",
+                "shortName": "English",
+                "description": "Learning foreign languages is the key to expanding the boundaries of the world, developing cognitive abilities (memory, thinking), and increasing personal efficiency.",
+                "shortDescription": "Practice"
+            },
+            {
+                "id": 4,
+                "name": "DJs",
+                "shortName": "DJs",
+                "description": "DJ music is a continuous soundscape created by mixing tracks, effects, and rhythms to control the atmosphere of a dance floor.",
+                "shortDescription": "Music streams"
+            },
+            {
+                "id": 5,
+                "name": "Dancing",
+                "shortName": "Dancing",
+                "description": "Dancing is a universal body language that combines rhythmic movements with music to express emotions, self-expression, and enjoyment.",
+                "shortDescription": "Different styles"
+            },
+            {
+                "id": 6,
+                "name": "Reading and writing",
+                "shortName": "Reading",
+                "description": "Reading and writing are two sides of the same creative process, where reading serves as fuel for the mind and a source of inspiration, while writing is a way to organize thoughts and create a new reality.",
+                "shortDescription": "Reading aloud"
+            },
+            {
+                "id": 7,
+                "name": "TDU2",
+                "shortName": "TDU2",
+                "description": "Test Drive Unlimited 2 (TDU2) is an iconic 2011 arcade racing game with social elements that allows you to explore the islands of Ibiza and Oahu in an open world environment.",
+                "shortDescription": "TDU2 Streams"
+            },
+            {
+                "id": 8,
+                "name": "Skyrim",
+                "shortName": "Skyrim",
+                "description": "The Elder Scrolls V: Skyrim is a cult role—playing game from Bethesda (2011), offering complete freedom in the open world of the northern province of Tamriel. Players take on the role of Dovakin (Dragonborn), whose goal is to save the world from dragons.",
+                "shortDescription": "Skyrim Streams"
+            },
+            {
+                "id": 9,
+                "name": "Learning",
+                "shortName": "Learning",
+                "description": "Learning is a continuous process of acquiring knowledge, skills, and abilities necessary for personal development, adaptation, and professional success.",
+                "shortDescription": "Educational streams"
+            },
+            {
+                "id": 10,
+                "name": "Dance Tribal",
+                "shortName": "Tribal",
+                "description": "Tribal is a modern dance style that combines elements of oriental dances (bellydance), flamenco, Indian and Gypsy dances combined into a unique ethnic style.",
+                "shortDescription": "Dance streams"
+            },
+            {
+                "id": 11,
+                "name": "Communication",
+                "shortName": "Communication",
+                "description": "(Just Chatting) on streams is a live broadcast format that focuses on live interaction with the audience without being tied to games or a specific category of activities.",
+                "shortDescription": "Entertainments"
+            },
+            {
+                "id": 12,
+                "name": "Sport",
+                "shortName": "Sport",
+                "description": "Sport is an organized activity aimed at maintaining physical fitness, improving health, and achieving high results through competition.",
+                "shortDescription": "Sports events"
+            },
+            {
+                "id": 13,
+                "name": "Games",
+                "shortName": "Games",
+                "description": "Streaming various games is a great way to attract a diverse audience, but it requires a high level of charisma to keep viewers engaged not just for the game itself, but for the streamer's personality.",
+                "shortDescription": "Game streams"
+            },
+            {
+                "id": 14,
+                "name": "Hobby",
+                "shortName": "Hobby",
+                "description": "A hobby is not just a way to fill your free time, but an important part of your life that helps you switch from your work routine to creativity or relaxation.",
+                "shortDescription": "Hobby streams"
+            },
+            {
+                "id": 15,
+                "name": "Mandala Dance",
+                "shortName": "Mandala",
+                "description": "Mandala Dance is a deep feminine energy practice based on sacred geometry that combines dance, meditation, and bodywork.",
+                "shortDescription": "Dance streams"
+            },
+            {
+                "id": 16,
+                "name": "Radio",
+                "shortName": "Radio",
+                "description": "Radio is the most accessible media. To this day, radio remains the most accessible and cheapest medium of mass communication in the world. Radio waves can reach almost any point.",
+                "shortDescription": "24/7 Radio Streams"
+            },
+            {
+                "id": 17,
+                "name": "Other",
+                "shortName": "Other",
+                "description": "Other - streams on topics that are not included in any stream category.",
+                "shortDescription": "Unique streams"
+            },
+            {
+                "id": 18,
+                "name": "ASMR",
+                "shortName": "ASMR",
+                "description": "ASMR stands for \"autonomous sensory meridian response\" and refers to the pleasant sensations that arise in response to audiovisual stimuli, such as nature sounds, whispers, the purring of a cat, the rustling of leaves, and smooth movements.",
+                "shortDescription": "ASMR streams 24/7"
+            },
+            {
+                "id": 19,
+                "name": "Singing",
+                "shortName": "Singing",
+                "description": "Singing is a unique vocal art that uses the human voice as a tool for creating music and conveying emotions.",
+                "shortDescription": "Vocal streams"
+            },
+            {
+                "id": 20,
+                "name": "Art",
+                "shortName": "Art",
+                "description": "Art streams (art-streams) are an emerging genre where the process of creating or learning about art takes place in real-time. This is a unique form of communication in the digital age, allowing artists to share their skills and viewers to immerse themselves in the creative process.",
+                "shortDescription": "Art Streams"
+            },
+            {
+                "id": 21,
+                "name": "Ballet",
+                "shortName": "Ballet",
+                "description": "Ballet is the highest form of stage art, combining music, choreography, drama, and visual arts.",
+                "shortDescription": "Ballet streams"
+            },
+            {
+                "id": 22,
+                "name": "Food and drinks",
+                "shortName": "Cooking",
+                "description": "Cooking is the art and technology of preparing food, combining different methods of food preparation to create delicious and nutritious dishes.",
+                "shortDescription": "Culinary streams"
+            },
+            {
+                "id": 23,
+                "name": "Table games",
+                "shortName": "Board games",
+                "description": "Tabletop gaming streams are a content format that allows viewers to experience the gameplay in real time, evaluate the components, understand the rules, and immerse themselves in the atmosphere of the game.",
+                "shortDescription": "Table games"
+            },
+            {
+                "id": 24,
+                "name": "Science and technology",
+                "shortName": "Science",
+                "description": "Science and technology streams transform complex scientific concepts into accessible visual content, allowing viewers to ask questions in real-time.",
+                "shortDescription": "Scientific streams"
+            },
+            {
+                "id": 25,
+                "name": "Creation",
+                "shortName": "Creation",
+                "description": "Creative Streaming is an online streaming format where authors demonstrate the process of creating their works in real time. This allows viewers not only to see the final result, but also to immerse themselves in the behind-the-scenes creative process, learn from experience, or just relax while watching the creation.",
+                "shortDescription": "Creative streams"
+            },
+            {
+                "id": 26,
+                "name": "Chess",
+                "shortName": "Chess",
+                "description": "Chess streams are a modern phenomenon that has turned an intellectual and often quiet game into a spectacular show.",
+                "shortDescription": "Chess streams"
+            },
+            {
+                "id": 27,
+                "name": "Miniatures",
+                "shortName": "Miniatures",
+                "description": "Streams (live broadcasts) on the creation of miniatures are a unique junction of creativity, handicraft and interactive communication. This is not just a demonstration of the process of painting or assembly, but a real \"live meditation\" gathering like-minded people.",
+                "shortDescription": "Hobby streams"
+            },
+            {
+                "id": 28,
+                "name": "Beauty",
+                "shortName": "Beauty",
+                "description": "Beauty and skincare streams (beauty-streams) are a format where bloggers, makeup artists, or cosmetologists demonstrate makeup, test skincare products, review products, and interact with the audience.",
+                "shortDescription": "Beauty streams"
+            },
+            {
+                "id": 29,
+                "name": "Animals & Zoos",
+                "shortName": "Animals",
+                "description": "Animals & Zoos streams are online broadcasts that showcase the lives of zookeepers, shelters, and wildlife in real time.",
+                "shortDescription": "Animal streams"
+            },
+            {
+                "id": 30,
+                "name": "Co-creation",
+                "shortName": "Collaboration",
+                "description": "Collaborations are joint broadcasts by two or more bloggers aimed at sharing the audience, creating unique content and growing channels. This is one of the most effective tools for promotion, as it allows you to attract the loyal audience of another streamer.",
+                "shortDescription": "Shared streams"
+            },
+            {
+                "id": 31,
+                "name": "Events",
+                "shortName": "Events",
+                "description": "Live streaming of events is a modern media format that allows authors (streamers) to broadcast interesting events in real time, interacting with the audience through the internet.",
+                "shortDescription": "Event streams"
+            },
+            {
+                "id": 32,
+                "name": "Television",
+                "shortName": "Television",
+                "description": "Streaming of regular TV channels is the broadcast of TV content (live broadcasts, news, shows, and movies) in real time over the internet, allowing viewers to watch TV not on a TV with an antenna, but on smartphones, computers, and Smart TVs.",
+                "shortDescription": "TV streams"
+            },
+            {
+                "id": 33,
+                "name": "The craft",
+                "shortName": "The craft",
+                "description": "Craftsmen's streams are a format of live broadcasts in which craftsmen show the process of creating handmade products: from pottery and knitting to metal forging and leatherworking. This trend combines elements of hobbies, learning (DIY - Do It Yourself) and lifestyle content.",
+                "shortDescription": "Craft Streams"
+            },
+            {
+                "id": 34,
+                "name": "In real life",
+                "shortName": "Life",
+                "description": "Life streams are a content format where the host broadcasts their daily life, communicates with the audience in real time, shares their thoughts, experiences, or engages in ordinary activities, creating an illusion of presence and close communication. This is a genre that is similar to vlogging, but exists in the \"here and now\" without any editing.",
+                "shortDescription": "24/7 streaming about life"
+            },
+            {
+                "id": 35,
+                "name": "Fitness",
+                "shortName": "Fitness",
+                "description": "Fitness streams have become a popular format that combines workouts, motivation, and live communication. They allow you to exercise in real-time, receive feedback from a trainer, or connect with like-minded individuals.",
+                "shortDescription": "24/7 Fitness Streaming"
+            }
+        ]
+    }
+}

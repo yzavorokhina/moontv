@@ -20,7 +20,7 @@ export default function ChannelPage({ db, showAll }) {
 
     return (
         <>
-            <Layout db={db} showFooter={false}>
+            <Layout db={db} showFooter={false} showHorizontalMenu={false}>
                 <div className="main-screen-block">
                     <div className="main-banner" id="react-stream">
                         <Stream streamData={streamData} channelData={channelData} />

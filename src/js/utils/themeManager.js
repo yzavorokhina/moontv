@@ -34,6 +34,8 @@ const themesMap = new Map([
     channelBgImgTint: 'rgba(7, 1, 41, 0.5)',
     notFoundBgImg: 'url(images/404-background-dark.jpg)',
     notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)',
+    logoGlow: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))drop-shadow(0 0 25px rgba(255, 255, 255, 0.5))',
+    logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
   }],
   ["light", {
     mainBg: '#FFFFFF',
@@ -63,6 +65,8 @@ const themesMap = new Map([
     channelBgImgTint: 'rgba(255, 254, 254, 0.1)',
     notFoundBgImg: 'url(images/404-background-light.jpg)',
     notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)',
+    logoGlow: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.2))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.2))drop-shadow(0 0 25px rgba(135, 177, 250, 0.5))',
+    logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
   }]
 ]);
 
@@ -71,7 +75,7 @@ export const updateTheme = (themeId) => {
   const { mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
     bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
     accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-    fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint } = themesMap.get(themeId);
+    fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover } = themesMap.get(themeId);
 
   setLocalStorage(storageKey, themeId);
 
@@ -79,8 +83,7 @@ export const updateTheme = (themeId) => {
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint
-  // });
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -111,6 +114,9 @@ export const updateTheme = (themeId) => {
   document.documentElement.style.setProperty('--theme-channel-bg-image-tint', channelBgImgTint);
   document.documentElement.style.setProperty('--theme-notFound-bg-image', notFoundBgImg);
   document.documentElement.style.setProperty('--theme-notFound-bg-image-tint', notFoundBgImgTint);
+
+  document.documentElement.style.setProperty('--theme-logo-glow', logoGlow);
+  document.documentElement.style.setProperty('--theme-logo-glow-hover', logoGlowHover);
 
   return themeId;
 }

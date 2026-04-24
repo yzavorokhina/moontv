@@ -32,4 +32,14 @@
     --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
     --theme-notFound-bg-image: url('../img/channel-bg-dark.jpg');
     --theme-notFound-bg-image-tint: rgba(22, 18, 47, 0.8);
+
+    --theme-logo-glow:
+    drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))
+    drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))
+    drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
+
+    --theme-logo-glow-hover:
+    drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))
+    drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))
+    drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
 }

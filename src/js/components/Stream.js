@@ -9,11 +9,13 @@ export default function Stream({ streamData, channelData }) {
                     {/* <div className="video-container">
                         <video className="current-video" controls>
                             <source src="video1.mp4" type="video/mp4">  */}
-                    <iframe id="streamTV" 
+                    {/* <iframe id="streamTV"
                         src="https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd"
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+
+                    <iframe src="https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     {/* </video>
                     </div> */}
                 </div>
