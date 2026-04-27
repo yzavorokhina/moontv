@@ -10,7 +10,7 @@ import { getUrlParams } from '../utils/common';
 export default function ChannelPage({ db, showAll }) {
 
     const params = getUrlParams();
-    console.log(params.id); // '1'
+    console.log({ params }); // '1'
 
     const streamId = +params.id || 1;
 

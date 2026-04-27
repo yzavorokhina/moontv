@@ -75,10 +75,20 @@
     color: var(--theme-accent-hover, #E2552D);
 }
 
-.horizontal-titles .show-all-arrow {
+.show-all-arrow {
     width: 24px;
     height: 24px;
     color: var(--theme-accent-bg, #FF6F3A);
+    align-items: center;
+    padding-left: 6px;
+    margin-top: 6px;
+}
+
+.arrowed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* end of the show-all-orange-link */

@@ -1,5 +1,6 @@
 
-export default function SearchForm({}) {
+
+export default function SearchForm({ currentTheme }) {
 
     return (
         <>
@@ -8,8 +9,7 @@ export default function SearchForm({}) {
                     <label htmlFor="site-search" className="visually-hidden">Поиск по сайту</label>
                     <input type="search" name="q" id="site-search" className="input-with-icon" placeholder="Поиск" aria-label="Search" />
                     <a href="#notifications" className="notification-round-button">
-                        <img src="./images/notifications-button.svg" className="button-icon" alt="Search" width="40px"
-                            height="40px" />
+                        <img src={`./images/notifications-button-${currentTheme}.svg`} className="button-icon" alt="Search" />
                     </a>
                 </form>
             </div>

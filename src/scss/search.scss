@@ -80,25 +80,27 @@ footer {
     border: none;
     outline: none;
     margin-right: 20px;
-    background-image: url('../img/search-icon-dark.svg');
+    background-image: var(--theme-search-icon);
     background-repeat: no-repeat;
-    background-position: 10px center;    // Icon position
-    background-size: 24px 24px;          // Icon size
-    padding-left: 40px;                  // Space for an icon so that the text doesn't overlap
+    background-position: 14px center; // Icon position
+    background-size: 24px 24px; // Icon size
+    padding-left: 44px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--theme-input-bg, #1C173C);
     color: var(--theme-font-primary, #FFFFFF);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
 }
 
 .input-with-icon::placeholder {
     color: var(--theme-font-secondary, #CECED6);
+    // cursor: pointer;
 }
 
 .input-with-icon:hover {
     background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
     color: var(--theme-font-primary, #FFFFFF);
+    // cursor: pointer;
 }
 
 .notification-round-button {
@@ -111,14 +113,16 @@ footer {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .notification-round-button:hover {
     transform: scale(1.1);
+    background-color: var(--theme-accent-hover, #E2552D);
 }
 
 .button-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }

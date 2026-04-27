@@ -59,20 +59,27 @@
 }
 
 .section-title h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+    vertical-align: middle;
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 6px;
     font-size: 20px;
     font-weight: bold;
-    color: var(--theme-font-secondary, #CECED6);
+    color: var(--theme-font-primary, #FFFFFF);
 }
 
 .section-title h2:hover {
-    color: var(--theme-font-primary, #FFFFFF);
+    color: var(--theme-font-secondary, #CECED6);
 }
 
 .section-title img:hover {
-    color: var(--theme-font-primary, #FFFFFF);
+    color: var(--theme-font-secondary, #CECED6);
 }
 
 /* show-all-gray-link */
@@ -83,7 +90,6 @@
     justify-content: flex-start;
     flex-shrink: 0;
     max-width: fit-content;
-    padding-top: 6px;
 }
 
 .show-all-categories a {
@@ -98,20 +104,28 @@
     color: var(--theme-font-secondary, #CECED6);
 }
 
+.arrowed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .arrowed a svg {
     font-size: 14px;
     line-height: 140%;
     color: var(--theme-font-secondary, #CECED6);
 }
 
-.show-all-categories .show-all-arrow {
+.show-all-arrow {
     width: 24px;
     height: 24px;
-    margin-top: 6px;
-    margin-left: 6px;
-    align-items: baseline;
+    align-items: center;
     color: var(--theme-font-secondary, #CECED6);
+    padding-left: 6px;
 }
+
 /* end of the show-all-orange-link */
 
 
@@ -122,15 +136,11 @@
     justify-content: flex-start;
     flex-shrink: 0;
     gap: 20px;
-    // width: 100%;
-    // width: calc(100vw - 222px);
     height: 300px;
     margin-left: 16px;
     margin-right: 50px;
     padding: 0;
-    // margin-top: 10px;
     background-color: transparent;
-    // border: 1px solid green;
 }
 
 /* one channel-card: */
@@ -234,7 +244,6 @@
 
 .clip-author-name {
     font-size: 14px;
-    // font-weight: bold;
     color: var(--theme-accent-bg, #FF6F3A) !important;
     padding: 0;
     margin: 0;
@@ -273,6 +282,7 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 22px;
+    margin-left: 16px;
 }
 
 .divider-line {
@@ -307,6 +317,7 @@
     border: 1px solid #CECED6;
     border-radius: 34px;
 }
+
 /* end of the section row: */
 
 /* stream-labels: */

@@ -16,6 +16,7 @@ const themesMap = new Map([
     bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
     tagBtnBg: 'rgba(170, 168, 181, 0.7)',
     accentColorBg: '#FF6F3A',
+    subscribeBtnBg: '#16122F',
 
     btnsHover: 'rgba(17, 9, 80, 0.5)',
     blocksHover: '#2e2b50',
@@ -36,6 +37,10 @@ const themesMap = new Map([
     notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)',
     logoGlow: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))drop-shadow(0 0 25px rgba(255, 255, 255, 0.5))',
     logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
+    searchIcon: 'url(images/search-icon-dark.svg)',
+    arrowDown: 'url(images/arrow-down-dark.svg)',
+    followBtn: 'url(images/heart-icon-dark.svg)',
+    subscribeBtn: 'url(images/subscribe-button-dark.svg)',
   }],
   ["light", {
     mainBg: '#FFFFFF',
@@ -47,6 +52,7 @@ const themesMap = new Map([
     bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
     tagBtnBg: '#CECED6',
     accentColorBg: '#FF6F3A',
+    subscribeBtnBg: '#CECED6',
 
     btnsHover: '#b6b4be',
     blocksHover: '#b6b4be',
@@ -56,7 +62,8 @@ const themesMap = new Map([
 
     fontLogo: '#FF6F3A',
     fontPrimary: '#343148',
-    fontSecondary: '#1C173C',
+    // fontSecondary: '#1C173C',
+    fontSecondary: '#343148',
     fontTertiary: '#000000',
 
     categoryBgImg: 'url(images/category-bg-light.jpg)',
@@ -67,6 +74,10 @@ const themesMap = new Map([
     notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)',
     logoGlow: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.2))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.2))drop-shadow(0 0 25px rgba(135, 177, 250, 0.5))',
     logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
+    searchIcon: 'url(images/search-icon-light.svg)',
+    arrowDown: 'url(images/arrow-down-light.svg)',
+    followBtn: 'url(images/heart-icon-light.svg)',
+    subscribeBtn: 'url(images/subscribe-button-light.svg)',
   }]
 ]);
 
@@ -74,16 +85,16 @@ export const updateTheme = (themeId) => {
   // console.log({ updateTheme: currentTheme });
   const { mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
     bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
-    accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-    fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover } = themesMap.get(themeId);
+    accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
+    fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn } = themesMap.get(themeId);
 
   setLocalStorage(storageKey, themeId);
 
   // console.log({
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
-  //   accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover });
+  //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -91,6 +102,8 @@ export const updateTheme = (themeId) => {
   document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
   document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
   document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+  document.documentElement.style.setProperty('--theme-subscribe-btn-bg', subscribeBtnBg);
+
 
   document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
   document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);
@@ -117,7 +130,11 @@ export const updateTheme = (themeId) => {
 
   document.documentElement.style.setProperty('--theme-logo-glow', logoGlow);
   document.documentElement.style.setProperty('--theme-logo-glow-hover', logoGlowHover);
-
+  document.documentElement.style.setProperty('--theme-search-icon', searchIcon);
+  document.documentElement.style.setProperty('--theme-arrow-down', arrowDown);
+  document.documentElement.style.setProperty('--theme-follow-button', followBtn);
+  document.documentElement.style.setProperty('--theme-subscribe-button', subscribeBtn);
+  
   return themeId;
 }
 

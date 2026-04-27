@@ -39,15 +39,15 @@
     border: none;
     outline: none;
     margin-right: 20px;
-    background-image: url('../img/search-icon-dark.svg');
+    background-image: var(--theme-search-icon);
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 14px center;
     background-size: 24px 24px;
-    padding-left: 40px;
+    padding-left: 44px;
     border-radius: 40px;
     background-color: var(--theme-input-bg, #1C173C);
-    color: var(--color-font-white-light, #ffffff);
-    font-size: 16px;
+    color: var(--theme-font-primary, #FFFFFF);
+    font-size: 14px;
     line-height: 140%;
 }
 
@@ -57,7 +57,7 @@
 
 .input-with-icon:hover {
     background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
-    color: var(--color-font-white-light, #ffffff);
+    color: var(--theme-font-primary, #FFFFFF);
 }
 
 .notification-round-button {
@@ -70,15 +70,17 @@
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .notification-round-button:hover {
     transform: scale(1.1);
+    background-color: var(--theme-accent-hover, #E2552D);
 }
 
 .button-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
@@ -204,8 +206,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
 }
 
 .login {

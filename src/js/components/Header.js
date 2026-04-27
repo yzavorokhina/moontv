@@ -3,10 +3,8 @@ import SearchForm from './SearchForm';
 import { useLocalStorage } from '../utils/common';
 import { defaultTheme, setCurrentTheme, setNextTheme } from '../utils/themeManager';
 
-export default function Header({ }) {
+export default function Header({ setTheme, currentTheme }) {
 
-    const defaultThemeValue = defaultTheme;
-    const [currentTheme, setTheme] = useState(defaultThemeValue);
     const [currentUser, setUser] = useState('currentUser');
 
     useEffect(() => {
@@ -28,7 +26,7 @@ export default function Header({ }) {
         <>
             <div id="react-header" className="site-header">
                 <header className="site-header">
-                    <SearchForm />
+                    <SearchForm currentTheme={currentTheme} />
                     <div className="logo-container">
                         <a href="./index.html" className="logo-img">
                             <img id="site-logo" src={`./images/logo-moon-header-${currentTheme}.png`} alt="MoonTV"

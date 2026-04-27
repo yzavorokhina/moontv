@@ -1,7 +1,7 @@
 import HorizontalMenuBtn from './HorizontalMenuBtn';
 import { getUrlParams } from '../utils/common.js';
 
-export default function HorizontalMenu({ db }) {
+export default function HorizontalMenu({ db, currentTheme }) {
 
     const showItems = 10;
     let activeId = 0;
@@ -38,7 +38,7 @@ export default function HorizontalMenu({ db }) {
                     <ul>
                         <li className="horizontal-menu-first-button">
                             <a href="./categories.html">
-                                <img src="./images/all-icon-for-categories.svg" alt="Все категории" />
+                                <img src={`./images/all-icon-for-categories-${currentTheme}.svg`} alt="Все категории" />
                                 Все
                             </a>
                         </li>
@@ -51,7 +51,7 @@ export default function HorizontalMenu({ db }) {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
-                                    fill="#CECED6" />
+                                    fill="currentColor" />
                             </svg>
                         </button>
                     </ul>

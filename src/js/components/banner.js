@@ -11,7 +11,7 @@ export default function Banner({ db, showAll }) {
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M17 9H5.414l3.293-3.293a.999.999 0 10-1.414-1.414l-5 5a.999.999 0 000 1.414l5 5a.997.997 0 001.414 0 .999.999 0 000-1.414L5.414 11H17a1 1 0 100-2z"
-                                fill="#FFFFFF" />
+                                fill="currentColor" />
                         </svg>
                     </button>
                     {/* <!-- Область просмотра видео --> */}
@@ -31,9 +31,9 @@ export default function Banner({ db, showAll }) {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen></iframe> */}
 
-                    {/* <iframe src="https://www.youtube.com/embed/eO3AUvPgT-k?si=7k8jhYqUqGIkOmug" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+                    {/* <iframe src="https://www.youtube.com/embed/eO3AUvPgT-k?si=7k8jhYqUqGIkOmug" title="YouTube video player" frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
 
-                    <iframe src="https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
                     {/* <!-- </video>
               </div> --> */}
@@ -43,7 +43,7 @@ export default function Banner({ db, showAll }) {
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"
-                                fill="#FFFFFF" />
+                                fill="currentColor" />
                         </svg>
                     </button>
                     <div className="banner-info">

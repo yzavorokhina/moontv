@@ -15,7 +15,7 @@ export default function Stream({ streamData, channelData }) {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
 
-                    <iframe src="https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     {/* </video>
                     </div> */}
                 </div>

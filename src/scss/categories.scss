@@ -75,6 +75,10 @@ footer {
     color: var(--theme-accent-hover, #E2552D) !important;
 }
 
+.arrow-back-svg {
+    margin-top: 6px;
+}
+
 .category-container {
     display: flex;
     flex-direction: column;
@@ -183,9 +187,10 @@ footer {
     background-color: var(--theme-active-btn-bg, #000000);
 }
 
-.block-buttons-2 span{
+.block-buttons-2 span {
     color: var(--theme-accent-bg, #FF6F3A);
     font-weight: 500;
+    padding-right: 6px;
 }
 
 .block-buttons-2 button {
@@ -195,12 +200,16 @@ footer {
 }
 
 .block-buttons-2 button svg {
-    margin-right: 4px;
+    margin-right: 6px;
     text-align: center;
     vertical-align: middle;
 }
 
-#react-category-cards{
+.sorting-svg {
+    margin-bottom: 4px;
+}
+
+#react-category-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
