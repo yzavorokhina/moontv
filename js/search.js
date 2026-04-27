@@ -248,12 +248,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(28);
-  const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_utils_themeManager__WEBPACK_IMPORTED_MODULE_4__.defaultTheme);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(35);
+  const {
+    setTheme,
+    currentTheme
+  } = t0;
   const [currentUser, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("currentUser");
   let t1;
-  let t2;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[0] !== setTheme) {
     t1 = () => {
       const currentThemeName = (0,_utils_themeManager__WEBPACK_IMPORTED_MODULE_4__.setCurrentTheme)();
       setTheme(currentThemeName);
@@ -261,35 +263,44 @@ function Header(t0) {
       const auth = authStr ? JSON.parse(authStr) : {};
       setUser(auth);
     };
-    t2 = [];
-    $[0] = t1;
-    $[1] = t2;
+    $[0] = setTheme;
+    $[1] = t1;
   } else {
-    t1 = $[0];
-    t2 = $[1];
+    t1 = $[1];
+  }
+  let t2;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = [];
+    $[2] = t2;
+  } else {
+    t2 = $[2];
   }
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t1, t2);
   let t3;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[3] !== setTheme) {
     t3 = () => {
       const currentThemeName_0 = (0,_utils_themeManager__WEBPACK_IMPORTED_MODULE_4__.setNextTheme)();
       setTheme(currentThemeName_0);
     };
-    $[2] = t3;
+    $[3] = setTheme;
+    $[4] = t3;
   } else {
-    t3 = $[2];
+    t3 = $[4];
   }
   const handleClick = t3;
   let t4;
-  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[3] = t4;
+  if ($[5] !== currentTheme) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      currentTheme: currentTheme
+    });
+    $[5] = currentTheme;
+    $[6] = t4;
   } else {
-    t4 = $[3];
+    t4 = $[6];
   }
   const t5 = `./images/logo-moon-header-${currentTheme}.png`;
   let t6;
-  if ($[4] !== t5) {
+  if ($[7] !== t5) {
     t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
       href: "./index.html",
       className: "logo-img",
@@ -300,36 +311,36 @@ function Header(t0) {
         className: "logo-icon"
       })
     });
-    $[4] = t5;
-    $[5] = t6;
+    $[7] = t5;
+    $[8] = t6;
   } else {
-    t6 = $[5];
+    t6 = $[8];
   }
   let t7;
-  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
     t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
       id: "logo-text",
       className: "logo-text",
       children: "Moon.tv"
     });
-    $[6] = t7;
+    $[9] = t7;
   } else {
-    t7 = $[6];
+    t7 = $[9];
   }
   let t8;
-  if ($[7] !== t6) {
+  if ($[10] !== t6) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "logo-container",
       children: [t6, t7]
     });
-    $[7] = t6;
-    $[8] = t8;
+    $[10] = t6;
+    $[11] = t8;
   } else {
-    t8 = $[8];
+    t8 = $[11];
   }
   const t9 = `./images/header-icon-music-${currentTheme}.svg`;
   let t10;
-  if ($[9] !== t9) {
+  if ($[12] !== t9) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -342,74 +353,83 @@ function Header(t0) {
         })
       })
     });
-    $[9] = t9;
-    $[10] = t10;
+    $[12] = t9;
+    $[13] = t10;
   } else {
-    t10 = $[10];
+    t10 = $[13];
   }
   const t11 = `./images/header-icon-theme-${currentTheme}.svg`;
   let t12;
-  if ($[11] !== t11) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  if ($[14] !== t11) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+      src: t11,
+      title: "theme"
+    });
+    $[14] = t11;
+    $[15] = t12;
+  } else {
+    t12 = $[15];
+  }
+  let t13;
+  if ($[16] !== handleClick || $[17] !== t12) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       id: "themeToggle",
       onClick: handleClick,
       className: "menu-button",
       type: "button",
       "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-        src: t11,
-        title: "theme"
-      })
+      children: t12
     });
-    $[11] = t11;
-    $[12] = t12;
+    $[16] = handleClick;
+    $[17] = t12;
+    $[18] = t13;
   } else {
-    t12 = $[12];
+    t13 = $[18];
   }
-  const t13 = `./images/header-icon-globe-${currentTheme}.svg`;
-  let t14;
-  if ($[13] !== t13) {
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  const t14 = `./images/header-icon-globe-${currentTheme}.svg`;
+  let t15;
+  if ($[19] !== t14) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
         href: "./notFound.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: t13,
+          src: t14,
           title: "language"
         })
       })
     });
-    $[13] = t13;
-    $[14] = t14;
+    $[19] = t14;
+    $[20] = t15;
   } else {
-    t14 = $[14];
+    t15 = $[20];
   }
-  const t15 = `./images/header-icon-login-${currentTheme}.svg`;
-  let t16;
-  if ($[15] !== t15) {
-    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  const t16 = `./images/header-icon-login-${currentTheme}.svg`;
+  let t17;
+  if ($[21] !== t16) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0432\u043E\u0439 \u0430\u043A\u043A\u0430\u0443\u043D\u0442",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
         href: "./auth.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: t15,
+          src: t16,
           title: "login"
         })
       })
     });
-    $[15] = t15;
-    $[16] = t16;
+    $[21] = t16;
+    $[22] = t17;
   } else {
-    t16 = $[16];
+    t17 = $[22];
   }
-  const t17 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
-  let t18;
-  if ($[17] !== t17) {
-    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  const t18 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
+  let t19;
+  if ($[23] !== t18) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "login",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
         className: "login-button",
@@ -418,51 +438,52 @@ function Header(t0) {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
           href: "./auth.html",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-            src: t17,
+            src: t18,
             alt: "personal account"
           })
         })
       })
     });
-    $[17] = t17;
-    $[18] = t18;
-  } else {
-    t18 = $[18];
-  }
-  let t19;
-  if ($[19] !== t10 || $[20] !== t12 || $[21] !== t14 || $[22] !== t16 || $[23] !== t18) {
-    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-      className: "container-menu",
-      children: [t10, t12, t14, t16, t18]
-    });
-    $[19] = t10;
-    $[20] = t12;
-    $[21] = t14;
-    $[22] = t16;
     $[23] = t18;
     $[24] = t19;
   } else {
     t19 = $[24];
   }
   let t20;
-  if ($[25] !== t19 || $[26] !== t8) {
-    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+  if ($[25] !== t10 || $[26] !== t13 || $[27] !== t15 || $[28] !== t17 || $[29] !== t19) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "container-menu",
+      children: [t10, t13, t15, t17, t19]
+    });
+    $[25] = t10;
+    $[26] = t13;
+    $[27] = t15;
+    $[28] = t17;
+    $[29] = t19;
+    $[30] = t20;
+  } else {
+    t20 = $[30];
+  }
+  let t21;
+  if ($[31] !== t20 || $[32] !== t4 || $[33] !== t8) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         id: "react-header",
         className: "site-header",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
           className: "site-header",
-          children: [t4, t8, t19]
+          children: [t4, t8, t20]
         })
       })
     });
-    $[25] = t19;
-    $[26] = t8;
-    $[27] = t20;
+    $[31] = t20;
+    $[32] = t4;
+    $[33] = t8;
+    $[34] = t21;
   } else {
-    t20 = $[27];
+    t21 = $[34];
   }
-  return t20;
+  return t21;
 }
 
 /***/ },
@@ -485,7 +506,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function HorizontalMenu({
-  db
+  db,
+  currentTheme
 }) {
   const showItems = 10;
   let activeId = 0;
@@ -525,7 +547,7 @@ function HorizontalMenu({
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
               href: "./categories.html",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-                src: "./images/all-icon-for-categories.svg",
+                src: `./images/all-icon-for-categories-${currentTheme}.svg`,
                 alt: "\u0412\u0441\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
               }), "\u0412\u0441\u0435"]
             })
@@ -543,7 +565,7 @@ function HorizontalMenu({
               xmlns: "http://www.w3.org/2000/svg",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
                 d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
-                fill: "#CECED6"
+                fill: "currentColor"
               })
             })
           })]
@@ -622,12 +644,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Layout)
 /* harmony export */ });
 /* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./src/js/components/Footer.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/js/components/Header.js");
-/* harmony import */ var _HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
-/* harmony import */ var _VerticalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Notification */ "./src/js/components/Notification.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./src/js/components/Footer.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./src/js/components/Header.js");
+/* harmony import */ var _HorizontalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
+/* harmony import */ var _VerticalMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Notification */ "./src/js/components/Notification.js");
+/* harmony import */ var _utils_themeManager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/themeManager */ "./src/js/utils/themeManager.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -636,109 +663,117 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Layout(props) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(20);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(23);
   const showFooter = props.showFooter === undefined ? true : props.showFooter;
   const showHorizontalMenu = props.showHorizontalMenu === undefined ? true : props.showHorizontalMenu;
   const {
     db,
     children
   } = props;
+  const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_utils_themeManager__WEBPACK_IMPORTED_MODULE_7__.defaultTheme);
   let t0;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t0 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[0] = t0;
+  if ($[0] !== currentTheme) {
+    t0 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      currentTheme: currentTheme,
+      setTheme: setTheme
+    });
+    $[0] = currentTheme;
+    $[1] = t0;
   } else {
-    t0 = $[0];
+    t0 = $[1];
   }
   let t1;
-  if ($[1] !== db) {
-    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_VerticalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  if ($[2] !== db) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_VerticalMenu__WEBPACK_IMPORTED_MODULE_5__["default"], {
       db: db
     });
-    $[1] = db;
-    $[2] = t1;
+    $[2] = db;
+    $[3] = t1;
   } else {
-    t1 = $[2];
+    t1 = $[3];
   }
   let t2;
-  if ($[3] !== db || $[4] !== showHorizontalMenu) {
-    t2 = showHorizontalMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      db: db
+  if ($[4] !== currentTheme || $[5] !== db || $[6] !== showHorizontalMenu) {
+    t2 = showHorizontalMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      db: db,
+      currentTheme: currentTheme
     });
-    $[3] = db;
-    $[4] = showHorizontalMenu;
-    $[5] = t2;
+    $[4] = currentTheme;
+    $[5] = db;
+    $[6] = showHorizontalMenu;
+    $[7] = t2;
   } else {
-    t2 = $[5];
+    t2 = $[7];
   }
   let t3;
-  if ($[6] !== children || $[7] !== t2) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+  if ($[8] !== children || $[9] !== t2) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
       className: "main-of-the-main",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "horizontal-blocks",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "main-screen-block",
           children: [t2, children]
         })
       })
     });
-    $[6] = children;
-    $[7] = t2;
-    $[8] = t3;
+    $[8] = children;
+    $[9] = t2;
+    $[10] = t3;
   } else {
-    t3 = $[8];
+    t3 = $[10];
   }
   let t4;
-  if ($[9] !== t1 || $[10] !== t3) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  if ($[11] !== t1 || $[12] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "vertical-blocks",
       children: [t1, t3]
     });
-    $[9] = t1;
-    $[10] = t3;
-    $[11] = t4;
+    $[11] = t1;
+    $[12] = t3;
+    $[13] = t4;
   } else {
-    t4 = $[11];
+    t4 = $[13];
   }
   let t5;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_5__["default"], {});
-    $[12] = t5;
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_6__["default"], {});
+    $[14] = t5;
   } else {
-    t5 = $[12];
+    t5 = $[14];
   }
   let t6;
-  if ($[13] !== t4) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
+  if ($[15] !== t4) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("main", {
       children: [t4, t5]
     });
-    $[13] = t4;
-    $[14] = t6;
+    $[15] = t4;
+    $[16] = t6;
   } else {
-    t6 = $[14];
+    t6 = $[16];
   }
   let t7;
-  if ($[15] !== showFooter) {
-    t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {});
-    $[15] = showFooter;
-    $[16] = t7;
+  if ($[17] !== showFooter) {
+    t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {});
+    $[17] = showFooter;
+    $[18] = t7;
   } else {
-    t7 = $[16];
+    t7 = $[18];
   }
   let t8;
-  if ($[17] !== t6 || $[18] !== t7) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  if ($[19] !== t0 || $[20] !== t6 || $[21] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "page",
         children: [t0, t6, t7]
       })
     });
-    $[17] = t6;
-    $[18] = t7;
-    $[19] = t8;
+    $[19] = t0;
+    $[20] = t6;
+    $[21] = t7;
+    $[22] = t8;
   } else {
-    t8 = $[19];
+    t8 = $[22];
   }
   return t8;
 }
@@ -768,17 +803,17 @@ function Notification(t0) {
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "notification-moon-logo-1",
-      src: "./img/notification-moon-1.svg",
+      src: "./images/notification-moon-1.svg",
       alt: "moon-logo"
     });
     t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "notification-moon-logo-2",
-      src: "./img/notification-moon-2.svg",
+      src: "./images/notification-moon-2.svg",
       alt: "moon-logo"
     });
     t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "notification-moon-logo-3",
-      src: "./img/notification-moon-3.svg",
+      src: "./images/notification-moon-3.svg",
       alt: "moon-logo"
     });
     $[0] = t1;
@@ -973,7 +1008,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SearchForm(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(3);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(4);
+  const {
+    currentTheme
+  } = t0;
   let t1;
   let t2;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -996,9 +1034,10 @@ function SearchForm(t0) {
     t1 = $[0];
     t2 = $[1];
   }
-  let t3;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+  const t3 = `./images/notifications-button-${currentTheme}.svg`;
+  let t4;
+  if ($[2] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         className: "search",
         id: "search-form-block",
@@ -1010,21 +1049,20 @@ function SearchForm(t0) {
             href: "#notifications",
             className: "notification-round-button",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-              src: "./images/notifications-button.svg",
+              src: t3,
               className: "button-icon",
-              alt: "Search",
-              width: "40px",
-              height: "40px"
+              alt: "Search"
             })
           })]
         })
       })
     });
     $[2] = t3;
+    $[3] = t4;
   } else {
-    t3 = $[2];
+    t4 = $[3];
   }
-  return t3;
+  return t4;
 }
 
 /***/ },
@@ -1425,6 +1463,7 @@ const themesMap = new Map([["dark", {
   bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
   tagBtnBg: 'rgba(170, 168, 181, 0.7)',
   accentColorBg: '#FF6F3A',
+  subscribeBtnBg: '#16122F',
   btnsHover: 'rgba(17, 9, 80, 0.5)',
   blocksHover: '#2e2b50',
   btnScrollHover: '#16122F',
@@ -1441,7 +1480,11 @@ const themesMap = new Map([["dark", {
   notFoundBgImg: 'url(images/404-background-dark.jpg)',
   notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)',
   logoGlow: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))drop-shadow(0 0 25px rgba(255, 255, 255, 0.5))',
-  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))'
+  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
+  searchIcon: 'url(images/search-icon-dark.svg)',
+  arrowDown: 'url(images/arrow-down-dark.svg)',
+  followBtn: 'url(images/heart-icon-dark.svg)',
+  subscribeBtn: 'url(images/subscribe-button-dark.svg)'
 }], ["light", {
   mainBg: '#FFFFFF',
   promoBg: 'rgba(134, 129, 153, 0.5)',
@@ -1452,6 +1495,7 @@ const themesMap = new Map([["dark", {
   bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
   tagBtnBg: '#CECED6',
   accentColorBg: '#FF6F3A',
+  subscribeBtnBg: '#CECED6',
   btnsHover: '#b6b4be',
   blocksHover: '#b6b4be',
   btnScrollHover: '#b6b4be',
@@ -1459,7 +1503,8 @@ const themesMap = new Map([["dark", {
   tagBtnBgHover: 'rgba(170, 168, 181, 0.7)',
   fontLogo: '#FF6F3A',
   fontPrimary: '#343148',
-  fontSecondary: '#1C173C',
+  // fontSecondary: '#1C173C',
+  fontSecondary: '#343148',
   fontTertiary: '#000000',
   categoryBgImg: 'url(images/category-bg-light.jpg)',
   categoryBgImgTint: 'rgba(255, 254, 254, 0.1)',
@@ -1468,7 +1513,11 @@ const themesMap = new Map([["dark", {
   notFoundBgImg: 'url(images/404-background-light.jpg)',
   notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)',
   logoGlow: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.2))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.2))drop-shadow(0 0 25px rgba(135, 177, 250, 0.5))',
-  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))'
+  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
+  searchIcon: 'url(images/search-icon-light.svg)',
+  arrowDown: 'url(images/arrow-down-light.svg)',
+  followBtn: 'url(images/heart-icon-light.svg)',
+  subscribeBtn: 'url(images/subscribe-button-light.svg)'
 }]]);
 const updateTheme = themeId => {
   // console.log({ updateTheme: currentTheme });
@@ -1484,6 +1533,7 @@ const updateTheme = themeId => {
     blocksHover,
     btnScrollHover,
     accentColorBg,
+    subscribeBtnBg,
     accentColorHover,
     tagBtnBg,
     tagBtnBgHover,
@@ -1498,15 +1548,19 @@ const updateTheme = themeId => {
     notFoundBgImg,
     notFoundBgImgTint,
     logoGlow,
-    logoGlowHover
+    logoGlowHover,
+    searchIcon,
+    arrowDown,
+    followBtn,
+    subscribeBtn
   } = themesMap.get(themeId);
   (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
 
   // console.log({
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
-  //   accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover });
+  //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -1514,6 +1568,7 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
   document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
   document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+  document.documentElement.style.setProperty('--theme-subscribe-btn-bg', subscribeBtnBg);
   document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
   document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);
   document.documentElement.style.setProperty('--theme-blocks-hover', blocksHover);
@@ -1534,6 +1589,10 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-notFound-bg-image-tint', notFoundBgImgTint);
   document.documentElement.style.setProperty('--theme-logo-glow', logoGlow);
   document.documentElement.style.setProperty('--theme-logo-glow-hover', logoGlowHover);
+  document.documentElement.style.setProperty('--theme-search-icon', searchIcon);
+  document.documentElement.style.setProperty('--theme-arrow-down', arrowDown);
+  document.documentElement.style.setProperty('--theme-follow-button', followBtn);
+  document.documentElement.style.setProperty('--theme-subscribe-button', subscribeBtn);
   return themeId;
 };
 const getCurrentTheme = () => {

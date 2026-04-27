@@ -387,7 +387,8 @@ function CategoryPage(t0) {
   if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
     t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
-        fill: "#FFFFFF",
+        className: "sorting-svg",
+        fill: "currentColor",
         width: "20px",
         height: "20px",
         viewBox: "0 0 24 24",
@@ -422,6 +423,7 @@ function CategoryPage(t0) {
   if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
     t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("svg", {
+        className: "sorting-svg",
         width: "16px",
         height: "16px",
         viewBox: "0 0 28 28",
@@ -436,7 +438,7 @@ function CategoryPage(t0) {
           fillRule: "evenodd",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("g", {
             id: "ic_fluent_people_28_regular",
-            fill: "#FFFFFF",
+            fill: "currentColor",
             fillRule: "nonzero",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
               d: "M4,16 L15,16.001 C16.0538182,16.001 16.9181157,16.8164855 16.9945109,17.8516842 L17,18.001 L17,20.5 C16.999,24.7 12.713,26 9.5,26 C6.35126,26 2.1710504,24.75148 2.00510151,20.7485328 L2,20.5 L2,18 C2,16.9461818 2.81639669,16.0818843 3.85080841,16.0054891 L4,16 Z M24,16 L24.1491916,16.0054891 C25.1318827,16.0780645 25.9178153,16.8617218 25.9939518,17.8434235 L26,18 L26,20 C25.999,23.759 22.57,25 20,25 C18.942,25 17.741,24.785 16.691,24.275 C17.009,23.897 17.278,23.477 17.488,23.007 C18.4456,23.427 19.4789867,23.4924578 19.9157784,23.4993188 L20.2043433,23.4963225 C21.2400556,23.4606629 24.334766,23.1116572 24.4936471,20.2325914 L24.5,20 L24.5,18 C24.5,17.7546667 24.3222222,17.5504198 24.0895748,17.5080604 L24,17.5 L17.949,17.501 C17.865,16.999625 17.6554375,16.5434219 17.3544785,16.1605273 L17.22,16.001 L24,16 Z M4,17.5 L3.899344,17.51 C3.77496,17.53528 3.69,17.6028 3.646,17.646 C3.6028,17.69 3.53528,17.77432 3.51,17.89896 L3.5,18 L3.5,20.5 C3.5,21.839 4.087,22.829 5.295,23.525 C6.29135714,24.1007143 7.68434694,24.4479337 9.15851093,24.4945991 L9.5,24.5 L9.93487113,24.4897846 C11.4554554,24.4219073 15.3140372,23.9331951 15.4935181,20.7322803 L15.5,20.499 L15.5,18.001 C15.5,17.7565556 15.3222222,17.5516173 15.0895748,17.5090933 L15,17.501 L4,17.5 Z M9.5,3 C12.538,3 15,5.463 15,8.5 C15,11.537 12.538,14 9.5,14 C6.462,14 4,11.537 4,8.5 C4,5.463 6.462,3 9.5,3 Z M20.5,5 C22.985,5 25,7.015 25,9.5 C25,11.985 22.985,14 20.5,14 C18.015,14 16,11.985 16,9.5 C16,7.015 18.015,5 20.5,5 Z M9.5,4.5 C7.294,4.5 5.5,6.294 5.5,8.5 C5.5,10.706 7.294,12.5 9.5,12.5 C11.706,12.5 13.5,10.706 13.5,8.5 C13.5,6.294 11.706,4.5 9.5,4.5 Z M20.5,6.5 C18.846,6.5 17.5,7.846 17.5,9.5 C17.5,11.154 18.846,12.5 20.5,12.5 C22.154,12.5 23.5,11.154 23.5,9.5 C23.5,7.846 22.154,6.5 20.5,6.5 Z",
@@ -454,6 +456,7 @@ function CategoryPage(t0) {
   if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
     t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("svg", {
+        className: "sorting-svg",
         width: "20px",
         height: "20px",
         viewBox: "0 0 24 24",
@@ -461,16 +464,16 @@ function CategoryPage(t0) {
         xmlns: "http://www.w3.org/2000/svg",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
           d: "M1.99984 5.75C1.99984 5.33579 2.33562 5 2.74984 5H21.2498C21.664 5 21.9998 5.33579 21.9998 5.75C21.9998 6.16421 21.664 6.5 21.2498 6.5H2.74984C2.33562 6.5 1.99984 6.16421 1.99984 5.75ZM1.99984 12.25C1.99984 11.8358 2.33562 11.5 2.74984 11.5H21.2498C21.664 11.5 21.9998 11.8358 21.9998 12.25C21.9998 12.6642 21.664 13 21.2498 13H2.74984C2.33562 13 1.99984 12.6642 1.99984 12.25ZM18.9998 18.75C18.9998 18.3358 19.3356 18 19.7498 18H21.2498C21.664 18 21.9998 18.3358 21.9998 18.75C21.9998 19.1642 21.664 19.5 21.2498 19.5H19.7498C19.3356 19.5 18.9998 19.1642 18.9998 18.75Z",
-          fill: "#FFFFFF"
+          fill: "currentColor"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
           d: "M2.41586 18.7377C2.62651 18.5972 2.83038 18.4376 3.02319 18.2633V22.25C3.02319 22.6642 3.35898 23 3.77319 23C4.18741 23 4.52319 22.6642 4.52319 22.25V15.75C4.52319 15.356 4.21942 15.033 3.83332 15.0024C3.46457 14.9719 3.12113 15.2183 3.03989 15.5897C2.91329 16.1684 2.34817 16.98 1.58381 17.4896C1.23916 17.7194 1.14603 18.185 1.3758 18.5297C1.60556 18.8743 2.07121 18.9674 2.41586 18.7377Z",
-          fill: "#FFFFFF"
+          fill: "currentColor"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
           d: "M7.99976 17.5227C7.99976 16.995 8.44328 16.5 8.98552 16.5C9.39269 16.5 9.72045 16.6909 9.87891 16.9345C10.0148 17.1434 10.0963 17.4998 9.78534 18.0292C9.63583 18.2837 9.4098 18.5114 9.10378 18.7531C8.95132 18.8735 8.78821 18.9904 8.61083 19.1158L8.53705 19.1679C8.38482 19.2753 8.22186 19.3902 8.06445 19.5087C7.32083 20.0683 6.49976 20.8536 6.49976 22.25C6.49976 22.6642 6.83554 23 7.24976 23L7.25793 23L7.26611 23H10.7003C11.1145 23 11.4503 22.6642 11.4503 22.25C11.4503 21.8358 11.1145 21.5 10.7003 21.5H8.18741C8.34819 21.2182 8.61035 20.9752 8.96639 20.7072C9.10386 20.6038 9.24576 20.5036 9.39901 20.3955L9.47661 20.3407C9.6552 20.2145 9.84692 20.0775 10.0335 19.9302C10.4055 19.6364 10.7942 19.2731 11.0787 18.789C11.6356 17.8411 11.625 16.868 11.1363 16.1166C10.6701 15.4 9.84073 15 8.98552 15C7.50797 15 6.49976 16.2777 6.49976 17.5227C6.49976 17.9369 6.83554 18.2727 7.24976 18.2727C7.66397 18.2727 7.99976 17.9369 7.99976 17.5227Z",
-          fill: "#FFFFFF"
+          fill: "currentColor"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
           d: "M14.4709 17.1377C14.5029 17.0255 14.5792 16.8666 14.7218 16.7409C14.8502 16.6276 15.0773 16.5 15.4997 16.5C16.261 16.5 16.4997 17.0002 16.4997 17.2273C16.4997 17.4724 16.4474 17.7178 16.3099 17.8907C16.1986 18.0308 15.9313 18.25 15.208 18.25C14.7938 18.25 14.458 18.5858 14.458 19C14.458 19.4142 14.7938 19.75 15.208 19.75C15.4815 19.75 15.8594 19.7864 16.1424 19.9191C16.2743 19.9809 16.3569 20.0505 16.4069 20.1207C16.4517 20.1837 16.4997 20.287 16.4997 20.4773C16.4997 20.965 16.3475 21.1807 16.2191 21.2891C16.068 21.4167 15.8237 21.5 15.4997 21.5C15.1377 21.5 14.9328 21.4374 14.8072 21.3578C14.6958 21.2873 14.5675 21.1538 14.4621 20.8338C14.3327 20.4403 13.9087 20.2263 13.5153 20.3558C13.1218 20.4852 12.9078 20.9092 13.0373 21.3026C13.2236 21.8689 13.5328 22.3263 14.0048 22.6252C14.4624 22.9149 14.9867 23 15.4997 23C16.0507 23 16.6815 22.8618 17.1866 22.4353C17.7145 21.9898 17.9997 21.3191 17.9997 20.4773C17.9997 20.0027 17.8699 19.5891 17.6285 19.2504C17.5499 19.14 17.4628 19.0423 17.3706 18.9559C17.4102 18.9135 17.4481 18.8695 17.4842 18.8241C17.9221 18.2731 17.9997 17.6321 17.9997 17.2273C17.9997 16.1543 17.0718 15 15.4997 15C14.7343 15 14.1483 15.2466 13.7295 15.616C13.325 15.9728 13.1202 16.4048 13.0285 16.7259C12.9148 17.1242 13.1455 17.5393 13.5438 17.653C13.9421 17.7667 14.3572 17.536 14.4709 17.1377Z",
-          fill: "#FFFFFF"
+          fill: "currentColor"
         })]
       }), "\u041A\u043E\u043B-\u0432\u0443 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u043E\u0432"]
     });
@@ -486,7 +489,8 @@ function CategoryPage(t0) {
         className: "block-buttons-2",
         children: [t8, t9, t12, t13, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
-            fill: "#FFFFFF",
+            className: "sorting-svg",
+            fill: "currentColor",
             width: "18px",
             height: "18px",
             viewBox: "0 0 24 24",
@@ -929,12 +933,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(28);
-  const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_utils_themeManager__WEBPACK_IMPORTED_MODULE_4__.defaultTheme);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(35);
+  const {
+    setTheme,
+    currentTheme
+  } = t0;
   const [currentUser, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("currentUser");
   let t1;
-  let t2;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[0] !== setTheme) {
     t1 = () => {
       const currentThemeName = (0,_utils_themeManager__WEBPACK_IMPORTED_MODULE_4__.setCurrentTheme)();
       setTheme(currentThemeName);
@@ -942,35 +948,44 @@ function Header(t0) {
       const auth = authStr ? JSON.parse(authStr) : {};
       setUser(auth);
     };
-    t2 = [];
-    $[0] = t1;
-    $[1] = t2;
+    $[0] = setTheme;
+    $[1] = t1;
   } else {
-    t1 = $[0];
-    t2 = $[1];
+    t1 = $[1];
+  }
+  let t2;
+  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+    t2 = [];
+    $[2] = t2;
+  } else {
+    t2 = $[2];
   }
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t1, t2);
   let t3;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[3] !== setTheme) {
     t3 = () => {
       const currentThemeName_0 = (0,_utils_themeManager__WEBPACK_IMPORTED_MODULE_4__.setNextTheme)();
       setTheme(currentThemeName_0);
     };
-    $[2] = t3;
+    $[3] = setTheme;
+    $[4] = t3;
   } else {
-    t3 = $[2];
+    t3 = $[4];
   }
   const handleClick = t3;
   let t4;
-  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[3] = t4;
+  if ($[5] !== currentTheme) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      currentTheme: currentTheme
+    });
+    $[5] = currentTheme;
+    $[6] = t4;
   } else {
-    t4 = $[3];
+    t4 = $[6];
   }
   const t5 = `./images/logo-moon-header-${currentTheme}.png`;
   let t6;
-  if ($[4] !== t5) {
+  if ($[7] !== t5) {
     t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
       href: "./index.html",
       className: "logo-img",
@@ -981,36 +996,36 @@ function Header(t0) {
         className: "logo-icon"
       })
     });
-    $[4] = t5;
-    $[5] = t6;
+    $[7] = t5;
+    $[8] = t6;
   } else {
-    t6 = $[5];
+    t6 = $[8];
   }
   let t7;
-  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
     t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
       id: "logo-text",
       className: "logo-text",
       children: "Moon.tv"
     });
-    $[6] = t7;
+    $[9] = t7;
   } else {
-    t7 = $[6];
+    t7 = $[9];
   }
   let t8;
-  if ($[7] !== t6) {
+  if ($[10] !== t6) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "logo-container",
       children: [t6, t7]
     });
-    $[7] = t6;
-    $[8] = t8;
+    $[10] = t6;
+    $[11] = t8;
   } else {
-    t8 = $[8];
+    t8 = $[11];
   }
   const t9 = `./images/header-icon-music-${currentTheme}.svg`;
   let t10;
-  if ($[9] !== t9) {
+  if ($[12] !== t9) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
@@ -1023,74 +1038,83 @@ function Header(t0) {
         })
       })
     });
-    $[9] = t9;
-    $[10] = t10;
+    $[12] = t9;
+    $[13] = t10;
   } else {
-    t10 = $[10];
+    t10 = $[13];
   }
   const t11 = `./images/header-icon-theme-${currentTheme}.svg`;
   let t12;
-  if ($[11] !== t11) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  if ($[14] !== t11) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+      src: t11,
+      title: "theme"
+    });
+    $[14] = t11;
+    $[15] = t12;
+  } else {
+    t12 = $[15];
+  }
+  let t13;
+  if ($[16] !== handleClick || $[17] !== t12) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       id: "themeToggle",
       onClick: handleClick,
       className: "menu-button",
       type: "button",
       "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-        src: t11,
-        title: "theme"
-      })
+      children: t12
     });
-    $[11] = t11;
-    $[12] = t12;
+    $[16] = handleClick;
+    $[17] = t12;
+    $[18] = t13;
   } else {
-    t12 = $[12];
+    t13 = $[18];
   }
-  const t13 = `./images/header-icon-globe-${currentTheme}.svg`;
-  let t14;
-  if ($[13] !== t13) {
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  const t14 = `./images/header-icon-globe-${currentTheme}.svg`;
+  let t15;
+  if ($[19] !== t14) {
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
         href: "./notFound.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: t13,
+          src: t14,
           title: "language"
         })
       })
     });
-    $[13] = t13;
-    $[14] = t14;
+    $[19] = t14;
+    $[20] = t15;
   } else {
-    t14 = $[14];
+    t15 = $[20];
   }
-  const t15 = `./images/header-icon-login-${currentTheme}.svg`;
-  let t16;
-  if ($[15] !== t15) {
-    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  const t16 = `./images/header-icon-login-${currentTheme}.svg`;
+  let t17;
+  if ($[21] !== t16) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0432\u043E\u0439 \u0430\u043A\u043A\u0430\u0443\u043D\u0442",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
         href: "./auth.html",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: t15,
+          src: t16,
           title: "login"
         })
       })
     });
-    $[15] = t15;
-    $[16] = t16;
+    $[21] = t16;
+    $[22] = t17;
   } else {
-    t16 = $[16];
+    t17 = $[22];
   }
-  const t17 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
-  let t18;
-  if ($[17] !== t17) {
-    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  const t18 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
+  let t19;
+  if ($[23] !== t18) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "login",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
         className: "login-button",
@@ -1099,51 +1123,52 @@ function Header(t0) {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
           href: "./auth.html",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-            src: t17,
+            src: t18,
             alt: "personal account"
           })
         })
       })
     });
-    $[17] = t17;
-    $[18] = t18;
-  } else {
-    t18 = $[18];
-  }
-  let t19;
-  if ($[19] !== t10 || $[20] !== t12 || $[21] !== t14 || $[22] !== t16 || $[23] !== t18) {
-    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-      className: "container-menu",
-      children: [t10, t12, t14, t16, t18]
-    });
-    $[19] = t10;
-    $[20] = t12;
-    $[21] = t14;
-    $[22] = t16;
     $[23] = t18;
     $[24] = t19;
   } else {
     t19 = $[24];
   }
   let t20;
-  if ($[25] !== t19 || $[26] !== t8) {
-    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+  if ($[25] !== t10 || $[26] !== t13 || $[27] !== t15 || $[28] !== t17 || $[29] !== t19) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "container-menu",
+      children: [t10, t13, t15, t17, t19]
+    });
+    $[25] = t10;
+    $[26] = t13;
+    $[27] = t15;
+    $[28] = t17;
+    $[29] = t19;
+    $[30] = t20;
+  } else {
+    t20 = $[30];
+  }
+  let t21;
+  if ($[31] !== t20 || $[32] !== t4 || $[33] !== t8) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         id: "react-header",
         className: "site-header",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
           className: "site-header",
-          children: [t4, t8, t19]
+          children: [t4, t8, t20]
         })
       })
     });
-    $[25] = t19;
-    $[26] = t8;
-    $[27] = t20;
+    $[31] = t20;
+    $[32] = t4;
+    $[33] = t8;
+    $[34] = t21;
   } else {
-    t20 = $[27];
+    t21 = $[34];
   }
-  return t20;
+  return t21;
 }
 
 /***/ },
@@ -1165,7 +1190,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function HorizontalMenu({
-  db
+  db,
+  currentTheme
 }) {
   const showItems = 10;
   let activeId = 0;
@@ -1205,7 +1231,7 @@ function HorizontalMenu({
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
               href: "./categories.html",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-                src: "./images/all-icon-for-categories.svg",
+                src: `./images/all-icon-for-categories-${currentTheme}.svg`,
                 alt: "\u0412\u0441\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
               }), "\u0412\u0441\u0435"]
             })
@@ -1223,7 +1249,7 @@ function HorizontalMenu({
               xmlns: "http://www.w3.org/2000/svg",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
                 d: "M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z",
-                fill: "#CECED6"
+                fill: "currentColor"
               })
             })
           })]
@@ -1300,12 +1326,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Layout)
 /* harmony export */ });
 /* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./src/js/components/Footer.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/js/components/Header.js");
-/* harmony import */ var _HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
-/* harmony import */ var _VerticalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VerticalMenu */ "./src/js/components/VerticalMenu.js");
-/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Notification */ "./src/js/components/Notification.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./src/js/components/Footer.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./src/js/components/Header.js");
+/* harmony import */ var _HorizontalMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HorizontalMenu */ "./src/js/components/HorizontalMenu.js");
+/* harmony import */ var _VerticalMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./VerticalMenu */ "./src/js/components/VerticalMenu.js");
+/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Notification */ "./src/js/components/Notification.js");
+/* harmony import */ var _utils_themeManager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/themeManager */ "./src/js/utils/themeManager.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -1314,109 +1345,117 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Layout(props) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(20);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(23);
   const showFooter = props.showFooter === undefined ? true : props.showFooter;
   const showHorizontalMenu = props.showHorizontalMenu === undefined ? true : props.showHorizontalMenu;
   const {
     db,
     children
   } = props;
+  const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_utils_themeManager__WEBPACK_IMPORTED_MODULE_7__.defaultTheme);
   let t0;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t0 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[0] = t0;
+  if ($[0] !== currentTheme) {
+    t0 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      currentTheme: currentTheme,
+      setTheme: setTheme
+    });
+    $[0] = currentTheme;
+    $[1] = t0;
   } else {
-    t0 = $[0];
+    t0 = $[1];
   }
   let t1;
-  if ($[1] !== db) {
-    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_VerticalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  if ($[2] !== db) {
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_VerticalMenu__WEBPACK_IMPORTED_MODULE_5__["default"], {
       db: db
     });
-    $[1] = db;
-    $[2] = t1;
+    $[2] = db;
+    $[3] = t1;
   } else {
-    t1 = $[2];
+    t1 = $[3];
   }
   let t2;
-  if ($[3] !== db || $[4] !== showHorizontalMenu) {
-    t2 = showHorizontalMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      db: db
+  if ($[4] !== currentTheme || $[5] !== db || $[6] !== showHorizontalMenu) {
+    t2 = showHorizontalMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      db: db,
+      currentTheme: currentTheme
     });
-    $[3] = db;
-    $[4] = showHorizontalMenu;
-    $[5] = t2;
+    $[4] = currentTheme;
+    $[5] = db;
+    $[6] = showHorizontalMenu;
+    $[7] = t2;
   } else {
-    t2 = $[5];
+    t2 = $[7];
   }
   let t3;
-  if ($[6] !== children || $[7] !== t2) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+  if ($[8] !== children || $[9] !== t2) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
       className: "main-of-the-main",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "horizontal-blocks",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "main-screen-block",
           children: [t2, children]
         })
       })
     });
-    $[6] = children;
-    $[7] = t2;
-    $[8] = t3;
+    $[8] = children;
+    $[9] = t2;
+    $[10] = t3;
   } else {
-    t3 = $[8];
+    t3 = $[10];
   }
   let t4;
-  if ($[9] !== t1 || $[10] !== t3) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  if ($[11] !== t1 || $[12] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "vertical-blocks",
       children: [t1, t3]
     });
-    $[9] = t1;
-    $[10] = t3;
-    $[11] = t4;
+    $[11] = t1;
+    $[12] = t3;
+    $[13] = t4;
   } else {
-    t4 = $[11];
+    t4 = $[13];
   }
   let t5;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_5__["default"], {});
-    $[12] = t5;
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_6__["default"], {});
+    $[14] = t5;
   } else {
-    t5 = $[12];
+    t5 = $[14];
   }
   let t6;
-  if ($[13] !== t4) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("main", {
+  if ($[15] !== t4) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("main", {
       children: [t4, t5]
     });
-    $[13] = t4;
-    $[14] = t6;
+    $[15] = t4;
+    $[16] = t6;
   } else {
-    t6 = $[14];
+    t6 = $[16];
   }
   let t7;
-  if ($[15] !== showFooter) {
-    t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {});
-    $[15] = showFooter;
-    $[16] = t7;
+  if ($[17] !== showFooter) {
+    t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {});
+    $[17] = showFooter;
+    $[18] = t7;
   } else {
-    t7 = $[16];
+    t7 = $[18];
   }
   let t8;
-  if ($[17] !== t6 || $[18] !== t7) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  if ($[19] !== t0 || $[20] !== t6 || $[21] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "page",
         children: [t0, t6, t7]
       })
     });
-    $[17] = t6;
-    $[18] = t7;
-    $[19] = t8;
+    $[19] = t0;
+    $[20] = t6;
+    $[21] = t7;
+    $[22] = t8;
   } else {
-    t8 = $[19];
+    t8 = $[22];
   }
   return t8;
 }
@@ -1445,17 +1484,17 @@ function Notification(t0) {
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "notification-moon-logo-1",
-      src: "./img/notification-moon-1.svg",
+      src: "./images/notification-moon-1.svg",
       alt: "moon-logo"
     });
     t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "notification-moon-logo-2",
-      src: "./img/notification-moon-2.svg",
+      src: "./images/notification-moon-2.svg",
       alt: "moon-logo"
     });
     t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "notification-moon-logo-3",
-      src: "./img/notification-moon-3.svg",
+      src: "./images/notification-moon-3.svg",
       alt: "moon-logo"
     });
     $[0] = t1;
@@ -1525,7 +1564,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SearchForm(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(3);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(4);
+  const {
+    currentTheme
+  } = t0;
   let t1;
   let t2;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1548,9 +1590,10 @@ function SearchForm(t0) {
     t1 = $[0];
     t2 = $[1];
   }
-  let t3;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+  const t3 = `./images/notifications-button-${currentTheme}.svg`;
+  let t4;
+  if ($[2] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         className: "search",
         id: "search-form-block",
@@ -1562,21 +1605,20 @@ function SearchForm(t0) {
             href: "#notifications",
             className: "notification-round-button",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-              src: "./images/notifications-button.svg",
+              src: t3,
               className: "button-icon",
-              alt: "Search",
-              width: "40px",
-              height: "40px"
+              alt: "Search"
             })
           })]
         })
       })
     });
     $[2] = t3;
+    $[3] = t4;
   } else {
-    t3 = $[2];
+    t4 = $[3];
   }
-  return t3;
+  return t4;
 }
 
 /***/ },
@@ -1818,6 +1860,7 @@ const themesMap = new Map([["dark", {
   bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
   tagBtnBg: 'rgba(170, 168, 181, 0.7)',
   accentColorBg: '#FF6F3A',
+  subscribeBtnBg: '#16122F',
   btnsHover: 'rgba(17, 9, 80, 0.5)',
   blocksHover: '#2e2b50',
   btnScrollHover: '#16122F',
@@ -1834,7 +1877,11 @@ const themesMap = new Map([["dark", {
   notFoundBgImg: 'url(images/404-background-dark.jpg)',
   notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)',
   logoGlow: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))drop-shadow(0 0 25px rgba(255, 255, 255, 0.5))',
-  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))'
+  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
+  searchIcon: 'url(images/search-icon-dark.svg)',
+  arrowDown: 'url(images/arrow-down-dark.svg)',
+  followBtn: 'url(images/heart-icon-dark.svg)',
+  subscribeBtn: 'url(images/subscribe-button-dark.svg)'
 }], ["light", {
   mainBg: '#FFFFFF',
   promoBg: 'rgba(134, 129, 153, 0.5)',
@@ -1845,6 +1892,7 @@ const themesMap = new Map([["dark", {
   bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
   tagBtnBg: '#CECED6',
   accentColorBg: '#FF6F3A',
+  subscribeBtnBg: '#CECED6',
   btnsHover: '#b6b4be',
   blocksHover: '#b6b4be',
   btnScrollHover: '#b6b4be',
@@ -1852,7 +1900,8 @@ const themesMap = new Map([["dark", {
   tagBtnBgHover: 'rgba(170, 168, 181, 0.7)',
   fontLogo: '#FF6F3A',
   fontPrimary: '#343148',
-  fontSecondary: '#1C173C',
+  // fontSecondary: '#1C173C',
+  fontSecondary: '#343148',
   fontTertiary: '#000000',
   categoryBgImg: 'url(images/category-bg-light.jpg)',
   categoryBgImgTint: 'rgba(255, 254, 254, 0.1)',
@@ -1861,7 +1910,11 @@ const themesMap = new Map([["dark", {
   notFoundBgImg: 'url(images/404-background-light.jpg)',
   notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)',
   logoGlow: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.2))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.2))drop-shadow(0 0 25px rgba(135, 177, 250, 0.5))',
-  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))'
+  logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
+  searchIcon: 'url(images/search-icon-light.svg)',
+  arrowDown: 'url(images/arrow-down-light.svg)',
+  followBtn: 'url(images/heart-icon-light.svg)',
+  subscribeBtn: 'url(images/subscribe-button-light.svg)'
 }]]);
 const updateTheme = themeId => {
   // console.log({ updateTheme: currentTheme });
@@ -1877,6 +1930,7 @@ const updateTheme = themeId => {
     blocksHover,
     btnScrollHover,
     accentColorBg,
+    subscribeBtnBg,
     accentColorHover,
     tagBtnBg,
     tagBtnBgHover,
@@ -1891,15 +1945,19 @@ const updateTheme = themeId => {
     notFoundBgImg,
     notFoundBgImgTint,
     logoGlow,
-    logoGlowHover
+    logoGlowHover,
+    searchIcon,
+    arrowDown,
+    followBtn,
+    subscribeBtn
   } = themesMap.get(themeId);
   (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
 
   // console.log({
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
-  //   accentColorBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover });
+  //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -1907,6 +1965,7 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
   document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
   document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+  document.documentElement.style.setProperty('--theme-subscribe-btn-bg', subscribeBtnBg);
   document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
   document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);
   document.documentElement.style.setProperty('--theme-blocks-hover', blocksHover);
@@ -1927,6 +1986,10 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-notFound-bg-image-tint', notFoundBgImgTint);
   document.documentElement.style.setProperty('--theme-logo-glow', logoGlow);
   document.documentElement.style.setProperty('--theme-logo-glow-hover', logoGlowHover);
+  document.documentElement.style.setProperty('--theme-search-icon', searchIcon);
+  document.documentElement.style.setProperty('--theme-arrow-down', arrowDown);
+  document.documentElement.style.setProperty('--theme-follow-button', followBtn);
+  document.documentElement.style.setProperty('--theme-subscribe-button', subscribeBtn);
   return themeId;
 };
 const getCurrentTheme = () => {
