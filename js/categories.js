@@ -922,9 +922,7 @@ function HorizontalMenu({
             className: "horizontal-menu-scroll",
             "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
-              className: "carousel-arrow",
-              width: "30px",
-              height: "30px",
+              className: "horizontal-menu-scroll-arrow",
               viewBox: "0 0 24 24",
               xmlns: "http://www.w3.org/2000/svg",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
