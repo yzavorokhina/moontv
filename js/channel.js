@@ -2248,7 +2248,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function HorizontalMenu({
   db,
-  currentTheme
+  currentTheme,
+  pageId
 }) {
   const showItems = 10;
   let activeId = 0;
@@ -2256,7 +2257,8 @@ function HorizontalMenu({
     const params = (0,_utils_common_js__WEBPACK_IMPORTED_MODULE_1__.getUrlParams)();
     activeId = +params.id || 0;
     console.log({
-      activeId
+      activeId,
+      pageId
     });
     let categories = db.categoriesModel.getAll();
     if (categories.length > showItems) {
@@ -2284,7 +2286,7 @@ function HorizontalMenu({
         className: "horizontal-menu",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-            className: "horizontal-menu-first-button",
+            className: `horizontal-menu-first-button${pageId === 'categories' ? '-active' : ''}`,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
               href: "./categories.html",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
@@ -2336,7 +2338,7 @@ function HorizontalMenuBtn(t0) {
     data,
     activeId
   } = t0;
-  const t1 = `h-menu-btn${activeId === data.id ? "-active" : ""}`;
+  const t1 = `horizontal-menu-button${activeId === data.id ? "-active" : ""}`;
   const t2 = `./category.html?id=${data.id}`;
   let t3;
   if ($[0] !== data.shortName || $[1] !== t2) {
@@ -2400,12 +2402,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Layout(props) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(23);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(24);
   const showFooter = props.showFooter === undefined ? true : props.showFooter;
   const showHorizontalMenu = props.showHorizontalMenu === undefined ? true : props.showHorizontalMenu;
   const {
     db,
-    children
+    children,
+    pageId
   } = props;
   const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_utils_themeManager__WEBPACK_IMPORTED_MODULE_7__.defaultTheme);
   let t0;
@@ -2430,20 +2433,22 @@ function Layout(props) {
     t1 = $[3];
   }
   let t2;
-  if ($[4] !== currentTheme || $[5] !== db || $[6] !== showHorizontalMenu) {
+  if ($[4] !== currentTheme || $[5] !== db || $[6] !== pageId || $[7] !== showHorizontalMenu) {
     t2 = showHorizontalMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
       db: db,
-      currentTheme: currentTheme
+      currentTheme: currentTheme,
+      pageId: pageId
     });
     $[4] = currentTheme;
     $[5] = db;
-    $[6] = showHorizontalMenu;
-    $[7] = t2;
+    $[6] = pageId;
+    $[7] = showHorizontalMenu;
+    $[8] = t2;
   } else {
-    t2 = $[7];
+    t2 = $[8];
   }
   let t3;
-  if ($[8] !== children || $[9] !== t2) {
+  if ($[9] !== children || $[10] !== t2) {
     t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
       className: "main-of-the-main",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
@@ -2454,63 +2459,63 @@ function Layout(props) {
         })
       })
     });
-    $[8] = children;
-    $[9] = t2;
-    $[10] = t3;
+    $[9] = children;
+    $[10] = t2;
+    $[11] = t3;
   } else {
-    t3 = $[10];
+    t3 = $[11];
   }
   let t4;
-  if ($[11] !== t1 || $[12] !== t3) {
+  if ($[12] !== t1 || $[13] !== t3) {
     t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "vertical-blocks",
       children: [t1, t3]
     });
-    $[11] = t1;
-    $[12] = t3;
-    $[13] = t4;
+    $[12] = t1;
+    $[13] = t3;
+    $[14] = t4;
   } else {
-    t4 = $[13];
+    t4 = $[14];
   }
   let t5;
-  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
     t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_6__["default"], {});
-    $[14] = t5;
+    $[15] = t5;
   } else {
-    t5 = $[14];
+    t5 = $[15];
   }
   let t6;
-  if ($[15] !== t4) {
+  if ($[16] !== t4) {
     t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("main", {
       children: [t4, t5]
     });
-    $[15] = t4;
-    $[16] = t6;
+    $[16] = t4;
+    $[17] = t6;
   } else {
-    t6 = $[16];
+    t6 = $[17];
   }
   let t7;
-  if ($[17] !== showFooter) {
+  if ($[18] !== showFooter) {
     t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[17] = showFooter;
-    $[18] = t7;
+    $[18] = showFooter;
+    $[19] = t7;
   } else {
-    t7 = $[18];
+    t7 = $[19];
   }
   let t8;
-  if ($[19] !== t0 || $[20] !== t6 || $[21] !== t7) {
+  if ($[20] !== t0 || $[21] !== t6 || $[22] !== t7) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "page",
         children: [t0, t6, t7]
       })
     });
-    $[19] = t0;
-    $[20] = t6;
-    $[21] = t7;
-    $[22] = t8;
+    $[20] = t0;
+    $[21] = t6;
+    $[22] = t7;
+    $[23] = t8;
   } else {
-    t8 = $[22];
+    t8 = $[23];
   }
   return t8;
 }
@@ -3167,14 +3172,15 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
   searchIcon: 'url(images/search-icon-dark.svg)',
   arrowDown: 'url(images/arrow-down-dark.svg)',
-  followBtn: 'url(images/heart-icon-dark.svg)',
+  // followBtn: 'url(images/heart-icon-dark.svg)',
+  followBtn: 'url(images/plus-icon-dark.svg)',
   subscribeBtn: 'url(images/subscribe-button-dark.svg)'
 }], ["light", {
   mainBg: '#FFFFFF',
   promoBg: 'rgba(134, 129, 153, 0.5)',
   inputBg: 'rgba(170, 168, 181, 0.5)',
   btnBg: 'rgba(170, 168, 181, 0.5)',
-  btnScrollBg: '#AAA8B5',
+  btnScrollBg: '#c6c5cf',
   activeBtnBg: '#AAA8B5',
   bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
   tagBtnBg: '#CECED6',
@@ -3189,7 +3195,8 @@ const themesMap = new Map([["dark", {
   fontPrimary: '#343148',
   // fontSecondary: '#1C173C',
   fontSecondary: '#343148',
-  fontTertiary: '#000000',
+  //fontTertiary: '#000000',
+  fontTertiary: '#343148',
   categoryBgImg: 'url(images/category-bg-light.jpg)',
   categoryBgImgTint: 'rgba(255, 254, 254, 0.1)',
   channelBgImg: 'url(images/channel-bg-light.jpg)',
@@ -3200,7 +3207,8 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
   searchIcon: 'url(images/search-icon-light.svg)',
   arrowDown: 'url(images/arrow-down-light.svg)',
-  followBtn: 'url(images/heart-icon-light.svg)',
+  // followBtn: 'url(images/heart-icon-light.svg)',
+  followBtn: 'url(images/plus-icon-light.svg)',
   subscribeBtn: 'url(images/subscribe-button-light.svg)'
 }]]);
 const updateTheme = themeId => {
@@ -34118,7 +34126,7 @@ if (false) // removed by dead control flow
   \********************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","shortDescription":"Программирование","imagePreviewUrl":"./images/category-image-1.jpg","imageUrl":"./images/category-description-image-1.jpg","audience":12000,"followers":382,"tags":[1,3]},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-2.jpg","imageUrl":"./images/category-description-image-2.jpg","audience":1238,"followers":2798,"tags":[1,9]},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","shortDescription":"Практика","imagePreviewUrl":"./images/category-image-3.jpg","imageUrl":"./images/category-description-image-3.jpg","audience":12003,"followers":2323,"tags":[1,4]},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","shortDescription":"Музыкальные стримы","imagePreviewUrl":"./images/category-image-4.jpg","imageUrl":"./images/category-description-image-4.jpg","audience":12020,"followers":3442,"tags":[1,9]},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12870,"followers":64554,"tags":[1,6]},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","shortDescription":"Чтение вслух","imagePreviewUrl":"./images/category-image-6.jpg","imageUrl":"./images/category-description-image-6.jpg","audience":120,"followers":445,"tags":[1,7]},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","shortDescription":"Стримы по TDU2","imagePreviewUrl":"./images/category-image-7.jpg","imageUrl":"./images/category_description_image-7.jpg","audience":2000,"followers":544,"tags":[5,8]},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","shortDescription":"Стримы по Skyrim","imagePreviewUrl":"./images/category-image-8.jpg","imageUrl":"./images/category_description_image-8.svg","audience":1000,"followers":221,"tags":[5,8]},{"id":9,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","shortDescription":"Обучающие стримы","imagePreviewUrl":"./images/category-image-9.jpg","imageUrl":"./images/category-description-image-9.jpg","audience":1230,"followers":34,"tags":[1,8]},{"id":10,"menuOrder":100,"name":"Танец Tribal","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-10.jpg","imageUrl":"./images/category_description_image-10.svg","audience":1230,"followers":34,"tags":[1,6]},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","shortDescription":"Развлечения","imagePreviewUrl":"./images/category-image-11.jpg","imageUrl":"./images/category-description-image-11.jpg","audience":330,"followers":38,"tags":[7,8]},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","shortDescription":"Спорт-мероприятия","imagePreviewUrl":"./images/category-image-12.jpg","imageUrl":"./images/category-description-image-12.jpg","audience":1230,"followers":34,"tags":[11,13]},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.","shortDescription":"Стримы по играм","imagePreviewUrl":"./images/category-image-13.jpg","imageUrl":"./images/category-description-image-13.jpg","audience":330,"followers":38,"tags":[5,12]},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","shortDescription":"Стримы по хобби","imagePreviewUrl":"./images/category-image-14.jpg","imageUrl":"./images/category-description-image-14.jpg","audience":1230,"followers":34,"tags":[10,12]},{"id":15,"menuOrder":100,"name":"Танец Mandala","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category_description_image-15.svg","audience":12750,"followers":12,"tags":[1,6]},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","shortDescription":"Радио-стримы 24/7","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-16.jpg","audience":1230,"followers":34,"tags":[9,12]},{"id":17,"menuOrder":24,"name":"Другое","shortName":"Другое","description":"Другое - стримы по тематикам, которые не вошли ни в одну категорию стримов.","shortDescription":"Уникальные стримы","imagePreviewUrl":"./images/category-image-17.jpg","imageUrl":"./images/category-description-image-17.jpg","audience":560,"followers":354,"tags":[14,15]},{"id":18,"menuOrder":25,"name":"АСМР","shortName":"АСМР","description":"АСМР «автономная сенсорная меридиональная реакция» - обозначает приятные ощущения, которые возникают в ответ на аудиовизуальные стимулы: звуки природы, шепот, мурчание кота, шелест листьев, плавные движения.","shortDescription":"АСМР-стримы 24/7","imagePreviewUrl":"./images/category-image-18.jpg","imageUrl":"./images/category-description-image-18.jpg","audience":860,"followers":374,"tags":[9,12]},{"id":19,"menuOrder":26,"name":"Пение","shortName":"Пение","description":"Пение - это уникальное вокальное искусство, использующее человеческий голос как инструмент для создания музыки и передачи эмоций.","shortDescription":"Вокальные стримы","imagePreviewUrl":"./images/category-image-19.jpg","imageUrl":"./images/category-description-image-19.jpg","audience":230,"followers":340,"tags":[7,9]},{"id":20,"menuOrder":27,"name":"Искусство","shortName":"Искусство","description":"Стримы по искусству (арт-стримы) - это развивающийся жанр, где процесс создания произведения искусства или обучения ему происходит в режиме реального времени. Это уникальная форма коммуникации в цифровую эпоху, позволяющая художникам делиться своим мастерством, а зрителям — погружаться в творческий процесс.","shortDescription":"Стримы по искусству","imagePreviewUrl":"./images/category-image-20.jpg","imageUrl":"./images/category-description-image-20.jpg","audience":5660,"followers":3,"tags":[7,15]},{"id":21,"menuOrder":28,"name":"Балет","shortName":"Балет","description":"Балет - это высшая форма сценического искусства, объединяющая музыку, хореографию, драматургию и изобразительное искусство.","shortDescription":"Балетные стримы","imagePreviewUrl":"./images/category-image-21.jpg","imageUrl":"./images/category-description-image-21.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":22,"menuOrder":28,"name":"Еда и напитки","shortName":"Кулинария","description":"Кулинария - это искусство и технология приготовления пищи, объединяющая способы обработки продуктов для создания вкусных и питательных блюд.","shortDescription":"Кулинарные стримы","imagePreviewUrl":"./images/category-image-22.jpg","imageUrl":"./images/category-description-image-22.jpg","audience":560,"followers":4,"tags":[10,16]},{"id":23,"menuOrder":28,"name":"Настольные игры","shortName":"Настолки","description":"Стримы по настольным играм — это формат контента, который позволяет зрителям увидеть игровой процесс в реальном времени, оценить компоненты, понять правила и проникнуться атмосферой партии.","shortDescription":"Настольные игры","imagePreviewUrl":"./images/category-image-23.jpg","imageUrl":"./images/category-description-image-23.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":24,"menuOrder":28,"name":"Наука и техника","shortName":"Наука","description":"Стримы по науке и технике трансформируют сложные научные концепции в доступный визуальный контент, позволяя зрителям задавать вопросы в режиме реального времени","shortDescription":"Научные стримы","imagePreviewUrl":"./images/category-image-24.jpg","imageUrl":"./images/category-description-image-24.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":25,"menuOrder":28,"name":"Творчество","shortName":"Творчество","description":"Стримы по творчеству (Creative Streaming) - это формат онлайн-трансляций, где авторы демонстрируют процесс создания своих произведений в реальном времени. Это позволяет зрителям не только увидеть финальный результат, но и погрузиться в закулисье творческого процесса, перенять опыт или просто отдохнуть, наблюдая за созиданием.","shortDescription":"Творческие стримы","imagePreviewUrl":"./images/category-image-25.jpg","imageUrl":"./images/category-description-image-25.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":26,"menuOrder":28,"name":"Шахматы","shortName":"Шахматы","description":"Шахматные стримы — это современный феномен, превративший интеллектуальную, зачастую тихую игру в зрелищное шоу.","shortDescription":"Шахматные стримы","imagePreviewUrl":"./images/category-image-26.jpg","imageUrl":"./images/category-description-image-26.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":27,"menuOrder":28,"name":"Миниатюры","shortName":"Миниатюры","description":"Стримы (прямые трансляции) по созданию миниатюр — это уникальный стык творчества, рукоделия и интерактивного общения. Это не просто демонстрация процесса покраски или сборки, а настоящая «медитация в прямом эфире», собирающая единомышленников.","shortDescription":"Хобби стримы","imagePreviewUrl":"./images/category-image-27.jpg","imageUrl":"./images/category-description-image-27.jpg","audience":560,"followers":4,"tags":[10,12]},{"id":28,"menuOrder":28,"name":"Красота","shortName":"Красота","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о красоте","imagePreviewUrl":"./images/category-image-28.jpg","imageUrl":"./images/category-description-image-28.jpg","audience":560,"followers":4,"tags":[8,13]},{"id":29,"menuOrder":29,"name":"Животные и зоопарки","shortName":"Животные","description":"Стримы в категории «Животные и зоопарки» (Animals & Zoos) — это онлайн-трансляции для демонстрации жизни обитателей зоопарков, приютов и дикой природы в реальном времени.","shortDescription":"Стримы о животных","imagePreviewUrl":"./images/category-image-29.jpg","imageUrl":"./images/category-description-image-29.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":30,"menuOrder":30,"name":"Со-творчество","shortName":"Коллаборация","description":"Коллаборации — это совместные трансляции двух или более блогеров, направленные на обмен аудиторией, создание уникального контента и рост каналов. Это один из самых эффективных инструментов для продвижения, так как позволяет привлечь лояльную аудиторию другого стримера.","shortDescription":"Совместные стримы","imagePreviewUrl":"./images/category-image-30.jpg","imageUrl":"./images/category-description-image-30.jpg","audience":560,"followers":4,"tags":[8,15]},{"id":31,"menuOrder":31,"name":"События","shortName":"События","description":"Прямые трансляции мероприятий — это современный медиаформат, позволяющий авторам (стримерам) транслировать интересные события в реальном времени, взаимодействуя с аудиторией через интернет-пространство.","shortDescription":"Стримы о событиях","imagePreviewUrl":"./images/category-image-31.jpg","imageUrl":"./images/category-description-image-31.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":32,"menuOrder":32,"name":"Телевидение","shortName":"Телевидение","description":"Стриминг обычных телевизионных каналов — это трансляция телевизионного контента (прямой эфир, новости, шоу, фильмы) в режиме реального времени через интернет, позволяющая зрителям смотреть ТВ не на телевизоре с антенной, а на смартфонах, компьютерах и Smart TV.","shortDescription":"ТВ стримы","imagePreviewUrl":"./images/category-image-32.jpg","imageUrl":"./images/category-description-image-32.jpg","audience":560,"followers":4,"tags":[12,17]},{"id":33,"menuOrder":33,"name":"Ремесло","shortName":"Ремесло","description":"Стримы ремесленников — это формат прямых трансляций, в которых мастера показывают процесс создания изделий ручной работы: от лепки керамики и вязания до ковки металла или работы с кожей. Это направление сочетает в себе элементы хобби, обучения (DIY — Do It Yourself) и лайфстайл-контента.","shortDescription":"Стримы о ремеслах","imagePreviewUrl":"./images/category-image-33.jpg","imageUrl":"./images/category-description-image-33.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":34,"menuOrder":34,"name":"В реальной жизни","shortName":"Жизнь","description":"Стримы о жизни — это формат контента, где ведущий транслирует свою повседневность, общается с аудиторией в реальном времени, делится мыслями, переживаниями или занимается обычными делами, создавая иллюзию присутствия и близкого общения. Это жанр, близкий к видеоблогингу, но существующий «здесь и сейчас» без монтажа.","shortDescription":"Стримы о жизни 24/7","imagePreviewUrl":"./images/category-image-34.jpg","imageUrl":"./images/category-description-image-34.jpg","audience":560,"followers":4,"tags":[8,14]},{"id":35,"menuOrder":35,"name":"Фитнес","shortName":"Фитнес","description":"Фитнес-стримы стали популярным форматом, объединяющим тренировки, мотивацию и живое общение. Они позволяют заниматься спортом в режиме реального времени, получая обратную связь от тренера или общаясь с единомышленниками.","shortDescription":"Стримы о фитнесе 24/7","imagePreviewUrl":"./images/category-image-35.jpg","imageUrl":"./images/category-description-image-35.jpg","audience":560,"followers":4,"tags":[8,11]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","shortDescription":"Программирование","imagePreviewUrl":"./images/category-image-1.jpg","imageUrl":"./images/category-description-image-1.jpg","audience":12000,"followers":382,"tags":[1,3]},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-2.jpg","imageUrl":"./images/category-description-image-2.jpg","audience":1238,"followers":2798,"tags":[1,9]},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","shortDescription":"Практика","imagePreviewUrl":"./images/category-image-3.jpg","imageUrl":"./images/category-description-image-3.jpg","audience":12003,"followers":2323,"tags":[1,4]},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","shortDescription":"Музыкальные стримы","imagePreviewUrl":"./images/category-image-4.jpg","imageUrl":"./images/category-description-image-4.jpg","audience":12020,"followers":3442,"tags":[1,9]},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12870,"followers":64554,"tags":[1,6]},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","shortDescription":"Чтение вслух","imagePreviewUrl":"./images/category-image-6.jpg","imageUrl":"./images/category-description-image-6.jpg","audience":120,"followers":445,"tags":[1,7]},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","shortDescription":"Стримы по TDU2","imagePreviewUrl":"./images/category-image-7.jpg","imageUrl":"./images/category-description-image-7.jpg","audience":2000,"followers":544,"tags":[5,8]},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","shortDescription":"Стримы по Skyrim","imagePreviewUrl":"./images/category-image-8.jpg","imageUrl":"./images/category-description-image-8.jpg","audience":1000,"followers":221,"tags":[5,8]},{"id":9,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","shortDescription":"Обучающие стримы","imagePreviewUrl":"./images/category-image-9.jpg","imageUrl":"./images/category-description-image-9.jpg","audience":1230,"followers":34,"tags":[1,8]},{"id":10,"menuOrder":100,"name":"Танец Tribal","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-10.jpg","imageUrl":"./images/category-description-image-10.jpg","audience":1230,"followers":34,"tags":[1,6]},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","shortDescription":"Развлечения","imagePreviewUrl":"./images/category-image-11.jpg","imageUrl":"./images/category-description-image-11.jpg","audience":330,"followers":38,"tags":[7,8]},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","shortDescription":"Спорт-мероприятия","imagePreviewUrl":"./images/category-image-12.jpg","imageUrl":"./images/category-description-image-12.jpg","audience":1230,"followers":34,"tags":[11,13]},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.","shortDescription":"Стримы по играм","imagePreviewUrl":"./images/category-image-13.jpg","imageUrl":"./images/category-description-image-13.jpg","audience":330,"followers":38,"tags":[5,12]},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","shortDescription":"Стримы по хобби","imagePreviewUrl":"./images/category-image-14.jpg","imageUrl":"./images/category-description-image-14.jpg","audience":1230,"followers":34,"tags":[10,12]},{"id":15,"menuOrder":100,"name":"Танец Mandala","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12750,"followers":12,"tags":[1,6]},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","shortDescription":"Радио-стримы 24/7","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-16.jpg","audience":1230,"followers":34,"tags":[9,12]},{"id":17,"menuOrder":24,"name":"Другое","shortName":"Другое","description":"Другое - стримы по тематикам, которые не вошли ни в одну категорию стримов.","shortDescription":"Уникальные стримы","imagePreviewUrl":"./images/category-image-17.jpg","imageUrl":"./images/category-description-image-17.jpg","audience":560,"followers":354,"tags":[14,15]},{"id":18,"menuOrder":25,"name":"АСМР","shortName":"АСМР","description":"АСМР «автономная сенсорная меридиональная реакция» - обозначает приятные ощущения, которые возникают в ответ на аудиовизуальные стимулы: звуки природы, шепот, мурчание кота, шелест листьев, плавные движения.","shortDescription":"АСМР-стримы 24/7","imagePreviewUrl":"./images/category-image-18.jpg","imageUrl":"./images/category-description-image-18.jpg","audience":860,"followers":374,"tags":[9,12]},{"id":19,"menuOrder":26,"name":"Пение","shortName":"Пение","description":"Пение - это уникальное вокальное искусство, использующее человеческий голос как инструмент для создания музыки и передачи эмоций.","shortDescription":"Вокальные стримы","imagePreviewUrl":"./images/category-image-19.jpg","imageUrl":"./images/category-description-image-19.jpg","audience":230,"followers":340,"tags":[7,9]},{"id":20,"menuOrder":27,"name":"Искусство","shortName":"Искусство","description":"Стримы по искусству (арт-стримы) - это развивающийся жанр, где процесс создания произведения искусства или обучения ему происходит в режиме реального времени. Это уникальная форма коммуникации в цифровую эпоху, позволяющая художникам делиться своим мастерством, а зрителям — погружаться в творческий процесс.","shortDescription":"Стримы по искусству","imagePreviewUrl":"./images/category-image-20.jpg","imageUrl":"./images/category-description-image-20.jpg","audience":5660,"followers":3,"tags":[7,15]},{"id":21,"menuOrder":28,"name":"Балет","shortName":"Балет","description":"Балет - это высшая форма сценического искусства, объединяющая музыку, хореографию, драматургию и изобразительное искусство.","shortDescription":"Балетные стримы","imagePreviewUrl":"./images/category-image-21.jpg","imageUrl":"./images/category-description-image-21.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":22,"menuOrder":28,"name":"Еда и напитки","shortName":"Кулинария","description":"Кулинария - это искусство и технология приготовления пищи, объединяющая способы обработки продуктов для создания вкусных и питательных блюд.","shortDescription":"Кулинарные стримы","imagePreviewUrl":"./images/category-image-22.jpg","imageUrl":"./images/category-description-image-22.jpg","audience":560,"followers":4,"tags":[10,16]},{"id":23,"menuOrder":28,"name":"Настольные игры","shortName":"Настолки","description":"Стримы по настольным играм — это формат контента, который позволяет зрителям увидеть игровой процесс в реальном времени, оценить компоненты, понять правила и проникнуться атмосферой партии.","shortDescription":"Настольные игры","imagePreviewUrl":"./images/category-image-23.jpg","imageUrl":"./images/category-description-image-23.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":24,"menuOrder":28,"name":"Наука и техника","shortName":"Наука","description":"Стримы по науке и технике трансформируют сложные научные концепции в доступный визуальный контент, позволяя зрителям задавать вопросы в режиме реального времени","shortDescription":"Научные стримы","imagePreviewUrl":"./images/category-image-24.jpg","imageUrl":"./images/category-description-image-24.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":25,"menuOrder":28,"name":"Творчество","shortName":"Творчество","description":"Стримы по творчеству (Creative Streaming) - это формат онлайн-трансляций, где авторы демонстрируют процесс создания своих произведений в реальном времени. Это позволяет зрителям не только увидеть финальный результат, но и погрузиться в закулисье творческого процесса, перенять опыт или просто отдохнуть, наблюдая за созиданием.","shortDescription":"Творческие стримы","imagePreviewUrl":"./images/category-image-25.jpg","imageUrl":"./images/category-description-image-25.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":26,"menuOrder":28,"name":"Шахматы","shortName":"Шахматы","description":"Шахматные стримы — это современный феномен, превративший интеллектуальную, зачастую тихую игру в зрелищное шоу.","shortDescription":"Шахматные стримы","imagePreviewUrl":"./images/category-image-26.jpg","imageUrl":"./images/category-description-image-26.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":27,"menuOrder":28,"name":"Миниатюры","shortName":"Миниатюры","description":"Стримы (прямые трансляции) по созданию миниатюр — это уникальный стык творчества, рукоделия и интерактивного общения. Это не просто демонстрация процесса покраски или сборки, а настоящая «медитация в прямом эфире», собирающая единомышленников.","shortDescription":"Хобби стримы","imagePreviewUrl":"./images/category-image-27.jpg","imageUrl":"./images/category-description-image-27.jpg","audience":560,"followers":4,"tags":[10,12]},{"id":28,"menuOrder":28,"name":"Красота","shortName":"Красота","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о красоте","imagePreviewUrl":"./images/category-image-28.jpg","imageUrl":"./images/category-description-image-28.jpg","audience":560,"followers":4,"tags":[8,13]},{"id":29,"menuOrder":29,"name":"Животные и зоопарки","shortName":"Животные","description":"Стримы в категории «Животные и зоопарки» (Animals & Zoos) — это онлайн-трансляции для демонстрации жизни обитателей зоопарков, приютов и дикой природы в реальном времени.","shortDescription":"Стримы о животных","imagePreviewUrl":"./images/category-image-29.jpg","imageUrl":"./images/category-description-image-29.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":30,"menuOrder":30,"name":"Со-творчество","shortName":"Коллаборация","description":"Коллаборации — это совместные трансляции двух или более блогеров, направленные на обмен аудиторией, создание уникального контента и рост каналов. Это один из самых эффективных инструментов для продвижения, так как позволяет привлечь лояльную аудиторию другого стримера.","shortDescription":"Совместные стримы","imagePreviewUrl":"./images/category-image-30.jpg","imageUrl":"./images/category-description-image-30.jpg","audience":560,"followers":4,"tags":[8,15]},{"id":31,"menuOrder":31,"name":"События","shortName":"События","description":"Прямые трансляции мероприятий — это современный медиаформат, позволяющий авторам (стримерам) транслировать интересные события в реальном времени, взаимодействуя с аудиторией через интернет-пространство.","shortDescription":"Стримы о событиях","imagePreviewUrl":"./images/category-image-31.jpg","imageUrl":"./images/category-description-image-31.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":32,"menuOrder":32,"name":"Телевидение","shortName":"Телевидение","description":"Стриминг обычных телевизионных каналов — это трансляция телевизионного контента (прямой эфир, новости, шоу, фильмы) в режиме реального времени через интернет, позволяющая зрителям смотреть ТВ не на телевизоре с антенной, а на смартфонах, компьютерах и Smart TV.","shortDescription":"ТВ стримы","imagePreviewUrl":"./images/category-image-32.jpg","imageUrl":"./images/category-description-image-32.jpg","audience":560,"followers":4,"tags":[12,17]},{"id":33,"menuOrder":33,"name":"Ремесло","shortName":"Ремесло","description":"Стримы ремесленников — это формат прямых трансляций, в которых мастера показывают процесс создания изделий ручной работы: от лепки керамики и вязания до ковки металла или работы с кожей. Это направление сочетает в себе элементы хобби, обучения (DIY — Do It Yourself) и лайфстайл-контента.","shortDescription":"Стримы о ремеслах","imagePreviewUrl":"./images/category-image-33.jpg","imageUrl":"./images/category-description-image-33.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":34,"menuOrder":34,"name":"В реальной жизни","shortName":"Жизнь","description":"Стримы о жизни — это формат контента, где ведущий транслирует свою повседневность, общается с аудиторией в реальном времени, делится мыслями, переживаниями или занимается обычными делами, создавая иллюзию присутствия и близкого общения. Это жанр, близкий к видеоблогингу, но существующий «здесь и сейчас» без монтажа.","shortDescription":"Стримы о жизни 24/7","imagePreviewUrl":"./images/category-image-34.jpg","imageUrl":"./images/category-description-image-34.jpg","audience":560,"followers":4,"tags":[8,14]},{"id":35,"menuOrder":35,"name":"Фитнес","shortName":"Фитнес","description":"Фитнес-стримы стали популярным форматом, объединяющим тренировки, мотивацию и живое общение. Они позволяют заниматься спортом в режиме реального времени, получая обратную связь от тренера или общаясь с единомышленниками.","shortDescription":"Стримы о фитнесе 24/7","imagePreviewUrl":"./images/category-image-35.jpg","imageUrl":"./images/category-description-image-35.jpg","audience":560,"followers":4,"tags":[8,11]}]}');
 
 /***/ },
 

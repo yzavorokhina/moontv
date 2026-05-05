@@ -23814,9 +23814,9 @@ a {
   drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))
   drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
   --theme-search-icon: url(images/search-icon-dark.svg);
-  --theme-arrow-down: url(images/search-icon-dark.svg);
-  --theme-follow-button: url(images/search-icon-dark.svg);
-  --theme-subscribe-button: url(images/search-icon-dark.svg);
+  --theme-arrow-down: url(images/arrow-down-dark.svg);
+  --theme-follow-button: url(images/plus-icon-dark.svg);
+  --theme-subscribe-button: url(images/subscribe-button-dark.svg);
 }
 
 html,
@@ -24084,7 +24084,7 @@ h4 {
 .horizontal-menu-row {
   position: relative;
   z-index: 5;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-shrink: 0;
   width: calc(100vw - 252px);
@@ -24096,15 +24096,15 @@ h4 {
 }
 
 .horizontal-menu {
+  display: flex;
   max-width: fit-content;
   color: var(--theme-font-primary, #FFFFFF);
-  display: inline-block;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
 
 .horizontal-menu ul {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -24112,7 +24112,7 @@ h4 {
 }
 
 .horizontal-menu li {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -24127,45 +24127,60 @@ h4 {
 .horizontal-menu li:hover {
   background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
   color: var(--theme-font-secondary, #CECED6);
+  cursor: pointer;
 }
 
-.horizontal-menu li.h-menu-btn-active {
-  background-color: var(--theme-active-btn-bg, #000000);
-  color: white;
-  font-weight: 600;
-}
-
-.horizontal-menu li:first-child {
-  border: none;
-  font-weight: bold;
-  background-color: var(--theme-accent-bg, #FF6F3A);
-}
-
-.horizontal-menu li:first-child:hover {
-  background-color: var(--theme-accent-hover, #E2552D);
+.horizontal-menu li a {
+  display: block;
+  width: 138px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: var(--theme-font-primary, #FFFFFF);
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 .horizontal-menu a {
-  color: var(--theme-font-primary, #FFFFFF);
   display: block;
+  color: var(--theme-font-primary, #FFFFFF);
   transition: color 0.3s ease;
 }
 
-.horizontal-menu li:hover a {
-  color: var(--theme-font-secondary, #CECED6);
+.horizontal-menu-button-active {
+  background-color: var(--theme-active-btn-bg, #000000) !important;
 }
 
-.horizontal-menu-first-button {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: baseline;
+/* first-button: */
+.horizontal-menu-first-button,
+.horizontal-menu-first-button-active {
+  display: block;
   width: 70px !important;
   height: 40px !important;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  color: var(--theme-font-primary, #FFFFFF);
+  font-weight: bold;
 }
 
 .horizontal-menu-first-button a {
-  color: white;
+  display: block;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  color: white !important;
+  transition: all 0.2s ease;
+  background-color: var(--theme-accent-bg, #FF6F3A);
+}
+
+.horizontal-menu-first-button a:hover {
+  background-color: var(--theme-accent-hover, #E2552D);
+  text-align: center;
+  line-height: 40px;
 }
 
 .horizontal-menu-first-button img {
@@ -24175,6 +24190,27 @@ h4 {
   margin-bottom: 3px;
 }
 
+.horizontal-menu-first-button-active a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  color: white !important;
+  transition: all 0.2s ease;
+  background-color: red !important;
+}
+
+.horizontal-menu-first-button-active img {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+/* end of the first-button */
+/* scroll-button: */
 .horizontal-menu-scroll {
   position: absolute;
   z-index: 10;
@@ -24201,7 +24237,13 @@ h4 {
 
 .horizontal-menu-scroll:hover {
   background-color: var(--theme-button-scroll-hover, #16122F);
-  border: 1px solid var(--theme-font-primary, #FFFFFF);
+  border: 1px solid var(--theme-font-secondary, #CECED6);
+}
+
+.horizontal-menu-scroll-active {
+  background-color: var(--theme-active-btn-bg, #000000);
+  color: white;
+  font-weight: 600;
 }
 
 .horizontal-menu-scroll-arrow {
@@ -24216,6 +24258,7 @@ h4 {
   right: -15px;
 }
 
+/* end of the scroll-button */
 @media (max-width: 1280px) {
   .horizontal-menu ul {
     gap: 10px;

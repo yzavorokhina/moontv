@@ -249,372 +249,213 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ CategoryPage)
 /* harmony export */ });
-/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
-/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
-/* harmony import */ var _CategoryDescription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CategoryDescription */ "./src/js/components/CategoryDescription.js");
-/* harmony import */ var _ChannelCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ChannelCards */ "./src/js/components/ChannelCards.js");
-/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
-/* harmony import */ var _utils_common_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/common.js */ "./src/js/utils/common.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
+/* harmony import */ var _CategoryDescription__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CategoryDescription */ "./src/js/components/CategoryDescription.js");
+/* harmony import */ var _ChannelCards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ChannelCards */ "./src/js/components/ChannelCards.js");
+/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
+/* harmony import */ var _utils_common_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/common.js */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 
 
+function CategoryPage({
+  db,
+  showAll
+}) {
+  const params = (0,_utils_common_js__WEBPACK_IMPORTED_MODULE_4__.getUrlParams)();
+  console.log(params.id); // '1'
 
-function CategoryPage(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
-  const {
-    db,
-    showAll
-  } = t0;
-  let t1;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t1 = (0,_utils_common_js__WEBPACK_IMPORTED_MODULE_5__.getUrlParams)();
-    $[0] = t1;
-  } else {
-    t1 = $[0];
+  const categoryId = +params.id;
+  if (!categoryId) {
+    window.location.href = 'notFound.html';
   }
-  const params = t1;
-  console.log(params.id);
-  const categoryId = +params.id || 1;
-  let t2;
-  if ($[1] !== db.categoriesModel) {
-    t2 = db.categoriesModel.findOneById(categoryId);
-    $[1] = db.categoriesModel;
-    $[2] = t2;
-  } else {
-    t2 = $[2];
+  const categoryData = db.categoriesModel.findOneById(categoryId);
+  const streamData = db.streamsModel.findOneById(categoryId);
+  if (!categoryData || !streamData) {
+    window.location.href = 'notFound.html';
   }
-  const categoryData = t2;
-  let t3;
-  if ($[3] !== db.channelsModel || $[4] !== db.streamsModel) {
-    const streamData = db.streamsModel.findOneById(categoryId);
-    t3 = db.channelsModel.findOneById(streamData.channelId);
-    $[3] = db.channelsModel;
-    $[4] = db.streamsModel;
-    $[5] = t3;
-  } else {
-    t3 = $[5];
-  }
-  const channelData = t3;
-  let t4;
-  if ($[6] !== categoryData || $[7] !== channelData) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-      className: "category-description",
-      id: "react-category-description",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_CategoryDescription__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        categoryData: categoryData,
-        channelData: channelData
-      })
-    });
-    $[6] = categoryData;
-    $[7] = channelData;
-    $[8] = t4;
-  } else {
-    t4 = $[8];
-  }
-  let t5;
-  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "sorting-buttons-1",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-        children: "\u041E\u043D\u043B\u0430\u0439\u043D"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-        children: "\u0412\u0438\u0434\u0435\u043E"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-        children: "\u041A\u043B\u0438\u043F\u044B"
-      })]
-    });
-    $[9] = t5;
-  } else {
-    t5 = $[9];
-  }
-  let t6;
-  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "category-search-by-language",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
-        htmlFor: "search-by-language",
-        className: "visually-hidden",
-        children: "\u042F\u0437\u044B\u043A"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
-        type: "search",
-        id: "language-search",
-        className: "search-by-language",
-        placeholder: "\u042F\u0437\u044B\u043A",
-        "aria-label": "Search"
-      })]
-    });
-    $[10] = t6;
-  } else {
-    t6 = $[10];
-  }
-  let t7;
-  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "block-buttons-1",
-      children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-        className: "category-search-by-tag",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
-          htmlFor: "search-by-tag",
-          className: "visually-hidden",
-          children: "\u0418\u0441\u043A\u0430\u0442\u044C \u043F\u043E \u0442\u0435\u0433\u0430\u043C"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
-          type: "search",
-          id: "tag-search",
-          className: "search-by-tag",
-          placeholder: "\u0418\u0441\u043A\u0430\u0442\u044C \u043F\u043E \u0442\u0435\u0433\u0430\u043C",
-          "aria-label": "Search"
+  const channelData = db.channelsModel.findOneById(streamData.channelId);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      db: db,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "category-description-container",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: "category-description",
+          id: "react-category-description",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_CategoryDescription__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            categoryData: categoryData,
+            channelData: channelData
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "sorting-buttons-1",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+            children: "\u041E\u043D\u043B\u0430\u0439\u043D"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+            children: "\u0412\u0438\u0434\u0435\u043E"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+            children: "\u041A\u043B\u0438\u043F\u044B"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "sorting-buttons-2",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            className: "block-buttons-1",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+              className: "category-search-by-language",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                htmlFor: "search-by-language",
+                className: "visually-hidden",
+                children: "\u042F\u0437\u044B\u043A"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                type: "search",
+                id: "language-search",
+                className: "search-by-language",
+                placeholder: "\u042F\u0437\u044B\u043A",
+                "aria-label": "Search"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+              className: "category-search-by-tag",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("label", {
+                htmlFor: "search-by-tag",
+                className: "visually-hidden",
+                children: "\u0418\u0441\u043A\u0430\u0442\u044C \u043F\u043E \u0442\u0435\u0433\u0430\u043C"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                type: "search",
+                id: "tag-search",
+                className: "search-by-tag",
+                placeholder: "\u0418\u0441\u043A\u0430\u0442\u044C \u043F\u043E \u0442\u0435\u0433\u0430\u043C",
+                "aria-label": "Search"
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            className: "block-buttons-2",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+              children: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430 \u043F\u043E:"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
+                className: "sorting-svg",
+                fill: "currentColor",
+                width: "20px",
+                height: "20px",
+                viewBox: "0 0 24 24",
+                version: "1.2",
+                baseProfile: "tiny",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M10.895 16.553l-4-8c-.339-.678-1.45-.678-1.789 0l-4 8c-.247.494-.047 1.095.447 1.342.495.248 1.095.046 1.342-.447l.723-1.448h4.764l.724 1.447c.175.351.528.553.895.553.15 0 .303-.034.446-.105.494-.248.695-.848.448-1.342zm-6.277-2.553l1.382-2.764 1.382 2.764h-2.764zM22 18h-6c-.379 0-.725-.214-.895-.553s-.132-.744.095-1.047l4.8-6.4h-4c-.552 0-1-.448-1-1s.448-1 1-1h6c.379 0 .725.214.895.553s.132.744-.095 1.047l-4.8 6.4h4c.552 0 1 .448 1 1s-.448 1-1 1zM14 14h-2c-.552 0-1-.448-1-1s.448-1 1-1h2c.552 0 1 .448 1 1s-.448 1-1 1z"
+                })
+              }), "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u044E"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", {
+                className: "sorting-svg",
+                width: "16px",
+                height: "16px",
+                viewBox: "0 0 28 28",
+                version: "1.1",
+                xmlns: "http://www.w3.org/2000/svg",
+                xlink: "http://www.w3.org/1999/xlink",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("title", {
+                  children: "ic_fluent_people_28_regular"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("desc", {
+                  children: "Created with Sketch."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("g", {
+                  id: "\uD83D\uDD0D-Product-Icons",
+                  stroke: "none",
+                  strokeWidth: "1",
+                  fill: "none",
+                  fillRule: "evenodd",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("g", {
+                    id: "ic_fluent_people_28_regular",
+                    fill: "currentColor",
+                    fillRule: "nonzero",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                      d: "M4,16 L15,16.001 C16.0538182,16.001 16.9181157,16.8164855 16.9945109,17.8516842 L17,18.001 L17,20.5 C16.999,24.7 12.713,26 9.5,26 C6.35126,26 2.1710504,24.75148 2.00510151,20.7485328 L2,20.5 L2,18 C2,16.9461818 2.81639669,16.0818843 3.85080841,16.0054891 L4,16 Z M24,16 L24.1491916,16.0054891 C25.1318827,16.0780645 25.9178153,16.8617218 25.9939518,17.8434235 L26,18 L26,20 C25.999,23.759 22.57,25 20,25 C18.942,25 17.741,24.785 16.691,24.275 C17.009,23.897 17.278,23.477 17.488,23.007 C18.4456,23.427 19.4789867,23.4924578 19.9157784,23.4993188 L20.2043433,23.4963225 C21.2400556,23.4606629 24.334766,23.1116572 24.4936471,20.2325914 L24.5,20 L24.5,18 C24.5,17.7546667 24.3222222,17.5504198 24.0895748,17.5080604 L24,17.5 L17.949,17.501 C17.865,16.999625 17.6554375,16.5434219 17.3544785,16.1605273 L17.22,16.001 L24,16 Z M4,17.5 L3.899344,17.51 C3.77496,17.53528 3.69,17.6028 3.646,17.646 C3.6028,17.69 3.53528,17.77432 3.51,17.89896 L3.5,18 L3.5,20.5 C3.5,21.839 4.087,22.829 5.295,23.525 C6.29135714,24.1007143 7.68434694,24.4479337 9.15851093,24.4945991 L9.5,24.5 L9.93487113,24.4897846 C11.4554554,24.4219073 15.3140372,23.9331951 15.4935181,20.7322803 L15.5,20.499 L15.5,18.001 C15.5,17.7565556 15.3222222,17.5516173 15.0895748,17.5090933 L15,17.501 L4,17.5 Z M9.5,3 C12.538,3 15,5.463 15,8.5 C15,11.537 12.538,14 9.5,14 C6.462,14 4,11.537 4,8.5 C4,5.463 6.462,3 9.5,3 Z M20.5,5 C22.985,5 25,7.015 25,9.5 C25,11.985 22.985,14 20.5,14 C18.015,14 16,11.985 16,9.5 C16,7.015 18.015,5 20.5,5 Z M9.5,4.5 C7.294,4.5 5.5,6.294 5.5,8.5 C5.5,10.706 7.294,12.5 9.5,12.5 C11.706,12.5 13.5,10.706 13.5,8.5 C13.5,6.294 11.706,4.5 9.5,4.5 Z M20.5,6.5 C18.846,6.5 17.5,7.846 17.5,9.5 C17.5,11.154 18.846,12.5 20.5,12.5 C22.154,12.5 23.5,11.154 23.5,9.5 C23.5,7.846 22.154,6.5 20.5,6.5 Z",
+                      id: "\uD83C\uDFA8-Color"
+                    })
+                  })
+                })]
+              }), "\u041A\u043E\u043B-\u0432\u0443 \u0437\u0440\u0438\u0442\u0435\u043B\u0435\u0439"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("svg", {
+                className: "sorting-svg",
+                width: "20px",
+                height: "20px",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M1.99984 5.75C1.99984 5.33579 2.33562 5 2.74984 5H21.2498C21.664 5 21.9998 5.33579 21.9998 5.75C21.9998 6.16421 21.664 6.5 21.2498 6.5H2.74984C2.33562 6.5 1.99984 6.16421 1.99984 5.75ZM1.99984 12.25C1.99984 11.8358 2.33562 11.5 2.74984 11.5H21.2498C21.664 11.5 21.9998 11.8358 21.9998 12.25C21.9998 12.6642 21.664 13 21.2498 13H2.74984C2.33562 13 1.99984 12.6642 1.99984 12.25ZM18.9998 18.75C18.9998 18.3358 19.3356 18 19.7498 18H21.2498C21.664 18 21.9998 18.3358 21.9998 18.75C21.9998 19.1642 21.664 19.5 21.2498 19.5H19.7498C19.3356 19.5 18.9998 19.1642 18.9998 18.75Z",
+                  fill: "currentColor"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M2.41586 18.7377C2.62651 18.5972 2.83038 18.4376 3.02319 18.2633V22.25C3.02319 22.6642 3.35898 23 3.77319 23C4.18741 23 4.52319 22.6642 4.52319 22.25V15.75C4.52319 15.356 4.21942 15.033 3.83332 15.0024C3.46457 14.9719 3.12113 15.2183 3.03989 15.5897C2.91329 16.1684 2.34817 16.98 1.58381 17.4896C1.23916 17.7194 1.14603 18.185 1.3758 18.5297C1.60556 18.8743 2.07121 18.9674 2.41586 18.7377Z",
+                  fill: "currentColor"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M7.99976 17.5227C7.99976 16.995 8.44328 16.5 8.98552 16.5C9.39269 16.5 9.72045 16.6909 9.87891 16.9345C10.0148 17.1434 10.0963 17.4998 9.78534 18.0292C9.63583 18.2837 9.4098 18.5114 9.10378 18.7531C8.95132 18.8735 8.78821 18.9904 8.61083 19.1158L8.53705 19.1679C8.38482 19.2753 8.22186 19.3902 8.06445 19.5087C7.32083 20.0683 6.49976 20.8536 6.49976 22.25C6.49976 22.6642 6.83554 23 7.24976 23L7.25793 23L7.26611 23H10.7003C11.1145 23 11.4503 22.6642 11.4503 22.25C11.4503 21.8358 11.1145 21.5 10.7003 21.5H8.18741C8.34819 21.2182 8.61035 20.9752 8.96639 20.7072C9.10386 20.6038 9.24576 20.5036 9.39901 20.3955L9.47661 20.3407C9.6552 20.2145 9.84692 20.0775 10.0335 19.9302C10.4055 19.6364 10.7942 19.2731 11.0787 18.789C11.6356 17.8411 11.625 16.868 11.1363 16.1166C10.6701 15.4 9.84073 15 8.98552 15C7.50797 15 6.49976 16.2777 6.49976 17.5227C6.49976 17.9369 6.83554 18.2727 7.24976 18.2727C7.66397 18.2727 7.99976 17.9369 7.99976 17.5227Z",
+                  fill: "currentColor"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  d: "M14.4709 17.1377C14.5029 17.0255 14.5792 16.8666 14.7218 16.7409C14.8502 16.6276 15.0773 16.5 15.4997 16.5C16.261 16.5 16.4997 17.0002 16.4997 17.2273C16.4997 17.4724 16.4474 17.7178 16.3099 17.8907C16.1986 18.0308 15.9313 18.25 15.208 18.25C14.7938 18.25 14.458 18.5858 14.458 19C14.458 19.4142 14.7938 19.75 15.208 19.75C15.4815 19.75 15.8594 19.7864 16.1424 19.9191C16.2743 19.9809 16.3569 20.0505 16.4069 20.1207C16.4517 20.1837 16.4997 20.287 16.4997 20.4773C16.4997 20.965 16.3475 21.1807 16.2191 21.2891C16.068 21.4167 15.8237 21.5 15.4997 21.5C15.1377 21.5 14.9328 21.4374 14.8072 21.3578C14.6958 21.2873 14.5675 21.1538 14.4621 20.8338C14.3327 20.4403 13.9087 20.2263 13.5153 20.3558C13.1218 20.4852 12.9078 20.9092 13.0373 21.3026C13.2236 21.8689 13.5328 22.3263 14.0048 22.6252C14.4624 22.9149 14.9867 23 15.4997 23C16.0507 23 16.6815 22.8618 17.1866 22.4353C17.7145 21.9898 17.9997 21.3191 17.9997 20.4773C17.9997 20.0027 17.8699 19.5891 17.6285 19.2504C17.5499 19.14 17.4628 19.0423 17.3706 18.9559C17.4102 18.9135 17.4481 18.8695 17.4842 18.8241C17.9221 18.2731 17.9997 17.6321 17.9997 17.2273C17.9997 16.1543 17.0718 15 15.4997 15C14.7343 15 14.1483 15.2466 13.7295 15.616C13.325 15.9728 13.1202 16.4048 13.0285 16.7259C12.9148 17.1242 13.1455 17.5393 13.5438 17.653C13.9421 17.7667 14.3572 17.536 14.4709 17.1377Z",
+                  fill: "currentColor"
+                })]
+              }), "\u041A\u043E\u043B-\u0432\u0443 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u043E\u0432"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("svg", {
+                className: "sorting-svg",
+                fill: "currentColor",
+                width: "18px",
+                height: "18px",
+                viewBox: "0 0 24 24",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
+                  fillRule: "evenodd",
+                  d: "M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M13,11 L17,11 L17,13 L11,13 L11,6 L13,6 L13,11 Z"
+                })
+              }), "\u0412\u0440\u0435\u043C\u0435\u043D\u0438 "]
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "current-language-and-tag",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            className: "category-languages-row",
+            role: "group",
+            "aria-label": "category-tags-group",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+              children: "\u042F\u0437\u044B\u043A \u043A\u0430\u043D\u0430\u043B\u043E\u0432:"
+            }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+              className: "category-current-language",
+              children: "English"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            className: "category-tags-row",
+            role: "group",
+            "aria-label": "category-tags-group",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+              children: "\u0422\u0435\u0433\u0438 \u043A\u0430\u043D\u0430\u043B\u043E\u0432:"
+            }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+              className: "category-current-tag",
+              children: "Programming"
+            })]
+          })]
         })]
-      })]
-    });
-    $[11] = t7;
-  } else {
-    t7 = $[11];
-  }
-  let t8;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-      children: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430 \u043F\u043E:"
-    });
-    $[12] = t8;
-  } else {
-    t8 = $[12];
-  }
-  let t9;
-  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
-        className: "sorting-svg",
-        fill: "currentColor",
-        width: "20px",
-        height: "20px",
-        viewBox: "0 0 24 24",
-        version: "1.2",
-        baseProfile: "tiny",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-          d: "M10.895 16.553l-4-8c-.339-.678-1.45-.678-1.789 0l-4 8c-.247.494-.047 1.095.447 1.342.495.248 1.095.046 1.342-.447l.723-1.448h4.764l.724 1.447c.175.351.528.553.895.553.15 0 .303-.034.446-.105.494-.248.695-.848.448-1.342zm-6.277-2.553l1.382-2.764 1.382 2.764h-2.764zM22 18h-6c-.379 0-.725-.214-.895-.553s-.132-.744.095-1.047l4.8-6.4h-4c-.552 0-1-.448-1-1s.448-1 1-1h6c.379 0 .725.214.895.553s.132.744-.095 1.047l-4.8 6.4h4c.552 0 1 .448 1 1s-.448 1-1 1zM14 14h-2c-.552 0-1-.448-1-1s.448-1 1-1h2c.552 0 1 .448 1 1s-.448 1-1 1z"
-        })
-      }), "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u044E"]
-    });
-    $[13] = t9;
-  } else {
-    t9 = $[13];
-  }
-  let t10;
-  let t11;
-  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("title", {
-      children: "ic_fluent_people_28_regular"
-    });
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("desc", {
-      children: "Created with Sketch."
-    });
-    $[14] = t10;
-    $[15] = t11;
-  } else {
-    t10 = $[14];
-    t11 = $[15];
-  }
-  let t12;
-  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("svg", {
-        className: "sorting-svg",
-        width: "16px",
-        height: "16px",
-        viewBox: "0 0 28 28",
-        version: "1.1",
-        xmlns: "http://www.w3.org/2000/svg",
-        xlink: "http://www.w3.org/1999/xlink",
-        children: [t10, t11, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("g", {
-          id: "\uD83D\uDD0D-Product-Icons",
-          stroke: "none",
-          strokeWidth: "1",
-          fill: "none",
-          fillRule: "evenodd",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("g", {
-            id: "ic_fluent_people_28_regular",
-            fill: "currentColor",
-            fillRule: "nonzero",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-              d: "M4,16 L15,16.001 C16.0538182,16.001 16.9181157,16.8164855 16.9945109,17.8516842 L17,18.001 L17,20.5 C16.999,24.7 12.713,26 9.5,26 C6.35126,26 2.1710504,24.75148 2.00510151,20.7485328 L2,20.5 L2,18 C2,16.9461818 2.81639669,16.0818843 3.85080841,16.0054891 L4,16 Z M24,16 L24.1491916,16.0054891 C25.1318827,16.0780645 25.9178153,16.8617218 25.9939518,17.8434235 L26,18 L26,20 C25.999,23.759 22.57,25 20,25 C18.942,25 17.741,24.785 16.691,24.275 C17.009,23.897 17.278,23.477 17.488,23.007 C18.4456,23.427 19.4789867,23.4924578 19.9157784,23.4993188 L20.2043433,23.4963225 C21.2400556,23.4606629 24.334766,23.1116572 24.4936471,20.2325914 L24.5,20 L24.5,18 C24.5,17.7546667 24.3222222,17.5504198 24.0895748,17.5080604 L24,17.5 L17.949,17.501 C17.865,16.999625 17.6554375,16.5434219 17.3544785,16.1605273 L17.22,16.001 L24,16 Z M4,17.5 L3.899344,17.51 C3.77496,17.53528 3.69,17.6028 3.646,17.646 C3.6028,17.69 3.53528,17.77432 3.51,17.89896 L3.5,18 L3.5,20.5 C3.5,21.839 4.087,22.829 5.295,23.525 C6.29135714,24.1007143 7.68434694,24.4479337 9.15851093,24.4945991 L9.5,24.5 L9.93487113,24.4897846 C11.4554554,24.4219073 15.3140372,23.9331951 15.4935181,20.7322803 L15.5,20.499 L15.5,18.001 C15.5,17.7565556 15.3222222,17.5516173 15.0895748,17.5090933 L15,17.501 L4,17.5 Z M9.5,3 C12.538,3 15,5.463 15,8.5 C15,11.537 12.538,14 9.5,14 C6.462,14 4,11.537 4,8.5 C4,5.463 6.462,3 9.5,3 Z M20.5,5 C22.985,5 25,7.015 25,9.5 C25,11.985 22.985,14 20.5,14 C18.015,14 16,11.985 16,9.5 C16,7.015 18.015,5 20.5,5 Z M9.5,4.5 C7.294,4.5 5.5,6.294 5.5,8.5 C5.5,10.706 7.294,12.5 9.5,12.5 C11.706,12.5 13.5,10.706 13.5,8.5 C13.5,6.294 11.706,4.5 9.5,4.5 Z M20.5,6.5 C18.846,6.5 17.5,7.846 17.5,9.5 C17.5,11.154 18.846,12.5 20.5,12.5 C22.154,12.5 23.5,11.154 23.5,9.5 C23.5,7.846 22.154,6.5 20.5,6.5 Z",
-              id: "\uD83C\uDFA8-Color"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        className: "favourite-categories",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: "one-category-container",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+            className: "channels-row",
+            id: "category_cards",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_ChannelCards__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              db: db,
+              categoryId: categoryId,
+              showAll: showAll
             })
           })
-        })]
-      }), "\u041A\u043E\u043B-\u0432\u0443 \u0437\u0440\u0438\u0442\u0435\u043B\u0435\u0439"]
-    });
-    $[16] = t12;
-  } else {
-    t12 = $[16];
-  }
-  let t13;
-  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
-    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("svg", {
-        className: "sorting-svg",
-        width: "20px",
-        height: "20px",
-        viewBox: "0 0 24 24",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-          d: "M1.99984 5.75C1.99984 5.33579 2.33562 5 2.74984 5H21.2498C21.664 5 21.9998 5.33579 21.9998 5.75C21.9998 6.16421 21.664 6.5 21.2498 6.5H2.74984C2.33562 6.5 1.99984 6.16421 1.99984 5.75ZM1.99984 12.25C1.99984 11.8358 2.33562 11.5 2.74984 11.5H21.2498C21.664 11.5 21.9998 11.8358 21.9998 12.25C21.9998 12.6642 21.664 13 21.2498 13H2.74984C2.33562 13 1.99984 12.6642 1.99984 12.25ZM18.9998 18.75C18.9998 18.3358 19.3356 18 19.7498 18H21.2498C21.664 18 21.9998 18.3358 21.9998 18.75C21.9998 19.1642 21.664 19.5 21.2498 19.5H19.7498C19.3356 19.5 18.9998 19.1642 18.9998 18.75Z",
-          fill: "currentColor"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-          d: "M2.41586 18.7377C2.62651 18.5972 2.83038 18.4376 3.02319 18.2633V22.25C3.02319 22.6642 3.35898 23 3.77319 23C4.18741 23 4.52319 22.6642 4.52319 22.25V15.75C4.52319 15.356 4.21942 15.033 3.83332 15.0024C3.46457 14.9719 3.12113 15.2183 3.03989 15.5897C2.91329 16.1684 2.34817 16.98 1.58381 17.4896C1.23916 17.7194 1.14603 18.185 1.3758 18.5297C1.60556 18.8743 2.07121 18.9674 2.41586 18.7377Z",
-          fill: "currentColor"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-          d: "M7.99976 17.5227C7.99976 16.995 8.44328 16.5 8.98552 16.5C9.39269 16.5 9.72045 16.6909 9.87891 16.9345C10.0148 17.1434 10.0963 17.4998 9.78534 18.0292C9.63583 18.2837 9.4098 18.5114 9.10378 18.7531C8.95132 18.8735 8.78821 18.9904 8.61083 19.1158L8.53705 19.1679C8.38482 19.2753 8.22186 19.3902 8.06445 19.5087C7.32083 20.0683 6.49976 20.8536 6.49976 22.25C6.49976 22.6642 6.83554 23 7.24976 23L7.25793 23L7.26611 23H10.7003C11.1145 23 11.4503 22.6642 11.4503 22.25C11.4503 21.8358 11.1145 21.5 10.7003 21.5H8.18741C8.34819 21.2182 8.61035 20.9752 8.96639 20.7072C9.10386 20.6038 9.24576 20.5036 9.39901 20.3955L9.47661 20.3407C9.6552 20.2145 9.84692 20.0775 10.0335 19.9302C10.4055 19.6364 10.7942 19.2731 11.0787 18.789C11.6356 17.8411 11.625 16.868 11.1363 16.1166C10.6701 15.4 9.84073 15 8.98552 15C7.50797 15 6.49976 16.2777 6.49976 17.5227C6.49976 17.9369 6.83554 18.2727 7.24976 18.2727C7.66397 18.2727 7.99976 17.9369 7.99976 17.5227Z",
-          fill: "currentColor"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-          d: "M14.4709 17.1377C14.5029 17.0255 14.5792 16.8666 14.7218 16.7409C14.8502 16.6276 15.0773 16.5 15.4997 16.5C16.261 16.5 16.4997 17.0002 16.4997 17.2273C16.4997 17.4724 16.4474 17.7178 16.3099 17.8907C16.1986 18.0308 15.9313 18.25 15.208 18.25C14.7938 18.25 14.458 18.5858 14.458 19C14.458 19.4142 14.7938 19.75 15.208 19.75C15.4815 19.75 15.8594 19.7864 16.1424 19.9191C16.2743 19.9809 16.3569 20.0505 16.4069 20.1207C16.4517 20.1837 16.4997 20.287 16.4997 20.4773C16.4997 20.965 16.3475 21.1807 16.2191 21.2891C16.068 21.4167 15.8237 21.5 15.4997 21.5C15.1377 21.5 14.9328 21.4374 14.8072 21.3578C14.6958 21.2873 14.5675 21.1538 14.4621 20.8338C14.3327 20.4403 13.9087 20.2263 13.5153 20.3558C13.1218 20.4852 12.9078 20.9092 13.0373 21.3026C13.2236 21.8689 13.5328 22.3263 14.0048 22.6252C14.4624 22.9149 14.9867 23 15.4997 23C16.0507 23 16.6815 22.8618 17.1866 22.4353C17.7145 21.9898 17.9997 21.3191 17.9997 20.4773C17.9997 20.0027 17.8699 19.5891 17.6285 19.2504C17.5499 19.14 17.4628 19.0423 17.3706 18.9559C17.4102 18.9135 17.4481 18.8695 17.4842 18.8241C17.9221 18.2731 17.9997 17.6321 17.9997 17.2273C17.9997 16.1543 17.0718 15 15.4997 15C14.7343 15 14.1483 15.2466 13.7295 15.616C13.325 15.9728 13.1202 16.4048 13.0285 16.7259C12.9148 17.1242 13.1455 17.5393 13.5438 17.653C13.9421 17.7667 14.3572 17.536 14.4709 17.1377Z",
-          fill: "currentColor"
-        })]
-      }), "\u041A\u043E\u043B-\u0432\u0443 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u043E\u0432"]
-    });
-    $[17] = t13;
-  } else {
-    t13 = $[17];
-  }
-  let t14;
-  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "sorting-buttons-2",
-      children: [t7, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-        className: "block-buttons-2",
-        children: [t8, t9, t12, t13, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("button", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("svg", {
-            className: "sorting-svg",
-            fill: "currentColor",
-            width: "18px",
-            height: "18px",
-            viewBox: "0 0 24 24",
-            xmlns: "http://www.w3.org/2000/svg",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-              fillRule: "evenodd",
-              d: "M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M13,11 L17,11 L17,13 L11,13 L11,6 L13,6 L13,11 Z"
-            })
-          }), "\u0412\u0440\u0435\u043C\u0435\u043D\u0438 "]
-        })]
-      })]
-    });
-    $[18] = t14;
-  } else {
-    t14 = $[18];
-  }
-  let t15;
-  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
-    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-      children: "\u042F\u0437\u044B\u043A \u043A\u0430\u043D\u0430\u043B\u043E\u0432:"
-    });
-    $[19] = t15;
-  } else {
-    t15 = $[19];
-  }
-  let t16;
-  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
-    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "category-languages-row",
-      role: "group",
-      "aria-label": "category-tags-group",
-      children: [t15, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-        className: "category-current-language",
-        children: "English"
-      })]
-    });
-    $[20] = t16;
-  } else {
-    t16 = $[20];
-  }
-  let t17;
-  if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
-    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-      children: "\u0422\u0435\u0433\u0438 \u043A\u0430\u043D\u0430\u043B\u043E\u0432:"
-    });
-    $[21] = t17;
-  } else {
-    t17 = $[21];
-  }
-  let t18;
-  if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
-    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "current-language-and-tag",
-      children: [t16, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-        className: "category-tags-row",
-        role: "group",
-        "aria-label": "category-tags-group",
-        children: [t17, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-          className: "category-current-tag",
-          children: "Programming"
-        })]
-      })]
-    });
-    $[22] = t18;
-  } else {
-    t18 = $[22];
-  }
-  let t19;
-  if ($[23] !== t4) {
-    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-      className: "category-description-container",
-      children: [t4, t5, t14, t18]
-    });
-    $[23] = t4;
-    $[24] = t19;
-  } else {
-    t19 = $[24];
-  }
-  let t20;
-  if ($[25] !== db || $[26] !== showAll) {
-    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-      className: "favourite-categories",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-        className: "one-category-container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-          className: "channels-row",
-          id: "category_cards",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ChannelCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
-            db: db,
-            categoryId: categoryId,
-            showAll: showAll
-          })
         })
-      })
-    });
-    $[25] = db;
-    $[26] = showAll;
-    $[27] = t20;
-  } else {
-    t20 = $[27];
-  }
-  let t21;
-  if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
-    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_4__["default"], {});
-    $[28] = t21;
-  } else {
-    t21 = $[28];
-  }
-  let t22;
-  if ($[29] !== db || $[30] !== t19 || $[31] !== t20) {
-    t22 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        db: db,
-        children: [t19, t20, t21]
-      })
-    });
-    $[29] = db;
-    $[30] = t19;
-    $[31] = t20;
-    $[32] = t22;
-  } else {
-    t22 = $[32];
-  }
-  return t22;
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+    })
+  });
 }
 
 /***/ },
@@ -1191,7 +1032,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function HorizontalMenu({
   db,
-  currentTheme
+  currentTheme,
+  pageId
 }) {
   const showItems = 10;
   let activeId = 0;
@@ -1199,7 +1041,8 @@ function HorizontalMenu({
     const params = (0,_utils_common_js__WEBPACK_IMPORTED_MODULE_1__.getUrlParams)();
     activeId = +params.id || 0;
     console.log({
-      activeId
+      activeId,
+      pageId
     });
     let categories = db.categoriesModel.getAll();
     if (categories.length > showItems) {
@@ -1227,7 +1070,7 @@ function HorizontalMenu({
         className: "horizontal-menu",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-            className: "horizontal-menu-first-button",
+            className: `horizontal-menu-first-button${pageId === 'categories' ? '-active' : ''}`,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
               href: "./categories.html",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
@@ -1279,7 +1122,7 @@ function HorizontalMenuBtn(t0) {
     data,
     activeId
   } = t0;
-  const t1 = `h-menu-btn${activeId === data.id ? "-active" : ""}`;
+  const t1 = `horizontal-menu-button${activeId === data.id ? "-active" : ""}`;
   const t2 = `./category.html?id=${data.id}`;
   let t3;
   if ($[0] !== data.shortName || $[1] !== t2) {
@@ -1343,12 +1186,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Layout(props) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(23);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(24);
   const showFooter = props.showFooter === undefined ? true : props.showFooter;
   const showHorizontalMenu = props.showHorizontalMenu === undefined ? true : props.showHorizontalMenu;
   const {
     db,
-    children
+    children,
+    pageId
   } = props;
   const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_utils_themeManager__WEBPACK_IMPORTED_MODULE_7__.defaultTheme);
   let t0;
@@ -1373,20 +1217,22 @@ function Layout(props) {
     t1 = $[3];
   }
   let t2;
-  if ($[4] !== currentTheme || $[5] !== db || $[6] !== showHorizontalMenu) {
+  if ($[4] !== currentTheme || $[5] !== db || $[6] !== pageId || $[7] !== showHorizontalMenu) {
     t2 = showHorizontalMenu && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_HorizontalMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
       db: db,
-      currentTheme: currentTheme
+      currentTheme: currentTheme,
+      pageId: pageId
     });
     $[4] = currentTheme;
     $[5] = db;
-    $[6] = showHorizontalMenu;
-    $[7] = t2;
+    $[6] = pageId;
+    $[7] = showHorizontalMenu;
+    $[8] = t2;
   } else {
-    t2 = $[7];
+    t2 = $[8];
   }
   let t3;
-  if ($[8] !== children || $[9] !== t2) {
+  if ($[9] !== children || $[10] !== t2) {
     t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
       className: "main-of-the-main",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
@@ -1397,63 +1243,63 @@ function Layout(props) {
         })
       })
     });
-    $[8] = children;
-    $[9] = t2;
-    $[10] = t3;
+    $[9] = children;
+    $[10] = t2;
+    $[11] = t3;
   } else {
-    t3 = $[10];
+    t3 = $[11];
   }
   let t4;
-  if ($[11] !== t1 || $[12] !== t3) {
+  if ($[12] !== t1 || $[13] !== t3) {
     t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "vertical-blocks",
       children: [t1, t3]
     });
-    $[11] = t1;
-    $[12] = t3;
-    $[13] = t4;
+    $[12] = t1;
+    $[13] = t3;
+    $[14] = t4;
   } else {
-    t4 = $[13];
+    t4 = $[14];
   }
   let t5;
-  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
     t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Notification__WEBPACK_IMPORTED_MODULE_6__["default"], {});
-    $[14] = t5;
+    $[15] = t5;
   } else {
-    t5 = $[14];
+    t5 = $[15];
   }
   let t6;
-  if ($[15] !== t4) {
+  if ($[16] !== t4) {
     t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("main", {
       children: [t4, t5]
     });
-    $[15] = t4;
-    $[16] = t6;
+    $[16] = t4;
+    $[17] = t6;
   } else {
-    t6 = $[16];
+    t6 = $[17];
   }
   let t7;
-  if ($[17] !== showFooter) {
+  if ($[18] !== showFooter) {
     t7 = showFooter && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {});
-    $[17] = showFooter;
-    $[18] = t7;
+    $[18] = showFooter;
+    $[19] = t7;
   } else {
-    t7 = $[18];
+    t7 = $[19];
   }
   let t8;
-  if ($[19] !== t0 || $[20] !== t6 || $[21] !== t7) {
+  if ($[20] !== t0 || $[21] !== t6 || $[22] !== t7) {
     t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "page",
         children: [t0, t6, t7]
       })
     });
-    $[19] = t0;
-    $[20] = t6;
-    $[21] = t7;
-    $[22] = t8;
+    $[20] = t0;
+    $[21] = t6;
+    $[22] = t7;
+    $[23] = t8;
   } else {
-    t8 = $[22];
+    t8 = $[23];
   }
   return t8;
 }
@@ -1878,14 +1724,15 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
   searchIcon: 'url(images/search-icon-dark.svg)',
   arrowDown: 'url(images/arrow-down-dark.svg)',
-  followBtn: 'url(images/heart-icon-dark.svg)',
+  // followBtn: 'url(images/heart-icon-dark.svg)',
+  followBtn: 'url(images/plus-icon-dark.svg)',
   subscribeBtn: 'url(images/subscribe-button-dark.svg)'
 }], ["light", {
   mainBg: '#FFFFFF',
   promoBg: 'rgba(134, 129, 153, 0.5)',
   inputBg: 'rgba(170, 168, 181, 0.5)',
   btnBg: 'rgba(170, 168, 181, 0.5)',
-  btnScrollBg: '#AAA8B5',
+  btnScrollBg: '#c6c5cf',
   activeBtnBg: '#AAA8B5',
   bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
   tagBtnBg: '#CECED6',
@@ -1900,7 +1747,8 @@ const themesMap = new Map([["dark", {
   fontPrimary: '#343148',
   // fontSecondary: '#1C173C',
   fontSecondary: '#343148',
-  fontTertiary: '#000000',
+  //fontTertiary: '#000000',
+  fontTertiary: '#343148',
   categoryBgImg: 'url(images/category-bg-light.jpg)',
   categoryBgImgTint: 'rgba(255, 254, 254, 0.1)',
   channelBgImg: 'url(images/channel-bg-light.jpg)',
@@ -1911,7 +1759,8 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
   searchIcon: 'url(images/search-icon-light.svg)',
   arrowDown: 'url(images/arrow-down-light.svg)',
-  followBtn: 'url(images/heart-icon-light.svg)',
+  // followBtn: 'url(images/heart-icon-light.svg)',
+  followBtn: 'url(images/plus-icon-light.svg)',
   subscribeBtn: 'url(images/subscribe-button-light.svg)'
 }]]);
 const updateTheme = themeId => {
@@ -32829,7 +32678,7 @@ if (false) // removed by dead control flow
   \********************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","shortDescription":"Программирование","imagePreviewUrl":"./images/category-image-1.jpg","imageUrl":"./images/category-description-image-1.jpg","audience":12000,"followers":382,"tags":[1,3]},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-2.jpg","imageUrl":"./images/category-description-image-2.jpg","audience":1238,"followers":2798,"tags":[1,9]},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","shortDescription":"Практика","imagePreviewUrl":"./images/category-image-3.jpg","imageUrl":"./images/category-description-image-3.jpg","audience":12003,"followers":2323,"tags":[1,4]},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","shortDescription":"Музыкальные стримы","imagePreviewUrl":"./images/category-image-4.jpg","imageUrl":"./images/category-description-image-4.jpg","audience":12020,"followers":3442,"tags":[1,9]},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12870,"followers":64554,"tags":[1,6]},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","shortDescription":"Чтение вслух","imagePreviewUrl":"./images/category-image-6.jpg","imageUrl":"./images/category-description-image-6.jpg","audience":120,"followers":445,"tags":[1,7]},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","shortDescription":"Стримы по TDU2","imagePreviewUrl":"./images/category-image-7.jpg","imageUrl":"./images/category_description_image-7.jpg","audience":2000,"followers":544,"tags":[5,8]},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","shortDescription":"Стримы по Skyrim","imagePreviewUrl":"./images/category-image-8.jpg","imageUrl":"./images/category_description_image-8.svg","audience":1000,"followers":221,"tags":[5,8]},{"id":9,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","shortDescription":"Обучающие стримы","imagePreviewUrl":"./images/category-image-9.jpg","imageUrl":"./images/category-description-image-9.jpg","audience":1230,"followers":34,"tags":[1,8]},{"id":10,"menuOrder":100,"name":"Танец Tribal","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-10.jpg","imageUrl":"./images/category_description_image-10.svg","audience":1230,"followers":34,"tags":[1,6]},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","shortDescription":"Развлечения","imagePreviewUrl":"./images/category-image-11.jpg","imageUrl":"./images/category-description-image-11.jpg","audience":330,"followers":38,"tags":[7,8]},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","shortDescription":"Спорт-мероприятия","imagePreviewUrl":"./images/category-image-12.jpg","imageUrl":"./images/category-description-image-12.jpg","audience":1230,"followers":34,"tags":[11,13]},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.","shortDescription":"Стримы по играм","imagePreviewUrl":"./images/category-image-13.jpg","imageUrl":"./images/category-description-image-13.jpg","audience":330,"followers":38,"tags":[5,12]},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","shortDescription":"Стримы по хобби","imagePreviewUrl":"./images/category-image-14.jpg","imageUrl":"./images/category-description-image-14.jpg","audience":1230,"followers":34,"tags":[10,12]},{"id":15,"menuOrder":100,"name":"Танец Mandala","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category_description_image-15.svg","audience":12750,"followers":12,"tags":[1,6]},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","shortDescription":"Радио-стримы 24/7","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-16.jpg","audience":1230,"followers":34,"tags":[9,12]},{"id":17,"menuOrder":24,"name":"Другое","shortName":"Другое","description":"Другое - стримы по тематикам, которые не вошли ни в одну категорию стримов.","shortDescription":"Уникальные стримы","imagePreviewUrl":"./images/category-image-17.jpg","imageUrl":"./images/category-description-image-17.jpg","audience":560,"followers":354,"tags":[14,15]},{"id":18,"menuOrder":25,"name":"АСМР","shortName":"АСМР","description":"АСМР «автономная сенсорная меридиональная реакция» - обозначает приятные ощущения, которые возникают в ответ на аудиовизуальные стимулы: звуки природы, шепот, мурчание кота, шелест листьев, плавные движения.","shortDescription":"АСМР-стримы 24/7","imagePreviewUrl":"./images/category-image-18.jpg","imageUrl":"./images/category-description-image-18.jpg","audience":860,"followers":374,"tags":[9,12]},{"id":19,"menuOrder":26,"name":"Пение","shortName":"Пение","description":"Пение - это уникальное вокальное искусство, использующее человеческий голос как инструмент для создания музыки и передачи эмоций.","shortDescription":"Вокальные стримы","imagePreviewUrl":"./images/category-image-19.jpg","imageUrl":"./images/category-description-image-19.jpg","audience":230,"followers":340,"tags":[7,9]},{"id":20,"menuOrder":27,"name":"Искусство","shortName":"Искусство","description":"Стримы по искусству (арт-стримы) - это развивающийся жанр, где процесс создания произведения искусства или обучения ему происходит в режиме реального времени. Это уникальная форма коммуникации в цифровую эпоху, позволяющая художникам делиться своим мастерством, а зрителям — погружаться в творческий процесс.","shortDescription":"Стримы по искусству","imagePreviewUrl":"./images/category-image-20.jpg","imageUrl":"./images/category-description-image-20.jpg","audience":5660,"followers":3,"tags":[7,15]},{"id":21,"menuOrder":28,"name":"Балет","shortName":"Балет","description":"Балет - это высшая форма сценического искусства, объединяющая музыку, хореографию, драматургию и изобразительное искусство.","shortDescription":"Балетные стримы","imagePreviewUrl":"./images/category-image-21.jpg","imageUrl":"./images/category-description-image-21.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":22,"menuOrder":28,"name":"Еда и напитки","shortName":"Кулинария","description":"Кулинария - это искусство и технология приготовления пищи, объединяющая способы обработки продуктов для создания вкусных и питательных блюд.","shortDescription":"Кулинарные стримы","imagePreviewUrl":"./images/category-image-22.jpg","imageUrl":"./images/category-description-image-22.jpg","audience":560,"followers":4,"tags":[10,16]},{"id":23,"menuOrder":28,"name":"Настольные игры","shortName":"Настолки","description":"Стримы по настольным играм — это формат контента, который позволяет зрителям увидеть игровой процесс в реальном времени, оценить компоненты, понять правила и проникнуться атмосферой партии.","shortDescription":"Настольные игры","imagePreviewUrl":"./images/category-image-23.jpg","imageUrl":"./images/category-description-image-23.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":24,"menuOrder":28,"name":"Наука и техника","shortName":"Наука","description":"Стримы по науке и технике трансформируют сложные научные концепции в доступный визуальный контент, позволяя зрителям задавать вопросы в режиме реального времени","shortDescription":"Научные стримы","imagePreviewUrl":"./images/category-image-24.jpg","imageUrl":"./images/category-description-image-24.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":25,"menuOrder":28,"name":"Творчество","shortName":"Творчество","description":"Стримы по творчеству (Creative Streaming) - это формат онлайн-трансляций, где авторы демонстрируют процесс создания своих произведений в реальном времени. Это позволяет зрителям не только увидеть финальный результат, но и погрузиться в закулисье творческого процесса, перенять опыт или просто отдохнуть, наблюдая за созиданием.","shortDescription":"Творческие стримы","imagePreviewUrl":"./images/category-image-25.jpg","imageUrl":"./images/category-description-image-25.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":26,"menuOrder":28,"name":"Шахматы","shortName":"Шахматы","description":"Шахматные стримы — это современный феномен, превративший интеллектуальную, зачастую тихую игру в зрелищное шоу.","shortDescription":"Шахматные стримы","imagePreviewUrl":"./images/category-image-26.jpg","imageUrl":"./images/category-description-image-26.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":27,"menuOrder":28,"name":"Миниатюры","shortName":"Миниатюры","description":"Стримы (прямые трансляции) по созданию миниатюр — это уникальный стык творчества, рукоделия и интерактивного общения. Это не просто демонстрация процесса покраски или сборки, а настоящая «медитация в прямом эфире», собирающая единомышленников.","shortDescription":"Хобби стримы","imagePreviewUrl":"./images/category-image-27.jpg","imageUrl":"./images/category-description-image-27.jpg","audience":560,"followers":4,"tags":[10,12]},{"id":28,"menuOrder":28,"name":"Красота","shortName":"Красота","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о красоте","imagePreviewUrl":"./images/category-image-28.jpg","imageUrl":"./images/category-description-image-28.jpg","audience":560,"followers":4,"tags":[8,13]},{"id":29,"menuOrder":29,"name":"Животные и зоопарки","shortName":"Животные","description":"Стримы в категории «Животные и зоопарки» (Animals & Zoos) — это онлайн-трансляции для демонстрации жизни обитателей зоопарков, приютов и дикой природы в реальном времени.","shortDescription":"Стримы о животных","imagePreviewUrl":"./images/category-image-29.jpg","imageUrl":"./images/category-description-image-29.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":30,"menuOrder":30,"name":"Со-творчество","shortName":"Коллаборация","description":"Коллаборации — это совместные трансляции двух или более блогеров, направленные на обмен аудиторией, создание уникального контента и рост каналов. Это один из самых эффективных инструментов для продвижения, так как позволяет привлечь лояльную аудиторию другого стримера.","shortDescription":"Совместные стримы","imagePreviewUrl":"./images/category-image-30.jpg","imageUrl":"./images/category-description-image-30.jpg","audience":560,"followers":4,"tags":[8,15]},{"id":31,"menuOrder":31,"name":"События","shortName":"События","description":"Прямые трансляции мероприятий — это современный медиаформат, позволяющий авторам (стримерам) транслировать интересные события в реальном времени, взаимодействуя с аудиторией через интернет-пространство.","shortDescription":"Стримы о событиях","imagePreviewUrl":"./images/category-image-31.jpg","imageUrl":"./images/category-description-image-31.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":32,"menuOrder":32,"name":"Телевидение","shortName":"Телевидение","description":"Стриминг обычных телевизионных каналов — это трансляция телевизионного контента (прямой эфир, новости, шоу, фильмы) в режиме реального времени через интернет, позволяющая зрителям смотреть ТВ не на телевизоре с антенной, а на смартфонах, компьютерах и Smart TV.","shortDescription":"ТВ стримы","imagePreviewUrl":"./images/category-image-32.jpg","imageUrl":"./images/category-description-image-32.jpg","audience":560,"followers":4,"tags":[12,17]},{"id":33,"menuOrder":33,"name":"Ремесло","shortName":"Ремесло","description":"Стримы ремесленников — это формат прямых трансляций, в которых мастера показывают процесс создания изделий ручной работы: от лепки керамики и вязания до ковки металла или работы с кожей. Это направление сочетает в себе элементы хобби, обучения (DIY — Do It Yourself) и лайфстайл-контента.","shortDescription":"Стримы о ремеслах","imagePreviewUrl":"./images/category-image-33.jpg","imageUrl":"./images/category-description-image-33.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":34,"menuOrder":34,"name":"В реальной жизни","shortName":"Жизнь","description":"Стримы о жизни — это формат контента, где ведущий транслирует свою повседневность, общается с аудиторией в реальном времени, делится мыслями, переживаниями или занимается обычными делами, создавая иллюзию присутствия и близкого общения. Это жанр, близкий к видеоблогингу, но существующий «здесь и сейчас» без монтажа.","shortDescription":"Стримы о жизни 24/7","imagePreviewUrl":"./images/category-image-34.jpg","imageUrl":"./images/category-description-image-34.jpg","audience":560,"followers":4,"tags":[8,14]},{"id":35,"menuOrder":35,"name":"Фитнес","shortName":"Фитнес","description":"Фитнес-стримы стали популярным форматом, объединяющим тренировки, мотивацию и живое общение. Они позволяют заниматься спортом в режиме реального времени, получая обратную связь от тренера или общаясь с единомышленниками.","shortDescription":"Стримы о фитнесе 24/7","imagePreviewUrl":"./images/category-image-35.jpg","imageUrl":"./images/category-description-image-35.jpg","audience":560,"followers":4,"tags":[8,11]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"name":"Разработка игр и ПО","shortName":"Разработка","description":"Разработка программного обеспечения - инженерная дисциплина, процесс разработки, посредством которого потребности пользователей преобразуются в программный продукт игрового или иного назначения.","shortDescription":"Программирование","imagePreviewUrl":"./images/category-image-1.jpg","imageUrl":"./images/category-description-image-1.jpg","audience":12000,"followers":382,"tags":[1,3]},{"id":2,"menuOrder":2,"name":"Музыка","shortName":"Музыка","description":"Музыка — это универсальный язык искусства, организующий звуки во времени для выражения эмоций, образов и смыслов. Она вдохновляет, лечит, снимает стресс и сопровождает человека повсюду, объединяя культуры и эпохи.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-2.jpg","imageUrl":"./images/category-description-image-2.jpg","audience":1238,"followers":2798,"tags":[1,9]},{"id":3,"menuOrder":100,"name":"Английский язык","shortName":"Английский","description":"Изучение иностранных языков — это ключ к расширению границ мира, развитию когнитивных способностей (памяти, мышления) и повышению личной эффективности.","shortDescription":"Практика","imagePreviewUrl":"./images/category-image-3.jpg","imageUrl":"./images/category-description-image-3.jpg","audience":12003,"followers":2323,"tags":[1,4]},{"id":4,"menuOrder":100,"name":"ДиДжеи","shortName":"ДиДжеи","description":"Музыка диджеев — это непрерывное звуковое полотно, создаваемое путем сведения треков, эффектов и ритмов для управления атмосферой танцпола.","shortDescription":"Музыкальные стримы","imagePreviewUrl":"./images/category-image-4.jpg","imageUrl":"./images/category-description-image-4.jpg","audience":12020,"followers":3442,"tags":[1,9]},{"id":5,"menuOrder":10,"name":"Танцы","shortName":"Танцы","description":"Танцы — это универсальный язык тела, объединяющий ритмичные движения с музыкой для выражения эмоций, самовыражения и получения удовольствия.","shortDescription":"Различные стили","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12870,"followers":64554,"tags":[1,6]},{"id":6,"menuOrder":6,"name":"Чтение и писательство","shortName":"Чтение","description":"Чтение и писательство — это две стороны единого творческого процесса, где чтение служит топливом для ума и источником вдохновения, а письмо — способом упорядочить мысли и создать новую реальность.","shortDescription":"Чтение вслух","imagePreviewUrl":"./images/category-image-6.jpg","imageUrl":"./images/category-description-image-6.jpg","audience":120,"followers":445,"tags":[1,7]},{"id":7,"menuOrder":100,"name":"TDU2","shortName":"TDU2","description":"Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.","shortDescription":"Стримы по TDU2","imagePreviewUrl":"./images/category-image-7.jpg","imageUrl":"./images/category-description-image-7.jpg","audience":2000,"followers":544,"tags":[5,8]},{"id":8,"menuOrder":100,"name":"Skyrim","shortName":"Skyrim","description":"The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.","shortDescription":"Стримы по Skyrim","imagePreviewUrl":"./images/category-image-8.jpg","imageUrl":"./images/category-description-image-8.jpg","audience":1000,"followers":221,"tags":[5,8]},{"id":9,"menuOrder":1,"name":"Обучение","shortName":"Обучение","description":"Обучение — это непрерывный процесс получения знаний, умений и навыков, необходимый для личного развития, адаптации и профессионального успеха.","shortDescription":"Обучающие стримы","imagePreviewUrl":"./images/category-image-9.jpg","imageUrl":"./images/category-description-image-9.jpg","audience":1230,"followers":34,"tags":[1,8]},{"id":10,"menuOrder":100,"name":"Танец Tribal","shortName":"Tribal","description":"Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-10.jpg","imageUrl":"./images/category-description-image-10.jpg","audience":1230,"followers":34,"tags":[1,6]},{"id":11,"menuOrder":7,"name":"Общение","shortName":"Общение","description":"(Just Chatting) на стримах — это формат прямого эфира, ориентированный на живое взаимодействие с аудиторией без привязки к играм и определенной катогории деятельности.","shortDescription":"Развлечения","imagePreviewUrl":"./images/category-image-11.jpg","imageUrl":"./images/category-description-image-11.jpg","audience":330,"followers":38,"tags":[7,8]},{"id":12,"menuOrder":5,"name":"Спорт","shortName":"Спорт","description":"Спорт — это организованная деятельность, направленная на поддержание физической формы, укрепление здоровья и достижение высоких результатов через соревнования.","shortDescription":"Спорт-мероприятия","imagePreviewUrl":"./images/category-image-12.jpg","imageUrl":"./images/category-description-image-12.jpg","audience":1230,"followers":34,"tags":[11,13]},{"id":13,"menuOrder":8,"name":"Игры","shortName":"Игры","description":"Стриминг различных игр — это отличный способ привлечь разнообразную аудиторию, но он требует высокой харизмы, чтобы зрители оставались не ради конкретной игры, а ради личности стримера.","shortDescription":"Стримы по играм","imagePreviewUrl":"./images/category-image-13.jpg","imageUrl":"./images/category-description-image-13.jpg","audience":330,"followers":38,"tags":[5,12]},{"id":14,"menuOrder":9,"name":"Хобби","shortName":"Хобби","description":"Хобби — это не просто способ занять свободное время, а важная часть жизни, которая помогает человеку переключиться с рабочей рутины на творчество или отдых.","shortDescription":"Стримы по хобби","imagePreviewUrl":"./images/category-image-14.jpg","imageUrl":"./images/category-description-image-14.jpg","audience":1230,"followers":34,"tags":[10,12]},{"id":15,"menuOrder":100,"name":"Танец Mandala","shortName":"Mandala","description":"Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.","shortDescription":"Стримы по танцам","imagePreviewUrl":"./images/category-image-15.jpg","imageUrl":"./images/category-description-image-15.jpg","audience":12750,"followers":12,"tags":[1,6]},{"id":16,"menuOrder":3,"name":"Радио","shortName":"Радио","description":"Радио - самое доступное СМИ. До настоящего времени радио остается самым доступным и дешевым средством массовой информации в мире. Радиоволны могут достичь практически любой точки.","shortDescription":"Радио-стримы 24/7","imagePreviewUrl":"./images/category-image-16.jpg","imageUrl":"./images/category-description-image-16.jpg","audience":1230,"followers":34,"tags":[9,12]},{"id":17,"menuOrder":24,"name":"Другое","shortName":"Другое","description":"Другое - стримы по тематикам, которые не вошли ни в одну категорию стримов.","shortDescription":"Уникальные стримы","imagePreviewUrl":"./images/category-image-17.jpg","imageUrl":"./images/category-description-image-17.jpg","audience":560,"followers":354,"tags":[14,15]},{"id":18,"menuOrder":25,"name":"АСМР","shortName":"АСМР","description":"АСМР «автономная сенсорная меридиональная реакция» - обозначает приятные ощущения, которые возникают в ответ на аудиовизуальные стимулы: звуки природы, шепот, мурчание кота, шелест листьев, плавные движения.","shortDescription":"АСМР-стримы 24/7","imagePreviewUrl":"./images/category-image-18.jpg","imageUrl":"./images/category-description-image-18.jpg","audience":860,"followers":374,"tags":[9,12]},{"id":19,"menuOrder":26,"name":"Пение","shortName":"Пение","description":"Пение - это уникальное вокальное искусство, использующее человеческий голос как инструмент для создания музыки и передачи эмоций.","shortDescription":"Вокальные стримы","imagePreviewUrl":"./images/category-image-19.jpg","imageUrl":"./images/category-description-image-19.jpg","audience":230,"followers":340,"tags":[7,9]},{"id":20,"menuOrder":27,"name":"Искусство","shortName":"Искусство","description":"Стримы по искусству (арт-стримы) - это развивающийся жанр, где процесс создания произведения искусства или обучения ему происходит в режиме реального времени. Это уникальная форма коммуникации в цифровую эпоху, позволяющая художникам делиться своим мастерством, а зрителям — погружаться в творческий процесс.","shortDescription":"Стримы по искусству","imagePreviewUrl":"./images/category-image-20.jpg","imageUrl":"./images/category-description-image-20.jpg","audience":5660,"followers":3,"tags":[7,15]},{"id":21,"menuOrder":28,"name":"Балет","shortName":"Балет","description":"Балет - это высшая форма сценического искусства, объединяющая музыку, хореографию, драматургию и изобразительное искусство.","shortDescription":"Балетные стримы","imagePreviewUrl":"./images/category-image-21.jpg","imageUrl":"./images/category-description-image-21.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":22,"menuOrder":28,"name":"Еда и напитки","shortName":"Кулинария","description":"Кулинария - это искусство и технология приготовления пищи, объединяющая способы обработки продуктов для создания вкусных и питательных блюд.","shortDescription":"Кулинарные стримы","imagePreviewUrl":"./images/category-image-22.jpg","imageUrl":"./images/category-description-image-22.jpg","audience":560,"followers":4,"tags":[10,16]},{"id":23,"menuOrder":28,"name":"Настольные игры","shortName":"Настолки","description":"Стримы по настольным играм — это формат контента, который позволяет зрителям увидеть игровой процесс в реальном времени, оценить компоненты, понять правила и проникнуться атмосферой партии.","shortDescription":"Настольные игры","imagePreviewUrl":"./images/category-image-23.jpg","imageUrl":"./images/category-description-image-23.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":24,"menuOrder":28,"name":"Наука и техника","shortName":"Наука","description":"Стримы по науке и технике трансформируют сложные научные концепции в доступный визуальный контент, позволяя зрителям задавать вопросы в режиме реального времени","shortDescription":"Научные стримы","imagePreviewUrl":"./images/category-image-24.jpg","imageUrl":"./images/category-description-image-24.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":25,"menuOrder":28,"name":"Творчество","shortName":"Творчество","description":"Стримы по творчеству (Creative Streaming) - это формат онлайн-трансляций, где авторы демонстрируют процесс создания своих произведений в реальном времени. Это позволяет зрителям не только увидеть финальный результат, но и погрузиться в закулисье творческого процесса, перенять опыт или просто отдохнуть, наблюдая за созиданием.","shortDescription":"Творческие стримы","imagePreviewUrl":"./images/category-image-25.jpg","imageUrl":"./images/category-description-image-25.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":26,"menuOrder":28,"name":"Шахматы","shortName":"Шахматы","description":"Шахматные стримы — это современный феномен, превративший интеллектуальную, зачастую тихую игру в зрелищное шоу.","shortDescription":"Шахматные стримы","imagePreviewUrl":"./images/category-image-26.jpg","imageUrl":"./images/category-description-image-26.jpg","audience":560,"followers":4,"tags":[6,7]},{"id":27,"menuOrder":28,"name":"Миниатюры","shortName":"Миниатюры","description":"Стримы (прямые трансляции) по созданию миниатюр — это уникальный стык творчества, рукоделия и интерактивного общения. Это не просто демонстрация процесса покраски или сборки, а настоящая «медитация в прямом эфире», собирающая единомышленников.","shortDescription":"Хобби стримы","imagePreviewUrl":"./images/category-image-27.jpg","imageUrl":"./images/category-description-image-27.jpg","audience":560,"followers":4,"tags":[10,12]},{"id":28,"menuOrder":28,"name":"Красота","shortName":"Красота","description":"Стримы по красоте и уходу (beauty-стримы) - это формат, где блогеры, визажисты или косметологи демонстрируют макияж, тестируют уходовую косметику, делают обзоры продуктов и общаются с аудиторией.","shortDescription":"Стримы о красоте","imagePreviewUrl":"./images/category-image-28.jpg","imageUrl":"./images/category-description-image-28.jpg","audience":560,"followers":4,"tags":[8,13]},{"id":29,"menuOrder":29,"name":"Животные и зоопарки","shortName":"Животные","description":"Стримы в категории «Животные и зоопарки» (Animals & Zoos) — это онлайн-трансляции для демонстрации жизни обитателей зоопарков, приютов и дикой природы в реальном времени.","shortDescription":"Стримы о животных","imagePreviewUrl":"./images/category-image-29.jpg","imageUrl":"./images/category-description-image-29.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":30,"menuOrder":30,"name":"Со-творчество","shortName":"Коллаборация","description":"Коллаборации — это совместные трансляции двух или более блогеров, направленные на обмен аудиторией, создание уникального контента и рост каналов. Это один из самых эффективных инструментов для продвижения, так как позволяет привлечь лояльную аудиторию другого стримера.","shortDescription":"Совместные стримы","imagePreviewUrl":"./images/category-image-30.jpg","imageUrl":"./images/category-description-image-30.jpg","audience":560,"followers":4,"tags":[8,15]},{"id":31,"menuOrder":31,"name":"События","shortName":"События","description":"Прямые трансляции мероприятий — это современный медиаформат, позволяющий авторам (стримерам) транслировать интересные события в реальном времени, взаимодействуя с аудиторией через интернет-пространство.","shortDescription":"Стримы о событиях","imagePreviewUrl":"./images/category-image-31.jpg","imageUrl":"./images/category-description-image-31.jpg","audience":560,"followers":4,"tags":[8,12]},{"id":32,"menuOrder":32,"name":"Телевидение","shortName":"Телевидение","description":"Стриминг обычных телевизионных каналов — это трансляция телевизионного контента (прямой эфир, новости, шоу, фильмы) в режиме реального времени через интернет, позволяющая зрителям смотреть ТВ не на телевизоре с антенной, а на смартфонах, компьютерах и Smart TV.","shortDescription":"ТВ стримы","imagePreviewUrl":"./images/category-image-32.jpg","imageUrl":"./images/category-description-image-32.jpg","audience":560,"followers":4,"tags":[12,17]},{"id":33,"menuOrder":33,"name":"Ремесло","shortName":"Ремесло","description":"Стримы ремесленников — это формат прямых трансляций, в которых мастера показывают процесс создания изделий ручной работы: от лепки керамики и вязания до ковки металла или работы с кожей. Это направление сочетает в себе элементы хобби, обучения (DIY — Do It Yourself) и лайфстайл-контента.","shortDescription":"Стримы о ремеслах","imagePreviewUrl":"./images/category-image-33.jpg","imageUrl":"./images/category-description-image-33.jpg","audience":560,"followers":4,"tags":[7,15]},{"id":34,"menuOrder":34,"name":"В реальной жизни","shortName":"Жизнь","description":"Стримы о жизни — это формат контента, где ведущий транслирует свою повседневность, общается с аудиторией в реальном времени, делится мыслями, переживаниями или занимается обычными делами, создавая иллюзию присутствия и близкого общения. Это жанр, близкий к видеоблогингу, но существующий «здесь и сейчас» без монтажа.","shortDescription":"Стримы о жизни 24/7","imagePreviewUrl":"./images/category-image-34.jpg","imageUrl":"./images/category-description-image-34.jpg","audience":560,"followers":4,"tags":[8,14]},{"id":35,"menuOrder":35,"name":"Фитнес","shortName":"Фитнес","description":"Фитнес-стримы стали популярным форматом, объединяющим тренировки, мотивацию и живое общение. Они позволяют заниматься спортом в режиме реального времени, получая обратную связь от тренера или общаясь с единомышленниками.","shortDescription":"Стримы о фитнесе 24/7","imagePreviewUrl":"./images/category-image-35.jpg","imageUrl":"./images/category-description-image-35.jpg","audience":560,"followers":4,"tags":[8,11]}]}');
 
 /***/ },
 
