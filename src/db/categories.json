@@ -104,7 +104,7 @@
             "description": "Test Drive Unlimited 2 (TDU2) — культовая аркадная гонка 2011 года с элементами социальной жизни, предлагающая исследовать острова Ибица и Оаху в открытом мире.",
             "shortDescription": "Стримы по TDU2",
             "imagePreviewUrl": "./images/category-image-7.jpg",
-            "imageUrl": "./images/category_description_image-7.jpg",
+            "imageUrl": "./images/category-description-image-7.jpg",
             "audience": 2000,
             "followers": 544,
             "tags": [
@@ -120,7 +120,7 @@
             "description": "The Elder Scrolls V: Skyrim — культовая ролевая игра от Bethesda (2011), предлагающая полную свободу в открытом мире северной провинции Тамриэль. Игроки берут на себя роль Довакина (Драконорожденного), цель которого — спасти мир от драконов.",
             "shortDescription": "Стримы по Skyrim",
             "imagePreviewUrl": "./images/category-image-8.jpg",
-            "imageUrl": "./images/category_description_image-8.svg",
+            "imageUrl": "./images/category-description-image-8.jpg",
             "audience": 1000,
             "followers": 221,
             "tags": [
@@ -152,7 +152,7 @@
             "description": "Трайбл (Tribal) — современное танцевальное направление, сочетающее элементы восточных танцев (беллиданс), фламенко, индийских и цыганских танцев, объединенные в уникальную этническую стилистику.",
             "shortDescription": "Стримы по танцам",
             "imagePreviewUrl": "./images/category-image-10.jpg",
-            "imageUrl": "./images/category_description_image-10.svg",
+            "imageUrl": "./images/category-description-image-10.jpg",
             "audience": 1230,
             "followers": 34,
             "tags": [
@@ -232,7 +232,7 @@
             "description": "Танец Мандала — это глубинная женская энергетическая практика, основанная на сакральной геометрии, объединяющая танец, медитацию и работу с телом.",
             "shortDescription": "Стримы по танцам",
             "imagePreviewUrl": "./images/category-image-15.jpg",
-            "imageUrl": "./images/category_description_image-15.svg",
+            "imageUrl": "./images/category-description-image-15.jpg",
             "audience": 12750,
             "followers": 12,
             "tags": [

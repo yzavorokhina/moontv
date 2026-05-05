@@ -9,10 +9,19 @@ export default function CategoryPage({ db, showAll }) {
     const params = getUrlParams();
     console.log(params.id); // '1'
     
-    const categoryId = +params.id || 1;
+    const categoryId = +params.id;
+
+    if (!categoryId) {
+        window.location.href = 'notFound.html';
+    }
 
     const categoryData = db.categoriesModel.findOneById(categoryId);
     const streamData = db.streamsModel.findOneById(categoryId);
+
+    if (!categoryData || !streamData) {
+        window.location.href = 'notFound.html';
+    }
+
     const channelData = db.channelsModel.findOneById(streamData.channelId);
 
     return (

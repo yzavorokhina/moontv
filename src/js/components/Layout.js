@@ -10,7 +10,7 @@ export default function Layout(props) {
 
     const showFooter = props.showFooter === undefined ? true : props.showFooter;
     const showHorizontalMenu = props.showHorizontalMenu === undefined ? true : props.showHorizontalMenu;
-    const { db, children } = props;
+    const { db, children, pageId } = props;
     const defaultThemeValue = defaultTheme;
     const [currentTheme, setTheme] = useState(defaultThemeValue);
 
@@ -26,7 +26,7 @@ export default function Layout(props) {
                         <div className="horizontal-blocks">
                             <div className="main-screen-block">
                                 {showHorizontalMenu &&
-                                <HorizontalMenu db={db} currentTheme={currentTheme}/>
+                                <HorizontalMenu db={db} currentTheme={currentTheme} pageId={pageId}/>
                                 }
                                 {children}
                             </div>

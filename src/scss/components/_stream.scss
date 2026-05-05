@@ -271,8 +271,8 @@ iframe {
     background-image: var(--theme-follow-button);
     background-repeat: no-repeat;
     background-position: 14px center;   // Icon position
-    background-size: 18px 18px;         // Icon size
-    padding-left: 40px;                 // Space for an icon so that the text doesn't overlap
+    background-size: 22px 22px;         // Icon size
+    padding-left: 42px;                 // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--color-accent-light, #FF6F3A);
     color: var(--theme-font-primary, #FFFFFF);
@@ -300,7 +300,7 @@ iframe {
     background-image: var(--theme-subscribe-button);
     background-repeat: no-repeat;
     background-position: 14px center;   // Icon position
-    background-size: 18px 18px;         // Icon size
+    background-size: 20px 20px;         // Icon size
     padding-left: 40px;                 // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--theme-subscribe-btn-bg, #16122F);

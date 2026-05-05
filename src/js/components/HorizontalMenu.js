@@ -1,7 +1,7 @@
 import HorizontalMenuBtn from './HorizontalMenuBtn';
 import { getUrlParams } from '../utils/common.js';
 
-export default function HorizontalMenu({ db, currentTheme }) {
+export default function HorizontalMenu({ db, currentTheme, pageId }) {
 
     const showItems = 10;
     let activeId = 0;
@@ -9,7 +9,7 @@ export default function HorizontalMenu({ db, currentTheme }) {
     const renderCards = () => {
         const params = getUrlParams();
         activeId = +params.id || 0;
-        console.log({ activeId });
+        console.log({ activeId, pageId });
 
         let categories = db.categoriesModel.getAll();
 
@@ -36,7 +36,7 @@ export default function HorizontalMenu({ db, currentTheme }) {
             <div id="react-horizontal-menu" className="horizontal-menu-row">
                 <nav className="horizontal-menu">
                     <ul>
-                        <li className="horizontal-menu-first-button">
+                        <li className={`horizontal-menu-first-button${pageId==='categories' ? '-active' : ''}`}>
                             <a href="./categories.html">
                                 <img src={`./images/all-icon-for-categories-${currentTheme}.svg`} alt="Все категории" />
                                 Все
@@ -47,7 +47,7 @@ export default function HorizontalMenu({ db, currentTheme }) {
                         ))}
                         <button className="horizontal-menu-scroll"
                             aria-label="Следующая категория горизонтального меню">
-                            <svg className="carousel-arrow" width="30px" height="30px" viewBox="0 0 24 24"
+                            <svg className="horizontal-menu-scroll-arrow" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17.707 9.293l-5-5a.999.999 0 10-1.414 1.414L14.586 9H3a1 1 0 100 2h11.586l-3.293 3.293a.999.999 0 101.414 1.414l5-5a.999.999 0 000-1.414z"

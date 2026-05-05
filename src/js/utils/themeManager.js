@@ -39,7 +39,8 @@ const themesMap = new Map([
     logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
     searchIcon: 'url(images/search-icon-dark.svg)',
     arrowDown: 'url(images/arrow-down-dark.svg)',
-    followBtn: 'url(images/heart-icon-dark.svg)',
+    // followBtn: 'url(images/heart-icon-dark.svg)',
+    followBtn: 'url(images/plus-icon-dark.svg)',
     subscribeBtn: 'url(images/subscribe-button-dark.svg)',
   }],
   ["light", {
@@ -47,7 +48,7 @@ const themesMap = new Map([
     promoBg: 'rgba(134, 129, 153, 0.5)',
     inputBg: 'rgba(170, 168, 181, 0.5)',
     btnBg: 'rgba(170, 168, 181, 0.5)',
-    btnScrollBg: '#AAA8B5',
+    btnScrollBg: '#c6c5cf',
     activeBtnBg: '#AAA8B5',
     bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
     tagBtnBg: '#CECED6',
@@ -64,7 +65,8 @@ const themesMap = new Map([
     fontPrimary: '#343148',
     // fontSecondary: '#1C173C',
     fontSecondary: '#343148',
-    fontTertiary: '#000000',
+    //fontTertiary: '#000000',
+    fontTertiary: '#343148',
 
     categoryBgImg: 'url(images/category-bg-light.jpg)',
     categoryBgImgTint: 'rgba(255, 254, 254, 0.1)',
@@ -76,7 +78,8 @@ const themesMap = new Map([
     logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
     searchIcon: 'url(images/search-icon-light.svg)',
     arrowDown: 'url(images/arrow-down-light.svg)',
-    followBtn: 'url(images/heart-icon-light.svg)',
+    // followBtn: 'url(images/heart-icon-light.svg)',
+    followBtn: 'url(images/plus-icon-light.svg)',
     subscribeBtn: 'url(images/subscribe-button-light.svg)',
   }]
 ]);

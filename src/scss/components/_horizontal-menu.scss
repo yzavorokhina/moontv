@@ -1,12 +1,12 @@
 .horizontal-menu-row {
-    position: relative;
+    position: relative; // for scroll-button 
     z-index: 5;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-shrink: 0;
     width: calc(100vw - 252px);
     height: fit-content;
-    // border: 1px solid rgb(2, 175, 16);
+    //border: 1px solid rgb(2, 175, 16);
     margin-left: 30px;
     margin-bottom: 30px;
     border-top-left-radius: 30px;
@@ -14,25 +14,25 @@
 }
 
 .horizontal-menu {
+    display: flex;
     max-width: fit-content;
     color: var(--theme-font-primary, #FFFFFF);
-    display: inline-block;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    // border: 1px solid magenta;
+    //border: 1px solid magenta;
 }
 
 .horizontal-menu ul {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    // border: 1px solid rgb(197, 89, 0);
+    //border: 1px solid rgb(197, 89, 0);
 }
 
 .horizontal-menu li {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -42,51 +42,70 @@
     border-radius: 30px;
     background-color: var(--theme-btn-bg, #16122F);
     color: var(--theme-font-primary, #FFFFFF);
+    //border: 1px solid rgb(11, 112, 45);
 }
 
 .horizontal-menu li:hover {
     background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
     color: var(--theme-font-secondary, #CECED6);
+    cursor: pointer;
 }
 
-.horizontal-menu li.h-menu-btn-active {
-    background-color: var(--theme-active-btn-bg, #000000);
-    color: white;
-}
-
-.horizontal-menu li:first-child {
-    border: none;
-    font-weight: bold;
-    background-color: var(--theme-accent-bg, #FF6F3A);
-}
-
-.horizontal-menu li:first-child:hover {
-    // transform: scale(1.05);
-    background-color: var(--theme-accent-hover, #E2552D);
+.horizontal-menu li a {
+    display: block; // ссылка занимает всю площадь li
+    width: 138px;
+    height: 40px;
+    text-align: center; // горизонтальное выравнивание
+    line-height: 40px;
+    text-decoration: none;
+    color: var(--theme-font-primary, #FFFFFF);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    //border: 1px solid red;
 }
 
 .horizontal-menu a {
-    color: var(--theme-font-primary, #FFFFFF);
     display: block;
+    color: var(--theme-font-primary, #FFFFFF);
     transition: color 0.3s ease;
+    // transition: all 0.2s ease; /* Плавный переход */
 }
 
-.horizontal-menu li:hover a {
-    color: var(--theme-font-secondary, #CECED6);
+.horizontal-menu-button-active {
+    background-color: var(--theme-active-btn-bg, #000000) !important;
 }
 
-.horizontal-menu-first-button {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: baseline;
+/* first-button: */
+.horizontal-menu-first-button,
+.horizontal-menu-first-button-active {
+    display: block;
     width: 70px !important;
     height: 40px !important;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    color: var(--theme-font-primary, #FFFFFF);
+    font-weight: bold;
 }
 
-// .horizontal-menu-first-button a{
-//     color: white; // цвет не меняется при смене темы
-// }
+.horizontal-menu-first-button a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    text-align: center; // горизонтальное выравнивание
+    line-height: 40px;
+    border-radius: 30px;
+    color: white !important; // цвет не меняется при смене темы
+    transition: all 0.2s ease; // плавный переход
+    background-color: var(--theme-accent-bg, #FF6F3A);
+}
+
+.horizontal-menu-first-button a:hover {
+    //transform: scale(1.05);
+    background-color: var(--theme-accent-hover, #E2552D);
+    text-align: center; // горизонтальное выравнивание
+    line-height: 40px;
+}
 
 .horizontal-menu-first-button img {
     width: 12px;
@@ -95,6 +114,29 @@
     margin-bottom: 3px;
 }
 
+.horizontal-menu-first-button-active a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    text-align: center; // горизонтальное выравнивание
+    line-height: 40px;
+    border-radius: 30px;
+    color: white !important; // цвет не меняется при смене темы
+    transition: all 0.2s ease;
+    background-color: red !important;
+}
+
+.horizontal-menu-first-button-active img {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+/* end of the first-button */
+
+
+/* scroll-button: */
 .horizontal-menu-scroll {
     position: absolute;
     z-index: 10;
@@ -113,30 +155,40 @@
     border-radius: 5px;
     background: var(--theme-button-scroll-bg, #54506B);
     border: none;
-    // border: 1px solid var(--theme-font-secondary, #CECED6);
     text-align: center;
     cursor: pointer;
     z-index: 10;
     transition: background 0.3s ease;
 }
 
+.horizontal-menu-scroll:hover {
+    background-color: var(--theme-button-scroll-hover, #16122F);
+    border: 1px solid var(--theme-font-secondary, #CECED6);
+}
+
+.horizontal-menu-scroll-active {
+    background-color: var(--theme-active-btn-bg, #000000);
+    color: white;
+    font-weight: 600;
+}
+
 .horizontal-menu-scroll-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    display: inline;
+    font-weight: 100 !important;
+    padding-top: 5px;
+    width: 24px;
+    height: 24px;
     color: var(--theme-font-primary, #FFFFFF);
     vertical-align: middle;
     text-align: center;
     right: -15px;
 }
 
-.horizontal-menu-scroll:hover {
-    background-color: var(--theme-button-scroll-hover, #16122F);
-    border: 1px solid var(--theme-font-primary, #FFFFFF);
-}
+/* end of the scroll-button */
 
 @media (max-width: 1280px) {
 

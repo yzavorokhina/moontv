@@ -4,9 +4,11 @@ import GoToBtn from "./GoToBtn";
 
 export default function CategoriesPage({ db }) {
 
+    const pageId = 'categories';
+
     return (
         <>
-            <Layout db={db}>
+            <Layout db={db} pageId={pageId}>
                 <div className="favourite-categories">
                     <div className="arrow-back">
                         <a href="./index.html" className="arrowed">

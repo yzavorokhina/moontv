@@ -45,8 +45,8 @@
     drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
 
     --theme-search-icon: url('../img/search-icon-dark.svg');
-    --theme-arrow-down: url('../img/search-icon-dark.svg');
-    --theme-follow-button: url('../img/search-icon-dark.svg');
-    --theme-subscribe-button: url('../img/search-icon-dark.svg');
-
+    --theme-arrow-down: url('../img/arrow-down-dark.svg');
+    // --theme-follow-button: url('../img/heart-icon-dark.svg');
+    --theme-follow-button: url('../img/plus-icon-dark.svg');
+    --theme-subscribe-button: url('../img/subscribe-button-dark.svg');
 }

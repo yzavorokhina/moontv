@@ -349,15 +349,17 @@ iframe {
     margin: 0;
     line-height: 20px;
     color: var(--theme-font-primary, #FFFFFF);
+    // font-weight: 600;
 }
 
 .promo-stream-info h6:hover {
     max-width: 242px;
     margin: 0;
     line-height: 20px;
-    color: var(--theme-accent-bg, #FF6F3A);
+    color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
     cursor: pointer;
     background-color: transparent;
+    // font-weight: 600;
 }
 
 .promo-stream-info a {
@@ -367,6 +369,7 @@ iframe {
 
 .promo-stream-info a:hover {
     background-color: transparent;
+        color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .promo-stream-cover a:hover {

@@ -42,6 +42,28 @@ main {
     color: #FF6F3A;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.category-description-img-container {
+    background-color: rgba(170, 168, 181, 0.7);
+    width: 186px;
+    height: 260px;
+    border-radius: 5px;
+    opacity: 0;
+    //animation: fadeIn 1s ease-in-out forwards; // normal soft with bright corners
+    //animation: fadeIn 1s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards; // soft borders contrast
+    //animation: fadeIn 1s cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards; // bright borders contrast
+    animation: fadeIn 1s cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards; // "Polaroid" effect in the middle of images
+}
+
 .sorting-buttons-1 {
     display: flex;
     flex-direction: row;
@@ -118,7 +140,7 @@ main {
     margin-right: 10px;
 }
 
-.block-buttons-2 span{
+.block-buttons-2 span {
     color: var(--theme-accent-bg, #FF6F3A);
     font-weight: 500;
     padding-right: 6px;
@@ -220,9 +242,9 @@ main {
     outline: none;
     background-image: var(--theme-follow-button);
     background-repeat: no-repeat;
-    background-position: 14px center;   // Icon position
-    background-size: 20px 20px;         // Icon size
-    padding-left: 40px;                 // Space for an icon so that the text doesn't overlap
+    background-position: 14px center; // Icon position
+    background-size: 22px 22px; // Icon size
+    padding-left: 42px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--theme-accent-bg, #FF6F3A);
     color: var(--theme-font-primary, #FFFFFF);
