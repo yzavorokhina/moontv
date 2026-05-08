@@ -79,11 +79,12 @@
 .horizontal-menu-first-button,
 .horizontal-menu-first-button-active {
     display: block;
-    width: 70px !important;
+    width: 76px !important;
     height: 40px !important;
-    border-radius: 30px;
+    border-radius: 40px;
     border: none;
     text-decoration: none;
+    text-align: center;
     color: var(--theme-font-primary, #FFFFFF);
     font-weight: bold;
 }
@@ -94,7 +95,7 @@
     height: inherit;
     text-align: center; // горизонтальное выравнивание
     line-height: 40px;
-    border-radius: 30px;
+    border-radius: 40px;
     color: white !important; // цвет не меняется при смене темы
     transition: all 0.2s ease; // плавный переход
     background-color: var(--theme-accent-bg, #FF6F3A);
@@ -120,10 +121,10 @@
     height: inherit;
     text-align: center; // горизонтальное выравнивание
     line-height: 40px;
-    border-radius: 30px;
+    border-radius: 40px;
     color: white !important; // цвет не меняется при смене темы
     transition: all 0.2s ease;
-    background-color: red !important;
+    background-color: var(--theme-active-first-btn-bg, #000000);
 }
 
 .horizontal-menu-first-button-active img {

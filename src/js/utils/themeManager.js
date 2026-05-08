@@ -13,6 +13,7 @@ const themesMap = new Map([
     btnBg: '#16122F',
     btnScrollBg: '#54506B',
     activeBtnBg: '#000000',
+    activeFirstBtnBg: '#000000',
     bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
     tagBtnBg: 'rgba(170, 168, 181, 0.7)',
     accentColorBg: '#FF6F3A',
@@ -35,12 +36,13 @@ const themesMap = new Map([
     channelBgImgTint: 'rgba(7, 1, 41, 0.5)',
     notFoundBgImg: 'url(images/404-background-dark.jpg)',
     notFoundBgImgTint: 'rgba(22, 18, 47, 0.8)',
+    
     logoGlow: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))drop-shadow(0 0 25px rgba(255, 255, 255, 0.5))',
     logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
     searchIcon: 'url(images/search-icon-dark.svg)',
     arrowDown: 'url(images/arrow-down-dark.svg)',
-    // followBtn: 'url(images/heart-icon-dark.svg)',
-    followBtn: 'url(images/plus-icon-dark.svg)',
+    // followBtn: 'url(images/follow-icon-dark.svg)',
+    followBtn: 'url(images/follow-icon-dark.png)',
     subscribeBtn: 'url(images/subscribe-button-dark.svg)',
   }],
   ["light", {
@@ -50,6 +52,7 @@ const themesMap = new Map([
     btnBg: 'rgba(170, 168, 181, 0.5)',
     btnScrollBg: '#c6c5cf',
     activeBtnBg: '#AAA8B5',
+    activeFirstBtnBg: '#AAA8B5',
     bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
     tagBtnBg: '#CECED6',
     accentColorBg: '#FF6F3A',
@@ -74,19 +77,20 @@ const themesMap = new Map([
     channelBgImgTint: 'rgba(255, 254, 254, 0.1)',
     notFoundBgImg: 'url(images/404-background-light.jpg)',
     notFoundBgImgTint: 'rgba(180, 176, 192, 0.3)',
+
     logoGlow: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.2))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.2))drop-shadow(0 0 25px rgba(135, 177, 250, 0.5))',
     logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
     searchIcon: 'url(images/search-icon-light.svg)',
     arrowDown: 'url(images/arrow-down-light.svg)',
-    // followBtn: 'url(images/heart-icon-light.svg)',
-    followBtn: 'url(images/plus-icon-light.svg)',
+    // followBtn: 'url(images/follow-icon-light.svg)',
+    followBtn: 'url(images/follow-icon-light.png)',
     subscribeBtn: 'url(images/subscribe-button-light.svg)',
   }]
 ]);
 
 export const updateTheme = (themeId) => {
   // console.log({ updateTheme: currentTheme });
-  const { mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
+  const { mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
     bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
     accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
     fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn } = themesMap.get(themeId);
@@ -94,7 +98,7 @@ export const updateTheme = (themeId) => {
   setLocalStorage(storageKey, themeId);
 
   // console.log({
-  //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
+  //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
   //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
@@ -105,8 +109,8 @@ export const updateTheme = (themeId) => {
   document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
   document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
   document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+  document.documentElement.style.setProperty('--theme-active-first-btn-bg', activeFirstBtnBg);
   document.documentElement.style.setProperty('--theme-subscribe-btn-bg', subscribeBtnBg);
-
 
   document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
   document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);

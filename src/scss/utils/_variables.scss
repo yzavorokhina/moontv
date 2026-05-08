@@ -10,6 +10,7 @@
     --theme-input-bg: #1C173C;                                   
     --theme-btn-bg: #16122F;                                       
     --theme-button-scroll-bg: #54506B;                         
+    --theme-active-first-btn-bg: #000000;                             
     --theme-active-btn-bg: #000000;                             
     --theme-transparent-banner-btn-bg: rgba(52, 49, 72, 0.2);    
     --theme-tag-button-bg: rgba(170, 168, 181, 0.7);            
@@ -46,7 +47,7 @@
 
     --theme-search-icon: url('../img/search-icon-dark.svg');
     --theme-arrow-down: url('../img/arrow-down-dark.svg');
-    // --theme-follow-button: url('../img/heart-icon-dark.svg');
-    --theme-follow-button: url('../img/plus-icon-dark.svg');
+    //--theme-follow-button: url('../img/follow-icon-dark.svg');
+    --theme-follow-button: url('../img/follow-icon-dark.png');
     --theme-subscribe-button: url('../img/subscribe-button-dark.svg');
 }

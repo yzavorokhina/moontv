@@ -14,13 +14,13 @@ export default function CategoryDescription({ categoryData, channelData }) {
                 </p>
                 <div className="statistics-row">
                     <button className="follow-button">Отслеживать</button>
-                    <div className="category-viewers-row" aria-label="category-viewers">
-                        <span>Зрителей:</span>
-                        <span className="category-current-viewers" id="categoryAudience">{categoryData.audience}</span>
-                    </div>
                     <div className="category-followers-row" aria-label="category-followers">
                         <span>Отслеживающих:</span>
                         <span className="category-current-followers" id="categoryFollowers">{categoryData.followers}</span>
+                    </div>
+                    <div className="category-viewers-row" aria-label="category-viewers">
+                        <span>Сейчас смотрят:</span>
+                        <span className="category-current-viewers" id="categoryAudience">{categoryData.audience}</span>
                     </div>
                 </div>
             </div>

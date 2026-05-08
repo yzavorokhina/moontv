@@ -212,6 +212,7 @@ iframe {
 .live-watchers span {
     color: var(--theme-accent-bg, #FF6F3A);
     font-size: 16px;
+    font-weight: 600;
 }
 
 .viewers-count {
@@ -369,7 +370,7 @@ iframe {
 
 .promo-stream-info a:hover {
     background-color: transparent;
-        color: var(--theme-accent-bg, #FF6F3A);
+    color: var(--theme-accent-bg, #FF6F3A);
 }
 
 .promo-stream-cover a:hover {

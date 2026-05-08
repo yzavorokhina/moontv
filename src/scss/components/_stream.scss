@@ -124,13 +124,13 @@ iframe {
 
 .channel-ava {
     border: none;
-    outline: 3px solid var(--color-accent-light, #FF6F3A); 
+    outline: 3px solid var(--color-accent-light, #FF6F3A);
     outline-offset: 10px;
     margin: 15px;
     border-radius: 60px;
 }
 
-.channel-ava img{
+.channel-ava img {
     width: 60px;
     height: 60px;
     border-radius: 60px;
@@ -236,6 +236,7 @@ iframe {
 #current-viewers {
     letter-spacing: 10%;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .age-rating {
@@ -264,15 +265,14 @@ iframe {
     height: 34px;
     padding-left: 24px;
     padding-right: 24px;
-    color: white;
     height: 40px;
     border: none;
     outline: none;
     background-image: var(--theme-follow-button);
     background-repeat: no-repeat;
-    background-position: 14px center;   // Icon position
-    background-size: 22px 22px;         // Icon size
-    padding-left: 42px;                 // Space for an icon so that the text doesn't overlap
+    background-position: 14px center; // Icon position
+    background-size: 20px 20px; // Icon size
+    padding-left: 42px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--color-accent-light, #FF6F3A);
     color: var(--theme-font-primary, #FFFFFF);
@@ -299,9 +299,9 @@ iframe {
     outline: none;
     background-image: var(--theme-subscribe-button);
     background-repeat: no-repeat;
-    background-position: 14px center;   // Icon position
-    background-size: 20px 20px;         // Icon size
-    padding-left: 40px;                 // Space for an icon so that the text doesn't overlap
+    background-position: 14px center; // Icon position
+    background-size: 20px 20px; // Icon size
+    padding-left: 40px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--theme-subscribe-btn-bg, #16122F);
     color: var(--theme-font-primary, #FFFFFF);

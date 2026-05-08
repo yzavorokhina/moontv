@@ -234,7 +234,7 @@ main {
     flex-shrink: 0;
     width: fit-content;
     height: 34px;
-    padding-left: 24px;
+    padding-left: 20px;
     padding-right: 24px;
     color: var(--theme-font-primary, #FFFFFF);
     height: 40px;
@@ -243,8 +243,8 @@ main {
     background-image: var(--theme-follow-button);
     background-repeat: no-repeat;
     background-position: 14px center; // Icon position
-    background-size: 22px 22px; // Icon size
-    padding-left: 42px; // Space for an icon so that the text doesn't overlap
+    background-size: 20px 20px; // Icon size
+    padding-left: 44px; // Space for an icon so that the text doesn't overlap
     border-radius: 40px;
     background-color: var(--theme-accent-bg, #FF6F3A);
     color: var(--theme-font-primary, #FFFFFF);
