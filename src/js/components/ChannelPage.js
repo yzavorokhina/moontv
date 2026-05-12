@@ -26,7 +26,7 @@ export default function ChannelPage({ db, showAll }) {
                         <Stream streamData={streamData} channelData={channelData} />
                     </div>
                     <div className="channel-discription" id="react-channel-description">
-                        <ChannelDescription db={db} streamId={streamId} showAll={showAll} />
+                        <ChannelDescription db={db} streamId={streamId} showAll={showAll} channelData={channelData}/>
                     </div>
                 </div>
 

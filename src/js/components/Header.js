@@ -57,7 +57,7 @@ export default function Header({ setTheme, currentTheme }) {
                         <div className="login">
                             <button className="login-button" type="button" aria-label="Войти в личный кабинет">
                                 <a href="./auth.html">
-                                    <img src={`./images/${currentUser.iconUrl || 'avatar-disabled-dark.svg'}`} alt="personal account" />
+                                    <img src={`./images/${currentUser.iconUrl || 'avatar-disabled-dark.jpg'}`} fetchPriority="high" alt="Личный кабинет" />
                                 </a>
                             </button>
                         </div>

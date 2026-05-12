@@ -38,7 +38,7 @@ export default function HorizontalMenu({ db, currentTheme, pageId }) {
                     <ul>
                         <li className={`horizontal-menu-first-button${pageId==='categories' ? '-active' : ''}`}>
                             <a href="./categories.html">
-                                <img src={`./images/all-icon-for-categories-${currentTheme}.svg`} alt="Все категории" />
+                                <img src={`./images/all-icon-for-categories-${currentTheme}.svg`} fetchPriority="high" alt="Все категории" />
                                 Все
                             </a>
                         </li>

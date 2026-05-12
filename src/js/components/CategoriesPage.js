@@ -9,7 +9,7 @@ export default function CategoriesPage({ db }) {
     return (
         <>
             <Layout db={db} pageId={pageId}>
-                <div className="favourite-categories">
+                <div className="all-categories">
                     <div className="arrow-back">
                         <a href="./index.html" className="arrowed">
                             {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
@@ -22,9 +22,9 @@ export default function CategoriesPage({ db }) {
                             Назад
                         </a>
                     </div>
-                    <div className="category-container">
-                        <div className="category-titles-row">
-                            <div className="category-section-title">
+                    <div className="categories-container">
+                        <div className="categories-titles-row">
+                            <div className="categories-section-title">
                                 <a href="/page" className="link-wrapper">
                                     <h2>
                                         Категории

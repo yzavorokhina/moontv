@@ -700,6 +700,470 @@
                 "English",
                 "Русский"
             ]
+        },
+        {
+            "id": 46,
+            "authorId": 46,
+            "channelId": 9,
+            "categoryId": 9,
+            "title": "Programming the Dawn in Skyrim: reliable, stable, and amazing!",
+            "description": "Только лучшее оружие и броня",
+            "previewUrl": "images/favourite-categories-video-8-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 650,
+            "ageRate": 18,
+            "languages": [
+                "English",
+                "Français"
+            ]
+        },
+        {
+            "id": 47,
+            "authorId": 47,
+            "channelId": 16,
+            "categoryId": 9,
+            "title": "How to fight a dragon if the Dovahkiin has a small vocabulary",
+            "description": "Только лучшее оружие и броня",
+            "previewUrl": "images/favourite-categories-video-8-2.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 442,
+            "ageRate": 18,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 48,
+            "authorId": 48,
+            "channelId": 19,
+            "categoryId": 9,
+            "title": "Learning to admire the unusual locations in the game Skyrim",
+            "description": "Только лучшее оружие и броня",
+            "previewUrl": "images/favourite-categories-video-8-3.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 70,
+            "ageRate": 12,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 49,
+            "authorId": 49,
+            "channelId": 20,
+            "categoryId": 9,
+            "title": "Learn English with characters from the game Skyrim and their phrases",
+            "description": "Только лучшее оружие и броня",
+            "previewUrl": "images/favourite-categories-video-8-4.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 60,
+            "ageRate": 12,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 50,
+            "authorId": 50,
+            "channelId": 10,
+            "categoryId": 9,
+            "title": "Optimizing 3D graphics",
+            "description": "Только лучшее оружие и броня",
+            "previewUrl": "images/favourite-categories-video-8-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 851,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 51,
+            "authorId": 51,
+            "channelId": 15,
+            "categoryId": 16,
+            "title": "24/7 Radio Streams | Relaxing Music",
+            "description": "Music sounds",
+            "previewUrl": "images/favourite-categories-video-2-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 50,
+            "ageRate": 12,
+            "languages": [
+                "No Talking"
+            ]
+        },
+        {
+            "id": 52,
+            "authorId": 52,
+            "channelId": 14,
+            "categoryId": 16,
+            "title": "Radio streams for Holidays",
+            "description": "Music sounds",
+            "previewUrl": "images/favourite-categories-video-2-2.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 502,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "Français"
+            ]
+        },
+        {
+            "id": 53,
+            "authorId": 53,
+            "channelId": 13,
+            "categoryId": 16,
+            "title": "Lofi Hip Hop Beats Radio",
+            "description": "Music sounds",
+            "previewUrl": "images/favourite-categories-video-2-3.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 4340,
+            "ageRate": 18,
+            "languages": [
+                "English",
+                "No Talking"
+            ]
+        },
+        {
+            "id": 54,
+            "authorId": 54,
+            "channelId": 11,
+            "categoryId": 16,
+            "title": "Winter melodies on the Radio",
+            "description": "Music sounds",
+            "previewUrl": "images/favourite-categories-video-2-4.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 780,
+            "ageRate": 12,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 55,
+            "authorId": 55,
+            "channelId": 12,
+            "categoryId": 16,
+            "title": "Morning Tea Radio Cafe",
+            "description": "Music sounds",
+            "previewUrl": "images/favourite-categories-video-2-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 241,
+            "ageRate": 16,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 56,
+            "authorId": 56,
+            "channelId": 26,
+            "categoryId": 12,
+            "title": "Practice your dance moves. Just Dance game",
+            "description": "Dance club",
+            "previewUrl": "images/favourite-categories-video-5-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 780,
+            "ageRate": 16,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 57,
+            "authorId": 57,
+            "channelId": 27,
+            "categoryId": 12,
+            "title": "Langue des signes dans la langue de la danse. C'est simple",
+            "description": "Dance club",
+            "previewUrl": "images/favourite-categories-video-5-2.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 342,
+            "ageRate": 16,
+            "languages": [
+                "English",
+                "Français"
+            ]
+        },
+        {
+            "id": 58,
+            "authorId": 58,
+            "channelId": 28,
+            "categoryId": 12,
+            "title": "Gentle wellness practices for women",
+            "description": "Dance club",
+            "previewUrl": "images/favourite-categories-video-5-3.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 4830,
+            "ageRate": 18,
+            "languages": [
+                "English",
+                "No Talking"
+            ]
+        },
+        {
+            "id": 59,
+            "authorId": 59,
+            "channelId": 29,
+            "categoryId": 12,
+            "title": "Modern Dance - Compete in the game with online dancers",
+            "description": "Dance club",
+            "previewUrl": "images/favourite-categories-video-5-4.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 230,
+            "ageRate": 16,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 60,
+            "authorId": 60,
+            "channelId": 30,
+            "categoryId": 12,
+            "title": "Stretching - Flexibility - Beauty",
+            "description": "Dance club",
+            "previewUrl": "images/favourite-categories-video-5-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 761,
+            "ageRate": 18,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 61,
+            "authorId": 61,
+            "channelId": 6,
+            "categoryId": 11,
+            "title": "Enjoying the process of creating a new exciting game",
+            "description": "Day 1 / creating some simple 2d game",
+            "previewUrl": "images/favourite-categories-video-1-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 2450,
+            "ageRate": 16,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 62,
+            "authorId": 62,
+            "channelId": 7,
+            "categoryId": 11,
+            "title": "Je ne trouve pas de Streams de programmation plus joyeux",
+            "description": "Ressources infinies des bibliothèques",
+            "previewUrl": "images/favourite-categories-video-1-2.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 50,
+            "ageRate": 16,
+            "languages": [
+                "English",
+                "Français"
+            ]
+        },
+        {
+            "id": 63,
+            "authorId": 63,
+            "channelId": 10,
+            "categoryId": 11,
+            "title": "Делаем игру не спеша. Общаемся, обсуждая концепцию и детали игры",
+            "description": "Day 0 / creating game sketches",
+            "previewUrl": "images/favourite-categories-video-1-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 241,
+            "ageRate": 16,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 64,
+            "authorId": 64,
+            "channelId": 16,
+            "categoryId": 11,
+            "title": "It's time to learn how to speak...",
+            "description": "New era of English",
+            "previewUrl": "images/favourite-categories-video-3-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 2641,
+            "ageRate": 16,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 65,
+            "authorId": 65,
+            "channelId": 19,
+            "categoryId": 11,
+            "title": "Basic phrases for communication. More colloquial words",
+            "description": "New era of English",
+            "previewUrl": "images/favourite-categories-video-3-4.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 20,
+            "ageRate": 12,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 66,
+            "authorId": 66,
+            "channelId": 6,
+            "categoryId": 13,
+            "title": "Use your intelligence to create your own game",
+            "description": "Day 1 / creating some simple 2d game",
+            "previewUrl": "images/favourite-categories-video-1-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 2450,
+            "ageRate": 16,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 67,
+            "authorId": 67,
+            "channelId": 26,
+            "categoryId": 13,
+            "title": "Just Dance -> Just watch -> Just Dance",
+            "description": "Dance club",
+            "previewUrl": "images/favourite-categories-video-5-1.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 780,
+            "ageRate": 12,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 68,
+            "authorId": 68,
+            "channelId": 39,
+            "categoryId": 13,
+            "title": "Beautiful cars in the TDU2 game",
+            "description": "DU2 club",
+            "previewUrl": "images/favourite-categories-video-7-4.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 640,
+            "ageRate": 18,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 69,
+            "authorId": 69,
+            "channelId": 37,
+            "categoryId": 13,
+            "title": "Racing with online players. Race for the leader - more fun together",
+            "description": "DU2 club",
+            "previewUrl": "images/favourite-categories-video-7-2.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 32,
+            "ageRate": 18,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 70,
+            "authorId": 70,
+            "channelId": 42,
+            "categoryId": 13,
+            "title": "Defeat all your dragons in game and then...in real life",
+            "description": "Только лучшее оружие и броня",
+            "previewUrl": "images/favourite-categories-video-8-2.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 442,
+            "ageRate": 18,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 71,
+            "authorId": 71,
+            "channelId": 22,
+            "categoryId": 14,
+            "title": "Develop your ear and musical taste whenever you want",
+            "description": "Music mixes",
+            "previewUrl": "images/favourite-categories-video-4-2.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 502,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "Français"
+            ]
+        },
+        {
+            "id": 72,
+            "authorId": 72,
+            "channelId": 24,
+            "categoryId": 14,
+            "title": "Incredible improvisations for the entire space audience",
+            "description": "Music mixes",
+            "previewUrl": "images/favourite-categories-video-4-4.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 780,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "No Talking"
+            ]
+        },
+        {
+            "id": 73,
+            "authorId": 73,
+            "channelId": 28,
+            "categoryId": 14,
+            "title": "Useful dance genres for women: for softening natural femininity",
+            "description": "Dance club",
+            "previewUrl": "images/favourite-categories-video-5-3.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 4830,
+            "ageRate": 18,
+            "languages": [
+                "English",
+                "No Talking"
+            ]
+        },
+        {
+            "id": 74,
+            "authorId": 74,
+            "channelId": 33,
+            "categoryId": 14,
+            "title": "Listen to or read your favorite books day after day",
+            "description": "Books lovers club",
+            "previewUrl": "images/favourite-categories-video-6-3.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 4830,
+            "ageRate": 18,
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "id": 75,
+            "authorId": 75,
+            "channelId": 23,
+            "categoryId": 14,
+            "title": "These are not musical mistakes - these are improvisations",
+            "description": "Music mixes",
+            "previewUrl": "images/favourite-categories-video-4-3.jpg",
+            "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
+            "audience": 4340,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "No Talking"
+            ]
         }
     ]
 }

@@ -1,4 +1,4 @@
-export default function ChannelDescription({ db, streamId }) {
+export default function ChannelDescription({ db, streamId, channelData}) {
 
     return (
         <>
@@ -28,6 +28,7 @@ export default function ChannelDescription({ db, streamId }) {
 
                 <div className="about">
                     <div className="info-about">
+                        <h5> {channelData.name}</h5>
                         <span>На данном канале транслируются записи о разработке игр:</span>
                         <span>От появления концепции до пошаговой реализации онлайн вместе со зрителями</span>
                         <span>Применяются различные подходы разработки, информация от авторов книг данной тематики,</span>

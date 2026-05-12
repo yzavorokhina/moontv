@@ -67,7 +67,7 @@ const themesMap = new Map([
     fontLogo: '#FF6F3A',
     fontPrimary: '#343148',
     // fontSecondary: '#1C173C',
-    fontSecondary: '#343148',
+    fontSecondary: '#5e5d64',
     //fontTertiary: '#000000',
     fontTertiary: '#343148',
 

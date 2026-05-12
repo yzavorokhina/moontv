@@ -63,7 +63,7 @@ export default function ChannelCards({ db, categoryId, showAll }) {
                             <h6>В эфире</h6>
                         </div>
                         <div className="stream-age-rating">
-                            <span className="label-age-rating">12+</span>
+                            <span className="label-age-rating">{data.stream.ageRate}+</span>
                         </div>
                     </div>
                 </div>
