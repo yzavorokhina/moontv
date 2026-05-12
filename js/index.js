@@ -879,7 +879,7 @@ function CategoriesPage(t0) {
   let t2;
   if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
     t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "category-section-title",
+      className: "categories-section-title",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
         href: "/page",
         className: "link-wrapper",
@@ -1002,7 +1002,7 @@ function CategoriesPage(t0) {
   let t9;
   if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
     t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "category-titles-row",
+      className: "categories-titles-row",
       children: [t2, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "sorting-buttons",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
@@ -1054,9 +1054,9 @@ function CategoriesPage(t0) {
   let t12;
   if ($[12] !== t10) {
     t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "favourite-categories",
+      className: "all-categories",
       children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-        className: "category-container",
+        className: "categories-container",
         children: [t9, t10, t11]
       })]
     });
@@ -1337,9 +1337,9 @@ function _temp(data) {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         className: "stream-age-rating",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
           className: "label-age-rating",
-          children: "12+"
+          children: [data.stream.ageRate, "+"]
         })
       })]
     })]
@@ -1692,7 +1692,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ChannelDescription(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(51);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(62);
+  const {
+    channelData
+  } = t0;
   let t1;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
     t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
@@ -1754,26 +1757,56 @@ function ChannelDescription(t0) {
     t2 = $[1];
   }
   let t3;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "info-about",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-        children: "\u041D\u0430 \u0434\u0430\u043D\u043D\u043E\u043C \u043A\u0430\u043D\u0430\u043B\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u0438\u0440\u0443\u044E\u0442\u0441\u044F \u0437\u0430\u043F\u0438\u0441\u0438 \u043E \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438\u0433\u0440:"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-        children: "\u041E\u0442 \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0434\u043E \u043F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0439 \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0432\u043C\u0435\u0441\u0442\u0435 \u0441\u043E \u0437\u0440\u0438\u0442\u0435\u043B\u044F\u043C\u0438"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-        children: "\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438, \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E\u0442 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u043A\u043D\u0438\u0433 \u0434\u0430\u043D\u043D\u043E\u0439 \u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438,"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-        children: "\u0430 \u0442\u0430\u043A\u0436\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0441\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0438\u0434\u0435\u0439 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0418\u0418"
-      })]
+  if ($[2] !== channelData.name) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("h5", {
+      children: [" ", channelData.name]
     });
-    $[2] = t3;
+    $[2] = channelData.name;
+    $[3] = t3;
   } else {
-    t3 = $[2];
+    t3 = $[3];
   }
   let t4;
-  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+  let t5;
+  let t6;
+  let t7;
+  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      children: "\u041D\u0430 \u0434\u0430\u043D\u043D\u043E\u043C \u043A\u0430\u043D\u0430\u043B\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u0438\u0440\u0443\u044E\u0442\u0441\u044F \u0437\u0430\u043F\u0438\u0441\u0438 \u043E \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438\u0433\u0440:"
+    });
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      children: "\u041E\u0442 \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0434\u043E \u043F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0439 \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0432\u043C\u0435\u0441\u0442\u0435 \u0441\u043E \u0437\u0440\u0438\u0442\u0435\u043B\u044F\u043C\u0438"
+    });
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      children: "\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438, \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E\u0442 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u043A\u043D\u0438\u0433 \u0434\u0430\u043D\u043D\u043E\u0439 \u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438,"
+    });
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      children: "\u0430 \u0442\u0430\u043A\u0436\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0441\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0438\u0434\u0435\u0439 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0418\u0418"
+    });
+    $[4] = t4;
+    $[5] = t5;
+    $[6] = t6;
+    $[7] = t7;
+  } else {
+    t4 = $[4];
+    t5 = $[5];
+    t6 = $[6];
+    t7 = $[7];
+  }
+  let t8;
+  if ($[8] !== t3) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "info-about",
+      children: [t3, t4, t5, t6, t7]
+    });
+    $[8] = t3;
+    $[9] = t8;
+  } else {
+    t8 = $[9];
+  }
+  let t9;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
       href: "https://www.youtube.com/@channel-name",
       target: "_blank",
       className: "info-link",
@@ -1796,13 +1829,13 @@ function ChannelDescription(t0) {
         })
       }), "YouTube"]
     });
-    $[3] = t4;
+    $[10] = t9;
   } else {
-    t4 = $[3];
+    t9 = $[10];
   }
-  let t5;
-  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+  let t10;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
       href: "https://github.com/username",
       target: "_blank",
       className: "github-btn info-link",
@@ -1818,385 +1851,401 @@ function ChannelDescription(t0) {
         })
       }), "GitHub"]
     });
-    $[4] = t5;
+    $[11] = t10;
   } else {
-    t5 = $[4];
+    t10 = $[11];
   }
-  let t6;
-  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "about",
-      children: [t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "info-links",
-        children: [t4, t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
-          href: "https://t.me/channel-name",
-          target: "_blank",
-          className: "info-link",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
-            fill: "currentColor",
-            width: "18px",
-            height: "18px",
-            viewBox: "0 0 20 20",
-            xmlns: "http://www.w3.org/2000/svg",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-              d: "M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M14.4415206,6 C14.060553,6.00676048 13.476055,6.20741135 10.663148,7.36249773 C9.67796175,7.7670526 7.70897661,8.60437935 4.75619264,9.87447795 C4.27670659,10.0627254 4.02553067,10.2468857 4.00266485,10.4269588 C3.95876487,10.7726802 4.46291296,10.8803081 5.09723696,11.0838761 C5.61440201,11.2498453 6.31007997,11.4440124 6.67173438,11.4517262 C6.99978943,11.4587234 7.36593635,11.3251987 7.77017511,11.051152 C10.5290529,9.21254679 11.9531977,8.28322679 12.0426094,8.26319203 C12.1056879,8.24905787 12.1930992,8.23128593 12.2523244,8.28325656 C12.3115496,8.33522719 12.3057275,8.43364956 12.299454,8.46005377 C12.2492926,8.67117474 9.65764825,10.998457 9.50849738,11.1513987 L9.43697409,11.2233057 C8.88741493,11.7661123 8.33196049,12.1205055 9.290333,12.7440164 C10.155665,13.3069957 10.6592923,13.6661378 11.5507686,14.2430701 C12.1204738,14.6117635 12.5671299,15.0489784 13.1553348,14.9955401 C13.4259939,14.9709508 13.705567,14.7196888 13.8475521,13.9703127 C14.1831052,12.1993135 14.8426779,8.36209709 14.9951103,6.78087197 C15.0084653,6.64233621 14.9916649,6.46503787 14.9781732,6.38720805 C14.9646815,6.30937823 14.9364876,6.19848702 14.8340164,6.11639754 C14.7126597,6.01917896 14.5253109,5.99867765 14.4415206,6 Z"
-            })
-          }), "Telegram"]
-        })]
+  let t11;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "info-links",
+      children: [t9, t10, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+        href: "https://t.me/channel-name",
+        target: "_blank",
+        className: "info-link",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+          fill: "currentColor",
+          width: "18px",
+          height: "18px",
+          viewBox: "0 0 20 20",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+            d: "M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M14.4415206,6 C14.060553,6.00676048 13.476055,6.20741135 10.663148,7.36249773 C9.67796175,7.7670526 7.70897661,8.60437935 4.75619264,9.87447795 C4.27670659,10.0627254 4.02553067,10.2468857 4.00266485,10.4269588 C3.95876487,10.7726802 4.46291296,10.8803081 5.09723696,11.0838761 C5.61440201,11.2498453 6.31007997,11.4440124 6.67173438,11.4517262 C6.99978943,11.4587234 7.36593635,11.3251987 7.77017511,11.051152 C10.5290529,9.21254679 11.9531977,8.28322679 12.0426094,8.26319203 C12.1056879,8.24905787 12.1930992,8.23128593 12.2523244,8.28325656 C12.3115496,8.33522719 12.3057275,8.43364956 12.299454,8.46005377 C12.2492926,8.67117474 9.65764825,10.998457 9.50849738,11.1513987 L9.43697409,11.2233057 C8.88741493,11.7661123 8.33196049,12.1205055 9.290333,12.7440164 C10.155665,13.3069957 10.6592923,13.6661378 11.5507686,14.2430701 C12.1204738,14.6117635 12.5671299,15.0489784 13.1553348,14.9955401 C13.4259939,14.9709508 13.705567,14.7196888 13.8475521,13.9703127 C14.1831052,12.1993135 14.8426779,8.36209709 14.9951103,6.78087197 C15.0084653,6.64233621 14.9916649,6.46503787 14.9781732,6.38720805 C14.9646815,6.30937823 14.9364876,6.19848702 14.8340164,6.11639754 C14.7126597,6.01917896 14.5253109,5.99867765 14.4415206,6 Z"
+          })
+        }), "Telegram"]
       })]
     });
-    $[5] = t6;
+    $[12] = t11;
   } else {
-    t6 = $[5];
+    t11 = $[12];
   }
-  let t7;
-  let t8;
-  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+  let t12;
+  if ($[13] !== t8) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "about",
+      children: [t8, t11]
+    });
+    $[13] = t8;
+    $[14] = t12;
+  } else {
+    t12 = $[14];
+  }
+  let t13;
+  let t14;
+  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "channel-images",
       src: "./images/channel-image-1.jpg",
       alt: "channel-images"
     });
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
       children: "\u0421\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435:"
     });
-    $[6] = t7;
-    $[7] = t8;
+    $[15] = t13;
+    $[16] = t14;
   } else {
-    t7 = $[6];
-    t8 = $[7];
-  }
-  let t9;
-  if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[8] = t9;
-  } else {
-    t9 = $[8];
-  }
-  let t10;
-  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[9] = t10;
-  } else {
-    t10 = $[9];
-  }
-  let t11;
-  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[10] = t11;
-  } else {
-    t11 = $[10];
-  }
-  let t12;
-  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[11] = t12;
-  } else {
-    t12 = $[11];
-  }
-  let t13;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[12] = t13;
-  } else {
-    t13 = $[12];
-  }
-  let t14;
-  if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[13] = t14;
-  } else {
-    t14 = $[13];
+    t13 = $[15];
+    t14 = $[16];
   }
   let t15;
-  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
     t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[14] = t15;
+    $[17] = t15;
   } else {
-    t15 = $[14];
+    t15 = $[17];
   }
   let t16;
-  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
     t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[15] = t16;
+    $[18] = t16;
   } else {
-    t16 = $[15];
+    t16 = $[18];
   }
   let t17;
-  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
     t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[16] = t17;
+    $[19] = t17;
   } else {
-    t17 = $[16];
+    t17 = $[19];
   }
   let t18;
-  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
-    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "channel-info-block",
-      children: [t7, t8, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-        children: ["\u0421\u0442\u0440\u0438\u043C\u0435\u0440 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 ", t9, "\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435: ", t10, "\u2295 \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0442\u0447\u0438\u043A\u0438 \u0438 \u043F\u0440\u0438\u0451\u043C\u043D\u0438\u043A\u0438, ", t11, "\u2295 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0431\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438  ", t12, "\u0441 \u0432\u044B\u0441\u043E\u043A\u043E\u0442\u043E\u0447\u043D\u044B\u043C\u0438 \u043F\u043E\u0434\u0432\u0438\u0436\u043D\u044B\u043C\u0438 \u0437\u0435\u0440\u043A\u0430\u043B\u0430\u043C\u0438 \u0438 \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438,  ", t13, "\u2295 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B \u0444\u043E\u0442\u043E\u043D\u043E\u0432: \u043E\u0434\u043D\u043E\u0444\u043E\u0442\u043E\u043D\u043D\u044B\u0435 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B (SNSPD), ", t14, "\u2295 \u0440\u0435\u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0442\u043E\u0440\u044B, ", t15, "\u2295 \u0431\u043E\u0440\u0442\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u044B \u0438 \u043C\u043E\u0434\u0435\u043C\u044B: \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043C\u043E\u0434\u0443\u043B\u044C MAScOT \u0438 \u043C\u043E\u0434\u0435\u043C, ", t16, "\u2295 \u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430 \u0434\u043B\u044F \u043A\u0430\u043C\u0435\u0440 \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F ", t17, "\u2295 \u0438, \u0440\u0430\u0437\u0443\u043C\u0435\u0435\u0442\u0441\u044F, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \xAB\u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0443 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B\xBB ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
-      })]
-    });
-    $[17] = t18;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[20] = t18;
   } else {
-    t18 = $[17];
+    t18 = $[20];
   }
   let t19;
+  if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[21] = t19;
+  } else {
+    t19 = $[21];
+  }
   let t20;
-  if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+  if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[22] = t20;
+  } else {
+    t20 = $[22];
+  }
+  let t21;
+  if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[23] = t21;
+  } else {
+    t21 = $[23];
+  }
+  let t22;
+  if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+    t22 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[24] = t22;
+  } else {
+    t22 = $[24];
+  }
+  let t23;
+  if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
+    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[25] = t23;
+  } else {
+    t23 = $[25];
+  }
+  let t24;
+  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t13, t14, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0421\u0442\u0440\u0438\u043C\u0435\u0440 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 ", t15, "\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435: ", t16, "\u2295 \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0442\u0447\u0438\u043A\u0438 \u0438 \u043F\u0440\u0438\u0451\u043C\u043D\u0438\u043A\u0438, ", t17, "\u2295 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0431\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438  ", t18, "\u0441 \u0432\u044B\u0441\u043E\u043A\u043E\u0442\u043E\u0447\u043D\u044B\u043C\u0438 \u043F\u043E\u0434\u0432\u0438\u0436\u043D\u044B\u043C\u0438 \u0437\u0435\u0440\u043A\u0430\u043B\u0430\u043C\u0438 \u0438 \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438,  ", t19, "\u2295 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B \u0444\u043E\u0442\u043E\u043D\u043E\u0432: \u043E\u0434\u043D\u043E\u0444\u043E\u0442\u043E\u043D\u043D\u044B\u0435 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B (SNSPD), ", t20, "\u2295 \u0440\u0435\u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0442\u043E\u0440\u044B, ", t21, "\u2295 \u0431\u043E\u0440\u0442\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u044B \u0438 \u043C\u043E\u0434\u0435\u043C\u044B: \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043C\u043E\u0434\u0443\u043B\u044C MAScOT \u0438 \u043C\u043E\u0434\u0435\u043C, ", t22, "\u2295 \u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430 \u0434\u043B\u044F \u043A\u0430\u043C\u0435\u0440 \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F ", t23, "\u2295 \u0438, \u0440\u0430\u0437\u0443\u043C\u0435\u0435\u0442\u0441\u044F, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \xAB\u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0443 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B\xBB ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+      })]
+    });
+    $[26] = t24;
+  } else {
+    t24 = $[26];
+  }
+  let t25;
+  let t26;
+  if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "channel-images",
       src: "./images/channel-image-2.jpg",
       alt: "channel-images"
     });
-    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
       children: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B \u0434\u043B\u044F \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430"
     });
-    $[18] = t19;
-    $[19] = t20;
+    $[27] = t25;
+    $[28] = t26;
   } else {
-    t19 = $[18];
-    t20 = $[19];
-  }
-  let t21;
-  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
-    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[20] = t21;
-  } else {
-    t21 = $[20];
-  }
-  let t22;
-  if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
-    t22 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[21] = t22;
-  } else {
-    t22 = $[21];
-  }
-  let t23;
-  if ($[22] === Symbol.for("react.memo_cache_sentinel")) {
-    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[22] = t23;
-  } else {
-    t23 = $[22];
-  }
-  let t24;
-  if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
-    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[23] = t24;
-  } else {
-    t24 = $[23];
-  }
-  let t25;
-  if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
-    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[24] = t25;
-  } else {
-    t25 = $[24];
-  }
-  let t26;
-  if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
-    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[25] = t26;
-  } else {
-    t26 = $[25];
+    t25 = $[27];
+    t26 = $[28];
   }
   let t27;
-  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
     t27 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[26] = t27;
+    $[29] = t27;
   } else {
-    t27 = $[26];
+    t27 = $[29];
   }
   let t28;
-  if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
     t28 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[27] = t28;
+    $[30] = t28;
   } else {
-    t28 = $[27];
+    t28 = $[30];
   }
   let t29;
-  if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[31] === Symbol.for("react.memo_cache_sentinel")) {
     t29 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[28] = t29;
+    $[31] = t29;
   } else {
-    t29 = $[28];
+    t29 = $[31];
   }
   let t30;
-  if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[32] === Symbol.for("react.memo_cache_sentinel")) {
     t30 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[29] = t30;
+    $[32] = t30;
   } else {
-    t30 = $[29];
+    t30 = $[32];
   }
   let t31;
-  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[33] === Symbol.for("react.memo_cache_sentinel")) {
     t31 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[30] = t31;
+    $[33] = t31;
   } else {
-    t31 = $[30];
+    t31 = $[33];
   }
   let t32;
-  if ($[31] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[34] === Symbol.for("react.memo_cache_sentinel")) {
     t32 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[31] = t32;
+    $[34] = t32;
   } else {
-    t32 = $[31];
+    t32 = $[34];
   }
   let t33;
-  if ($[32] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[35] === Symbol.for("react.memo_cache_sentinel")) {
     t33 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[32] = t33;
+    $[35] = t33;
   } else {
-    t33 = $[32];
+    t33 = $[35];
   }
   let t34;
-  if ($[33] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[36] === Symbol.for("react.memo_cache_sentinel")) {
     t34 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[33] = t34;
+    $[36] = t34;
   } else {
-    t34 = $[33];
+    t34 = $[36];
   }
   let t35;
-  if ($[34] === Symbol.for("react.memo_cache_sentinel")) {
-    t35 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "channel-info-block",
-      children: [t19, t20, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-        children: ["\u0415\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u043D\u0430\u043B\u0430\u0434\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442 \u0441\u043E \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u043E\u043C", t21, "\u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u0435\u043A\u0442\u044B \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430", t22, "\u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F ", t23, "\u043F\u0440\u0438\u0441\u044B\u043B\u0430\u0439\u0442\u0435 \u0441\u0432\u043E\u0438 \u043F\u0440\u043E\u0431\u043D\u044B\u0435 \u043F\u0440\u043E\u0435\u043A\u0442\u044B ", t24, "\u0432 \u043D\u0435\u0439\u0440\u043E\u0441\u0435\u0442\u0435\u0432\u0443\u044E \u041B\u0421 \u0434\u043B\u044F \u043E\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u044F: ", t25, "neuro_activate: 0xAB3F9C2D@moon ", t26, "\u2248 \u2248 \u2248 ", t27, "\u0434\u043B\u044F \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u0430\u0446\u0438\u0438 \u0432 \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u0435:", t28, "metaverse:moonland:zone3:x128y45z200", t29, "vrchat:worldID:portal7", t30, "\u2248 \u2248 \u2248 ", t31, "\u043E\u0442 \u0432\u0430\u0448\u0435\u0433\u043E AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043D\u0442\u0430 \u043A AI-\u0430\u0433\u0435\u043D\u0442\u0443 \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u0430:", t32, "\"primary_ai\": \"neuro_activate_ai_core_v3.2\", ", t33, "\"chat_bot\": \"neuro_activate_chat_bot_v1.8\",", t34, "\"wss://chat.neuro_activate.ai/ws\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\"preferred_modes\": [\"text\", \"voice\", \"vr_gesture\"]"]
-      })]
-    });
-    $[34] = t35;
+  if ($[37] === Symbol.for("react.memo_cache_sentinel")) {
+    t35 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[37] = t35;
   } else {
-    t35 = $[34];
+    t35 = $[37];
   }
   let t36;
+  if ($[38] === Symbol.for("react.memo_cache_sentinel")) {
+    t36 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[38] = t36;
+  } else {
+    t36 = $[38];
+  }
   let t37;
-  if ($[35] === Symbol.for("react.memo_cache_sentinel")) {
-    t36 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+  if ($[39] === Symbol.for("react.memo_cache_sentinel")) {
+    t37 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[39] = t37;
+  } else {
+    t37 = $[39];
+  }
+  let t38;
+  if ($[40] === Symbol.for("react.memo_cache_sentinel")) {
+    t38 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[40] = t38;
+  } else {
+    t38 = $[40];
+  }
+  let t39;
+  if ($[41] === Symbol.for("react.memo_cache_sentinel")) {
+    t39 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[41] = t39;
+  } else {
+    t39 = $[41];
+  }
+  let t40;
+  if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
+    t40 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[42] = t40;
+  } else {
+    t40 = $[42];
+  }
+  let t41;
+  if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
+    t41 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t25, t26, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0415\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u043D\u0430\u043B\u0430\u0434\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442 \u0441\u043E \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u043E\u043C", t27, "\u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u0435\u043A\u0442\u044B \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430", t28, "\u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F ", t29, "\u043F\u0440\u0438\u0441\u044B\u043B\u0430\u0439\u0442\u0435 \u0441\u0432\u043E\u0438 \u043F\u0440\u043E\u0431\u043D\u044B\u0435 \u043F\u0440\u043E\u0435\u043A\u0442\u044B ", t30, "\u0432 \u043D\u0435\u0439\u0440\u043E\u0441\u0435\u0442\u0435\u0432\u0443\u044E \u041B\u0421 \u0434\u043B\u044F \u043E\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u044F: ", t31, "neuro_activate: 0xAB3F9C2D@moon ", t32, "\u2248 \u2248 \u2248 ", t33, "\u0434\u043B\u044F \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u0430\u0446\u0438\u0438 \u0432 \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u0435:", t34, "metaverse:moonland:zone3:x128y45z200", t35, "vrchat:worldID:portal7", t36, "\u2248 \u2248 \u2248 ", t37, "\u043E\u0442 \u0432\u0430\u0448\u0435\u0433\u043E AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043D\u0442\u0430 \u043A AI-\u0430\u0433\u0435\u043D\u0442\u0443 \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u0430:", t38, "\"primary_ai\": \"neuro_activate_ai_core_v3.2\", ", t39, "\"chat_bot\": \"neuro_activate_chat_bot_v1.8\",", t40, "\"wss://chat.neuro_activate.ai/ws\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\"preferred_modes\": [\"text\", \"voice\", \"vr_gesture\"]"]
+      })]
+    });
+    $[43] = t41;
+  } else {
+    t41 = $[43];
+  }
+  let t42;
+  let t43;
+  if ($[44] === Symbol.for("react.memo_cache_sentinel")) {
+    t42 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "channel-images",
       src: "./images/channel-image-3.jpg",
       alt: "channel-images"
     });
-    t37 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+    t43 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
       children: "LunaBoard"
     });
-    $[35] = t36;
-    $[36] = t37;
+    $[44] = t42;
+    $[45] = t43;
   } else {
-    t36 = $[35];
-    t37 = $[36];
-  }
-  let t38;
-  if ($[37] === Symbol.for("react.memo_cache_sentinel")) {
-    t38 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[37] = t38;
-  } else {
-    t38 = $[37];
-  }
-  let t39;
-  if ($[38] === Symbol.for("react.memo_cache_sentinel")) {
-    t39 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[38] = t39;
-  } else {
-    t39 = $[38];
-  }
-  let t40;
-  if ($[39] === Symbol.for("react.memo_cache_sentinel")) {
-    t40 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[39] = t40;
-  } else {
-    t40 = $[39];
-  }
-  let t41;
-  if ($[40] === Symbol.for("react.memo_cache_sentinel")) {
-    t41 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[40] = t41;
-  } else {
-    t41 = $[40];
-  }
-  let t42;
-  if ($[41] === Symbol.for("react.memo_cache_sentinel")) {
-    t42 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[41] = t42;
-  } else {
-    t42 = $[41];
-  }
-  let t43;
-  if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
-    t43 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[42] = t43;
-  } else {
-    t43 = $[42];
+    t42 = $[44];
+    t43 = $[45];
   }
   let t44;
-  if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[46] === Symbol.for("react.memo_cache_sentinel")) {
     t44 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[43] = t44;
+    $[46] = t44;
   } else {
-    t44 = $[43];
+    t44 = $[46];
   }
   let t45;
-  if ($[44] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[47] === Symbol.for("react.memo_cache_sentinel")) {
     t45 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[44] = t45;
+    $[47] = t45;
   } else {
-    t45 = $[44];
+    t45 = $[47];
   }
   let t46;
-  if ($[45] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[48] === Symbol.for("react.memo_cache_sentinel")) {
     t46 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[45] = t46;
+    $[48] = t46;
   } else {
-    t46 = $[45];
+    t46 = $[48];
   }
   let t47;
-  if ($[46] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[49] === Symbol.for("react.memo_cache_sentinel")) {
     t47 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[46] = t47;
+    $[49] = t47;
   } else {
-    t47 = $[46];
+    t47 = $[49];
   }
   let t48;
-  if ($[47] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[50] === Symbol.for("react.memo_cache_sentinel")) {
     t48 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[47] = t48;
+    $[50] = t48;
   } else {
-    t48 = $[47];
+    t48 = $[50];
   }
   let t49;
-  if ($[48] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[51] === Symbol.for("react.memo_cache_sentinel")) {
     t49 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[48] = t49;
+    $[51] = t49;
   } else {
-    t49 = $[48];
+    t49 = $[51];
   }
   let t50;
-  if ($[49] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[52] === Symbol.for("react.memo_cache_sentinel")) {
     t50 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
-    $[49] = t50;
+    $[52] = t50;
   } else {
-    t50 = $[49];
+    t50 = $[52];
   }
   let t51;
-  if ($[50] === Symbol.for("react.memo_cache_sentinel")) {
-    t51 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+  if ($[53] === Symbol.for("react.memo_cache_sentinel")) {
+    t51 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[53] = t51;
+  } else {
+    t51 = $[53];
+  }
+  let t52;
+  if ($[54] === Symbol.for("react.memo_cache_sentinel")) {
+    t52 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[54] = t52;
+  } else {
+    t52 = $[54];
+  }
+  let t53;
+  if ($[55] === Symbol.for("react.memo_cache_sentinel")) {
+    t53 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[55] = t53;
+  } else {
+    t53 = $[55];
+  }
+  let t54;
+  if ($[56] === Symbol.for("react.memo_cache_sentinel")) {
+    t54 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[56] = t54;
+  } else {
+    t54 = $[56];
+  }
+  let t55;
+  if ($[57] === Symbol.for("react.memo_cache_sentinel")) {
+    t55 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[57] = t55;
+  } else {
+    t55 = $[57];
+  }
+  let t56;
+  if ($[58] === Symbol.for("react.memo_cache_sentinel")) {
+    t56 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    $[58] = t56;
+  } else {
+    t56 = $[58];
+  }
+  let t57;
+  if ($[59] === Symbol.for("react.memo_cache_sentinel")) {
+    t57 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "info-blocks-row",
+      children: [t24, t41, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "channel-info-block",
+        children: [t42, t43, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+          children: ["\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u043E\u0432\u043E\u0439 \u0438\u0433\u0440\u0435 ", t44, "\u043D\u0430 \u043E\u0431\u0449\u0435\u043C \u0445\u043E\u043B\u0441\u0442\u0435 \u0434\u043B\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB", t45, "\u043B\u0443\u0447\u0448\u0438\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0431\u0443\u0434\u0443\u0442 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u044B ", t46, "\u2297 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u043C \u043F\u0438\u0433\u043C\u0435\u043D\u0442\u043E\u043C, ", t47, "\u2297 \u0444\u0435\u0440\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u044B\u043C\u0438 \u0447\u0430\u0441\u0442\u0438\u0446\u0430\u043C\u0438, ", t48, "\u2297 \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u0438, ", t49, "\u2297 \u0437\u0432\u0435\u0437\u0434\u043D\u044B\u043C \u0441\u0432\u0435\u0442\u043E\u043C ", t50, "\u2297 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043C\u043D\u043E\u0433\u043E\u043C\u0435\u0440\u043D\u044B\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 ", t51, "\u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u044B \u0440\u043E\u0431\u043E\u0442\u043E\u043C \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u044E \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB \u043F\u043E\u0434 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u043C \u043A\u0443\u043F\u043E\u043B\u043E\u043C ", t52, "\u0441 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0432\u0438\u0434\u043E\u043C \u043D\u0430 \u0417\u0435\u043C\u043B\u044E ", t53, "\u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443:  CosmoArtHub.space  \u2248 ", t54, "CosmoArtHub-gallery.cosmos ", t55, "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432 \u043C\u043E\u0436\u043D\u043E  ", t56, "\u0432 \u043D\u0430\u0448\u0435\u0439 \u0433\u0440\u0443\u043F\u043F\u0435 \"LunaBoard\"  ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+        })]
+      })]
+    });
+    $[59] = t57;
+  } else {
+    t57 = $[59];
+  }
+  let t58;
+  if ($[60] !== t12) {
+    t58 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "channel-discription",
-        children: [t2, t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          className: "info-blocks-row",
-          children: [t18, t35, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-            className: "channel-info-block",
-            children: [t36, t37, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-              children: ["\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u043E\u0432\u043E\u0439 \u0438\u0433\u0440\u0435 ", t38, "\u043D\u0430 \u043E\u0431\u0449\u0435\u043C \u0445\u043E\u043B\u0441\u0442\u0435 \u0434\u043B\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB", t39, "\u043B\u0443\u0447\u0448\u0438\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0431\u0443\u0434\u0443\u0442 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u044B ", t40, "\u2297 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u043C \u043F\u0438\u0433\u043C\u0435\u043D\u0442\u043E\u043C, ", t41, "\u2297 \u0444\u0435\u0440\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u044B\u043C\u0438 \u0447\u0430\u0441\u0442\u0438\u0446\u0430\u043C\u0438, ", t42, "\u2297 \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u0438, ", t43, "\u2297 \u0437\u0432\u0435\u0437\u0434\u043D\u044B\u043C \u0441\u0432\u0435\u0442\u043E\u043C ", t44, "\u2297 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043C\u043D\u043E\u0433\u043E\u043C\u0435\u0440\u043D\u044B\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 ", t45, "\u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u044B \u0440\u043E\u0431\u043E\u0442\u043E\u043C \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u044E \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB \u043F\u043E\u0434 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u043C \u043A\u0443\u043F\u043E\u043B\u043E\u043C ", t46, "\u0441 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0432\u0438\u0434\u043E\u043C \u043D\u0430 \u0417\u0435\u043C\u043B\u044E ", t47, "\u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443:  CosmoArtHub.space  \u2248 ", t48, "CosmoArtHub-gallery.cosmos ", t49, "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432 \u043C\u043E\u0436\u043D\u043E  ", t50, "\u0432 \u043D\u0430\u0448\u0435\u0439 \u0433\u0440\u0443\u043F\u043F\u0435 \"LunaBoard\"  ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
-            })]
-          })]
-        })]
+        children: [t2, t12, t57]
       })
     });
-    $[50] = t51;
+    $[60] = t12;
+    $[61] = t58;
   } else {
-    t51 = $[50];
+    t58 = $[61];
   }
-  return t51;
+  return t58;
 }
 
 /***/ },
@@ -2233,7 +2282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ChannelPage(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(32);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
   const {
     db,
     showAll
@@ -2281,38 +2330,40 @@ function ChannelPage(t0) {
     t3 = $[7];
   }
   let t4;
-  if ($[8] !== db || $[9] !== showAll) {
+  if ($[8] !== channelData || $[9] !== db || $[10] !== showAll) {
     t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
       className: "channel-discription",
       id: "react-channel-description",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelDescription__WEBPACK_IMPORTED_MODULE_3__["default"], {
         db: db,
         streamId: streamId,
-        showAll: showAll
+        showAll: showAll,
+        channelData: channelData
       })
     });
-    $[8] = db;
-    $[9] = showAll;
-    $[10] = t4;
+    $[8] = channelData;
+    $[9] = db;
+    $[10] = showAll;
+    $[11] = t4;
   } else {
-    t4 = $[10];
+    t4 = $[11];
   }
   let t5;
-  if ($[11] !== t3 || $[12] !== t4) {
+  if ($[12] !== t3 || $[13] !== t4) {
     t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
       className: "main-screen-block",
       children: [t3, t4]
     });
-    $[11] = t3;
-    $[12] = t4;
-    $[13] = t5;
+    $[12] = t3;
+    $[13] = t4;
+    $[14] = t5;
   } else {
-    t5 = $[13];
+    t5 = $[14];
   }
   let t6;
   let t7;
   let t8;
-  if ($[14] !== db || $[15] !== showAll) {
+  if ($[15] !== db || $[16] !== showAll) {
     t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
       db: db,
       title: "\u0412\u0441\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438",
@@ -2331,52 +2382,52 @@ function ChannelPage(t0) {
       channelId: 10,
       showAll: showAll
     });
-    $[14] = db;
-    $[15] = showAll;
-    $[16] = t6;
-    $[17] = t7;
-    $[18] = t8;
+    $[15] = db;
+    $[16] = showAll;
+    $[17] = t6;
+    $[18] = t7;
+    $[19] = t8;
   } else {
-    t6 = $[16];
-    t7 = $[17];
-    t8 = $[18];
+    t6 = $[17];
+    t7 = $[18];
+    t8 = $[19];
   }
   let t9;
-  if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
     t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_6__["default"], {});
-    $[19] = t9;
+    $[20] = t9;
   } else {
-    t9 = $[19];
+    t9 = $[20];
   }
   let t10;
-  if ($[20] !== db || $[21] !== showAll) {
+  if ($[21] !== db || $[22] !== showAll) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCategories__WEBPACK_IMPORTED_MODULE_7__["default"], {
       db: db,
       channelId: 10,
       showAll: showAll
     });
-    $[20] = db;
-    $[21] = showAll;
-    $[22] = t10;
+    $[21] = db;
+    $[22] = showAll;
+    $[23] = t10;
   } else {
-    t10 = $[22];
+    t10 = $[23];
   }
   let t11;
-  if ($[23] !== t10 || $[24] !== t6 || $[25] !== t7 || $[26] !== t8) {
+  if ($[24] !== t10 || $[25] !== t6 || $[26] !== t7 || $[27] !== t8) {
     t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
       className: "favourite-categories",
       children: [t6, t7, t8, t9, t10]
     });
-    $[23] = t10;
-    $[24] = t6;
-    $[25] = t7;
-    $[26] = t8;
-    $[27] = t11;
+    $[24] = t10;
+    $[25] = t6;
+    $[26] = t7;
+    $[27] = t8;
+    $[28] = t11;
   } else {
-    t11 = $[27];
+    t11 = $[28];
   }
   let t12;
-  if ($[28] !== db || $[29] !== t11 || $[30] !== t5) {
+  if ($[29] !== db || $[30] !== t11 || $[31] !== t5) {
     t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
         db: db,
@@ -2385,12 +2436,12 @@ function ChannelPage(t0) {
         children: [t5, t11]
       })
     });
-    $[28] = db;
-    $[29] = t11;
-    $[30] = t5;
-    $[31] = t12;
+    $[29] = db;
+    $[30] = t11;
+    $[31] = t5;
+    $[32] = t12;
   } else {
-    t12 = $[31];
+    t12 = $[32];
   }
   return t12;
 }
@@ -3877,7 +3928,7 @@ function Header(t0) {
   } else {
     t17 = $[22];
   }
-  const t18 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.svg"}`;
+  const t18 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.jpg"}`;
   let t19;
   if ($[23] !== t18) {
     t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
@@ -3890,7 +3941,8 @@ function Header(t0) {
           href: "./auth.html",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
             src: t18,
-            alt: "personal account"
+            fetchPriority: "high",
+            alt: "\u041B\u0438\u0447\u043D\u044B\u0439 \u043A\u0430\u0431\u0438\u043D\u0435\u0442"
           })
         })
       })
@@ -4229,6 +4281,7 @@ function HorizontalMenu({
               href: "./categories.html",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
                 src: `./images/all-icon-for-categories-${currentTheme}.svg`,
+                fetchPriority: "high",
                 alt: "\u0412\u0441\u0435 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438"
               }), "\u0412\u0441\u0435"]
             })
@@ -4869,8 +4922,9 @@ function SearchForm(t0) {
             className: "notification-round-button",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
               src: t3,
+              fetchPriority: "high",
               className: "button-icon",
-              alt: "Search"
+              alt: "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F"
             })
           })]
         })
@@ -5512,6 +5566,7 @@ const themesMap = new Map([["dark", {
   btnBg: '#16122F',
   btnScrollBg: '#54506B',
   activeBtnBg: '#000000',
+  activeFirstBtnBg: '#000000',
   bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
   tagBtnBg: 'rgba(170, 168, 181, 0.7)',
   accentColorBg: '#FF6F3A',
@@ -5535,8 +5590,8 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
   searchIcon: 'url(images/search-icon-dark.svg)',
   arrowDown: 'url(images/arrow-down-dark.svg)',
-  // followBtn: 'url(images/heart-icon-dark.svg)',
-  followBtn: 'url(images/plus-icon-dark.svg)',
+  // followBtn: 'url(images/follow-icon-dark.svg)',
+  followBtn: 'url(images/follow-icon-dark.png)',
   subscribeBtn: 'url(images/subscribe-button-dark.svg)'
 }], ["light", {
   mainBg: '#FFFFFF',
@@ -5545,6 +5600,7 @@ const themesMap = new Map([["dark", {
   btnBg: 'rgba(170, 168, 181, 0.5)',
   btnScrollBg: '#c6c5cf',
   activeBtnBg: '#AAA8B5',
+  activeFirstBtnBg: '#AAA8B5',
   bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
   tagBtnBg: '#CECED6',
   accentColorBg: '#FF6F3A',
@@ -5557,7 +5613,7 @@ const themesMap = new Map([["dark", {
   fontLogo: '#FF6F3A',
   fontPrimary: '#343148',
   // fontSecondary: '#1C173C',
-  fontSecondary: '#343148',
+  fontSecondary: '#5e5d64',
   //fontTertiary: '#000000',
   fontTertiary: '#343148',
   categoryBgImg: 'url(images/category-bg-light.jpg)',
@@ -5570,8 +5626,8 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
   searchIcon: 'url(images/search-icon-light.svg)',
   arrowDown: 'url(images/arrow-down-light.svg)',
-  // followBtn: 'url(images/heart-icon-light.svg)',
-  followBtn: 'url(images/plus-icon-light.svg)',
+  // followBtn: 'url(images/follow-icon-light.svg)',
+  followBtn: 'url(images/follow-icon-light.png)',
   subscribeBtn: 'url(images/subscribe-button-light.svg)'
 }]]);
 const updateTheme = themeId => {
@@ -5582,6 +5638,7 @@ const updateTheme = themeId => {
     inputBg,
     btnBg,
     btnScrollBg,
+    activeFirstBtnBg,
     activeBtnBg,
     bannerBtnBg,
     btnsHover,
@@ -5612,7 +5669,7 @@ const updateTheme = themeId => {
   (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
 
   // console.log({
-  //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
+  //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
   //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
@@ -5623,6 +5680,7 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
   document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
   document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+  document.documentElement.style.setProperty('--theme-active-first-btn-bg', activeFirstBtnBg);
   document.documentElement.style.setProperty('--theme-subscribe-btn-bg', subscribeBtnBg);
   document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
   document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);
@@ -64892,7 +64950,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner-stream-prewiev-5.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1,2,9]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner-stream-prewiev-5.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1,2,9]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
 
 /***/ },
 
@@ -64914,7 +64972,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"clips":[{"id":1,"authorId":31,"chann
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":20,"promo":true,"title":"Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне","description":"День 4 / Основная концепция","previewUrl":"images/banner-stream-prewiev-1.jpg","videoUrl":"https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":20,"promo":true,"title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/banner-stream-prewiev-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":20,"promo":true,"title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/banner-stream-prewiev-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":20,"promo":true,"title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/banner-stream-prewiev-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":20,"promo":true,"title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","previewUrl":"images/banner-stream-prewiev-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/favourite-categories-video-1-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/favourite-categories-video-1-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/favourite-categories-video-1-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/favourite-categories-video-3-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/favourite-categories-video-3-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/favourite-categories-video-3-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/favourite-categories-video-3-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/favourite-categories-video-3-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/favourite-categories-video-5-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/favourite-categories-video-5-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/favourite-categories-video-5-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":20,"promo":true,"title":"Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне","description":"День 4 / Основная концепция","previewUrl":"images/banner-stream-prewiev-1.jpg","videoUrl":"https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":20,"promo":true,"title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/banner-stream-prewiev-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":20,"promo":true,"title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/banner-stream-prewiev-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":20,"promo":true,"title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/banner-stream-prewiev-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":20,"promo":true,"title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","previewUrl":"images/banner-stream-prewiev-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/favourite-categories-video-1-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/favourite-categories-video-1-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/favourite-categories-video-1-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/favourite-categories-video-3-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/favourite-categories-video-3-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/favourite-categories-video-3-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/favourite-categories-video-3-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/favourite-categories-video-3-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/favourite-categories-video-5-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/favourite-categories-video-5-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/favourite-categories-video-5-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]},{"id":46,"authorId":46,"channelId":9,"categoryId":9,"title":"Programming the Dawn in Skyrim: reliable, stable, and amazing!","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":18,"languages":["English","Français"]},{"id":47,"authorId":47,"channelId":16,"categoryId":9,"title":"How to fight a dragon if the Dovahkiin has a small vocabulary","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":18,"languages":["English"]},{"id":48,"authorId":48,"channelId":19,"categoryId":9,"title":"Learning to admire the unusual locations in the game Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":49,"authorId":49,"channelId":20,"categoryId":9,"title":"Learn English with characters from the game Skyrim and their phrases","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English"]},{"id":50,"authorId":50,"channelId":10,"categoryId":9,"title":"Optimizing 3D graphics","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]},{"id":51,"authorId":51,"channelId":15,"categoryId":16,"title":"24/7 Radio Streams | Relaxing Music","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["No Talking"]},{"id":52,"authorId":52,"channelId":14,"categoryId":16,"title":"Radio streams for Holidays","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":53,"authorId":53,"channelId":13,"categoryId":16,"title":"Lofi Hip Hop Beats Radio","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":18,"languages":["English","No Talking"]},{"id":54,"authorId":54,"channelId":11,"categoryId":16,"title":"Winter melodies on the Radio","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English"]},{"id":55,"authorId":55,"channelId":12,"categoryId":16,"title":"Morning Tea Radio Cafe","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":56,"authorId":56,"channelId":26,"categoryId":12,"title":"Practice your dance moves. Just Dance game","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":57,"authorId":57,"channelId":27,"categoryId":12,"title":"Langue des signes dans la langue de la danse. C\'est simple","description":"Dance club","previewUrl":"images/favourite-categories-video-5-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":58,"authorId":58,"channelId":28,"categoryId":12,"title":"Gentle wellness practices for women","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":59,"authorId":59,"channelId":29,"categoryId":12,"title":"Modern Dance - Compete in the game with online dancers","description":"Dance club","previewUrl":"images/favourite-categories-video-5-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":60,"authorId":60,"channelId":30,"categoryId":12,"title":"Stretching - Flexibility - Beauty","description":"Dance club","previewUrl":"images/favourite-categories-video-5-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":61,"authorId":61,"channelId":6,"categoryId":11,"title":"Enjoying the process of creating a new exciting game","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":62,"authorId":62,"channelId":7,"categoryId":11,"title":"Je ne trouve pas de Streams de programmation plus joyeux","description":"Ressources infinies des bibliothèques","previewUrl":"images/favourite-categories-video-1-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":63,"authorId":63,"channelId":10,"categoryId":11,"title":"Делаем игру не спеша. Общаемся, обсуждая концепцию и детали игры","description":"Day 0 / creating game sketches","previewUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":64,"authorId":64,"channelId":16,"categoryId":11,"title":"It\'s time to learn how to speak...","description":"New era of English","previewUrl":"images/favourite-categories-video-3-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":65,"authorId":65,"channelId":19,"categoryId":11,"title":"Basic phrases for communication. More colloquial words","description":"New era of English","previewUrl":"images/favourite-categories-video-3-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":66,"authorId":66,"channelId":6,"categoryId":13,"title":"Use your intelligence to create your own game","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":67,"authorId":67,"channelId":26,"categoryId":13,"title":"Just Dance -> Just watch -> Just Dance","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English"]},{"id":68,"authorId":68,"channelId":39,"categoryId":13,"title":"Beautiful cars in the TDU2 game","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":18,"languages":["English"]},{"id":69,"authorId":69,"channelId":37,"categoryId":13,"title":"Racing with online players. Race for the leader - more fun together","description":"DU2 club","previewUrl":"images/favourite-categories-video-7-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":18,"languages":["English"]},{"id":70,"authorId":70,"channelId":42,"categoryId":13,"title":"Defeat all your dragons in game and then...in real life","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":18,"languages":["English"]},{"id":71,"authorId":71,"channelId":22,"categoryId":14,"title":"Develop your ear and musical taste whenever you want","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":72,"authorId":72,"channelId":24,"categoryId":14,"title":"Incredible improvisations for the entire space audience","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":73,"authorId":73,"channelId":28,"categoryId":14,"title":"Useful dance genres for women: for softening natural femininity","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":74,"authorId":74,"channelId":33,"categoryId":14,"title":"Listen to or read your favorite books day after day","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":75,"authorId":75,"channelId":23,"categoryId":14,"title":"These are not musical mistakes - these are improvisations","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]}]}');
 
 /***/ },
 

@@ -210,6 +210,7 @@ const themesMap = new Map([["dark", {
   btnBg: '#16122F',
   btnScrollBg: '#54506B',
   activeBtnBg: '#000000',
+  activeFirstBtnBg: '#000000',
   bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
   tagBtnBg: 'rgba(170, 168, 181, 0.7)',
   accentColorBg: '#FF6F3A',
@@ -233,8 +234,8 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))drop-shadow(0 0 25px rgba(255, 255, 255, 0.9))',
   searchIcon: 'url(images/search-icon-dark.svg)',
   arrowDown: 'url(images/arrow-down-dark.svg)',
-  // followBtn: 'url(images/heart-icon-dark.svg)',
-  followBtn: 'url(images/plus-icon-dark.svg)',
+  // followBtn: 'url(images/follow-icon-dark.svg)',
+  followBtn: 'url(images/follow-icon-dark.png)',
   subscribeBtn: 'url(images/subscribe-button-dark.svg)'
 }], ["light", {
   mainBg: '#FFFFFF',
@@ -243,6 +244,7 @@ const themesMap = new Map([["dark", {
   btnBg: 'rgba(170, 168, 181, 0.5)',
   btnScrollBg: '#c6c5cf',
   activeBtnBg: '#AAA8B5',
+  activeFirstBtnBg: '#AAA8B5',
   bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
   tagBtnBg: '#CECED6',
   accentColorBg: '#FF6F3A',
@@ -255,7 +257,7 @@ const themesMap = new Map([["dark", {
   fontLogo: '#FF6F3A',
   fontPrimary: '#343148',
   // fontSecondary: '#1C173C',
-  fontSecondary: '#343148',
+  fontSecondary: '#5e5d64',
   //fontTertiary: '#000000',
   fontTertiary: '#343148',
   categoryBgImg: 'url(images/category-bg-light.jpg)',
@@ -268,8 +270,8 @@ const themesMap = new Map([["dark", {
   logoGlowHover: 'drop-shadow(1px 1px 0 rgba(135, 177, 250, 0.5))drop-shadow(-1px -1px 0 rgba(135, 177, 250, 0.5))drop-shadow(0 0 25px rgba(135, 177, 250, 0.9))',
   searchIcon: 'url(images/search-icon-light.svg)',
   arrowDown: 'url(images/arrow-down-light.svg)',
-  // followBtn: 'url(images/heart-icon-light.svg)',
-  followBtn: 'url(images/plus-icon-light.svg)',
+  // followBtn: 'url(images/follow-icon-light.svg)',
+  followBtn: 'url(images/follow-icon-light.png)',
   subscribeBtn: 'url(images/subscribe-button-light.svg)'
 }]]);
 const updateTheme = themeId => {
@@ -280,6 +282,7 @@ const updateTheme = themeId => {
     inputBg,
     btnBg,
     btnScrollBg,
+    activeFirstBtnBg,
     activeBtnBg,
     bannerBtnBg,
     btnsHover,
@@ -310,7 +313,7 @@ const updateTheme = themeId => {
   (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
 
   // console.log({
-  //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeBtnBg,
+  //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
   //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
@@ -321,6 +324,7 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-btn-bg', btnBg);
   document.documentElement.style.setProperty('--theme-button-scroll-bg', btnScrollBg);
   document.documentElement.style.setProperty('--theme-active-btn-bg', activeBtnBg);
+  document.documentElement.style.setProperty('--theme-active-first-btn-bg', activeFirstBtnBg);
   document.documentElement.style.setProperty('--theme-subscribe-btn-bg', subscribeBtnBg);
   document.documentElement.style.setProperty('--theme-transparent-banner-btn-bg', bannerBtnBg);
   document.documentElement.style.setProperty('--theme-btns-hover', btnsHover);

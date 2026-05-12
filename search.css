@@ -11896,6 +11896,7 @@ a {
   --theme-input-bg: #1C173C;
   --theme-btn-bg: #16122F;
   --theme-button-scroll-bg: #54506B;
+  --theme-active-first-btn-bg: #000000;
   --theme-active-btn-bg: #000000;
   --theme-transparent-banner-btn-bg: rgba(52, 49, 72, 0.2);
   --theme-tag-button-bg: rgba(170, 168, 181, 0.7);
@@ -11926,7 +11927,7 @@ a {
   drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
   --theme-search-icon: url(images/search-icon-dark.svg);
   --theme-arrow-down: url(images/arrow-down-dark.svg);
-  --theme-follow-button: url(images/plus-icon-dark.svg);
+  --theme-follow-button: url(images/follow-icon-dark.png);
   --theme-subscribe-button: url(images/subscribe-button-dark.svg);
 }
 
@@ -12267,11 +12268,12 @@ h4 {
 .horizontal-menu-first-button,
 .horizontal-menu-first-button-active {
   display: block;
-  width: 70px !important;
+  width: 76px !important;
   height: 40px !important;
-  border-radius: 30px;
+  border-radius: 40px;
   border: none;
   text-decoration: none;
+  text-align: center;
   color: var(--theme-font-primary, #FFFFFF);
   font-weight: bold;
 }
@@ -12282,7 +12284,7 @@ h4 {
   height: inherit;
   text-align: center;
   line-height: 40px;
-  border-radius: 30px;
+  border-radius: 40px;
   color: white !important;
   transition: all 0.2s ease;
   background-color: var(--theme-accent-bg, #FF6F3A);
@@ -12307,10 +12309,10 @@ h4 {
   height: inherit;
   text-align: center;
   line-height: 40px;
-  border-radius: 30px;
+  border-radius: 40px;
   color: white !important;
   transition: all 0.2s ease;
-  background-color: red !important;
+  background-color: var(--theme-active-first-btn-bg, #000000);
 }
 
 .horizontal-menu-first-button-active img {
@@ -12902,6 +12904,7 @@ iframe {
 .live-watchers span {
   color: var(--theme-accent-bg, #FF6F3A);
   font-size: 16px;
+  font-weight: 600;
 }
 
 .viewers-count {
@@ -25854,6 +25857,7 @@ a {
   --theme-input-bg: #1C173C;
   --theme-btn-bg: #16122F;
   --theme-button-scroll-bg: #54506B;
+  --theme-active-first-btn-bg: #000000;
   --theme-active-btn-bg: #000000;
   --theme-transparent-banner-btn-bg: rgba(52, 49, 72, 0.2);
   --theme-tag-button-bg: rgba(170, 168, 181, 0.7);
@@ -25884,7 +25888,7 @@ a {
   drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
   --theme-search-icon: url(images/search-icon-dark.svg);
   --theme-arrow-down: url(images/arrow-down-dark.svg);
-  --theme-follow-button: url(images/plus-icon-dark.svg);
+  --theme-follow-button: url(images/follow-icon-dark.png);
   --theme-subscribe-button: url(images/subscribe-button-dark.svg);
 }
 
@@ -26225,11 +26229,12 @@ h4 {
 .horizontal-menu-first-button,
 .horizontal-menu-first-button-active {
   display: block;
-  width: 70px !important;
+  width: 76px !important;
   height: 40px !important;
-  border-radius: 30px;
+  border-radius: 40px;
   border: none;
   text-decoration: none;
+  text-align: center;
   color: var(--theme-font-primary, #FFFFFF);
   font-weight: bold;
 }
@@ -26240,7 +26245,7 @@ h4 {
   height: inherit;
   text-align: center;
   line-height: 40px;
-  border-radius: 30px;
+  border-radius: 40px;
   color: white !important;
   transition: all 0.2s ease;
   background-color: var(--theme-accent-bg, #FF6F3A);
@@ -26265,10 +26270,10 @@ h4 {
   height: inherit;
   text-align: center;
   line-height: 40px;
-  border-radius: 30px;
+  border-radius: 40px;
   color: white !important;
   transition: all 0.2s ease;
-  background-color: red !important;
+  background-color: var(--theme-active-first-btn-bg, #000000);
 }
 
 .horizontal-menu-first-button-active img {
@@ -26860,6 +26865,7 @@ iframe {
 .live-watchers span {
   color: var(--theme-accent-bg, #FF6F3A);
   font-size: 16px;
+  font-weight: 600;
 }
 
 .viewers-count {
