@@ -92,6 +92,7 @@
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 6px;
+    margin-left: 16px;
     font-size: 20px;
     font-weight: bold;
     color: var(--theme-font-secondary, #CECED6);
@@ -156,9 +157,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-shrink: 0;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     // max-width: 1630px;
     height: 300px;

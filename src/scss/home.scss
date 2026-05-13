@@ -34,7 +34,7 @@ footer {
 
 .main-of-the-main {
     display: flex;
-    width: calc(100vw - 222px);
+    width: calc(100% - 222px);
 }
 
 .horizontal-blocks {
@@ -47,5 +47,5 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: calc(100vw - 222px);
+    width: calc(100% - 22px);
 }

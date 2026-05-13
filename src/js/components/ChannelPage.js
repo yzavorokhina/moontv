@@ -21,14 +21,8 @@ export default function ChannelPage({ db, showAll }) {
     return (
         <>
             <Layout db={db} showFooter={false} showHorizontalMenu={false}>
-                <div className="main-screen-block">
-                    <div className="main-banner" id="react-stream">
-                        <Stream streamData={streamData} channelData={channelData} />
-                    </div>
-                    <div className="channel-discription" id="react-channel-description">
-                        <ChannelDescription db={db} streamId={streamId} showAll={showAll} channelData={channelData}/>
-                    </div>
-                </div>
+                <Stream streamData={streamData} channelData={channelData} />
+                <ChannelDescription db={db} streamId={streamId} showAll={showAll} channelData={channelData}/>
 
                 <div className="favourite-categories">
                     <ChannelCardsLine db={db} title={'Все трансляции'} categoryId={categoryId} showAll={showAll} />

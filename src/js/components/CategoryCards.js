@@ -14,6 +14,21 @@ export default function CategoryCards({ db }) {
         } else {
             categories = db.categoriesModel.findMany(cat => cat.tags.indexOf(tagId) > -1);
         }
+
+console.log({categories, beforeSort:true}); 
+
+        categories = categories.sort((a, b) => {
+            if (a.menuOrder > b.menuOrder) {
+                return 1;
+            }
+            if (a.menuOrder < b.menuOrder) {
+                return -1;
+            }
+            return 0;
+        });
+
+console.log({categories, afterSort:true}); 
+
         return categories.map(category => {
             let tags = db.tagsModel.findByIds(category.tags);
 
@@ -30,7 +45,7 @@ export default function CategoryCards({ db }) {
                 <div key={data.category.id} className="category-card ">
                     <a href={data.categoryUrl} className="category-link-wrapper">
                         <img className="category-img-top" src={data.category.imagePreviewUrl}
-                            alt="foto" />
+                            alt="category image" />
                     </a>
                     <div className="card-body">
                         <a href={data.categoryUrl} className="category-link-wrapper">
