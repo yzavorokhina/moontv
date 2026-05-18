@@ -23802,9 +23802,9 @@ a {
   --theme-font-tertiary: rgba(170, 168, 181, 0.7);
   --theme-category-bg-image: url(images/category-bg-dark.jpg);
   --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
-  --theme-channel-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-channel-bg-image: url(images/channel-bg-dark.png);
   --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
-  --theme-notFound-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-notFound-bg-image: url(images/404-background-dark.jpg);
   --theme-notFound-bg-image-tint: rgba(22, 18, 47, 0.8);
   --theme-logo-glow:
   drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))
@@ -23835,6 +23835,9 @@ h4 {
 }
 
 .site-header {
+  position: fixed;
+  left: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23843,6 +23846,7 @@ h4 {
   height: 100px;
   margin: 0 auto;
   padding: 0 50px;
+  background-color: var(--theme-main-bg, #343148);
 }
 
 /*-------------------------------------------------------------*/
@@ -24280,15 +24284,16 @@ h4 {
   flex-shrink: 0;
   width: 222px;
   height: auto;
-  background-color: var(--theme-btn-bg, #16122F);
-  border-top-right-radius: 20px;
+  z-index: 100;
 }
 
 .vertical-menu {
+  position: fixed;
   flex: 1;
   width: 222px;
+  height: 100%;
   margin: 0;
-  background-color: var(--theme-btn-bg, #16122F);
+  background-color: var(--theme-button-scroll-hover, #16122F);
   border-top-right-radius: 20px;
 }
 

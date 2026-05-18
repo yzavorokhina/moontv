@@ -11913,9 +11913,9 @@ a {
   --theme-font-tertiary: rgba(170, 168, 181, 0.7);
   --theme-category-bg-image: url(images/category-bg-dark.jpg);
   --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
-  --theme-channel-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-channel-bg-image: url(images/channel-bg-dark.png);
   --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
-  --theme-notFound-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-notFound-bg-image: url(images/404-background-dark.jpg);
   --theme-notFound-bg-image-tint: rgba(22, 18, 47, 0.8);
   --theme-logo-glow:
   drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))
@@ -11946,6 +11946,9 @@ h4 {
 }
 
 .site-header {
+  position: fixed;
+  left: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11954,6 +11957,7 @@ h4 {
   height: 100px;
   margin: 0 auto;
   padding: 0 50px;
+  background-color: var(--theme-main-bg, #343148);
 }
 
 /*-------------------------------------------------------------*/
@@ -12391,15 +12395,16 @@ h4 {
   flex-shrink: 0;
   width: 222px;
   height: auto;
-  background-color: var(--theme-btn-bg, #16122F);
-  border-top-right-radius: 20px;
+  z-index: 100;
 }
 
 .vertical-menu {
+  position: fixed;
   flex: 1;
   width: 222px;
+  height: 100%;
   margin: 0;
-  background-color: var(--theme-btn-bg, #16122F);
+  background-color: var(--theme-button-scroll-hover, #16122F);
   border-top-right-radius: 20px;
 }
 
@@ -24543,9 +24548,9 @@ a {
   --theme-font-tertiary: rgba(170, 168, 181, 0.7);
   --theme-category-bg-image: url(images/category-bg-dark.jpg);
   --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
-  --theme-channel-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-channel-bg-image: url(images/channel-bg-dark.png);
   --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
-  --theme-notFound-bg-image: url(images/channel-bg-dark.jpg);
+  --theme-notFound-bg-image: url(images/404-background-dark.jpg);
   --theme-notFound-bg-image-tint: rgba(22, 18, 47, 0.8);
   --theme-logo-glow:
   drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))
@@ -24576,6 +24581,9 @@ h4 {
 }
 
 .site-header {
+  position: fixed;
+  left: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24584,6 +24592,7 @@ h4 {
   height: 100px;
   margin: 0 auto;
   padding: 0 50px;
+  background-color: var(--theme-main-bg, #343148);
 }
 
 /*-------------------------------------------------------------*/
@@ -25021,15 +25030,16 @@ h4 {
   flex-shrink: 0;
   width: 222px;
   height: auto;
-  background-color: var(--theme-btn-bg, #16122F);
-  border-top-right-radius: 20px;
+  z-index: 100;
 }
 
 .vertical-menu {
+  position: fixed;
   flex: 1;
   width: 222px;
+  height: 100%;
   margin: 0;
-  background-color: var(--theme-btn-bg, #16122F);
+  background-color: var(--theme-button-scroll-hover, #16122F);
   border-top-right-radius: 20px;
 }
 
@@ -25265,7 +25275,7 @@ h4 {
   display: flex;
   flex-shrink: 0;
   width: 100%;
-  height: 222px;
+  height: 140px;
   margin: 0 auto;
   background-color: var(--theme-btn-bg, #16122F);
   background-image: url(images/footer_foto.svg);
@@ -25310,12 +25320,12 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 222px;
+  height: 140px;
   flex-grow: 1;
   width: 100%;
   width: calc(100vw - 222px);
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   color: var(--theme-font-secondary, #CECED6);
 }
 
@@ -25326,10 +25336,11 @@ h4 {
   justify-content: center;
   width: 100%;
   max-width: 220px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: var(--theme-font-secondary, #CECED6);
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 100;
   letter-spacing: 0.1;
 }
 
@@ -25342,6 +25353,7 @@ h4 {
   margin-bottom: -36px;
   padding-bottom: 0;
   font-size: 12px;
+  font-weight: 100;
   letter-spacing: 0.5;
 }
 
@@ -25350,6 +25362,7 @@ h4 {
   padding-bottom: 0;
   color: var(--theme-font-secondary, #CECED6);
   font-size: 12px;
+  font-weight: 100;
   letter-spacing: 0.5;
 }
 
@@ -26375,6 +26388,7 @@ iframe {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-top: 16px;
   margin-bottom: 22px;
 }
 
@@ -26418,10 +26432,9 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  flex-grow: 1;
   height: 174px;
   width: calc(100vw - 222px);
+  margin-bottom: 90px;
 }
 
 .show-all-button {
@@ -26560,6 +26573,8 @@ main {
   flex-shrink: 0;
   flex-grow: 1;
   width: 100%;
+  top: 100px;
+  position: relative;
 }
 
 footer {
