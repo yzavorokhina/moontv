@@ -333,6 +333,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-top: 16px;
     margin-bottom: 22px;
 }
 
@@ -377,11 +378,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    flex-grow: 1;
+    // flex-shrink: 0;
+    // flex-grow: 1;
     height: 174px;
     width: calc(100vw - 222px);
     // max-width: 1698px;
+    margin-bottom: 90px;
 }
 
 .show-all-button {

@@ -7,15 +7,17 @@
     flex-shrink: 0;
     width: 222px;
     height: auto;
-    background-color: var(--theme-btn-bg, #16122F);
-    border-top-right-radius: 20px;
+    z-index: 100;
 }
 
 .vertical-menu {
+    position: fixed;
     flex: 1;
     width: 222px;
+    height: 100%;
     margin: 0;
-    background-color: var(--theme-btn-bg, #16122F);
+    //background-color: var(--theme-btn-bg, #16122F);
+    background-color: var(--theme-button-scroll-hover, #16122F);
     border-top-right-radius: 20px;
 }
 
