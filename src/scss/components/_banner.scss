@@ -109,12 +109,13 @@ iframe {
 
 // end ------вариант адаптивный под разные устройства------
 
-
 .banner-stream-info {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    // align-items: center;
+    // justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-shrink: 0;
 }
 

@@ -7,4 +7,4 @@ import ChannelPage from './components/ChannelPage.js';
 
 const body = document.getElementById('react-body');
 const rootBody = createRoot(body);
-rootBody.render(<ChannelPage db={db} showAll={true} />);
+rootBody.render(<ChannelPage db={db} showAll={false} />);

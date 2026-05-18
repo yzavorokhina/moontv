@@ -1,11 +1,13 @@
 
-export default function ClipsCards({ db, channelId, showAll }) {
-
-    const showOnPage = 5;
+export default function ClipsCards({ db, channelId, showAll, showOnPage }) {
 
     const renderCards = () => {
         let clipsFiltered = db.clipsModel.findByName('channelId', channelId);
         console.log({ channelId, clipsFiltered });
+
+        if(!showOnPage) {
+            showOnPage = 5;
+        }
 
         if (!showAll && clipsFiltered.length > showOnPage) {
             clipsFiltered = clipsFiltered.slice(0, showOnPage);

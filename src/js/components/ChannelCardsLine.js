@@ -1,11 +1,25 @@
 import ChannelCards from './ChannelCards';
 
-export default function ChannelCardsLine({ db, title, categoryId, showAll }) {
+export default function ChannelCardsLine({ db, title, categoryId, showAll, showOnPage }) {
+
+    const getTitleClassName = () => {
+        if (showOnPage && showOnPage === 4) {
+            return "titles-row-channel-page";
+        }
+        return "titles-row";
+    }
+
+    const getDividerClassName = () => {
+        if (showOnPage && showOnPage === 4) {
+            return "divider-container-channel-page";
+        }
+        return "divider-container";
+    }
 
     return (
         <>
             <div className="all-video-container">
-                <div className="titles-row">
+                <div className={getTitleClassName()}>
                     <div className="section-title">
                         <a href="/page" className="link-wrapper">
                             <h2>
@@ -34,10 +48,10 @@ export default function ChannelCardsLine({ db, title, categoryId, showAll }) {
                 </div>
 
                 <div className="channels-row">
-                    <ChannelCards db={db} categoryId={categoryId} showAll={showAll} />
+                    <ChannelCards db={db} categoryId={categoryId} showAll={showAll} showOnPage={showOnPage} />
                 </div>
 
-                <div className="show-all-link divider-container">
+                <div className={getDividerClassName()}>
                     <div className="divider-line"></div>
                     <button className="divider-button">
                         <a href="#" className="arrowed">

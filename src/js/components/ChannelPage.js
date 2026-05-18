@@ -17,6 +17,7 @@ export default function ChannelPage({ db, showAll }) {
     const streamData = db.streamsModel.findOneById(streamId);
     const channelData = db.channelsModel.findOneById(streamData.channelId);
     const categoryId = 1;
+    const showOnPage = 4;
 
     return (
         <>
@@ -25,9 +26,9 @@ export default function ChannelPage({ db, showAll }) {
                 <ChannelDescription db={db} streamId={streamId} showAll={showAll} channelData={channelData}/>
 
                 <div className="favourite-categories">
-                    <ChannelCardsLine db={db} title={'Все трансляции'} categoryId={categoryId} showAll={showAll} />
-                    <ChannelCardsLine db={db} title={'Избранные видео'} categoryId={categoryId} showAll={showAll} />
-                    <ClipsCardsLine db={db} title={'Избранные клипы'} channelId={10} showAll={showAll} />
+                    <ChannelCardsLine db={db} title={'Все трансляции'} categoryId={categoryId} showAll={showAll} showOnPage={showOnPage} />
+                    <ChannelCardsLine db={db} title={'Избранные видео'} categoryId={categoryId} showAll={showAll} showOnPage={showOnPage} />
+                    <ClipsCardsLine db={db} title={'Избранные клипы'} channelId={10} showAll={showAll} showOnPage={showOnPage} />
                     <GoToBtn />
                     <ChannelCategories db={db} channelId={10} showAll={showAll}/>
                 </div>

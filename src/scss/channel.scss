@@ -87,6 +87,18 @@ footer {
     z-index: 1;
 }
 
+.favourite-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-shrink: 0;
+    //  width: 100%;
+    width: calc(100vw - 222px);
+    max-height: 3940px;
+    // border: 1px solid green;
+}
+
 /* channel-horizontal-menu: */
 .channel-horizontal-menu-wrapper {
     z-index: 11;

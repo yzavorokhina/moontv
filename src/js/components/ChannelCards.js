@@ -1,15 +1,19 @@
 
-export default function ChannelCards({ db, categoryId, showAll }) {
-
-    const showOnPage = 5;
+export default function ChannelCards({ db, categoryId, showAll, showOnPage }) {
 
     const renderCards = () => {
         let streamsFiltered = db.streamsModel.findByName('categoryId', categoryId);
-        console.log({ categoryId, streamsFiltered });
+        console.log({ showAll, categoryId, streamsFiltered });
+
+        if (!showOnPage) {
+            showOnPage = 5;
+        }
 
         if (!showAll && streamsFiltered.length > showOnPage) {
             streamsFiltered = streamsFiltered.slice(0, showOnPage);
+         console.log({ categoryId, streamsFiltered });
         }
+
 
         return streamsFiltered.map(stream => {
             const channel = db.channelsModel.findOneById(stream.channelId);

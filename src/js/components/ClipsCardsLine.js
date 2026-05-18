@@ -1,11 +1,25 @@
 import ClipsCards from './ClipsCards';
 
-export default function ClipsCardsLine({ db, title, channelId, showAll }) {
+export default function ClipsCardsLine({ db, title, channelId, showAll, showOnPage }) {
+
+    const getTitleClassName = () => {
+        if (showOnPage && showOnPage === 4) {
+            return "titles-row-channel-page";
+        }
+        return "titles-row";
+    }
+
+    const getDividerClassName = () => {
+        if (showOnPage && showOnPage === 4) {
+            return "divider-container-channel-page";
+        }
+        return "divider-container";
+    }
 
     return (
         <>
             <div className="favourite-clips-container">
-                <div className="titles-row">
+                <div className={getTitleClassName()}>
                     <div className="section-title">
                         <a href="/page" className="link-wrapper">
                             <h2>
@@ -34,10 +48,10 @@ export default function ClipsCardsLine({ db, title, channelId, showAll }) {
                 </div>
 
                 <div className="clips-row">
-                    <ClipsCards db={db} channelId={channelId} showAll={showAll} />
+                    <ClipsCards db={db} channelId={channelId} showAll={showAll} showOnPage={showOnPage} />
                 </div>
 
-                <div className="show-all-link divider-container">
+                <div className={getDividerClassName()}>
                     <div className="divider-line"></div>
                     <button className="divider-button">
                         <a href="#" className="arrowed">
