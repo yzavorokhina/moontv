@@ -12740,7 +12740,7 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 45px;
   flex-shrink: 0;
   width: 100%;
@@ -12805,8 +12805,8 @@ iframe {
 .banner-stream-info {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-shrink: 0;
 }
 
@@ -13516,6 +13516,7 @@ iframe {
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 6px;
+  margin-left: 16px;
   font-size: 20px;
   font-weight: bold;
   color: var(--theme-font-secondary, #CECED6);
@@ -13578,9 +13579,9 @@ iframe {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
   height: 300px;
   padding: 0;
@@ -13944,7 +13945,7 @@ footer {
 
 .main-of-the-main {
   display: flex;
-  width: calc(100vw - 222px);
+  width: calc(100% - 222px);
 }
 
 .horizontal-blocks {
@@ -13957,7 +13958,7 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: calc(100vw - 222px);
+  width: calc(100% - 22px);
 }
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/search.scss ***!
@@ -26701,7 +26702,7 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 45px;
   flex-shrink: 0;
   width: 100%;
@@ -26766,8 +26767,8 @@ iframe {
 .banner-stream-info {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-shrink: 0;
 }
 
@@ -27477,6 +27478,7 @@ iframe {
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 6px;
+  margin-left: 16px;
   font-size: 20px;
   font-weight: bold;
   color: var(--theme-font-secondary, #CECED6);
@@ -27539,9 +27541,9 @@ iframe {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
   height: 300px;
   padding: 0;
