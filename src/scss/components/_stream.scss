@@ -355,10 +355,8 @@ iframe {
     flex-shrink: 0;
     max-width: 346px;
     min-height: calc(100vh - 100px);
-    //height: 100%;
-    margin-right: 24px;
-    border-radius: 5px;
-    // border: 1px solid red;
+    //border-radius-top-left: 5px;
+    border-top-left-radius: 5px;
 }
 
 .chat-container {
@@ -367,7 +365,7 @@ iframe {
     flex-shrink: 0;
     max-width: 346px;
     min-height: calc(100vh - 100px);
-    border-radius: 20px;
+    border-top-left-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     //background-color: var(--theme-btn-bg, #16122F);
@@ -376,21 +374,22 @@ iframe {
 
 .chat-header {
     position: relative;
-    padding: 15px 20px;
-    border-bottom: 1px solid var(--theme-font-primary, #FFFFFF);
+    padding: 8px 8px;
+    //border-bottom: 1px solid var( --theme-font-tertiary, rgba(170, 168, 181, 0.7));
     background-color: var(--theme-active-btn-bg, #000000);
     color: var(--theme-font-primary, #FFFFFF);
     text-align: center;
-    margin-top: 6px;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-top: 3px;
+    margin-left: 3px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 .chat-header h2 {
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    //color: var(--theme-font-primary, #FFFFFF);
 }
 
 .online-status {

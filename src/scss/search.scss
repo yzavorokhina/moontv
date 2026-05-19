@@ -1,57 +1,8 @@
 @use 'main.scss';
-
 @use 'layout/footer';
 @use 'components/banner';
 @use 'components/favourite-channels';
 @use 'components/favourite-categories';
-
-.page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    flex-shrink: 0;
-    height: 122px;
-}
-
-main {
-    flex-shrink: 0;
-    flex-grow: 1;
-    width: 100%;
-    top: 100px;
-    position: relative;
-}
-
-footer {
-    flex-shrink: 0;
-    height: 222px;
-}
-
-.vertical-blocks {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.main-of-the-main {
-    display: flex;
-    width: calc(100vw - 222px);
-}
-
-.horizontal-blocks {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-screen-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: calc(100vw - 222px);
-}
 
 /* search: */
 #searchForm {
@@ -96,13 +47,13 @@ footer {
 
 .input-with-icon::placeholder {
     color: var(--theme-font-secondary, #CECED6);
-    // cursor: pointer;
+    cursor: pointer;
 }
 
 .input-with-icon:hover {
     background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
     color: var(--theme-font-primary, #FFFFFF);
-    // cursor: pointer;
+    cursor: pointer;
 }
 
 .notification-round-button {
