@@ -23834,6 +23834,54 @@ h4 {
   font-family: var(--font-open-sans);
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex-shrink: 0;
+  height: 122px;
+}
+
+main {
+  flex-shrink: 0;
+  flex-grow: 1;
+  width: 100vw;
+  top: 100px;
+  position: relative;
+}
+
+footer {
+  flex-shrink: 0;
+  height: 140px;
+}
+
+.vertical-blocks {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.main-of-the-main {
+  display: flex;
+  width: calc(100vw - 222px);
+}
+
+.horizontal-blocks {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-screen-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(100vw - 222px);
+}
+
 .site-header {
   position: fixed;
   left: 0;
@@ -23841,8 +23889,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1920px;
+  width: 100vw;
   height: 100px;
   margin: 0 auto;
   padding: 0 50px;
