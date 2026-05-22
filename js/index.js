@@ -554,11 +554,11 @@ function Banner(t0) {
   let t7;
   let t8;
   if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
-      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
-    });
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
       children: "\u2B24"
+    });
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
+      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
     });
     $[6] = t7;
     $[7] = t8;
@@ -574,7 +574,7 @@ function Banner(t0) {
         className: "viewer-count",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
           id: "current-viewers",
-          children: "323"
+          children: "57 323"
         })
       })]
     });
@@ -585,9 +585,9 @@ function Banner(t0) {
   let t10;
   if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "video-carousel",
+      className: "video-carousel container",
       children: [t1, t2, t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "banner-info",
+        className: "banner-info hidden-div",
         children: [t6, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           className: "stream-statistic",
           children: [t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
@@ -5660,7 +5660,7 @@ const themesMap = new Map([["dark", {
   btnScrollBg: '#c6c5cf',
   activeBtnBg: '#AAA8B5',
   activeFirstBtnBg: '#AAA8B5',
-  bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
+  bannerBtnBg: 'rgba(195, 194, 204, 0.2)',
   tagBtnBg: '#CECED6',
   accentColorBg: '#FF6F3A',
   subscribeBtnBg: '#CECED6',

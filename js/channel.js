@@ -3279,7 +3279,7 @@ const themesMap = new Map([["dark", {
   btnScrollBg: '#c6c5cf',
   activeBtnBg: '#AAA8B5',
   activeFirstBtnBg: '#AAA8B5',
-  bannerBtnBg: 'rgba(170, 168, 181, 0.7)',
+  bannerBtnBg: 'rgba(195, 194, 204, 0.2)',
   tagBtnBg: '#CECED6',
   accentColorBg: '#FF6F3A',
   subscribeBtnBg: '#CECED6',
