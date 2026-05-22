@@ -4,7 +4,7 @@ export default function Banner({ db, showAll }) {
     return (
         <>
             <div className="main-banner">
-                <div className="video-carousel">
+                <div className="video-carousel container">
                     <button className="carousel-btn prev-btn" aria-label="Предыдущее видео">
                         {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
                         <svg className="carousel-arrow" width="40px" height="40px" viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ export default function Banner({ db, showAll }) {
                                 fill="currentColor" />
                         </svg>
                     </button>
-                    <div className="banner-info">
+                    <div className="banner-info hidden-div">
                         <div className="banner-stream-info">
                             <div className="banner-ava">
                                 <a href="./channel.html">
@@ -61,11 +61,11 @@ export default function Banner({ db, showAll }) {
                         </div>
                         <div className="stream-statistic">
                             <div className="live-watchers">
-                                <h5>В эфире</h5>
                                 <span>&#11044;</span>
-
+                                <h5>В эфире</h5>
+                               
                                 <div className="viewer-count">
-                                    <span id="current-viewers">323</span>
+                                    <span id="current-viewers">57 323</span>
                                 </div>
                             </div>
                             <div className="age-rating-row">
