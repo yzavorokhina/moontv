@@ -17,9 +17,14 @@ export default function Header({ setTheme, currentTheme }) {
         // console.log({ auth });
     }, []);
 
-    const handleClick = () => {
+    const changeTheme = () => {
         const currentThemeName = setNextTheme();
         setTheme(currentThemeName);
+    };
+
+    const handleClick = (url) => {
+        console.log({ url });
+        window.location.href = url;
     };
 
     return (
@@ -35,30 +40,39 @@ export default function Header({ setTheme, currentTheme }) {
                         <h1 id="logo-text" className="logo-text">Moon.tv</h1>
                     </div>
                     <div className="container-menu">
-                        <button className="menu-button" type="button" aria-label="Включить звук">
-                            <a href="./notFound.html">
+                        <button className="menu-button"
+                            type="button"
+                            aria-label="Включить звук"
+                            onClick={(e) => handleClick("./notFound.html", e)}>
                                 <img src={`./images/header-icon-music-${currentTheme}.svg`} title="mute" />
-                            </a>
                         </button>
-
-                        <button id="themeToggle" onClick={handleClick} className="menu-button" type="button" aria-label="Переключить тему оформления">
+                        <button id="themeToggle"
+                            className="menu-button"
+                            type="button"
+                            aria-label="Переключить тему оформления"
+                            onClick={changeTheme}>
                             <img src={`./images/header-icon-theme-${currentTheme}.svg`} title="theme" />
                         </button>
-                        <button className="menu-button" type="button" aria-label="Выбрать язык оформления">
-                            <a href="./notFound.html">
-                                <img src={`./images/header-icon-globe-${currentTheme}.svg`} title="language" />
-                            </a>
+                        <button className="menu-button"
+                            type="button"
+                            aria-label="Выбрать язык оформления"
+                            onClick={(e) => handleClick("./notFound.html", e)}>
+                            <img src={`./images/header-icon-globe-${currentTheme}.svg`} title="language" />
                         </button>
-                        <button className="menu-button" type="button" aria-label="Войти в свой аккаунт">
-                            <a href="./auth.html">
-                                <img src={`./images/header-icon-login-${currentTheme}.svg`} title="login" />
-                            </a>
+                        <button className="menu-button"
+                            type="button"
+                            aria-label="Войти в свой аккаунт"
+                            onClick={(e) => handleClick("./auth.html", e)}>
+                            <img src={`./images/header-icon-login-${currentTheme}.svg`} title="login" />
                         </button>
                         <div className="login">
-                            <button className="login-button" type="button" aria-label="Войти в личный кабинет">
-                                <a href="./auth.html">
-                                    <img src={`./images/${currentUser.iconUrl || 'avatar-disabled-dark.jpg'}`} fetchPriority="high" alt="Личный кабинет" />
-                                </a>
+                            <button className="login-button"
+                                type="button"
+                                aria-label="Войти в личный кабинет"
+                                onClick={(e) => handleClick("./auth.html", e)}>
+                                    <img src={`./images/${currentUser.iconUrl || 'avatar-disabled-dark.jpg'}`}
+                                        fetchPriority="high"
+                                        alt={currentUser.iconUrl ? "Аватар пользователя" : "Заглушка аватара"} />
                             </button>
                         </div>
                     </div>
