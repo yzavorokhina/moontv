@@ -756,7 +756,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(35);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(40);
   const {
     setTheme,
     currentTheme
@@ -795,7 +795,8 @@ function Header(t0) {
   } else {
     t3 = $[4];
   }
-  const handleClick = t3;
+  const changeTheme = t3;
+  const handleClick = _temp;
   let t4;
   if ($[5] !== currentTheme) {
     t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_SearchForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -846,87 +847,77 @@ function Header(t0) {
   } else {
     t8 = $[11];
   }
-  const t9 = `./images/header-icon-music-${currentTheme}.svg`;
-  let t10;
-  if ($[12] !== t9) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  let t9;
+  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = e => handleClick("./notFound.html", e);
+    $[12] = t9;
+  } else {
+    t9 = $[12];
+  }
+  const t10 = `./images/header-icon-music-${currentTheme}.svg`;
+  let t11;
+  if ($[13] !== t10) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
       "aria-label": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0437\u0432\u0443\u043A",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-        href: "./notFound.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: t9,
-          title: "mute"
-        })
+      onClick: t9,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+        src: t10,
+        title: "mute"
       })
     });
-    $[12] = t9;
     $[13] = t10;
+    $[14] = t11;
   } else {
-    t10 = $[13];
+    t11 = $[14];
   }
-  const t11 = `./images/header-icon-theme-${currentTheme}.svg`;
-  let t12;
-  if ($[14] !== t11) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-      src: t11,
+  const t12 = `./images/header-icon-theme-${currentTheme}.svg`;
+  let t13;
+  if ($[15] !== t12) {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+      src: t12,
       title: "theme"
     });
-    $[14] = t11;
     $[15] = t12;
+    $[16] = t13;
   } else {
-    t12 = $[15];
+    t13 = $[16];
   }
-  let t13;
-  if ($[16] !== handleClick || $[17] !== t12) {
-    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+  let t14;
+  if ($[17] !== changeTheme || $[18] !== t13) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       id: "themeToggle",
-      onClick: handleClick,
       className: "menu-button",
       type: "button",
       "aria-label": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u0435\u043C\u0443 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
-      children: t12
+      onClick: changeTheme,
+      children: t13
     });
-    $[16] = handleClick;
-    $[17] = t12;
+    $[17] = changeTheme;
     $[18] = t13;
-  } else {
-    t13 = $[18];
-  }
-  const t14 = `./images/header-icon-globe-${currentTheme}.svg`;
-  let t15;
-  if ($[19] !== t14) {
-    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
-      className: "menu-button",
-      type: "button",
-      "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-        href: "./notFound.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: t14,
-          title: "language"
-        })
-      })
-    });
     $[19] = t14;
+  } else {
+    t14 = $[19];
+  }
+  let t15;
+  if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+    t15 = e_0 => handleClick("./notFound.html", e_0);
     $[20] = t15;
   } else {
     t15 = $[20];
   }
-  const t16 = `./images/header-icon-login-${currentTheme}.svg`;
+  const t16 = `./images/header-icon-globe-${currentTheme}.svg`;
   let t17;
   if ($[21] !== t16) {
     t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
       className: "menu-button",
       type: "button",
-      "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0432\u043E\u0439 \u0430\u043A\u043A\u0430\u0443\u043D\u0442",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-        href: "./auth.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-          src: t16,
-          title: "login"
-        })
+      "aria-label": "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u044F\u0437\u044B\u043A \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",
+      onClick: t15,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+        src: t16,
+        title: "language"
       })
     });
     $[21] = t16;
@@ -934,65 +925,103 @@ function Header(t0) {
   } else {
     t17 = $[22];
   }
-  const t18 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.jpg"}`;
-  let t19;
-  if ($[23] !== t18) {
-    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  let t18;
+  if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+    t18 = e_1 => handleClick("./auth.html", e_1);
+    $[23] = t18;
+  } else {
+    t18 = $[23];
+  }
+  const t19 = `./images/header-icon-login-${currentTheme}.svg`;
+  let t20;
+  if ($[24] !== t19) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+      className: "menu-button",
+      type: "button",
+      "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0432\u043E\u0439 \u0430\u043A\u043A\u0430\u0443\u043D\u0442",
+      onClick: t18,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+        src: t19,
+        title: "login"
+      })
+    });
+    $[24] = t19;
+    $[25] = t20;
+  } else {
+    t20 = $[25];
+  }
+  let t21;
+  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+    t21 = e_2 => handleClick("./auth.html", e_2);
+    $[26] = t21;
+  } else {
+    t21 = $[26];
+  }
+  const t22 = `./images/${currentUser.iconUrl || "avatar-disabled-dark.jpg"}`;
+  const t23 = currentUser.iconUrl ? "\u0410\u0432\u0430\u0442\u0430\u0440 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F" : "\u0417\u0430\u0433\u043B\u0443\u0448\u043A\u0430 \u0430\u0432\u0430\u0442\u0430\u0440\u0430";
+  let t24;
+  if ($[27] !== t22 || $[28] !== t23) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
       className: "login",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
         className: "login-button",
         type: "button",
         "aria-label": "\u0412\u043E\u0439\u0442\u0438 \u0432 \u043B\u0438\u0447\u043D\u044B\u0439 \u043A\u0430\u0431\u0438\u043D\u0435\u0442",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-          href: "./auth.html",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-            src: t18,
-            fetchPriority: "high",
-            alt: "\u041B\u0438\u0447\u043D\u044B\u0439 \u043A\u0430\u0431\u0438\u043D\u0435\u0442"
-          })
+        onClick: t21,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+          src: t22,
+          fetchPriority: "high",
+          alt: t23
         })
       })
     });
-    $[23] = t18;
-    $[24] = t19;
+    $[27] = t22;
+    $[28] = t23;
+    $[29] = t24;
   } else {
-    t19 = $[24];
+    t24 = $[29];
   }
-  let t20;
-  if ($[25] !== t10 || $[26] !== t13 || $[27] !== t15 || $[28] !== t17 || $[29] !== t19) {
-    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+  let t25;
+  if ($[30] !== t11 || $[31] !== t14 || $[32] !== t17 || $[33] !== t20 || $[34] !== t24) {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "container-menu",
-      children: [t10, t13, t15, t17, t19]
+      children: [t11, t14, t17, t20, t24]
     });
-    $[25] = t10;
-    $[26] = t13;
-    $[27] = t15;
-    $[28] = t17;
-    $[29] = t19;
-    $[30] = t20;
+    $[30] = t11;
+    $[31] = t14;
+    $[32] = t17;
+    $[33] = t20;
+    $[34] = t24;
+    $[35] = t25;
   } else {
-    t20 = $[30];
+    t25 = $[35];
   }
-  let t21;
-  if ($[31] !== t20 || $[32] !== t4 || $[33] !== t8) {
-    t21 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+  let t26;
+  if ($[36] !== t25 || $[37] !== t4 || $[38] !== t8) {
+    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         id: "react-header",
         className: "site-header",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("header", {
           className: "site-header",
-          children: [t4, t8, t20]
+          children: [t4, t8, t25]
         })
       })
     });
-    $[31] = t20;
-    $[32] = t4;
-    $[33] = t8;
-    $[34] = t21;
+    $[36] = t25;
+    $[37] = t4;
+    $[38] = t8;
+    $[39] = t26;
   } else {
-    t21 = $[34];
+    t26 = $[39];
   }
-  return t21;
+  return t26;
+}
+function _temp(url) {
+  console.log({
+    url
+  });
+  window.location.href = url;
 }
 
 /***/ },
@@ -32717,7 +32746,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"tags":[{"id":1,"name":"Обучен�
   \***************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"users":[{"username":"admin","email":"konfeta@mail.ru","password":"12345"},{"username":"user","email":"zefir@mail.ru","password":"password"}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"users":[{"username":"admin","email":"sphericalhorse_in_vacuum@yandex.ru","password":"k9m3n7p2q8r1"},{"username":"user","email":"stardust_cleaning24_7@yandex.ru","password":"a3f8b1c9d2e4"}]}');
 
 /***/ }
 
