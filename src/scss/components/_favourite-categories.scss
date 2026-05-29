@@ -461,6 +461,19 @@
     margin-right: 6px;
 }
 
+.viewers-count {
+    color: var(--theme-font-secondary, #CECED6);
+    font-size: 20px;
+}
+
+#viewers {
+    letter-spacing: 10%;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    font-weight: 400;
+}
+
 .stream-age-rating {
     display: flex;
     flex-direction: column;

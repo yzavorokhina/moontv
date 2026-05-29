@@ -11,7 +11,7 @@ export default function ChannelCards({ db, categoryId, showAll, showOnPage }) {
 
         if (!showAll && streamsFiltered.length > showOnPage) {
             streamsFiltered = streamsFiltered.slice(0, showOnPage);
-         console.log({ categoryId, streamsFiltered });
+            console.log({ categoryId, streamsFiltered });
         }
 
 
@@ -64,7 +64,10 @@ export default function ChannelCards({ db, categoryId, showAll, showOnPage }) {
                     <div className="stream-labels">
                         <div className="stream-live">
                             <span>&#11044;</span>
-                            <h6>В эфире</h6>
+                            {/* <h6>В эфире</h6> */}
+                            <div className="viewer-count">
+                                <span id="viewers">{data.stream.audience}</span>
+                            </div>
                         </div>
                         <div className="stream-age-rating">
                             <span className="label-age-rating">{data.stream.ageRate}+</span>
