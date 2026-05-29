@@ -17,8 +17,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _categories_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./categories.json */ "./src/db/categories.json");
 /* harmony import */ var _tags_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tags.json */ "./src/db/tags.json");
 /* harmony import */ var _clips_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clips.json */ "./src/db/clips.json");
-/* harmony import */ var _users_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users.json */ "./src/db/users.json");
-
 
 
 
@@ -68,14 +66,12 @@ const channelsModel = new DBHelper(_channels_json__WEBPACK_IMPORTED_MODULE_1__.c
 const categoriesModel = new DBHelper(_categories_json__WEBPACK_IMPORTED_MODULE_2__.categories);
 const tagsModel = new DBHelper(_tags_json__WEBPACK_IMPORTED_MODULE_3__.tags);
 const clipsModel = new DBHelper(_clips_json__WEBPACK_IMPORTED_MODULE_4__.clips);
-const usersModel = new DBHelper(_users_json__WEBPACK_IMPORTED_MODULE_5__.users);
 const db = {
   streamsModel,
   channelsModel,
   categoriesModel,
   tagsModel,
-  clipsModel,
-  usersModel
+  clipsModel
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (db);
 
@@ -196,8 +192,12 @@ function ChannelCards({
           className: "stream-live",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
             children: "\u2B24"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h6", {
-            children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: "viewer-count",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              id: "viewers",
+              children: data.stream.audience
+            })
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "stream-age-rating",
@@ -34295,16 +34295,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"chan
 (module) {
 
 module.exports = /*#__PURE__*/JSON.parse('{"tags":[{"id":1,"name":"Обучение"},{"id":2,"name":"Французский"},{"id":3,"name":"Русский"},{"id":4,"name":"Английский"},{"id":5,"name":"Игры"},{"id":6,"name":"Танцы"},{"id":7,"name":"Искусство"},{"id":8,"name":"Общение"},{"id":9,"name":"Музыка"},{"id":10,"name":"Хобби"},{"id":11,"name":"Спорт"},{"id":12,"name":"Отдых"},{"id":13,"name":"Красота"},{"id":14,"name":"Другое"},{"id":15,"name":"Творчество"},{"id":16,"name":"Кулинария"},{"id":17,"name":"Новости"}]}');
-
-/***/ },
-
-/***/ "./src/db/users.json"
-/*!***************************!*\
-  !*** ./src/db/users.json ***!
-  \***************************/
-(module) {
-
-module.exports = /*#__PURE__*/JSON.parse('{"users":[{"username":"admin","email":"sphericalhorse_in_vacuum@yandex.ru","password":"k9m3n7p2q8r1"},{"username":"user","email":"stardust_cleaning24_7@yandex.ru","password":"a3f8b1c9d2e4"}]}');
 
 /***/ }
 
