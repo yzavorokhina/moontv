@@ -31,6 +31,9 @@ class DBHelper {
     }
 
     findByName(name, value) {
+        if (Array.isArray(value) && value.length > 0) {
+            return [...this.data.filter(record => value.indexOf(record[name]) > -1)];
+        }
         return [...this.data.filter(record => record[name] === value)];
     }
 
@@ -43,6 +46,16 @@ class DBHelper {
             }
             return result;
         })];
+    }
+
+    findByNamesRegex(names, searchTerm) {
+        let found = [];
+
+        for (const name of names) {
+            found = [...found, ...this.findByNameRegex(name, searchTerm)];
+        }
+
+        return found;
     }
 }
 

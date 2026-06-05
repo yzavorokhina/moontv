@@ -56,8 +56,8 @@ export default function ClipsCards({ db, channelId, showAll, showOnPage }) {
                     </div>
                     <div className="stream-labels">
                         <div className="clip-always-offline">
-                            <span>&#11044;</span>
-                            <h6>В эфире</h6>
+                            {/* <span>&#11044;</span>
+                            <h6>В эфире</h6> */}
                         </div>
                         <div className="stream-age-rating">
                             <span className="label-age-rating">{data.clip.ageRate} +</span>

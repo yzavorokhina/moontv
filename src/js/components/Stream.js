@@ -23,14 +23,14 @@ export default function Stream({ streamData, channelData }) {
                     <div className="channel-info">
                         <div className="channel-stream-info">
                             <div className="channel-ava">
-                                <a href="./channel.html">
+                                <a href={`./channel.html?id=${streamData.id}`}>
                                     <img id="channelIcon" src={channelData.iconUrl} alt="channel ava" />
                                 </a>
                             </div>
                             <div className="stream-info">
                                 <h5 id="streamTitle">{streamData.title}</h5>
                                 <h5 id="streamDes">{streamData.description}</h5>
-                                <a href="./channel.html" id="channelName">{channelData.name}</a>
+                                <a href={`./channel.html?id=${streamData.id}`} id="channelName">{channelData.name}</a>
                             </div>
                         </div>
                         <div className="stream-statistic">

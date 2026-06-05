@@ -8,26 +8,54 @@ export default function SearchPage({ db, showAll }) {
     const params = getUrlParams();
     console.log({ params }); // '1'
 
-    const search = params.q || "";
+    const search = params.q;
+
+    let streams = [];
+    let streamsMap = new Map()
+
+    if (search) {
+        const channels = db.channelsModel.findByNamesRegex(['name', 'title', 'description'], search);
+        const channelsIds = channels.map(channel => channel.id);
+
+        streams.push(...db.streamsModel.findByName('channelId', channelsIds));
+        
+        const categories = db.categoriesModel.findByNamesRegex(['name', 'description'], search);
+        const categoriesIds = categories.map(cat => cat.id);
+
+        streams.push(...db.streamsModel.findByName('categoryId', categoriesIds));
+
+        streams.push(...db.streamsModel.findByNamesRegex(['title', 'description'], search));
+
+        for (const stream of streams) {
+            streamsMap.set(stream.id, stream);
+        }
+
+        streams = [...streamsMap.values()];
+    }
+
+    console.log({ streams, f: streams.length > 0 });
 
     return (
         <>
             <Layout db={db}>
-                <div className="favourite-categories">
-                    <div className="favourite-categories-title">
+                <div className="search-result">
+                    <div className="search-result-title">
                         <h2>Результаты поиска:</h2>
                     </div>
-                    <div className="favourite-category-container">
-
+                    <div className={streams.length > 0 ? "notFound invisible" : "notFound"}>
+                        <span>ничего не найдено</span>
+                        <div id="icon-streams-not-found"> &#9729; &#9729; &#9729; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9729; &#9729; &#9729;</div>
+                    </div>
+                    <div className="search-result-container">
                         <div className="channels-row" id="search_result">
-                        <SearchCards db={db} search={search} showAll={showAll} />
+                        <SearchCards db={db} streams={streams} showAll={showAll} />
                         </div>
 
                         <div className="show-all-link divider-container">
                             <div className="divider-line"></div>
                             <button className="divider-button">
                                 <a href='./categories.html' className="arrowed">
-                                    Показать все
+                                    Показать все категории
                                     {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
                                     <svg className="show-all-arrow" width="24px" height="24px" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">

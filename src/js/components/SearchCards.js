@@ -1,21 +1,17 @@
 
-export default function SearchCards({ db, search, showAll }) {
+export default function SearchCards({ db, streams, showAll }) {
 
-    const showOnPage = 5;
+    const showOnPage = 4;
 
     const renderCards = () => {
 
-        if (!search) {
-            search = "search";
+        if (!showAll && streams.length > showOnPage) {
+            streams = streams.slice(0, showOnPage);
         }
 
-        let streamsFiltered = db.streamsModel.findByNameRegex('title', search);
+        console.log({showOnPage, streams, showAll});
 
-        if (!showAll && streamsFiltered.length > showOnPage) {
-            streamsFiltered = streamsFiltered.slice(0, showOnPage);
-        }
-
-        return streamsFiltered.map(stream => {
+        return streams.map(stream => {
             const channel = db.channelsModel.findOneById(stream.channelId);
             const category = db.categoriesModel.findOneById(stream.categoryId);
 
@@ -64,7 +60,10 @@ export default function SearchCards({ db, search, showAll }) {
                     <div className="stream-labels">
                         <div className="stream-live">
                             <span>&#11044;</span>
-                            <h6>В эфире</h6>
+                            {/* <h6>В эфире</h6> */}
+                            <div className="viewer-count">
+                                <span id="viewers">{data.stream.audience}</span>
+                            </div>
                         </div>
                         <div className="stream-age-rating">
                             <span className="label-age-rating">12+</span>

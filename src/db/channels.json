@@ -5,7 +5,7 @@
             "name": "neuro_activate",
             "title" : "Разрабатываю игру KUPOL День 4 / Основная концепция",
             "description": "Разрабатываю игры для внеземных сообществ",
-            "iconUrl": "./images/banner-ava.jpg",
+            "iconUrl": "./images/channel-ava-1-5.svg",
             "categories": [ 1 ]
         },
         {
@@ -13,7 +13,7 @@
             "name": "LuckyKhajiit",
             "title" : "Skyrim-прокачка до 17 уровня и обратно до 1-го...",
             "description": "Профессиональный проходильщик территорий Skirim",
-            "iconUrl": "./images/banner-ava.jpg",
+            "iconUrl": "./images/favorite-channels-ava-3-1.jpg",
             "categories": [ 1 ]
         },
         {
@@ -21,7 +21,7 @@
             "name": "MultiPupsik",
             "title" : "Смешарики 3 часа подряд - Часть 1-ая из 10-ти",
             "description": "Мультики для самых смышленых",
-            "iconUrl": "./images/banner-ava.jpg",
+            "iconUrl": "./images/favorite-channels-ava-3-3.jpg",
             "categories": [ 1 ]
         },
         {
@@ -29,7 +29,7 @@
             "name": "KidsPlanet",
             "title" : "Крутой замес. Делаем рыбок из марсианской глины",
             "description": "Задача дня: добыть марсианскую глину",
-            "iconUrl": "./images/banner-ava.jpg",
+            "iconUrl": "./images/channel-ava-1-4.svg",
             "categories": [ 1 ]
         },
         {
@@ -37,7 +37,7 @@
             "name": "Programming",
             "title" : "PROграммирование для будущего",
             "description": "Тренируем навыки многопоточности",
-            "iconUrl": "./images/banner-stream-prewiev-5.jpg",
+            "iconUrl": "./images/favorite-channels-ava-3-2.jpg",
             "categories": [ 1 ]
         },
         {

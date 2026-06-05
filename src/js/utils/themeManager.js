@@ -44,6 +44,7 @@ const themesMap = new Map([
     // followBtn: 'url(images/follow-icon-dark.svg)',
     followBtn: 'url(images/follow-icon-dark.png)',
     subscribeBtn: 'url(images/subscribe-button-dark.svg)',
+    streamsNotFound:'url(images/streams-not-found-50-light.png)',
   }],
   ["light", {
     mainBg: '#FFFFFF',
@@ -85,6 +86,7 @@ const themesMap = new Map([
     // followBtn: 'url(images/follow-icon-light.svg)',
     followBtn: 'url(images/follow-icon-light.png)',
     subscribeBtn: 'url(images/subscribe-button-light.svg)',
+    streamsNotFound:'url(images/streams-not-found-50-dark.png)',
   }]
 ]);
 
@@ -93,7 +95,7 @@ export const updateTheme = (themeId) => {
   const { mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
     bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
     accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-    fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn } = themesMap.get(themeId);
+    fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn, streamsNotFound } = themesMap.get(themeId);
 
   setLocalStorage(storageKey, themeId);
 
@@ -101,7 +103,7 @@ export const updateTheme = (themeId) => {
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn, streamsNotFound });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -141,6 +143,7 @@ export const updateTheme = (themeId) => {
   document.documentElement.style.setProperty('--theme-arrow-down', arrowDown);
   document.documentElement.style.setProperty('--theme-follow-button', followBtn);
   document.documentElement.style.setProperty('--theme-subscribe-button', subscribeBtn);
+  document.documentElement.style.setProperty('--theme-icon-streams-not-found', streamsNotFound);
   
   return themeId;
 }

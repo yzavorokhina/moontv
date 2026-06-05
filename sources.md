@@ -99,6 +99,18 @@
 - **Локальное расположение**: инлайн в CategoryPage.js (info-links)
 - **Примечание**: 
 
+ ## Иконка «Научная фантастика» (streams not found)
+- **Источник**: https://icons8.ru/icons/set/free-icons-ufo--style-ios
+- **Прямая ссылка на SVG**: `https://icons8.ru/icon/3736/sci-fi`
+- **Автор**: ?
+- **Лицензия**: ? 
+- **Условия использования**: ?
+- **Дата скачивания**: 2026.06.05
+- **Локальное расположение**: инлайн в SearchPage.js (streams not found)
+- **Примечание**: PNG 50*50 white,dark blue(#343148) & PNG 100*100 white, dark blue
+
+
+
 
 ## Группа: Социальные сети
 ### Иконка "vkvideo"
