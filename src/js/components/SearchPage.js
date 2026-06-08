@@ -18,7 +18,7 @@ export default function SearchPage({ db, showAll }) {
         const channelsIds = channels.map(channel => channel.id);
 
         streams.push(...db.streamsModel.findByName('channelId', channelsIds));
-        
+
         const categories = db.categoriesModel.findByNamesRegex(['name', 'description'], search);
         const categoriesIds = categories.map(cat => cat.id);
 
@@ -48,7 +48,7 @@ export default function SearchPage({ db, showAll }) {
                     </div>
                     <div className="search-result-container">
                         <div className="channels-row" id="search_result">
-                        <SearchCards db={db} streams={streams} showAll={showAll} />
+                            <SearchCards db={db} streams={streams} showAll={showAll} />
                         </div>
 
                         <div className="show-all-link divider-container">
@@ -73,4 +73,4 @@ export default function SearchPage({ db, showAll }) {
             </Layout>
         </>
     );
-    }
+}

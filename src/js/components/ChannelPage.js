@@ -15,7 +15,7 @@ export default function ChannelPage({ db, showAll }) {
     const streamId = +params.id;
 
     if (!streamId) {
-        // window.location.href = 'notFound.html';
+        window.location.href = 'notFound.html';
     }
 
     console.log({ streamId });
@@ -23,7 +23,7 @@ export default function ChannelPage({ db, showAll }) {
     const streamData = db.streamsModel.findOneById(streamId);
 
     if (!streamData) {
-        // window.location.href = 'notFound.html';
+        window.location.href = 'notFound.html';
     }
     console.log({ streamData });
 

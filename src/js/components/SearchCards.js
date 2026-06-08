@@ -9,7 +9,7 @@ export default function SearchCards({ db, streams, showAll }) {
             streams = streams.slice(0, showOnPage);
         }
 
-        console.log({showOnPage, streams, showAll});
+        console.log({ showOnPage, streams, showAll });
 
         return streams.map(stream => {
             const channel = db.channelsModel.findOneById(stream.channelId);

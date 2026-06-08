@@ -1,12 +1,86 @@
+import React, { useEffect, useState } from 'react';
+import BannerSlideInfo from "./BannerSlideInfo";
+import PromoCard from "./PromoCard";
 
-export default function Banner({ db, showAll }) {
+export default function Banner({ db }) {
+
+    const showOnPage = 5;
+
+    let currentSlide = 0;
+    let totalSlides = 0;
+    let slidesMap = new Map();
+    const [currentSlideData, setCurrentSlideData] = useState(0);
+
+    useEffect(() => {
+        const slides = document.querySelectorAll('.slide');
+        totalSlides = slides.length;
+        updateSlidePosition('useEffect');
+    });
+
+    const updateSlidePosition = (index) => {
+        const slidesWrapper = document.getElementById('slidesWrapper');
+        if (currentSlide < 0) currentSlide = totalSlides - 1;
+        if (currentSlide >= totalSlides) currentSlide = 0;
+        slidesWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+        console.log({ index, currentSlide, totalSlides, trans: currentSlide * 100 });
+
+        const slideData = slidesMap.get(+currentSlide);
+
+        try {
+            if (slideData) {
+                // setCurrentSlideData(currentSlide);
+            }
+        } catch (err) {
+            console.log({ err });
+        }
+    }
+
+    const prevSlide = () => {
+        currentSlide--;
+        console.log({ currentSlide, slidesMap });
+        updateSlidePosition('prevSlide');
+    }
+
+    const nextSlide = () => {
+        currentSlide++;
+        console.log({ currentSlide, slidesMap });
+        updateSlidePosition('nextSlide');
+    }
+
+    const renderCards = () => {
+        const streams = db.streamsModel.findByName("promo", true);
+
+        if (streams.length > showOnPage) {
+            streams = streams.slice(0, showOnPage);
+        }
+
+        const streamsData = streams.map(stream => {
+            const channel = db.channelsModel.findOneById(stream.channelId);
+            const category = db.categoriesModel.findOneById(stream.categoryId);
+
+            return {
+                stream,
+                channel,
+                category,
+                streamUrl: "./channel.html?id=" + stream.id,
+                categoryUrl: "./category.html?id=" + category.id
+            }
+        });
+
+        for (let i = 0; i < streamsData.length; i++) {
+            slidesMap.set(i, streamsData[i]);
+        }
+
+        return streamsData;
+
+        console.log({ showOnPage, streams, streamsData });
+    }
 
     return (
         <>
             <div className="main-banner">
-                <div className="video-carousel container">
-                    <button className="carousel-btn prev-btn" aria-label="Предыдущее видео">
-                        {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
+                <div className="slider-container">
+                    <button id="prevBtn" className="carousel-btn prev-btn" aria-label="Предыдущее видео" onClick={prevSlide}>
                         <svg className="carousel-arrow" width="40px" height="40px" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -14,31 +88,8 @@ export default function Banner({ db, showAll }) {
                                 fill="currentColor" />
                         </svg>
                     </button>
-                    {/* <!-- Область просмотра видео --> */}
-                    {/* <!-- <div className="video-container">
-                      <video className="current-video" controls>
-                      <source src="video1.mp4" type="video/mp4"> --> */}
 
-                    {/* <iframe 
-                    src="https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd"
-                    title="YouTube video player" frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-
-                    {/* <iframe 
-                    src="https://live.vkvideo.ru/aviktorov/record/fa98bbe8-fab3-4f03-88bf-2bdbfa81f79c?tab=video"
-                    title="live vk video player" frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen></iframe> */}
-
-                    {/* <iframe src="https://www.youtube.com/embed/eO3AUvPgT-k?si=7k8jhYqUqGIkOmug" title="YouTube video player" frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-
-                    <iframe src="https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-
-                    {/* <!-- </video>
-              </div> --> */}
-                    <button className="carousel-btn next-btn" aria-label="Следующее видео">
-                        {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
+                    <button id="nextBtn" className="carousel-btn next-btn" aria-label="Следующее видео" onClick={nextSlide}>
                         <svg className="carousel-arrow" width="40px" height="40px" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -46,135 +97,27 @@ export default function Banner({ db, showAll }) {
                                 fill="currentColor" />
                         </svg>
                     </button>
-                    <div className="banner-info hidden-div">
-                        <div className="banner-stream-info">
-                            <div className="banner-ava">
-                                <a href="./channel.html">
-                                    <img src="./images/banner-ava.jpg" alt="banner ava" />
-                                </a>
+                    <div className="slides-wrapper" id="slidesWrapper">
+                        {renderCards().map(data => (
+                            <div key={data.stream.id} className="slide">
+                                <iframe
+                                    src={data.stream.videoUrl}
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+                                </iframe>
                             </div>
-                            <div className="stream-info">
-                                <a href="./channel.html"><h5>Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне</h5></a>
-                                <a href="./channel.html"><h5>День 4 / Основная концепция</h5></a>
-                                <a href="./channel.html">neuro_activate</a>
-                            </div>
-                        </div>
-                        <div className="stream-statistic">
-                            <div className="live-watchers">
-                                <span>&#11044;</span>
-                                <h5>В эфире</h5>
-                               
-                                <div className="viewer-count">
-                                    <span id="current-viewers">57 323</span>
-                                </div>
-                            </div>
-                            <div className="age-rating-row">
-                                <span className="age-rating">12+</span>
-                            </div>
-                        </div>
+                        ))}
                     </div>
+                    <BannerSlideInfo slideData={currentSlideData} />
                 </div>
                 <div className="promo">
-                    <div className="promo1">
-                        <div className="promo-stream-cover">
-                            <a href="./channel.html">
-                                <img src="./images/banner-stream-prewiev-1.jpg" alt="stream prewiev" />
-                            </a>
-                        </div>
-                        <div className="promo-stream-info">
-                            <h6>Разрабатываю игру KUPOL
-                                День 4 / Основная концепция</h6>
-                            <a href="./channel.html">neuro_activate</a>
-                        </div>
-                    </div>
-                    <div className="promo2">
-                        <div className="promo-stream-cover">
-                            <a href="./channel.html">
-                                <img src="./images/banner-stream-prewiev-2.jpg" alt="stream prewiev" />
-                            </a>
-                        </div>
-                        <div className="promo-stream-info">
-                            <h6>Skyrim-прокачка до 17 уровня
-                                и обратно до 1-го...</h6>
-                            <a href="./channel.html">LuckyKhajiit</a>
-                        </div>
-                    </div>
-                    <div className="promo3">
-                        <div className="promo-stream-cover">
-                            <a href="./channel.html">
-                                <img src="./images/banner-stream-prewiev-3.jpg" alt="stream prewiev" />
-                            </a>
-                        </div>
-                        <div className="promo-stream-info">
-                            <h6>Смешарики 3 часа подряд -
-                                Часть 1-ая из 10-ти</h6>
-                            <a href="./channel.html">MultiPupsik</a>
-                        </div>
-                    </div>
-                    <div className="promo4">
-                        <div className="promo-stream-cover">
-                            <a href="./channel.html">
-                                <img src="./images/banner-stream-prewiev-4.jpg" alt="stream prewiev" />
-                            </a>
-                        </div>
-                        <div className="promo-stream-info">
-                            <h6>Крутой замес. Делаем рыбок
-                                из марсианской глины</h6>
-                            <a href="./channel.html">KidsPlanet</a>
-                        </div>
-                    </div>
-                    <div className="promo5">
-                        <div className="promo-stream-cover">
-                            <a href="./channel.html">
-                                <img src="./images/banner-stream-prewiev-5.jpg" alt="stream prewiev" />
-                            </a>
-                        </div>
-                        <div className="promo-stream-info">
-                            <h6>PROграммирование для будущего </h6>
-                            <a href="./channel.html">Programming </a>
-                        </div>
-                    </div>
+                    {renderCards().map(data => (
+                        <PromoCard streamData={data} />
+                    ))}
                 </div>
             </div>
         </>
     );
 }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const prevBtn = document.querySelector('.prev-btn');
-//   const nextBtn = document.querySelector('.next-btn');
-//   const videoElement = document.querySelector('.current-video');
-
-//   // Массив с путями к видео
-//   const videos = [
-//     'video1.mp4',
-//     'video2.mp4',
-//     'video3.mp4'
-//   ];
-
-//   let currentIndex = 0;
-
-//   function loadVideo(index) {
-//     const videoSrc = videos[index];
-//     videoElement.src = videoSrc;
-//     videoElement.load();
-//   }
-
-//   prevBtn.addEventListener('click', function() {
-//     currentIndex = (currentIndex - 1 + videos.length) % videos.length;
-//     loadVideo(currentIndex);
-//   });
-
-//   nextBtn.addEventListener('click', function() {
-//     currentIndex = (currentIndex + 1) % videos.length;
-//     loadVideo(currentIndex);
-//   });
-
-//   // Загружаем первое видео при инициализации
-//   loadVideo(currentIndex);
-// });
-
-/* Автопрокрутка (может и не нужна, чтобы не мельтешила перед глазами главная трансляция века: если есть кнопки перелистывания тем более */
-// setInterval(() => {
-//   nextBtn.click();
-// }, 5000); // каждые 5 секунд

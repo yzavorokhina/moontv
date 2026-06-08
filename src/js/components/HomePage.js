@@ -12,7 +12,7 @@ export default function HomePage({ db }) {
     return (
         <>
             <Layout db={db}>
-                <Banner />
+                <Banner db={db} />
                 <FavoriteChannels />
 
                 <div className="favourite-categories">

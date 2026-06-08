@@ -8,7 +8,7 @@ export default function CategoryPage({ db, showAll }) {
 
     const params = getUrlParams();
     console.log(params.id); // '1'
-    
+
     const categoryId = +params.id;
 
     if (!categoryId) {
