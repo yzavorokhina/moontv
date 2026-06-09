@@ -236,7 +236,8 @@ const themesMap = new Map([["dark", {
   arrowDown: 'url(images/arrow-down-dark.svg)',
   // followBtn: 'url(images/follow-icon-dark.svg)',
   followBtn: 'url(images/follow-icon-dark.png)',
-  subscribeBtn: 'url(images/subscribe-button-dark.svg)'
+  subscribeBtn: 'url(images/subscribe-button-dark.svg)',
+  streamsNotFound: 'url(images/streams-not-found-50-light.png)'
 }], ["light", {
   mainBg: '#FFFFFF',
   promoBg: 'rgba(134, 129, 153, 0.5)',
@@ -272,7 +273,8 @@ const themesMap = new Map([["dark", {
   arrowDown: 'url(images/arrow-down-light.svg)',
   // followBtn: 'url(images/follow-icon-light.svg)',
   followBtn: 'url(images/follow-icon-light.png)',
-  subscribeBtn: 'url(images/subscribe-button-light.svg)'
+  subscribeBtn: 'url(images/subscribe-button-light.svg)',
+  streamsNotFound: 'url(images/streams-not-found-50-dark.png)'
 }]]);
 const updateTheme = themeId => {
   // console.log({ updateTheme: currentTheme });
@@ -308,7 +310,8 @@ const updateTheme = themeId => {
     searchIcon,
     arrowDown,
     followBtn,
-    subscribeBtn
+    subscribeBtn,
+    streamsNotFound
   } = themesMap.get(themeId);
   (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
 
@@ -316,7 +319,7 @@ const updateTheme = themeId => {
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn, streamsNotFound });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -350,6 +353,7 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-arrow-down', arrowDown);
   document.documentElement.style.setProperty('--theme-follow-button', followBtn);
   document.documentElement.style.setProperty('--theme-subscribe-button', subscribeBtn);
+  document.documentElement.style.setProperty('--theme-icon-streams-not-found', streamsNotFound);
   return themeId;
 };
 const getCurrentTheme = () => {

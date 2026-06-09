@@ -23818,6 +23818,7 @@ a {
   --theme-arrow-down: url(images/arrow-down-dark.svg);
   --theme-follow-button: url(images/follow-icon-dark.png);
   --theme-subscribe-button: url(images/subscribe-button-dark.svg);
+  --theme-icon-streams-not-found: url(images/streams-not-found-50-dark.png);
 }
 
 html,

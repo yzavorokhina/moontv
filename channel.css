@@ -23818,6 +23818,7 @@ a {
   --theme-arrow-down: url(images/arrow-down-dark.svg);
   --theme-follow-button: url(images/follow-icon-dark.png);
   --theme-subscribe-button: url(images/subscribe-button-dark.svg);
+  --theme-icon-streams-not-found: url(images/streams-not-found-50-dark.png);
 }
 
 html,
@@ -25806,6 +25807,19 @@ iframe {
   vertical-align: center;
   margin-right: 6px;
   visibility: hidden;
+}
+
+.viewers-count {
+  color: var(--theme-font-secondary, #CECED6);
+  font-size: 20px;
+}
+
+#viewers {
+  letter-spacing: 10%;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  font-weight: 400;
 }
 
 .stream-age-rating {

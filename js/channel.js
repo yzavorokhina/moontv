@@ -43,6 +43,9 @@ class DBHelper {
     return [...this.data.filter(record => ids.indexOf(record.id) > -1)];
   }
   findByName(name, value) {
+    if (Array.isArray(value) && value.length > 0) {
+      return [...this.data.filter(record => value.indexOf(record[name]) > -1)];
+    }
     return [...this.data.filter(record => record[name] === value)];
   }
   findByNameRegex(name, searchTerm) {
@@ -59,6 +62,13 @@ class DBHelper {
       }
       return result;
     })];
+  }
+  findByNamesRegex(names, searchTerm) {
+    let found = [];
+    for (const name of names) {
+      found = [...found, ...this.findByNameRegex(name, searchTerm)];
+    }
+    return found;
   }
 }
 const streamsModel = new DBHelper(_streams_json__WEBPACK_IMPORTED_MODULE_0__.streams);
@@ -1169,16 +1179,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ChannelPage)
 /* harmony export */ });
-/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
-/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
-/* harmony import */ var _Stream__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Stream */ "./src/js/components/Stream.js");
-/* harmony import */ var _ChannelDescription__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ChannelDescription */ "./src/js/components/ChannelDescription.js");
-/* harmony import */ var _ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ChannelCardsLine */ "./src/js/components/ChannelCardsLine.js");
-/* harmony import */ var _ClipsCardsLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ClipsCardsLine */ "./src/js/components/ClipsCardsLine.js");
-/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
-/* harmony import */ var _ChannelCategories__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ChannelCategories */ "./src/js/components/ChannelCategories.js");
-/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Layout */ "./src/js/components/Layout.js");
+/* harmony import */ var _Stream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Stream */ "./src/js/components/Stream.js");
+/* harmony import */ var _ChannelDescription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ChannelDescription */ "./src/js/components/ChannelDescription.js");
+/* harmony import */ var _ChannelCardsLine__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ChannelCardsLine */ "./src/js/components/ChannelCardsLine.js");
+/* harmony import */ var _ClipsCardsLine__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ClipsCardsLine */ "./src/js/components/ClipsCardsLine.js");
+/* harmony import */ var _GoToBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GoToBtn */ "./src/js/components/GoToBtn.js");
+/* harmony import */ var _ChannelCategories__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ChannelCategories */ "./src/js/components/ChannelCategories.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -1188,154 +1197,73 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-function ChannelPage(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(31);
-  const {
-    db,
-    showAll
-  } = t0;
-  let t1;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t1 = (0,_utils_common__WEBPACK_IMPORTED_MODULE_8__.getUrlParams)();
-    $[0] = t1;
-  } else {
-    t1 = $[0];
-  }
-  const params = t1;
+function ChannelPage({
+  db,
+  showAll
+}) {
+  const params = (0,_utils_common__WEBPACK_IMPORTED_MODULE_7__.getUrlParams)();
   console.log({
     params
+  }); // '1'
+
+  const streamId = +params.id;
+  if (!streamId) {
+    window.location.href = 'notFound.html';
+  }
+  console.log({
+    streamId
   });
-  const streamId = +params.id || 1;
-  let streamData;
-  let t2;
-  if ($[1] !== db.channelsModel || $[2] !== db.streamsModel) {
-    streamData = db.streamsModel.findOneById(streamId);
-    t2 = db.channelsModel.findOneById(streamData.channelId);
-    $[1] = db.channelsModel;
-    $[2] = db.streamsModel;
-    $[3] = streamData;
-    $[4] = t2;
-  } else {
-    streamData = $[3];
-    t2 = $[4];
+  const streamData = db.streamsModel.findOneById(streamId);
+  if (!streamData) {
+    window.location.href = 'notFound.html';
   }
-  const channelData = t2;
-  let t3;
-  if ($[5] !== channelData || $[6] !== streamData) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Stream__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      streamData: streamData,
-      channelData: channelData
-    });
-    $[5] = channelData;
-    $[6] = streamData;
-    $[7] = t3;
-  } else {
-    t3 = $[7];
-  }
-  let t4;
-  if ($[8] !== channelData || $[9] !== db || $[10] !== showAll) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelDescription__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  console.log({
+    streamData
+  });
+  const channelData = db.channelsModel.findOneById(streamData?.channelId);
+  const categoryId = 1;
+  const showOnPage = 4;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_0__["default"], {
       db: db,
-      streamId: streamId,
-      showAll: showAll,
-      channelData: channelData
-    });
-    $[8] = channelData;
-    $[9] = db;
-    $[10] = showAll;
-    $[11] = t4;
-  } else {
-    t4 = $[11];
-  }
-  let t5;
-  let t6;
-  let t7;
-  if ($[12] !== db || $[13] !== showAll) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      db: db,
-      title: "\u0412\u0441\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438",
-      categoryId: 1,
-      showAll: showAll,
-      showOnPage: 4
-    });
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      db: db,
-      title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u0432\u0438\u0434\u0435\u043E",
-      categoryId: 1,
-      showAll: showAll,
-      showOnPage: 4
-    });
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ClipsCardsLine__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      db: db,
-      title: "\u0418\u0437\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043A\u043B\u0438\u043F\u044B",
-      channelId: 10,
-      showAll: showAll,
-      showOnPage: 4
-    });
-    $[12] = db;
-    $[13] = showAll;
-    $[14] = t5;
-    $[15] = t6;
-    $[16] = t7;
-  } else {
-    t5 = $[14];
-    t6 = $[15];
-    t7 = $[16];
-  }
-  let t8;
-  if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_6__["default"], {});
-    $[17] = t8;
-  } else {
-    t8 = $[17];
-  }
-  let t9;
-  if ($[18] !== db || $[19] !== showAll) {
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_ChannelCategories__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      db: db,
-      channelId: 10,
-      showAll: showAll
-    });
-    $[18] = db;
-    $[19] = showAll;
-    $[20] = t9;
-  } else {
-    t9 = $[20];
-  }
-  let t10;
-  if ($[21] !== t5 || $[22] !== t6 || $[23] !== t7 || $[24] !== t9) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-      className: "favourite-categories",
-      children: [t5, t6, t7, t8, t9]
-    });
-    $[21] = t5;
-    $[22] = t6;
-    $[23] = t7;
-    $[24] = t9;
-    $[25] = t10;
-  } else {
-    t10 = $[25];
-  }
-  let t11;
-  if ($[26] !== db || $[27] !== t10 || $[28] !== t3 || $[29] !== t4) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      showFooter: false,
+      showHorizontalMenu: false,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Stream__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        streamData: streamData,
+        channelData: channelData
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelDescription__WEBPACK_IMPORTED_MODULE_2__["default"], {
         db: db,
-        showFooter: false,
-        showHorizontalMenu: false,
-        children: [t3, t4, t10]
-      })
-    });
-    $[26] = db;
-    $[27] = t10;
-    $[28] = t3;
-    $[29] = t4;
-    $[30] = t11;
-  } else {
-    t11 = $[30];
-  }
-  return t11;
+        streamId: streamId,
+        showAll: showAll,
+        channelData: channelData
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+        className: "favourite-categories",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          db: db,
+          title: 'Все трансляции',
+          categoryId: categoryId,
+          showAll: showAll,
+          showOnPage: showOnPage
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCardsLine__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          db: db,
+          title: 'Избранные видео',
+          categoryId: categoryId,
+          showAll: showAll,
+          showOnPage: showOnPage
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ClipsCardsLine__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          db: db,
+          title: 'Избранные клипы',
+          channelId: 10,
+          showAll: showAll,
+          showOnPage: showOnPage
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_GoToBtn__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ChannelCategories__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          db: db,
+          channelId: 10,
+          showAll: showAll
+        })]
+      })]
+    })
+  });
 }
 
 /***/ },
@@ -1679,13 +1607,8 @@ function ClipsCards({
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "stream-labels",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          className: "clip-always-offline",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            children: "\u2B24"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h6", {
-            children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
-          })]
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "clip-always-offline"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "stream-age-rating",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
@@ -2821,7 +2744,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Stream(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(33);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(37);
   const {
     streamData,
     channelData
@@ -2843,111 +2766,91 @@ function Stream(t0) {
   } else {
     t1 = $[0];
   }
-  let t2;
+  const t2 = `./channel.html?id=${streamData.id}`;
+  let t3;
   if ($[1] !== channelData.iconUrl) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "channel-ava",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-        href: "./channel.html",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          id: "channelIcon",
-          src: channelData.iconUrl,
-          alt: "channel ava"
-        })
-      })
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      id: "channelIcon",
+      src: channelData.iconUrl,
+      alt: "channel ava"
     });
     $[1] = channelData.iconUrl;
-    $[2] = t2;
+    $[2] = t3;
   } else {
-    t2 = $[2];
+    t3 = $[2];
   }
-  let t3;
-  if ($[3] !== streamData.title) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+  let t4;
+  if ($[3] !== t2 || $[4] !== t3) {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "channel-ava",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: t2,
+        children: t3
+      })
+    });
+    $[3] = t2;
+    $[4] = t3;
+    $[5] = t4;
+  } else {
+    t4 = $[5];
+  }
+  let t5;
+  if ($[6] !== streamData.title) {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
       id: "streamTitle",
       children: streamData.title
     });
-    $[3] = streamData.title;
-    $[4] = t3;
+    $[6] = streamData.title;
+    $[7] = t5;
   } else {
-    t3 = $[4];
+    t5 = $[7];
   }
-  let t4;
-  if ($[5] !== streamData.description) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+  let t6;
+  if ($[8] !== streamData.description) {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
       id: "streamDes",
       children: streamData.description
     });
-    $[5] = streamData.description;
-    $[6] = t4;
+    $[8] = streamData.description;
+    $[9] = t6;
   } else {
-    t4 = $[6];
+    t6 = $[9];
   }
-  let t5;
-  if ($[7] !== channelData.name) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-      href: "./channel.html",
+  const t7 = `./channel.html?id=${streamData.id}`;
+  let t8;
+  if ($[10] !== channelData.name || $[11] !== t7) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: t7,
       id: "channelName",
       children: channelData.name
     });
-    $[7] = channelData.name;
-    $[8] = t5;
+    $[10] = channelData.name;
+    $[11] = t7;
+    $[12] = t8;
   } else {
-    t5 = $[8];
+    t8 = $[12];
   }
-  let t6;
-  if ($[9] !== t3 || $[10] !== t4 || $[11] !== t5) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "stream-info",
-      children: [t3, t4, t5]
-    });
-    $[9] = t3;
-    $[10] = t4;
-    $[11] = t5;
-    $[12] = t6;
-  } else {
-    t6 = $[12];
-  }
-  let t7;
-  if ($[13] !== t2 || $[14] !== t6) {
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "channel-stream-info",
-      children: [t2, t6]
-    });
-    $[13] = t2;
-    $[14] = t6;
-    $[15] = t7;
-  } else {
-    t7 = $[15];
-  }
-  let t8;
   let t9;
-  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
-      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
+  if ($[13] !== t5 || $[14] !== t6 || $[15] !== t8) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-info",
+      children: [t5, t6, t8]
     });
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-      children: "\u2B24"
-    });
-    $[16] = t8;
-    $[17] = t9;
+    $[13] = t5;
+    $[14] = t6;
+    $[15] = t8;
+    $[16] = t9;
   } else {
-    t8 = $[16];
-    t9 = $[17];
+    t9 = $[16];
   }
   let t10;
-  if ($[18] !== streamData.audience) {
+  if ($[17] !== t4 || $[18] !== t9) {
     t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "live-watchers",
-      children: [t8, t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "viewer-count",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          id: "current-viewers",
-          children: streamData.audience
-        })
-      })]
+      className: "channel-stream-info",
+      children: [t4, t9]
     });
-    $[18] = streamData.audience;
+    $[17] = t4;
+    $[18] = t9;
     $[19] = t10;
   } else {
     t10 = $[19];
@@ -2955,13 +2858,11 @@ function Stream(t0) {
   let t11;
   let t12;
   if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-      className: "follow-button",
-      children: "\u041E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u0442\u044C"
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+      children: "\u0412 \u044D\u0444\u0438\u0440\u0435"
     });
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-      className: "subscribe-button",
-      children: "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      children: "\u2B24"
     });
     $[20] = t11;
     $[21] = t12;
@@ -2970,71 +2871,105 @@ function Stream(t0) {
     t12 = $[21];
   }
   let t13;
-  if ($[22] !== streamData.ageRate) {
+  if ($[22] !== streamData.audience) {
     t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "buttons-row",
-      children: [t11, t12, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
-        id: "ageRating",
-        className: "age-rating",
-        children: [streamData.ageRate, "+"]
+      className: "live-watchers",
+      children: [t11, t12, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "viewer-count",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+          id: "current-viewers",
+          children: streamData.audience
+        })
       })]
     });
-    $[22] = streamData.ageRate;
+    $[22] = streamData.audience;
     $[23] = t13;
   } else {
     t13 = $[23];
   }
   let t14;
-  if ($[24] !== t10 || $[25] !== t13) {
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "stream-statistic",
-      children: [t10, t13]
-    });
-    $[24] = t10;
-    $[25] = t13;
-    $[26] = t14;
-  } else {
-    t14 = $[26];
-  }
   let t15;
-  if ($[27] !== t14 || $[28] !== t7) {
-    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+  if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "follow-button",
+      children: "\u041E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u0442\u044C"
+    });
+    t15 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      className: "subscribe-button",
+      children: "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F"
+    });
+    $[24] = t14;
+    $[25] = t15;
+  } else {
+    t14 = $[24];
+    t15 = $[25];
+  }
+  let t16;
+  if ($[26] !== streamData.ageRate) {
+    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "buttons-row",
+      children: [t14, t15, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+        id: "ageRating",
+        className: "age-rating",
+        children: [streamData.ageRate, "+"]
+      })]
+    });
+    $[26] = streamData.ageRate;
+    $[27] = t16;
+  } else {
+    t16 = $[27];
+  }
+  let t17;
+  if ($[28] !== t13 || $[29] !== t16) {
+    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "stream-statistic",
+      children: [t13, t16]
+    });
+    $[28] = t13;
+    $[29] = t16;
+    $[30] = t17;
+  } else {
+    t17 = $[30];
+  }
+  let t18;
+  if ($[31] !== t10 || $[32] !== t17) {
+    t18 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "stream-wrapper",
       children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "channel-info",
-        children: [t7, t14]
+        children: [t10, t17]
       })]
     });
-    $[27] = t14;
-    $[28] = t7;
-    $[29] = t15;
+    $[31] = t10;
+    $[32] = t17;
+    $[33] = t18;
   } else {
-    t15 = $[29];
+    t18 = $[33];
   }
-  let t16;
-  if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
-    t16 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+  let t19;
+  if ($[34] === Symbol.for("react.memo_cache_sentinel")) {
+    t19 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "chat",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Chat__WEBPACK_IMPORTED_MODULE_1__["default"], {})
     });
-    $[30] = t16;
+    $[34] = t19;
   } else {
-    t16 = $[30];
+    t19 = $[34];
   }
-  let t17;
-  if ($[31] !== t15) {
-    t17 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+  let t20;
+  if ($[35] !== t18) {
+    t20 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "stream-banner",
-        children: [t15, t16]
+        children: [t18, t19]
       })
     });
-    $[31] = t15;
-    $[32] = t17;
+    $[35] = t18;
+    $[36] = t20;
   } else {
-    t17 = $[32];
+    t20 = $[36];
   }
-  return t17;
+  return t20;
 }
 
 /***/ },
@@ -3299,7 +3234,8 @@ const themesMap = new Map([["dark", {
   arrowDown: 'url(images/arrow-down-dark.svg)',
   // followBtn: 'url(images/follow-icon-dark.svg)',
   followBtn: 'url(images/follow-icon-dark.png)',
-  subscribeBtn: 'url(images/subscribe-button-dark.svg)'
+  subscribeBtn: 'url(images/subscribe-button-dark.svg)',
+  streamsNotFound: 'url(images/streams-not-found-50-light.png)'
 }], ["light", {
   mainBg: '#FFFFFF',
   promoBg: 'rgba(134, 129, 153, 0.5)',
@@ -3335,7 +3271,8 @@ const themesMap = new Map([["dark", {
   arrowDown: 'url(images/arrow-down-light.svg)',
   // followBtn: 'url(images/follow-icon-light.svg)',
   followBtn: 'url(images/follow-icon-light.png)',
-  subscribeBtn: 'url(images/subscribe-button-light.svg)'
+  subscribeBtn: 'url(images/subscribe-button-light.svg)',
+  streamsNotFound: 'url(images/streams-not-found-50-dark.png)'
 }]]);
 const updateTheme = themeId => {
   // console.log({ updateTheme: currentTheme });
@@ -3371,7 +3308,8 @@ const updateTheme = themeId => {
     searchIcon,
     arrowDown,
     followBtn,
-    subscribeBtn
+    subscribeBtn,
+    streamsNotFound
   } = themesMap.get(themeId);
   (0,_common__WEBPACK_IMPORTED_MODULE_0__.setLocalStorage)(storageKey, themeId);
 
@@ -3379,7 +3317,7 @@ const updateTheme = themeId => {
   //   mainBg, promoBg, inputBg, btnBg, btnScrollBg, activeFirstBtnBg, activeBtnBg,
   //   bannerBtnBg, btnsHover, blocksHover, btnScrollHover,
   //   accentColorBg, subscribeBtnBg, accentColorHover, tagBtnBg, tagBtnBgHover,
-  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn });
+  //   fontLogo, fontPrimary, fontSecondary, fontTertiary, categoryBgImg, channelBgImg, channelBgImgTint, categoryBgImgTint, notFoundBgImg, notFoundBgImgTint, logoGlow, logoGlowHover, searchIcon, arrowDown, followBtn, subscribeBtn, streamsNotFound });
 
   document.documentElement.style.setProperty('--theme-main-bg', mainBg);
   document.documentElement.style.setProperty('--theme-promo-bg', promoBg);
@@ -3413,6 +3351,7 @@ const updateTheme = themeId => {
   document.documentElement.style.setProperty('--theme-arrow-down', arrowDown);
   document.documentElement.style.setProperty('--theme-follow-button', followBtn);
   document.documentElement.style.setProperty('--theme-subscribe-button', subscribeBtn);
+  document.documentElement.style.setProperty('--theme-icon-streams-not-found', streamsNotFound);
   return themeId;
 };
 const getCurrentTheme = () => {
@@ -34264,7 +34203,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"categories":[{"id":1,"menuOrder":4,"
   \******************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/banner-ava.jpg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/banner-stream-prewiev-5.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1,2,9]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"channels":[{"id":1,"name":"neuro_activate","title":"Разрабатываю игру KUPOL День 4 / Основная концепция","description":"Разрабатываю игры для внеземных сообществ","iconUrl":"./images/channel-ava-1-5.svg","categories":[1]},{"id":2,"name":"LuckyKhajiit","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"Профессиональный проходильщик территорий Skirim","iconUrl":"./images/favorite-channels-ava-3-1.jpg","categories":[1]},{"id":3,"name":"MultiPupsik","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Мультики для самых смышленых","iconUrl":"./images/favorite-channels-ava-3-3.jpg","categories":[1]},{"id":4,"name":"KidsPlanet","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":5,"name":"Programming","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","iconUrl":"./images/favorite-channels-ava-3-2.jpg","categories":[1]},{"id":6,"name":"coffee_lover","title":"Coffe Lover","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-1.svg","categories":[1]},{"id":7,"name":"neoElectron","title":"neoElectron","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-2.svg","categories":[1]},{"id":8,"name":"JustCodingNotTalking","title":"JustCodingNotTalking","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-3.svg","categories":[1]},{"id":9,"name":"programmer_at_noon","title":"programmer_at_noon","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-4.svg","categories":[1]},{"id":10,"name":"neuro_activate","title":"neuro_activate","description":"На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями","iconUrl":"./images/channel-ava-1-5.svg","categories":[1,2,9]},{"id":11,"name":"loffee_cats_lover","title":"loffee_cats_lover","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-1.svg","categories":[2]},{"id":12,"name":"neoLoffii","title":"neoLoffii","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-2.svg","categories":[2]},{"id":13,"name":"JustLoffiiNotCoffee","title":"JustLoffiiNotCoffee","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-3.svg","categories":[2]},{"id":14,"name":"Loffii_at_noon","title":"Loffii_at_noon","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-4.svg","categories":[2]},{"id":15,"name":"Loffii_activate","title":"Loffii_activate","description":"На данном канале транслируется музыка различных жанров и направлений","iconUrl":"./images/channel-ava-2-5.svg","categories":[2]},{"id":16,"name":"english_lover","title":"english_lover","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-1.svg","categories":[3]},{"id":17,"name":"neoLing","title":"neoLing","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-2.svg","categories":[3]},{"id":18,"name":"JustEnglishNotTalking","title":"JustEnglishNotTalking","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-3.svg","categories":[3]},{"id":19,"name":"english_at_noon","title":"english_at_noon","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-4.svg","categories":[3]},{"id":20,"name":"eng_activate","title":"eng_activate","description":"На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями","iconUrl":"./images/channel-ava-3-5.svg","categories":[3]},{"id":21,"name":"wanna_play","title":"wanna_play","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-1.svg","categories":[4]},{"id":22,"name":"bubblebuttons","title":"bubblebuttons","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-2.svg","categories":[4]},{"id":23,"name":"NotTalkingAndListen","title":"NotTalkingAndListen","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-3.svg","categories":[4]},{"id":24,"name":"apply-to-all","title":"apply-to-all","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-4.svg","categories":[4]},{"id":25,"name":"brain_activ","title":"brain_activ","description":"На данном канале транслируется музыка от диджеев разного уровня исполнения","iconUrl":"./images/channel-ava-4-5.svg","categories":[4]},{"id":26,"name":"dance_lover","title":"dance_lover","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-1.svg","categories":[5]},{"id":27,"name":"balanceEgo","title":"balanceEgo","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-2.svg","categories":[5]},{"id":28,"name":"JustDanceIt","title":"JustDanceIt","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-3.svg","categories":[5]},{"id":29,"name":"dance_on_moon","title":"dance_on_moon","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-4.svg","categories":[5]},{"id":30,"name":"dancing_queen","title":"dancing_queen","description":"На данном канале транслируется танцевальное искусство различных жанров и мастерства исполнения","iconUrl":"./images/channel-ava-5-5.svg","categories":[5]},{"id":31,"name":"sweet_story_lover","title":"sweet_story_lover","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-1.svg","categories":[6]},{"id":32,"name":"annihilation_of_an_e_and_a_p","title":"annihilation_of_an_e_and_a_p","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-2.svg","categories":[6]},{"id":33,"name":"JustReadIt","title":"JustReadIt","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-3.svg","categories":[6]},{"id":34,"name":"Hello Letters","title":"Hello Letters","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-4.svg","categories":[6]},{"id":35,"name":"Angélique_activate","title":"Angélique_activate","description":"На данном канале транслируются записи чтения вслух книг по разным отраслям, категориям и жанрам","iconUrl":"./images/channel-ava-6-5.svg","categories":[6]},{"id":36,"name":"tdu_lover","title":"tdu_lover","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-1.svg","categories":[7]},{"id":37,"name":"Stef","title":"Stef","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-2.svg","categories":[7]},{"id":38,"name":"cars_so_cool","title":"cars_so_cool","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-3.svg","categories":[7]},{"id":39,"name":"on_the_road_again","title":"on_the_road_again","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-4.svg","categories":[7]},{"id":40,"name":"motor_activate","title":"motor_activate","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-7-5.svg","categories":[7]},{"id":41,"name":"skyrim_lover","title":"skyrim_lover","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-1.svg","categories":[8]},{"id":42,"name":"Shrouded-Grove-Gourmet","title":"Shrouded-Grove-Gourmet","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-2.svg","categories":[8]},{"id":43,"name":"JustHaveALook","title":"JustHaveALook","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-3.svg","categories":[8]},{"id":44,"name":"levelUpMaster","title":"levelUpMaster","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-4.svg","categories":[8]},{"id":45,"name":"calm_activate","title":"calm_activate","description":"На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями","iconUrl":"./images/channel-ava-8-5.svg","categories":[8]}]}');
 
 /***/ },
 
@@ -34284,7 +34223,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"clips":[{"id":1,"authorId":31,"chann
   \*****************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":20,"promo":true,"title":"Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне","description":"День 4 / Основная концепция","previewUrl":"images/banner-stream-prewiev-1.jpg","videoUrl":"https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":20,"promo":true,"title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/banner-stream-prewiev-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":20,"promo":true,"title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/banner-stream-prewiev-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":20,"promo":true,"title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/banner-stream-prewiev-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":20,"promo":true,"title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","previewUrl":"images/banner-stream-prewiev-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/favourite-categories-video-1-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/favourite-categories-video-1-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/favourite-categories-video-1-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/favourite-categories-video-3-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/favourite-categories-video-3-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/favourite-categories-video-3-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/favourite-categories-video-3-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/favourite-categories-video-3-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/favourite-categories-video-5-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/favourite-categories-video-5-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/favourite-categories-video-5-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]},{"id":46,"authorId":46,"channelId":9,"categoryId":9,"title":"Programming the Dawn in Skyrim: reliable, stable, and amazing!","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":18,"languages":["English","Français"]},{"id":47,"authorId":47,"channelId":16,"categoryId":9,"title":"How to fight a dragon if the Dovahkiin has a small vocabulary","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":18,"languages":["English"]},{"id":48,"authorId":48,"channelId":19,"categoryId":9,"title":"Learning to admire the unusual locations in the game Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":49,"authorId":49,"channelId":20,"categoryId":9,"title":"Learn English with characters from the game Skyrim and their phrases","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English"]},{"id":50,"authorId":50,"channelId":10,"categoryId":9,"title":"Optimizing 3D graphics","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]},{"id":51,"authorId":51,"channelId":15,"categoryId":16,"title":"24/7 Radio Streams | Relaxing Music","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["No Talking"]},{"id":52,"authorId":52,"channelId":14,"categoryId":16,"title":"Radio streams for Holidays","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":53,"authorId":53,"channelId":13,"categoryId":16,"title":"Lofi Hip Hop Beats Radio","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":18,"languages":["English","No Talking"]},{"id":54,"authorId":54,"channelId":11,"categoryId":16,"title":"Winter melodies on the Radio","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English"]},{"id":55,"authorId":55,"channelId":12,"categoryId":16,"title":"Morning Tea Radio Cafe","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":56,"authorId":56,"channelId":26,"categoryId":12,"title":"Practice your dance moves. Just Dance game","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":57,"authorId":57,"channelId":27,"categoryId":12,"title":"Langue des signes dans la langue de la danse. C\'est simple","description":"Dance club","previewUrl":"images/favourite-categories-video-5-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":58,"authorId":58,"channelId":28,"categoryId":12,"title":"Gentle wellness practices for women","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":59,"authorId":59,"channelId":29,"categoryId":12,"title":"Modern Dance - Compete in the game with online dancers","description":"Dance club","previewUrl":"images/favourite-categories-video-5-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":60,"authorId":60,"channelId":30,"categoryId":12,"title":"Stretching - Flexibility - Beauty","description":"Dance club","previewUrl":"images/favourite-categories-video-5-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":61,"authorId":61,"channelId":6,"categoryId":11,"title":"Enjoying the process of creating a new exciting game","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":62,"authorId":62,"channelId":7,"categoryId":11,"title":"Je ne trouve pas de Streams de programmation plus joyeux","description":"Ressources infinies des bibliothèques","previewUrl":"images/favourite-categories-video-1-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":63,"authorId":63,"channelId":10,"categoryId":11,"title":"Делаем игру не спеша. Общаемся, обсуждая концепцию и детали игры","description":"Day 0 / creating game sketches","previewUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":64,"authorId":64,"channelId":16,"categoryId":11,"title":"It\'s time to learn how to speak...","description":"New era of English","previewUrl":"images/favourite-categories-video-3-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":65,"authorId":65,"channelId":19,"categoryId":11,"title":"Basic phrases for communication. More colloquial words","description":"New era of English","previewUrl":"images/favourite-categories-video-3-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":66,"authorId":66,"channelId":6,"categoryId":13,"title":"Use your intelligence to create your own game","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":67,"authorId":67,"channelId":26,"categoryId":13,"title":"Just Dance -> Just watch -> Just Dance","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English"]},{"id":68,"authorId":68,"channelId":39,"categoryId":13,"title":"Beautiful cars in the TDU2 game","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":18,"languages":["English"]},{"id":69,"authorId":69,"channelId":37,"categoryId":13,"title":"Racing with online players. Race for the leader - more fun together","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":18,"languages":["English"]},{"id":70,"authorId":70,"channelId":42,"categoryId":13,"title":"Defeat all your dragons in game and then...in real life","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":18,"languages":["English"]},{"id":71,"authorId":71,"channelId":22,"categoryId":14,"title":"Develop your ear and musical taste whenever you want","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":72,"authorId":72,"channelId":24,"categoryId":14,"title":"Incredible improvisations for the entire space audience","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":73,"authorId":73,"channelId":28,"categoryId":14,"title":"Useful dance genres for women: for softening natural femininity","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":74,"authorId":74,"channelId":33,"categoryId":14,"title":"Listen to or read your favorite books day after day","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":75,"authorId":75,"channelId":23,"categoryId":14,"title":"These are not musical mistakes - these are improvisations","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"streams":[{"id":1,"authorId":1,"channelId":1,"categoryId":20,"promo":true,"bannerAva":"images/banner-ava.jpg","title":"Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне","description":"День 4 / Основная концепция","previewUrl":"images/favourite-categories-video-1-5.jpg","bannerUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO","audience":3256,"ageRate":12,"languages":["English","Русский"]},{"id":2,"authorId":2,"channelId":2,"categoryId":20,"promo":true,"bannerAva":"images/banner-ava.jpg","title":"Skyrim-прокачка до 17 уровня и обратно до 1-го...","description":"День 18 / Как понизить свой уровень","previewUrl":"images/favourite-categories-video-2-5.jpg","bannerUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5,"ageRate":18,"languages":["Русский"]},{"id":3,"authorId":3,"channelId":3,"categoryId":20,"promo":true,"bannerAva":"images/banner-ava.jpg","title":"Смешарики 3 часа подряд - Часть 1-ая из 10-ти","description":"Рекомендовано к внимательному просмотру","previewUrl":"images/favourite-categories-video-3-5.jpg","bannerUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":5776,"ageRate":3,"languages":["Русский"]},{"id":4,"authorId":4,"channelId":4,"categoryId":20,"promo":true,"bannerAva":"images/banner-ava.jpg","title":"Крутой замес. Делаем рыбок из марсианской глины","description":"Задача дня: добыть марсианскую глину","previewUrl":"images/favourite-categories-video-4-5.jpg","bannerUrl":"images/favourite-categories-video-6-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":6,"ageRate":3,"languages":["Русский"]},{"id":5,"authorId":5,"channelId":5,"categoryId":20,"promo":true,"bannerAva":"images/banner-ava.jpg","title":"PROграммирование для будущего","description":"Тренируем навыки многопоточности","previewUrl":"images/favourite-categories-video-5-5.jpg","bannerUrl":"images/favourite-categories-video-1-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":9433,"ageRate":30,"languages":["English"]},{"id":6,"authorId":6,"channelId":6,"categoryId":1,"promo":false,"title":"Second game. Gamedev_base","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":7,"authorId":7,"channelId":7,"categoryId":1,"title":"Dev recoder soit même ou librairie","description":"Ressources infinies des bibliothèques","previewUrl":"images/favourite-categories-video-1-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":8,"authorId":8,"channelId":8,"categoryId":1,"title":"Rivers of code","description":"Just coding again","previewUrl":"images/favourite-categories-video-1-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":440,"ageRate":16,"languages":["English","No Talking"]},{"id":9,"authorId":9,"channelId":9,"categoryId":1,"title":"This is my first time making Tetris","description":"Creating simple 2d game","previewUrl":"images/favourite-categories-video-1-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English","No Talking"]},{"id":10,"authorId":10,"channelId":10,"categoryId":1,"title":"Спокойно вкатываюсь в разработку","description":"Day 0 / creating game sketches","previewUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":11,"authorId":11,"channelId":11,"categoryId":2,"title":"Beats to study | Relaxing Music","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":12,"authorId":12,"channelId":12,"categoryId":2,"title":"Restful Holidays","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":13,"authorId":13,"channelId":13,"categoryId":2,"title":"Lofi Hip Hop Beats to Relax & Study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":14,"authorId":14,"channelId":14,"categoryId":2,"title":"Winter Loffii | Deep Focus for study","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":15,"authorId":15,"channelId":15,"categoryId":2,"title":"Morning Tea | Loffii Cafe","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":16,"authorId":16,"channelId":16,"categoryId":3,"title":"Update vocabulary","description":"New era of English","previewUrl":"images/favourite-categories-video-3-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":17,"authorId":17,"channelId":17,"categoryId":3,"title":"30 Min to Improve Listening Skills","description":"New era of English","previewUrl":"images/favourite-categories-video-3-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":450,"ageRate":12,"languages":["English"]},{"id":18,"authorId":18,"channelId":18,"categoryId":3,"title":"The second time I\'m not talking","description":"New era of English","previewUrl":"images/favourite-categories-video-3-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":562,"ageRate":18,"languages":["English"]},{"id":19,"authorId":19,"channelId":19,"categoryId":3,"title":"This is my first time speaking English","description":"New era of English","previewUrl":"images/favourite-categories-video-3-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":20,"authorId":20,"channelId":20,"categoryId":3,"title":"How to Remember Words","description":"New era of English","previewUrl":"images/favourite-categories-video-3-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":680,"ageRate":12,"languages":["English"]},{"id":21,"authorId":21,"channelId":21,"categoryId":4,"title":"Second part of the second part","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["English"]},{"id":22,"authorId":22,"channelId":22,"categoryId":4,"title":"Electronic Music Experience","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":23,"authorId":23,"channelId":23,"categoryId":4,"title":"Sound Rivers","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]},{"id":24,"authorId":24,"channelId":24,"categoryId":4,"title":"This is my first time making Mixins","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":25,"authorId":25,"channelId":25,"categoryId":4,"title":"TRANCEляцияTRANCEкоммутация","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":26,"authorId":26,"channelId":26,"categoryId":5,"title":"Second dance. Dancedev_base","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":27,"authorId":27,"channelId":27,"categoryId":5,"title":"Danse magnifique pour les débutants","description":"Dance club","previewUrl":"images/favourite-categories-video-5-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":28,"authorId":28,"channelId":28,"categoryId":5,"title":"Dance Code","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":29,"authorId":29,"channelId":29,"categoryId":5,"title":"This is my first time dance on Moon","description":"Dance club","previewUrl":"images/favourite-categories-video-5-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English","No Talking"]},{"id":30,"authorId":30,"channelId":30,"categoryId":5,"title":"Plastisch Fantastisch Plastisch","description":"Dance club","previewUrl":"images/favourite-categories-video-5-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":31,"authorId":31,"channelId":31,"categoryId":6,"title":"The second bedtime story. When the baby won\'t sleep","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":32,"authorId":32,"channelId":32,"categoryId":6,"title":"Un autre livre pour ceux qui ont \\"lu tous les livres\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["Français"]},{"id":33,"authorId":33,"channelId":33,"categoryId":6,"title":"Hermione Granger\'s \\"Book of Spells\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":34,"authorId":34,"channelId":34,"categoryId":6,"title":"This is my first time reading at all","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":35,"authorId":35,"channelId":35,"categoryId":6,"title":"Спокойно вчитываюсь в роман \\"Анжелика в Квебеке\\"","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["Русский"]},{"id":36,"authorId":36,"channelId":36,"categoryId":7,"title":"It\'s a Beautiful game...The sun is shining I feel good","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":37,"authorId":37,"channelId":37,"categoryId":7,"title":"FINAL TESTING HIGHWAY ONE","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":12,"languages":["English"]},{"id":38,"authorId":38,"channelId":38,"categoryId":7,"title":"Finishing Unlimited Story Mode","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":890,"ageRate":12,"languages":["English"]},{"id":39,"authorId":39,"channelId":39,"categoryId":7,"title":"This is my first Ferrari test-drive","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":12,"languages":["English"]},{"id":40,"authorId":40,"channelId":40,"categoryId":7,"title":"Катаю по асфальту","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":3451,"ageRate":12,"languages":["Русский"]},{"id":41,"authorId":41,"channelId":41,"categoryId":8,"title":"Day two: looking for the Standing Stones","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":12,"languages":["English"]},{"id":42,"authorId":42,"channelId":42,"categoryId":8,"title":"Roast with Dragon Scales","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":12,"languages":["English","Français"]},{"id":43,"authorId":43,"channelId":43,"categoryId":8,"title":"The beauty of the Scandinavian paradise - an extraordinary sky","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English","No Talking"]},{"id":44,"authorId":44,"channelId":44,"categoryId":8,"title":"This is my first time playing Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English","No Talking"]},{"id":45,"authorId":45,"channelId":45,"categoryId":8,"title":"Calm fishing for mud crabs","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]},{"id":46,"authorId":46,"channelId":9,"categoryId":9,"title":"Programming the Dawn in Skyrim: reliable, stable, and amazing!","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":650,"ageRate":18,"languages":["English","Français"]},{"id":47,"authorId":47,"channelId":16,"categoryId":9,"title":"How to fight a dragon if the Dovahkiin has a small vocabulary","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":18,"languages":["English"]},{"id":48,"authorId":48,"channelId":19,"categoryId":9,"title":"Learning to admire the unusual locations in the game Skyrim","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":70,"ageRate":12,"languages":["English"]},{"id":49,"authorId":49,"channelId":20,"categoryId":9,"title":"Learn English with characters from the game Skyrim and their phrases","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":60,"ageRate":12,"languages":["English"]},{"id":50,"authorId":50,"channelId":10,"categoryId":9,"title":"Optimizing 3D graphics","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":851,"ageRate":12,"languages":["English","Русский"]},{"id":51,"authorId":51,"channelId":15,"categoryId":16,"title":"24/7 Radio Streams | Relaxing Music","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":12,"languages":["No Talking"]},{"id":52,"authorId":52,"channelId":14,"categoryId":16,"title":"Radio streams for Holidays","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":53,"authorId":53,"channelId":13,"categoryId":16,"title":"Lofi Hip Hop Beats Radio","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":18,"languages":["English","No Talking"]},{"id":54,"authorId":54,"channelId":11,"categoryId":16,"title":"Winter melodies on the Radio","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English"]},{"id":55,"authorId":55,"channelId":12,"categoryId":16,"title":"Morning Tea Radio Cafe","description":"Music sounds","previewUrl":"images/favourite-categories-video-2-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":56,"authorId":56,"channelId":26,"categoryId":12,"title":"Practice your dance moves. Just Dance game","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":16,"languages":["English"]},{"id":57,"authorId":57,"channelId":27,"categoryId":12,"title":"Langue des signes dans la langue de la danse. C\'est simple","description":"Dance club","previewUrl":"images/favourite-categories-video-5-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":342,"ageRate":16,"languages":["English","Français"]},{"id":58,"authorId":58,"channelId":28,"categoryId":12,"title":"Gentle wellness practices for women","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":59,"authorId":59,"channelId":29,"categoryId":12,"title":"Modern Dance - Compete in the game with online dancers","description":"Dance club","previewUrl":"images/favourite-categories-video-5-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":230,"ageRate":16,"languages":["English"]},{"id":60,"authorId":60,"channelId":30,"categoryId":12,"title":"Stretching - Flexibility - Beauty","description":"Dance club","previewUrl":"images/favourite-categories-video-5-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":761,"ageRate":18,"languages":["English","Русский"]},{"id":61,"authorId":61,"channelId":6,"categoryId":11,"title":"Enjoying the process of creating a new exciting game","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":62,"authorId":62,"channelId":7,"categoryId":11,"title":"Je ne trouve pas de Streams de programmation plus joyeux","description":"Ressources infinies des bibliothèques","previewUrl":"images/favourite-categories-video-1-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":50,"ageRate":16,"languages":["English","Français"]},{"id":63,"authorId":63,"channelId":10,"categoryId":11,"title":"Делаем игру не спеша. Общаемся, обсуждая концепцию и детали игры","description":"Day 0 / creating game sketches","previewUrl":"images/favourite-categories-video-1-5.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":241,"ageRate":16,"languages":["English","Русский"]},{"id":64,"authorId":64,"channelId":16,"categoryId":11,"title":"It\'s time to learn how to speak...","description":"New era of English","previewUrl":"images/favourite-categories-video-3-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2641,"ageRate":16,"languages":["English"]},{"id":65,"authorId":65,"channelId":19,"categoryId":11,"title":"Basic phrases for communication. More colloquial words","description":"New era of English","previewUrl":"images/favourite-categories-video-3-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":20,"ageRate":12,"languages":["English"]},{"id":66,"authorId":66,"channelId":6,"categoryId":13,"title":"Use your intelligence to create your own game","description":"Day 1 / creating some simple 2d game","previewUrl":"images/favourite-categories-video-1-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":2450,"ageRate":16,"languages":["English"]},{"id":67,"authorId":67,"channelId":26,"categoryId":13,"title":"Just Dance -> Just watch -> Just Dance","description":"Dance club","previewUrl":"images/favourite-categories-video-5-1.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English"]},{"id":68,"authorId":68,"channelId":39,"categoryId":13,"title":"Beautiful cars in the TDU2 game","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":640,"ageRate":18,"languages":["English"]},{"id":69,"authorId":69,"channelId":37,"categoryId":13,"title":"Racing with online players. Race for the leader - more fun together","description":"TDU2 club","previewUrl":"images/favourite-categories-video-7-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":32,"ageRate":18,"languages":["English"]},{"id":70,"authorId":70,"channelId":42,"categoryId":13,"title":"Defeat all your dragons in game and then...in real life","description":"Только лучшее оружие и броня","previewUrl":"images/favourite-categories-video-8-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":442,"ageRate":18,"languages":["English"]},{"id":71,"authorId":71,"channelId":22,"categoryId":14,"title":"Develop your ear and musical taste whenever you want","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-2.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":502,"ageRate":12,"languages":["English","Français"]},{"id":72,"authorId":72,"channelId":24,"categoryId":14,"title":"Incredible improvisations for the entire space audience","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-4.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":780,"ageRate":12,"languages":["English","No Talking"]},{"id":73,"authorId":73,"channelId":28,"categoryId":14,"title":"Useful dance genres for women: for softening natural femininity","description":"Dance club","previewUrl":"images/favourite-categories-video-5-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English","No Talking"]},{"id":74,"authorId":74,"channelId":33,"categoryId":14,"title":"Listen to or read your favorite books day after day","description":"Books lovers club","previewUrl":"images/favourite-categories-video-6-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4830,"ageRate":18,"languages":["English"]},{"id":75,"authorId":75,"channelId":23,"categoryId":14,"title":"These are not musical mistakes - these are improvisations","description":"Music mixes","previewUrl":"images/favourite-categories-video-4-3.jpg","videoUrl":"https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd","audience":4340,"ageRate":12,"languages":["English","No Talking"]}]}');
 
 /***/ },
 
