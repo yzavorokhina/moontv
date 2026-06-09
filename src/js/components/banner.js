@@ -6,45 +6,39 @@ export default function Banner({ db }) {
 
     const showOnPage = 5;
 
-    let currentSlide = 0;
     let totalSlides = 0;
     let slidesMap = new Map();
-    const [currentSlideData, setCurrentSlideData] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
         const slides = document.querySelectorAll('.slide');
         totalSlides = slides.length;
         updateSlidePosition('useEffect');
+        //console.log({ currentSlide, slidesMap });
     });
 
     const updateSlidePosition = (index) => {
         const slidesWrapper = document.getElementById('slidesWrapper');
-        if (currentSlide < 0) currentSlide = totalSlides - 1;
-        if (currentSlide >= totalSlides) currentSlide = 0;
-        slidesWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
-        console.log({ index, currentSlide, totalSlides, trans: currentSlide * 100 });
-
-        const slideData = slidesMap.get(+currentSlide);
-
-        try {
-            if (slideData) {
-                // setCurrentSlideData(currentSlide);
-            }
-        } catch (err) {
-            console.log({ err });
+        if (currentSlide < 0) {
+            setCurrentSlide(totalSlides - 1);
+        } else if (currentSlide >= totalSlides) {
+            setCurrentSlide(0);
+            //console.log({ if: currentSlide >= totalSlides, currentSlide });
         }
+        slidesWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+        //console.log({ index, currentSlide, totalSlides, trans: currentSlide * 100 });
+
+        const slideData = slidesMap.get(currentSlide);
     }
 
     const prevSlide = () => {
-        currentSlide--;
-        console.log({ currentSlide, slidesMap });
-        updateSlidePosition('prevSlide');
+        setCurrentSlide((prev) => { return prev - 1 });
+        //console.log({ currentSlide, slidesMap });
     }
 
     const nextSlide = () => {
-        currentSlide++;
-        console.log({ currentSlide, slidesMap });
-        updateSlidePosition('nextSlide');
+        setCurrentSlide((prev) => { return prev + 1 });
+        //console.log({ currentSlide, slidesMap });
     }
 
     const renderCards = () => {
@@ -110,7 +104,7 @@ export default function Banner({ db }) {
                             </div>
                         ))}
                     </div>
-                    <BannerSlideInfo slideData={currentSlideData} />
+                    <BannerSlideInfo slidesMap={slidesMap} currentSlide={currentSlide} />
                 </div>
                 <div className="promo">
                     {renderCards().map(data => (
