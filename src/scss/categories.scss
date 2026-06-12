@@ -304,3 +304,117 @@
 }
 
 /* end of the one category-card */
+
+/* category-labels: */
+.category-labels {
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    left: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: auto;
+    height: 180px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.category-live {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 22px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+    background-color: rgba(52, 49, 72, 0.6);
+    color: #CECED6;
+}
+
+.category-live h6 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    color: #CECED6;
+    font-size: 12px;
+    margin: auto;
+}
+
+.category-live span {
+    color: #E2552D;
+    font-size: 6px;
+    vertical-align: center;
+    margin-right: 6px;
+}
+
+.viewers-count {
+    color: var(--theme-font-secondary, #CECED6);
+    font-size: 20px;
+}
+
+#viewers {
+    letter-spacing: 10%;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    font-weight: 400;
+}
+
+.stream-age-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgba(52, 49, 72, 0.6);
+    color: #CECED6;
+    font-size: 12px;
+}
+
+.label-age-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #CECED6;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* styles of wrapper links: */
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-wrapper:focus {
+    outline: 1px solid var(--theme-font-primary, #FFFFFF);
+    //outline: none;
+    outline-offset: 1px;
+    border-radius: 5px;
+}
+
+/* end of the stream-labels */

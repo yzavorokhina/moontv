@@ -3,6 +3,14 @@ import { getUrlParams } from '../utils/common.js';
 export default function CategoryCards({ db }) {
     const showTags = 2;
 
+
+    const shortenNumber = (num) => {
+        if (num >= 1000) {
+            return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+        }
+        return num.toString();
+    }
+
     const renderCards = () => {
         const params = getUrlParams();
         const tagId = +params.tag || 0;
@@ -15,7 +23,7 @@ export default function CategoryCards({ db }) {
             categories = db.categoriesModel.findMany(cat => cat.tags.indexOf(tagId) > -1);
         }
 
-console.log({categories, beforeSort:true}); 
+        console.log({ categories, beforeSort: true });
 
         categories = categories.sort((a, b) => {
             if (a.menuOrder > b.menuOrder) {
@@ -27,13 +35,14 @@ console.log({categories, beforeSort:true});
             return 0;
         });
 
-console.log({categories, afterSort:true}); 
+        console.log({ categories, afterSort: true });
 
         return categories.map(category => {
             let tags = db.tagsModel.findByIds(category.tags);
 
             return {
                 category,
+                audience: shortenNumber(category.audience),
                 tags: tags.slice(0, showTags),
                 categoryUrl: "./category.html?id=" + category.id,
             }
@@ -47,6 +56,14 @@ console.log({categories, afterSort:true});
                         <img className="category-img-top" src={data.category.imagePreviewUrl}
                             alt="category image" />
                     </a>
+                    <div className="category-labels">
+                        <div className="category-live">
+                            <span>&#11044;</span>
+                            <div className="viewer-count">
+                                <span id="viewers">{data.audience}</span>
+                            </div>
+                        </div>
+                    </div>
                     <div className="card-body">
                         <a href={data.categoryUrl} className="category-link-wrapper">
                             <p className="category-name-info">{data.category.name}</p>
@@ -54,6 +71,7 @@ console.log({categories, afterSort:true});
                         <div className="category-info-row">
                             <p>{data.category.shortDescription}</p>
                         </div>
+
                         <div className="tags-row" role="group" aria-label="tags-group">
                             {data.tags.map((tag) => (
                                 <a key={tag.id} href={`./categories.html?tag=${tag.id}`} className="link-wrapper">
