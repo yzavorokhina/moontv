@@ -1,8 +1,13 @@
 
-export default function ChannelCards({ db, categoryId, showAll, showOnPage }) {
+export default function ChannelCards({ db, categoryId, channelId, showAll, showOnPage }) {
 
     const renderCards = () => {
-        let streamsFiltered = db.streamsModel.findByName('categoryId', categoryId);
+        let streamsFiltered = [];
+        if (categoryId) {
+            streamsFiltered = db.streamsModel.findByName('categoryId', categoryId);
+        } else if (channelId) {
+            streamsFiltered = db.streamsModel.findByName('channelId', channelId);
+        }
         console.log({ showAll, categoryId, streamsFiltered });
 
         if (!showOnPage) {
@@ -62,13 +67,18 @@ export default function ChannelCards({ db, categoryId, showAll, showOnPage }) {
                         </div>
                     </div>
                     <div className="stream-labels">
-                        <div className="stream-live">
+                        {data.stream.online && <div className="stream-live">
                             <span>&#11044;</span>
                             {/* <h6>В эфире</h6> */}
                             <div className="viewer-count">
                                 <span id="viewers">{data.stream.audience}</span>
                             </div>
-                        </div>
+                        </div>}
+                        {data.stream.online === false && <div className="stream-live">
+                            <div className="viewer-count">
+                                <span id="viewers">{data.stream.showed} просмотров</span>
+                            </div>
+                        </div>}
                         <div className="stream-age-rating">
                             <span className="label-age-rating">{data.stream.ageRate}+</span>
                         </div>

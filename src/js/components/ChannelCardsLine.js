@@ -1,6 +1,6 @@
 import ChannelCards from './ChannelCards';
 
-export default function ChannelCardsLine({ db, title, categoryId, showAll, showOnPage }) {
+export default function ChannelCardsLine({ db, title, categoryId, channelId, showAll, showOnPage }) {
 
     const getTitleClassName = () => {
         if (showOnPage && showOnPage === 4) {
@@ -23,7 +23,6 @@ export default function ChannelCardsLine({ db, title, categoryId, showAll, showO
                     <div className="section-title">
                         <a href="/page" className="link-wrapper">
                             <h2>
-                                {/* <!-- License: PD. Made by mapbox: https://github.com/mapbox/maki --> */}
                                 <svg fill="currentColor" width="16px" height="16px" viewBox="0 0 15 15"
                                     version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -36,7 +35,6 @@ export default function ChannelCardsLine({ db, title, categoryId, showAll, showO
                     <div className="show-all-categories">
                         <a href="#" className="arrowed">
                             Показать все
-                            {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
                             <svg className="show-all-arrow" width="24px" height="24px" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -48,7 +46,7 @@ export default function ChannelCardsLine({ db, title, categoryId, showAll, showO
                 </div>
 
                 <div className="channels-row">
-                    <ChannelCards db={db} categoryId={categoryId} showAll={showAll} showOnPage={showOnPage} />
+                    <ChannelCards db={db} categoryId={categoryId} channelId={channelId} showAll={showAll} showOnPage={showOnPage} />
                 </div>
 
                 <div className={getDividerClassName()}>
@@ -56,7 +54,6 @@ export default function ChannelCardsLine({ db, title, categoryId, showAll, showO
                     <button className="divider-button">
                         <a href="#" className="arrowed">
                             Показать все
-                            {/* <!-- License: MIT. Made by Shopify: https://github.com/Shopify/polaris --> */}
                             <svg className="show-all-arrow" width="24px" height="24px" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path

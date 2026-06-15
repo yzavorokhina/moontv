@@ -4,7 +4,7 @@
             "id": 1,
             "authorId": 1,
             "channelId": 1,
-            "categoryId": 20,
+            "categoryId": 1,
             "promo": true,
             "bannerAva": "images/banner-ava.jpg",
             "title": "Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне",
@@ -13,6 +13,8 @@
             "bannerUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO",
             "audience": 3256,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -68,6 +70,8 @@
             "bannerUrl": "images/favourite-categories-video-8-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 5,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "Русский"
@@ -102,6 +106,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -117,6 +123,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -133,6 +141,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -149,6 +159,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -165,6 +177,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -181,6 +195,8 @@
             "previewUrl": "images/favourite-categories-video-2-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -196,6 +212,8 @@
             "previewUrl": "images/favourite-categories-video-2-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -212,6 +230,8 @@
             "previewUrl": "images/favourite-categories-video-2-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -228,6 +248,8 @@
             "previewUrl": "images/favourite-categories-video-2-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -244,6 +266,8 @@
             "previewUrl": "images/favourite-categories-video-2-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -260,6 +284,8 @@
             "previewUrl": "images/favourite-categories-video-3-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2641,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -275,6 +301,8 @@
             "previewUrl": "images/favourite-categories-video-3-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -290,6 +318,8 @@
             "previewUrl": "images/favourite-categories-video-3-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 562,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -305,6 +335,8 @@
             "previewUrl": "images/favourite-categories-video-3-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 20,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -320,6 +352,8 @@
             "previewUrl": "images/favourite-categories-video-3-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 680,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -335,6 +369,8 @@
             "previewUrl": "images/favourite-categories-video-4-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -350,6 +386,8 @@
             "previewUrl": "images/favourite-categories-video-4-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -366,6 +404,8 @@
             "previewUrl": "images/favourite-categories-video-4-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -382,6 +422,8 @@
             "previewUrl": "images/favourite-categories-video-4-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -398,6 +440,8 @@
             "previewUrl": "images/favourite-categories-video-4-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -414,6 +458,8 @@
             "previewUrl": "images/favourite-categories-video-5-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -429,6 +475,8 @@
             "previewUrl": "images/favourite-categories-video-5-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 342,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -445,6 +493,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -461,6 +511,8 @@
             "previewUrl": "images/favourite-categories-video-5-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 230,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -477,6 +529,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -493,6 +547,8 @@
             "previewUrl": "images/favourite-categories-video-6-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -508,6 +564,8 @@
             "previewUrl": "images/favourite-categories-video-6-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 342,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "Français"
@@ -523,6 +581,8 @@
             "previewUrl": "images/favourite-categories-video-6-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -538,6 +598,8 @@
             "previewUrl": "images/favourite-categories-video-6-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 230,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -553,6 +615,8 @@
             "previewUrl": "images/favourite-categories-video-6-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "Русский"
@@ -568,6 +632,8 @@
             "previewUrl": "images/favourite-categories-video-7-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 70,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -583,6 +649,8 @@
             "previewUrl": "images/favourite-categories-video-7-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 32,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -598,6 +666,8 @@
             "previewUrl": "images/favourite-categories-video-7-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 890,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -613,6 +683,8 @@
             "previewUrl": "images/favourite-categories-video-7-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 640,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -628,6 +700,8 @@
             "previewUrl": "images/favourite-categories-video-7-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 3451,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "Русский"
@@ -643,6 +717,8 @@
             "previewUrl": "images/favourite-categories-video-8-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 650,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -658,6 +734,8 @@
             "previewUrl": "images/favourite-categories-video-8-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 442,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -674,6 +752,8 @@
             "previewUrl": "images/favourite-categories-video-8-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 70,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -690,6 +770,8 @@
             "previewUrl": "images/favourite-categories-video-8-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 60,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -706,6 +788,8 @@
             "previewUrl": "images/favourite-categories-video-8-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 851,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -722,6 +806,8 @@
             "previewUrl": "images/favourite-categories-video-8-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 650,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -738,6 +824,8 @@
             "previewUrl": "images/favourite-categories-video-8-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 442,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -753,6 +841,8 @@
             "previewUrl": "images/favourite-categories-video-8-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 70,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -768,6 +858,8 @@
             "previewUrl": "images/favourite-categories-video-8-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 60,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -783,6 +875,8 @@
             "previewUrl": "images/favourite-categories-video-8-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 851,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -799,6 +893,8 @@
             "previewUrl": "images/favourite-categories-video-2-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "No Talking"
@@ -814,6 +910,8 @@
             "previewUrl": "images/favourite-categories-video-2-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -830,6 +928,8 @@
             "previewUrl": "images/favourite-categories-video-2-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -846,6 +946,8 @@
             "previewUrl": "images/favourite-categories-video-2-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -861,6 +963,8 @@
             "previewUrl": "images/favourite-categories-video-2-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -877,6 +981,8 @@
             "previewUrl": "images/favourite-categories-video-5-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -892,6 +998,8 @@
             "previewUrl": "images/favourite-categories-video-5-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 342,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -908,6 +1016,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -924,6 +1034,8 @@
             "previewUrl": "images/favourite-categories-video-5-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 230,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -939,6 +1051,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -955,6 +1069,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -970,6 +1086,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -986,6 +1104,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1002,6 +1122,8 @@
             "previewUrl": "images/favourite-categories-video-3-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2641,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -1017,6 +1139,8 @@
             "previewUrl": "images/favourite-categories-video-3-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 20,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1032,6 +1156,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -1047,6 +1173,8 @@
             "previewUrl": "images/favourite-categories-video-5-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1062,6 +1190,8 @@
             "previewUrl": "images/favourite-categories-video-7-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 640,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -1077,6 +1207,8 @@
             "previewUrl": "images/favourite-categories-video-7-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 32,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -1092,6 +1224,8 @@
             "previewUrl": "images/favourite-categories-video-8-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 442,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -1107,6 +1241,8 @@
             "previewUrl": "images/favourite-categories-video-4-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1123,6 +1259,8 @@
             "previewUrl": "images/favourite-categories-video-4-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1139,6 +1277,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1155,6 +1295,8 @@
             "previewUrl": "images/favourite-categories-video-6-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -1170,6 +1312,8 @@
             "previewUrl": "images/favourite-categories-video-4-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1186,6 +1330,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1202,6 +1348,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1218,6 +1366,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1234,6 +1384,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1250,6 +1402,8 @@
             "previewUrl": "images/favourite-categories-video-5-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -1265,6 +1419,8 @@
             "previewUrl": "images/favourite-categories-video-5-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 342,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1281,6 +1437,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1297,6 +1455,8 @@
             "previewUrl": "images/favourite-categories-video-5-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 230,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1313,6 +1473,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1329,6 +1491,8 @@
             "previewUrl": "images/favourite-categories-video-2-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1344,6 +1508,8 @@
             "previewUrl": "images/favourite-categories-video-2-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1360,6 +1526,8 @@
             "previewUrl": "images/favourite-categories-video-2-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1376,6 +1544,8 @@
             "previewUrl": "images/favourite-categories-video-2-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1392,6 +1562,8 @@
             "previewUrl": "images/favourite-categories-video-2-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1408,6 +1580,8 @@
             "previewUrl": "images/favourite-categories-video-2-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1423,6 +1597,8 @@
             "previewUrl": "images/favourite-categories-video-2-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1439,6 +1615,8 @@
             "previewUrl": "images/favourite-categories-video-2-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1455,6 +1633,8 @@
             "previewUrl": "images/favourite-categories-video-2-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1471,6 +1651,8 @@
             "previewUrl": "images/favourite-categories-video-2-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1487,6 +1669,8 @@
             "previewUrl": "images/favourite-categories-video-2-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1502,6 +1686,8 @@
             "previewUrl": "images/favourite-categories-video-2-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1518,6 +1704,8 @@
             "previewUrl": "images/favourite-categories-video-2-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1534,6 +1722,8 @@
             "previewUrl": "images/favourite-categories-video-2-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1550,6 +1740,8 @@
             "previewUrl": "images/favourite-categories-video-2-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1566,6 +1758,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1582,6 +1776,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -1598,6 +1794,8 @@
             "previewUrl": "images/favourite-categories-video-3-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2641,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -1613,6 +1811,8 @@
             "previewUrl": "images/favourite-categories-video-3-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1628,6 +1828,8 @@
             "previewUrl": "images/favourite-categories-video-3-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 562,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -1643,6 +1845,8 @@
             "previewUrl": "images/favourite-categories-video-3-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 20,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1658,6 +1862,8 @@
             "previewUrl": "images/favourite-categories-video-3-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 680,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1673,6 +1879,8 @@
             "previewUrl": "images/favourite-categories-video-4-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -1688,6 +1896,8 @@
             "previewUrl": "images/favourite-categories-video-4-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 502,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1704,6 +1914,8 @@
             "previewUrl": "images/favourite-categories-video-4-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4340,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1720,6 +1932,8 @@
             "previewUrl": "images/favourite-categories-video-4-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English",
@@ -1736,6 +1950,8 @@
             "previewUrl": "images/favourite-categories-video-4-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1753,6 +1969,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -1768,6 +1986,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1784,6 +2004,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1800,6 +2022,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1816,6 +2040,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1833,6 +2059,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -1848,6 +2076,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1864,6 +2094,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1880,6 +2112,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1896,6 +2130,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1913,6 +2149,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -1928,6 +2166,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1944,6 +2184,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1960,6 +2202,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1976,6 +2220,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -1992,6 +2238,8 @@
             "previewUrl": "images/favourite-categories-video-6-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -2007,6 +2255,8 @@
             "previewUrl": "images/favourite-categories-video-6-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 342,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "Français"
@@ -2022,6 +2272,8 @@
             "previewUrl": "images/favourite-categories-video-6-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English"
@@ -2037,6 +2289,8 @@
             "previewUrl": "images/favourite-categories-video-6-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 230,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -2052,6 +2306,8 @@
             "previewUrl": "images/favourite-categories-video-6-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "Русский"
@@ -2067,6 +2323,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -2083,6 +2341,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -2099,6 +2359,8 @@
             "previewUrl": "images/favourite-categories-video-3-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2641,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -2114,6 +2376,8 @@
             "previewUrl": "images/favourite-categories-video-3-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 680,
+            "showed": 1234,
+            "online": true,
             "ageRate": 12,
             "languages": [
                 "English"
@@ -2130,6 +2394,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -2145,6 +2411,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2161,6 +2429,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2177,6 +2447,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2193,6 +2465,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2210,6 +2484,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -2225,6 +2501,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2241,6 +2519,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2257,6 +2537,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2273,6 +2555,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2290,6 +2574,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -2305,6 +2591,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2321,6 +2609,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2337,6 +2627,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2353,6 +2645,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2370,6 +2664,8 @@
             "previewUrl": "images/favourite-categories-video-1-1.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 2450,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English"
@@ -2385,6 +2681,8 @@
             "previewUrl": "images/favourite-categories-video-1-2.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 50,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2401,6 +2699,8 @@
             "previewUrl": "images/favourite-categories-video-1-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 440,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2417,6 +2717,8 @@
             "previewUrl": "images/favourite-categories-video-1-4.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 780,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2433,6 +2735,8 @@
             "previewUrl": "images/favourite-categories-video-1-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 241,
+            "showed": 1234,
+            "online": true,
             "ageRate": 16,
             "languages": [
                 "English",
@@ -2449,6 +2753,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -2465,6 +2771,8 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -2481,6 +2789,8 @@
             "previewUrl": "images/favourite-categories-video-5-3.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 4830,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
             "languages": [
                 "English",
@@ -2497,7 +2807,93 @@
             "previewUrl": "images/favourite-categories-video-5-5.jpg",
             "videoUrl": "https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd",
             "audience": 761,
+            "showed": 1234,
+            "online": true,
             "ageRate": 18,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 31,
+            "authorId": 1,
+            "channelId": 1,
+            "categoryId": 1,
+            "promo": false,
+            "bannerAva": "images/banner-ava.jpg",
+            "title": "Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне",
+            "description": "День 3 / Детализация идеи",
+            "previewUrl": "images/favourite-categories-video-1-5.jpg",
+            "bannerUrl": "images/favourite-categories-video-1-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO",
+            "audience": 0,
+            "showed": 1234,
+            "online": false,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 32,
+            "authorId": 1,
+            "channelId": 1,
+            "categoryId": 1,
+            "promo": false,
+            "bannerAva": "images/banner-ava.jpg",
+            "title": "Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне",
+            "description": "День 2 / Эскизы. Сцена и первые объекты",
+            "previewUrl": "images/favourite-categories-video-1-5.jpg",
+            "bannerUrl": "images/favourite-categories-video-1-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO",
+            "audience": 0,
+            "showed": 1234,
+            "online": false,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 33,
+            "authorId": 1,
+            "channelId": 1,
+            "categoryId": 1,
+            "promo": false,
+            "bannerAva": "images/banner-ava.jpg",
+            "title": "Разрабатываю игру KUPOL : выращивание фруктовых деревьев на Луне",
+            "description": "День 1 / Легкий бриф, разбор идей",
+            "previewUrl": "images/favourite-categories-video-1-5.jpg",
+            "bannerUrl": "images/favourite-categories-video-1-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO",
+            "audience": 0,
+            "showed": 1234,
+            "online": false,
+            "ageRate": 12,
+            "languages": [
+                "English",
+                "Русский"
+            ]
+        },
+        {
+            "id": 34,
+            "authorId": 1,
+            "channelId": 1,
+            "categoryId": 1,
+            "promo": false,
+            "bannerAva": "images/banner-ava.jpg",
+            "title": "Разрабатываю игру. От идеи до создания",
+            "description": "День X / Настройка окружения",
+            "previewUrl": "images/favourite-categories-video-1-5.jpg",
+            "bannerUrl": "images/favourite-categories-video-1-5.jpg",
+            "videoUrl": "https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO",
+            "audience": 0,
+            "showed": 1234,
+            "online": false,
+            "ageRate": 12,
             "languages": [
                 "English",
                 "Русский"

@@ -23,13 +23,14 @@ export default function CategoryPage({ db, showAll }) {
     }
 
     const channelData = db.channelsModel.findOneById(streamData.channelId);
+    const totalAudience = db.streamsModel.findAndSumByName("categoryId", categoryId, "audience");
 
     return (
         <>
             <Layout db={db}>
                 <div className="category-description-container">
                     <div className="category-description" id="react-category-description">
-                        <CategoryDescription categoryData={categoryData} channelData={channelData} />
+                        <CategoryDescription categoryData={categoryData} channelData={channelData} totalAudience={totalAudience} />
                     </div>
                     <div className="sorting-buttons-1">
                         <button>Онлайн</button>
@@ -52,7 +53,6 @@ export default function CategoryPage({ db, showAll }) {
                         <div className="block-buttons-2">
                             <span>Сортировка по:</span>
                             <button>
-                                {/* <!-- License: PD. Made by stephenhutchings: https://github.com/stephenhutchings/typicons.font --> */}
                                 <svg className="sorting-svg" fill="currentColor" width="20px" height="20px" viewBox="0 0 24 24"
                                     version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -60,11 +60,9 @@ export default function CategoryPage({ db, showAll }) {
                                 </svg>
                                 Названию</button>
                             <button>
-                                {/* <!-- License: MIT. Made by Microsoft: https://github.com/microsoft/fluentui-system-icons --> */}
                                 <svg className="sorting-svg" width="16px" height="16px" viewBox="0 0 28 28" version="1.1"
                                     xmlns="http://www.w3.org/2000/svg"
                                     xlink="http://www.w3.org/1999/xlink">
-                                    {/* <!-- Uploaded to SVGRepo https://www.svgrepo.com --> */}
                                     <title>ic_fluent_people_28_regular</title>
                                     <desc>Created with Sketch.</desc>
                                     <g id="🔍-Product-Icons" stroke="none" strokeWidth="1" fill="none"
@@ -79,7 +77,6 @@ export default function CategoryPage({ db, showAll }) {
                                 </svg>
                                 Кол-ву зрителей</button>
                             <button>
-                                {/* <!-- License: MIT. Made by Microsoft: https://github.com/microsoft/fluentui-system-icons --> */}
                                 <svg className="sorting-svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -97,7 +94,6 @@ export default function CategoryPage({ db, showAll }) {
                                 </svg>
                                 Кол-ву просмотров</button>
                             <button>
-                                {/* <!-- License: PD. Made by Aleksey Popov: https://dribbble.com/AlekseyPopov --> */}
                                 <svg className="sorting-svg" fill="currentColor" width="18px" height="18px" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd"

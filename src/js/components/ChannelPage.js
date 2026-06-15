@@ -38,8 +38,8 @@ export default function ChannelPage({ db, showAll }) {
                 <ChannelDescription db={db} streamId={streamId} showAll={showAll} channelData={channelData} />
 
                 <div className="favourite-categories">
-                    <ChannelCardsLine db={db} title={'Все трансляции'} categoryId={categoryId} showAll={showAll} showOnPage={showOnPage} />
-                    <ChannelCardsLine db={db} title={'Избранные видео'} categoryId={categoryId} showAll={showAll} showOnPage={showOnPage} />
+                    <ChannelCardsLine db={db} title={'Все трансляции'} channelId={channelData.id} showAll={showAll} showOnPage={showOnPage} />
+                    <ChannelCardsLine db={db} title={'Избранные видео'} channelId={channelData.id} showAll={showAll} showOnPage={showOnPage} />
                     <ClipsCardsLine db={db} title={'Избранные клипы'} channelId={10} showAll={showAll} showOnPage={showOnPage} />
                     <GoToBtn />
                     <ChannelCategories db={db} channelId={10} showAll={showAll} />

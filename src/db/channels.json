@@ -8,7 +8,8 @@
             "iconUrl": "./images/channel-ava-1-5.svg",
             "categories": [
                 1
-            ]
+            ],
+            "followers": 38
         },
         {
             "id": 2,
@@ -17,8 +18,9 @@
             "description": "Задача дня: добыть марсианскую глину",
             "iconUrl": "./images/channel-ava-1-4.svg",
             "categories": [
-                1
-            ]
+                9
+            ],
+            "followers": 3
         },
         {
             "id": 3,
@@ -28,7 +30,8 @@
             "iconUrl": "./images/favorite-channels-ava-3-2.jpg",
             "categories": [
                 1
-            ]
+            ],
+            "followers": 3875
         },
         {
             "id": 4,
@@ -37,8 +40,9 @@
             "description": "Проходильщик территорий Skirim без карты и компаса",
             "iconUrl": "./images/favorite-channels-ava-3-1.jpg",
             "categories": [
-                1
-            ]
+                8
+            ],
+            "followers": 38345
         },
         {
             "id": 5,
@@ -47,8 +51,9 @@
             "description": "Мультики для самых смышленых",
             "iconUrl": "./images/favorite-channels-ava-3-3.jpg",
             "categories": [
-                1
-            ]
+                11
+            ],
+            "followers": 32
         },
         {
             "id": 6,
@@ -58,7 +63,8 @@
             "iconUrl": "./images/channel-ava-1-1.svg",
             "categories": [
                 1
-            ]
+            ],
+            "followers": 45986
         },
         {
             "id": 7,
@@ -68,7 +74,8 @@
             "iconUrl": "./images/channel-ava-1-2.svg",
             "categories": [
                 1
-            ]
+            ],
+            "followers": 456
         },
         {
             "id": 8,
@@ -78,7 +85,8 @@
             "iconUrl": "./images/channel-ava-1-3.svg",
             "categories": [
                 1
-            ]
+            ],
+            "followers": 838
         },
         {
             "id": 9,
@@ -88,7 +96,8 @@
             "iconUrl": "./images/channel-ava-1-4.svg",
             "categories": [
                 1
-            ]
+            ],
+            "followers": 138
         },
         {
             "id": 10,
@@ -100,7 +109,8 @@
                 1,
                 2,
                 9
-            ]
+            ],
+            "followers": 1138
         },
         {
             "id": 11,
@@ -110,7 +120,8 @@
             "iconUrl": "./images/channel-ava-2-1.svg",
             "categories": [
                 2
-            ]
+            ],
+            "followers": 238
         },
         {
             "id": 12,
@@ -120,7 +131,8 @@
             "iconUrl": "./images/channel-ava-2-2.svg",
             "categories": [
                 2
-            ]
+            ],
+            "followers": 338
         },
         {
             "id": 13,
@@ -130,7 +142,8 @@
             "iconUrl": "./images/channel-ava-2-3.svg",
             "categories": [
                 2
-            ]
+            ],
+            "followers": 38
         },
         {
             "id": 14,
@@ -140,7 +153,8 @@
             "iconUrl": "./images/channel-ava-2-4.svg",
             "categories": [
                 2
-            ]
+            ],
+            "followers": 838
         },
         {
             "id": 15,
@@ -150,7 +164,8 @@
             "iconUrl": "./images/channel-ava-2-5.svg",
             "categories": [
                 2
-            ]
+            ],
+            "followers": 1538
         },
         {
             "id": 16,
@@ -160,7 +175,8 @@
             "iconUrl": "./images/channel-ava-3-1.svg",
             "categories": [
                 3
-            ]
+            ],
+            "followers": 6738
         },
         {
             "id": 17,
@@ -170,7 +186,8 @@
             "iconUrl": "./images/channel-ava-3-2.svg",
             "categories": [
                 3
-            ]
+            ],
+            "followers": 8738
         },
         {
             "id": 18,
@@ -180,7 +197,8 @@
             "iconUrl": "./images/channel-ava-3-3.svg",
             "categories": [
                 3
-            ]
+            ],
+            "followers": 238
         },
         {
             "id": 19,
@@ -190,7 +208,8 @@
             "iconUrl": "./images/channel-ava-3-4.svg",
             "categories": [
                 3
-            ]
+            ],
+            "followers": 8
         },
         {
             "id": 20,
@@ -200,7 +219,8 @@
             "iconUrl": "./images/channel-ava-3-5.svg",
             "categories": [
                 3
-            ]
+            ],
+            "followers": 938
         },
         {
             "id": 21,
@@ -210,7 +230,8 @@
             "iconUrl": "./images/channel-ava-4-1.svg",
             "categories": [
                 4
-            ]
+            ],
+            "followers": 8
         },
         {
             "id": 22,
@@ -220,7 +241,8 @@
             "iconUrl": "./images/channel-ava-4-2.svg",
             "categories": [
                 4
-            ]
+            ],
+            "followers": 368
         },
         {
             "id": 23,
@@ -230,7 +252,8 @@
             "iconUrl": "./images/channel-ava-4-3.svg",
             "categories": [
                 4
-            ]
+            ],
+            "followers": 30678
         },
         {
             "id": 24,
@@ -240,7 +263,8 @@
             "iconUrl": "./images/channel-ava-4-4.svg",
             "categories": [
                 4
-            ]
+            ],
+            "followers": 328
         },
         {
             "id": 25,
@@ -250,7 +274,8 @@
             "iconUrl": "./images/channel-ava-4-5.svg",
             "categories": [
                 4
-            ]
+            ],
+            "followers": 5238
         },
         {
             "id": 26,
@@ -260,7 +285,8 @@
             "iconUrl": "./images/channel-ava-5-1.svg",
             "categories": [
                 5
-            ]
+            ],
+            "followers": 9138
         },
         {
             "id": 27,
@@ -270,7 +296,8 @@
             "iconUrl": "./images/channel-ava-5-2.svg",
             "categories": [
                 5
-            ]
+            ],
+            "followers": 638
         },
         {
             "id": 28,
@@ -280,7 +307,8 @@
             "iconUrl": "./images/channel-ava-5-3.svg",
             "categories": [
                 5
-            ]
+            ],
+            "followers": 238
         },
         {
             "id": 29,
@@ -290,7 +318,8 @@
             "iconUrl": "./images/channel-ava-5-4.svg",
             "categories": [
                 5
-            ]
+            ],
+            "followers": 738
         },
         {
             "id": 30,
@@ -300,7 +329,8 @@
             "iconUrl": "./images/channel-ava-5-5.svg",
             "categories": [
                 5
-            ]
+            ],
+            "followers": 438
         },
         {
             "id": 31,
@@ -310,7 +340,8 @@
             "iconUrl": "./images/channel-ava-6-1.svg",
             "categories": [
                 6
-            ]
+            ],
+            "followers": 2238
         },
         {
             "id": 32,
@@ -320,7 +351,8 @@
             "iconUrl": "./images/channel-ava-6-2.svg",
             "categories": [
                 6
-            ]
+            ],
+            "followers": 438
         },
         {
             "id": 33,
@@ -330,7 +362,8 @@
             "iconUrl": "./images/channel-ava-6-3.svg",
             "categories": [
                 6
-            ]
+            ],
+            "followers": 138
         },
         {
             "id": 34,
@@ -340,7 +373,8 @@
             "iconUrl": "./images/channel-ava-6-4.svg",
             "categories": [
                 6
-            ]
+            ],
+            "followers": 238
         },
         {
             "id": 35,
@@ -350,7 +384,8 @@
             "iconUrl": "./images/channel-ava-6-5.svg",
             "categories": [
                 6
-            ]
+            ],
+            "followers": 338
         },
         {
             "id": 36,
@@ -360,7 +395,8 @@
             "iconUrl": "./images/channel-ava-7-1.svg",
             "categories": [
                 7
-            ]
+            ],
+            "followers": 438
         },
         {
             "id": 37,
@@ -370,7 +406,8 @@
             "iconUrl": "./images/channel-ava-7-2.svg",
             "categories": [
                 7
-            ]
+            ],
+            "followers": 738
         },
         {
             "id": 38,
@@ -380,7 +417,8 @@
             "iconUrl": "./images/channel-ava-7-3.svg",
             "categories": [
                 7
-            ]
+            ],
+            "followers": 398
         },
         {
             "id": 39,
@@ -390,7 +428,8 @@
             "iconUrl": "./images/channel-ava-7-4.svg",
             "categories": [
                 7
-            ]
+            ],
+            "followers": 348
         },
         {
             "id": 40,
@@ -400,7 +439,8 @@
             "iconUrl": "./images/channel-ava-7-5.svg",
             "categories": [
                 7
-            ]
+            ],
+            "followers": 338
         },
         {
             "id": 41,
@@ -410,7 +450,8 @@
             "iconUrl": "./images/channel-ava-8-1.svg",
             "categories": [
                 8
-            ]
+            ],
+            "followers": 238
         },
         {
             "id": 42,
@@ -420,7 +461,8 @@
             "iconUrl": "./images/channel-ava-8-2.svg",
             "categories": [
                 8
-            ]
+            ],
+            "followers": 438
         },
         {
             "id": 43,
@@ -430,7 +472,8 @@
             "iconUrl": "./images/channel-ava-8-3.svg",
             "categories": [
                 8
-            ]
+            ],
+            "followers": 838
         },
         {
             "id": 44,
@@ -440,7 +483,8 @@
             "iconUrl": "./images/channel-ava-8-4.svg",
             "categories": [
                 8
-            ]
+            ],
+            "followers": 538
         },
         {
             "id": 45,
@@ -449,8 +493,10 @@
             "description": "На данном канале транслируются записи о прохождении игр: от простейших уровней до сложных уровней, битв с драконами, боссами и возможностями своего интеллекта, прохождения онлайн вместе со зрителями",
             "iconUrl": "./images/channel-ava-8-5.svg",
             "categories": [
-                8
-            ]
+                8,
+                14
+            ],
+            "followers": 138
         }
     ]
 }

@@ -57,6 +57,21 @@ class DBHelper {
 
         return found;
     }
+
+    findAndSumByName(name, value, sumByName) {
+        const records = [...this.data.filter((record) => {
+            if (Array.isArray(record[name]) && record[name].length > 0) {
+                return record[name].indexOf(value) > -1;
+            }
+            return record[name] === value;
+        })];
+        let result = 0;
+
+        for (const data of records) {
+            result += data[sumByName];
+        }
+        return result;
+    }
 }
 
 const streamsModel = new DBHelper(streams.streams);

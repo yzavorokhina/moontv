@@ -1,0 +1,29 @@
+{
+    "video": [
+        {
+            "id": 1,
+            "userId": 1,
+            "streamId": 1
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "streamId": 31
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "streamId": 32
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "streamId": 33
+        },
+        {
+            "id": 5,
+            "userId": 1,
+            "streamId": 34
+        }
+    ]
+}

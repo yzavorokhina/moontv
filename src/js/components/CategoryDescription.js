@@ -1,5 +1,5 @@
 
-export default function CategoryDescription({ categoryData, channelData }) {
+export default function CategoryDescription({ categoryData, channelData, totalAudience }) {
 
     return (
         <>
@@ -20,7 +20,7 @@ export default function CategoryDescription({ categoryData, channelData }) {
                     </div>
                     <div className="category-viewers-row" aria-label="category-viewers">
                         <span>Сейчас смотрят:</span>
-                        <span className="category-current-viewers" id="categoryAudience">{categoryData.audience}</span>
+                        <span className="category-current-viewers" id="categoryAudience">{totalAudience}</span>
                     </div>
                 </div>
             </div>
