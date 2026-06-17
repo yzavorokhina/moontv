@@ -12493,6 +12493,7 @@ footer {
   width: 40px;
   height: 40px;
   margin-right: 16px;
+  border-radius: 40px;
 }
 
 .menu-stream-live-indicator {
@@ -13030,7 +13031,7 @@ iframe {
 .carousel-arrow {
   width: 24px;
   height: 24px;
-  color: var(--theme-font-primary, #FFFFFF);
+  color: #CECED6;
   vertical-align: middle;
 }
 
@@ -13894,7 +13895,6 @@ a {
   display: block;
   cursor: pointer;
   outline: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -26400,6 +26400,7 @@ footer {
   width: 40px;
   height: 40px;
   margin-right: 16px;
+  border-radius: 40px;
 }
 
 .menu-stream-live-indicator {
@@ -26937,7 +26938,7 @@ iframe {
 .carousel-arrow {
   width: 24px;
   height: 24px;
-  color: var(--theme-font-primary, #FFFFFF);
+  color: #CECED6;
   vertical-align: middle;
 }
 
@@ -27801,7 +27802,6 @@ a {
   display: block;
   cursor: pointer;
   outline: none;
-  margin: 0;
   padding: 0;
 }
 

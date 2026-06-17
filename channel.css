@@ -24382,6 +24382,7 @@ footer {
   width: 40px;
   height: 40px;
   margin-right: 16px;
+  border-radius: 40px;
 }
 
 .menu-stream-live-indicator {
@@ -25786,7 +25787,6 @@ iframe {
   border-radius: 5px;
   background-color: rgba(52, 49, 72, 0.6);
   color: #CECED6;
-  visibility: hidden;
 }
 
 .stream-live h6 {
@@ -25798,7 +25798,6 @@ iframe {
   color: #CECED6;
   font-size: 12px;
   margin: auto;
-  visibility: hidden;
 }
 
 .stream-live span {
@@ -25806,7 +25805,6 @@ iframe {
   font-size: 6px;
   vertical-align: center;
   margin-right: 6px;
-  visibility: hidden;
 }
 
 .viewers-count {
