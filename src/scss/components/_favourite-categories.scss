@@ -259,6 +259,7 @@
     font-weight: lighter;
     color: var(--theme-accent-bg, #FF6F3A);
     padding-left: 2px;
+    // padding-bottom: 30px;
     margin: 10px 0 6px;
 }
 
@@ -510,7 +511,6 @@ a {
     display: block;
     cursor: pointer;
     outline: none;
-    margin: 0;
     padding: 0;
 }
 

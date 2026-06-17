@@ -13,14 +13,14 @@
         },
         {
             "id": 2,
-            "name": "KidsPlanet",
-            "title": "Крутой замес. Делаем рыбок из марсианской глины",
-            "description": "Задача дня: добыть марсианскую глину",
+            "name": "programmer_at_noon",
+            "title": "programmer_at_noon",
+            "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
             "iconUrl": "./images/channel-ava-1-4.svg",
             "categories": [
-                9
+                1
             ],
-            "followers": 3
+            "followers": 138
         },
         {
             "id": 3,
@@ -35,28 +35,6 @@
         },
         {
             "id": 4,
-            "name": "LuckyKhajiit",
-            "title": "Skyrim-прокачка до 17 уровня легко и просто",
-            "description": "Проходильщик территорий Skirim без карты и компаса",
-            "iconUrl": "./images/favorite-channels-ava-3-1.jpg",
-            "categories": [
-                8
-            ],
-            "followers": 38345
-        },
-        {
-            "id": 5,
-            "name": "MultiPupsik",
-            "title": "Смешарики 3 часа подряд - Часть 1-ая из 10-ти",
-            "description": "Мультики для самых смышленых",
-            "iconUrl": "./images/favorite-channels-ava-3-3.jpg",
-            "categories": [
-                11
-            ],
-            "followers": 32
-        },
-        {
-            "id": 6,
             "name": "coffee_lover",
             "title": "Coffe Lover",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
@@ -67,7 +45,7 @@
             "followers": 45986
         },
         {
-            "id": 7,
+            "id": 5,
             "name": "neoElectron",
             "title": "neoElectron",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
@@ -76,6 +54,28 @@
                 1
             ],
             "followers": 456
+        },
+        {
+            "id": 6,
+            "name": "LuckyKhajiit",
+            "title": "Skyrim-прокачка до 17 уровня легко и просто",
+            "description": "Проходильщик территорий Skirim без карты и компаса",
+            "iconUrl": "./images/favorite-channels-ava-3-1.jpg",
+            "categories": [
+                8
+            ],
+            "followers": 38345
+        },
+        {
+            "id": 7,
+            "name": "MultiPupsik",
+            "title": "Смешарики 3 часа подряд - Часть 1-ая из 10-ти",
+            "description": "Мультики для самых смышленых",
+            "iconUrl": "./images/favorite-channels-ava-3-3.jpg",
+            "categories": [
+                11
+            ],
+            "followers": 32
         },
         {
             "id": 8,
@@ -90,14 +90,14 @@
         },
         {
             "id": 9,
-            "name": "programmer_at_noon",
-            "title": "programmer_at_noon",
-            "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
+            "name": "KidsPlanet",
+            "title": "Крутой замес. Делаем рыбок из марсианской глины",
+            "description": "Задача дня: добыть марсианскую глину",
             "iconUrl": "./images/channel-ava-1-4.svg",
             "categories": [
-                1
+                9
             ],
-            "followers": 138
+            "followers": 3
         },
         {
             "id": 10,

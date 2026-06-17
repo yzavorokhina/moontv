@@ -20,8 +20,8 @@ export default function BannerSlideInfo({ slidesMap, currentSlide }) {
                     </a>
                 </div>
                 <div className="stream-info">
-                    <a href={currentSlideData?.streamUrl}><h5>{currentSlideData?.channel?.title}</h5></a>
-                    <a href={currentSlideData?.streamUrl}><h5>{currentSlideData?.channel?.description}</h5></a>
+                    <a href={currentSlideData?.streamUrl}><h5>{currentSlideData?.stream?.title}</h5></a>
+                    <a href={currentSlideData?.streamUrl}><h5>{currentSlideData?.stream?.description}</h5></a>
                     <a href={currentSlideData?.streamUrl}>{currentSlideData?.channel?.name}</a>
                 </div>
             </div>

@@ -42,17 +42,19 @@ export default function Banner({ db }) {
     }
 
     const renderCards = () => {
-        const streams = db.streamsModel.findByName("promo", true);
+        let streams = db.streamsModel.findByName("promo", true);
 
         if (streams.length > showOnPage) {
             streams = streams.slice(0, showOnPage);
         }
 
+        let slideId = -1;
         const streamsData = streams.map(stream => {
             const channel = db.channelsModel.findOneById(stream.channelId);
             const category = db.categoriesModel.findOneById(stream.categoryId);
-
+            slideId++;
             return {
+                slideId,
                 stream,
                 channel,
                 category,
@@ -108,7 +110,7 @@ export default function Banner({ db }) {
                 </div>
                 <div className="promo">
                     {renderCards().map(data => (
-                        <PromoCard streamData={data} />
+                        <PromoCard streamData={data} setCurrentSlide={setCurrentSlide} />
                     ))}
                 </div>
             </div>

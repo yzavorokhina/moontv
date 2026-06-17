@@ -1,6 +1,21 @@
 
 export default function ChannelCards({ db, categoryId, channelId, showAll, showOnPage }) {
 
+    const truncateByChars = (text, maxLength) => {
+        if (text.length <= maxLength) {
+            return text;
+        }
+        return text.substring(0, maxLength) + '...';
+    }
+
+    const truncateByWords = (text, wordCount) => {
+        const words = text.split(' ');
+        if (words.length <= wordCount) {
+            return text;
+        }
+        return words.slice(0, wordCount).join(' ') + '...';
+    }
+
     const renderCards = () => {
         let streamsFiltered = [];
         if (categoryId) {
@@ -48,7 +63,7 @@ export default function ChannelCards({ db, categoryId, channelId, showAll, showO
                             </a>
                             <div className="stream-titles">
                                 <a href={data.streamUrl} className="link-wrapper">
-                                    <h5 className="stream-title">{data.stream.title}</h5>
+                                    <h5 className="stream-title">{truncateByWords(data.stream.title, 6)}</h5>
                                 </a>
                                 <a href={data.streamUrl} className="link-wrapper">
                                     <p className="channel-title">{data.channel.name}</p>
