@@ -24659,7 +24659,13 @@ footer {
   font-weight: 100;
   letter-spacing: 0.5;
 }
+@media (max-width: 1096px) {
+  .footer-menu {
+    gap: 8px;
+  }
+}
 
+/* как вариант - @media рядом с блоком стилей: */
 .footer-menu a {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -24668,7 +24674,18 @@ footer {
   font-weight: 100;
   letter-spacing: 0.5;
 }
+@media (max-width: 1096px) {
+  .footer-menu a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 890px) {
+  .footer-menu a {
+    display: none;
+  }
+}
 
+/* как вариант - @media рядом с блоком стилей: */
 .footer-menu a:hover {
   color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
   cursor: pointer;
@@ -24682,6 +24699,7 @@ footer {
   color: var(--theme-font-secondary, #CECED6);
 }
 
+/* как вариант - все @media в конце: */
 .main-banner {
   display: flex;
   flex-direction: row;
@@ -25801,7 +25819,7 @@ a {
   align-items: flex-start;
   flex-shrink: 0;
   width: calc(100vw - 222px);
-  max-height: 3940px;
+  height: fit-content;
 }
 
 .arrow-back {
@@ -25854,11 +25872,18 @@ a {
   justify-content: space-between;
   flex-shrink: 0;
   flex-grow: 1;
-  width: 1632px;
-  padding-bottom: 50px;
+  width: calc(100vw - 355px);
+  padding-bottom: 20px;
+  margin-right: 5px;
   background-color: transparent;
 }
+@media (max-width: 1366px) {
+  .categories-titles-row {
+    width: calc(100vw - 290px);
+  }
+}
 
+/* как вариант - @media рядом с блоком стилей: */
 .categories-section-title {
   display: flex;
   flex-direction: column;
@@ -25897,70 +25922,92 @@ a {
   color: var(--theme-font-primary, #FFFFFF);
 }
 
+.sorting-text {
+  color: var(--theme-accent-bg, #FF6F3A);
+  font-weight: 500;
+  padding-right: 6px;
+  white-space: nowrap;
+}
+
 .sorting-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   flex-shrink: 0;
-  max-width: fit-content;
-  padding-top: 6px;
-  margin-right: 50px;
+  width: fit-content;
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+@media (min-width: 1366px) {
+  .sorting-buttons {
+    gap: 5px;
+  }
 }
 
-.sorting-buttons-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 100%;
-  border: none;
-}
-
-.sorting-buttons-2 button {
+/* как вариант - @media рядом с блоком стилей: */
+.sorting-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* расстояние между иконкой и текстом */
   width: fit-content;
   height: 34px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 10px 16px;
   border-radius: 40px;
   border: none;
   background-color: var(--theme-tag-button-bg, rgba(170, 168, 181, 0.7));
   color: var(--theme-font-primary, #FFFFFF);
   font-size: 16px;
   line-height: 140%;
+  margin-left: 10px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+@media (max-width: 1366px) {
+  .sorting-btn {
+    padding: 10px 10px;
+    /* кнопка - компактнее */
+    gap: 0;
+    /* убран отступ, так как текста нет */
+  }
 }
 
-.sorting-buttons-2 button:hover {
+/* как вариант - @media рядом с блоком стилей: */
+.sorting-btn:hover {
   color: var(--theme-font-primary, #FFFFFF);
   background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
 }
 
-.sorting-buttons-2 button:active {
+.sorting-btn:active {
   color: var(--theme-font-primary, #FFFFFF);
   background-color: var(--theme-active-btn-bg, #000000);
 }
 
-.block-buttons-2 span {
-  color: var(--theme-accent-bg, #FF6F3A);
+.btn-text {
+  color: var(--theme-font-primary, #FFFFFF);
   font-weight: 500;
   padding-right: 6px;
+  padding-bottom: 4px;
+  white-space: nowrap;
+}
+@media (max-width: 1366px) {
+  .btn-text {
+    display: none;
+  }
 }
 
-.block-buttons-2 button {
-  margin-left: 10px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.block-buttons-2 button svg {
-  margin-right: 6px;
-  text-align: center;
-  vertical-align: middle;
-}
-
+/* как вариант - @media рядом с блоком стилей: */
 .sorting-svg {
-  margin-bottom: 4px;
+  flex-shrink: 0;
+  margin-bottom: 2px;
+  color: var(--theme-font-primary, #FFFFFF);
+  text-align: center;
+  vertical-align: middle;
 }
 
 #react-category-cards {
@@ -26206,5 +26253,40 @@ a {
 }
 
 /* end of the stream-labels */
+.show-all-button-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  height: 174px;
+  width: calc(100vw - 222px);
+  margin-bottom: 90px;
+}
+
+.show-all-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: fit-content;
+  height: 34px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  background-color: #FF6F3A;
+  border-radius: 34px;
+  color: white;
+}
+
+.show-all-button:hover {
+  background-color: var(--theme-accent-hover, #E2552D);
+}
+
+/* как вариант - все @media в конце: */
 
 /*# sourceMappingURL=categories.css.map*/

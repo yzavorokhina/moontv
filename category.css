@@ -24659,7 +24659,13 @@ footer {
   font-weight: 100;
   letter-spacing: 0.5;
 }
+@media (max-width: 1096px) {
+  .footer-menu {
+    gap: 8px;
+  }
+}
 
+/* как вариант - @media рядом с блоком стилей: */
 .footer-menu a {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -24668,7 +24674,18 @@ footer {
   font-weight: 100;
   letter-spacing: 0.5;
 }
+@media (max-width: 1096px) {
+  .footer-menu a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 890px) {
+  .footer-menu a {
+    display: none;
+  }
+}
 
+/* как вариант - @media рядом с блоком стилей: */
 .footer-menu a:hover {
   color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
   cursor: pointer;
@@ -24682,6 +24699,7 @@ footer {
   color: var(--theme-font-secondary, #CECED6);
 }
 
+/* как вариант - все @media в конце: */
 .favourite-categories {
   display: flex;
   flex-direction: column;
@@ -25298,6 +25316,40 @@ a {
 .search-by-tag:hover {
   background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
   color: var(--theme-font-primary, #FFFFFF);
+}
+
+.show-all-button-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  height: 174px;
+  width: calc(100vw - 222px);
+  margin-bottom: 90px;
+}
+
+.show-all-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: fit-content;
+  height: 34px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  background-color: #FF6F3A;
+  border-radius: 34px;
+  color: white;
+}
+
+.show-all-button:hover {
+  background-color: var(--theme-accent-hover, #E2552D);
 }
 
 /*# sourceMappingURL=category.css.map*/

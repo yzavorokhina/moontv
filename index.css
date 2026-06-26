@@ -25454,7 +25454,13 @@ footer {
   font-weight: 100;
   letter-spacing: 0.5;
 }
+@media (max-width: 1096px) {
+  .footer-menu {
+    gap: 8px;
+  }
+}
 
+/* как вариант - @media рядом с блоком стилей: */
 .footer-menu a {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -25463,7 +25469,18 @@ footer {
   font-weight: 100;
   letter-spacing: 0.5;
 }
+@media (max-width: 1096px) {
+  .footer-menu a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 890px) {
+  .footer-menu a {
+    display: none;
+  }
+}
 
+/* как вариант - @media рядом с блоком стилей: */
 .footer-menu a:hover {
   color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
   cursor: pointer;
@@ -25477,6 +25494,7 @@ footer {
   color: var(--theme-font-secondary, #CECED6);
 }
 
+/* как вариант - все @media в конце: */
 .main-banner {
   display: flex;
   flex-direction: row;
