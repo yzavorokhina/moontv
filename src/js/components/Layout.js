@@ -35,7 +35,6 @@ export default function Layout(props) {
                 </div>
                 <Notification />
             </main>
-            
             {showFooter &&
                 <Footer />
             }

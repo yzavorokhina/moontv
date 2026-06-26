@@ -11,7 +11,7 @@
     align-items: flex-start;
     flex-shrink: 0;
     width: calc(100vw - 222px);
-    max-height: 3940px;
+    height: fit-content;
 }
 
 .arrow-back {
@@ -68,7 +68,18 @@
     padding-bottom: 20px;
     margin-right: 5px;
     background-color: transparent;
+
+    @media (max-width: 1366px) {
+        width: calc(100vw - 290px);
+    }
 }
+
+/* как вариант - @media рядом с блоком стилей: */
+// @media (max-width: 1366px) {
+//     .categories-titles-row {
+//         width: calc(100vw - 290px);
+//     }
+// }
 
 .categories-section-title {
     display: flex;
@@ -108,7 +119,6 @@
     color: var(--theme-font-primary, #FFFFFF);
 }
 
-
 .sorting-text {
     color: var(--theme-accent-bg, #FF6F3A);
     font-weight: 500;
@@ -128,10 +138,17 @@
     margin-left: 20px;
     margin-right: 5px;
 
-    @media (min-width: 960px) {
+    @media (min-width: 1366px) {
         gap: 5px;
     }
 }
+
+/* как вариант - @media рядом с блоком стилей: */
+// @media (min-width: 1366px) {
+//     .sorting-buttons {
+//         gap: 5px;
+//     }
+// }
 
 .sorting-btn {
     display: inline-flex;
@@ -154,14 +171,23 @@
     vertical-align: middle;
     cursor: pointer;
 
-    @media (max-width: 960px) {
+    @media (max-width: 1366px) {
         padding: 10px 10px;
         /* кнопка - компактнее */
         gap: 0;
-        /* - отступ, так как текста нет */
+        /* убран отступ, так как текста нет */
     }
 }
 
+/* как вариант - @media рядом с блоком стилей: */
+// @media (max-width: 1366px) {
+//     .sorting-btn {
+//         padding: 10px 10px;
+//         /* кнопка - компактнее */
+//         gap: 0;
+//         /* убран отступ, так как текста нет */
+//     }
+// }
 
 .sorting-btn:hover {
     color: var(--theme-font-primary, #FFFFFF);
@@ -180,17 +206,24 @@
     padding-bottom: 4px;
     white-space: nowrap;
 
-    @media (max-width: 960px) {
+    @media (max-width: 1366px) {
         display: none;
     }
 }
 
+/* как вариант - @media рядом с блоком стилей: */
+// @media (max-width: 1366px) {
+//     .btn-text {
+//         display: none;
+//     }
+// }
+
 .sorting-svg {
     flex-shrink: 0;
-    // width: 18px; /* Размеры иконок разные - поэтому инлайновые*/
+    // width: 18px; /* размеры иконок разные - поэтому height и width - инлайновые */
     // height: 18px;
+    margin-bottom: 2px;
     color: var(--theme-font-primary, #FFFFFF);
-    margin-bottom: 4px;
     text-align: center;
     vertical-align: middle;
 }
@@ -440,3 +473,62 @@ a {
 }
 
 /* end of the stream-labels */
+
+.show-all-button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 174px;
+    width: calc(100vw - 222px);
+    margin-bottom: 90px;
+}
+
+.show-all-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: fit-content;
+    height: 34px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    background-color: #FF6F3A;
+    border-radius: 34px;
+    color: white;
+}
+
+.show-all-button:hover {
+    background-color: var(--theme-accent-hover, #E2552D);
+}
+
+/* как вариант - все @media в конце: */
+// @media (max-width: 1366px) {
+
+//     .categories-titles-row {
+//         width: calc(100vw - 290px);
+//     }
+
+//     .btn-text {
+//         display: none;
+//     }
+
+//     .sorting-btn {
+//         padding: 10px 10px;
+//         /* кнопка - компактнее */
+//         gap: 0;
+//         /* убран отступ, так как текста нет */
+//     }
+// }
+
+// @media (min-width: 1366px) {
+//     .sorting-buttons {
+//         gap: 5px;
+//     }
+// }

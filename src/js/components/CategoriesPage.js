@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import CategoryCards from "./CategoryCards";
 import GoToBtn from "./GoToBtn";
+import Footer from "./Footer";
 
 export default function CategoriesPage({ db }) {
 
@@ -92,8 +93,8 @@ export default function CategoriesPage({ db }) {
                             <CategoryCards db={db} />
                         </div>
                     </div>
+                    <GoToBtn />
                 </div>
-                <GoToBtn />
             </Layout>
         </>
     )
