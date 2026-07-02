@@ -36,15 +36,23 @@
 }
 
 .category-description-img-container {
-    background-color: rgba(170, 168, 181, 0.7);
+    background-color: var(--theme-main-bg, #343148);
     width: 186px;
-    height: 260px;
+    height: fit-content;
     border-radius: 5px;
     opacity: 0;
     //animation: fadeIn 1s ease-in-out forwards; // normal soft with bright corners
     //animation: fadeIn 1s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards; // soft borders contrast
     //animation: fadeIn 1s cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards; // bright borders contrast
     animation: fadeIn 1s cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards; // "Polaroid" effect in the middle of images
+}
+
+.category-description-img {
+    max-width: 100%;
+    height: 260px;
+    //width: 186px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .sorting-buttons-1 {
@@ -95,8 +103,6 @@
 .sorting-buttons-2 button {
     width: fit-content;
     height: 34px;
-    padding-left: 24px;
-    padding-right: 24px;
     border-radius: 40px;
     border: none;
     background-color: var(--theme-tag-button-bg, rgba(170, 168, 181, 0.7));
@@ -121,28 +127,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     margin-right: 10px;
-}
-
-.block-buttons-2 span {
-    color: var(--theme-accent-bg, #FF6F3A);
-    font-weight: 500;
-    padding-right: 6px;
-}
-
-.block-buttons-2 button {
-    margin-left: 10px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.block-buttons-2 button svg {
-    margin-right: 4px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.sorting-svg {
-    margin-bottom: 4px;
 }
 
 .current-language-and-tag {
@@ -173,14 +157,6 @@
     margin-right: 50px;
 }
 
-.category-description-img {
-    max-width: 100%;
-    height: 260px;
-    // width: 186px;
-    object-fit: contain;
-    border-radius: 5px;
-}
-
 .category-description-title h2 {
     margin-bottom: 0;
     padding-bottom: 8px;
@@ -207,6 +183,22 @@
     justify-content: flex-start;
     gap: 44px;
     color: var(--theme-accent-bg, #FF6F3A);
+
+    @media (max-width: 1366px) {
+        gap: 32px;
+    }
+
+    @media (max-width: 1096px) {
+        gap: 24px;
+    }
+
+    @media (max-width: 960px) {
+        gap: 8px;
+    }
+
+    @media (max-width: 890px) {
+        gap: 8px;
+    }
 }
 
 .follow-button {
@@ -219,8 +211,6 @@
     height: 34px;
     padding-left: 20px;
     padding-right: 24px;
-    color: var(--theme-font-primary, #FFFFFF);
-    height: 40px;
     border: none;
     outline: none;
     background-image: var(--theme-follow-button);
@@ -239,15 +229,83 @@
     background-color: var(--theme-accent-hover, #E2552D);
 }
 
-.category-viewers-row,
 .category-followers-row {
     color: var(--theme-accent-bg, #FF6F3A);
+}
+
+.desktop {
+
+    // @media (mix-width: 1366px) {
+    //     display: none;
+    // }
+
+    // @media (max-width: 1366px) {
+    //     display: none;
+    // }
+
+    @media (max-width: 1096px) {
+        display: none;
+    }
+
+    @media (max-width: 960px) {
+        display: none;
+    }
+
+    @media (max-width: 890px) {
+        display: none;
+    }
+}
+
+.tablet {
+
+    @media (mix-width: 1366px) {
+        display: none;
+    }
+
+    @media (max-width: 1366px) {
+        display: none;
+    }
+
+    @media (max-width: 1096px) {
+        display: none;
+    }
+
+    @media (max-width: 960px) {
+        gap: 0;
+    }
+
+    @media (max-width: 890px) {
+        gap: 0;
+    }
 }
 
 .category-current-viewers,
 .category-current-followers {
     color: var(--theme-font-secondary, #CECED6);
     margin-left: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.follow-icon {
+    width: fit-content;
+    background-image: var(--theme-follow-button);
+    background-repeat: no-repeat;
+    background-position: 14px center; // Icon position
+    background-size: 20px 20px; // Icon size
+    padding-left: 44px; // Space for an icon so that the text doesn't overlap
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.audience-icon {
+    margin-left: 6px;
+    margin-right: 6px;
+    color: var(--theme-font-primary, #FFFFFF);
+    text-align: center;
+    vertical-align: middle;
 }
 
 .search-by-language {
@@ -278,7 +336,7 @@
 }
 
 .search-by-tag {
-    width: 300px;
+    width: 220px;
     height: 40px;
     border: none;
     outline: none;
@@ -338,3 +396,13 @@
 .show-all-button:hover {
     background-color: var(--theme-accent-hover, #E2552D);
 }
+
+/* как вариант - все @media в конце: */
+// @media (max-width: 1366px) {
+//     .sorting-btn {
+//         padding: 10px 10px;
+//         /* кнопка - компактнее */
+//         gap: 0;
+//         /* убран отступ, так как текста нет */
+//     }
+// }
