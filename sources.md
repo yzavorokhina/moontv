@@ -59,6 +59,37 @@
 - **Локальное расположение**: images/subscribe-button-light.svg
 - **Примечание**:
 
+<!-- ## Иконка «Зрители на местах»
+- **Источник**: href="https://icons8.com
+- **Прямая ссылка на SVG**: `href="https://icons8.com/icon/yuvJ0WW58Rci/spectators-on-seats"`
+- **Автор**: 
+- **Лицензия**: 
+- **Условия использования**: 
+- **Дата скачивания**: 06/07/2026
+- **Локальное расположение**: images/ crowd-light-50.png
+- **Примечание**: -->
+
+<!-- ## Иконка «Multicultural People»
+- **Источник**: href="https://icons8.com"
+- **Прямая ссылка на SVG**: `href="https://icons8.com/icon/61161/multicultural-people"`
+- **Автор**: 
+- **Лицензия**: 
+- **Условия использования**: 
+- **Дата скачивания**: 06/07/2026
+- **Локальное расположение**: images/ multi-people-light-50.png
+- **Примечание**: -->
+
+<!-- 
+## Иконка «People»
+- **Источник**: href="https://icons8.com"
+- **Прямая ссылка на SVG**: `href="https://icons8.com/icon/11168/people"`
+- **Автор**: 
+- **Лицензия**: 
+- **Условия использования**: 
+- **Дата скачивания**: 06/07/2026
+- **Локальное расположение**: images/ people-light-50.png
+- **Примечание**: -->
+
  ## Иконка «sorting-buttons» (sort by name)
 - **Источник**: Made by stephenhutchings: https://github.com/stephenhutchings/typicons.font
 - **Прямая ссылка на SVG**: `https://github.com/stephenhutchings/typicons.font`

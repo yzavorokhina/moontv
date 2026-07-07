@@ -110,7 +110,7 @@ export default function Banner({ db }) {
                 </div>
                 <div className="promo">
                     {renderCards().map(data => (
-                        <PromoCard streamData={data} setCurrentSlide={setCurrentSlide} />
+                        <PromoCard key={data.stream.id} streamData={data} setCurrentSlide={setCurrentSlide} />
                     ))}
                 </div>
             </div>
