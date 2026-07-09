@@ -3,9 +3,9 @@ import { defaultTheme, setCurrentTheme, setNextTheme } from '../utils/themeManag
 
 export default function NotFoundPage() {
 
-    setTimeout(() => {
-        window.location.href = './index.html';
-    }, 5000);
+    // setTimeout(() => {
+    //     window.location.href = './index.html';
+    // }, 5000);
 
     const defaultThemeValue = defaultTheme;
     const [currentTheme, setTheme] = useState(defaultThemeValue);
