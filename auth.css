@@ -24664,22 +24664,23 @@ footer {
 html,
 body {
   height: 100%;
-  margin: 0;
-  min-height: 100vh;
 }
 
 body {
   display: flex;
   align-items: center;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
   background-image: url(images/auth-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Source Code Pro", monospace;
   /* font-family: "IBM Plex Mono", monospace; */
   text-align: left;
+  transition: margin 0.4s ease; /* Плавность 0.4 секунды */
 }
 
 .login-container {
@@ -24687,13 +24688,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 476px;
-  height: 690px;
+  max-width: 476px;
+  min-height: 690px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-right: 38px;
-  padding-bottom: 41px;
-  padding-left: 38px;
+  padding: 20px 38px 41px 38px;
   border-radius: 30px;
   background-color: rgba(205, 205, 214, 0.6);
 }
@@ -24716,7 +24714,7 @@ body {
   justify-content: flex-start;
   gap: 390px;
   height: 26px;
-  width: 440px;
+  max-width: 440px;
   padding: 0;
   margin: 0;
 }
@@ -24810,7 +24808,7 @@ body {
 #loginForm {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -24819,7 +24817,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60px;
   width: 60px;
   margin-bottom: 24px;
   vertical-align: middle;

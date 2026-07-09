@@ -24675,7 +24675,7 @@ body {
   align-items: center;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   background-image: var(--theme-notFound-bg-image);
   background-repeat: no-repeat;
@@ -24700,7 +24700,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1245px;
+  min-width: 1270px;
   height: 626px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -25136,7 +25136,79 @@ center {
   background-color: var(--theme-accent-hover, #E2552D);
 }
 
+@media screen and (max-width: 1366px) {
+  .numbers {
+    display: none;
+  }
+  .error-emoji {
+    font-size: 100px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .error-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  .emoji {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 1280px) {
+  .numbers {
+    display: none;
+  }
+  .error-emoji {
+    font-size: 100px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .error-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  .emoji {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1096px) {
+  .numbers {
+    display: none;
+  }
+  .error-emoji {
+    font-size: 100px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .error-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  .emoji {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 960px) {
+  .numbers {
+    display: none;
+  }
+  .error-emoji {
+    font-size: 100px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .error-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  .emoji {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 890px) {
   .numbers {
     display: none;
   }
