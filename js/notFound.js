@@ -12,174 +12,128 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ NotFoundPage)
 /* harmony export */ });
-/* harmony import */ var react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/compiler-runtime */ "./node_modules/react/compiler-runtime.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utils_themeManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/themeManager */ "./src/js/utils/themeManager.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_themeManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/themeManager */ "./src/js/utils/themeManager.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 function NotFoundPage() {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(7);
-  const [, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_utils_themeManager__WEBPACK_IMPORTED_MODULE_2__.defaultTheme);
-  let t0;
-  let t1;
-  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t0 = () => {
-      const currentThemeName = (0,_utils_themeManager__WEBPACK_IMPORTED_MODULE_2__.setCurrentTheme)();
-      setTheme(currentThemeName);
-    };
-    t1 = [];
-    $[0] = t0;
-    $[1] = t1;
-  } else {
-    t0 = $[0];
-    t1 = $[1];
-  }
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(t0, t1);
-  const handleClick = _temp;
-  let t2;
-  if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "four",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page1"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page3"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page5"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page7"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page8"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "page9"
-      })]
-    });
-    $[2] = t2;
-  } else {
-    t2 = $[2];
-  }
-  let t3;
-  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "zero",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero1"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero2"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero3"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero4"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero5"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero6"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero7"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero8"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero9"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero10"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero11"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        id: "zero12"
-      })]
-    });
-    $[3] = t3;
-  } else {
-    t3 = $[3];
-  }
-  let t4;
-  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "numbers",
-      children: [t2, t3, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-        className: "fourAgain",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four1"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four2"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four3"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four4"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four5"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four6"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four7"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four8"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          id: "four9"
-        })]
-      })]
-    });
-    $[4] = t4;
-  } else {
-    t4 = $[4];
-  }
-  let t5;
-  if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      role: "img",
-      "aria-hidden": "true",
-      className: "error-emoji",
-      children: " \\(o_o)/"
-    });
-    $[5] = t5;
-  } else {
-    t5 = $[5];
-  }
-  let t6;
-  if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-        className: "wrapper",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-          className: "container",
-          children: [t4, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-            className: "emoji",
-            children: [t5, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-              className: "error-text gf-title-medium",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-                children: "\u041D\u0435 \u043C\u043E\u0433\u0443 \u043D\u0430\u0439\u0442\u0438 \u043D\u0438 \u043E\u0434\u043D\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B."
-              })
+  setTimeout(() => {
+    window.location.href = './index.html';
+  }, 5000);
+  const defaultThemeValue = _utils_themeManager__WEBPACK_IMPORTED_MODULE_1__.defaultTheme;
+  const [currentTheme, setTheme] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(defaultThemeValue);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const currentThemeName = (0,_utils_themeManager__WEBPACK_IMPORTED_MODULE_1__.setCurrentTheme)();
+    setTheme(currentThemeName);
+  }, []);
+  const handleClick = () => {
+    window.location.href = './index.html';
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "wrapper",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "container",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "numbers",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "four",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page2"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page3"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page4"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page5"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page6"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page7"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page8"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "page9"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "zero",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero2"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero3"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero4"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero5"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero6"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero7"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero8"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero9"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero10"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero11"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "zero12"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "fourAgain",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four2"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four3"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four4"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four5"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four6"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four7"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four8"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              id: "four9"
             })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          className: "error-message",
-          children: "\u0421\u0422\u0420\u0410\u041D\u0418\u0426\u0410 \u041D\u0415 \u041D\u0410\u0419\u0414\u0415\u041D\u0410"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-          type: "button",
-          onClick: handleClick,
-          className: "goto-home-page-button",
-          children: "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 \u0433\u043B\u0430\u0432\u043D\u0443\u044E"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "emoji",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            role: "img",
+            "aria-hidden": "true",
+            className: "error-emoji",
+            children: " \\(o_o)/"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "error-text gf-title-medium",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              children: "\u041D\u0435 \u043C\u043E\u0433\u0443 \u043D\u0430\u0439\u0442\u0438 \u043D\u0438 \u043E\u0434\u043D\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B."
+            })
+          })]
         })]
-      })
-    });
-    $[6] = t6;
-  } else {
-    t6 = $[6];
-  }
-  return t6;
-}
-function _temp() {
-  window.location.href = "./index.html";
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "error-message",
+        children: "\u0421\u0422\u0420\u0410\u041D\u0418\u0426\u0410 \u041D\u0415 \u041D\u0410\u0419\u0414\u0415\u041D\u0410"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        type: "button",
+        onClick: handleClick,
+        className: "goto-home-page-button",
+        children: "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 \u0433\u043B\u0430\u0432\u043D\u0443\u044E"
+      })]
+    })
+  });
 }
 
 /***/ },
@@ -305,7 +259,8 @@ const themesMap = new Map([["dark", {
   fontLogo: '#FF6F3A',
   fontPrimary: '#343148',
   // fontSecondary: '#1C173C',
-  fontSecondary: '#5e5d64',
+  // fontSecondary: '#5e5d64',
+  fontSecondary: '#8a898d',
   //fontTertiary: '#000000',
   fontTertiary: '#343148',
   categoryBgImg: 'url(images/category-bg-light.jpg)',
@@ -29103,40 +29058,6 @@ if (false) // removed by dead control flow
 
 /***/ },
 
-/***/ "./node_modules/react/cjs/react-compiler-runtime.development.js"
-/*!**********************************************************************!*\
-  !*** ./node_modules/react/cjs/react-compiler-runtime.development.js ***!
-  \**********************************************************************/
-(__unused_webpack_module, exports, __webpack_require__) {
-
-/**
- * @license React
- * react-compiler-runtime.development.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
- true &&
-  (function () {
-    var ReactSharedInternals =
-      (__webpack_require__(/*! react */ "./node_modules/react/index.js").__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE);
-    exports.c = function (size) {
-      var dispatcher = ReactSharedInternals.H;
-      null === dispatcher &&
-        console.error(
-          "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
-        );
-      return dispatcher.useMemoCache(size);
-    };
-  })();
-
-
-/***/ },
-
 /***/ "./node_modules/react/cjs/react-jsx-runtime.development.js"
 /*!*****************************************************************!*\
   !*** ./node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -30790,29 +30711,6 @@ if (false) // removed by dead control flow
         typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop &&
       __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
   })();
-
-
-/***/ },
-
-/***/ "./node_modules/react/compiler-runtime.js"
-/*!************************************************!*\
-  !*** ./node_modules/react/compiler-runtime.js ***!
-  \************************************************/
-(module, __unused_webpack_exports, __webpack_require__) {
-
-/**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-if (false) // removed by dead control flow
-{} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-compiler-runtime.development.js */ "./node_modules/react/cjs/react-compiler-runtime.development.js");
-}
 
 
 /***/ },
