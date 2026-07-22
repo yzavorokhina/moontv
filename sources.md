@@ -140,8 +140,25 @@
 - **Локальное расположение**: инлайн в SearchPage.js (streams not found)
 - **Примечание**: PNG 50*50 white,dark blue(#343148) & PNG 100*100 white, dark blue
 
+ ## Иконка «Рекомендуем» (vertical menu)
+- **Источник**: http://www.w3.org/2000/svg
+- **Прямая ссылка на SVG**: `https://dribbble.com/saeedworks`
+- **Автор**: Saeedworks
+- **Лицензия**: ? 
+- **Условия использования**: ?
+- **Дата скачивания**: 2026.07.22
+- **Локальное расположение**:  VerticalMenu.js (streams not found)
+- **Примечание**: 
 
-
+ <!-- ## Иконка «Развернуть / свернуть меню» (vertical menu)
+- **Источник**: http://www.w3.org/2000/svg
+- **Прямая ссылка на SVG**: `https://dribbble.com/saeedworks`
+- **Автор**: Saeedworks
+- **Лицензия**: ? 
+- **Условия использования**: ?
+- **Дата скачивания**: 2026.07.22
+- **Локальное расположение**:  VerticalMenu.js (streams not found)
+- **Примечание**:  -->
 
 ## Группа: Социальные сети
 ### Иконка "vkvideo"

@@ -23,7 +23,6 @@
     background-color: var(--theme-btn-bg, #16122F);
     top: 0;
     left: 0;
-    width: 222px;
     height: 100%;
 }
 
@@ -36,7 +35,6 @@
     background-color: var(--theme-btn-bg, #16122F);
     top: 0;
     left: 0;
-    width: 222px;
     height: 100%;
 }
 
@@ -56,6 +54,22 @@
     padding-top: 40px;
     padding-bottom: 30px;
     color: var(--theme-font-secondary, #CECED6);
+
+    @media (max-width: 1366px) {
+        width: calc(100vw - 222px);
+    }
+
+    @media (max-width: 1096px) {
+        width: calc(100vw - 90px);
+    }
+
+    @media (max-width: 960px) {
+        width: calc(100vw - 90px);
+    }
+
+    @media (max-width: 890px) {
+        width: calc(100vw - 90px);
+    }
 }
 
 .footer-container p {

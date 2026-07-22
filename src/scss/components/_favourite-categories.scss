@@ -8,20 +8,21 @@
     width: 100%;
     max-width: calc(100vw - 222px);
     box-sizing: border-box;
+
     @media (max-width: 1366px) {
         max-width: 1144px;
     }
 
     @media (max-width: 1096px) {
-        max-width: calc(100% - 222px);
+        max-width: calc(100vw - 222px);
     }
 
     @media (max-width: 960px) {
-        max-width: calc(100% - 100px);
+        max-width: calc(100vw - 100px);
     }
 
     @media (max-width: 890px) {
-        max-width: calc(100% - 100px);
+        max-width: calc(100vw - 100px);
     }
 }
 
@@ -33,7 +34,7 @@
     flex-shrink: 0;
     max-width: 100%;
     margin-left: 30px;
-    margin-right: 50px; 
+    margin-right: 50px;
 }
 
 .favourite-categories-title h2 {
@@ -136,7 +137,7 @@
 
 .show-all-categories a {
     color: var(--theme-font-secondary, #CECED6);
-    
+
     @media (max-width: 1366px) {
         display: none;
     }
@@ -194,7 +195,8 @@
     flex-wrap: wrap;
     flex-shrink: 0;
     gap: 19px;
-    width: calc(98vw - 222px);
+    width: calc(98vw - 50px);
+    min-width: 570px;
     height: fit-content;
     padding: 0;
     background-color: transparent;
@@ -377,9 +379,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 98%;
+    max-width: 89%;
     margin-top: 16px;
     margin-bottom: 22px;
+
+    @media (max-width: 1680px) {
+        width: 87%;
+    }
+
+    @media (max-width: 1366px) {
+        width: 87%;
+    }
+
+    @media (max-width: 1096px) {
+        width: 86%;
+    }
+
+    @media (max-width: 960px) {
+        width: 86%;
+    }
+
+    @media (max-width: 890px) {
+        width: 86%;
+    }
 }
 
 .divider-line {
@@ -425,6 +447,23 @@
     justify-content: center;
     height: 174px;
     margin-bottom: 90px;
+    // margin-left: 90px;
+
+    @media (max-width: 1366px) {
+        margin-left: 22px;
+    }
+
+    @media (max-width: 1096px) {
+        margin-left: 90px;
+    }
+
+    @media (max-width: 960px) {
+        margin-left: 90px;
+    }
+
+    @media (max-width: 890px) {
+        margin-left: 90px;
+    }
 }
 
 .show-all-button {
