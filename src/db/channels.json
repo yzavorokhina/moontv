@@ -79,8 +79,8 @@
         },
         {
             "id": 8,
-            "name": "JustCodingNotTalking",
-            "title": "JustCodingNotTalking",
+            "name": "Programming for Future",
+            "title": "Programming for Future",
             "description": "На данном канале транслируются записи о разработке игр: от появления концепции до пошаговой реализации онлайн вместе со зрителями",
             "iconUrl": "./images/channel-ava-1-3.svg",
             "categories": [
@@ -180,8 +180,8 @@
         },
         {
             "id": 17,
-            "name": "neoLing",
-            "title": "neoLing",
+            "name": "linguist",
+            "title": "linguist",
             "description": "На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями",
             "iconUrl": "./images/channel-ava-3-2.svg",
             "categories": [
@@ -191,8 +191,8 @@
         },
         {
             "id": 18,
-            "name": "JustEnglishNotTalking",
-            "title": "JustEnglishNotTalking",
+            "name": "JustTalkEnglish",
+            "title": "JustTalkEnglish",
             "description": "На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями",
             "iconUrl": "./images/channel-ava-3-3.svg",
             "categories": [

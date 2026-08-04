@@ -9,6 +9,7 @@
     width: calc(100vw - 222px);
     height: fit-content;
     margin-left: 16px;
+    padding-left: 16px;
     margin-right: 50px;
     background-color: transparent;
 }
@@ -139,7 +140,6 @@
     flex-shrink: 0;
     gap: 20px;
     height: 300px;
-    margin-left: 16px;
     margin-right: 50px;
     padding: 0;
     background-color: transparent;

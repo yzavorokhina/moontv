@@ -160,6 +160,16 @@
 - **Локальное расположение**:  VerticalMenu.js (streams not found)
 - **Примечание**:  -->
 
+ <!-- ## Иконка «Часы» (sorting buttons)
+- **Источник**: <a target="_blank" href="https://icons8.com/icon/16153/clock">Clock</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- **Прямая ссылка на SVG**: `<a target="_blank" href="https://icons8.com/icon/16153/clock">Clock</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>`
+- **Автор**: ?
+- **Лицензия**: ? 
+- **Условия использования**: ?
+- **Дата скачивания**: 2026.07.28
+- **Локальное расположение**:  Categories.js (sorting buttons)
+- **Примечание**:  -->
+
 ## Группа: Социальные сети
 ### Иконка "vkvideo"
 - **Источник**: ?
