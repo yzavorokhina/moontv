@@ -23780,6 +23780,7 @@ a {
   --font-silkscreen: "Silkscreen", sans-serif;
   --font-press-start: "Press Start 2P", system-ui;
   --font-ibm-plex: "IBM Plex Mono", monospace;
+  --font-baloo-chettan-2: "Baloo Chettan 2", sans-serif;
   --theme-main-bg: #343148;
   --theme-promo-bg: #292640;
   --theme-input-bg: #1C173C;
@@ -24125,7 +24126,7 @@ footer {
   font-weight: 800;
   letter-spacing: 4px;
   vertical-align: middle;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Baloo Chettan 2", sans-serif;
   /* font-family: "Silkscreen", sans-serif;  */
   /* font-family: "Press Start 2P", system-ui;   */
   /* font-family: "IBM Plex Mono", monospace; */
@@ -26595,7 +26596,7 @@ a {
   max-width: 260px;
   background-color: var(--theme-promo-bg, #292640);
   border-radius: 5px;
-  padding: 9px 6px 6px 6px;
+  padding: 10px 6px 6px 6px;
 }
 
 .category-link-wrapper {

@@ -23780,6 +23780,7 @@ a {
   --font-silkscreen: "Silkscreen", sans-serif;
   --font-press-start: "Press Start 2P", system-ui;
   --font-ibm-plex: "IBM Plex Mono", monospace;
+  --font-baloo-chettan-2: "Baloo Chettan 2", sans-serif;
   --theme-main-bg: #343148;
   --theme-promo-bg: #292640;
   --theme-input-bg: #1C173C;
@@ -24125,7 +24126,7 @@ footer {
   font-weight: 800;
   letter-spacing: 4px;
   vertical-align: middle;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Baloo Chettan 2", sans-serif;
   /* font-family: "Silkscreen", sans-serif;  */
   /* font-family: "Press Start 2P", system-ui;   */
   /* font-family: "IBM Plex Mono", monospace; */
@@ -25243,7 +25244,7 @@ footer {
   font-weight: 800;
   letter-spacing: 4px;
   vertical-align: middle;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Baloo Chettan 2", sans-serif;
   /* font-family: "Silkscreen", sans-serif;  */
   /* font-family: "Press Start 2P", system-ui;   */
   /* font-family: "IBM Plex Mono", monospace; */
@@ -27051,6 +27052,7 @@ a {
   width: calc(100vw - 222px);
   height: fit-content;
   margin-left: 16px;
+  padding-left: 16px;
   margin-right: 50px;
   background-color: transparent;
 }
@@ -27178,7 +27180,6 @@ a {
   flex-shrink: 0;
   gap: 20px;
   height: 300px;
-  margin-left: 16px;
   margin-right: 50px;
   padding: 0;
   background-color: transparent;
