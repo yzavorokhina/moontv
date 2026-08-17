@@ -1,3 +1,15 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/fonts.scss ***!
+  \**************************************************************************************************************/
+/* Font for logo: */
+/* Connecting fonts by downloading */
+@font-face {
+  font-family: "BalooChettan2";
+  font-weight: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff), url(images\BalooChettan2-VariableFont_wght.woff2), url(images/BalooChettan2-VariableFont_wght.svg);
+}
 /*!*************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
   \*************************************************************************************************************/
@@ -12145,7 +12157,7 @@ footer {
 }
 
 .input-with-icon:hover {
-  background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+  background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
   color: var(--theme-font-primary, #FFFFFF);
 }
 
@@ -12863,9 +12875,9 @@ footer {
 }
 
 .vertical-menu button {
-  width: 216px;
+  width: 219px;
   height: 41px;
-  margin: 3px 3px auto 3px;
+  margin: 3px 3px auto 0;
   border: none;
 }
 @media (max-width: 1366px) {
@@ -25348,7 +25360,7 @@ footer {
 }
 
 .input-with-icon:hover {
-  background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+  background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
   color: var(--theme-font-primary, #FFFFFF);
 }
 
@@ -26066,9 +26078,9 @@ footer {
 }
 
 .vertical-menu button {
-  width: 216px;
+  width: 219px;
   height: 41px;
-  margin: 3px 3px auto 3px;
+  margin: 3px 3px auto 0;
   border: none;
 }
 @media (max-width: 1366px) {
@@ -26722,6 +26734,7 @@ iframe {
 .live-watchers .dot {
   color: var(--theme-accent-bg, #FF6F3A);
   font-size: 12px;
+  margin-right: 6px;
 }
 
 .live-watchers h5 {
@@ -26733,6 +26746,7 @@ iframe {
   color: #FFFFFF;
   font-size: 18px;
   margin: auto;
+  margin-right: 6px;
 }
 
 #current-viewers {
@@ -27361,11 +27375,9 @@ iframe {
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-shrink: 0;
-  gap: 19px;
+  gap: 14px;
   width: calc(98vw - 50px);
   min-width: 570px;
-  height: fit-content;
-  padding: 0;
   background-color: transparent;
 }
 @media (max-width: 1366px) {
@@ -27431,6 +27443,7 @@ iframe {
 .channel-img {
   width: 40px;
   height: 40px;
+  border-radius: 40px;
   margin: 0 10px 0 2px;
   padding: 0;
 }
@@ -27949,6 +27962,7 @@ iframe {
 .live-watchers .dot {
   color: var(--theme-accent-bg, #FF6F3A);
   font-size: 12px;
+  margin-right: 6px;
 }
 
 .live-watchers h5 {
@@ -27960,6 +27974,7 @@ iframe {
   color: #FFFFFF;
   font-size: 18px;
   margin: auto;
+  margin-right: 6px;
 }
 
 #current-viewers {

@@ -24034,7 +24034,7 @@ footer {
 }
 
 .input-with-icon:hover {
-  background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+  background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
   color: var(--theme-font-primary, #FFFFFF);
 }
 
@@ -24752,9 +24752,9 @@ footer {
 }
 
 .vertical-menu button {
-  width: 216px;
+  width: 219px;
   height: 41px;
-  margin: 3px 3px auto 3px;
+  margin: 3px 3px auto 0;
   border: none;
 }
 @media (max-width: 1366px) {
@@ -25317,6 +25317,7 @@ footer {
 .channel-img {
   width: 40px;
   height: 40px;
+  border-radius: 40px;
   margin: 0 10px 0 2px;
   padding: 0;
 }
@@ -25612,7 +25613,7 @@ a {
   gap: 20px;
   width: 100%;
   padding-bottom: 30px;
-  border-bottom: 1px solid var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
+  border-bottom: 1px solid var(--theme-font-secondary, #CECED6);
 }
 
 .sorting-buttons-1 button {

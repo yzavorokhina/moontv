@@ -24034,7 +24034,7 @@ footer {
 }
 
 .input-with-icon:hover {
-  background-color: var(--color-dark-buttons-hover, rgba(17, 9, 80, 0.5));
+  background-color: var(--theme-btns-hover, rgba(17, 9, 80, 0.5));
   color: var(--theme-font-primary, #FFFFFF);
 }
 
@@ -24752,9 +24752,9 @@ footer {
 }
 
 .vertical-menu button {
-  width: 216px;
+  width: 219px;
   height: 41px;
-  margin: 3px 3px auto 3px;
+  margin: 3px 3px auto 0;
   border: none;
 }
 @media (max-width: 1366px) {
