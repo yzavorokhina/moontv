@@ -27,13 +27,14 @@ export default function BannerSlideInfo({ slidesMap, currentSlide }) {
             </div>
             <div className="stream-statistic">
                 <div className="live-watchers">
-                    <div className="dot">&#11044;</div>
-                    {/* <h5>В эфире</h5> */}
+                     <h5>В эфире</h5>
 
+                    <div className="dot">&#11044;</div>
+                   
                     <div className="viewers-count">
                         <div id="current-viewers">{currentSlideData?.stream?.audience}</div>
                     </div>
-                    <h5>В эфире</h5>
+                    {/* <h5>В эфире</h5> */}
                 </div>
                 <div className="age-rating-row">
                     <div className="age-rating">{currentSlideData?.stream?.ageRate}+</div>

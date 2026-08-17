@@ -9,7 +9,7 @@
     width: calc(100vw - 222px);
     height: fit-content;
     margin-left: 16px;
-    padding-left: 16px;
+    padding-left: 36px;
     margin-right: 50px;
     background-color: transparent;
 }
@@ -35,7 +35,7 @@
     justify-content: space-between;
     flex-shrink: 0;
     flex-grow: 1;
-    width: calc(100% - 410px);
+    width: calc(100% - 382px);
     margin-bottom: 16px;
     // border: 1px solid rgb(255, 255, 255);
     background-color: transparent;
@@ -112,7 +112,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
 
 .arrowed a svg {
@@ -138,9 +138,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    gap: 20px;
+    gap: 14px;
     height: 300px;
-    margin-right: 50px;
+    // margin-left: 36px;
+    // margin-right: 36px;
     padding: 0;
     background-color: transparent;
 }
@@ -183,6 +184,7 @@
 .channel-img {
     width: 40px;
     height: 40px;
+    border-radius: 40px;
     margin: 0 10px 0 2px;
     padding: 0;
 }
@@ -254,6 +256,7 @@
 .clip-author-name:hover {
     color: var(--theme-font-tertiary, rgba(170, 168, 181, 0.7)) !important;
 }
+
 /* end of the one channel-card */
 
 .show-all-link {
@@ -284,7 +287,7 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 16px;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
     margin-left: 16px;
 }
 
@@ -294,7 +297,7 @@
     justify-content: space-between;
     width: calc(100% - 410px);
     margin-top: 16px;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
     margin-left: 16px;
 }
 

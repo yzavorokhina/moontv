@@ -1,0 +1,42 @@
+// Connecting fonts via googlefont.com and @import 
+// @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&display=swap" rel="stylesheet');
+
+
+/* Font for logo: */
+/* Connecting fonts by downloading */
+@font-face {
+  font-family: "BalooChettan2";
+  font-weight: normal;
+  font-weight: 400;
+//   font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Baloo_Chettan_2/BalooChettan2-VariableFont_wght.ttf") format("truetype"),
+    /* For different browsers, convert on cloudconvert.com: */
+    url("../fonts/Baloo_Chettan_2/BalooChettan2-VariableFont_wght.otf"),
+    url("../fonts/Baloo_Chettan_2/BalooChettan2-VariableFont_wght.eot"),
+    url("../fonts/Baloo_Chettan_2/BalooChettan2-VariableFont_wght.woff"),
+    url("../fonts/Baloo_Chettan_2/BalooChettan2-VariableFont_wght.woff2"),
+    url("../fonts/Baloo_Chettan_2/BalooChettan2-VariableFont_wght.svg");
+}
+
+// @font-face {
+//   font-family: "BalooChettan2";
+//   font-weight: normal;
+//   font-weight: 800;
+// //   font-style: bold;
+//   font-display: swap;
+//   src: url("../fonts/BalooChettan2-VariableFont_wght.ttf") format("truetype"),
+//     /* For different browsers, convert on cloudconvert.com: */
+//     url("../fonts/BalooChettan2-VariableFont_wght.otf"),
+//     url("../fonts/BalooChettan2-VariableFont_wght.eot"),
+//     url("../fonts/BalooChettan2-VariableFont_wght.woff"),
+//     url("../fonts/BalooChettan2-VariableFont_wght.woff2"),
+//     url("../fonts/BalooChettan2-VariableFont_wght.svg");
+// }
+
+// .baloo-chettan-2 {
+//   font-family: "Baloo Chettan 2", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: 400;
+//   font-style: normal;
+// }

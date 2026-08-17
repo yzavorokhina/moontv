@@ -105,7 +105,7 @@ export default function VerticalMenu({ db, showAll }) {
                                     <div className="menu-stream-cover">
                                         <a href={data.streamUrl}>
                                             <img src={data.channel.iconUrl}
-                                                style={{ width: 40 + 'px', height: 40 + 'px' }} alt="personal account" />
+                                                style={{ width: 40 + 'px', height: 40 + 'px' }} alt="photo" />
                                         </a>
                                     </div>
                                     <div className="menu-stream-live-indicator">

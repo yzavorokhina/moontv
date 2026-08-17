@@ -142,7 +142,7 @@ export default function FavoriteChannels() {
                                 <div className="favorite-channel">
                                     <div className="favorite-channel-ava">
                                         <a href="">
-                                            <img src="./images/favorite-channels-ava-3-1.svg" alt="personal account" />
+                                            <img src="./images/favorite-channels-ava-3-1.jpg" alt="personal account" />
                                         </a>
                                     </div>
                                     <div className="stream-live-indicator">
@@ -174,7 +174,7 @@ export default function FavoriteChannels() {
                                 <div className="favorite-channel">
                                     <div className="favorite-channel-ava">
                                         <a href="">
-                                            <img src="./images/favorite-channels-ava-3-3.svg" alt="personal account" />
+                                            <img src="./images/favorite-channels-ava-3-3.jpg" alt="personal account" />
                                         </a>
                                     </div>
                                     <div className="stream-live-indicator">

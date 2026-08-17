@@ -16,6 +16,14 @@ h4 {
     font-family: var(--font-open-sans);
 }
 
+// #logo-text {
+//     font-family: var(--font-baloo-chettan-2);
+// }
+
+// .logo-text {
+//     font-family: var(--font-baloo-chettan-2);
+// }
+
 .page {
     display: flex;
     flex-direction: column;
@@ -138,6 +146,7 @@ footer {
         gap: 0;
         /* убран отступ, так как текста нет */
     }
+
     // @media (min-width: 1366px) {
     //     gap: 5px;
     // }

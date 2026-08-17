@@ -34,6 +34,7 @@
     margin: 0;
     //background-color: var(--theme-btn-bg, #16122F);
     background-color: var(--theme-button-scroll-hover, #16122F);
+    // background-color: var(--theme-input-bg, #1C173C);
     border-top-right-radius: 20px;
 
     @media (max-width: 1366px) {
@@ -302,9 +303,9 @@
 }
 
 .vertical-menu button {
-    width: 216px;
+    width: 219px;
     height: 41px;
-    margin: 3px 3px auto 3px;
+    margin: 3px 3px auto 0;
     border: none;
 
     @media (max-width: 1366px) {

@@ -9,8 +9,9 @@
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-    width: 97%;
+    width: 99%;
     margin-left: 30px;
+    padding-left: 16px;
     margin-right: 50px;
     // border: 1px solid orange;
 }
@@ -105,6 +106,7 @@
     height: 100px;
     // border: 1px solid rgb(0, 136, 106);
     margin-left: 50px;
+    padding-left: 16px;
     margin-right: 50px;
     border-radius: 5px;
 }
@@ -155,14 +157,14 @@
     margin: 0;
     padding: 0;
     color: var(--theme-accent-bg, #FF6F3A);
-    font-weight: 100;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .favorite-category h4:hover {
     color: var(--theme-accent-hover, #E2552D);
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* dark-block: */

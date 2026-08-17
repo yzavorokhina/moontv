@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import '../scss/fonts.scss';
 import '../scss/main.scss';
 import '../scss/home.scss';
 import '../scss/components/_banner.scss';
