@@ -23774,13 +23774,33 @@ a {
   text-decoration: none;
 }
 
+/* Font for logo: */
+/* Connecting fonts by downloading */
+@font-face {
+  font-family: "BalooChettan2";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  font-optical-sizing: auto;
+  src: local("BalooChettan2");
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
+}
+@font-face {
+  font-family: "BalooChettan2";
+  font-weight: normal;
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+  font-optical-sizing: auto;
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
+}
 :root {
+  --font-logo: "Baloo Chettan 2", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
   --font-source-code: "Source Code Pro", monospace;
   --font-silkscreen: "Silkscreen", sans-serif;
   --font-press-start: "Press Start 2P", system-ui;
   --font-ibm-plex: "IBM Plex Mono", monospace;
-  --font-baloo-chettan-2: "Baloo Chettan 2", sans-serif;
   --theme-main-bg: #343148;
   --theme-promo-bg: #292640;
   --theme-input-bg: #1C173C;
@@ -23825,6 +23845,8 @@ a {
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--theme-main-bg, #343148);
@@ -23916,7 +23938,6 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  /* расстояние между иконкой и текстом */
   width: fit-content;
   height: 34px;
   padding: 10px 16px;
@@ -23934,9 +23955,7 @@ footer {
 @media (max-width: 1366px) {
   .sorting-btn {
     padding: 10px 10px;
-    /* кнопка - компактнее */
     gap: 0;
-    /* убран отступ, так как текста нет */
   }
 }
 
@@ -24020,12 +24039,13 @@ footer {
   background-image: var(--theme-search-icon);
   background-repeat: no-repeat;
   background-position: 14px center;
-  background-size: 24px 24px;
+  background-size: 22px 22px;
   padding-left: 44px;
   border-radius: 40px;
   background-color: var(--theme-input-bg, #1C173C);
   color: var(--theme-font-primary, #FFFFFF);
   font-size: 14px;
+  font-weight: 400;
   line-height: 140%;
 }
 
@@ -24126,7 +24146,7 @@ footer {
   font-weight: 800;
   letter-spacing: 4px;
   vertical-align: middle;
-  font-family: "Baloo Chettan 2", sans-serif;
+  font-family: var(--font-logo);
   /* font-family: "Silkscreen", sans-serif;  */
   /* font-family: "Press Start 2P", system-ui;   */
   /* font-family: "IBM Plex Mono", monospace; */
@@ -24672,6 +24692,7 @@ footer {
 .vertical-menu ul {
   height: auto;
   margin-top: 16px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1096px) {
   .vertical-menu ul {
@@ -24759,7 +24780,7 @@ footer {
 }
 @media (max-width: 1366px) {
   .vertical-menu button {
-    width: 216px;
+    width: 219px;
   }
 }
 @media (max-width: 1096px) {
@@ -24957,7 +24978,8 @@ footer {
 }
 
 .close-open-menu-button {
-  background: transparent;
+  height: fit-content;
+  background-color: transparent;
 }
 
 /* arrow up: */
@@ -25091,6 +25113,55 @@ footer {
   transition: opacity 0.5s ease, visibility 0.5s;
 }
 
+:root {
+  --font-logo: "Baloo Chettan 2", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-source-code: "Source Code Pro", monospace;
+  --font-silkscreen: "Silkscreen", sans-serif;
+  --font-press-start: "Press Start 2P", system-ui;
+  --font-ibm-plex: "IBM Plex Mono", monospace;
+  --theme-main-bg: #343148;
+  --theme-promo-bg: #292640;
+  --theme-input-bg: #1C173C;
+  --theme-btn-bg: #16122F;
+  --theme-button-scroll-bg: #54506B;
+  --theme-active-first-btn-bg: #000000;
+  --theme-active-btn-bg: #000000;
+  --theme-transparent-banner-btn-bg: rgba(52, 49, 72, 0.2);
+  --theme-tag-button-bg: rgba(170, 168, 181, 0.7);
+  --theme-accent-bg: #FF6F3A;
+  --theme-subscribe-btn-bg: #16122F;
+  --theme-btns-hover: rgba(17, 9, 80, 0.5);
+  --theme-blocks-hover: #2e2b50;
+  --theme-button-scroll-hover: #16122F;
+  --theme-tag-button-bg-hover: #CECED6;
+  --theme-accent-hover: #E2552D;
+  --theme-font-logo: #FFFFFF;
+  --theme-font-primary: #FFFFFF;
+  --theme-font-secondary: #CECED6;
+  --theme-font-tertiary: rgba(170, 168, 181, 0.7);
+  --theme-category-bg-image: url(images/category-bg-dark.jpg);
+  --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
+  --theme-channel-bg-image: url(images/channel-bg-dark.png);
+  --theme-channel-bg-image-tint: rgba(7, 1, 41, 0.5);
+  --theme-notFound-bg-image: url(images/404-background-dark.jpg);
+  --theme-notFound-bg-image-tint: rgba(22, 18, 47, 0.8);
+  --theme-logo-glow:
+  drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.2))
+  drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.2))
+  drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
+  --theme-logo-glow-hover:
+  drop-shadow(1px 1px 0 rgba(244, 245, 193, 0.5))
+  drop-shadow(-1px -1px 0 rgba(145, 145, 132, 0.5))
+  drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+  --theme-search-icon: url(images/search-icon-dark.svg);
+  --theme-arrow-down: url(images/arrow-down-dark.svg);
+  --theme-follow-button: url(images/follow-icon-dark.png);
+  --theme-subscribe-button: url(images/subscribe-button-dark.svg);
+  --theme-crowd-icon: url(images/multi-people-dark-50.png);
+  --theme-icon-streams-not-found: url(images/streams-not-found-50-dark.png);
+}
+
 .site-header {
   position: fixed;
   left: 0;
@@ -25138,12 +25209,13 @@ footer {
   background-image: var(--theme-search-icon);
   background-repeat: no-repeat;
   background-position: 14px center;
-  background-size: 24px 24px;
+  background-size: 22px 22px;
   padding-left: 44px;
   border-radius: 40px;
   background-color: var(--theme-input-bg, #1C173C);
   color: var(--theme-font-primary, #FFFFFF);
   font-size: 14px;
+  font-weight: 400;
   line-height: 140%;
 }
 
@@ -25244,7 +25316,7 @@ footer {
   font-weight: 800;
   letter-spacing: 4px;
   vertical-align: middle;
-  font-family: "Baloo Chettan 2", sans-serif;
+  font-family: var(--font-logo);
   /* font-family: "Silkscreen", sans-serif;  */
   /* font-family: "Press Start 2P", system-ui;   */
   /* font-family: "IBM Plex Mono", monospace; */
@@ -27122,7 +27194,7 @@ a {
   padding-top: 6px;
   font-size: 20px;
   font-weight: bold;
-  color: var(--theme-font-primary, #FFFFFF);
+  color: var(--theme-font-secondary, #CECED6);
 }
 
 .section-title h2:hover {

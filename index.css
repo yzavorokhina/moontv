@@ -5,10 +5,21 @@
 /* Connecting fonts by downloading */
 @font-face {
   font-family: "BalooChettan2";
-  font-weight: normal;
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff), url(images\BalooChettan2-VariableFont_wght.woff2), url(images/BalooChettan2-VariableFont_wght.svg);
+  font-optical-sizing: auto;
+  src: local("BalooChettan2");
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
+}
+@font-face {
+  font-family: "BalooChettan2";
+  font-weight: normal;
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+  font-optical-sizing: auto;
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
 }
 /*!*************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
@@ -11897,13 +11908,33 @@ a {
   text-decoration: none;
 }
 
+/* Font for logo: */
+/* Connecting fonts by downloading */
+@font-face {
+  font-family: "BalooChettan2";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  font-optical-sizing: auto;
+  src: local("BalooChettan2");
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
+}
+@font-face {
+  font-family: "BalooChettan2";
+  font-weight: normal;
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+  font-optical-sizing: auto;
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
+}
 :root {
+  --font-logo: "Baloo Chettan 2", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
   --font-source-code: "Source Code Pro", monospace;
   --font-silkscreen: "Silkscreen", sans-serif;
   --font-press-start: "Press Start 2P", system-ui;
   --font-ibm-plex: "IBM Plex Mono", monospace;
-  --font-baloo-chettan-2: "Baloo Chettan 2", sans-serif;
   --theme-main-bg: #343148;
   --theme-promo-bg: #292640;
   --theme-input-bg: #1C173C;
@@ -11948,6 +11979,8 @@ a {
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--theme-main-bg, #343148);
@@ -12039,7 +12072,6 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  /* расстояние между иконкой и текстом */
   width: fit-content;
   height: 34px;
   padding: 10px 16px;
@@ -12057,9 +12089,7 @@ footer {
 @media (max-width: 1366px) {
   .sorting-btn {
     padding: 10px 10px;
-    /* кнопка - компактнее */
     gap: 0;
-    /* убран отступ, так как текста нет */
   }
 }
 
@@ -12143,12 +12173,13 @@ footer {
   background-image: var(--theme-search-icon);
   background-repeat: no-repeat;
   background-position: 14px center;
-  background-size: 24px 24px;
+  background-size: 22px 22px;
   padding-left: 44px;
   border-radius: 40px;
   background-color: var(--theme-input-bg, #1C173C);
   color: var(--theme-font-primary, #FFFFFF);
   font-size: 14px;
+  font-weight: 400;
   line-height: 140%;
 }
 
@@ -12249,7 +12280,7 @@ footer {
   font-weight: 800;
   letter-spacing: 4px;
   vertical-align: middle;
-  font-family: "Baloo Chettan 2", sans-serif;
+  font-family: var(--font-logo);
   /* font-family: "Silkscreen", sans-serif;  */
   /* font-family: "Press Start 2P", system-ui;   */
   /* font-family: "IBM Plex Mono", monospace; */
@@ -12795,6 +12826,7 @@ footer {
 .vertical-menu ul {
   height: auto;
   margin-top: 16px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1096px) {
   .vertical-menu ul {
@@ -12882,7 +12914,7 @@ footer {
 }
 @media (max-width: 1366px) {
   .vertical-menu button {
-    width: 216px;
+    width: 219px;
   }
 }
 @media (max-width: 1096px) {
@@ -13080,7 +13112,8 @@ footer {
 }
 
 .close-open-menu-button {
-  background: transparent;
+  height: fit-content;
+  background-color: transparent;
 }
 
 /* arrow up: */
@@ -25100,13 +25133,33 @@ a {
   text-decoration: none;
 }
 
+/* Font for logo: */
+/* Connecting fonts by downloading */
+@font-face {
+  font-family: "BalooChettan2";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  font-optical-sizing: auto;
+  src: local("BalooChettan2");
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
+}
+@font-face {
+  font-family: "BalooChettan2";
+  font-weight: normal;
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+  font-optical-sizing: auto;
+  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
+}
 :root {
+  --font-logo: "Baloo Chettan 2", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
   --font-source-code: "Source Code Pro", monospace;
   --font-silkscreen: "Silkscreen", sans-serif;
   --font-press-start: "Press Start 2P", system-ui;
   --font-ibm-plex: "IBM Plex Mono", monospace;
-  --font-baloo-chettan-2: "Baloo Chettan 2", sans-serif;
   --theme-main-bg: #343148;
   --theme-promo-bg: #292640;
   --theme-input-bg: #1C173C;
@@ -25151,6 +25204,8 @@ a {
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--theme-main-bg, #343148);
@@ -25242,7 +25297,6 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  /* расстояние между иконкой и текстом */
   width: fit-content;
   height: 34px;
   padding: 10px 16px;
@@ -25260,9 +25314,7 @@ footer {
 @media (max-width: 1366px) {
   .sorting-btn {
     padding: 10px 10px;
-    /* кнопка - компактнее */
     gap: 0;
-    /* убран отступ, так как текста нет */
   }
 }
 
@@ -25346,12 +25398,13 @@ footer {
   background-image: var(--theme-search-icon);
   background-repeat: no-repeat;
   background-position: 14px center;
-  background-size: 24px 24px;
+  background-size: 22px 22px;
   padding-left: 44px;
   border-radius: 40px;
   background-color: var(--theme-input-bg, #1C173C);
   color: var(--theme-font-primary, #FFFFFF);
   font-size: 14px;
+  font-weight: 400;
   line-height: 140%;
 }
 
@@ -25452,7 +25505,7 @@ footer {
   font-weight: 800;
   letter-spacing: 4px;
   vertical-align: middle;
-  font-family: "Baloo Chettan 2", sans-serif;
+  font-family: var(--font-logo);
   /* font-family: "Silkscreen", sans-serif;  */
   /* font-family: "Press Start 2P", system-ui;   */
   /* font-family: "IBM Plex Mono", monospace; */
@@ -25998,6 +26051,7 @@ footer {
 .vertical-menu ul {
   height: auto;
   margin-top: 16px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1096px) {
   .vertical-menu ul {
@@ -26085,7 +26139,7 @@ footer {
 }
 @media (max-width: 1366px) {
   .vertical-menu button {
-    width: 216px;
+    width: 219px;
   }
 }
 @media (max-width: 1096px) {
@@ -26283,7 +26337,8 @@ footer {
 }
 
 .close-open-menu-button {
-  background: transparent;
+  height: fit-content;
+  background-color: transparent;
 }
 
 /* arrow up: */
