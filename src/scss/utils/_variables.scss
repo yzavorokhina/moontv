@@ -1,10 +1,12 @@
+
 :root {
+    --font-logo: "Baloo Chettan 2", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
+
     --font-source-code: "Source Code Pro", monospace;
     --font-silkscreen: "Silkscreen", sans-serif;
     --font-press-start: "Press Start 2P", system-ui;
     --font-ibm-plex: "IBM Plex Mono", monospace;
-    --font-baloo-chettan-2: "Baloo Chettan 2", sans-serif;
 
     --theme-main-bg: #343148;                                     
     --theme-promo-bg: #292640;                                  
@@ -27,8 +29,8 @@
     --theme-font-logo: #FFFFFF;
     --theme-font-primary: #FFFFFF;                                                   
     --theme-font-secondary: #CECED6;                          
-    --theme-font-tertiary: rgba(170, 168, 181, 0.7);          
-
+    --theme-font-tertiary: rgba(170, 168, 181, 0.7);     
+    
     --theme-category-bg-image: url('../img/category-bg-dark.jpg');
     --theme-category-bg-image-tint: rgba(7, 1, 41, 0.5);
     --theme-channel-bg-image: url('../img/channel-bg-dark.png');

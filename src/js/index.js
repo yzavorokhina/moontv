@@ -12,3 +12,9 @@ const body = document.getElementById('react-body');
 const rootBody = createRoot(body);
 rootBody.render(<HomePage db={db} />);
 // rootBody.render(<App db={db} />);
+
+// ReactDOM.createRoot(document.getElementById('root')!).render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+// );

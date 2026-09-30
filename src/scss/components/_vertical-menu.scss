@@ -230,6 +230,7 @@
 .vertical-menu ul {
     height: auto;
     margin-top: 16px;
+    margin-bottom: 30px;
 
     @media (max-width: 1096px) {
         margin-top: 0;
@@ -309,7 +310,7 @@
     border: none;
 
     @media (max-width: 1366px) {
-        width: 216px;
+        width: 219px;
     }
 
     @media (max-width: 1096px) {
@@ -499,7 +500,8 @@
 //   }
 
 .close-open-menu-button {
-    background: transparent;
+    height: fit-content;
+    background-color: transparent;
 }
 
 /* arrow up: */

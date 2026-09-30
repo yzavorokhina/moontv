@@ -127,7 +127,7 @@ export default function VerticalMenu({ db, showAll }) {
                         aria-label="Закрыть меню"
                         onClick={closeMenu}
                     >
-                        <img src={`./images/expend-icon-left-dark.svg`} title="close menu" />
+                        <img src={`./images/expand-icon-white.svg`} title="close menu" />
                     </button>
                     <button id="openBtn" className="close-open-menu-button"
                         type="button"

@@ -1,12 +1,15 @@
 html,
 body {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    //font-family: var(--font-source-code);
-    // font-family: $font-source-code;
     overflow-x: hidden;
     background-color: var(--theme-main-bg, #343148);
+    //font-family: var(--font-open-sans);
+    //font-family: var(--font-source-code);
+    //font-family: var(--font-silkscreen); // на этом шрифте хорошо заметно где шрифты разные
+    //font-family: var(--font-press-start);  // на этом шрифте хорошо заметно где шрифты разные - еще почему-то на главной всегда один и тот же шрифт и в вертикальном меню
+    //font-family: var(--font-ibm-plex);  // на русском и на английском смотрятся сильно по-разному что не очень 
 }
 
 h1,
@@ -15,14 +18,6 @@ h3,
 h4 {
     font-family: var(--font-open-sans);
 }
-
-// #logo-text {
-//     font-family: var(--font-baloo-chettan-2);
-// }
-
-// .logo-text {
-//     font-family: var(--font-baloo-chettan-2);
-// }
 
 .page {
     display: flex;
@@ -38,7 +33,6 @@ header {
 main {
     flex-shrink: 0;
     flex-grow: 1;
-    //width: 100%;
     width: 100vw;
     top: 100px;
     position: relative;
@@ -52,14 +46,8 @@ footer {
 .vertical-blocks {
     display: flex;
     flex-direction: row;
-    //width: 100%;
     width: 100vw;
 }
-
-// .main-of-the-main {
-//     display: flex;
-//     width: calc(100% - 222px);
-// }
 
 .main-of-the-main {
     display: flex;
@@ -69,16 +57,7 @@ footer {
 .horizontal-blocks {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
 }
-
-// .main-screen-block {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: center;
-//     width: calc(100% - 22px);
-// }
 
 .main-screen-block {
     display: flex;
@@ -124,8 +103,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    /* расстояние между иконкой и текстом */
-
     width: fit-content;
     height: 34px;
     padding: 10px 16px;
@@ -142,9 +119,7 @@ footer {
 
     @media (max-width: 1366px) {
         padding: 10px 10px;
-        /* кнопка - компактнее */
         gap: 0;
-        /* убран отступ, так как текста нет */
     }
 
     // @media (min-width: 1366px) {
@@ -156,9 +131,7 @@ footer {
 // @media (max-width: 1366px) {
 //     .sorting-btn {
 //         padding: 10px 10px;
-//         /* кнопка - компактнее */
 //         gap: 0;
-//         /* убран отступ, так как текста нет */
 //     }
 // }
 
