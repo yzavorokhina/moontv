@@ -1,12 +1,7 @@
 
 :root {
-    --font-logo: "Baloo Chettan 2", sans-serif;
-    --font-open-sans: "Open Sans", sans-serif;
-
-    --font-source-code: "Source Code Pro", monospace;
-    --font-silkscreen: "Silkscreen", sans-serif;
-    --font-press-start: "Press Start 2P", system-ui;
-    --font-ibm-plex: "IBM Plex Mono", monospace;
+    --font-logo: "Baloo Chettan 2", system-ui, sans-serif;
+    --font-body: "Nunito", system-ui, sans-serif;
 
     --theme-main-bg: #343148;                                     
     --theme-promo-bg: #292640;                                  
@@ -16,7 +11,7 @@
     --theme-active-first-btn-bg: #000000;                             
     --theme-active-btn-bg: #000000;                             
     --theme-transparent-banner-btn-bg: rgba(52, 49, 72, 0.2);    
-    --theme-tag-button-bg: rgba(170, 168, 181, 0.7);            
+    --theme-tag-button-bg: rgba(170, 168, 181, 0.5);                  
     --theme-accent-bg: #FF6F3A; 
     --theme-subscribe-btn-bg: #16122F;                          
 

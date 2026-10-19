@@ -16,8 +16,7 @@ body {
     background-image: url("../img/auth-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Source Code Pro", monospace;
-    /* font-family: "IBM Plex Mono", monospace; */
+    font-family: var(--font-body);
     text-align: left;
     transition: margin 0.4s ease; /* Плавность 0.4 секунды */
 }
@@ -187,7 +186,7 @@ h1 {
     margin-left: auto;
     margin-bottom: 23px;
     color: var(--theme-font-primary, #FFFFFF);
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--font-logo);
     font-weight: 200;
     font-size: 22px;
     line-height: 28px;
@@ -306,8 +305,8 @@ h1 {
 }
 
 .form p {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-right: auto;
     margin-bottom: 5px;
     margin-left: auto;

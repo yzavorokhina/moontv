@@ -1,3 +1,5 @@
+@use '../fonts.scss';
+
 html,
 body {
     display: flex;
@@ -5,18 +7,21 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     background-color: var(--theme-main-bg, #343148);
-    //font-family: var(--font-open-sans);
-    //font-family: var(--font-source-code);
-    //font-family: var(--font-silkscreen); // на этом шрифте хорошо заметно где шрифты разные
-    //font-family: var(--font-press-start);  // на этом шрифте хорошо заметно где шрифты разные - еще почему-то на главной всегда один и тот же шрифт и в вертикальном меню
-    //font-family: var(--font-ibm-plex);  // на русском и на английском смотрятся сильно по-разному что не очень 
+    font-family: var(--font-body);
 }
 
 h1,
 h2,
 h3,
-h4 {
-    font-family: var(--font-open-sans);
+h4 ,
+h5,
+h6,
+li,
+a,
+p,
+span,
+div{
+    font-family: var(--font-body);
 }
 
 .page {
@@ -28,6 +33,11 @@ h4 {
 header {
     flex-shrink: 0;
     height: 122px;
+}
+
+#logo-text {
+    // filter: grayscale(50%) opacity(0.8) brightness(90%);
+    font-family: var(--font-logo);
 }
 
 main {
@@ -155,7 +165,7 @@ footer {
     color: var(--theme-font-primary, #FFFFFF);
     font-weight: 500;
     padding-right: 6px;
-    padding-bottom: 4px;
+    // padding-bottom: 4px;
     white-space: nowrap;
 
     @media (max-width: 1366px) {

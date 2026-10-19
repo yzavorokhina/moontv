@@ -75,9 +75,9 @@ export default function AuthPage() {
                             <a href="#" className="forgot-password">Забыли пароль?</a>
                         </div>
                         <p className="copy">
-                            &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+                            &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
                             Войти через
-                            &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+                            &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
                         </p>
                         <button type="submit" className="button-3">
                             <div>

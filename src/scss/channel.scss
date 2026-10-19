@@ -6,14 +6,6 @@
 @import 'components/channel_favourite_video';
 @import 'components/channel_favourite_clips';
 
-#site-logo {
-    filter: grayscale(50%) opacity(0.8) brightness(90%);
-}
-
-#logo-text {
-    filter: grayscale(50%) opacity(0.8) brightness(90%);
-}
-
 .channel-discription {
     position: relative;
     display: flex;

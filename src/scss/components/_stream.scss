@@ -66,7 +66,6 @@ iframe {
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    // background: var(--theme-button-scroll-bg, #54506B);
     background: rgba(84, 80, 107, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -76,49 +75,6 @@ iframe {
 .channel-info:hover {
     cursor: pointer;
 }
-
-/*------вариант адаптивный под разные устройства------*/
-/* .banner-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: clamp(15px, 3vw, 30px);
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-  color: white;
-  z-index: 10;
-
-  /* Центрирование содержимого */
-/* display: flex;
-  flex-direction: column;
-  gap: 10px;
-} */
-
-/* Стили для содержимого */
-/* .banner-info h2 {
-  margin: 0;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-}
-
-.banner-info p {
-  margin: 5px 0;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-}
-
-.banner-info button {
-  align-self: start;
-  padding: 8px 16px;
-  background: #ff6b6b;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px; */
-/*} */
-/*------------*/
 
 .channel-stream-info {
     display: flex;
@@ -143,7 +99,6 @@ iframe {
     border-radius: 60px;
 }
 
-/* На странице самого канала вряд ли нужен hover для перехода на канал: */
 .channel-ava:hover {
     border-radius: 80px;
     filter: drop-shadow(1px 1px 0 rgb(244, 245, 193, 0.2)) drop-shadow(-1px -1px 0 rgb(145, 145, 132, 0.2)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
@@ -226,10 +181,10 @@ iframe {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
     color: var(--theme-font-secondary, #CECED6);
-    font-size: 20px;
+    font-size: 18px;
     margin: auto;
 }
 
@@ -240,7 +195,7 @@ iframe {
 
 .viewers-count {
     color: var(--theme-font-secondary, #CECED6);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #current-viewers {
@@ -272,8 +227,6 @@ iframe {
     justify-content: center;
     flex-shrink: 0;
     width: fit-content;
-    // height: 34px;
-    // padding-left: 24px;
     padding-right: 24px;
     height: 40px;
     border: none;
@@ -301,8 +254,6 @@ iframe {
     justify-content: center;
     flex-shrink: 0;
     width: fit-content;
-    // height: 34px;
-    // padding-left: 24px;
     padding-right: 24px;
     height: 40px;
     border: none;
@@ -323,28 +274,6 @@ iframe {
     background-color: var(--theme-accent-hover, #E2552D);
 }
 
-/* Вариант карусели с видео-содержимым: */
-/* .stream-video {
-  position: relative; 
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto; 
-}
-
-.video-container {
-  width: 100%;
-  height: 450px; 
-  overflow: hidden;
-  border-radius: 8px;
-} */
-
-/* .video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-
 /* chat block: */
 .chat {
     z-index: 100;
@@ -355,7 +284,6 @@ iframe {
     flex-shrink: 0;
     max-width: 346px;
     min-height: calc(100vh - 100px);
-    //border-radius-top-left: 5px;
     border-top-left-radius: 5px;
 }
 
@@ -368,16 +296,13 @@ iframe {
     border-top-left-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    //background-color: var(--theme-btn-bg, #16122F);
     background-color: var(--theme-button-scroll-hover, #16122F);
-    // background-color: var(--theme-input-bg, #1C173C);
 }
 
 .chat-header {
     position: relative;
     height: 41px;
     padding: 8px 8px;
-    //border-bottom: 1px solid var( --theme-font-tertiary, rgba(170, 168, 181, 0.7));
     background-color: var(--theme-active-btn-bg, #000000);
     color: var(--theme-font-primary, #FFFFFF);
     text-align: center;
@@ -391,7 +316,6 @@ iframe {
     margin: 0;
     padding: 0;
     font-weight: 600;
-    //color: var(--theme-font-primary, #FFFFFF);
 }
 
 .online-status {
@@ -406,7 +330,6 @@ iframe {
     padding: 12px;
     overflow-y: auto;
     gap: 12px;
-    //background-color: var(--theme-btn-bg, #16122F);
     background-color: var(--theme-button-scroll-hover, #16122F);
 }
 
@@ -442,6 +365,7 @@ iframe {
 
 .message-content {
     margin-bottom: 4px;
+    color: var(--theme-font-primary, #FFFFFF);
 }
 
 .message-time {
@@ -469,7 +393,6 @@ iframe {
     padding: 16px;
     border-top: 1px solid var(--theme-font-primary, #FFFFFF);
     gap: 10px;
-    //background-color: var(--theme-btn-bg, #16122F);
     background-color: var(--theme-button-scroll-hover, #16122F);
     border-top: 1px solid var(--theme-font-tertiary, rgba(170, 168, 181, 0.7));
 }
@@ -549,7 +472,7 @@ iframe {
     outline: none;
     font-size: 14px;
     background-color: var(--theme-input-bg, #1C173C);
-    color: var(--theme-font-secondary, #CECED6);
+    color: var(--theme-font-primary, #FFFFFF);
     margin-bottom: 6px;
 }
 
@@ -619,4 +542,4 @@ iframe {
     background: #a8a8a8;
 }
 
-/* end of the chat */
+/* end of the chat block */

@@ -44,7 +44,7 @@ export default function Header({ setTheme, currentTheme }) {
                             type="button"
                             aria-label="Включить звук"
                             onClick={(e) => handleClick("./notFound.html", e)}>
-                                <img src={`./images/header-icon-music-${currentTheme}.svg`} title="mute" />
+                            <img src={`./images/header-icon-music-${currentTheme}.svg`} title="mute" />
                         </button>
                         <button id="themeToggle"
                             className="menu-button"
@@ -70,9 +70,9 @@ export default function Header({ setTheme, currentTheme }) {
                                 type="button"
                                 aria-label="Войти в личный кабинет"
                                 onClick={(e) => handleClick("./auth.html", e)}>
-                                    <img src={`./images/${currentUser.iconUrl || 'avatar-disabled-dark.jpg'}`}
-                                        fetchPriority="high"
-                                        alt={currentUser.iconUrl ? "Аватар пользователя" : "Заглушка аватара"} />
+                                <img src={`./images/${currentUser.iconUrl || 'avatar-disabled-dark.jpg'}`}
+                                    fetchPriority="high"
+                                    alt={currentUser.iconUrl ? "Аватар пользователя" : "Заглушка аватара"} />
                             </button>
                         </div>
                     </div>

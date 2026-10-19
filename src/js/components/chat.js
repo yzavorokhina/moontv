@@ -73,7 +73,7 @@ export default function Chat({}) {
     <>
       <div className="chat-container">
           <div className="chat-header">
-              <h6>Чат в прямом эфире:</h6>
+              <h6>Чат в прямом эфире</h6>
               {/* <span className="online-status">Онлайн</span> */}
           </div>
 
