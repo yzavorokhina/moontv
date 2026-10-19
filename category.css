@@ -23774,33 +23774,9 @@ a {
   text-decoration: none;
 }
 
-/* Font for logo: */
-/* Connecting fonts by downloading */
-@font-face {
-  font-family: "BalooChettan2";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  font-optical-sizing: auto;
-  src: local("BalooChettan2");
-  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
-}
-@font-face {
-  font-family: "BalooChettan2";
-  font-weight: normal;
-  font-weight: 800;
-  font-style: bold;
-  font-display: swap;
-  font-optical-sizing: auto;
-  src: url(images\BalooChettan2-VariableFont_wght.woff2), url(images\BalooChettan2-VariableFont_wght.ttf) format("truetype"), url(images\BalooChettan2-VariableFont_wght.otf), url(images\BalooChettan2-VariableFont_wght.eot), url(images\BalooChettan2-VariableFont_wght.woff) format("woff"), url(images/BalooChettan2-VariableFont_wght.svg);
-}
 :root {
-  --font-logo: "Baloo Chettan 2", sans-serif;
-  --font-open-sans: "Open Sans", sans-serif;
-  --font-source-code: "Source Code Pro", monospace;
-  --font-silkscreen: "Silkscreen", sans-serif;
-  --font-press-start: "Press Start 2P", system-ui;
-  --font-ibm-plex: "IBM Plex Mono", monospace;
+  --font-logo: "Baloo Chettan 2", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, sans-serif;
   --theme-main-bg: #343148;
   --theme-promo-bg: #292640;
   --theme-input-bg: #1C173C;
@@ -23809,7 +23785,7 @@ a {
   --theme-active-first-btn-bg: #000000;
   --theme-active-btn-bg: #000000;
   --theme-transparent-banner-btn-bg: rgba(52, 49, 72, 0.2);
-  --theme-tag-button-bg: rgba(170, 168, 181, 0.7);
+  --theme-tag-button-bg: rgba(170, 168, 181, 0.5);
   --theme-accent-bg: #FF6F3A;
   --theme-subscribe-btn-bg: #16122F;
   --theme-btns-hover: rgba(17, 9, 80, 0.5);
@@ -23850,13 +23826,21 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--theme-main-bg, #343148);
+  font-family: var(--font-body);
 }
 
 h1,
 h2,
 h3,
-h4 {
-  font-family: var(--font-open-sans);
+h4,
+h5,
+h6,
+li,
+a,
+p,
+span,
+div {
+  font-family: var(--font-body);
 }
 
 .page {
@@ -23868,6 +23852,10 @@ h4 {
 header {
   flex-shrink: 0;
   height: 122px;
+}
+
+#logo-text {
+  font-family: var(--font-logo);
 }
 
 main {
@@ -23974,7 +23962,6 @@ footer {
   color: var(--theme-font-primary, #FFFFFF);
   font-weight: 500;
   padding-right: 6px;
-  padding-bottom: 4px;
   white-space: nowrap;
 }
 @media (max-width: 1366px) {
@@ -24147,9 +24134,6 @@ footer {
   letter-spacing: 4px;
   vertical-align: middle;
   font-family: var(--font-logo);
-  /* font-family: "Silkscreen", sans-serif;  */
-  /* font-family: "Press Start 2P", system-ui;   */
-  /* font-family: "IBM Plex Mono", monospace; */
 }
 
 /*---------------------------------------------------------------*/
@@ -24717,7 +24701,6 @@ footer {
   margin-bottom: -1px;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 @media (max-width: 1366px) {
   .vertical-menu li {
@@ -24908,7 +24891,7 @@ footer {
   width: 40px;
   height: 40px;
   padding: 0;
-  background: transparent;
+  background-color: transparent;
   color: var(--theme-font-primary, #FFFFFF);
   text-align: center;
   cursor: pointer;
@@ -25423,7 +25406,7 @@ footer {
 }
 
 .button-tag {
-  background-color: var(--theme-tag-button-bg, rgba(170, 168, 181, 0.7));
+  background-color: var(--theme-tag-button-bg, rgba(170, 168, 181, 0.5));
 }
 
 .button-tag:hover {

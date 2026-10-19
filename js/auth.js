@@ -122,7 +122,7 @@ function AuthPage() {
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
             className: "copy",
-            children: "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 \u0412\u043E\u0439\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014"
+            children: "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 \u0412\u043E\u0439\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
             type: "submit",
             className: "button-3",

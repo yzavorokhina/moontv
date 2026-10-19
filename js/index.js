@@ -375,7 +375,7 @@ function AuthPage() {
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
             className: "copy",
-            children: "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 \u0412\u043E\u0439\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014"
+            children: "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 \u0412\u043E\u0439\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
             type: "submit",
             className: "button-3",
@@ -1678,38 +1678,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ChannelDescription(t0) {
-  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(62);
+  const $ = (0,react_compiler_runtime__WEBPACK_IMPORTED_MODULE_0__.c)(61);
   const {
     channelData
   } = t0;
   let t1;
   if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
-    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
-      className: "channel-menu",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-          className: "channel-menu-first-button",
-          children: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: "#",
-            children: "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+    t1 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "channel-horizontal-menu-wrapper",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "channel-horizontal-menu",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
+          className: "channel-menu",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              className: "channel-menu-first-button",
+              children: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "#",
+                children: "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "#",
+                children: "\u0420\u0430\u0441\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "#",
+                children: "\u0412\u0438\u0434\u0435\u043E"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "#",
+                children: "\u0427\u0430\u0442"
+              })
+            })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: "#",
-            children: "\u0420\u0430\u0441\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: "#",
-            children: "\u0412\u0438\u0434\u0435\u043E"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-            href: "#",
-            children: "\u0427\u0430\u0442"
-          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          className: "follower-count",
+          children: "9,3\xA0\u0442\u044B\u0441. \u043E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0445"
         })]
       })
     });
@@ -1718,81 +1727,56 @@ function ChannelDescription(t0) {
     t1 = $[0];
   }
   let t2;
-  if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "channel-horizontal-menu-wrapper",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "channel-horizontal-menu",
-        children: [t1, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
-          className: "follower-count",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
-            width: "16px",
-            height: "16px",
-            viewBox: "0 0 16 16",
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "currentColor",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-              d: "M14.88 4.78a3.489 3.489 0 0 0-.37-.9 3.24 3.24 0 0 0-.6-.79 3.78 3.78 0 0 0-1.21-.81 3.74 3.74 0 0 0-2.84 0 4 4 0 0 0-1.16.75l-.05.06-.65.65-.65-.65-.05-.06a4 4 0 0 0-1.16-.75 3.74 3.74 0 0 0-2.84 0 3.78 3.78 0 0 0-1.21.81 3.55 3.55 0 0 0-.97 1.69 3.75 3.75 0 0 0-.12 1c0 .317.04.633.12.94a4 4 0 0 0 .36.89 3.8 3.8 0 0 0 .61.79L8 14.31l5.91-5.91c.237-.233.44-.5.6-.79A3.578 3.578 0 0 0 15 5.78a3.747 3.747 0 0 0-.12-1zm-1 1.63a2.69 2.69 0 0 1-.69 1.21l-5.21 5.2-5.21-5.2a2.9 2.9 0 0 1-.44-.57 3 3 0 0 1-.27-.65 3.25 3.25 0 0 1-.08-.69A3.36 3.36 0 0 1 2.06 5a2.8 2.8 0 0 1 .27-.65c.12-.21.268-.4.44-.57a2.91 2.91 0 0 1 .89-.6 2.8 2.8 0 0 1 2.08 0c.33.137.628.338.88.59l1.36 1.37 1.36-1.37a2.72 2.72 0 0 1 .88-.59 2.8 2.8 0 0 1 2.08 0c.331.143.633.347.89.6.174.165.32.357.43.57a2.69 2.69 0 0 1 .35 1.34 2.6 2.6 0 0 1-.06.72h-.03z"
-            })
-          }), "9,3\xA0\u0442\u044B\u0441. \u043E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0445"]
-        })]
-      })
-    });
-    $[1] = t2;
-  } else {
-    t2 = $[1];
-  }
-  let t3;
-  if ($[2] !== channelData.name) {
-    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("h5", {
+  if ($[1] !== channelData.name) {
+    t2 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("h5", {
       children: [" ", channelData.name]
     });
-    $[2] = channelData.name;
-    $[3] = t3;
+    $[1] = channelData.name;
+    $[2] = t2;
   } else {
-    t3 = $[3];
+    t2 = $[2];
   }
+  let t3;
   let t4;
   let t5;
   let t6;
-  let t7;
-  if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+  if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+    t3 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
       children: "\u041D\u0430 \u0434\u0430\u043D\u043D\u043E\u043C \u043A\u0430\u043D\u0430\u043B\u0435 \u0442\u0440\u0430\u043D\u0441\u043B\u0438\u0440\u0443\u044E\u0442\u0441\u044F \u0437\u0430\u043F\u0438\u0441\u0438 \u043E \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438\u0433\u0440:"
     });
-    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+    t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
       children: "\u041E\u0442 \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0434\u043E \u043F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0439 \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0432\u043C\u0435\u0441\u0442\u0435 \u0441\u043E \u0437\u0440\u0438\u0442\u0435\u043B\u044F\u043C\u0438"
     });
-    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+    t5 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
       children: "\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438, \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E\u0442 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u043A\u043D\u0438\u0433 \u0434\u0430\u043D\u043D\u043E\u0439 \u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438,"
     });
-    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+    t6 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
       children: "\u0430 \u0442\u0430\u043A\u0436\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0441\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0438\u0434\u0435\u0439 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0418\u0418"
     });
+    $[3] = t3;
     $[4] = t4;
     $[5] = t5;
     $[6] = t6;
-    $[7] = t7;
   } else {
+    t3 = $[3];
     t4 = $[4];
     t5 = $[5];
     t6 = $[6];
-    t7 = $[7];
+  }
+  let t7;
+  if ($[7] !== t2) {
+    t7 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "info-about",
+      children: [t2, t3, t4, t5, t6]
+    });
+    $[7] = t2;
+    $[8] = t7;
+  } else {
+    t7 = $[8];
   }
   let t8;
-  if ($[8] !== t3) {
-    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "info-about",
-      children: [t3, t4, t5, t6, t7]
-    });
-    $[8] = t3;
-    $[9] = t8;
-  } else {
-    t8 = $[9];
-  }
-  let t9;
-  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+  if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+    t8 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
       href: "https://www.youtube.com/@channel-name",
       target: "_blank",
       className: "info-link",
@@ -1815,13 +1799,13 @@ function ChannelDescription(t0) {
         })
       }), "YouTube"]
     });
-    $[10] = t9;
+    $[9] = t8;
   } else {
-    t9 = $[10];
+    t8 = $[9];
   }
-  let t10;
-  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+  let t9;
+  if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+    t9 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
       href: "https://github.com/username",
       target: "_blank",
       className: "github-btn info-link",
@@ -1837,15 +1821,15 @@ function ChannelDescription(t0) {
         })
       }), "GitHub"]
     });
-    $[11] = t10;
+    $[10] = t9;
   } else {
-    t10 = $[11];
+    t9 = $[10];
   }
-  let t11;
-  if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  let t10;
+  if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+    t10 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "info-links",
-      children: [t9, t10, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+      children: [t8, t9, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
         href: "https://t.me/channel-name",
         target: "_blank",
         className: "info-link",
@@ -1861,36 +1845,43 @@ function ChannelDescription(t0) {
         }), "Telegram"]
       })]
     });
-    $[12] = t11;
+    $[11] = t10;
   } else {
-    t11 = $[12];
+    t10 = $[11];
+  }
+  let t11;
+  if ($[12] !== t7) {
+    t11 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "about",
+      children: [t7, t10]
+    });
+    $[12] = t7;
+    $[13] = t11;
+  } else {
+    t11 = $[13];
   }
   let t12;
-  if ($[13] !== t8) {
-    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "about",
-      children: [t8, t11]
-    });
-    $[13] = t8;
-    $[14] = t12;
-  } else {
-    t12 = $[14];
-  }
   let t13;
-  let t14;
-  if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+  if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+    t12 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "channel-images",
       src: "./images/channel-image-1.jpg",
       alt: "channel-images"
     });
-    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+    t13 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
       children: "\u0421\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435:"
     });
+    $[14] = t12;
     $[15] = t13;
+  } else {
+    t12 = $[14];
+    t13 = $[15];
+  }
+  let t14;
+  if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+    t14 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
     $[16] = t14;
   } else {
-    t13 = $[15];
     t14 = $[16];
   }
   let t15;
@@ -1951,38 +1942,38 @@ function ChannelDescription(t0) {
   }
   let t23;
   if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
-    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    t23 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t12, t13, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0421\u0442\u0440\u0438\u043C\u0435\u0440 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 ", t14, "\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435: ", t15, "\u2295 \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0442\u0447\u0438\u043A\u0438 \u0438 \u043F\u0440\u0438\u0451\u043C\u043D\u0438\u043A\u0438, ", t16, "\u2295 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0431\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438  ", t17, "\u0441 \u0432\u044B\u0441\u043E\u043A\u043E\u0442\u043E\u0447\u043D\u044B\u043C\u0438 \u043F\u043E\u0434\u0432\u0438\u0436\u043D\u044B\u043C\u0438 \u0437\u0435\u0440\u043A\u0430\u043B\u0430\u043C\u0438 \u0438 \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438,  ", t18, "\u2295 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B \u0444\u043E\u0442\u043E\u043D\u043E\u0432: \u043E\u0434\u043D\u043E\u0444\u043E\u0442\u043E\u043D\u043D\u044B\u0435 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B (SNSPD), ", t19, "\u2295 \u0440\u0435\u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0442\u043E\u0440\u044B, ", t20, "\u2295 \u0431\u043E\u0440\u0442\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u044B \u0438 \u043C\u043E\u0434\u0435\u043C\u044B: \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043C\u043E\u0434\u0443\u043B\u044C MAScOT \u0438 \u043C\u043E\u0434\u0435\u043C, ", t21, "\u2295 \u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430 \u0434\u043B\u044F \u043A\u0430\u043C\u0435\u0440 \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F ", t22, "\u2295 \u0438, \u0440\u0430\u0437\u0443\u043C\u0435\u0435\u0442\u0441\u044F, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \xAB\u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0443 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B\xBB ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+      })]
+    });
     $[25] = t23;
   } else {
     t23 = $[25];
   }
   let t24;
-  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
-    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "channel-info-block",
-      children: [t13, t14, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-        children: ["\u0421\u0442\u0440\u0438\u043C\u0435\u0440 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 ", t15, "\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u0435: ", t16, "\u2295 \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0435 \u043F\u0435\u0440\u0435\u0434\u0430\u0442\u0447\u0438\u043A\u0438 \u0438 \u043F\u0440\u0438\u0451\u043C\u043D\u0438\u043A\u0438, ", t17, "\u2295 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0431\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438  ", t18, "\u0441 \u0432\u044B\u0441\u043E\u043A\u043E\u0442\u043E\u0447\u043D\u044B\u043C\u0438 \u043F\u043E\u0434\u0432\u0438\u0436\u043D\u044B\u043C\u0438 \u0437\u0435\u0440\u043A\u0430\u043B\u0430\u043C\u0438 \u0438 \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u043C\u0438,  ", t19, "\u2295 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B \u0444\u043E\u0442\u043E\u043D\u043E\u0432: \u043E\u0434\u043D\u043E\u0444\u043E\u0442\u043E\u043D\u043D\u044B\u0435 \u0434\u0435\u0442\u0435\u043A\u0442\u043E\u0440\u044B (SNSPD), ", t20, "\u2295 \u0440\u0435\u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0442\u043E\u0440\u044B, ", t21, "\u2295 \u0431\u043E\u0440\u0442\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u044B \u0438 \u043C\u043E\u0434\u0435\u043C\u044B: \u043E\u043F\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043C\u043E\u0434\u0443\u043B\u044C MAScOT \u0438 \u043C\u043E\u0434\u0435\u043C, ", t22, "\u2295 \u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u043A\u043E\u0440\u043F\u0443\u0441\u0430 \u0434\u043B\u044F \u043A\u0430\u043C\u0435\u0440 \u0438 \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F ", t23, "\u2295 \u0438, \u0440\u0430\u0437\u0443\u043C\u0435\u0435\u0442\u0441\u044F, \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \xAB\u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0443 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B\xBB ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
-      })]
-    });
-    $[26] = t24;
-  } else {
-    t24 = $[26];
-  }
   let t25;
-  let t26;
-  if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
-    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+  if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+    t24 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "channel-images",
       src: "./images/channel-image-2.jpg",
       alt: "channel-images"
     });
-    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+    t25 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
       children: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B \u0434\u043B\u044F \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430"
     });
+    $[26] = t24;
     $[27] = t25;
+  } else {
+    t24 = $[26];
+    t25 = $[27];
+  }
+  let t26;
+  if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
+    t26 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
     $[28] = t26;
   } else {
-    t25 = $[27];
     t26 = $[28];
   }
   let t27;
@@ -2078,38 +2069,38 @@ function ChannelDescription(t0) {
   }
   let t40;
   if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
-    t40 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    t40 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "channel-info-block",
+      children: [t24, t25, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        children: ["\u0415\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u043D\u0430\u043B\u0430\u0434\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442 \u0441\u043E \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u043E\u043C", t26, "\u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u0435\u043A\u0442\u044B \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430", t27, "\u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F ", t28, "\u043F\u0440\u0438\u0441\u044B\u043B\u0430\u0439\u0442\u0435 \u0441\u0432\u043E\u0438 \u043F\u0440\u043E\u0431\u043D\u044B\u0435 \u043F\u0440\u043E\u0435\u043A\u0442\u044B ", t29, "\u0432 \u043D\u0435\u0439\u0440\u043E\u0441\u0435\u0442\u0435\u0432\u0443\u044E \u041B\u0421 \u0434\u043B\u044F \u043E\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u044F: ", t30, "neuro_activate: 0xAB3F9C2D@moon ", t31, "\u2248 \u2248 \u2248 ", t32, "\u0434\u043B\u044F \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u0430\u0446\u0438\u0438 \u0432 \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u0435:", t33, "metaverse:moonland:zone3:x128y45z200", t34, "vrchat:worldID:portal7", t35, "\u2248 \u2248 \u2248 ", t36, "\u043E\u0442 \u0432\u0430\u0448\u0435\u0433\u043E AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043D\u0442\u0430 \u043A AI-\u0430\u0433\u0435\u043D\u0442\u0443 \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u0430:", t37, "\"primary_ai\": \"neuro_activate_ai_core_v3.2\", ", t38, "\"chat_bot\": \"neuro_activate_chat_bot_v1.8\",", t39, "\"wss://chat.neuro_activate.ai/ws\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\"preferred_modes\": [\"text\", \"voice\", \"vr_gesture\"]"]
+      })]
+    });
     $[42] = t40;
   } else {
     t40 = $[42];
   }
   let t41;
-  if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
-    t41 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "channel-info-block",
-      children: [t25, t26, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-        children: ["\u0415\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u043D\u0430\u043B\u0430\u0434\u0438\u0442\u044C \u043A\u043E\u043D\u0442\u0430\u043A\u0442 \u0441\u043E \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u043E\u043C", t27, "\u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u0435\u043A\u0442\u044B \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u0430", t28, "\u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F ", t29, "\u043F\u0440\u0438\u0441\u044B\u043B\u0430\u0439\u0442\u0435 \u0441\u0432\u043E\u0438 \u043F\u0440\u043E\u0431\u043D\u044B\u0435 \u043F\u0440\u043E\u0435\u043A\u0442\u044B ", t30, "\u0432 \u043D\u0435\u0439\u0440\u043E\u0441\u0435\u0442\u0435\u0432\u0443\u044E \u041B\u0421 \u0434\u043B\u044F \u043E\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u044F: ", t31, "neuro_activate: 0xAB3F9C2D@moon ", t32, "\u2248 \u2248 \u2248 ", t33, "\u0434\u043B\u044F \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442\u0430\u0446\u0438\u0438 \u0432 \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u0435:", t34, "metaverse:moonland:zone3:x128y45z200", t35, "vrchat:worldID:portal7", t36, "\u2248 \u2248 \u2248 ", t37, "\u043E\u0442 \u0432\u0430\u0448\u0435\u0433\u043E AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043D\u0442\u0430 \u043A AI-\u0430\u0433\u0435\u043D\u0442\u0443 \u0441\u0442\u0440\u0438\u043C\u0435\u0440\u0430:", t38, "\"primary_ai\": \"neuro_activate_ai_core_v3.2\", ", t39, "\"chat_bot\": \"neuro_activate_chat_bot_v1.8\",", t40, "\"wss://chat.neuro_activate.ai/ws\" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "\"preferred_modes\": [\"text\", \"voice\", \"vr_gesture\"]"]
-      })]
-    });
-    $[43] = t41;
-  } else {
-    t41 = $[43];
-  }
   let t42;
-  let t43;
-  if ($[44] === Symbol.for("react.memo_cache_sentinel")) {
-    t42 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+  if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
+    t41 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       className: "channel-images",
       src: "./images/channel-image-3.jpg",
       alt: "channel-images"
     });
-    t43 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+    t42 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
       children: "LunaBoard"
     });
+    $[43] = t41;
     $[44] = t42;
+  } else {
+    t41 = $[43];
+    t42 = $[44];
+  }
+  let t43;
+  if ($[45] === Symbol.for("react.memo_cache_sentinel")) {
+    t43 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
     $[45] = t43;
   } else {
-    t42 = $[44];
     t43 = $[45];
   }
   let t44;
@@ -2198,40 +2189,33 @@ function ChannelDescription(t0) {
   }
   let t56;
   if ($[58] === Symbol.for("react.memo_cache_sentinel")) {
-    t56 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {});
+    t56 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "info-blocks-row",
+      children: [t23, t40, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        className: "channel-info-block",
+        children: [t41, t42, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+          children: ["\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u043E\u0432\u043E\u0439 \u0438\u0433\u0440\u0435 ", t43, "\u043D\u0430 \u043E\u0431\u0449\u0435\u043C \u0445\u043E\u043B\u0441\u0442\u0435 \u0434\u043B\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB", t44, "\u043B\u0443\u0447\u0448\u0438\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0431\u0443\u0434\u0443\u0442 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u044B ", t45, "\u2297 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u043C \u043F\u0438\u0433\u043C\u0435\u043D\u0442\u043E\u043C, ", t46, "\u2297 \u0444\u0435\u0440\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u044B\u043C\u0438 \u0447\u0430\u0441\u0442\u0438\u0446\u0430\u043C\u0438, ", t47, "\u2297 \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u0438, ", t48, "\u2297 \u0437\u0432\u0435\u0437\u0434\u043D\u044B\u043C \u0441\u0432\u0435\u0442\u043E\u043C ", t49, "\u2297 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043C\u043D\u043E\u0433\u043E\u043C\u0435\u0440\u043D\u044B\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 ", t50, "\u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u044B \u0440\u043E\u0431\u043E\u0442\u043E\u043C \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u044E \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB \u043F\u043E\u0434 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u043C \u043A\u0443\u043F\u043E\u043B\u043E\u043C ", t51, "\u0441 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0432\u0438\u0434\u043E\u043C \u043D\u0430 \u0417\u0435\u043C\u043B\u044E ", t52, "\u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443:  CosmoArtHub.space  \u2248 ", t53, "CosmoArtHub-gallery.cosmos ", t54, "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432 \u043C\u043E\u0436\u043D\u043E  ", t55, "\u0432 \u043D\u0430\u0448\u0435\u0439 \u0433\u0440\u0443\u043F\u043F\u0435 \"LunaBoard\"  ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
+        })]
+      })]
+    });
     $[58] = t56;
   } else {
     t56 = $[58];
   }
   let t57;
-  if ($[59] === Symbol.for("react.memo_cache_sentinel")) {
-    t57 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "info-blocks-row",
-      children: [t24, t41, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "channel-info-block",
-        children: [t42, t43, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-          children: ["\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u043E\u0432\u043E\u0439 \u0438\u0433\u0440\u0435 ", t44, "\u043D\u0430 \u043E\u0431\u0449\u0435\u043C \u0445\u043E\u043B\u0441\u0442\u0435 \u0434\u043B\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB", t45, "\u043B\u0443\u0447\u0448\u0438\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0431\u0443\u0434\u0443\u0442 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u044B ", t46, "\u2297 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u043C \u043F\u0438\u0433\u043C\u0435\u043D\u0442\u043E\u043C, ", t47, "\u2297 \u0444\u0435\u0440\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442\u043D\u044B\u043C\u0438 \u0447\u0430\u0441\u0442\u0438\u0446\u0430\u043C\u0438, ", t48, "\u2297 \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435\u043C \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u0438, ", t49, "\u2297 \u0437\u0432\u0435\u0437\u0434\u043D\u044B\u043C \u0441\u0432\u0435\u0442\u043E\u043C ", t50, "\u2297 \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u043C\u043D\u043E\u0433\u043E\u043C\u0435\u0440\u043D\u044B\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 ", t51, "\u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u044B \u0440\u043E\u0431\u043E\u0442\u043E\u043C \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u044E \xAB\u041A\u043E\u0441\u043C\u043E\u0410\u0440\u0442\u2011\u0445\u0430\u0431\xBB \u043F\u043E\u0434 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u043C \u043A\u0443\u043F\u043E\u043B\u043E\u043C ", t52, "\u0441 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0432\u0438\u0434\u043E\u043C \u043D\u0430 \u0417\u0435\u043C\u043B\u044E ", t53, "\u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443:  CosmoArtHub.space  \u2248 ", t54, "CosmoArtHub-gallery.cosmos ", t55, "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u044B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u0432 \u043C\u043E\u0436\u043D\u043E  ", t56, "\u0432 \u043D\u0430\u0448\u0435\u0439 \u0433\u0440\u0443\u043F\u043F\u0435 \"LunaBoard\"  ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
-        })]
-      })]
-    });
-    $[59] = t57;
-  } else {
-    t57 = $[59];
-  }
-  let t58;
-  if ($[60] !== t12) {
-    t58 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+  if ($[59] !== t11) {
+    t57 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "channel-discription",
-        children: [t2, t12, t57]
+        children: [t1, t11, t56]
       })
     });
-    $[60] = t12;
-    $[61] = t58;
+    $[59] = t11;
+    $[60] = t57;
   } else {
-    t58 = $[61];
+    t57 = $[60];
   }
-  return t58;
+  return t57;
 }
 
 /***/ },
@@ -2423,7 +2407,7 @@ function Chat(t0) {
     t4 = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "chat-header",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h6", {
-        children: "\u0427\u0430\u0442 \u0432 \u043F\u0440\u044F\u043C\u043E\u043C \u044D\u0444\u0438\u0440\u0435:"
+        children: "\u0427\u0430\u0442 \u0432 \u043F\u0440\u044F\u043C\u043E\u043C \u044D\u0444\u0438\u0440\u0435"
       })
     });
     $[5] = t4;
@@ -5920,7 +5904,7 @@ const themesMap = new Map([["dark", {
   activeBtnBg: '#000000',
   activeFirstBtnBg: '#000000',
   bannerBtnBg: 'rgba(52, 49, 72, 0.2)',
-  tagBtnBg: 'rgba(170, 168, 181, 0.7)',
+  tagBtnBg: 'rgba(170, 168, 181, 0.5)',
   accentColorBg: '#FF6F3A',
   subscribeBtnBg: '#16122F',
   btnsHover: 'rgba(17, 9, 80, 0.5)',
@@ -5952,17 +5936,17 @@ const themesMap = new Map([["dark", {
   inputBg: 'rgba(170, 168, 181, 0.5)',
   btnBg: 'rgba(170, 168, 181, 0.5)',
   btnScrollBg: '#c6c5cf',
-  activeBtnBg: '#AAA8B5',
+  activeBtnBg: 'rgba(170, 168, 181, 0.7)',
   activeFirstBtnBg: '#AAA8B5',
   bannerBtnBg: 'rgba(195, 194, 204, 0.2)',
-  tagBtnBg: '#CECED6',
+  tagBtnBg: 'rgba(170, 168, 181, 0.5)',
   accentColorBg: '#FF6F3A',
   subscribeBtnBg: '#CECED6',
   btnsHover: '#b6b4be',
   blocksHover: '#b6b4be',
-  btnScrollHover: '#b6b4be',
+  btnScrollHover: '#C6C5CF',
   accentColorHover: '#E2552D',
-  tagBtnBgHover: 'rgba(170, 168, 181, 0.7)',
+  tagBtnBgHover: '#AAA8B5',
   fontLogo: '#FF6F3A',
   fontPrimary: '#343148',
   fontSecondary: '#7C7886',
