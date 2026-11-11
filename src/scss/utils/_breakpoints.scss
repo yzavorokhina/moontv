@@ -1,14 +1,26 @@
-$breakpoint-mobile: 480px;
+// breakpoints (desktop-first):
+// @media (max-width: 1399px) {
+//     }
+// @media (max-width: 1199px) {
+//     }
+// @media (max-width: 991px) {
+//     }
+// @media (max-width: 767px) {
+//     }
+// @media (max-width: 575px) {
+//     }
+
+$breakpoint-mobile: 576px;
 $breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+$breakpoint-desktop: 1200px;
 
 // // Отступы
 // $spacing-sm: 8px;
 
 // // Контрольные точки
-// $bp-mobile: 480px;
+// $bp-mobile: 576px;
 // $bp-tablet: 768px;
-// $bp-desktop: 1024px;
+// $bp-desktop: 1200px;
 
 // Миксин для удобства
 @mixin respond-to($breakpoint) {

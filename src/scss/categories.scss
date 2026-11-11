@@ -69,13 +69,13 @@
     margin-right: 5px;
     background-color: transparent;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1399px) {
         width: calc(100vw - 290px);
     }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (max-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .categories-titles-row {
 //         width: calc(100vw - 290px);
 //     }
@@ -400,7 +400,7 @@ a {
 }
 
 /* как вариант - все @media в конце: */
-// @media (max-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .categories-titles-row {
 //         width: calc(100vw - 290px);
 //     }

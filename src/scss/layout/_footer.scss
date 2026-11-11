@@ -55,19 +55,23 @@
     padding-bottom: 30px;
     color: var(--theme-font-secondary, #CECED6);
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1399px) {
         width: calc(100vw - 222px);
     }
 
-    @media (max-width: 1096px) {
+    @media (max-width: 1199px) {
         width: calc(100vw - 90px);
     }
 
-    @media (max-width: 960px) {
+    @media (max-width: 991px) {
         width: calc(100vw - 90px);
     }
 
-    @media (max-width: 890px) {
+    @media (max-width: 767px) {
+        width: calc(100vw - 90px);
+    }
+
+    @media (max-width: 575px) {
         width: calc(100vw - 90px);
     }
 }
@@ -99,13 +103,29 @@
     font-weight: 100;
     letter-spacing: 0.5;
 
-    @media (max-width: 1096px) {
+    @media (max-width: 1399px) {
+       gap: 16px;
+    }
+
+    @media (max-width: 1199px) {
        gap: 8px;
+    }
+
+    @media (max-width: 991px) {
+       gap: 4px;
+    }
+
+    @media (max-width: 767px) {
+       gap: 4px;
+    }
+
+    @media (max-width: 575px) {
+       gap: 2px;
     }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (max-width: 960px) {
+// @media (max-width: 991px) {
 //     .footer-menu {
 //         gap: 4px;
 //     }
@@ -119,22 +139,22 @@
     font-weight: 100;
     letter-spacing: 0.5;
 
-    @media (max-width: 1096px) {
+    @media (max-width: 1199px) {
        font-size: 10px;
     }
 
-    @media (max-width: 890px) {
+    @media (max-width: 767px) {
        display: none;
     }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (max-width: 1096px) {
+// @media (max-width: 1199px) {
 //     .footer-menu a {
 //         font-size: 10px;
 //     }
 // }
-// @media (max-width: 890px) {
+// @media (max-width: 767px) {
 //     .footer-menu a {
 //         display: none;
 //     }
@@ -155,18 +175,18 @@
 
 /* как вариант - все @media в конце: */
 
-// @media (max-width: 960px) {
+// @media (max-width: 991px) {
 //     .footer-menu {
 //         gap: 4px;
 //     }
 // }
 
-// @media (max-width: 1096px) {
+// @media (max-width: 1199px) {
 //     .footer-menu a {
 //         font-size: 10px;
 //     }
 // }
-// @media (max-width: 890px) {
+// @media (max-width: 767px) {
 //     .footer-menu a {
 //         display: none;
 //     }

@@ -1,5 +1,17 @@
 @use '../fonts.scss';
 
+//  breakpoints (desktop-first):
+//     @media (max-width: 1399px) {
+//     }
+//     @media (max-width: 1199px) {
+//     }
+//     @media (max-width: 991px) {
+//     }
+//     @media (max-width: 767px) {
+//     }
+//     @media (max-width: 575px) {
+//     }
+
 html,
 body {
     display: flex;
@@ -96,13 +108,13 @@ footer {
     margin-left: 20px;
     margin-right: 5px;
 
-    @media (min-width: 1366px) {
+    @media (max-width: 1399px) {
         gap: 5px;
     }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (min-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .sorting-buttons {
 //         gap: 5px;
 //     }
@@ -127,25 +139,25 @@ footer {
     vertical-align: middle;
     cursor: pointer;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1399px) {
         padding: 10px 10px;
         gap: 0;
     }
 
-    // @media (min-width: 1366px) {
+    // @media (max-width: 1399px) {
     //     gap: 5px;
     // }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (max-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .sorting-btn {
 //         padding: 10px 10px;
 //         gap: 0;
 //     }
 // }
 
-// @media (min-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .sorting-buttons {
 //         gap: 5px;
 //     }
@@ -168,13 +180,13 @@ footer {
     // padding-bottom: 4px;
     white-space: nowrap;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1399px) {
         display: none;
     }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (max-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .btn-text {
 //         display: none;
 //     }

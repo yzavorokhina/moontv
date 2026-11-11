@@ -478,7 +478,7 @@ center {
     background-color: var(--theme-accent-hover, #E2552D);
 }
 
-// @media screen and (min-width: 1366px) {
+// @media screen and (max-width: 1399px) {
 //     .numbers {
 //         display: none;
 //     }
@@ -500,7 +500,7 @@ center {
 //     }
 // }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1399px) {
     .numbers {
         display: none;
     }
@@ -522,7 +522,7 @@ center {
     }
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1199px) {
     .numbers {
         display: none;
     }
@@ -544,7 +544,7 @@ center {
     }
 }
 
-@media screen and (max-width: 1096px) {
+@media screen and (max-width: 991px) {
     .numbers {
         display: none;
     }
@@ -566,7 +566,7 @@ center {
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 767px) {
     .numbers {
         display: none;
     }
@@ -588,7 +588,7 @@ center {
     }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 575px) {
     .numbers {
         display: none;
     }

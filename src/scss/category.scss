@@ -184,40 +184,48 @@
     gap: 44px;
     color: var(--theme-accent-bg, #FF6F3A);
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1399px) {
+        gap: 32px;
+    }
+    @media (max-width: 1199px) {
         gap: 32px;
     }
 
-    @media (max-width: 1096px) {
+    @media (max-width: 991px) {
         gap: 24px;
     }
 
-    @media (max-width: 960px) {
+    @media (max-width: 767px) {
         gap: 8px;
     }
 
-    @media (max-width: 890px) {
+    @media (max-width: 575px) {
         gap: 8px;
     }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (min-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .statistics-row {
 //         width: calc(100vw - 290px);
 //     }
 // }
-// @media (max-width: 1096px) {
+// @media (max-width: 1199px) {
+//     .statistics-row {
+//         width: calc(100vw - 290px);
+//     }
+// }
+// @media (max-width: 991px) {
 //     .statistics-row {
 //         gap: 24px;
 //     }
 // }
-// @media (max-width: 960px) {
+// @media (max-width: 767px) {
 //     .statistics-row {
 //         gap: 8px;
 //     }
 // }
-// @media (max-width: 890px) {
+// @media (max-width: 575px) {
 //     .statistics-row {
 //         gap: 8px;
 //     }
@@ -255,103 +263,103 @@
     color: var(--theme-accent-bg, #FF6F3A);
 }
 
-.desktop {
-    font-size: 16px;
+// .desktop {
+//     font-size: 16px;
 
-    @media (min-width: 1366px) {
-        color: var(--theme-accent-bg, #FF6F3A);
-    }
+//     // @media (max-width: 1399px) {
+//     //     color: var(--theme-accent-bg, #FF6F3A);
+//     // }
 
-    @media (max-width: 1366px) {
-        display: none;
-    }
+//     @media (max-width: 1199px) {
+//         display: none;
+//     }
 
-    @media (max-width: 1096px) {
-        display: none;
-    }
+//     @media (max-width: 991px) {
+//         display: none;
+//     }
 
-    @media (max-width: 960px) {
-        display: none;
-    }
+//     @media (max-width: 767px) {
+//         display: none;
+//     }
 
-    @media (max-width: 890px) {
-        display: none;
-    }
-}
+//     @media (max-width: 575px) {
+//         display: none;
+//     }
+// }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (min-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .desktop {
 //         color: var(--theme-accent-bg, #FF6F3A);
 //     }
 // }
-// @media (max-width: 1366px) {
+// @media (max-width: 1199px) {
 //     .desktop {
 //         color: var(--theme-accent-bg, #FF6F3A);
 //     }
 // }
-// @media (max-width: 1096px) {
+// @media (max-width: 991px) {
 //     .desktop {
 //         display: none;
 //     }
 // }
-// @media (max-width: 960px) {
+// @media (max-width: 767px) {
 //     .desktop {
 //         display: none;
 //     }
 // }
-// @media (max-width: 890px) {
+// @media (max-width: 575px) {
 //    .desktop {
 //         display: none;
 //     }
 // }
 
-.tablet {
-    display: none;
+// .tablet {
+//     display: none;
 
-    @media (min-width: 1366px) {
-        display: inline;
-    }
+//     @media (max-width: 1399px) {
+//         display: inline;
+//     }
 
-    @media (max-width: 1366px) {
-        display: inline;
-    }
+//     @media (max-width: 1199px) {
+//         display: inline;
+//     }
 
-    @media (max-width: 1096px) {
-        display: inline;
-    }
+//     @media (max-width: 991px) {
+//         display: inline;
+//     }
 
-    @media (max-width: 960px) {
-        gap: 0;
-    }
+//     @media (max-width: 767px) {
+//         gap: 0;
+//     }
 
-    @media (max-width: 890px) {
-        gap: 0;
-    }
-}
+//     @media (max-width: 575px) {
+//         gap: 0;
+//     }
+// }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (min-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .tablet {
 //         display: inline;
 //     }
 // }
-// @media (max-width: 1366px) {
+// @media (max-width: 1199px) {
 //     .tablet {
 //         display: inline;
 //     }
 // }
-// @media (max-width: 1096px) {
+// @media (max-width: 991px) {
 //     .tablet {
 //         display: inline;
 //     }
 // }
-// @media (max-width: 960px) {
+// @media (max-width: 767px) {
 //     .tablet {
 //         gap: 0;
 //     }
 // }
-// @media (max-width: 890px) {
+// @media (max-width: 575px) {
 //    .tablet {
 //         gap: 0;
 //     }
@@ -359,76 +367,62 @@
 
 .category-current-viewers,
 .category-current-followers {
-    color: var(--theme-font-secondary, #CECED6);
+    color: var(--theme-accent-bg, #FF6F3A);
     margin-left: 6px;
     text-align: center;
     vertical-align: baseline;
-    font-weight: 500;
+    font-weight: 600;
 
-    @media (min-width: 1366px) {
-        color: var(--theme-accent-bg, #FF6F3A);
-        font-weight: 600;
-    }
+    // @media (max-width: 1399px) {
+    //     
+    // }
 
-    @media (max-width: 1366px) {
-        color: var(--theme-accent-bg, #FF6F3A);
-        font-weight: 600;
-    }
+    // @media (max-width: 1199px) {
+    //     
+    // }
 
-    @media (max-width: 1096px) {
-        color: var(--theme-accent-bg, #FF6F3A);
-        font-weight: 600;
-    }
+    // @media (max-width: 991px) {
+    //     
+    // }
 
-    @media (max-width: 960px) {
-        color: var(--theme-accent-bg, #FF6F3A);
-        font-weight: 600;
-    }
+    // @media (max-width: 767px) {
+    //     
+    // }
 
-    @media (max-width: 890px) {
-        color: var(--theme-accent-bg, #FF6F3A);
-        font-weight: 600;
-    }
+    // @media (max-width: 575px) {
+    //     
+    // }
 }
 
 /* как вариант - @media рядом с блоком стилей: */
-// @media (min-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 1366px) {
+// @media (max-width: 1199px) {
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 1096px) {
+// @media (max-width: 991px) {
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 960px) {
+// @media (max-width: 767px) {
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 890px) {
+// @media (max-width: 575px) {
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
+//
 //     }
 // }
 
@@ -552,7 +546,7 @@
 }
 
 /* как вариант - все @media в конце: */
-// @media (min-width: 1366px) {
+// @media (max-width: 1399px) {
 //     .statistics-row {
 //         width: calc(100vw - 290px);
 //     }
@@ -564,12 +558,10 @@
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 1366px) {
+// @media (max-width: 1199px) {
 //     .statistics-row {
 //         gap: 24px;
 //     }
@@ -581,12 +573,10 @@
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 1096px) {
+// @media (max-width: 991px) {
 //     .statistics-row {
 //         gap: 24px;
 //     }
@@ -598,12 +588,10 @@
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 960px) {
+// @media (max-width: 767px) {
 //     .statistics-row {
 //         gap: 8px;
 //     }
@@ -615,12 +603,10 @@
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
 
-// @media (max-width: 890px) {
+// @media (max-width: 575px) {
 //     .statistics-row {
 //         gap: 8px;
 //     }
@@ -632,7 +618,5 @@
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//         font-weight: 600;
 //     }
 // }
