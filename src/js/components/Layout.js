@@ -4,41 +4,39 @@ import Header from "./Header";
 import HorizontalMenu from "./HorizontalMenu";
 import VerticalMenu from "./VerticalMenu";
 import Notification from "./Notification";
-import { defaultTheme } from '../utils/themeManager';
 
 export default function Layout(props) {
 
     const showFooter = props.showFooter === undefined ? true : props.showFooter;
     const showHorizontalMenu = props.showHorizontalMenu === undefined ? true : props.showHorizontalMenu;
-    const { db, children, pageId } = props;
-    const defaultThemeValue = defaultTheme;
-    const [currentTheme, setTheme] = useState(defaultThemeValue);
+    const { db, children, pageId, context } = props;
+    const { currentTheme, setTheme, currentLang, setLang } = context;
 
     return (
         <>
-        <div className="page">
-            <Header currentTheme={currentTheme} setTheme={setTheme} />
+            <div className="page">
+                <Header currentTheme={currentTheme} setTheme={setTheme} currentLang={currentLang} setLang={setLang} />
 
-            <main>
-                <div className="vertical-blocks">
-                    <VerticalMenu db={db} />
-                    <div className="main-of-the-main">
-                        <div className="horizontal-blocks">
-                            <div className="main-screen-block">
-                                {showHorizontalMenu &&
-                                <HorizontalMenu db={db} currentTheme={currentTheme} pageId={pageId}/>
-                                }
-                                {children}
+                <main>
+                    <div className="vertical-blocks">
+                        <VerticalMenu db={db} context={context} />
+                        <div className="main-of-the-main">
+                            <div className="horizontal-blocks">
+                                <div className="main-screen-block">
+                                    {showHorizontalMenu &&
+                                        <HorizontalMenu db={db} currentTheme={currentTheme} currentLang={currentLang} pageId={pageId} />
+                                    }
+                                    {children}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <Notification />
-            </main>
-            {showFooter &&
-                <Footer />
-            }
-        </div>
+                    <Notification />
+                </main>
+                {showFooter &&
+                    <Footer context={context} />
+                }
+            </div>
         </>
     );
 }

@@ -2,14 +2,17 @@ import React, { useState, useEffect } from 'react';
 import SearchForm from './SearchForm';
 import { useLocalStorage } from '../utils/common';
 import { defaultTheme, setCurrentTheme, setNextTheme } from '../utils/themeManager';
+import { setCurrentLang, setNextLang } from '../utils/langManager';
 
-export default function Header({ setTheme, currentTheme }) {
+export default function Header({ setTheme, currentTheme, currentLang, setLang }) {
 
     const [currentUser, setUser] = useState('currentUser');
 
     useEffect(() => {
         const currentThemeName = setCurrentTheme();
+        const currentLangName = setCurrentLang();
         setTheme(currentThemeName);
+        setLang(currentLangName);
 
         const authStr = localStorage.getItem('auth');
         const auth = authStr ? JSON.parse(authStr) : {};
@@ -22,6 +25,11 @@ export default function Header({ setTheme, currentTheme }) {
         setTheme(currentThemeName);
     };
 
+    const changeLang = () => {
+        const currentLangName = setNextLang();
+        setLang(currentLangName);
+    };
+
     const handleClick = (url) => {
         console.log({ url });
         window.location.href = url;
@@ -31,7 +39,7 @@ export default function Header({ setTheme, currentTheme }) {
         <>
             <div id="react-header" className="site-header">
                 <header className="site-header">
-                    <SearchForm currentTheme={currentTheme} />
+                    <SearchForm currentTheme={currentTheme} currentLang={currentLang} />
                     <div className="logo-container">
                         <a href="./index.html" className="logo-img">
                             <img id="site-logo" src={`./images/logo-moon-header-${currentTheme}.png`} alt="MoonTV"
@@ -56,7 +64,7 @@ export default function Header({ setTheme, currentTheme }) {
                         <button className="menu-button"
                             type="button"
                             aria-label="Выбрать язык оформления"
-                            onClick={(e) => handleClick("./notFound.html", e)}>
+                            onClick={changeLang}>
                             <img src={`./images/header-icon-globe-${currentTheme}.svg`} title="language" />
                         </button>
                         <button className="menu-button"

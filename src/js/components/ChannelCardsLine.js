@@ -1,6 +1,6 @@
 import ChannelCards from './ChannelCards';
 
-export default function ChannelCardsLine({ db, title, categoryId, channelId, showAll, showOnPage }) {
+export default function ChannelCardsLine({ db, context, title, categoryId, channelId, showAll, showOnPage }) {
 
     const getTitleClassName = () => {
         if (showOnPage && showOnPage === 4) {
@@ -46,7 +46,7 @@ export default function ChannelCardsLine({ db, title, categoryId, channelId, sho
                 </div>
 
                 <div className="channels-row">
-                    <ChannelCards db={db} categoryId={categoryId} channelId={channelId} showAll={showAll} showOnPage={showOnPage} />
+                    <ChannelCards db={db} context={context} categoryId={categoryId} channelId={channelId} showAll={showAll} showOnPage={showOnPage} />
                 </div>
 
                 <div className={getDividerClassName()}>

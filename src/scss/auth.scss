@@ -6,6 +6,7 @@ body {
 }
 
 body {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +19,17 @@ body {
     background-size: cover;
     font-family: var(--font-body);
     text-align: left;
-    transition: margin 0.4s ease; /* Плавность 0.4 секунды */
+    transition: margin 0.4s ease;
+    /* Плавность 0.4 секунды */
+
+    &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background-color: rgba(52, 49, 72, 0.5);
+        pointer-events: none;
+    }
 }
 
 .login-container {
@@ -32,17 +43,6 @@ body {
     padding: 20px 38px 41px 38px;
     border-radius: 30px;
     background-color: rgba(205, 205, 214, 0.6);
-}
-
-.login-container::before {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(52, 49, 72, 0.5);
 }
 
 .top-buttons {

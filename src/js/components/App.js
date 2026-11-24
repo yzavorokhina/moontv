@@ -1,28 +1,46 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import ChannelPage from './ChannelPage';
 import HomePage from './HomePage';
 import AuthPage from './AuthPage';
 import NotFoundPage from './NotFoundPage';
-import CategoryPage from './CategoriesPage';
+import CategoryPage from './CategoryPage';
 import CategoriesPage from './CategoriesPage';
 import SearchPage from './SearchPage';
+import { defaultTheme } from '../utils/themeManager';
+import { defaultLang } from '../utils/langManager';
 
-export default function App({ db }) {
+export default function App({ db, showAll, route }) {
+
+    const defaultThemeValue = defaultTheme;
+    const defaultLangValue = defaultLang;
+    const [currentTheme, setTheme] = useState(defaultThemeValue);
+    const [currentLang, setLang] = useState(defaultLangValue);
+    const context = { currentTheme, setTheme, currentLang, setLang };
+
+    const simulateSwitch = (route) => {
+        switch (route) {
+            case 'HomePage':
+                return <HomePage db={db} context={context} />;
+            case 'AuthPage':
+                return <AuthPage db={db} context={context} />;
+            case 'NotFoundPage':
+                return <NotFoundPage db={db} context={context} />;
+            case 'ChannelPage':
+                return <ChannelPage db={db} context={context} />;
+            case 'CategoryPage':
+                return <CategoryPage db={db} showAll={showAll} context={context} />;
+            case 'CategoriesPage':
+                return <CategoriesPage db={db} context={context} />;
+            case 'SearchPage':
+                return <SearchPage db={db} context={context} />;
+            default:
+                return <HomePage db={db} context={context} />;
+        }
+    };
 
     return (
         <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<HomePage db={db} />} />
-                    <Route path="/auth" element={<AuthPage db={db} />} />
-                    <Route path="/404" element={<NotFoundPage db={db} />} />
-                    <Route path="/channel" element={<ChannelPage db={db} />} />
-                    <Route path="/category" element={<CategoryPage db={db} />} />
-                    <Route path="/categories" element={<CategoriesPage db={db} />} />
-                    <Route path="/search" element={<SearchPage db={db} />} />
-                </Routes>
-            </BrowserRouter>
+            <div>{simulateSwitch(route)}</div>;
         </>
-    );
+    )
 }

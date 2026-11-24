@@ -1,11 +1,22 @@
+import React, { useEffect } from 'react';
+import { getElementByLang } from '../utils/langManager';
+import { setCurrentTheme } from '../utils/themeManager';
+import { setCurrentLang } from '../utils/langManager';
 
-export default function SortingButtons({}) {
+export default function SortingButtons({ context }) {
 
+    useEffect(() => {
+        const { setLang, setTheme } = context;
+        const currentThemeName = setCurrentTheme();
+        setTheme(currentThemeName);
+        const currentLangName = setCurrentLang();
+        setLang(currentLangName);
+    }, []);
 
     return (
         <>
             <div className="sorting-buttons">
-                <span className="sorting-text">Сортировка по:</span>
+                <span className="sorting-text">{getElementByLang("sort-by", context.currentLang)}</span>
                 <button className="sorting-btn">
                     <svg className="sorting-svg" fill="currentColor" width="20px" height="20px" viewBox="0 0 24 24"
                         version="1.2" baseProfile="tiny"
@@ -13,7 +24,7 @@ export default function SortingButtons({}) {
                         <path
                             d="M10.895 16.553l-4-8c-.339-.678-1.45-.678-1.789 0l-4 8c-.247.494-.047 1.095.447 1.342.495.248 1.095.046 1.342-.447l.723-1.448h4.764l.724 1.447c.175.351.528.553.895.553.15 0 .303-.034.446-.105.494-.248.695-.848.448-1.342zm-6.277-2.553l1.382-2.764 1.382 2.764h-2.764zM22 18h-6c-.379 0-.725-.214-.895-.553s-.132-.744.095-1.047l4.8-6.4h-4c-.552 0-1-.448-1-1s.448-1 1-1h6c.379 0 .725.214.895.553s.132.744-.095 1.047l-4.8 6.4h4c.552 0 1 .448 1 1s-.448 1-1 1zM14 14h-2c-.552 0-1-.448-1-1s.448-1 1-1h2c.552 0 1 .448 1 1s-.448 1-1 1z" />
                     </svg>
-                    <span className="btn-text">Названию</span>
+                    <span className="btn-text">{getElementByLang("sort-by-name", context.currentLang)}</span>
                 </button>
                 <button className="sorting-btn">
                     <svg className="sorting-svg" width="16px" height="16px" viewBox="0 0 28 28" version="1.1"
@@ -31,7 +42,7 @@ export default function SortingButtons({}) {
                             </g>
                         </g>
                     </svg>
-                    <span className="btn-text">Кол-ву зрителей</span>
+                    <span className="btn-text">{getElementByLang("sort-by-audience", context.currentLang)}</span>
                 </button>
                 <button className="sorting-btn">
                     <svg className="sorting-svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none"
@@ -49,7 +60,7 @@ export default function SortingButtons({}) {
                             d="M14.4709 17.1377C14.5029 17.0255 14.5792 16.8666 14.7218 16.7409C14.8502 16.6276 15.0773 16.5 15.4997 16.5C16.261 16.5 16.4997 17.0002 16.4997 17.2273C16.4997 17.4724 16.4474 17.7178 16.3099 17.8907C16.1986 18.0308 15.9313 18.25 15.208 18.25C14.7938 18.25 14.458 18.5858 14.458 19C14.458 19.4142 14.7938 19.75 15.208 19.75C15.4815 19.75 15.8594 19.7864 16.1424 19.9191C16.2743 19.9809 16.3569 20.0505 16.4069 20.1207C16.4517 20.1837 16.4997 20.287 16.4997 20.4773C16.4997 20.965 16.3475 21.1807 16.2191 21.2891C16.068 21.4167 15.8237 21.5 15.4997 21.5C15.1377 21.5 14.9328 21.4374 14.8072 21.3578C14.6958 21.2873 14.5675 21.1538 14.4621 20.8338C14.3327 20.4403 13.9087 20.2263 13.5153 20.3558C13.1218 20.4852 12.9078 20.9092 13.0373 21.3026C13.2236 21.8689 13.5328 22.3263 14.0048 22.6252C14.4624 22.9149 14.9867 23 15.4997 23C16.0507 23 16.6815 22.8618 17.1866 22.4353C17.7145 21.9898 17.9997 21.3191 17.9997 20.4773C17.9997 20.0027 17.8699 19.5891 17.6285 19.2504C17.5499 19.14 17.4628 19.0423 17.3706 18.9559C17.4102 18.9135 17.4481 18.8695 17.4842 18.8241C17.9221 18.2731 17.9997 17.6321 17.9997 17.2273C17.9997 16.1543 17.0718 15 15.4997 15C14.7343 15 14.1483 15.2466 13.7295 15.616C13.325 15.9728 13.1202 16.4048 13.0285 16.7259C12.9148 17.1242 13.1455 17.5393 13.5438 17.653C13.9421 17.7667 14.3572 17.536 14.4709 17.1377Z"
                             fill="currentColor" />
                     </svg>
-                    <span className="btn-text">Кол-ву просмотров</span>
+                    <span className="btn-text">{getElementByLang("sort-by-number-of-views", context.currentLang)}</span>
                 </button>
                 <button className="sorting-btn">
                     <svg className="sorting-svg" fill="currentColor" width="18px" height="18px" viewBox="0 0 24 24"
@@ -57,7 +68,7 @@ export default function SortingButtons({}) {
                         <path fillRule="evenodd"
                             d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M13,11 L17,11 L17,13 L11,13 L11,6 L13,6 L13,11 Z" />
                     </svg>
-                    <span className="btn-text">Времени</span>
+                    <span className="btn-text">{getElementByLang("sort-by-time-of-addition", context.currentLang)}</span>
                 </button>
             </div>
         </>

@@ -263,107 +263,6 @@
     color: var(--theme-accent-bg, #FF6F3A);
 }
 
-// .desktop {
-//     font-size: 16px;
-
-//     // @media (max-width: 1399px) {
-//     //     color: var(--theme-accent-bg, #FF6F3A);
-//     // }
-
-//     @media (max-width: 1199px) {
-//         display: none;
-//     }
-
-//     @media (max-width: 991px) {
-//         display: none;
-//     }
-
-//     @media (max-width: 767px) {
-//         display: none;
-//     }
-
-//     @media (max-width: 575px) {
-//         display: none;
-//     }
-// }
-
-/* как вариант - @media рядом с блоком стилей: */
-// @media (max-width: 1399px) {
-//     .desktop {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//     }
-// }
-// @media (max-width: 1199px) {
-//     .desktop {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//     }
-// }
-// @media (max-width: 991px) {
-//     .desktop {
-//         display: none;
-//     }
-// }
-// @media (max-width: 767px) {
-//     .desktop {
-//         display: none;
-//     }
-// }
-// @media (max-width: 575px) {
-//    .desktop {
-//         display: none;
-//     }
-// }
-
-// .tablet {
-//     display: none;
-
-//     @media (max-width: 1399px) {
-//         display: inline;
-//     }
-
-//     @media (max-width: 1199px) {
-//         display: inline;
-//     }
-
-//     @media (max-width: 991px) {
-//         display: inline;
-//     }
-
-//     @media (max-width: 767px) {
-//         gap: 0;
-//     }
-
-//     @media (max-width: 575px) {
-//         gap: 0;
-//     }
-// }
-
-/* как вариант - @media рядом с блоком стилей: */
-// @media (max-width: 1399px) {
-//     .tablet {
-//         display: inline;
-//     }
-// }
-// @media (max-width: 1199px) {
-//     .tablet {
-//         display: inline;
-//     }
-// }
-// @media (max-width: 991px) {
-//     .tablet {
-//         display: inline;
-//     }
-// }
-// @media (max-width: 767px) {
-//     .tablet {
-//         gap: 0;
-//     }
-// }
-// @media (max-width: 575px) {
-//    .tablet {
-//         gap: 0;
-//     }
-// }
 
 .category-current-viewers,
 .category-current-followers {
@@ -457,7 +356,7 @@
 }
 
 .search-by-language {
-    width: 100px;
+    width: 160px;
     height: 40px;
     border: none;
     outline: none;
@@ -511,50 +410,11 @@
     color: var(--theme-font-primary, #FFFFFF);
 }
 
-.show-all-button-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-grow: 1;
-    height: 174px;
-    width: calc(100vw - 222px);
-    margin-bottom: 90px;
-}
-
-.show-all-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: fit-content;
-    height: 34px;
-    margin-top: 60px;
-    margin-bottom: 80px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border: none;
-    background-color: #FF6F3A;
-    border-radius: 34px;
-    color: white;
-}
-
-.show-all-button:hover {
-    background-color: var(--theme-accent-hover, #E2552D);
-}
 
 /* как вариант - все @media в конце: */
 // @media (max-width: 1399px) {
 //     .statistics-row {
 //         width: calc(100vw - 290px);
-//     }
-//     .desktop {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//     }
-//     .tablet {
-//         display: inline;
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {
@@ -565,12 +425,6 @@
 //     .statistics-row {
 //         gap: 24px;
 //     }
-//     .desktop {
-//         color: var(--theme-accent-bg, #FF6F3A);
-//     }
-//     .tablet {
-//         display: inline;
-//     }
 //     .category-current-viewers,
 //     .category-current-followers {
 //     }
@@ -579,12 +433,6 @@
 // @media (max-width: 991px) {
 //     .statistics-row {
 //         gap: 24px;
-//     }
-//     .desktop {
-//         display: none;
-//     }
-//     .tablet {
-//         display: inline;
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {
@@ -595,12 +443,6 @@
 //     .statistics-row {
 //         gap: 8px;
 //     }
-//     .desktop {
-//         display: none;
-//     }
-//     .tablet {
-//         gap: 0;
-//     }
 //     .category-current-viewers,
 //     .category-current-followers {
 //     }
@@ -609,12 +451,6 @@
 // @media (max-width: 575px) {
 //     .statistics-row {
 //         gap: 8px;
-//     }
-//    .desktop {
-//         display: none;
-//     }
-//    .tablet {
-//         gap: 0;
 //     }
 //     .category-current-viewers,
 //     .category-current-followers {

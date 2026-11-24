@@ -2,71 +2,122 @@
     "tags": [
         {
             "id": 1,
-            "name": "Обучение"
+            "name": {
+                "rus": "Обучение",
+                "eng": "Education"
+            }
         },
         {
             "id": 2,
-            "name": "Французский"
+            "name": {
+                "rus": "Французский",
+                "eng": "French"
+            }
         },
         {
             "id": 3,
-            "name": "Русский"
+            "name": {
+                "rus": "Русский",
+                "eng": "Russian"
+            }
         },
         {
             "id": 4,
-            "name": "Английский"
+            "name": {
+                "rus": "Английский",
+                "eng": "English"
+            }
         },
         {
             "id": 5,
-            "name": "Игры"
+            "name": {
+                "rus": "Игры",
+                "eng": "Games"
+            }
         },
         {
             "id": 6,
-            "name": "Танцы"
+            "name": {
+                "rus": "Танцы",
+                "eng": "Dancing"
+            }
         },
-                {
+        {
             "id": 7,
-            "name": "Искусство"
+            "name": {
+                "rus": "Искусство",
+                "eng": "Art"
+            }
         },
         {
             "id": 8,
-            "name": "Общение"
+            "name": {
+                "rus": "Общение",
+                "eng": "Socializing"
+            }
         },
         {
             "id": 9,
-            "name": "Музыка"
+            "name": {
+                "rus": "Музыка",
+                "eng": "Music"
+            }
         },
         {
             "id": 10,
-            "name": "Хобби"
+            "name": {
+                "rus": "Хобби",
+                "eng": "Hobbies"
+            }
         },
         {
             "id": 11,
-            "name": "Спорт"
+            "name": {
+                "rus": "Спорт",
+                "eng": "Sports"
+            }
         },
         {
             "id": 12,
-            "name": "Отдых"
+            "name": {
+                "rus": "Отдых",
+                "eng": "Leisure"
+            }
         },
         {
             "id": 13,
-            "name": "Красота"
+            "name": {
+                "rus": "Красота",
+                "eng": "Beauty"
+            }
         },
         {
             "id": 14,
-            "name": "Другое"
+            "name": {
+                "rus": "Другое",
+                "eng": "Other"
+            }
         },
         {
             "id": 15,
-            "name": "Творчество"
+            "name": {
+                "rus": "Творчество",
+                "eng": "Creativity"
+            }
         },
-                {
+        {
             "id": 16,
-            "name": "Кулинария"
+            "name": {
+                "rus": "Кулинария",
+                "eng": "Cooking"
+            }
         },
         {
             "id": 17,
-            "name": "Новости"
+            "name": {
+                "rus": "Новости",
+                "eng": "News"
+            }
         }
     ]
 }

@@ -7,7 +7,7 @@ import GoToBtn from './GoToBtn';
 import ChannelCategories from './ChannelCategories';
 import { getUrlParams } from '../utils/common';
 
-export default function ChannelPage({ db, showAll }) {
+export default function ChannelPage({ db, showAll, context }) {
 
     const params = getUrlParams();
     console.log({ params }); // '1'
@@ -33,16 +33,16 @@ export default function ChannelPage({ db, showAll }) {
 
     return (
         <>
-            <Layout db={db} showFooter={false} showHorizontalMenu={false}>
-                <Stream streamData={streamData} channelData={channelData} />
-                <ChannelDescription db={db} streamId={streamId} showAll={showAll} channelData={channelData} />
+            <Layout db={db} context={context} showFooter={false} showHorizontalMenu={false}>
+                <Stream streamData={streamData} channelData={channelData} context={context} />
+                <ChannelDescription db={db} context={context} streamId={streamId} showAll={showAll} channelData={channelData} />
 
                 <div className="favourite-categories">
-                    <ChannelCardsLine db={db} title={'Все трансляции'} channelId={channelData.id} showAll={showAll} showOnPage={showOnPage} />
-                    <ChannelCardsLine db={db} title={'Избранные видео'} channelId={channelData.id} showAll={showAll} showOnPage={showOnPage} />
-                    <ClipsCardsLine db={db} title={'Избранные клипы'} channelId={10} showAll={showAll} showOnPage={showOnPage} />
-                    <GoToBtn />
-                    <ChannelCategories db={db} channelId={10} showAll={showAll} />
+                    <ChannelCardsLine db={db} context={context} title={'Все трансляции'} channelId={channelData.id} showAll={showAll} showOnPage={showOnPage} />
+                    <ChannelCardsLine db={db} context={context} title={'Избранные видео'} channelId={channelData.id} showAll={showAll} showOnPage={showOnPage} />
+                    <ClipsCardsLine db={db} context={context} title={'Избранные клипы'} channelId={10} showAll={showAll} showOnPage={showOnPage} />
+                    <GoToBtn context={context} />
+                    <ChannelCategories db={db} context={context} channelId={10} showAll={showAll} />
                 </div>
             </Layout>
         </>

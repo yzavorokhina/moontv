@@ -3,8 +3,8 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/channel.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
-import ChannelPage from './components/ChannelPage.js';
+import App from './components/App.js';
 
 const body = document.getElementById('react-body');
 const rootBody = createRoot(body);
-rootBody.render(<ChannelPage db={db} showAll={false} />);
+rootBody.render(<App db={db} showAll={false} route={"ChannelPage"} />);

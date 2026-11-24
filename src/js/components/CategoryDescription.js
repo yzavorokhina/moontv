@@ -1,5 +1,14 @@
+import React, { useEffect } from 'react';
+import { getElementByLang } from '../utils/langManager';
+import { setCurrentLang } from '../utils/langManager';
 
-export default function CategoryDescription({ categoryData, channelData, totalAudience }) {
+export default function CategoryDescription({ categoryData, categoryLangData, channelData, totalAudience, context }) {
+
+    useEffect(() => {
+        const { setLang } = context;
+        const currentLangName = setCurrentLang();
+        setLang(currentLangName);
+    }, []);
 
     return (
         <>
@@ -8,21 +17,20 @@ export default function CategoryDescription({ categoryData, channelData, totalAu
                     src={categoryData.imageUrl} alt="category-image" />
             </div>
             <div className="category-description-title">
-                <h2 id="categoryTitle">{categoryData.name}</h2>
+                <h2 id="categoryTitle">{categoryLangData.name || categoryData.name}</h2>
                 <p id="categoryDes">
-                    {categoryData.description}
+                    {categoryLangData.description || categoryData.description}
                 </p>
                 <div className="statistics-row">
-                    <button className="follow-button">Отслеживать</button>
+                    <button className="follow-button">{getElementByLang("category-follow-button", context.currentLang) || "Отслеживать"}</button>
                     <div className="category-followers-row" aria-label="category-followers">
-                        <span className="desktop">Отслеживающих:</span>
-                        <span className="follow-icon tablet"></span>
+                        <span className="category-followers-count">{getElementByLang("category-followers-count", context.currentLang) || "Отслеживающих:"}</span>
+                        <span className="follow-icon"></span>
                         <span className="category-current-followers" id="categoryFollowers">{categoryData.followers}</span>
                     </div>
                     <div className="category-viewers-row" aria-label="category-viewers">
-                        <span className="desktop">Сейчас смотрят:</span>
-                        {/* <span className="audience-icon tablet"></span> */}
-                        <svg className="audience-icon tablet" width="18px" height="18px" viewBox="0 0 28 28" version="1.1"
+                        <span className="category-audience-count">{getElementByLang("category-audience-count", context.currentLang) || "Сейчас смотрят:"}</span>
+                        <svg className="audience-icon" width="18px" height="18px" viewBox="0 0 28 28" version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             xlink="http://www.w3.org/1999/xlink">
                             <title>ic_fluent_people_28_regular</title>

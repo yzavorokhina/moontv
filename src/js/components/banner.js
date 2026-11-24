@@ -2,31 +2,33 @@ import React, { useEffect, useState } from 'react';
 import BannerSlideInfo from "./BannerSlideInfo";
 import PromoCard from "./PromoCard";
 
-export default function Banner({ db }) {
+export default function Banner({ db, context }) {
 
     const showOnPage = 5;
 
     let totalSlides = 0;
     let slidesMap = new Map();
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(4);
 
     useEffect(() => {
         const slides = document.querySelectorAll('.slide');
         totalSlides = slides.length;
         updateSlidePosition('useEffect');
-        //console.log({ currentSlide, slidesMap });
+        console.log({ useEffect: true, currentSlide, slidesMap });
     });
 
     const updateSlidePosition = (index) => {
+        console.log({ updateSlidePosition: true, currentSlide, slidesMap });
         const slidesWrapper = document.getElementById('slidesWrapper');
         if (currentSlide < 0) {
             setCurrentSlide(totalSlides - 1);
+            console.log({ updateSlidePosition: true, if: currentSlide < totalSlides, currentSlide });
         } else if (currentSlide >= totalSlides) {
             setCurrentSlide(0);
-            //console.log({ if: currentSlide >= totalSlides, currentSlide });
+            console.log({ updateSlidePosition: true, if: currentSlide >= totalSlides, currentSlide });
         }
         slidesWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
-        //console.log({ index, currentSlide, totalSlides, trans: currentSlide * 100 });
+        console.log({ updateSlidePosition: true, index, currentSlide, totalSlides, trans: currentSlide * 100 });
 
         const slideData = slidesMap.get(currentSlide);
     }
@@ -67,9 +69,9 @@ export default function Banner({ db }) {
             slidesMap.set(i, streamsData[i]);
         }
 
-        return streamsData;
+        console.log({ Banner: { currentSlide, showOnPage, streams, streamsData } });
 
-        console.log({ showOnPage, streams, streamsData });
+        return streamsData;
     }
 
     return (
@@ -106,7 +108,7 @@ export default function Banner({ db }) {
                             </div>
                         ))}
                     </div>
-                    <BannerSlideInfo slidesMap={slidesMap} currentSlide={currentSlide} />
+                    <BannerSlideInfo slidesMap={slidesMap} currentSlide={currentSlide} context={context} />
                 </div>
                 <div className="promo">
                     {renderCards().map(data => (

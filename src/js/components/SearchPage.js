@@ -2,13 +2,15 @@ import GoToBtn from "./GoToBtn";
 import Layout from "./Layout";
 import SearchCards from './SearchCards';
 import { getUrlParams } from '../utils/common';
+import { getCurrentLang, getElementByLang } from '../utils/langManager';
 
-export default function SearchPage({ db, showAll }) {
+export default function SearchPage({ db, showAll, context }) {
 
     const params = getUrlParams();
     console.log({ params }); // '1'
 
     const search = params.q;
+    const currentLang = getCurrentLang();
 
     let streams = [];
     let streamsMap = new Map()
@@ -33,17 +35,17 @@ export default function SearchPage({ db, showAll }) {
         streams = [...streamsMap.values()];
     }
 
-    console.log({ streams, f: streams.length > 0 });
+    console.log({ streams, f: streams.length > 0, currentLang });
 
     return (
         <>
-            <Layout db={db}>
+            <Layout db={db} context={context} >
                 <div className="search-result">
                     <div className="search-result-title">
-                        <h2>Результаты поиска:</h2>
+                        <h2>{getElementByLang("searchResult", currentLang) || "Результаты поиска:"}</h2>
                     </div>
                     <div className={streams.length > 0 ? "notFound invisible" : "notFound"}>
-                        <span>ничего не найдено</span>
+                        <span>{getElementByLang("searchResultDescription", currentLang) || "Результаты поиска:"}</span>
                         <div id="icon-streams-not-found"> &#9729; &#9729; &#9729; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#9729; &#9729; &#9729;</div>
                     </div>
                     <div className="search-result-container">
@@ -68,7 +70,7 @@ export default function SearchPage({ db, showAll }) {
                             <div className="divider-line"></div>
                         </div>
                     </div>
-                    <GoToBtn />
+                    <GoToBtn context={context} />
                 </div>
             </Layout>
         </>

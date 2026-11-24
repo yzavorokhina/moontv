@@ -3,8 +3,8 @@ import '../scss/vendors/_normalize.scss';
 import '../scss/categories.scss';
 import { createRoot } from 'react-dom/client';
 import db from '../db/dbHelper';
-import CategoriesPage from './components/CategoriesPage';
+import App from './components/App';
 
 const body = document.getElementById('react-body');
 const rootBody = createRoot(body);
-rootBody.render(<CategoriesPage db={db} />);
+rootBody.render(<App db={db} route={"CategoriesPage"} />);

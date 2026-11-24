@@ -1,5 +1,13 @@
+import React, { useEffect } from 'react';
+import { setCurrentLang } from '../utils/langManager';
 
-export default function ChannelCards({ db, categoryId, channelId, showAll, showOnPage }) {
+export default function ChannelCards({ db, categoryId, channelId, showAll, showOnPage, context }) {
+
+        useEffect(() => {
+            const { setLang } = context;
+            const currentLangName = setCurrentLang();
+            setLang(currentLangName);
+        }, []);
 
     const truncateByChars = (text, maxLength) => {
         if (text.length <= maxLength) {
@@ -18,6 +26,8 @@ export default function ChannelCards({ db, categoryId, channelId, showAll, showO
 
     const renderCards = () => {
         let streamsFiltered = [];
+        const { currentLang } = context;
+
         if (categoryId) {
             streamsFiltered = db.streamsModel.findByName('categoryId', categoryId);
         } else if (channelId) {
@@ -38,13 +48,16 @@ export default function ChannelCards({ db, categoryId, channelId, showAll, showO
         return streamsFiltered.map(stream => {
             const channel = db.channelsModel.findOneById(stream.channelId);
             const category = db.categoriesModel.findOneById(stream.categoryId);
+            const categoryLang = db.categoriesLocalizationModel.findOneByNameAndId(currentLang, category.id);
 
             return {
                 stream,
                 channel,
                 category,
                 streamUrl: "./channel.html?id=" + stream.id,
-                categoryUrl: "./category.html?id=" + category.id
+                categoryUrl: "./category.html?id=" + category.id,
+                categoryLang,
+                currentLang
             }
         });
     }
@@ -71,7 +84,7 @@ export default function ChannelCards({ db, categoryId, channelId, showAll, showO
                             </div>
                         </div>
                         <a href={data.categoryUrl} className="link-wrapper">
-                            <p className="category-name-info">{data.category.name}</p>
+                            <p className="category-name-info">{data.categoryLang.name}</p>
                         </a>
                         <div className="tags-row" role="group" aria-label="tags-group">
                             {data.stream.languages.map((lang, index) => (

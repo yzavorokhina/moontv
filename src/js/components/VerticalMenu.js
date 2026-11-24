@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
+import { getElementByLang } from '../utils/langManager';
 
-export default function VerticalMenu({ db, showAll }) {
+export default function VerticalMenu({ db, showAll, context }) {
 
     const showItems = 11;
     // const showItemsMin = 8;
@@ -21,6 +22,7 @@ export default function VerticalMenu({ db, showAll }) {
     }
 
     const renderCards = () => {
+        const { currentLang } = context;
         let streamsFiltered = db.streamsModel.findMany(stream => !stream.promo);
 
         if (!showAll && streamsFiltered.length > showItems) {
@@ -30,6 +32,7 @@ export default function VerticalMenu({ db, showAll }) {
         return streamsFiltered.map(stream => {
             const channel = db.channelsModel.findOneById(stream.channelId);
             const category = db.categoriesModel.findOneById(stream.categoryId);
+            const categoryLang = db.categoriesLocalizationModel.findOneByNameAndId(currentLang, category.id);
 
             return {
                 stream,
@@ -37,6 +40,7 @@ export default function VerticalMenu({ db, showAll }) {
                 category,
                 streamUrl: "/dist/channel.html?id=" + stream.id,
                 categoryUrl: "/dist/category.html?id=" + category.id,
+                categoryLang
             }
         });
     }
@@ -87,7 +91,7 @@ export default function VerticalMenu({ db, showAll }) {
             <div className="vertical-menu-container" style={{ maxWidth: 222 + 'px' }} >
                 <nav className="vertical-menu" id="vertical-menu">
                     <button className="vertical-menu-title">
-                        <h6>Рекомендуем</h6>
+                        <h6>{getElementByLang("vertical-menu-header", context.currentLang) || "Рекомендуем"}</h6>
                         <svg className="recomended" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="style=linear">
                                 <g id="like">
@@ -115,7 +119,7 @@ export default function VerticalMenu({ db, showAll }) {
 
                                     <div className="menu-stream-info">
                                         <a href={data.streamUrl}><h6>{truncateByChars(data.channel.name, 12)}</h6></a>
-                                        <a href={data.categoryUrl} className="category-name">{truncateByWords(data.category.name, 3)}</a>
+                                        <a href={data.categoryUrl} className="category-name">{truncateByWords(data.categoryLang.shortName, 3)}</a>
                                     </div>
                                 </div>
                             </li>
@@ -135,7 +139,7 @@ export default function VerticalMenu({ db, showAll }) {
                         style={{ display: 'none' }}
                         onClick={openMenu}
                     >
-                        <img src={`./images/expend-icon-right-dark.svg`} title="open menu" />
+                        <img src={`./images/expand-icon-right-dark.svg`} title="open menu" />
                     </button>
 
                 </nav>

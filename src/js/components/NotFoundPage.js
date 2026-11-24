@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { defaultTheme, setCurrentTheme, setNextTheme } from '../utils/themeManager';
+import React, { useEffect } from 'react';
+import { getElementByLang } from '../utils/langManager';
+import { setCurrentTheme } from '../utils/themeManager';
+import { setCurrentLang } from '../utils/langManager';
 
-export default function NotFoundPage() {
+export default function NotFoundPage({ context }) {
 
     setTimeout(() => {
         window.location.href = './index.html';
     }, 5000);
 
-    const defaultThemeValue = defaultTheme;
-    const [currentTheme, setTheme] = useState(defaultThemeValue);
-
     useEffect(() => {
+        const { setLang, setTheme } = context;
         const currentThemeName = setCurrentTheme();
         setTheme(currentThemeName);
+        const currentLangName = setCurrentLang();
+        setLang(currentLangName);
     }, []);
 
     const handleClick = () => {
@@ -68,14 +70,12 @@ export default function NotFoundPage() {
                         <div role="img" aria-hidden="true" className="error-emoji"> \(o_o)/
                         </div>
                         <div className="error-text gf-title-medium">
-                            {/* <div>Can't find any pages.</div>  */}
-                            <div>Не могу найти ни одной страницы.</div>
+                            <div>{getElementByLang("notFoundDescription", context.currentLang)}</div>
                         </div>
                     </div>
                 </div>
-                {/* <div className="error-message">PAGE NOT FOUND</div> */}
-                <div className="error-message">СТРАНИЦА НЕ НАЙДЕНА</div>
-                <button type="button" onClick={handleClick} className="goto-home-page-button">Перейти на главную</button>
+                <div className="error-message">{getElementByLang("notFoundTitle", context.currentLang)}</div>
+                <button type="button" onClick={handleClick} className="goto-home-page-button">{getElementByLang("goToHomePage", context.currentLang)}</button>
             </div>
         </>
     )

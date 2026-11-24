@@ -1,7 +1,8 @@
 import HorizontalMenuBtn from './HorizontalMenuBtn';
 import { getUrlParams } from '../utils/common.js';
+import { getElement } from '../utils/langManager';
 
-export default function HorizontalMenu({ db, currentTheme, pageId }) {
+export default function HorizontalMenu({ db, currentTheme, currentLang, pageId }) {
 
     const showItems = 10;
     let activeId = 0;
@@ -26,8 +27,10 @@ export default function HorizontalMenu({ db, currentTheme, pageId }) {
         }
 
         return categories.map(category => {
+            const categoryLang = db.categoriesLocalizationModel.findOneByNameAndId(currentLang, category.id);
+            console.log({ categoryLang });
 
-            return { ...category }
+            return { ...category, categoryLang }
         });
     }
 
@@ -36,10 +39,10 @@ export default function HorizontalMenu({ db, currentTheme, pageId }) {
             <div id="react-horizontal-menu" className="horizontal-menu-row">
                 <nav className="horizontal-menu">
                     <ul>
-                        <li className={`horizontal-menu-first-button${pageId==='categories' ? '-active' : ''}`}>
+                        <li className={`horizontal-menu-first-button${pageId === 'categories' ? '-active' : ''}`}>
                             <a href="./categories.html">
                                 <img src={`./images/all-icon-for-categories-${currentTheme}.svg`} fetchPriority="high" alt="Все категории" />
-                                Все
+                                {getElement("allBtn")}
                             </a>
                         </li>
                         {renderCards().map(data => (

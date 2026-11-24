@@ -1,6 +1,15 @@
+import React, { useEffect } from 'react';
 import { getUrlParams } from '../utils/common.js';
+import { setCurrentLang } from '../utils/langManager';
 
-export default function CategoryCards({ db }) {
+export default function CategoryCards({ db, context }) {
+
+    useEffect(() => {
+        const { setLang } = context;
+        const currentLangName = setCurrentLang();
+        setLang(currentLangName);
+    }, []);
+
     const showTags = 2;
 
 
@@ -14,6 +23,8 @@ export default function CategoryCards({ db }) {
     const renderCards = () => {
         const params = getUrlParams();
         const tagId = +params.tag || 0;
+        const { currentLang } = context;
+
         console.log({ tagId }); // '1'
 
         let categories = [];
@@ -38,13 +49,16 @@ export default function CategoryCards({ db }) {
         console.log({ categories, afterSort: true });
 
         return categories.map(category => {
-            let tags = db.tagsModel.findByIds(category.tags);
+            const tags = db.tagsModel.findByIds(category.tags);
+            const categoryLang = db.categoriesLocalizationModel.findOneByNameAndId(currentLang, category.id);
 
             return {
                 category,
                 audience: shortenNumber(category.audience),
                 tags: tags.slice(0, showTags),
                 categoryUrl: "./category.html?id=" + category.id,
+                categoryLang,
+                currentLang
             }
         });
     }
@@ -66,16 +80,16 @@ export default function CategoryCards({ db }) {
                     </div>
                     <div className="card-body">
                         <a href={data.categoryUrl} className="category-link-wrapper">
-                            <p className="category-name-info">{data.category.name}</p>
+                            <p className="category-name-info">{data.categoryLang.name}</p>
                         </a>
                         <div className="category-info-row">
-                            <p>{data.category.shortDescription}</p>
+                            <p>{data.categoryLang.shortDescription}</p>
                         </div>
 
                         <div className="tags-row" role="group" aria-label="tags-group">
                             {data.tags.map((tag) => (
                                 <a key={tag.id} href={`./categories.html?tag=${tag.id}`} className="link-wrapper">
-                                    <button type="button" className="button-tag">{tag.name}</button>
+                                    <button type="button" className="button-tag">{tag.name[data.currentLang]}</button>
                                 </a>
                             ))}
                         </div>
