@@ -1,4 +1,3 @@
-import { useState } from 'react';
 
 export function getUrlParams() {
   const search = window.location.search;

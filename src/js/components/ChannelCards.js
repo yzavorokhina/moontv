@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { setCurrentLang } from '../utils/langManager';
 
 export default function ChannelCards({ db, categoryId, channelId, showAll, showOnPage, context }) {

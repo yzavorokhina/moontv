@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ChannelPage from './ChannelPage';
 import HomePage from './HomePage';
 import AuthPage from './AuthPage';

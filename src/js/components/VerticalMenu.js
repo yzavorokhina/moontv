@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { getElementByLang } from '../utils/langManager';
 
 export default function VerticalMenu({ db, showAll, context }) {
 
     const showItems = 11;
-    // const showItemsMin = 8;
 
     const truncateByWords = (text, wordCount) => {
         const words = text.split(' ');
@@ -46,19 +45,15 @@ export default function VerticalMenu({ db, showAll, context }) {
     }
 
     const scrollFunction = () => {
-        // Показываем кнопку, если проскроллили больше 20 px
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             buttonUp.style.display = "block";
         } else {
-            // Скрываем, если вернулись наверх
             buttonUp.style.display = "none";
         }
     }
 
     useEffect(() => {
-        // Получаем кнопку по ID
         var buttonUp = document.getElementById("buttonUp");
-        // Обработчик скролла: показываем/скрываем кнопку
         window.onscroll = function () { scrollFunction() };
     }, []);
 
@@ -105,7 +100,6 @@ export default function VerticalMenu({ db, showAll, context }) {
                         {renderCards().map(data => (
                             <li key={data.channel.id}>
                                 <div className="menu1">
-                                    {/* <div className="menu-visual"> */}
                                     <div className="menu-stream-cover">
                                         <a href={data.streamUrl}>
                                             <img src={data.channel.iconUrl}
@@ -115,7 +109,6 @@ export default function VerticalMenu({ db, showAll, context }) {
                                     <div className="menu-stream-live-indicator">
                                         <span style={{ color: '#E2552D', fontSize: 6 + 'px' }}>&#11044;</span>
                                     </div>
-                                    {/* </div> */}
 
                                     <div className="menu-stream-info">
                                         <a href={data.streamUrl}><h6>{truncateByChars(data.channel.name, 12)}</h6></a>

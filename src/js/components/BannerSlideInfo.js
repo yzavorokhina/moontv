@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getElementByLang } from '../utils/langManager';
 
 export default function BannerSlideInfo({ slidesMap, currentSlide, context }) {

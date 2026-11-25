@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import SearchForm from './SearchForm';
-import { useLocalStorage } from '../utils/common';
-import { defaultTheme, setCurrentTheme, setNextTheme } from '../utils/themeManager';
+import { setCurrentTheme, setNextTheme } from '../utils/themeManager';
 import { setCurrentLang, setNextLang } from '../utils/langManager';
 
 export default function Header({ setTheme, currentTheme, currentLang, setLang }) {
@@ -17,7 +16,6 @@ export default function Header({ setTheme, currentTheme, currentLang, setLang })
         const authStr = localStorage.getItem('auth');
         const auth = authStr ? JSON.parse(authStr) : {};
         setUser(auth);
-        // console.log({ auth });
     }, []);
 
     const changeTheme = () => {

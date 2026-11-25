@@ -32,8 +32,10 @@
             "category-follow-button": "Отслеживать",
             "category-followers-count": "Отслеживающих:",
             "category-audience-count": "Сейчас смотрят:",
-
-         
+            "show-all-categories": "Показать все",
+            "divider-line-show-all-categories": "Показать все",
+            "favourite-channels-title": "Избранные каналы",
+            "favourite-channels-show-all": "Показать все",
             "goToHomePage": "Назад на главную",
             "goToAllCategoriesPage": "Все категории",
             "notFoundTitle": "СТРАНИЦА НЕ НАЙДЕНА",
@@ -77,11 +79,13 @@
             "category-search-by-tag-label": "Search by tags",
             "sort-by-category-languages-row": "Channels language:",
             "sort-by-category-tags-row": "Channels tags:",
-            
             "category-follow-button": "Follow",
             "category-followers-count": "Followers:",
             "category-audience-count": "Audience:",
-
+            "show-all-categories": "Show all",
+            "divider-line-show-all-categories": "Show all",
+            "favourite-channels-title": "Favorite channels",
+            "favourite-channels-show-all": "Show all",
             "goToHomePage": "Main page",
             "goToAllCategoriesPage": "Show all categories",
             "notFoundTitle": "PAGE NOT FOUND",

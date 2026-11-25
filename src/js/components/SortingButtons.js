@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { getElementByLang } from '../utils/langManager';
 import { setCurrentTheme } from '../utils/themeManager';
 import { setCurrentLang } from '../utils/langManager';

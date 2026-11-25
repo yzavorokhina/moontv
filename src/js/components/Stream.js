@@ -7,18 +7,7 @@ export default function Stream({ streamData, channelData }) {
             <div className="stream-banner" >
                 <div className="stream-wrapper">
                     <div className="stream-video">
-                        {/* <div className="video-container">
-                        <video className="current-video" controls>
-                            <source src="video1.mp4" type="video/mp4">  */}
-                        {/* <iframe id="streamTV"
-                        src="https://www.youtube.com/embed/jfKfPfyJRdk?si=eavHTgCuUL64LPPd"
-                        title="YouTube video player" frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-
                         <iframe src="https://www.youtube.com/embed/RVRF3BXeD80?si=IGZxtrrFbpTd3hDO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                        {/* </video>
-                    </div> */}
                     </div>
                     <div className="channel-info">
                         <div className="channel-stream-info">

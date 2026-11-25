@@ -5,7 +5,7 @@ export default function ClipsCards({ db, channelId, showAll, showOnPage }) {
         let clipsFiltered = db.clipsModel.findByName('channelId', channelId);
         console.log({ channelId, clipsFiltered });
 
-        if(!showOnPage) {
+        if (!showOnPage) {
             showOnPage = 5;
         }
 
@@ -56,8 +56,6 @@ export default function ClipsCards({ db, channelId, showAll, showOnPage }) {
                     </div>
                     <div className="stream-labels">
                         <div className="clip-always-offline">
-                            {/* <span>&#11044;</span>
-                            <h6>В эфире</h6> */}
                         </div>
                         <div className="stream-age-rating">
                             <span className="label-age-rating">{data.clip.ageRate} +</span>

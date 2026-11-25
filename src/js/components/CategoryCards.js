@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { getUrlParams } from '../utils/common.js';
 import { setCurrentLang } from '../utils/langManager';
 

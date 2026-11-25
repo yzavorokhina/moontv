@@ -1,6 +1,15 @@
+import { useEffect } from 'react';
 import ChannelCards from './ChannelCards';
+import { setCurrentLang } from '../utils/langManager';
+import { getElementByLang } from '../utils/langManager';
 
-export default function ChannelCardsLine({ db, context, title, categoryId, channelId, showAll, showOnPage }) {
+export default function ChannelCardsLine({ db, title, categoryId, channelId, showAll, showOnPage, context }) {
+
+    useEffect(() => {
+        const { setLang } = context;
+        const currentLangName = setCurrentLang();
+        setLang(currentLangName);
+    }, []);
 
     const getTitleClassName = () => {
         if (showOnPage && showOnPage === 4) {
@@ -34,7 +43,7 @@ export default function ChannelCardsLine({ db, context, title, categoryId, chann
                     </div>
                     <div className="show-all-categories">
                         <a href="#" className="arrowed">
-                            Показать все
+                            {getElementByLang("show-all-categories", context.currentLang) || "Показать все"}
                             <svg className="show-all-arrow" width="24px" height="24px" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -53,7 +62,7 @@ export default function ChannelCardsLine({ db, context, title, categoryId, chann
                     <div className="divider-line"></div>
                     <button className="divider-button">
                         <a href="#" className="arrowed">
-                            Показать все
+                            {getElementByLang("divider-line-show-all-categories", context.currentLang) || "Показать все"}
                             <svg className="show-all-arrow" width="24px" height="24px" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path

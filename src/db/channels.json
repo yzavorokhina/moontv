@@ -62,7 +62,7 @@
             "description": "Проходильщик территорий Skirim без карты и компаса",
             "iconUrl": "./images/favorite-channels-ava-3-1.jpg",
             "categories": [
-                8
+                8, 11
             ],
             "followers": 38345
         },
@@ -108,7 +108,8 @@
             "categories": [
                 1,
                 2,
-                9
+                9,
+                11
             ],
             "followers": 1138
         },
@@ -174,7 +175,7 @@
             "description": "На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями",
             "iconUrl": "./images/channel-ava-3-1.jpg",
             "categories": [
-                3
+                3, 9
             ],
             "followers": 6738
         },
@@ -207,7 +208,7 @@
             "description": "На данном канале транслируются записи по изучению английского языка онлайн вместе со зрителями",
             "iconUrl": "./images/channel-ava-3-4.jpg",
             "categories": [
-                3
+                3, 9
             ],
             "followers": 8
         },

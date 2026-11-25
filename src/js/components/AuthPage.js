@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { getElementByLang } from '../utils/langManager';
 import { setCurrentLang } from '../utils/langManager';
 
 export default function AuthPage({ context }) {
 
     useEffect(() => {
-            const { setLang } = context;
-            const currentLangName = setCurrentLang();
-            setLang(currentLangName);
-        }, []);
+        const { setLang } = context;
+        const currentLangName = setCurrentLang();
+        setLang(currentLangName);
+    }, []);
 
     const handleOnSubmit = async (event) => {
         event.preventDefault();
@@ -51,7 +51,7 @@ export default function AuthPage({ context }) {
     }
 
     const handleClick = () => {
-        window.location.href='./index.html';
+        window.location.href = './index.html';
     }
 
     return (

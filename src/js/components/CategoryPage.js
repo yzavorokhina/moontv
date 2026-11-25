@@ -59,11 +59,11 @@ export default function CategoryPage({ db, showAll, context }) {
                     </div>
                     <div className="current-language-and-tag">
                         <div className="category-languages-row" role="group" aria-label="category-tags-group">
-                            <span>{getElementByLang("sort-by-category-languages-row", context.currentLang) || "Язык каналов:"}</span> 
+                            <span>{getElementByLang("sort-by-category-languages-row", context.currentLang) || "Язык каналов:"}</span>
                             <span className="category-current-language">All</span>
                         </div>
                         <div className="category-tags-row" role="group" aria-label="category-tags-group">
-                            <span>{getElementByLang("sort-by-category-tags-row", context.currentLang) || "Теги каналов:"}</span> 
+                            <span>{getElementByLang("sort-by-category-tags-row", context.currentLang) || "Теги каналов:"}</span>
                             <span className="category-current-tag">All</span>
                         </div>
                     </div>
